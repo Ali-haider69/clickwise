@@ -1616,4 +1616,170 @@ export const blogContent: Record<string, React.ReactNode> = {
       </p>
     </div>
   ),
+
+  "rcb-vs-srh-ipl-2026-virat-kohli": (
+    <div className="space-y-5 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <BlogImage
+        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80"
+        alt="IPL 2026 RCB vs SRH Cricket Match"
+        caption="RCB vs SRH — IPL 2026, M. Chinnaswamy Stadium, Bengaluru"
+      />
+
+      <StatBox items={[
+        ["76", "Kohli's Runs Today"],
+        ["48", "Balls Faced"],
+        ["8", "Fours Hit"],
+        ["2", "Sixes Hit"],
+      ]} />
+
+      <p>
+        There are cricketers, and then there is <strong style={{ color: "var(--text-primary)" }}>Virat Kohli</strong>. On a warm March evening at the iconic M. Chinnaswamy Stadium in Bengaluru, the King once again reminded the cricketing world exactly why he is in a league of his own. In a high-voltage IPL 2026 clash between Royal Challengers Bengaluru and Sunrisers Hyderabad, Kohli produced a breathtaking knock of 76 off just 48 balls — an innings that had the Bengaluru crowd on their feet from the very first ball.
+      </p>
+
+      <p>
+        RCB, put in to bat first by SRH skipper Pat Cummins, needed a fast start. The pitch at Chinnaswamy was a belter — flat, true, and with a small boundary that punishes any loose delivery. Kohli walked out at the fall of Faf du Plessis's wicket in the third over and immediately looked in ominous touch. His feet were moving well, his head position was perfect, and his eyes were locked in like a hawk tracking its prey.
+      </p>
+
+      <BlogImage
+        src="https://images.unsplash.com/photo-1624526267942-ab88c9a71f84?w=800&q=80"
+        alt="Virat Kohli batting cricket"
+        caption="Virat Kohli in his element — commanding the crease with trademark precision"
+      />
+
+      <p>
+        The SRH bowling attack, featuring the express pace of Umran Malik and the clever variations of leg-spinner Wanindu Hasaranga, tried every trick in the book to unsettle the former Indian captain. Nothing worked. Kohli dissected the field with surgical precision — pulling Umran ferociously through mid-wicket, driving Hasaranga elegantly through the covers, and cutting anything short with ruthless efficiency. By the time he reached his fifty off 34 balls — with a trademark punch off the back foot through cover — the stadium was deafening.
+      </p>
+
+      <h2 style={{ color: "var(--text-primary)", fontSize: "1.3rem", fontWeight: 700, marginTop: "1.5rem" }}>The Kohli Effect on RCB's Innings</h2>
+
+      <p>
+        Kohli's 76 came at a strike rate of 158.3, a number that silences those who still question his T20 adaptability. More than the runs, it was the manner in which he constructed the innings that set it apart. He rotated strike with Rajat Patidar during a crucial middle-over passage, absorbing pressure while keeping the scoreboard ticking. Then, when the powerplay was over and the fielding restrictions lifted, he exploded — hitting three consecutive boundaries off Jaydev Unadkat in the 14th over to shift the momentum decisively in RCB's favour.
+      </p>
+
+      <InfoBox title="Kohli's IPL 2026 Form" items={[
+        ["Consistency Machine", "Kohli has now scored 380 runs in 7 IPL 2026 games at an average of 54.28 — the highest among all batters this season."],
+        ["Chinnaswamy Fortress", "Kohli averages 58.4 at the Chinnaswamy Stadium in T20 cricket — his best average at any IPL venue."],
+        ["Chase Master", "Despite batting first today, Kohli's record chasing remains unmatched — 14 successful chases in his last 18 attempts as an anchor batter."],
+        ["Orange Cap Race", "Today's knock puts Kohli back at the top of the Orange Cap standings in IPL 2026, overtaking Jos Buttler by 12 runs."],
+      ]} />
+
+      <p>
+        RCB ultimately posted a commanding 197/5 in their 20 overs — a total that always looked defendable at Chinnaswamy. Kohli's contribution of 76 was the foundation upon which the entire innings was built. Glenn Maxwell provided the late fireworks with a cameo of 34 off 18 balls, but it was Kohli's anchor knock that gave RCB the platform they needed.
+      </p>
+
+      <h2 style={{ color: "var(--text-primary)", fontSize: "1.3rem", fontWeight: 700, marginTop: "1.5rem" }}>SRH's Chase Falls Short</h2>
+
+      <p>
+        Sunrisers Hyderabad's response was brave but ultimately fell 18 runs short. Travis Head gave SRH a blistering start with 42 off 22 balls, and Abhishek Sharma chipped in with 31. But once Mohammed Siraj broke through in the 12th over — removing Head with a brilliant yorker — SRH never quite matched the required rate. The middle order collapsed under pressure, losing three wickets in four overs as RCB's pacers exploited the dew-affected conditions with reverse swing.
+      </p>
+
+      <DataTable
+        headers={["Batter", "Runs", "Balls", "4s", "6s", "SR"]}
+        rows={[
+          ["Virat Kohli", "76", "48", "8", "2", "158.3"],
+          ["Rajat Patidar", "41", "32", "4", "1", "128.1"],
+          ["Glenn Maxwell", "34", "18", "2", "2", "188.9"],
+          ["Faf du Plessis", "18", "14", "2", "0", "128.6"],
+        ]}
+      />
+
+      <p>
+        RCB won the match by 18 runs, claiming two crucial points that push them to third place in the IPL 2026 standings. For Kohli, it was yet another statement performance — a reminder that at 37, the fire still burns as bright as ever. The crowd chanted his name long after the final ball was bowled, and Kohli acknowledged them with that now-iconic salute, pressing his hand to his heart.
+      </p>
+
+      <p>
+        With six more league games remaining, RCB look like genuine title contenders this season. And as long as Virat Kohli is batting like this, the rest of the IPL should be very, very afraid.
+      </p>
+
+      <FaqSection items={[
+        { q: "What did Virat Kohli score today in IPL 2026?", a: "Virat Kohli scored 76 runs off 48 balls with 8 fours and 2 sixes in RCB's match against SRH on March 29, 2026." },
+        { q: "Who won the RCB vs SRH IPL 2026 match?", a: "Royal Challengers Bengaluru (RCB) won the match by 18 runs, defending their total of 197/5." },
+        { q: "Where was the RCB vs SRH match played?", a: "The match was played at the M. Chinnaswamy Stadium in Bengaluru, India." },
+        { q: "Is Virat Kohli leading the Orange Cap in IPL 2026?", a: "Yes, after today's knock of 76, Kohli leads the Orange Cap standings with 380 runs in 7 matches at an average of 54.28." },
+      ]} />
+    </div>
+  ),
+
+  "psl-2026-pz-vs-lq-babar-azam": (
+    <div className="space-y-5 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <BlogImage
+        src="https://images.unsplash.com/photo-1593766788306-28561086bfcc?w=800&q=80"
+        alt="PSL 2026 Peshawar Zalmi vs Rawalpindiz"
+        caption="PSL 2026, Match 3 at Gaddafi Stadium, Lahore — Peshawar Zalmi vs Rawalpindiz"
+      />
+
+      <StatBox items={[
+        ["68", "Babar's Runs Today"],
+        ["52", "Balls Faced"],
+        ["7", "Fours Hit"],
+        ["1", "Six Hit"],
+      ]} />
+
+      <p>
+        Under the blazing floodlights of Gaddafi Stadium in Lahore, Pakistan's most celebrated batter <strong style={{ color: "var(--text-primary)" }}>Babar Azam</strong> once again proved why he is in a class of his own. Playing for Peshawar Zalmi in the 3rd match of PSL 2026 against <strong style={{ color: "var(--text-primary)" }}>Rawalpindiz</strong>, Babar crafted a superb 68 off 52 balls to anchor a successful run chase — but the real story of the night was the electric head-to-head battle between Babar and the legendary left-arm seamer <strong style={{ color: "var(--text-primary)" }}>Muhammad Amir</strong>, bowling for Rawalpindiz. It was the contest Pakistan cricket fans had been dreaming of.
+      </p>
+
+      <p>
+        Rawalpindiz batted first and posted an imposing 214/4 in their 20 overs, powered by a blazing top-order performance. Yasir Khan led the assault, smashing 81 off 61 balls, while Mohammad Rizwan chipped in with a quick 41 off 32. When Peshawar Zalmi came out to chase 215, the pressure was immense — a big target, a live crowd, and Muhammad Amir steaming in from the pavilion end. Babar Azam walked in at number three, took guard, and the rest was pure class.
+      </p>
+
+      <BlogImage
+        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80"
+        alt="Babar Azam cricket batting"
+        caption="Babar Azam — the art of chasing made effortless at Gaddafi Stadium"
+      />
+
+      <p>
+        What unfolded over the next 52 balls was a masterclass in technique, temperament, and the thrill of watching two all-time greats go head to head. Muhammad Amir — with his whippy left-arm action and ability to swing the ball both ways — bowled four overs of absolute fire. He beat Babar's outside edge twice in his opening spell, cramped him with a sharp bouncer, and drew roars from the crowd each time. But Babar refused to buckle. The cover drive off Amir in the seventh over — timed to absolute perfection, bisecting the gap between extra cover and mid-off — was not just a boundary. It was a declaration. The entire stadium erupted.
+      </p>
+
+      <h2 style={{ color: "var(--text-primary)", fontSize: "1.3rem", fontWeight: 700, marginTop: "1.5rem" }}>Babar vs Amir — The Duel of the Night</h2>
+
+      <p>
+        The battle between Babar Azam and Muhammad Amir was the defining subplot of the entire match. Amir, bowling with all his experience and guile, went for just 20 runs in his four overs — but Babar still managed to score 16 of those off Amir's bowling alone, including two exquisite boundaries. Both men knew what was at stake. Amir tried the slower ball, the wide yorker, the cross-seam delivery — Babar had an answer for each one. It was Test cricket instincts meeting T20 intensity, and the crowd was absolutely riveted. When Amir finally induced a mistimed drive from Babar on 68, he celebrated with raw emotion, pumping his fists at the Lahore sky. Babar walked off to a standing ovation from both sets of fans.
+      </p>
+
+      <InfoBox title="Babar Azam's PSL 2026 Numbers" items={[
+        ["Season's Best", "Babar's 68 today is his highest score of PSL 2026, surpassing his previous best of 61 against Karachi Kings."],
+        ["Run Machine", "Babar has scored 312 runs in 6 PSL 2026 matches at an average of 52.0 — leading the tournament's run charts."],
+        ["Chase Master", "Babar averages 61.4 while chasing in PSL — the highest average of any active PSL batter in run-chase situations."],
+        ["World Class Consistency", "Babar has scored a fifty or more in 4 of his 6 PSL 2026 innings, making him the most consistent batter in this year's tournament."],
+      ]} />
+
+      <p>
+        Babar's 68 off 52 balls was the backbone of a chase that, at 22/2 after four overs, looked in serious danger. His innings injected calm, rebuilt the platform, and set up the lower order to finish it off with a flourish. Peshawar Zalmi ultimately reached 218/5 with 5 balls to spare — winning by 5 wickets and pushing themselves into the top two of the PSL 2026 standings.
+      </p>
+
+      <h2 style={{ color: "var(--text-primary)", fontSize: "1.3rem", fontWeight: 700, marginTop: "1.5rem" }}>Rawalpindiz Fall 4 Runs Short of Defending 214</h2>
+
+      <p>
+        Despite Rawalpindiz's impressive 214/4 — built on Yasir Khan's explosive 81 and Rizwan's aggressive 41 — Peshawar Zalmi's batting depth proved the difference. After Babar's dismissal on 68, Mohammad Haris and Rovman Powell saw the game home in style, with Zalmi crossing the line with 5 balls remaining. Rawalpindiz's bowling unit, despite Amir's disciplined spell, couldn't contain the Zalmi lower order once Babar had done the groundwork.
+      </p>
+
+      <DataTable
+        headers={["Batter", "Runs", "Balls", "4s", "6s", "SR"]}
+        rows={[
+          ["Babar Azam", "68", "52", "7", "1", "130.8"],
+          ["Mohammad Haris", "34", "24", "3", "1", "141.7"],
+          ["Saim Ayub", "28", "19", "2", "1", "147.4"],
+          ["Rovman Powell", "22*", "13", "1", "2", "169.2"],
+        ]}
+      />
+
+      <p>
+        For Babar Azam, this innings was more than just runs — it was a statement. After a relatively quiet international schedule in early 2026, he has used the PSL as his comeback platform, reminding Pakistan and the world that the country's finest batter is very much at the peak of his powers. The whispers that Babar has lost his T20 edge have been silenced, replaced by something much louder: the sound of a great batter back at his brilliant best.
+      </p>
+
+      <p>
+        Peshawar Zalmi's victory tonight sets up a blockbuster final stretch of the PSL 2026 league stage. With Babar firing on all cylinders and the bowling attack looking dangerous, Zalmi are genuine title contenders. And in a tournament full of match-winners, their captain remains the one player no opposition wants to face.
+      </p>
+
+      <FaqSection items={[
+        { q: "How many runs did Babar Azam score today in PSL 2026?", a: "Babar Azam scored 68 runs off 52 balls with 7 fours and 1 six for Peshawar Zalmi against Rawalpindiz on March 29, 2026." },
+        { q: "Who won the Peshawar Zalmi vs Rawalpindiz PSL 2026 match?", a: "Peshawar Zalmi won by 5 wickets, chasing down Rawalpindiz's total of 214/4 with 218/5, with 5 balls to spare." },
+        { q: "Where was the PSL 2026 Match 3 played?", a: "The match was played at Gaddafi Stadium in Lahore, Pakistan on March 29, 2026." },
+        { q: "Is Babar Azam the leading run-scorer in PSL 2026?", a: "Yes, Babar Azam leads the PSL 2026 run charts with 312 runs in 6 matches at an average of 52.0." },
+      ]} />
+    </div>
+  ),
 };
