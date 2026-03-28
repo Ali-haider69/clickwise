@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://clickwiseapp.vercel.app/sitemap.xml",
+    sitemap: "https://clickwise-pi.vercel.app/sitemap.xml",
   };
 }

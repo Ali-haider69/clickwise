@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/data/posts";
 
-const BASE = "https://clickwiseapp.vercel.app";
+const BASE = "https://clickwise-pi.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
