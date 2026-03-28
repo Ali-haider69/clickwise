@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@clickwise",
   },
+  verification: {
+    google: "YVpLTQ-H6wMTR3aOH41HGGSXK5IXnliZGOX4KXyJlJY",
+  },
 };
 
 export default function RootLayout({
