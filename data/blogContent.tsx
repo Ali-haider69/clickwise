@@ -1620,9 +1620,9 @@ export const blogContent: Record<string, React.ReactNode> = {
   "rcb-vs-srh-ipl-2026-virat-kohli": (
     <div className="space-y-5 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <BlogImage
-        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80"
-        alt="IPL 2026 RCB vs SRH Cricket Match"
-        caption="RCB vs SRH — IPL 2026, M. Chinnaswamy Stadium, Bengaluru"
+        src="/images/virat-kohli-rcb-2026.png"
+        alt="Virat Kohli RCB IPL 2026"
+        caption="Virat Kohli raises his bat after a sublime innings for RCB — IPL 2026"
       />
 
       <StatBox items={[
@@ -1703,9 +1703,9 @@ export const blogContent: Record<string, React.ReactNode> = {
   "psl-2026-pz-vs-lq-babar-azam": (
     <div className="space-y-5 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <BlogImage
-        src="https://images.unsplash.com/photo-1593766788306-28561086bfcc?w=800&q=80"
-        alt="PSL 2026 Peshawar Zalmi vs Rawalpindiz"
-        caption="PSL 2026, Match 3 at Gaddafi Stadium, Lahore — Peshawar Zalmi vs Rawalpindiz"
+        src="/images/babar-vs-amir-psl-2026.png"
+        alt="Babar Azam vs Muhammad Amir PSL 2026"
+        caption="The duel of the night — Muhammad Amir faces off against Babar Azam at Gaddafi Stadium, PSL 2026"
       />
 
       <StatBox items={[
@@ -1724,9 +1724,9 @@ export const blogContent: Record<string, React.ReactNode> = {
       </p>
 
       <BlogImage
-        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80"
-        alt="Babar Azam cricket batting"
-        caption="Babar Azam — the art of chasing made effortless at Gaddafi Stadium"
+        src="/images/babar-vs-amir-psl-2026.png"
+        alt="Babar Azam vs Muhammad Amir duel PSL 2026"
+        caption="Babar Azam walks past Muhammad Amir — two legends, one epic contest"
       />
 
       <p>
