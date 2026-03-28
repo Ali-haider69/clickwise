@@ -38,6 +38,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const sportsPages: MetadataRoute.Sitemap = [
+    "rcb-vs-srh-ipl-2026-virat-kohli",
+    "psl-2026-pz-vs-lq-babar-azam",
+  ].map((slug) => ({
+    url: `${BASE}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: 0.9,
+  }));
+
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -60,5 +70,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...toolPages, ...blogPages, ...reviewPages];
+  return [...staticPages, ...toolPages, ...blogPages, ...reviewPages, ...sportsPages];
 }
