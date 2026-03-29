@@ -48,6 +48,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const newsPages: MetadataRoute.Sitemap = [
+    "world-war-3-usa-vs-iran-2026",
+  ].map((slug) => ({
+    url: `${BASE}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: 1.0,
+  }));
+
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -70,5 +79,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...toolPages, ...blogPages, ...reviewPages, ...sportsPages];
+  return [...staticPages, ...toolPages, ...blogPages, ...reviewPages, ...sportsPages, ...newsPages];
 }

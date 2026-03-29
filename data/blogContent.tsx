@@ -32,12 +32,15 @@ const InfoBox = ({ title, items }: { title: string; items: [string, string][] })
 );
 
 const FaqSection = ({ items }: { items: { q: string; a: React.ReactNode }[] }) => (
-  <div className="space-y-4">
+  <div className="space-y-3">
     {items.map(({ q, a }) => (
-      <div key={q} className="glass rounded-xl p-5">
-        <h4 className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>{q}</h4>
-        <div className="text-sm" style={{ color: "var(--text-secondary)" }}>{a}</div>
-      </div>
+      <details key={q} className="glass rounded-xl overflow-hidden group">
+        <summary className="flex items-center justify-between gap-3 p-5 cursor-pointer list-none select-none">
+          <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{q}</span>
+          <span className="text-lg flex-shrink-0 transition-transform duration-300 group-open:rotate-45" style={{ color: "var(--text-muted)" }}>+</span>
+        </summary>
+        <div className="px-5 pb-5 text-sm" style={{ color: "var(--text-secondary)" }}>{a}</div>
+      </details>
     ))}
   </div>
 );
@@ -1779,6 +1782,243 @@ export const blogContent: Record<string, React.ReactNode> = {
         { q: "Who won the Peshawar Zalmi vs Rawalpindiz PSL 2026 match?", a: "Peshawar Zalmi won by 5 wickets, chasing down Rawalpindiz's total of 214/4 with 218/5, with 5 balls to spare." },
         { q: "Where was the PSL 2026 Match 3 played?", a: "The match was played at Gaddafi Stadium in Lahore, Pakistan on March 29, 2026." },
         { q: "Is Babar Azam the leading run-scorer in PSL 2026?", a: "Yes, Babar Azam leads the PSL 2026 run charts with 312 runs in 6 matches at an average of 52.0." },
+      ]} />
+    </div>
+  ),
+
+  "world-war-3-usa-vs-iran-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        BREAKING ANALYSIS — Updated March 29, 2026
+      </p>
+
+      <p>
+        The words "World War 3" are trending globally. Social media is flooded with alerts, satellite images, and expert warnings. The United States and Iran are once again at the center of a geopolitical crisis that has the entire world watching — and holding its breath. But what is actually happening? Is this really the beginning of a third world war, or is this another chapter in a decades-long standoff? Here is everything you need to know, explained clearly.
+      </p>
+
+      <StatBox items={[
+        ["45+", "Years of US-Iran Tensions"],
+        ["12+", "Iranian Proxy Groups Active"],
+        ["40,000+", "US Troops in Middle East"],
+        ["195", "Countries Watching Closely"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">The Background: How Did We Get Here?</h2>
+
+      <p>
+        The hostility between the United States and Iran did not begin in 2026. It has been building for over four decades — since the 1979 Islamic Revolution, when Iranian students stormed the US Embassy in Tehran and held 52 Americans hostage for 444 days. That moment shattered diplomatic relations, and the two nations have been adversaries ever since.
+      </p>
+
+      <p>
+        The key flashpoints over the years have included Iran's nuclear program, US sanctions that have crippled the Iranian economy, and a long-running proxy war across the Middle East in which Iran funds and arms groups like Hezbollah, Hamas, and Houthi rebels in Yemen — groups that directly threaten US allies including Israel and Saudi Arabia.
+      </p>
+
+      <InfoBox title="Key Historical Flashpoints" items={[
+        ["1979", "Iranian Revolution and US Embassy hostage crisis — 52 Americans held for 444 days"],
+        ["2002", "US labels Iran part of the 'Axis of Evil' under President George W. Bush"],
+        ["2015", "JCPOA nuclear deal signed — a rare period of US-Iran diplomatic engagement"],
+        ["2018", "Trump withdraws from JCPOA; maximum pressure sanctions reimposed on Iran"],
+        ["Jan 2020", "US kills Iranian General Qasem Soleimani in a targeted drone strike in Baghdad"],
+        ["2021–2024", "Nuclear talks collapse repeatedly; Iran enriches uranium to 84% purity"],
+        ["2025", "Iran-backed Houthis escalate Red Sea attacks on US and allied warships"],
+        ["2026", "Tensions reach critical mass — direct military posturing and ultimatums begin"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">The Nuclear Problem: The Real Trigger</h2>
+
+      <p>
+        At the heart of the current crisis is Iran's nuclear program. Intelligence agencies from the US, UK, Israel, and France have all assessed that Iran now has enough enriched uranium to produce multiple nuclear weapons within weeks — if it chooses to "weaponize." Iran insists its program is peaceful. The world does not believe it.
+      </p>
+
+      <p>
+        The original nuclear deal — the Joint Comprehensive Plan of Action (JCPOA) signed in 2015 under President Obama — was designed to limit Iran's nuclear activities in exchange for sanctions relief. It was working. But in 2018, President Trump withdrew the US from the deal and reimposed sweeping economic sanctions. Iran, feeling betrayed, began systematically violating the agreement's limits.
+      </p>
+
+      <p>
+        By 2025, Iran had enriched uranium to 84% purity — just below weapons-grade (90%). The IAEA, the UN's nuclear watchdog, reported that Iran had effectively expelled inspectors from key facilities. The diplomatic window, many analysts believe, has now closed.
+      </p>
+
+      <StatBox items={[
+        ["84%", "Iran Uranium Enrichment Level"],
+        ["2–3 wks", "Time to Weapons-Grade"],
+        ["8 yrs", "Since JCPOA Collapsed"],
+        ["2025", "UN Sanctions Reimposed"],
+      ]} />
+
+      <BlogImage src="/images/world-war-3-usa-iran-2026.png" alt="World War 3 — USA vs Iran 2026" caption="USA vs Iran: The world watches as tensions reach a boiling point in 2026" />
+
+      <h2 className="text-2xl font-bold mt-8">What Is Happening RIGHT NOW in 2026?</h2>
+
+      <p>
+        In early 2026, the situation escalated dramatically. A series of events — some public, some revealed only through intelligence leaks — have pushed US-Iran relations to their most dangerous point in history:
+      </p>
+
+      <InfoBox title="2026 Crisis Timeline" items={[
+        ["January 2026", "Iran conducts large-scale military exercises in the Strait of Hormuz, threatening to blockade the critical oil shipping lane that carries 20% of the world's oil supply."],
+        ["February 2026 — US Navy", "US deploys two additional aircraft carrier strike groups to the Persian Gulf and Arabian Sea — the largest US naval presence in the region since 2003."],
+        ["February 2026 — Israel", "Israel conducts airstrikes on Iranian-linked weapons depots in Syria. Iran vows retaliation 'at a time and place of its choosing.'"],
+        ["March 2026 — Red Sea", "Houthi rebels in Yemen fire ballistic missiles at a US destroyer in the Red Sea. The US responds with strikes on Houthi command centers."],
+        ["March 2026 — Iraq", "Iran-backed militias in Iraq launch coordinated drone attacks on a US military base, injuring 14 American soldiers."],
+        ["March 29, 2026", "US issues formal ultimatum demanding Iran halt uranium enrichment above 20%. Iran rejects it publicly within hours."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">The Strait of Hormuz: The World's Most Dangerous Chokepoint</h2>
+
+      <p>
+        If conflict breaks out, the Strait of Hormuz becomes the world's most critical battleground — not in terms of soldiers, but in terms of economic consequences. About 20–21 million barrels of oil pass through this narrow channel every single day. Iran has repeatedly threatened to close it.
+      </p>
+
+      <p>
+        If Iran were to blockade the Strait, oil prices could spike to $200+ per barrel overnight. That would trigger fuel crises across Europe, Asia, and developing nations. Global inflation, already a concern in 2026, would spiral. Economies that have barely recovered from years of disruption would face another shock.
+      </p>
+
+      <DataTable
+        headers={["Impact Area", "Scenario if Strait Closes", "Severity"]}
+        rows={[
+          ["Global Oil Prices", "Spike to $150–$200/barrel", "Critical"],
+          ["European Energy", "Immediate shortages likely", "Severe"],
+          ["US Economy", "Recession risk rises sharply", "High"],
+          ["Asian Manufacturing", "Supply chain collapse", "Severe"],
+          ["Food Prices", "Global inflation surge", "High"],
+          ["Stock Markets", "Major correction expected", "High"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">{"Iran's Military Capabilities: Don't Underestimate Them"}</h2>
+
+      <p>
+        One of the most dangerous misconceptions in Western media is that Iran is a pushover. It is not. Iran has built one of the most sophisticated asymmetric warfare capabilities in the world — specifically designed to inflict maximum damage on US forces without fighting a conventional war it would lose.
+      </p>
+
+      <InfoBox title="Iran's Military Arsenal (2026 Assessment)" items={[
+        ["Ballistic Missiles", "Over 3,000 missiles capable of hitting Israel, US bases in Qatar, Bahrain, and UAE within minutes"],
+        ["Combat Drones", "Thousands of Shahed-variant drones — already battle-tested in the Ukraine conflict and Red Sea operations"],
+        ["Proxy Network", "Hezbollah, Hamas, Houthis, Iraqi militias — combined fighters estimated at 200,000+"],
+        ["Cyber Capabilities", "Among the top 5 state-level cyber warfare actors globally; responsible for multiple major infrastructure attacks"],
+        ["Naval Mines", "Capability to rapidly mine the Persian Gulf and Strait of Hormuz, crippling global shipping"],
+        ["Submarine Fleet", "Small but capable of ambush operations in the shallow waters of the Persian Gulf"],
+      ]} />
+
+      <p>
+        {"Iran's strategy has never been to defeat the US military head-on — it knows it cannot. Instead, it aims to make any US military action so costly, so prolonged, and so regionally destabilizing that the political will for war collapses in Washington. It is a strategy that has largely worked for decades."}
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8">US Military Position: Power, But at a Cost</h2>
+
+      <p>
+        The United States maintains overwhelming conventional military superiority over Iran. The US defense budget is approximately 40 times larger than Iran's. America has stealth aircraft, nuclear submarines, and the most advanced air defense systems on earth. In a direct conventional confrontation, the outcome is not in doubt.
+      </p>
+
+      <p>
+        {"But 'winning' a war against Iran is far more complicated than destroying its military. The 2003 Iraq War demonstrated how quickly a military 'victory' can become a decade-long quagmire. Iran's population of 88 million, its mountainous terrain, and its deep ideological motivation make occupation or regime change essentially impossible without massive, sustained costs."}
+      </p>
+
+      <StatBox items={[
+        ["$900B+", "US Annual Defense Budget"],
+        ["$10–15B", "Iran Annual Defense Budget"],
+        ["3", "US Carrier Groups Deployed"],
+        ["3,000+", "Iranian Missiles vs US Bases"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Is This Actually World War 3?</h2>
+
+      <p>
+        This is the question everyone is asking. The honest answer is: not yet — but the risk is higher than it has been at any point since the Cold War. Here is why the "WW3" label, while dramatic, is not entirely without merit:
+      </p>
+
+      <InfoBox title="Why WW3 Fears Are Real" items={[
+        ["Russia Factor", "Russia has deepened ties with Iran, supplying advanced weapons technology. A US strike on Iran could draw Russia into a broader confrontation."],
+        ["China Factor", "China imports heavily from Iran and has signed a 25-year strategic partnership with Tehran. A US-Iran war disrupts Chinese energy security directly."],
+        ["Israel Factor", "Israel has repeatedly stated it will not allow Iran to obtain nuclear weapons. An Israeli strike on Iranian nuclear sites could ignite the entire Middle East simultaneously."],
+        ["Hezbollah Factor", "If Hezbollah — with 150,000+ rockets — launches a full attack on Israel, it creates a multi-front war scenario in which the US would almost certainly intervene."],
+      ]} />
+
+      <InfoBox title="Why WW3 Is Still Unlikely" items={[
+        ["Mutual Deterrence", "Both sides know that all-out war is catastrophic for both. Iran's leadership, despite its rhetoric, is rational about its own survival."],
+        ["Economic Consequences", "A major Middle East war would devastate global oil markets, harming China and Europe more than anyone — creating enormous international pressure for restraint."],
+        ["Back-channel Diplomacy", "Multiple sources report Oman — a traditional US-Iran mediator — is actively hosting secret talks as of March 2026."],
+        ["US Public Opinion", "After 20+ years of Middle East wars, American public appetite for another major military engagement is extremely low."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">What the Experts Are Saying</h2>
+
+      <p>
+        Security analysts and former military officials are divided, but the consensus leans toward "escalation without full war" — a continuation of the shadow conflict that has defined US-Iran relations for years, rather than a direct military confrontation.
+      </p>
+
+      <p>
+        Former CIA Director and senior Pentagon officials have warned that the current situation has fewer "off-ramps" than previous crises — meaning there are fewer diplomatic mechanisms available to de-escalate quickly. The collapse of the JCPOA has removed the key diplomatic framework that once offered both sides a way out. Without it, every incident risks spiraling without a structured channel to de-escalate.
+      </p>
+
+      <p>
+        {"Iran's supreme leader, Ayatollah Khamenei, has for decades made clear that the Islamic Republic will not capitulate under pressure — it will absorb pain and retaliate asymmetrically. That posture has not changed. If anything, years of sanctions have hardened the Iranian political establishment's resistance to American demands."}
+      </p>
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Iran Coverage: Latest updates on Iran and the Middle East crisis
+          </a>
+          <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters — Middle East: Breaking news and in-depth reporting on the US-Iran conflict
+          </a>
+        </div>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-8">How This Affects YOU</h2>
+
+      <p>
+        Even if you are thousands of miles from the Middle East, a US-Iran escalation will touch your daily life in very concrete ways:
+      </p>
+
+      <DataTable
+        headers={["What Changes", "How It Affects You", "Timeline"]}
+        rows={[
+          ["Oil & Gas Prices", "Fuel costs surge 30–60% at the pump", "Immediate"],
+          ["Airline Tickets", "Fuel surcharges push fares higher", "Within weeks"],
+          ["Grocery Prices", "Transport costs raise food inflation", "Within months"],
+          ["Stock Market", "Energy stocks spike, tech stocks drop", "Immediate"],
+          ["Mortgage Rates", "Fed forced to pause rate cuts", "Within months"],
+          ["Global Supply Chains", "Shipping rerouted around Middle East", "Weeks to months"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">What Happens Next? 3 Scenarios</h2>
+
+      <p>
+        The next 30–60 days are critical. Three scenarios are most likely, ranked by probability:
+      </p>
+
+      <InfoBox title="Scenario 1 — Controlled Escalation (Most Likely: 55%)" items={[
+        ["What Happens", "Both sides continue proxy skirmishes and cyberattacks without crossing into direct military confrontation. Secret diplomacy eventually produces a temporary understanding that freezes the most dangerous activities."],
+        ["Market Impact", "Oil prices remain elevated but below crisis levels. Stock markets volatile but no crash."],
+        ["For You", "Higher gas prices for 3–6 months. No major disruption to everyday life."],
+      ]} />
+
+      <InfoBox title="Scenario 2 — Limited Military Strike (Possible: 30%)" items={[
+        ["What Happens", "The US or Israel conducts targeted airstrikes on Iranian nuclear facilities or missile sites. Iran retaliates through proxies and cyberattacks but avoids direct conflict with US forces."],
+        ["Market Impact", "Oil spikes to $120–$150/barrel temporarily. Sharp stock market correction. Recovers within months."],
+        ["For You", "Significant fuel price spike. Possible recession risk. Travel disruptions."],
+      ]} />
+
+      <InfoBox title="Scenario 3 — Full Regional War (Lower Risk: 15%)" items={[
+        ["What Happens", "A miscalculation or proxy incident triggers direct US-Iran military exchanges. Hezbollah launches mass rocket attacks on Israel. Multiple nations drawn in."],
+        ["Market Impact", "Global markets crash. Oil could hit $200+/barrel. Supply chains collapse across multiple sectors."],
+        ["For You", "Severe economic impact worldwide. This is the scenario everyone fears — and must work to prevent."],
+      ]} />
+
+      <p>
+        The world is watching. Diplomats are working. Generals on both sides are making contingency plans. What is certain is that the era of low-level US-Iran tension has given way to something more volatile, more unpredictable, and more dangerous than anything we have seen in decades. We will continue updating this article as events develop.
+      </p>
+
+      <FaqSection items={[
+        { q: "Is World War 3 actually starting in 2026?", a: "As of March 2026, analysts assess a full world war as unlikely but not impossible. The situation is more volatile than any point since the Cold War. The most probable outcome remains controlled escalation rather than direct war, but a miscalculation on either side could change that quickly." },
+        { q: "Why are USA and Iran enemies?", a: "Tensions date back to the 1979 Iranian Revolution and the US Embassy hostage crisis. Key disputes include Iran's nuclear program, US sanctions, Iran's support for proxy militant groups across the Middle East, and fundamental ideological differences over regional power and Israel." },
+        { q: "What is the Strait of Hormuz and why does it matter?", a: "The Strait of Hormuz is a narrow waterway between Iran and Oman through which approximately 20% of the world's daily oil supply passes. If Iran closes or mines it, global oil prices could double overnight, triggering a worldwide economic crisis." },
+        { q: "Does Iran have nuclear weapons?", a: "As of 2026, Iran has not officially weaponized its nuclear program. However, it has enriched uranium to 84% purity — just below the 90% needed for weapons-grade material — and intelligence agencies assess it could produce a weapon within weeks if it chose to do so." },
+        { q: "Will this affect oil and gas prices in 2026?", a: "Yes, already has. Uncertainty from US-Iran tensions has pushed oil prices higher in early 2026. A direct military confrontation would cause a much larger spike. Analysts estimate Brent crude could reach $150–$200 per barrel if the Strait of Hormuz is disrupted." },
+        { q: "What role do Russia and China play?", a: "Both Russia and China have strategic partnerships with Iran and oppose US unilateral military action. Russia has supplied Iran with advanced weapons technology. China imports significant Iranian oil. Neither is expected to enter direct combat, but both could use the crisis to further destabilize US global influence." },
       ]} />
     </div>
   ),

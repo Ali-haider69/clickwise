@@ -276,6 +276,19 @@ export const posts: Post[] = [
     seoKeywords: ["PSL 2026 today match", "Babar Azam today", "Peshawar Zalmi vs Rawalpindiz", "Babar Azam vs Muhammad Amir", "PSL match report 2026"],
   },
   {
+    slug: "world-war-3-usa-vs-iran-2026",
+    title: "World War 3? What's Really Happening Between USA and Iran (2026)",
+    excerpt: "Tensions between the United States and Iran have reached a boiling point in 2026. Military buildups, nuclear threats, proxy wars, and diplomatic breakdowns — here is a full breakdown of what is really happening and whether World War 3 is actually on the table.",
+    category: "News",
+    readTime: "10 min",
+    date: "Mar 29, 2026",
+    image: "/images/world-war-3-usa-iran-2026.png",
+    trending: true,
+    featured: false,
+    tags: ["World War 3", "USA vs Iran", "Iran War 2026", "Middle East", "Breaking News"],
+    seoKeywords: ["usa vs iran 2026", "world war 3 news", "iran war updates", "us iran conflict explained", "middle east war today", "world war 3 2026"],
+  },
+  {
     slug: "apple-macbook-air-m4-full-review",
     title: "MacBook Air M4 Full Review 2026 — The Best Laptop for Most People",
     excerpt: "After 4 months of daily use, here is our complete verdict on the MacBook Air M4. Performance, battery life, display, and whether it is worth buying right now.",
@@ -297,4 +310,5 @@ export const categories = [
   { name: "Health", icon: "💪", count: 29, color: "from-pink-500 to-rose-500" },
   { name: "Trending", icon: "🔥", count: 18, color: "from-red-500 to-orange-500" },
   { name: "Sports", icon: "🏏", count: 12, color: "from-green-500 to-teal-500" },
+  { name: "News", icon: "📰", count: 1, color: "from-red-600 to-rose-500" },
 ];
