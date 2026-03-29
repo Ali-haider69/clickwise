@@ -18,10 +18,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "ClickWise",
+    url: "https://clickwise-pi.vercel.app",
+    title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
+    description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "ClickWise" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@clickwise",
+    title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
+    description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
+    images: ["/opengraph-image"],
   },
   verification: {
     google: "YVpLTQ-H6wMTR3aOH41HGGSXK5IXnliZGOX4KXyJlJY",
