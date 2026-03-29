@@ -38,32 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const sportsPages: MetadataRoute.Sitemap = [
-    "rcb-vs-srh-ipl-2026-virat-kohli",
-    "psl-2026-pz-vs-lq-babar-azam",
-  ].map((slug) => ({
-    url: `${BASE}/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "daily" as const,
-    priority: 0.9,
-  }));
-
-  const newsPages: MetadataRoute.Sitemap = [
-    "world-war-3-usa-vs-iran-2026",
-    "petrol-prices-skyrocket-war-impact-2026",
-    "countries-involved-iran-us-war-2026",
-  ].map((slug) => ({
-    url: `${BASE}/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "daily" as const,
-    priority: 1.0,
-  }));
-
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.date),
-    changeFrequency: "monthly" as const,
-    priority: post.featured ? 0.9 : post.trending ? 0.8 : 0.7,
+    changeFrequency: post.category === "News" || post.category === "Sports" ? "daily" as const : "monthly" as const,
+    priority: post.category === "News" ? 1.0 : post.featured ? 0.9 : post.trending ? 0.8 : 0.7,
   }));
 
   const reviewPages: MetadataRoute.Sitemap = [
@@ -81,5 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...toolPages, ...blogPages, ...reviewPages, ...sportsPages, ...newsPages];
+  return [...staticPages, ...toolPages, ...blogPages, ...reviewPages];
 }

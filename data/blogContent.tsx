@@ -57,6 +57,25 @@ const BlogImage = ({ src, alt, caption }: { src: string; alt: string; caption?: 
   </div>
 );
 
+const YouTubeEmbed = ({ videoId, title }: { videoId: string; title: string }) => (
+  <div className="my-8 rounded-2xl overflow-hidden glass">
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+      <iframe
+        className="absolute inset-0 w-full h-full"
+        src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        loading="lazy"
+      />
+    </div>
+    <div className="px-4 py-3 flex items-center gap-2">
+      <span className="text-xs font-semibold uppercase tracking-widest text-red-500">▶ Video</span>
+      <span className="text-xs" style={{ color: "var(--text-muted)" }}>{title}</span>
+    </div>
+  </div>
+);
+
 const DataTable = ({ headers, rows }: { headers: string[]; rows: string[][] }) => (
   <div className="overflow-x-auto my-6">
     <table className="w-full text-sm">
@@ -1808,6 +1827,8 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <BlogImage src="/images/countries-involved-iran-us-war-2026.png" alt="Who Will Join the Iran-US War — Countries Involved 2026" caption="The world takes sides: every major power is calculating its position in the Iran-US conflict" />
 
+      <YouTubeEmbed videoId="NTETc3MpL-k" title="Countries Involved in the Iran-US War — Global Alliances Explained" />
+
       <h2 className="text-2xl font-bold mt-8">🇺🇸 Team USA — Who Stands With America?</h2>
 
       <p>
@@ -1954,6 +1975,8 @@ export const blogContent: Record<string, React.ReactNode> = {
       ]} />
 
       <BlogImage src="/images/petrol-prices-skyrocket-war-impact-2026.png" alt="Petrol Prices Skyrocket — War Impact 2026" caption="Global fuel prices surge as the Iran crisis rattles oil markets worldwide" />
+
+      <YouTubeEmbed videoId="_lTHH5TgKNA" title="Oil Prices Surge — Iran War Impact Explained | News" />
 
       <h2 className="text-2xl font-bold mt-8">Why Is the Iran War Affecting Petrol Prices?</h2>
 
@@ -2106,6 +2129,8 @@ export const blogContent: Record<string, React.ReactNode> = {
         ["40,000+", "US Troops in Middle East"],
         ["195", "Countries Watching Closely"],
       ]} />
+
+      <YouTubeEmbed videoId="IFxCf51FBNY" title="Are we heading for World War Three? | BBC News — The Global Story" />
 
       <h2 className="text-2xl font-bold mt-8">The Background: How Did We Get Here?</h2>
 
