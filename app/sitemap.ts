@@ -50,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const newsPages: MetadataRoute.Sitemap = [
     "world-war-3-usa-vs-iran-2026",
+    "petrol-prices-skyrocket-war-impact-2026",
+    "countries-involved-iran-us-war-2026",
   ].map((slug) => ({
     url: `${BASE}/blog/${slug}`,
     lastModified: new Date(),

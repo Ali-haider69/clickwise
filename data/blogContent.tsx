@@ -16,18 +16,21 @@ const StatBox = ({ items }: { items: [string, string][] }) => (
 );
 
 const InfoBox = ({ title, items }: { title: string; items: [string, string][] }) => (
-  <div className="space-y-3 my-6">
-    {items.map(([heading, body]) => (
-      <div key={heading} className="glass rounded-xl p-4 flex gap-4">
-        <div className="w-5 h-5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-          <span className="text-white text-[10px] font-bold">+</span>
+  <div className="my-6 glass rounded-2xl overflow-hidden">
+    <div className="px-5 py-3 border-b" style={{ borderColor: "var(--border-color)" }}>
+      <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>{title}</span>
+    </div>
+    <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
+      {items.map(([heading, body]) => (
+        <div key={heading} className="flex gap-0 group">
+          <div className="w-1 flex-shrink-0 bg-gradient-to-b from-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+          <div className="px-5 py-4 flex-1">
+            <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{heading}</span>
+            <span className="text-sm" style={{ color: "var(--text-muted)" }}> — {body}</span>
+          </div>
         </div>
-        <div>
-          <div className="font-semibold text-sm mb-1" style={{ color: "var(--text-primary)" }}>{heading}</div>
-          <div className="text-sm" style={{ color: "var(--text-muted)" }}>{body}</div>
-        </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 );
 
@@ -1786,10 +1789,311 @@ export const blogContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "countries-involved-iran-us-war-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        WAR ALLIANCES TRACKER — Updated March 30, 2026
+      </p>
+
+      <p>
+        When people think about the Iran-US conflict, they imagine two countries facing off. The reality is far more complex — and far more dangerous. This is a war with no clean front lines, where a dozen nations are already involved through proxies, arms deals, sanctions, and back-channel diplomacy. Some are openly picking sides. Others are playing both. Here is the full picture of who is in, who is watching, and who could tip the balance.
+      </p>
+
+      <StatBox items={[
+        ["2", "Direct Parties (US & Iran)"],
+        ["8+", "Nations Already Involved"],
+        ["200,000+", "Proxy Forces Mobilised"],
+        ["3", "Nuclear-Armed Nations Watching"],
+      ]} />
+
+      <BlogImage src="/images/countries-involved-iran-us-war-2026.png" alt="Who Will Join the Iran-US War — Countries Involved 2026" caption="The world takes sides: every major power is calculating its position in the Iran-US conflict" />
+
+      <h2 className="text-2xl font-bold mt-8">🇺🇸 Team USA — Who Stands With America?</h2>
+
+      <p>
+        The United States is not fighting alone. It has a network of formal allies, military partners, and regional powers who share its interest in containing Iran. But levels of commitment vary enormously — from countries ready to fight alongside US forces to those offering only quiet diplomatic support.
+      </p>
+
+      <InfoBox title="US Side — Active & Aligned" items={[
+        ["🇮🇱 Israel", "The most direct and aggressive US partner. Israel views a nuclear Iran as an existential threat and has already conducted airstrikes on Iranian assets in Syria. If war breaks out, Israel is almost certain to launch its own strikes on Iranian nuclear facilities simultaneously."],
+        ["🇸🇦 Saudi Arabia", "Deeply hostile to Iran after years of proxy conflict in Yemen, Lebanon, and Iraq. While Saudi Arabia has sought quiet diplomatic normalisation with Iran recently, the Iranian nuclear threat overrides that. Saudi Arabia would allow US aircraft and naval forces to use its bases."],
+        ["🇦🇪 UAE", "Home to Al Dhafra Air Base, one of the most important US air facilities in the region. The UAE has been a quiet but critical partner in US Middle East operations and would be a key logistics hub in any conflict."],
+        ["🇬🇧 United Kingdom", "A member of the US-led coalition that has already conducted strikes on Houthi targets in Yemen. The UK maintains naval forces in the Gulf and would likely participate in any US-led military action against Iran."],
+        ["🇯🇴 Jordan", "Has shot down Iranian drones before — literally. In April 2024, Jordan intercepted Iranian drones crossing its airspace during Iran's direct attack on Israel. A reliable if quiet partner."],
+        ["🇧🇭 Bahrain", "Home to the US Navy's Fifth Fleet headquarters — the central command for all US naval operations in the Middle East. Bahrain is on the front line whether it wants to be or not."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">🇮🇷 Team Iran — Who Backs Tehran?</h2>
+
+      <p>
+        Iran does not have many formal military allies. What it has built instead is the "Axis of Resistance" — a network of armed proxy groups and sympathetic states across the Middle East and beyond. Combined, these forces represent a serious asymmetric threat that no conventional military advantage fully neutralises.
+      </p>
+
+      <InfoBox title="Iran Side — Allies & Proxies" items={[
+        ["🇷🇺 Russia", "The most powerful backer of Iran outside the Middle East. Russia has supplied Iran with advanced air defence systems and drone technology. In return, Iran supplied Russia with Shahed drones used in Ukraine. Russia will not fight for Iran directly, but it provides weapons, intelligence, and diplomatic cover at the UN Security Council."],
+        ["🇨🇳 China", "China imports significant Iranian oil and signed a 25-year strategic cooperation deal with Tehran. It blocks US-backed sanctions at the UN and provides Iran with economic lifelines. China will not fight, but its political and economic support is critical to Iran's survival under sanctions."],
+        ["🇱🇧 Hezbollah (Lebanon)", "Iran's most powerful and battle-hardened proxy. Hezbollah has an estimated 150,000 rockets and missiles pointing at Israel. If the US strikes Iran, Hezbollah is expected to open a second front against Israel — forcing Israel to fight a two-front war."],
+        ["🇾🇪 Houthis (Yemen)", "Already fighting. The Iran-backed Houthi movement controls northern Yemen and has fired over 100 ballistic missiles and drones at US warships and commercial shipping in the Red Sea since late 2023. They have vowed to escalate further if Iran is attacked."],
+        ["🇮🇶 Iraqi Militias", "A coalition of Iranian-backed militia groups in Iraq — collectively known as the Popular Mobilisation Forces — have attacked US bases in Iraq over 160 times since October 2023. They provide Iran with a land corridor to Syria and Lebanon."],
+        ["🇸🇾 Syria", "The Assad government in Damascus is heavily dependent on Iranian military and financial support. Syria provides Iran with the critical land corridor linking Tehran to Hezbollah in Lebanon."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">⚖️ The Middle Ground — Countries Walking a Tightrope</h2>
+
+      <p>
+        Not every country is picking a side. Several major powers are playing a careful balancing act — maintaining ties with both the US and Iran for their own strategic and economic reasons. These nations could be the key to either de-escalation or further conflict.
+      </p>
+
+      <InfoBox title="Neutral — But Watching Closely" items={[
+        ["🇹🇷 Turkey", "A NATO member that has deep trade ties with Iran and has refused to join Western sanctions. Turkey controls the Bosphorus Strait, a critical waterway for Russian naval movements. Ankara is pursuing its own agenda — playing both sides to maximise leverage."],
+        ["🇮🇳 India", "The world's most populous nation imports significant amounts of Iranian oil and has historic ties with Tehran, while also maintaining a strong strategic partnership with the US. India has consistently abstained from UN votes condemning Iran and will not join any US-led coalition."],
+        ["🇵🇰 Pakistan", "Borders both Iran and Afghanistan, and has a large Shia Muslim population sympathetic to Iran. Pakistan cannot be seen supporting US military action against a Muslim nation. It will stay out — but the conflict could destabilise its already fragile western border."],
+        ["🇶🇦 Qatar", "Home to Al Udeid Air Base — the largest US military base in the Middle East — while simultaneously maintaining diplomatic ties with Iran and Hamas. Qatar's dual role makes it the region's most important and most awkward actor."],
+        ["🇴🇲 Oman", "The traditional secret diplomatic channel between the US and Iran. Oman has hosted back-channel talks for decades and is currently the most important country for any diplomatic off-ramp to the current crisis."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">The Proxy War Map — Conflicts Already Happening</h2>
+
+      <p>
+        The US-Iran conflict is not waiting for a declaration of war. It is already being fought across five different theatres simultaneously — through proxies, cyberattacks, and targeted operations:
+      </p>
+
+      <DataTable
+        headers={["Theatre", "Who Is Fighting", "Current Status"]}
+        rows={[
+          ["Red Sea / Yemen", "US + UK vs Houthis", "Active — ongoing strikes since Jan 2024"],
+          ["Iraq", "US forces vs Iranian-backed militias", "Active — drone attacks on US bases"],
+          ["Syria", "Israel vs Iran/Hezbollah assets", "Active — near-weekly Israeli airstrikes"],
+          ["Lebanon", "Israel vs Hezbollah", "Tense — major escalation possible"],
+          ["Cyberspace", "US/Israel vs Iran", "Constant — both sides attacking infrastructure"],
+          ["Persian Gulf", "US Navy vs IRGC vessels", "Tense — naval standoffs increasing"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">Russia: The Wild Card</h2>
+
+      <p>
+        Russia deserves special attention because it is the most dangerous variable in this conflict. Moscow is not an ally of Iran in the traditional sense — it has its own interests. But Russia has every incentive to see the United States bogged down in a Middle East war while it continues its operations in Ukraine.
+      </p>
+
+      <InfoBox title="What Russia Gains From an Iran-US War" items={[
+        ["US Attention Diverted", "A major Middle East conflict forces the US to split its military and diplomatic focus away from Ukraine — exactly what Russia wants."],
+        ["Higher Oil Prices", "Russia is a major oil exporter. Any disruption to Middle East oil supply pushes global prices up, directly benefiting the Russian economy."],
+        ["Weapons Sales", "Conflict in the region drives demand for Russian weapons systems among smaller nations seeking to hedge their bets."],
+        ["US Credibility Damaged", "A messy or inconclusive US military engagement in the Middle East weakens American global standing — strengthening Russia's hand in Europe."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">China: Calculating Every Move</h2>
+
+      <p>
+        China is the other superpower watching this conflict with intense interest. Beijing has spent years building economic and strategic ties across the Middle East — including with both Iran and Saudi Arabia. It brokered a surprise diplomatic normalisation between the two in 2023. China wants Middle East stability for its energy supplies, but also wants to see US power weakened globally.
+      </p>
+
+      <InfoBox title="China's Strategic Interests" items={[
+        ["Energy Security", "China imports ~45% of its oil from the Middle East. A major war disrupting Gulf shipping directly threatens the Chinese economy — giving Beijing a real incentive to prevent full-scale conflict."],
+        ["Belt and Road", "China has massive infrastructure investments across the Middle East and Central Asia under its Belt and Road Initiative. War destroys the stability these projects depend on."],
+        ["Taiwan Timing", "Some analysts believe China is watching how the US manages this crisis to assess American military capacity and political will ahead of any future move on Taiwan."],
+        ["UN Veto Power", "China will block any US-backed UN Security Council resolution authorising military force against Iran — giving Iran diplomatic cover at the highest level."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">How This Ends: Alliance Scenarios</h2>
+
+      <DataTable
+        headers={["Scenario", "Who Gets Involved", "Global Risk"]}
+        rows={[
+          ["Proxy War Continues", "US, Iran, proxies only", "Moderate — elevated but contained"],
+          ["US Strikes Iran", "US, Israel vs Iran, Hezbollah, Houthis", "High — multi-front regional war"],
+          ["Israel Acts First", "Israel vs Iran + full Hezbollah response", "Very High — US forced to intervene"],
+          ["Strait Blockade", "Iran shuts Hormuz, US responds", "Critical — global economic crisis"],
+          ["Russia Escalates", "Russia deepens Iran support materially", "Extreme — Cold War 2.0 scenario"],
+        ]}
+      />
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Iran: Full coverage of the conflict and international response
+          </a>
+          <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters — Middle East: Live updates on country positions and military movements
+          </a>
+        </div>
+      </div>
+
+      <p>
+        The Iran-US conflict is already a regional war in all but name. The question is not whether other countries are involved — they already are. The question is whether the involvement stays at the proxy level or crosses into something far more dangerous. The alliances are forming. The positions are hardening. And the world is watching every move.
+      </p>
+
+      <FaqSection items={[
+        { q: "Which countries support Iran in the war?", a: "Iran's key backers include Russia (weapons and diplomatic cover), China (economic support and UN veto), and its proxy network: Hezbollah in Lebanon, the Houthis in Yemen, and Iranian-backed militias in Iraq and Syria. None of these are expected to enter direct combat on Iran's behalf." },
+        { q: "Which countries support the USA against Iran?", a: "The US has the backing of Israel (most likely to conduct its own strikes), Saudi Arabia, the UAE, Bahrain (home to the US Fifth Fleet), the UK, and Jordan. Most of these partners offer basing rights, intelligence sharing, and air defence rather than ground combat troops." },
+        { q: "Will Russia fight in the Iran-US war?", a: "Almost certainly not in direct combat. Russia's interest is in supplying Iran with weapons, providing diplomatic cover at the UN, and watching the US get bogged down. Direct Russian military involvement would risk a NATO confrontation that Moscow wants to avoid." },
+        { q: "What is China's position on Iran vs USA?", a: "China is officially neutral but strategically sympathetic to Iran. It imports Iranian oil, has blocked UN sanctions, and signed a 25-year cooperation deal with Tehran. China will use its UN Security Council veto to prevent any international authorisation of US military force." },
+        { q: "Will Pakistan get involved in the Iran-US conflict?", a: "Pakistan is very unlikely to join either side militarily. It borders Iran, has a large Shia population, and cannot be seen supporting a US attack on a Muslim nation. It will remain neutral while managing the instability on its western border." },
+        { q: "What role does Israel play in the Iran conflict?", a: "Israel is the most aggressive actor after the US. It has conducted hundreds of strikes on Iranian assets in Syria over the past decade and has repeatedly stated it will not allow Iran to obtain nuclear weapons. An Israeli strike on Iranian nuclear facilities is considered highly likely if diplomacy fails completely." },
+      ]} />
+    </div>
+  ),
+
+  "petrol-prices-skyrocket-war-impact-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        FUEL CRISIS ALERT — Updated March 30, 2026
+      </p>
+
+      <p>
+        Every time you fill up your tank, you are feeling the direct impact of what is happening thousands of miles away in the Middle East. The escalating conflict between the United States and Iran is sending shockwaves through global oil markets — and ordinary people around the world are paying the price at the petrol pump. Here is a full breakdown of why prices are rising, how high they could go, and what you can do right now to protect your finances.
+      </p>
+
+      <StatBox items={[
+        ["$94/bbl", "Current Brent Crude Price"],
+        ["32%", "Fuel Price Rise Since Jan 2026"],
+        ["20%", "World Oil Through Strait of Hormuz"],
+        ["$200/bbl", "Price if Strait Blocked"],
+      ]} />
+
+      <BlogImage src="/images/petrol-prices-skyrocket-war-impact-2026.png" alt="Petrol Prices Skyrocket — War Impact 2026" caption="Global fuel prices surge as the Iran crisis rattles oil markets worldwide" />
+
+      <h2 className="text-2xl font-bold mt-8">Why Is the Iran War Affecting Petrol Prices?</h2>
+
+      <p>
+        Oil is a global commodity priced on fear as much as supply. The moment tensions rise in any major oil-producing region, traders and speculators push prices higher — even before a single barrel is disrupted. This is called a "geopolitical risk premium," and right now it is baked into every litre of fuel you buy.
+      </p>
+
+      <p>
+        Iran is the world's seventh-largest oil producer, pumping approximately 3.2 million barrels per day. But the bigger threat is not Iran's own oil — it is the Strait of Hormuz, the narrow waterway through which 20% of the entire world's oil supply passes every single day. Iran has repeatedly threatened to blockade it, and markets are pricing in that risk right now.
+      </p>
+
+      <InfoBox title="Why Oil Prices React to Middle East Tensions" items={[
+        ["Geopolitical Risk Premium", "Traders add a 'fear price' to oil the moment war risk rises — this can add $10–$30 per barrel overnight even with no actual supply disruption."],
+        ["Strait of Hormuz Threat", "20 million barrels of oil pass through this chokepoint daily. Any blockade would instantly remove a fifth of global supply from the market."],
+        ["Iran's Own Production", "Iran produces ~3.2 million barrels/day. If sanctioned or attacked, that supply vanishes from global markets immediately."],
+        ["Speculative Trading", "Hedge funds and oil traders bet on conflict — their buying activity pushes futures prices higher, which flows directly to petrol pump prices within days."],
+        ["Dollar Strength", "War uncertainty strengthens the US dollar. Since oil is priced in dollars, a stronger dollar makes oil more expensive for countries using other currencies."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">How Much Have Prices Already Gone Up?</h2>
+
+      <p>
+        Petrol prices had already been climbing throughout early 2026 before the latest escalation. Since January, Brent crude — the global benchmark — has risen from $71 to $94 per barrel, a 32% increase in under three months. At the pump, drivers in the UK, Europe, and Asia have seen increases of 15–25% already. In the US, the national average for regular gasoline has crossed $4.20/gallon and is climbing.
+      </p>
+
+      <DataTable
+        headers={["Country", "Price (Jan 2026)", "Price (Mar 2026)", "Change"]}
+        rows={[
+          ["United States", "$3.18/gal", "$4.22/gal", "+33%"],
+          ["United Kingdom", "£1.48/litre", "£1.79/litre", "+21%"],
+          ["Germany", "€1.72/litre", "€2.08/litre", "+21%"],
+          ["Pakistan", "PKR 275/litre", "PKR 340/litre", "+24%"],
+          ["India", "₹96/litre", "₹114/litre", "+19%"],
+          ["Australia", "AUD 1.95/litre", "AUD 2.41/litre", "+24%"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">Three Scenarios: How High Could Prices Go?</h2>
+
+      <p>
+        What happens next depends entirely on whether the US-Iran conflict escalates or de-escalates. Here are the three most likely price scenarios analysts are modelling right now:
+      </p>
+
+      <InfoBox title="Scenario 1 — Tensions Stay High But No War (Most Likely)" items={[
+        ["Oil Price Range", "Brent crude stays between $95–$115 per barrel through mid-2026"],
+        ["Pump Price Impact", "Petrol rises another 10–20% from current levels. Painful but manageable for most households."],
+        ["Duration", "Elevated prices persist for 3–6 months until diplomatic signals calm markets."],
+      ]} />
+
+      <InfoBox title="Scenario 2 — Limited Military Strike" items={[
+        ["Oil Price Range", "Brent crude spikes to $130–$150 per barrel within days of any strike"],
+        ["Pump Price Impact", "Petrol prices jump 35–50% from today's levels almost immediately. Severe household budget pressure."],
+        ["Duration", "Price spike lasts 2–4 months before markets stabilise — assuming no further escalation."],
+      ]} />
+
+      <InfoBox title="Scenario 3 — Strait of Hormuz Blockade (Worst Case)" items={[
+        ["Oil Price Range", "Brent crude rockets to $180–$220 per barrel. Some analysts say $250+ is possible."],
+        ["Pump Price Impact", "Petrol prices could double from current levels. Fuel rationing possible in some countries."],
+        ["Duration", "Crisis persists until the Strait is reopened — could be weeks to months of severe disruption."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Who Gets Hit Hardest?</h2>
+
+      <p>
+        Rising petrol prices do not affect everyone equally. Some countries, industries, and households are far more exposed than others:
+      </p>
+
+      <DataTable
+        headers={["Who Is Most Exposed", "Why", "Risk Level"]}
+        rows={[
+          ["Developing Nations", "Import most oil, pay in dollars, less reserve capacity", "Critical"],
+          ["Long-distance commuters", "High fuel spend as % of income, limited alternatives", "Severe"],
+          ["Trucking & logistics", "Fuel is largest operating cost — prices passed to consumers", "Severe"],
+          ["Airlines", "Jet fuel 25–30% of costs — tickets will rise sharply", "High"],
+          ["Farmers & agriculture", "Diesel for machinery, fertiliser made from gas — food prices rise", "High"],
+          ["Small businesses", "Cannot absorb cost increases easily — margins squeezed hard", "High"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">{"It's Not Just Petrol — The Ripple Effect"}</h2>
+
+      <p>
+        When oil prices rise, the impact spreads far beyond the petrol station. Oil is embedded in almost everything we buy and use. Higher oil means higher costs across the entire economy — a process that typically takes 4–8 weeks to fully show up in consumer prices:
+      </p>
+
+      <InfoBox title="How Oil Prices Affect Everything Else" items={[
+        ["Groceries & Food", "Fuel powers farm machinery, trucks that deliver food, and factories that make packaging. A 30% oil rise typically adds 8–15% to food prices within 2 months."],
+        ["Airline Tickets", "Jet fuel makes up 25–30% of airline operating costs. Expect ticket prices to rise 20–40% for bookings made now vs. pre-crisis prices."],
+        ["Heating Bills", "Gas and heating oil prices track crude oil closely. Winter heating costs could be significantly higher if the crisis persists into late 2026."],
+        ["New Car Prices", "Manufacturing and shipping use enormous amounts of energy. Vehicle production costs rise, passed on to buyers over the following months."],
+        ["Online Shopping", "Every package delivered by courier burns diesel. Delivery fees rise and are often passed through as surcharges within weeks."],
+        ["Inflation & Interest Rates", "Central banks may be forced to keep interest rates higher for longer to fight oil-driven inflation — bad news for mortgage holders."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">What Can YOU Do Right Now?</h2>
+
+      <p>
+        You cannot control geopolitics, but you can take steps right now to reduce the impact on your own household:
+      </p>
+
+      <InfoBox title="Smart Moves to Protect Your Finances" items={[
+        ["Fill Up Now", "If you have a full tank and a spare jerry can (where legal), consider topping up now before the next potential price spike. Even a 10% further rise matters."],
+        ["Cut Unnecessary Drives", "Combine errands, use public transport where possible, and avoid aggressive driving (which burns 15–20% more fuel than smooth driving)."],
+        ["Check Fuel Price Apps", "Apps like GasBuddy (US), PetrolPrices (UK), or Fuelmapper (AU) let you find the cheapest station near you — savings of 5–10% are common."],
+        ["Review Your Budget", "Add a 'fuel contingency' line to your monthly budget. If prices spike to Scenario 2 levels, know in advance what you will cut to compensate."],
+        ["Consider Energy Stocks", "As a hedge, some financial advisors suggest a small allocation to energy sector ETFs during oil price spikes. Consult a financial advisor first."],
+        ["Lock in Travel Now", "If you have flights planned in the next 3–6 months, book now before airlines raise prices. Fares typically lag oil moves by 4–8 weeks."],
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/business/market-data" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Market Data: Live oil prices, fuel indices and energy market updates
+          </a>
+          <a href="https://www.reuters.com/business/energy/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters Energy — Breaking coverage of global oil markets, OPEC decisions, and fuel price movements
+          </a>
+        </div>
+      </div>
+
+      <p>
+        The bottom line: petrol prices are going up, and the Iran crisis is a key driver. How bad it gets depends on whether diplomacy prevails or the conflict escalates. Stay informed, plan ahead, and take practical steps now while prices are still manageable. We will keep updating this article as the situation develops.
+      </p>
+
+      <FaqSection items={[
+        { q: "Why are petrol prices rising in 2026?", a: "The primary driver is the escalating US-Iran conflict and the threat to the Strait of Hormuz, through which 20% of global oil passes daily. Markets are pricing in a 'geopolitical risk premium' — pushing crude oil prices up even before any actual supply is disrupted." },
+        { q: "How high could petrol prices go in 2026?", a: "In the base case (no war), prices rise another 10–20% from current levels. A limited military strike could push prices 35–50% higher. A full Strait of Hormuz blockade — the worst case — could see petrol prices double from today's levels." },
+        { q: "Which countries will be hit hardest by rising oil prices?", a: "Developing nations that import most of their oil and pay in US dollars face the steepest impact. Pakistan, India, Sri Lanka, and many African nations are particularly exposed. European countries are also heavily affected due to their dependence on imported oil and gas." },
+        { q: "Does Iran actually produce that much oil?", a: "Yes. Iran is the world's seventh-largest oil producer at approximately 3.2 million barrels per day. But the bigger risk is the Strait of Hormuz — Iran's geographic position allows it to threaten a chokepoint far more important than its own production." },
+        { q: "Will OPEC increase production to offset rising prices?", a: "OPEC+ has some spare capacity but increasing production takes time and is not guaranteed. Saudi Arabia has shown willingness to act in past crises, but political dynamics within OPEC+ are complex. Any production increase would take weeks to reach markets." },
+        { q: "Should I buy an electric vehicle now because of rising fuel prices?", a: "If you were already considering an EV, the current petrol price environment makes the case stronger. However, EV prices remain elevated in 2026, and charging infrastructure varies widely by region. Run the numbers for your specific situation — the payback period has shortened significantly with fuel at current levels." },
+      ]} />
+    </div>
+  ),
+
   "world-war-3-usa-vs-iran-2026": (
     <div className="space-y-6 text-base leading-relaxed">
       <p className="text-lg font-semibold text-red-500">
-        BREAKING ANALYSIS — Updated March 29, 2026
+        BREAKING ANALYSIS — Updated March 30, 2026
       </p>
 
       <p>

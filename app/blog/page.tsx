@@ -47,8 +47,9 @@ function BlogContent() {
     router.push(`/blog?${params.toString()}`);
   }
 
-  const featured = filtered.find((p) => p.featured);
-  const rest = filtered.filter((p) => !p.featured);
+  const sorted = [...filtered].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const featured = sorted.find((p) => p.featured);
+  const rest = sorted.filter((p) => !p.featured);
 
   return (
     <div className="min-h-screen pt-24 pb-20">

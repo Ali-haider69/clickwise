@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://clickwise-pi.vercel.app"),
   title: {
     default: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
     template: "%s | ClickWise",
