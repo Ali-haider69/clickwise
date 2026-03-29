@@ -341,6 +341,19 @@ export const posts: Post[] = [
     seoKeywords: ["petrol price increase 2026", "oil prices war impact", "fuel crisis 2026", "iran oil supply effect", "gas prices global", "why are petrol prices rising 2026"],
   },
   {
+    slug: "red-sea-crisis-shipping-war-2026",
+    title: "Red Sea Crisis 2026 — Houthi Attacks, Suez Canal Collapse & Global Shipping Chaos",
+    excerpt: "The Red Sea is on fire. Houthi missiles are hitting ships daily, Suez Canal traffic has dropped over 60%, and global shipping costs have tripled. Here is everything you need to know about the worst maritime crisis in decades.",
+    category: "News",
+    readTime: "10 min",
+    date: "Mar 31, 2026",
+    image: "/images/red-sea-crisis-shipping-war-2026.png",
+    trending: true,
+    featured: false,
+    tags: ["Red Sea Crisis", "Houthi Attacks", "Suez Canal 2026", "Global Shipping", "Breaking News"],
+    seoKeywords: ["red sea crisis 2026", "houthi red sea attacks", "suez canal blocked 2026", "global shipping crisis 2026", "red sea shipping war", "red sea oil prices", "suez canal traffic drop"],
+  },
+  {
     slug: "world-war-3-usa-vs-iran-2026",
     title: "World War 3? What's Really Happening Between USA and Iran (2026)",
     excerpt: "Tensions between the United States and Iran have reached a boiling point in 2026. Military buildups, nuclear threats, proxy wars, and diplomatic breakdowns — here is a full breakdown of what is really happening and whether World War 3 is actually on the table.",
@@ -375,5 +388,5 @@ export const categories = [
   { name: "Health", icon: "💪", count: 29, color: "from-pink-500 to-rose-500" },
   { name: "Trending", icon: "🔥", count: 18, color: "from-red-500 to-orange-500" },
   { name: "Sports", icon: "🏏", count: 12, color: "from-green-500 to-teal-500" },
-  { name: "News", icon: "📰", count: 1, color: "from-red-600 to-rose-500" },
+  { name: "News", icon: "📰", count: 7, color: "from-red-600 to-rose-500" },
 ];

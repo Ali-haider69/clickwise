@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Search, Sun, Moon, Menu, X, Zap } from "lucide-react";
 
 const navLinks = [
-  { label: "Blog", href: "/blog" },
+  { label: "Blogs", href: "/blog" },
   { label: "Tools 🔥", href: "/tools" },
   { label: "Reviews", href: "/reviews" },
   { label: "Compare", href: "/compare" },
@@ -22,6 +22,17 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const cat = searchParams.get("cat");
+
+  const isNewsActive = pathname === "/blog" && cat === "News";
+
+  function isLinkActive(href: string) {
+    if (href === "/blog") return pathname === "/blog" && !cat;
+    if (href === "/blog?cat=money") return pathname === "/blog" && cat === "money";
+    return pathname === href || pathname.startsWith(href + "/");
+  }
 
   function handleNavSearch() {
     const q = navQuery.trim();
@@ -59,16 +70,36 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="px-4 py-2 rounded-lg transition-all duration-200 text-sm font-medium hover:bg-purple-500/10 hover:text-purple-600 dark:hover:text-purple-400"
-                style={{ color: "var(--text-secondary)" }}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const active = isLinkActive(link.href);
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="px-4 py-2 rounded-lg transition-all duration-200 text-sm font-medium"
+                  style={active
+                    ? { background: "rgba(147,51,234,0.15)", color: "var(--purple-400, #a855f7)", fontWeight: 600 }
+                    : { color: "var(--text-secondary)" }
+                  }
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+            <Link
+              href="/blog?cat=News"
+              className="px-4 py-2 rounded-lg transition-all duration-200 text-sm font-bold flex items-center gap-1.5"
+              style={isNewsActive
+                ? { background: "linear-gradient(to right, #9333ea, #3b82f6)", color: "#fff" }
+                : { background: "rgba(147,51,234,0.1)", color: "#a855f7" }
+              }
+            >
+              <span className="relative flex h-2 w-2">
+                <span className={`${isNewsActive ? "" : "animate-ping"} absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75`} />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500" />
+              </span>
+              Live News
+            </Link>
           </div>
 
           {/* Right Actions */}
@@ -142,17 +173,38 @@ export default function Navbar() {
           style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}
         >
           <div className="px-4 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="block px-4 py-3 rounded-lg transition-all hover:bg-purple-500/10"
-                style={{ color: "var(--text-secondary)" }}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const active = isLinkActive(link.href);
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-4 py-3 rounded-lg transition-all text-sm font-medium"
+                  style={active
+                    ? { background: "rgba(147,51,234,0.15)", color: "#a855f7", fontWeight: 600 }
+                    : { color: "var(--text-secondary)" }
+                  }
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+            <Link
+              href="/blog?cat=News"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 px-4 py-3 rounded-lg transition-all text-sm font-bold"
+              style={isNewsActive
+                ? { background: "linear-gradient(to right, #9333ea, #3b82f6)", color: "#fff" }
+                : { background: "rgba(147,51,234,0.1)", color: "#a855f7" }
+              }
+            >
+              <span className="relative flex h-2 w-2">
+                <span className={`${isNewsActive ? "" : "animate-ping"} absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75`} />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500" />
+              </span>
+              Live News
+            </Link>
             <div className="pt-2">
               <Link href="/blog" className="btn-primary block text-center text-sm">
                 Start Reading

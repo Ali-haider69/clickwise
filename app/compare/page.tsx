@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { products, type Product } from "@/data/products";
@@ -164,11 +164,11 @@ export default function ComparePage() {
                   ["Storage", "256 / 512 GB / 1 TB", "256 / 512 GB / 1 TB"],
                   ["Price", "$1,199", "$999"],
                 ].map(([spec, lv, rv], i) => (
-                  <>
-                    <div key={`s-${spec}`} className="p-3 text-sm" style={{ color: "var(--text-secondary)", background: i % 2 === 0 ? "transparent" : "rgba(99,102,241,0.04)" }}>{spec}</div>
-                    <div key={`l-${spec}`} className="p-3 text-center text-sm font-medium" style={{ borderLeft: "1px solid var(--border-color)", color: "var(--text-primary)", background: i % 2 === 0 ? "transparent" : "rgba(99,102,241,0.04)" }}>{lv}</div>
-                    <div key={`r-${spec}`} className="p-3 text-center text-sm font-medium" style={{ borderLeft: "1px solid var(--border-color)", color: "var(--text-primary)", background: i % 2 === 0 ? "transparent" : "rgba(99,102,241,0.04)" }}>{rv}</div>
-                  </>
+                  <React.Fragment key={spec}>
+                    <div className="p-3 text-sm" style={{ color: "var(--text-secondary)", background: i % 2 === 0 ? "transparent" : "rgba(99,102,241,0.04)" }}>{spec}</div>
+                    <div className="p-3 text-center text-sm font-medium" style={{ borderLeft: "1px solid var(--border-color)", color: "var(--text-primary)", background: i % 2 === 0 ? "transparent" : "rgba(99,102,241,0.04)" }}>{lv}</div>
+                    <div className="p-3 text-center text-sm font-medium" style={{ borderLeft: "1px solid var(--border-color)", color: "var(--text-primary)", background: i % 2 === 0 ? "transparent" : "rgba(99,102,241,0.04)" }}>{rv}</div>
+                  </React.Fragment>
                 ))}
               </div>
             </div>

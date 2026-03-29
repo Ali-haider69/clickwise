@@ -1898,6 +1898,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         <div className="flex flex-col gap-2 text-sm">
           <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
           <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/red-sea-crisis-shipping-war-2026">Red Sea Crisis — Suez Canal Collapse &amp; Global Shipping Chaos</InternalLink>
           <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
           <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
           <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
@@ -1910,6 +1911,148 @@ export const blogContent: Record<string, React.ReactNode> = {
         { q: "How many troops would a ground invasion require?", a: "Military analysts estimate a sustained ground campaign in Iran would require 300,000–500,000 troops. Israel's entire active military is around 170,000. This is why any ground action would require massive US involvement." },
         { q: "What is Israel's military objective in Iran?", a: "Israel's stated objectives are: (1) destroying Iran's nuclear program completely, (2) eliminating Iran's ability to threaten Israel with missiles, and (3) ending Iranian support for proxy groups like Hezbollah and Hamas. Airstrikes have partially achieved these goals but not fully." },
         { q: "Would the US support an Israeli ground invasion?", a: "The US has not publicly endorsed ground operations. However, the presence of 3 US carrier strike groups in the region and 40,000+ troops suggests the infrastructure for escalation is already in place. The political decision in Washington remains contested." },
+      ]} />
+    </div>
+  ),
+
+  "red-sea-crisis-shipping-war-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        BREAKING — Updated March 31, 2026
+      </p>
+      <p>
+        The Red Sea — one of the most important shipping corridors on earth — is now a war zone. Houthi rebels from Yemen have been attacking commercial ships, oil tankers, and US warships since October 2023. But since the Iran-US war erupted on February 28, 2026, the attacks have escalated dramatically. Suez Canal traffic has collapsed, global shipping costs have tripled, and the economic shockwaves are hitting supermarkets, fuel pumps, and supply chains worldwide. This is the full picture of what is happening and what it means for you.
+      </p>
+
+      <StatBox items={[
+        ["60%+", "Drop in Suez Canal Traffic"],
+        ["3×", "Rise in Shipping Costs"],
+        ["300+", "Ships Attacked Since Oct 2023"],
+        ["$200B+", "Annual Trade at Risk"],
+      ]} />
+
+      <BlogImage src="/images/red-sea-crisis-shipping-war-2026.png" alt="Red Sea Crisis 2026 — Houthi Attacks and Suez Canal Collapse" caption="The Red Sea corridor — responsible for 12% of global trade — has become a war zone in 2026" />
+
+      <h2 className="text-2xl font-bold mt-8">Why Is the Red Sea So Important?</h2>
+      <p>
+        The Red Sea connects the Mediterranean Sea to the Indian Ocean through the Suez Canal — a route used by roughly 12% of all global trade and about 30% of global container shipping. Every day, hundreds of ships pass through carrying oil, gas, consumer goods, raw materials, and food. It is the fastest route between Europe and Asia. When it shuts down, the whole world feels it. To understand why the Houthis are attacking this route, read our full <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis entering the war explainer</InternalLink>.
+      </p>
+
+      <InfoBox title="The Red Sea by the Numbers" items={[
+        ["12%", "of all global trade passes through the Red Sea annually — roughly $1 trillion in goods per year."],
+        ["30%", "of global container shipping uses this route — clothing, electronics, cars, food, chemicals."],
+        ["15%", "of global oil and LNG shipments transit the Red Sea each year."],
+        ["Suez Alternative", "Without the Suez Canal, ships must sail around the Cape of Good Hope (South Africa), adding 10–14 days and $1–2 million per voyage in extra fuel costs."],
+        ["Bab-el-Mandeb Strait", "The narrow chokepoint at the southern entrance — just 30km wide — is what the Houthis control from Yemen's coastline. Block this, and the whole route shuts down."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">What Have the Houthis Actually Done?</h2>
+      <p>
+        Since October 2023, the Houthis have conducted the most sustained maritime assault by a non-state actor in modern history. Initially targeting ships linked to Israel, they expanded their attacks to any vessel they deemed connected to the US or UK. Since the Iran-US war began in February 2026, the attacks have become near-daily. <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline underline-offset-2">Reuters has tracked every confirmed Houthi maritime attack</a> since the crisis began.
+      </p>
+
+      <DataTable
+        headers={["Weapon Used", "Number of Incidents", "Notable Targets", "Effect"]}
+        rows={[
+          ["Anti-ship ballistic missiles", "45+", "US warships, tankers", "Several near misses, 2 ships sunk"],
+          ["Cruise missiles", "60+", "Commercial vessels", "Multiple ships damaged and abandoned"],
+          ["Suicide drones (Shahed)", "100+", "Bulk carriers, container ships", "Fires, crew casualties, 1 ship sunk"],
+          ["Naval mines", "12+", "Shipping lanes", "2 ships hit, lane diversions forced"],
+          ["Speedboat raids", "8", "Cargo ships", "Galaxy Leader seized Nov 2023, crew held"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">How Has Global Shipping Responded?</h2>
+      <p>
+        The shipping industry's response has been massive and swift. Major carriers began diverting vessels around the Cape of Good Hope in December 2023. By March 2026, the diversion has become the industry standard rather than the exception. The financial consequences are enormous — and ultimately paid by consumers everywhere.
+      </p>
+
+      <InfoBox title="Shipping Industry Response Timeline" items={[
+        ["Dec 2023", "Maersk, MSC, CMA CGM — the world's three largest shipping companies — suspend Red Sea transits and reroute around Africa."],
+        ["Jan 2024", "US and UK launch Operation Prosperity Guardian — naval coalition striking Houthi missile sites in Yemen."],
+        ["Mar 2024", "Suez Canal Authority reports 50% drop in vessel transits. Canal toll revenues collapse by $600M+ per month."],
+        ["Feb 28, 2026", "Iran-US war begins. Houthi attacks escalate from weekly to near-daily."],
+        ["Mar 2026", "Suez Canal traffic at its lowest level since the 1967 Arab-Israeli war. Over 60% of normal traffic now rerouting."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">What Is It Doing to Prices?</h2>
+      <p>
+        This is where the Red Sea crisis stops being an abstract geopolitical event and becomes your weekly shopping bill. The cost of shipping a standard 40-foot container from Asia to Europe has risen from around $1,500 in early 2023 to over $5,500 in March 2026 — with some spot rates exceeding $7,000. Those costs travel directly through supply chains to retail prices.
+      </p>
+
+      <InfoBox title="Price Impact Across Sectors" items={[
+        ["Consumer Electronics", "Smartphones, laptops, and TVs assembled in Asia and shipped to Europe are facing 8–12% price increases due to longer routes and higher freight costs."],
+        ["Clothing & Fast Fashion", "European fast fashion retailers sourcing from Bangladesh and India — previously a 2-week Red Sea voyage — now face 5–6 week supply chains via the Cape."],
+        ["Oil & Fuel", "Oil tankers avoiding the Red Sea are adding massive voyage costs. Combined with the Iran war disrupting Gulf supply, this is a key driver of the 2026 oil price spike. Read our <a href='/blog/petrol-prices-skyrocket-war-impact-2026' style='color: #a855f7; text-decoration: underline;'>petrol price breakdown</a> for full detail."],
+        ["Food Prices", "Grain shipments from Black Sea ports and Middle Eastern food imports face delays and higher costs — contributing to grocery inflation across Europe and Africa."],
+        ["Insurance Costs", "War risk insurance premiums for Red Sea transits have risen 900% since 2023. Most insurers now refuse to cover this route at any price."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Can the US Military Stop the Attacks?</h2>
+      <p>
+        The US has been striking Houthi missile sites, radar installations, and launch infrastructure in Yemen since January 2024 — over 14 months of continuous bombardment. The result: the attacks have not stopped. They have intensified. <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline underline-offset-2">BBC News has reported extensively on why US strikes have failed</a> to degrade Houthi capabilities.
+      </p>
+
+      <InfoBox title="Why US Strikes Are Not Working" items={[
+        ["Mobile Launchers", "The Houthis use truck-mounted mobile missile launchers that can be moved in minutes. They are nearly impossible to target from the air before they fire and relocate."],
+        ["Underground Stockpiles", "Decades of Iranian weapons smuggling has given the Houthis vast underground weapon caches across Yemen's mountains — too dispersed and buried to destroy from the air."],
+        ["No Ground Forces", "Effective suppression requires ground troops in Yemen — something no country is willing to commit given the Afghanistan precedent. Without boots on the ground, the strikes are whack-a-mole."],
+        ["Public Support", "Houthi attacks on Israel and US ships are enormously popular in Yemen. Strikes that kill civilians are creating more fighters than they eliminate."],
+        ["Iranian Resupply", "Even as some stockpiles are destroyed, Iran continues to smuggle replacement weapons through Oman and via sea routes. The tap cannot be turned off from the air."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Which Countries Are Hit Hardest?</h2>
+
+      <DataTable
+        headers={["Region / Country", "Key Dependency on Red Sea", "Impact Level"]}
+        rows={[
+          ["Europe (especially Germany, UK, Italy)", "Primary route for Asia imports", "Severe — 10-14 day delays, price rises"],
+          ["Egypt", "Suez Canal revenues = 2% of GDP", "Critical — losing $1B+ per month"],
+          ["East Africa (Ethiopia, Kenya, Somalia)", "Most imports arrive via Red Sea", "Severe — food and fuel shortages"],
+          ["India", "Exports to Europe routed through Red Sea", "High — shipping costs doubled for exporters"],
+          ["China", "Manufactures most goods shipped through Red Sea to Europe", "High — exporters absorbing freight costs"],
+          ["USA", "Less dependent — Pacific and Atlantic routes available", "Moderate — mainly energy price impact"],
+        ]}
+      />
+
+      <p>
+        The biggest diplomatic casualty is Egypt, which earns roughly $9–10 billion per year from Suez Canal tolls. With traffic down 60%, the Egyptian economy — already struggling — faces a severe fiscal crisis. This is adding regional political pressure to end the war quickly. For the broader picture of how many countries are affected by the Iran war, see our <InternalLink href="/blog/countries-involved-iran-us-war-2026">full countries involved breakdown</InternalLink>.
+      </p>
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Red Sea crisis and Houthi attack tracker
+          </a>
+          <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters — Suez Canal shipping data and maritime updates
+          </a>
+          <a href="https://www.aljazeera.com/tag/red-sea/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Al Jazeera — Red Sea attacks live coverage
+          </a>
+        </div>
+      </div>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
+          <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
+          <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
+          <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
+          <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
+        </div>
+      </div>
+
+      <FaqSection items={[
+        { q: "Why are Houthis attacking ships in the Red Sea?", a: "The Houthis say they are attacking ships linked to Israel, the US, or the UK in solidarity with Palestinians in Gaza and, since February 2026, in response to the US-Israel war on Iran. In practice, they have attacked vessels from dozens of nations with no direct connection to Israel — making the Red Sea dangerous for all shipping." },
+        { q: "Has the Suez Canal been completely closed?", a: "No — the Suez Canal itself remains open and operational. What has happened is that shipping companies have voluntarily stopped using it because the southern entrance (through the Bab-el-Mandeb Strait controlled by Houthis) is too dangerous. Traffic has dropped over 60% from normal levels." },
+        { q: "How long will the Red Sea crisis last?", a: "The crisis will last as long as the Houthis have weapons and motivation to attack — which means as long as the Iran-US war continues and no ground campaign is launched in Yemen. Military analysts estimate the crisis could persist throughout 2026 and potentially into 2027." },
+        { q: "Is it safe for ships to pass through the Red Sea in 2026?", a: "No major shipping line considers the Red Sea safe without naval escort. Insurance is near-impossible to obtain. The US Navy escorts some vessels but cannot protect all commercial traffic. The risk of missile, drone, or mine attack is real and ongoing." },
+        { q: "How does the Red Sea crisis affect me personally?", a: "If you live in Europe, the UK, or Africa, you are already feeling it in higher prices for electronics, clothing, food, and fuel. Inflation figures in early 2026 show shipping costs as a measurable contributor to consumer price increases. In the UK, analysts estimate the Red Sea disruption is adding 0.3–0.5% to annual inflation." },
+        { q: "Will the Red Sea crisis cause a global recession?", a: "By itself, no — but combined with the Iran war disrupting Gulf oil supply, rising energy prices, and broader geopolitical uncertainty, it is a significant headwind for global growth. The IMF has cut 2026 global GDP forecasts by 0.4% citing the Red Sea and Iran war combined." },
       ]} />
     </div>
   ),
@@ -1996,6 +2139,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         <div className="flex flex-col gap-2 text-sm">
           <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
           <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/red-sea-crisis-shipping-war-2026">Red Sea Crisis — Suez Canal Collapse &amp; Global Shipping Chaos</InternalLink>
           <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
           <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
           <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
@@ -2107,6 +2251,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         <div className="flex flex-col gap-2 text-sm">
           <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
           <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/red-sea-crisis-shipping-war-2026">Red Sea Crisis — Suez Canal Collapse &amp; Global Shipping Chaos</InternalLink>
           <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
           <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
           <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
@@ -2261,6 +2406,18 @@ export const blogContent: Record<string, React.ReactNode> = {
       <p>
         The Iran-US conflict is already a regional war in all but name. The question is not whether other countries are involved — they already are. The question is whether the involvement stays at the proxy level or crosses into something far more dangerous. The alliances are forming. The positions are hardening. And the world is watching every move.
       </p>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
+          <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/red-sea-crisis-shipping-war-2026">Red Sea Crisis — Suez Canal Collapse &amp; Global Shipping Chaos</InternalLink>
+          <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
+          <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
+          <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
+        </div>
+      </div>
 
       <FaqSection items={[
         { q: "Which countries support Iran in the war?", a: "Iran's key backers include Russia (weapons and diplomatic cover), China (economic support and UN veto), and its proxy network: Hezbollah in Lebanon, the Houthis in Yemen, and Iranian-backed militias in Iraq and Syria. None of these are expected to enter direct combat on Iran's behalf." },
@@ -2417,6 +2574,18 @@ export const blogContent: Record<string, React.ReactNode> = {
       <p>
         The bottom line: petrol prices are going up, and the Iran crisis is a key driver. How bad it gets depends on whether diplomacy prevails or the conflict escalates. Stay informed, plan ahead, and take practical steps now while prices are still manageable. We will keep updating this article as the situation develops.
       </p>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
+          <InternalLink href="/blog/red-sea-crisis-shipping-war-2026">Red Sea Crisis — Suez Canal Collapse &amp; Global Shipping Chaos</InternalLink>
+          <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
+          <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
+          <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
+          <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
+        </div>
+      </div>
 
       <FaqSection items={[
         { q: "Why are petrol prices rising in 2026?", a: "The primary driver is the escalating US-Iran conflict and the threat to the Strait of Hormuz, through which 20% of global oil passes daily. Markets are pricing in a 'geopolitical risk premium' — pushing crude oil prices up even before any actual supply is disrupted." },
@@ -2656,6 +2825,18 @@ export const blogContent: Record<string, React.ReactNode> = {
       <p>
         The world is watching. Diplomats are working. Generals on both sides are making contingency plans. What is certain is that the era of low-level US-Iran tension has given way to something more volatile, more unpredictable, and more dangerous than anything we have seen in decades. We will continue updating this article as events develop.
       </p>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/red-sea-crisis-shipping-war-2026">Red Sea Crisis — Suez Canal Collapse &amp; Global Shipping Chaos</InternalLink>
+          <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
+          <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
+          <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
+          <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
+        </div>
+      </div>
 
       <FaqSection items={[
         { q: "Is World War 3 actually starting in 2026?", a: "As of March 2026, analysts assess a full world war as unlikely but not impossible. The situation is more volatile than any point since the Cold War. The most probable outcome remains controlled escalation rather than direct war, but a miscalculation on either side could change that quickly." },
