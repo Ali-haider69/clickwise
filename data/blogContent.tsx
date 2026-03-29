@@ -1808,6 +1808,322 @@ export const blogContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "israel-ground-invasion-iran-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        BREAKING — Updated March 30, 2026
+      </p>
+      <p>
+        The air war against Iran has been raging for over a month. Now the question on every military analyst's desk is whether Israel is preparing to send ground troops into Iranian territory — a move that would mark the most significant military escalation in the Middle East in decades. Here is everything we know about what is happening, why Israel is considering it, and what a ground invasion would actually look like.
+      </p>
+
+      <StatBox items={[
+        ["29+", "Days of Active War"],
+        ["2,000+", "Reported Iranian Casualties"],
+        ["100+", "Israeli Airstrikes on Iran"],
+        ["88M", "Iran's Population"],
+      ]} />
+
+      <BlogImage src="/images/israel-ground-invasion-iran-2026.png" alt="Israel Ground Invasion of Iran 2026" caption="Israeli forces mass near the border as the war enters its most dangerous phase" />
+
+      <h2 className="text-2xl font-bold mt-8">What Has Happened So Far?</h2>
+      <p>
+        On February 28, 2026, the United States and Israel launched coordinated surprise airstrikes on Iran, targeting nuclear facilities, missile production sites, command infrastructure, and key military installations. The strikes killed Supreme Leader Ali Khamenei and several senior Revolutionary Guard commanders in the opening hours of the campaign. For the full context of how this war started, read our <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">complete World War 3 breakdown</InternalLink>.
+      </p>
+      <p>
+        Iran retaliated with massive missile and drone barrages against Israel and US bases across the region. Despite the scale of the initial strikes, Iran's military has proven more resilient than anticipated — continuing to fire missiles, keeping the Strait of Hormuz under threat, and activating its proxy network. <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline underline-offset-2">Reuters has been tracking every major military development</a> since day one.
+      </p>
+
+      <InfoBox title="Key Events So Far" items={[
+        ["Feb 28, 2026", "US and Israel launch simultaneous airstrikes on Iran. Khamenei killed. Iran immediately retaliates."],
+        ["Mar 1–10, 2026", "Iran fires hundreds of ballistic missiles at Israel and US bases. Houthi attacks intensify in the Red Sea."],
+        ["Mar 15, 2026", "Israel strikes Iranian nuclear sites at Fordow and Natanz — both heavily damaged but not fully destroyed."],
+        ["Mar 23, 2026", "Trump pauses strikes on Iranian energy infrastructure for 10 days to allow diplomatic talks."],
+        ["Mar 27, 2026", "Witkoff presents 15-point peace plan. Iran publicly rejects it within hours."],
+        ["Mar 29, 2026", "Houthis fire ballistic missiles at central Israel. Israel vows to 'finish the job' — ground options now on the table."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Why Is Israel Considering a Ground Invasion?</h2>
+      <p>
+        Israel's military objectives from the air campaign have not been fully achieved. Despite dozens of strikes, Iran's nuclear program has been damaged but not destroyed — key underground facilities at Fordow are buried too deep for conventional bombs to fully penetrate. Iran's missile arsenals have been reduced but not eliminated, and the regime remains in control.
+      </p>
+      <InfoBox title="Israel's Reasons for Ground Escalation" items={[
+        ["Unfinished Nuclear Mission", "Underground facilities like Fordow are beyond the reach of standard air-dropped munitions. Only ground forces or bunker-busting nuclear weapons could fully destroy them."],
+        ["Iran Still Firing Missiles", "After 29 days of airstrikes, Iran continues to launch ballistic missiles at Israeli cities. Ground operations would target launch sites that aerial strikes cannot neutralise."],
+        ["Regime Survival", "Israel's stated goal is to prevent Iran from ever threatening Israel again. That may require regime change — impossible from the air alone."],
+        ["Window of Opportunity", "With the US military present and air superiority established, Israel believes this is the best possible strategic moment for a ground operation."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">What Would a Ground Invasion Actually Look Like?</h2>
+      <p>
+        A full-scale Israeli ground invasion of Iran — over 1,500 kilometres away across multiple hostile nations — is logistically almost impossible without either a land corridor through Iraq and Syria (both hostile) or a massive US-supported amphibious and airborne operation. What analysts actually expect is something more limited:
+      </p>
+      <InfoBox title="Likely Ground Operation Scenarios" items={[
+        ["Special Forces Raids", "Israeli commandos inserted by air or sea to destroy specific underground facilities, eliminate remaining leadership targets, or seize nuclear material."],
+        ["Limited Border Incursion via Iraq", "Small units crossing into western Iran from US-controlled positions in Iraq to destroy missile launch sites near the border."],
+        ["US Marine Seizure of Kharg Island", "The oil terminal island that handles 90% of Iranian oil exports — seizing it would economically strangle Iran and force negotiations."],
+        ["Full Ground War (Least Likely)", "A large-scale invasion would require hundreds of thousands of troops, years of planning, and near-unlimited political will. Not expected in 2026."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">The Risks — Why a Ground War Is Terrifying</h2>
+      <DataTable
+        headers={["Risk", "Detail", "Severity"]}
+        rows={[
+          ["Iranian Guerrilla War", "88 million people, mountainous terrain — US faced this in Afghanistan (pop. 40M) for 20 years", "Extreme"],
+          ["Hezbollah Full Activation", "150,000+ rockets unleashed on Israel as ground troops deploy", "Critical"],
+          ["Iraqi Militia Attacks", "US supply lines through Iraq cut off by Iranian-backed forces", "High"],
+          ["Russian Weapons Supply", "Moscow accelerates advanced weapons to Iran's resistance", "High"],
+          ["Global Oil Shock", "Full Hormuz closure + land war = $200+ oil", "Critical"],
+        ]}
+      />
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Full Iran War Coverage & Ground Operation Analysis
+          </a>
+          <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters — Middle East: Live updates on Israeli military movements
+          </a>
+        </div>
+      </div>
+
+      <p>
+        The decision to launch ground operations rests ultimately with Israel's war cabinet and the Biden White House. As of March 30, 2026, the US has publicly urged restraint while privately preparing contingency plans. The next 2–3 weeks will be decisive. We will update this article as events develop.
+      </p>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
+          <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
+          <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
+          <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
+        </div>
+      </div>
+
+      <FaqSection items={[
+        { q: "Has Israel started a ground invasion of Iran?", a: "As of March 30, 2026, Israel has not launched a full ground invasion. However, special forces operations and limited ground incursions are being actively planned. Israel's war cabinet has been debating escalation options as airstrikes alone have not fully achieved their objectives." },
+        { q: "Can Israel actually invade Iran?", a: "A full-scale conventional invasion is logistically extremely difficult — Iran is over 1,500km from Israel with no direct border. What is more likely is targeted special forces raids, US-supported seizure of key strategic assets like Kharg Island, and limited border operations from Iraq." },
+        { q: "How many troops would a ground invasion require?", a: "Military analysts estimate a sustained ground campaign in Iran would require 300,000–500,000 troops. Israel's entire active military is around 170,000. This is why any ground action would require massive US involvement." },
+        { q: "What is Israel's military objective in Iran?", a: "Israel's stated objectives are: (1) destroying Iran's nuclear program completely, (2) eliminating Iran's ability to threaten Israel with missiles, and (3) ending Iranian support for proxy groups like Hezbollah and Hamas. Airstrikes have partially achieved these goals but not fully." },
+        { q: "Would the US support an Israeli ground invasion?", a: "The US has not publicly endorsed ground operations. However, the presence of 3 US carrier strike groups in the region and 40,000+ troops suggests the infrastructure for escalation is already in place. The political decision in Washington remains contested." },
+      ]} />
+    </div>
+  ),
+
+  "houthis-entering-iran-us-war-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        BREAKING — Updated March 30, 2026
+      </p>
+      <p>
+        Yemen's Houthi rebels have officially entered the Iran-US war — firing ballistic missiles directly at Israeli cities and continuing their campaign against US warships in the Red Sea. This is no longer just a proxy conflict in the background. The Houthis are now a full front in a multi-theatre war. Here is who they are, why they joined, and what their involvement means for the conflict.
+      </p>
+
+      <StatBox items={[
+        ["150,000+", "Houthi Fighters"],
+        ["100+", "Missiles Fired at Israel"],
+        ["20%", "Global Oil Through Red Sea"],
+        ["3rd", "Active War Front Opened"],
+      ]} />
+
+      <BlogImage src="/images/houthis-entering-iran-us-war-2026.png" alt="Houthis Entering the Iran-US War 2026" caption="Houthi forces launch ballistic missiles toward Israel from Yemen — a new front opens in the regional war" />
+
+      <h2 className="text-2xl font-bold mt-8">Who Are the Houthis?</h2>
+      <p>
+        The Houthis — officially known as Ansar Allah — are a Yemeni armed movement that controls the northern part of Yemen including the capital Sanaa. They emerged in the 1990s as a religious and political movement and evolved into one of the most battle-hardened non-state military forces in the world after years of civil war against the Saudi-led coalition.
+      </p>
+      <InfoBox title="Houthi Fast Facts" items={[
+        ["Full Name", "Ansar Allah — meaning 'Supporters of God'. Known internationally as the Houthis after their founding family."],
+        ["Territory", "Control northern Yemen including Sanaa, Hodeidah port, and most of the Red Sea coastline — giving them access to one of the world's most critical shipping lanes."],
+        ["Armed by Iran", "Iran has supplied the Houthis with ballistic missiles, anti-ship missiles, drones, and military training for over a decade through a network of smuggling routes."],
+        ["Combat Experience", "Over 10 years of active warfare against Saudi Arabia and UAE — the most combat-experienced proxy force in Iran's network."],
+        ["Previous Attacks", "Since October 2023, Houthis have fired over 300 missiles and drones at commercial shipping and US warships in the Red Sea, disrupting global trade significantly."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Why Did the Houthis Enter the War Now?</h2>
+      <p>
+        The Houthis did not wait to be asked. The moment the US and Israel struck Iran on February 28, Houthi leadership announced they were "joining the battle" in solidarity with Iran and the Palestinian cause. Their entry is driven by ideology, strategic calculation, and direct instruction from Tehran. For a full account of how the war started, see our <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3 USA vs Iran breakdown</InternalLink>. <a href="https://www.aljazeera.com/tag/houthis/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline underline-offset-2">Al Jazeera's live Houthi tracker</a> has documented every attack since October 2023.
+      </p>
+      <InfoBox title="Why They Joined" items={[
+        ["Iranian Command", "The Houthis operate within Iran's Axis of Resistance and take strategic direction from Tehran. When Iran is attacked, activating the Houthi front is part of the pre-planned retaliation strategy."],
+        ["Ideological Commitment", "Houthi leadership views Israel and the US as existential enemies. Their slogan literally includes 'Death to America, Death to Israel' — this war is their stated purpose."],
+        ["Strategic Distraction", "By opening the Red Sea front and firing on Israel from the south, Houthis force Israel and the US to fight on multiple fronts simultaneously, stretching resources and attention."],
+        ["Popular Support", "Within Yemen and much of the Arab world, fighting Israel and the US brings the Houthis enormous public support — strengthening their domestic political position."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">What Have the Houthis Done Since Joining?</h2>
+      <DataTable
+        headers={["Date", "Action", "Target", "Result"]}
+        rows={[
+          ["Mar 1–10", "Ballistic missile salvos", "Southern Israel", "Intercepted by Iron Dome / Arrow systems"],
+          ["Mar 12", "Anti-ship missile attack", "USS Gravely (destroyer)", "Missile intercepted, no casualties"],
+          ["Mar 15–20", "Drone swarm attacks", "Red Sea commercial vessels", "3 ships damaged, shipping disrupted"],
+          ["Mar 25", "Hypersonic missile test-fired", "Israel — Tel Aviv direction", "Intercepted over Jordan"],
+          ["Mar 28", "Largest missile barrage yet", "Haifa, Tel Aviv, Beer Sheva", "Several intercepted, 2 hit suburbs"],
+          ["Mar 29", "Officially declared 'full war'", "All US-Israel assets", "Ongoing — situation escalating"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-8">How Does This Change the War?</h2>
+      <p>
+        The Houthi entry transforms the conflict from a bilateral US-Israel vs Iran war into a genuine multi-front regional war. Israel now faces threats from four directions simultaneously: Iran (northeast), Hezbollah in Lebanon (north), Hamas remnants in Gaza (southwest), and the Houthis in Yemen (south). The US military is simultaneously managing the Red Sea front, Persian Gulf operations, and supporting Israeli air defence. This multi-front pressure is one of the key reasons Israel is now weighing a <InternalLink href="/blog/israel-ground-invasion-iran-2026">ground invasion of Iran</InternalLink> — airstrikes alone are not enough to silence all these fronts.
+      </p>
+      <InfoBox title="Strategic Impact of Houthi Entry" items={[
+        ["Red Sea Shipping", "Global shipping through the Red Sea — which handles 12% of world trade — has already dropped dramatically. Many shipping companies are rerouting around Africa, adding 10-14 days and massive costs."],
+        ["Israel's Iron Dome Saturation", "Simultaneous missile attacks from multiple directions risk overwhelming Israel's layered air defence systems. Each Houthi salvo forces Israel to expend expensive interceptor missiles."],
+        ["US Naval Pressure", "US warships in the Red Sea and Persian Gulf are now engaged on two active fronts — the Red Sea against Houthis and the Gulf facing Iranian naval threats."],
+        ["Political Pressure on US", "Every Houthi attack on a US ship or commercial vessel adds to domestic and international pressure on the White House to either escalate against Yemen or seek a diplomatic exit."],
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Houthi attacks and Red Sea crisis coverage
+          </a>
+          <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters — Yemen and Houthi war updates
+          </a>
+        </div>
+      </div>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
+          <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
+          <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
+          <InternalLink href="/blog/trump-15-point-iran-peace-plan-2026">Trump's 15-Point Iran Peace Plan — Full Analysis</InternalLink>
+        </div>
+      </div>
+
+      <FaqSection items={[
+        { q: "Who are the Houthis and why do they fight?", a: "The Houthis (Ansar Allah) are a Yemeni armed movement controlling northern Yemen. They are aligned with Iran and view the US and Israel as enemies. They have been fighting a civil war against the Saudi-led coalition since 2015 and have joined the Iran-US war in solidarity with Tehran and in opposition to Israel." },
+        { q: "Can the Houthis actually hit Israel from Yemen?", a: "Yes. Yemen is approximately 1,800km from Israel, but the Houthis possess Iranian-supplied ballistic missiles with sufficient range. They have been firing at Israel since October 2023 and have continued during the current war. Most are intercepted by Israel's Arrow and Iron Dome systems, but some have gotten through." },
+        { q: "Why can't the US just destroy the Houthis?", a: "The US and UK have been conducting strikes on Houthi positions in Yemen since January 2024 with limited effect. The Houthis are deeply embedded in civilian areas, use mobile launchers that are hard to target, and have enormous local popular support. Defeating them requires a ground campaign in Yemen — which no country is willing to undertake." },
+        { q: "How are the Houthis affecting global shipping?", a: "The Houthis control the Bab-el-Mandeb Strait, the entrance to the Red Sea. By attacking commercial ships, they have caused a major rerouting of global trade. Traffic through the Suez Canal has dropped over 50%, with ships rerouting around Africa. This adds 10-14 days to journeys and significantly raises shipping costs and consumer prices globally." },
+        { q: "Are the Houthis a threat to US aircraft carriers?", a: "The Houthis possess Iranian anti-ship missiles including the Noor and potentially the Khalij Fars — both capable of targeting large vessels. US carriers maintain substantial defensive systems and air cover. The risk to a carrier is real but considered manageable by US Navy assessments. The greater risk is to smaller vessels and commercial shipping." },
+      ]} />
+    </div>
+  ),
+
+  "trump-15-point-iran-peace-plan-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-lg font-semibold text-red-500">
+        DIPLOMACY BREAKDOWN — Updated March 30, 2026
+      </p>
+      <p>
+        After nearly a month of war, the Trump administration has put a diplomatic offer on the table — a 15-point peace proposal delivered by US special envoy Steve Witkoff. Iran publicly rejected it within hours. But behind the scenes, messages are being exchanged. Here is every point of the plan explained, why Iran said no, and whether there is any realistic path to ending this war. If you need the full context of how this conflict began, read our <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3 USA vs Iran explainer</InternalLink>. <a href="https://www.aljazeera.com/news/2026/3/27/iran-rejects-us-peace-proposal" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline underline-offset-2">Al Jazeera reported Iran's rejection in real time</a>.
+      </p>
+
+      <StatBox items={[
+        ["15", "Points in Trump's Plan"],
+        ["Hours", "Iran Took to Reject It"],
+        ["29+", "Days of Active War"],
+        ["0", "Direct Talks Held"],
+      ]} />
+
+      <BlogImage src="/images/trump-15-point-iran-peace-plan-2026.png" alt="Trump's 15-Point Iran Peace Plan 2026" caption="US Special Envoy Steve Witkoff delivers Trump's 15-point peace proposal — Iran rejects it within hours" />
+
+      <h2 className="text-2xl font-bold mt-8">Who Is Steve Witkoff?</h2>
+      <p>
+        Steve Witkoff is Donald Trump's Special Envoy for Middle East Affairs — a New York real estate developer turned diplomat who previously brokered the Gaza ceasefire deal in early 2025. Trump trusts him completely, which is why he was chosen to carry this proposal. He has been shuttling between Qatar, Oman, and other intermediaries trying to open a channel with Tehran.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8">The 15-Point Plan — Every Point Explained</h2>
+      <p>
+        The full text of the plan has not been officially published, but its contents have been reported by CNN, Reuters, and Al Jazeera based on diplomatic sources. Here is each point broken down:
+      </p>
+
+      <InfoBox title="Points 1–5: Nuclear Demands" items={[
+        ["Point 1", "Iran must permanently halt uranium enrichment above 5% purity — far below weapons-grade."],
+        ["Point 2", "All enriched uranium stockpiles above 5% to be shipped out of Iran to a neutral third country within 30 days."],
+        ["Point 3", "The Fordow underground enrichment facility to be permanently sealed and converted to non-nuclear research."],
+        ["Point 4", "Full IAEA inspector access to all Iranian nuclear sites — including previously undisclosed locations — within 14 days."],
+        ["Point 5", "Iran to sign the Additional Protocol to the Nuclear Non-Proliferation Treaty, accepting the most intrusive inspection regime available."],
+      ]} />
+
+      <InfoBox title="Points 6–10: Military & Proxy Demands" items={[
+        ["Point 6", "Iran to immediately cease all weapons transfers to Hezbollah, Hamas, Houthi rebels, and Iraqi militias."],
+        ["Point 7", "Iran to publicly order the Houthis to halt all attacks on shipping in the Red Sea within 48 hours."],
+        ["Point 8", "Iranian-backed militias in Iraq and Syria to stand down and return to barracks within 7 days."],
+        ["Point 9", "Iran to release all US and allied citizens held in Iranian prisons — currently estimated at 9 individuals."],
+        ["Point 10", "Iran to formally recognise Israel's right to exist — the most controversial demand, and the one analysts say killed the deal immediately."],
+      ]} />
+
+      <InfoBox title="Points 11–15: US Concessions to Iran" items={[
+        ["Point 11", "The US will suspend all new sanctions on Iran for 90 days pending compliance verification."],
+        ["Point 12", "Iran's frozen assets abroad — estimated at $10–15 billion — to be released in tranches as compliance is verified."],
+        ["Point 13", "The US will not seek regime change in Iran and will publicly guarantee Iran's territorial integrity."],
+        ["Point 14", "A permanent ceasefire between US-Israeli forces and Iran to take effect within 72 hours of Iran accepting all 15 points."],
+        ["Point 15", "A comprehensive new nuclear deal — replacing the collapsed JCPOA — to be negotiated within 6 months of the ceasefire."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Why Did Iran Reject It?</h2>
+      <p>
+        Iran's foreign minister Abbas Araghchi rejected the proposal publicly within hours, calling it "humiliating" and "designed for surrender, not peace." Analysts say several specific points made acceptance politically impossible for Tehran:
+      </p>
+      <InfoBox title="Iran's Key Objections" items={[
+        ["Point 10 — Recognise Israel", "No Iranian government can recognise Israel and survive domestically. This point alone guaranteed rejection. It was either a negotiating tactic or a deliberate dealbreaker inserted by the Israeli side."],
+        ["Point 6 — Cut Off Proxies", "Iran's proxy network IS its strategic deterrence. Abandoning Hezbollah, Hamas, and the Houthis leaves Iran with no asymmetric defence — essentially defenceless against future Israeli strikes."],
+        ["No Ceasefire First", "The plan demands compliance before a ceasefire, not after. Iran insists on a ceasefire as the starting point for any negotiation, not the end reward."],
+        ["Verification Timeline", "14-day IAEA access and 30-day uranium removal are seen as impossible timelines designed to be rejected, giving the US justification to continue strikes."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-8">Is There Any Path to Peace?</h2>
+      <DataTable
+        headers={["Scenario", "Likelihood", "What It Requires"]}
+        rows={[
+          ["Modified deal — Iran accepts points 1-9, 11-15", "25%", "US drops Point 10 (Israel recognition) quietly"],
+          ["Temporary ceasefire only", "35%", "Both sides agree to pause without resolving core issues"],
+          ["War continues for months", "30%", "Diplomatic failure — military pressure continues"],
+          ["Full escalation — ground war", "10%", "Complete breakdown of all diplomatic channels"],
+        ]}
+      />
+
+      <p>
+        The most realistic outcome according to analysts is a modified agreement where Point 10 is quietly dropped, Iran agrees to partial nuclear concessions, and both sides declare a ceasefire without resolving the proxy and recognition issues — essentially kicking the hardest problems down the road. Oman is currently the most active back-channel, hosting messages between Washington and Tehran. Meanwhile, the <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthi attacks on Red Sea shipping</InternalLink> continue to add pressure on all sides to find an exit.
+      </p>
+
+      <div className="glass rounded-2xl p-5 my-6 space-y-3">
+        <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Further Reading — Trusted Sources</p>
+        <div className="flex flex-col gap-2">
+          <a href="https://www.bbc.com/news/topics/cez9r3g0g9gt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> BBC News — Iran peace talks and diplomatic developments
+          </a>
+          <a href="https://www.reuters.com/world/middle-east/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 underline underline-offset-2">
+            <span>🔗</span> Reuters — Witkoff peace plan full coverage and analysis
+          </a>
+        </div>
+      </div>
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Also in This Series</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/world-war-3-usa-vs-iran-2026">World War 3: USA vs Iran — Full Breakdown</InternalLink>
+          <InternalLink href="/blog/petrol-prices-skyrocket-war-impact-2026">Oil &amp; Petrol Prices: Impact of the Iran War</InternalLink>
+          <InternalLink href="/blog/countries-involved-iran-us-war-2026">Countries Involved in the Iran-US War</InternalLink>
+          <InternalLink href="/blog/israel-ground-invasion-iran-2026">Israel's Ground Invasion of Iran — What We Know</InternalLink>
+          <InternalLink href="/blog/houthis-entering-iran-us-war-2026">Houthis Enter the War — Red Sea Crisis Explained</InternalLink>
+        </div>
+      </div>
+
+      <FaqSection items={[
+        { q: "What is Trump's 15-point Iran peace plan?", a: "It is a diplomatic proposal delivered by US envoy Steve Witkoff to end the Iran war. It demands Iran halt nuclear enrichment, cut ties with proxy groups, and recognise Israel — in exchange for sanctions relief, asset unfreezing, and a permanent ceasefire. Iran rejected it within hours of receiving it." },
+        { q: "Why did Iran reject the peace plan?", a: "Iran rejected the plan primarily because of Point 10 — recognition of Israel — which is politically impossible for any Iranian government. Iran also objected to demands it cut off its proxy network (its main strategic deterrent) and to the timeline which requires compliance before a ceasefire, not after." },
+        { q: "Who is Steve Witkoff?", a: "Steve Witkoff is Trump's Special Envoy for Middle East Affairs. A real estate developer and longtime Trump associate, he previously helped broker the Gaza ceasefire deal in early 2025. He has been the primary US diplomat attempting to open back-channel communication with Iran through intermediaries in Qatar and Oman." },
+        { q: "Is the US actually talking to Iran?", a: "Indirectly, yes. Iran's foreign minister confirmed that messages have been exchanged but denied formal talks. Oman is acting as the primary intermediary. Trump has publicly insisted talks are happening while Iran publicly denies direct negotiations — both statements can be technically true simultaneously." },
+        { q: "Could a modified version of the deal work?", a: "Analysts believe a stripped-down version — removing Point 10 (Israel recognition) and Point 6 (cutting all proxies) — could potentially form the basis of a temporary ceasefire. However a comprehensive peace agreement resolving all underlying issues is considered unlikely in the short term." },
+        { q: "How long could the Iran war last?", a: "Military analysts and Wall Street strategists have warned the war could last into late 2026 or even 2027. The US publicly wants it resolved in weeks; Iran is prepared to fight indefinitely through asymmetric means. The most likely outcome is a prolonged low-intensity conflict rather than a decisive military conclusion." },
+      ]} />
+    </div>
+  ),
+
   "countries-involved-iran-us-war-2026": (
     <div className="space-y-6 text-base leading-relaxed">
       <p className="text-lg font-semibold text-red-500">
