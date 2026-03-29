@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
-    keywords: post.tags.join(", "),
+    keywords: [...post.tags, ...(post.seoKeywords ?? [])].join(", "),
     alternates: { canonical: `/blog/${slug}` },
     openGraph: { title: post.title, description: post.excerpt, images: [post.image], type: "article" },
   };
@@ -34,8 +34,42 @@ export default async function BlogPostPage({ params }: Props) {
   const content = blogContent[slug];
   const related = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: post.image,
+    url: `https://clickwise-pi.vercel.app/blog/${slug}`,
+    datePublished: new Date(post.date).toISOString(),
+    dateModified: new Date(post.date).toISOString(),
+    keywords: [...post.tags, ...(post.seoKeywords ?? [])].join(", "),
+    author: {
+      "@type": "Organization",
+      name: "ClickWise Editorial",
+      url: "https://clickwise-pi.vercel.app",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "ClickWise",
+      url: "https://clickwise-pi.vercel.app",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://clickwise-pi.vercel.app/opengraph-image",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://clickwise-pi.vercel.app/blog/${slug}`,
+    },
+  };
+
   return (
     <div className="min-h-screen pt-20 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="relative h-64 md:h-80 w-full overflow-hidden">
         <Image src={post.image} alt={post.title} fill className="object-cover opacity-50" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--bg-primary)]" />
