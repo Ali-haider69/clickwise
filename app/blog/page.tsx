@@ -5,7 +5,7 @@ import BlogFilter from "@/components/BlogFilter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — AI Tools, Make Money, Gadgets & More | ClickWise",
+  title: "Blog — AI Tools, Make Money, Gadgets & More",
   description: "Guides, comparisons, and reviews on AI tools, side hustles, gadgets, and finance. Everything you need to make smarter decisions in 2026.",
 };
 

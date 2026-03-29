@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
 import Newsletter from "@/components/Newsletter";
@@ -8,6 +9,11 @@ import { products } from "@/data/products";
 import { posts } from "@/data/posts";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
+  description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
+};
 
 const tools = [
   { href: "/tools/side-hustle-calculator", icon: "💰", title: "Side Hustle Calculator", desc: "Find your earning potential", badge: "Most Popular" },
