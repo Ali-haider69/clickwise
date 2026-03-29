@@ -408,7 +408,14 @@ export const posts: Post[] = [
   },
 ];
 
-export const categories = [
+export interface Category {
+  name: string;
+  icon: string;
+  count: number;
+  color: string;
+}
+
+export const categories: Category[] = [
   { name: "AI & Tech", icon: "🤖", count: 48, color: "from-purple-500 to-blue-500" },
   { name: "Make Money", icon: "💰", count: 36, color: "from-green-500 to-emerald-500" },
   { name: "Gadgets", icon: "📱", count: 52, color: "from-blue-500 to-cyan-500" },

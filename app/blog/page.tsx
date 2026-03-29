@@ -1,53 +1,40 @@
-"use client";
-
-import React, { useState, useEffect, Suspense } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import React from "react";
 import { posts, categories } from "@/data/posts";
 import BlogCard from "@/components/BlogCard";
-import { Search } from "lucide-react";
+import BlogFilter from "@/components/BlogFilter";
+import type { Metadata } from "next";
 
-function BlogContent() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
+export const metadata: Metadata = {
+  title: "Blog — AI Tools, Make Money, Gadgets & More | ClickWise",
+  description: "Guides, comparisons, and reviews on AI tools, side hustles, gadgets, and finance. Everything you need to make smarter decisions in 2026.",
+};
 
-  const [query, setQuery] = useState(searchParams.get("q") || "");
-  const [activeCategory, setActiveCategory] = useState(searchParams.get("cat") || "All");
+interface BlogPageProps {
+  searchParams: Promise<{ q?: string; cat?: string }>;
+}
 
-  useEffect(() => {
-    setQuery(searchParams.get("q") || "");
-    setActiveCategory(searchParams.get("cat") || "All");
-  }, [searchParams]);
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const { q = "", cat = "All" } = await searchParams;
 
   const filtered = posts.filter((p) => {
-    const matchesQuery = query.trim() === "" ||
-      p.title.toLowerCase().includes(query.toLowerCase()) ||
-      p.excerpt.toLowerCase().includes(query.toLowerCase()) ||
-      p.tags.some((t) => t.toLowerCase().includes(query.toLowerCase())) ||
-      p.category.toLowerCase().includes(query.toLowerCase());
+    const matchesQuery =
+      q.trim() === "" ||
+      p.title.toLowerCase().includes(q.toLowerCase()) ||
+      p.excerpt.toLowerCase().includes(q.toLowerCase()) ||
+      p.tags.some((t) => t.toLowerCase().includes(q.toLowerCase())) ||
+      p.category.toLowerCase().includes(q.toLowerCase());
 
-    const matchesCat = activeCategory === "All" ||
-      p.category.toLowerCase().includes(activeCategory.toLowerCase()) ||
-      (activeCategory === "trending" && p.trending);
+    const matchesCat =
+      cat === "All" ||
+      p.category.toLowerCase().includes(cat.toLowerCase()) ||
+      (cat === "trending" && p.trending);
 
     return matchesQuery && matchesCat;
   });
 
-  function applySearch(q: string) {
-    const params = new URLSearchParams();
-    if (q.trim()) params.set("q", q.trim());
-    if (activeCategory !== "All") params.set("cat", activeCategory);
-    router.push(`/blog?${params.toString()}`);
-  }
-
-  function selectCategory(cat: string) {
-    setActiveCategory(cat);
-    const params = new URLSearchParams();
-    if (query.trim()) params.set("q", query.trim());
-    if (cat !== "All") params.set("cat", cat);
-    router.push(`/blog?${params.toString()}`);
-  }
-
-  const sorted = [...filtered].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const sorted = [...filtered].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
   const featured = sorted.find((p) => p.featured);
   const rest = sorted.filter((p) => !p.featured);
 
@@ -64,61 +51,19 @@ function BlogContent() {
           </p>
         </div>
 
-        {/* Search Bar */}
-        <div className="relative flex-1 mb-6">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5" style={{ color: "var(--text-muted)" }} />
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && applySearch(query)}
-            placeholder="Search articles..."
-            className="w-full glass rounded-xl pl-12 pr-32 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
-            style={{ color: "var(--text-primary)" }}
-          />
-          <button
-            onClick={() => applySearch(query)}
-            className="absolute right-2 top-1/2 -translate-y-1/2 btn-primary text-sm py-1.5 px-4"
-          >
-            Search
-          </button>
-        </div>
-
-        {/* Category Pills */}
-        <div className="flex flex-wrap gap-2 mb-10">
-          <button
-            onClick={() => selectCategory("All")}
-            className="px-4 py-2 rounded-full text-sm font-medium transition-all"
-            style={{
-              background: activeCategory === "All" ? "linear-gradient(to right,#9333ea,#3b82f6)" : "var(--bg-card)",
-              color: activeCategory === "All" ? "white" : "var(--text-secondary)",
-              border: "1px solid var(--border-color)",
-            }}
-          >
-            All
-          </button>
-          {categories.map((cat) => (
-            <button
-              key={cat.name}
-              onClick={() => selectCategory(cat.name)}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-all"
-              style={{
-                background: activeCategory === cat.name ? "linear-gradient(to right,#9333ea,#3b82f6)" : "var(--bg-card)",
-                color: activeCategory === cat.name ? "white" : "var(--text-secondary)",
-                border: "1px solid var(--border-color)",
-              }}
-            >
-              {cat.icon} {cat.name}
-            </button>
-          ))}
-        </div>
+        {/* Interactive search + filter (client component) */}
+        <BlogFilter
+          categories={categories}
+          initialQuery={q}
+          initialCategory={cat}
+        />
 
         {/* Results count */}
-        {(query.trim() || activeCategory !== "All") && (
+        {(q.trim() || cat !== "All") && (
           <p className="mb-6 text-sm" style={{ color: "var(--text-muted)" }}>
             {filtered.length === 0
-              ? `No results for "${query}"`
-              : `${filtered.length} result${filtered.length !== 1 ? "s" : ""}${query.trim() ? ` for "${query}"` : ""}`}
+              ? `No results for "${q}"`
+              : `${filtered.length} result${filtered.length !== 1 ? "s" : ""}${q.trim() ? ` for "${q}"` : ""}`}
           </p>
         )}
 
@@ -126,22 +71,26 @@ function BlogContent() {
         {filtered.length === 0 && (
           <div className="text-center py-20">
             <p className="text-4xl mb-4">🔍</p>
-            <p className="text-lg font-semibold mb-2" style={{ color: "var(--text-primary)" }}>No articles found</p>
-            <p className="text-sm mb-6" style={{ color: "var(--text-muted)" }}>Try a different search term or browse all categories.</p>
-            <button onClick={() => { setQuery(""); selectCategory("All"); }} className="btn-primary px-6 py-2 text-sm">
+            <p className="text-lg font-semibold mb-2" style={{ color: "var(--text-primary)" }}>
+              No articles found
+            </p>
+            <p className="text-sm mb-6" style={{ color: "var(--text-muted)" }}>
+              Try a different search term or browse all categories.
+            </p>
+            <a href="/blog" className="btn-primary px-6 py-2 text-sm">
               Clear filters
-            </button>
+            </a>
           </div>
         )}
 
-        {/* Featured Post */}
+        {/* Featured Post — server-rendered, Googlebot sees this */}
         {featured && (
           <div className="grid grid-cols-1 mb-8">
             <BlogCard post={featured} featured />
           </div>
         )}
 
-        {/* All Posts Grid */}
+        {/* All Posts Grid — server-rendered */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {rest.map((post) => (
             <BlogCard key={post.slug} post={post} />
@@ -149,13 +98,5 @@ function BlogContent() {
         </div>
       </div>
     </div>
-  );
-}
-
-export default function BlogPage() {
-  return (
-    <Suspense fallback={<div className="min-h-screen pt-24 pb-20 flex items-center justify-center" style={{ color: "var(--text-muted)" }}>Loading...</div>}>
-      <BlogContent />
-    </Suspense>
   );
 }
