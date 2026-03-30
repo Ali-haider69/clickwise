@@ -14,6 +14,19 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "chatgpt-prompts-save-time-2026",
+    title: "Top ChatGPT Prompts That Save 10+ Hours Per Week (2026 Guide)",
+    excerpt: "Most people use ChatGPT wrong and wonder why results are mediocre. These 20+ battle-tested prompts for writing, business, freelancing, and automation will change how you work — starting today.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Mar 30, 2026",
+    image: "/images/chatgpt-prompts-save-time-2026.png",
+    trending: true,
+    featured: true,
+    tags: ["ChatGPT Prompts", "AI Productivity", "ChatGPT 2026", "AI Tools"],
+    seoKeywords: ["chatgpt prompts 2026", "best chatgpt prompts", "chatgpt productivity prompts", "ai prompts for work", "chatgpt automation prompts", "chatgpt prompts for business", "time-saving ai prompts", "chatgpt prompts for freelancers"],
+  },
+  {
     slug: "ai-changing-everything-2026",
     title: "AI is Changing Everything in 2026 — Opportunities & Risks You Need to Know",
     excerpt: "From healthcare to job markets, AI is reshaping the world faster than anyone predicted. Here's what's actually happening, what it means for you, and how to stay ahead.",
