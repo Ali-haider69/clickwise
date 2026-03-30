@@ -3,6 +3,16 @@ import Image from "next/image";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import { categories, posts } from "@/data/posts";
 
+const categorySlugMap: Record<string, string> = {
+  "AI & Tech": "/ai-tech",
+  "Make Money": "/make-money",
+  "Gadgets": "/gadgets",
+  "Finance": "/finance",
+  "Health": "/health",
+  "Trending": "/trending",
+  "News": "/news",
+};
+
 export default function BentoGrid() {
   const featured = posts.find((p) => p.featured);
   const trending = posts.filter((p) => p.trending).slice(0, 3);
@@ -56,7 +66,7 @@ export default function BentoGrid() {
         {categories.slice(0, 4).map((cat) => (
           <Link
             key={cat.name}
-            href={`/blog?cat=${cat.name.toLowerCase()}`}
+            href={categorySlugMap[cat.name] || "/blog"}
             className="group glass rounded-3xl p-6 card-hover flex flex-col justify-between min-h-[140px] relative overflow-hidden"
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-0 group-hover:opacity-5 transition-opacity rounded-3xl`} />

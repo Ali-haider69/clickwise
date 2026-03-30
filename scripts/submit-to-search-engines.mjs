@@ -3,7 +3,6 @@
 /**
  * Search Engine Indexing Helper
  * - Fetches all URLs from sitemap.xml
- * - Pings Google & Bing with sitemap URL
  * - Submits URLs via IndexNow API (Bing, Yandex, Naver, Seznam)
  *
  * Usage: node scripts/submit-to-search-engines.mjs
@@ -37,37 +36,7 @@ async function fetchSitemapUrls() {
   return urls;
 }
 
-// ─── Step 2: Ping Google & Bing ────────────────────────────────────────────────
-
-async function pingSitemapToSearchEngines() {
-  console.log("\n🔔 Pinging search engines with sitemap URL...");
-
-  const endpoints = [
-    {
-      name: "Google",
-      url: `https://www.google.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`,
-    },
-    {
-      name: "Bing",
-      url: `https://www.bing.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`,
-    },
-  ];
-
-  for (const { name, url } of endpoints) {
-    try {
-      const res = await fetch(url);
-      if (res.ok) {
-        console.log(`   ✅ ${name} — pinged successfully`);
-      } else {
-        console.log(`   ⚠️  ${name} — responded with ${res.status}`);
-      }
-    } catch (err) {
-      console.log(`   ❌ ${name} — failed: ${err.message}`);
-    }
-  }
-}
-
-// ─── Step 3: Submit URLs via IndexNow ──────────────────────────────────────────
+// ─── Step 2: Submit URLs via IndexNow ──────────────────────────────────────────
 
 async function submitToIndexNow(urls) {
   console.log("\n🚀 Submitting URLs via IndexNow...");
@@ -116,19 +85,15 @@ async function main() {
 
   try {
     const urls = await fetchSitemapUrls();
-
-    await pingSitemapToSearchEngines();
     await submitToIndexNow(urls);
 
     console.log("\n" + "=".repeat(50));
     console.log("✅ Done! Summary:");
     console.log(`   • ${urls.length} URLs found in sitemap`);
-    console.log(`   • Google & Bing pinged with sitemap`);
-    console.log(`   • ${urls.length} URLs submitted to IndexNow`);
+    console.log(`   • ${urls.length} URLs submitted to IndexNow (Bing, Yandex, Naver, Seznam)`);
     console.log("\n💡 Tips:");
     console.log("   • Run this script after every deployment with new content");
     console.log("   • Also submit your sitemap in Google Search Console manually");
-    console.log("   • For Google Indexing API, set up a service account in Google Cloud");
   } catch (err) {
     console.error("\n❌ Error:", err.message);
     process.exit(1);

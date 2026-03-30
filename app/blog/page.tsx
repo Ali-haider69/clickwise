@@ -10,26 +10,20 @@ export const metadata: Metadata = {
 };
 
 interface BlogPageProps {
-  searchParams: Promise<{ q?: string; cat?: string }>;
+  searchParams: Promise<{ q?: string }>;
 }
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
-  const { q = "", cat = "All" } = await searchParams;
+  const { q = "" } = await searchParams;
 
   const filtered = posts.filter((p) => {
-    const matchesQuery =
+    return (
       q.trim() === "" ||
       p.title.toLowerCase().includes(q.toLowerCase()) ||
       p.excerpt.toLowerCase().includes(q.toLowerCase()) ||
       p.tags.some((t) => t.toLowerCase().includes(q.toLowerCase())) ||
-      p.category.toLowerCase().includes(q.toLowerCase());
-
-    const matchesCat =
-      cat === "All" ||
-      p.category.toLowerCase().includes(cat.toLowerCase()) ||
-      (cat === "trending" && p.trending);
-
-    return matchesQuery && matchesCat;
+      p.category.toLowerCase().includes(q.toLowerCase())
+    );
   });
 
   const sorted = [...filtered].sort(
@@ -55,11 +49,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <BlogFilter
           categories={categories}
           initialQuery={q}
-          initialCategory={cat}
+          initialCategory="All"
         />
 
         {/* Results count */}
-        {(q.trim() || cat !== "All") && (
+        {q.trim() && (
           <p className="mb-6 text-sm" style={{ color: "var(--text-muted)" }}>
             {filtered.length === 0
               ? `No results for "${q}"`

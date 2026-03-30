@@ -15,20 +15,28 @@ export default function BlogFilter({ categories, initialQuery, initialCategory }
   const router = useRouter();
   const [query, setQuery] = useState(initialQuery);
 
-  function pushParams(q: string, cat: string) {
-    const params = new URLSearchParams();
-    if (q.trim()) params.set("q", q.trim());
-    if (cat !== "All") params.set("cat", cat);
-    const qs = params.toString();
-    router.push(`/blog${qs ? `?${qs}` : ""}`);
-  }
+  const categorySlugMap: Record<string, string> = {
+    "All": "/blog",
+    "AI & Tech": "/ai-tech",
+    "Make Money": "/make-money",
+    "Gadgets": "/gadgets",
+    "Finance": "/finance",
+    "Health": "/health",
+    "Trending": "/trending",
+    "News": "/news",
+  };
 
   function applySearch() {
-    pushParams(query, initialCategory);
+    const slug = categorySlugMap[initialCategory] || "/blog";
+    const params = new URLSearchParams();
+    if (query.trim()) params.set("q", query.trim());
+    const qs = params.toString();
+    router.push(`${slug}${qs ? `?${qs}` : ""}`);
   }
 
   function selectCategory(cat: string) {
-    pushParams(query, cat);
+    const slug = categorySlugMap[cat] || "/blog";
+    router.push(slug);
   }
 
   return (

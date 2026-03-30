@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Search, Sun, Moon, Menu, X, Zap } from "lucide-react";
 
@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Tools 🔥", href: "/tools" },
   { label: "Reviews", href: "/reviews" },
   { label: "Compare", href: "/compare" },
-  { label: "Make Money", href: "/blog?cat=money" },
+  { label: "Make Money", href: "/make-money" },
 ];
 
 function NavbarInner() {
@@ -23,14 +23,10 @@ function NavbarInner() {
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const cat = searchParams.get("cat");
 
-  const isNewsActive = pathname === "/blog" && cat === "News";
+  const isNewsActive = pathname === "/news";
 
   function isLinkActive(href: string) {
-    if (href === "/blog") return pathname === "/blog" && !cat;
-    if (href === "/blog?cat=money") return pathname === "/blog" && cat === "money";
     return pathname === href || pathname.startsWith(href + "/");
   }
 
@@ -87,7 +83,7 @@ function NavbarInner() {
               );
             })}
             <Link
-              href="/blog?cat=News"
+              href="/news"
               className="px-4 py-2 rounded-lg transition-all duration-200 text-sm font-bold flex items-center gap-1.5"
               style={isNewsActive
                 ? { background: "linear-gradient(to right, #9333ea, #3b82f6)", color: "#fff" }
@@ -191,7 +187,7 @@ function NavbarInner() {
               );
             })}
             <Link
-              href="/blog?cat=News"
+              href="/news"
               onClick={() => setMenuOpen(false)}
               className="flex items-center gap-2 px-4 py-3 rounded-lg transition-all text-sm font-bold"
               style={isNewsActive

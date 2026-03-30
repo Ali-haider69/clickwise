@@ -6,12 +6,12 @@ import { Zap, Send, Check } from "lucide-react";
 
 const footerLinks = {
   Categories: [
-    { label: "AI & Tech", href: "/blog?cat=ai" },
-    { label: "Make Money", href: "/blog?cat=money" },
-    { label: "Gadgets & Reviews", href: "/reviews" },
-    { label: "Finance", href: "/blog?cat=finance" },
-    { label: "Health & Fitness", href: "/blog?cat=health" },
-    { label: "Trending Now", href: "/blog?cat=trending" },
+    { label: "AI & Tech", href: "/ai-tech" },
+    { label: "Make Money", href: "/make-money" },
+    { label: "Gadgets & Reviews", href: "/gadgets" },
+    { label: "Finance", href: "/finance" },
+    { label: "Health & Fitness", href: "/health" },
+    { label: "Trending Now", href: "/trending" },
   ],
   "Quick Links": [
     { label: "Latest Posts", href: "/blog" },
