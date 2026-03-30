@@ -40,27 +40,27 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.excerpt,
     image: post.image,
-    url: `https://clickwise-pi.vercel.app/blog/${slug}`,
+    url: `https://clickwise.website/blog/${slug}`,
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
     keywords: [...post.tags, ...(post.seoKeywords ?? [])].join(", "),
     author: {
       "@type": "Organization",
       name: "ClickWise Editorial",
-      url: "https://clickwise-pi.vercel.app",
+      url: "https://clickwise.website",
     },
     publisher: {
       "@type": "Organization",
       name: "ClickWise",
-      url: "https://clickwise-pi.vercel.app",
+      url: "https://clickwise.website",
       logo: {
         "@type": "ImageObject",
-        url: "https://clickwise-pi.vercel.app/opengraph-image",
+        url: "https://clickwise.website/opengraph-image",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://clickwise-pi.vercel.app/blog/${slug}`,
+      "@id": `https://clickwise.website/blog/${slug}`,
     },
   };
 

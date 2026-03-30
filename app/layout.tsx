@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://clickwise-pi.vercel.app"),
+  metadataBase: new URL("https://clickwise.website"),
   title: {
     default: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
     template: "%s | ClickWise",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "ClickWise",
-    url: "https://clickwise-pi.vercel.app",
+    url: "https://clickwise.website",
     title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
     description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "ClickWise" }],

@@ -8,7 +8,7 @@
  * Usage: node scripts/submit-to-search-engines.mjs
  */
 
-const SITE_URL = "https://clickwise-pi.vercel.app";
+const SITE_URL = "https://clickwise.website";
 const SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
 
 // IndexNow requires a key — we'll generate one and host it as a static file
