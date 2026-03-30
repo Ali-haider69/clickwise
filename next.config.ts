@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: "clickwise-pi.vercel.app" }],
-        destination: "https://clickwise.website/:path*",
+        destination: "https://www.clickwise.website/:path*",
         permanent: true,
       },
     ];
