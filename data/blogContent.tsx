@@ -4292,7 +4292,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <BlogImage
         src="/images/ai-automation-agency.png"
-        alt="How to start an AI automation agency — team workflow and automation"
+        alt="AI automation agency — n8n and Zapier workflows, entrepreneur with laptop, income growth"
         caption="Automation agencies win when the client sees fewer clicks—not when you show them your model names."
       />
 
