@@ -4610,4 +4610,312 @@ export const blogContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "ai-automation-for-beginners": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        You don&apos;t have a &quot;talent&quot; problem—you have a &quot;where do I even click first&quot; problem. You&apos;ve seen the n8n graphs and Zapier screenshots. You nod at &quot;AI automation for beginners&quot; videos. Then you open a blank canvas and quietly panic. This guide is the opposite of that: one boring workflow, one stack you can explain, one afternoon where you actually ship.
+      </p>
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is AI automation for beginners?
+        </h2>
+        <p className="text-sm md:text-base mb-4" style={{ color: "var(--text-secondary)" }}>
+          <strong>AI automation for beginners</strong> means: connect apps you already use (forms, email, CRM, Slack), then add an AI step where a human still approves risky output—so work moves without you babysitting every click.
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li>Trigger: something happens (new form, new row, new email).</li>
+          <li>Routing: if/then logic sends data to the right place.</li>
+          <li>Optional AI: summarize, classify, or draft—then a person says yes or no.</li>
+          <li>Logging: when it breaks, you see why—not silence at 2 a.m.</li>
+        </ol>
+      </div>
+
+      <p>
+        When you&apos;re ready to sell this work, you don&apos;t need a manifesto—you need a demo. <InternalLink href="/blog/ai-automation-agency">How to start an AI automation agency</InternalLink> covers offers and pricing; <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas that sell</InternalLink> is your menu of invoiceable builds. Read those after you&apos;ve shipped one real flow below.
+      </p>
+
+      <BlogImage
+        src="/images/ai-automation-for-beginners.png"
+        alt="AI automation for beginners step-by-step 2026 — person and robot at laptops with flowchart from form to AI, email, and CRM"
+        caption="Start ugly, finish visible: one trigger, one happy path, one human approval step."
+      />
+
+      <StatBox items={[
+        ["1", "Workflow first"],
+        ["3", "Core tools max"],
+        ["AI", "Human approves"],
+        ["Ship", "Then sell"],
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
+        <p className="text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Stuff on ClickWise that saves you from spreadsheet panic</p>
+        <p className="text-sm mb-3">Browse <InternalLink href="/tools/ai-finder">AI Finder</InternalLink>; use the freelancer earnings and side hustle calculators under /tools when you price pilots.</p>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What is AI automation? (plain English)</h2>
+      <p>
+        <strong>Automation</strong> is software doing the same sequence of steps every time. <strong>AI automation</strong> adds a model that reads, writes, or classifies text—then hands off to a person when something looks wrong. You are not replacing judgment; you are replacing copy-paste and &quot;I forgot to follow up.&quot;
+      </p>
+      <p>
+        For <strong>beginner AI workflow automation</strong>, think &quot;fewer tabs, fewer mistakes&quot;—not &quot;my business runs on autopilot while I nap.&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why AI automation is booming in 2026</h2>
+      <p>
+        Tools are cheaper and easier to wire. APIs are everywhere. Buyers are tired of paying humans to move data between systems that should already talk. The edge is not &quot;we use AI&quot;—it is <strong>reliable workflows</strong> with clear logs and a human on the hook when something weird hits the model.
+      </p>
+      <p>
+        That&apos;s why <strong>AI automation for beginners</strong> is a real skill: you can ship a small build in days, show a Loom, and charge a pilot—without pretending you&apos;re a research lab.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step-by-step beginner setup</h2>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 1 — Pick a simple workflow</h3>
+      <p>
+        Choose one path with a clear start and end. Good first picks: <strong>new lead → CRM + Slack ping</strong>, <strong>new email → label + draft reply for approval</strong>, or <strong>new Typeform → Google Sheet row + tag</strong>. Bad first pick: &quot;automate my entire business&quot;—that&apos;s a scope trap, not a project.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 2 — Choose tools (n8n, Zapier, Make)</h3>
+      <p>
+        <strong>Zapier</strong> if you want speed and a huge app directory. <strong>Make</strong> if you like visual scenarios and branching. <strong>n8n</strong> if you want power, logs, and (optionally) self-hosting for margin. Pick <em>one</em> orchestrator for your first build. Stack-hopping is how beginners lose a month.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 3 — Build your first automation</h3>
+      <p>
+        Map triggers and actions on paper. In the builder: connect webhook or form → create/update record → send notification. No AI yet. If the dumb version works, you&apos;re allowed to get clever.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 4 — Add the AI layer (ChatGPT / OpenAI)</h3>
+      <p>
+        Add AI where it reduces reading time, not where it guesses legal outcomes. Typical beginner uses: <strong>summarize</strong> thread, <strong>classify</strong> intent (support vs. sales), <strong>draft</strong> a reply for a human to edit. Reuse prompt patterns from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink> so you&apos;re not inventing structure from scratch.
+      </p>
+      <p>
+        Rule: anything customer-facing gets an approval step or a &quot;send to human&quot; branch when confidence is low.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 5 — Test and deploy</h3>
+      <p>
+        Run fake data. Break it on purpose. Check logs. Then turn it on for a real alias or test inbox. Document: what triggers it, what it can&apos;t do, and who to call when it breaks. That&apos;s the difference between a toy and a sellable <strong>AI workflow tutorial</strong> you can show a client.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Real examples</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm">
+        <li><strong>Lead gen:</strong> Facebook or Google lead form → CRM card + Slack + &quot;first touch&quot; draft email for approval.</li>
+        <li><strong>Email triage:</strong> Shared inbox → classify → route to folder; draft reply for humans on high-volume threads only.</li>
+        <li><strong>Support deflection:</strong> Chat → FAQ retrieval → ticket with transcript if unresolved.</li>
+        <li><strong>Ops:</strong> New paid order → alert to Slack + tag in helpdesk; optional low-stock warning.</li>
+      </ul>
+      <p className="text-sm">
+        Want more packaged offers? The AI automation ideas for 2026 post on the blog lists ten with rough pricing—steal the structure, not the buzzwords.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Beginner tools stack (at a glance)</h2>
+      <DataTable
+        headers={["Layer", "Tool examples", "Beginner note"]}
+        rows={[
+          ["Orchestration", "Zapier, Make, n8n", "Pick one; master one happy path before branches"],
+          ["AI text", "OpenAI API, ChatGPT (via connector), Claude API", "Start with classification + summarization; avoid open-ended creativity on day one"],
+          ["Data", "Google Sheets, Airtable, Notion, HubSpot", "Ugly is fine; migrate when you have revenue"],
+          ["Alerts", "Slack, email", "If nobody sees failures, you don&apos;t have an automation—you have a liability"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Common mistakes beginners make</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm">
+        <li><strong>AI everywhere:</strong> model on every step = flaky graphs and surprise costs.</li>
+        <li><strong>No approval gates:</strong> one bad send can erase trust.</li>
+        <li><strong>No logging:</strong> you can&apos;t debug what you can&apos;t see.</li>
+        <li><strong>Perfect stack:</strong> three orchestrators and twelve SaaS logins—pick one lane.</li>
+        <li><strong>Selling &quot;AI&quot; instead of hours saved:</strong> buyers buy outcomes, not logos.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to make money with it</h2>
+      <p>
+        Productize: <strong>paid pilot</strong> with fixed scope, then <strong>monthly care</strong>. Lead with a Loom on sample data. Niche your sentence so you&apos;re not &quot;the AI person&quot;—you&apos;re &quot;the person who stops leads dying between the form and the CRM.&quot;</p>
+      <p>
+        For outreach rhythm and first dollars, use <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink>—same motion as any freelance skill: proof, price, follow-up.
+      </p>
+      <p className="text-sm">
+        Going deeper on building a business around this: the AI automation agency guide (positioning + pricing) and the sellable automation ideas roundup on the blog cover your first three offers.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Do I need to code to learn AI automation as a beginner?", a: "No. Most first automations use drag-and-drop builders like Zapier, Make, or n8n plus AI APIs or ChatGPT for text steps. You need clear logic and testing, not a CS degree." },
+        { q: "Should I start with n8n, Zapier, or Make?", a: "Zapier is fastest to learn with the biggest app directory. Make and n8n are stronger for branching and volume once you outgrow simple Zaps. Pick one primary tool and finish one workflow before switching." },
+        { q: "How long does it take to build a first automation?", a: "A simple form-to-Sheet or form-to-Slack flow often takes an afternoon. Adding AI classification or draft replies adds another session for prompts, guardrails, and testing." },
+        { q: "Is AI automation still worth learning in 2026?", a: "Yes. Businesses still pay for fewer manual hours and fewer dropped leads. The opportunity is in specific workflows and reliable delivery—not in generic AI strategy decks." },
+        { q: "How do beginners get paid for AI automation?", a: "Sell a fixed-scope pilot with a demo on sample data, then monthly care. Pair outreach with a clear niche sentence and proof. Use freelancer rate math before you quote." },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Explore more in the Blog and Tools sections—we keep internal links light so this guide stays easy to read.</p>
+      </div>
+    </div>
+  ),
+
+  "best-ai-tools-automation-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        You don&apos;t need forty tabs and a second mortgage to get <strong>ai automation tools</strong> working. You need a short list that matches how work actually flows: trigger → route → maybe AI → human approval → log. Everything else is noise—and this guide is the short list for <strong>best ai tools 2026</strong> when the job is automation, not vibes.
+      </p>
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What are the best AI automation tools in 2026?
+        </h2>
+        <p className="text-sm md:text-base mb-4" style={{ color: "var(--text-secondary)" }}>
+          The <strong>best ai tools for automation</strong> in 2026 combine: (1) a workflow engine, (2) a place for data, (3) an AI model for text when it saves time, and (4) alerts so failures don&apos;t go silent.
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Workflow:</strong> n8n, Zapier, or Make—glue between apps.</li>
+          <li><strong>AI writing / reasoning:</strong> ChatGPT, Claude, or API equivalents.</li>
+          <li><strong>CRM / data:</strong> HubSpot, Airtable, Notion, or Sheets—somewhere truth lives.</li>
+          <li><strong>Outreach:</strong> email and list tools when you sell or follow up at scale.</li>
+        </ol>
+      </div>
+
+      <p>
+        If you&apos;re building offers for clients, <InternalLink href="/blog/ai-automation-agency">how to start an AI automation agency</InternalLink> covers pricing and positioning; <InternalLink href="/blog/ai-automation-for-beginners">AI automation for beginners</InternalLink> walks your first build. This article is the toolbox—pick what you&apos;ll actually maintain.
+      </p>
+
+      <BlogImage
+        src="/images/best-ai-tools-automation-2026.png"
+        alt="Best AI tools 2026 free and paid — glowing AI brain chip with icons for data, money, and automation on a dark tech background"
+        caption="Free tiers get you learning; paid tiers buy reliability when clients depend on the graph."
+      />
+
+      <StatBox items={[
+        ["4", "Core categories"],
+        ["Free+", "Start cheap"],
+        ["1", "Orchestrator first"],
+        ["Ship", "Then expand"],
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
+        <p className="text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Stuff on ClickWise that saves you from spreadsheet panic</p>
+        <p className="text-sm mb-3">Compare stacks with <InternalLink href="/tools/ai-finder">AI Finder</InternalLink>; use freelancer earnings and side hustle calculators under /tools before you quote retainers.</p>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>AI automation tools in plain English</h2>
+      <p>
+        <strong>AI automation tools</strong> connect apps (forms, inboxes, CRMs) and sometimes let a model read, label, or draft text before a human says yes. You are not buying &quot;AI&quot;—you&apos;re buying fewer manual steps with a paper trail when something breaks.
+      </p>
+      <p>
+        For <strong>ai tools for business</strong>, the rule is boring: one orchestrator, one source of truth for data, one AI layer you can test—and logging everywhere. Flashy stacks that nobody can debug don&apos;t get renewals.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>1. Workflow automation (n8n, Zapier, Make)</h2>
+      <p className="mb-4">
+        These are the glue layers. Real use cases: <strong>new lead → CRM + Slack</strong>, <strong>paid order → tag + alert</strong>, <strong>calendar event → prep doc</strong>. Pick one primary tool and finish one workflow before you add branches.
+      </p>
+      <DataTable
+        headers={["Tool", "Free tier (typical)", "Paid (2026 ballpark)", "Best for"]}
+        rows={[
+          ["Zapier", "Limited multi-step Zaps; task caps", "~$20–$50+/mo+ (scales with tasks)", "Speed, huge app directory, non-technical buyers"],
+          ["Make", "Free ops/month; visual scenarios", "Ops-based plans; ~$10–$30+ starter tiers", "Branching logic, iterators, visual debugging"],
+          ["n8n", "Cloud free tier / self-host $0 infra", "n8n Cloud; self-host cuts per-run cost at scale", "Complex graphs, HTTP nodes, logs, margin on heavy volume"],
+        ]}
+      />
+      <p className="text-sm">
+        <strong>Use case:</strong> Typeform → OpenAI classify &quot;hot lead&quot; → HubSpot create + Slack ping. <strong>Free vs paid:</strong> free tiers teach; paid tiers unlock volume, premium apps, and fewer &quot;rate limit&quot; nights.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>2. AI writing &amp; reasoning tools</h2>
+      <p className="mb-4">
+        Used inside workflows: summaries, drafts, classification—not autopilot customer email without review. Pair patterns from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink> so your AI steps stay structured.
+      </p>
+      <DataTable
+        headers={["Tool", "Free tier", "Paid (typical)", "Real use in automation"]}
+        rows={[
+          ["ChatGPT", "GPT-* access with limits; free good for testing", "Plus ~$20/mo for higher limits", "Draft replies, classify tickets, summarize threads"],
+          ["Claude", "Free tier with caps", "Pro ~$20/mo", "Longer context for docs, SOPs, nuanced edits"],
+          ["OpenAI API", "Pay-as-you-go credits", "Per-token billing", "Production steps: classify, extract, route in n8n/Make"],
+        ]}
+      />
+      <p className="text-sm">
+        <strong>Use case:</strong> inbound email → model labels &quot;refund / sales / spam&quot; → route folder + draft for human send. <strong>Free ai tools</strong> are enough to learn; production usually means API credits or paid chat caps.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>3. CRM &amp; data tools</h2>
+      <p className="mb-4">
+        Automation without a home for data is just fireworks. Pick where leads, deals, and tasks live—then connect everything else to that.
+      </p>
+      <DataTable
+        headers={["Tool", "Free tier", "Paid (typical)", "Real use case"]}
+        rows={[
+          ["HubSpot CRM", "Free CRM core; limits on automation", "Starter stacks ~$20–$50+/seat/mo", "SMB pipelines; form → deal stage → sequences"],
+          ["Airtable", "Free bases; row limits", "Plus ~$20+/seat/mo", "Light ops DB; sync to Slack/Sheets; AI via extensions"],
+          ["Notion", "Free for individuals/small teams", "Plus ~$10–$15+/user/mo", "SOPs + docs + light DB; AI for internal notes"],
+          ["Google Sheets", "Free", "Workspace paid for business features", "Fastest &quot;ugly but honest&quot; truth table for demos"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>4. Outreach &amp; marketing tools</h2>
+      <p className="mb-4">
+        When you automate <em>outbound</em> or <em>lifecycle</em> email, deliverability and consent beat clever copy. These sit beside your workflow stack—not inside &quot;one graph to rule them all.&quot;
+      </p>
+      <DataTable
+        headers={["Tool", "Free tier", "Paid (typical)", "Real use case"]}
+        rows={[
+          ["Apollo.io", "Limited credits; free tier for testing", "Seat + credit plans", "B2B lead lists + sequences; pair with human approval"],
+          ["Instantly / Smartlead-type tools", "Often trial-focused", "Per inbox / lead volume", "Cold email at scale—strict caps and warmup"],
+          ["Mailchimp / Kit", "Free tiers with limits", "List-size pricing", "Newsletters, drip sequences, tagged automations"],
+        ]}
+      />
+      <p className="text-sm">
+        <strong>Use case:</strong> enriched lead → personalized first line (AI-assisted) → human approves → send. Never blast raw model output to a whole list.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Best AI automation tools for beginners</h2>
+      <p>
+        If you want the smallest learning curve: <strong>Zapier</strong> + <strong>Google Sheets</strong> + <strong>free ChatGPT</strong>. You can ship a form-to-sheet alert and a labeled draft in a weekend. When you outgrow Zap&apos;s limits or need branching, graduate to <strong>Make</strong> or <strong>n8n</strong>—not before you&apos;ve shipped one boring workflow twice.
+      </p>
+      <p className="text-sm">
+        That&apos;s the same &quot;one graph, one win&quot; mindset as our step-by-step AI automation for beginners guide—stack discipline beats logo collection.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tool stack examples (copy the pattern, not the logos)</h2>
+      <InfoBox title="Stack A — Solo freelancer (lean)" items={[
+        ["Orchestration", "Zapier or Make free tier"],
+        ["Data", "Google Sheets or Airtable"],
+        ["AI text", "ChatGPT free / Claude free for drafts"],
+        ["Use case", "Lead form → sheet → Slack + draft email for you to send"],
+      ]} />
+      <InfoBox title="Stack B — Small business (ops)" items={[
+        ["Orchestration", "Make or n8n"],
+        ["CRM", "HubSpot free or paid CRM"],
+        ["AI", "OpenAI API or ChatGPT Plus for triage"],
+        ["Use case", "New deal stage → task + internal email summary"],
+      ]} />
+      <InfoBox title="Stack C — Agency build (client-facing)" items={[
+        ["Orchestration", "n8n Cloud or Make (branching + logs)"],
+        ["CRM / data", "HubSpot / Pipedrive / client stack"],
+        ["Outreach", "Approved sequences + Apollo or similar when contracted"],
+        ["Use case", "Multi-step onboarding: form → CRM → docs → Slack handoff"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to make money with these stacks</h2>
+      <p>
+        Sell pilots: fixed scope, fixed price, Loom on sample data. Your first revenue conversation isn&apos;t about models—it&apos;s about minutes saved. For outreach and pricing rhythm, see <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink>; for full agency packaging, the AI automation agency guide on the blog stays the roadmap.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "What is the best free AI automation tool for beginners?", a: "Zapier and Make both offer free tiers strong enough to learn on; Zapier is simpler to start, Make gives more visual branching. Pair any orchestrator with free ChatGPT or Claude tiers for text steps until you need higher limits." },
+        { q: "n8n vs Zapier vs Make—which is cheapest at scale?", a: "n8n self-hosted can be cheapest in raw task cost if you can host it. Zapier is often simplest to bill to a client but gets expensive per task at volume. Make sits in the middle—watch operations when traffic spikes." },
+        { q: "Do I need paid ChatGPT for automation?", a: "Not to learn. Free tiers work for drafts and light classification. Paid plans matter when you need higher limits, team features, or API-style reliability for production workflows." },
+        { q: "Can small businesses use these AI tools legally?", a: "Yes—use vendor terms, disclose AI where required, and avoid sending sensitive data through models without contracts. Health and finance data often need extra review before automation." },
+        { q: "How do I pick my first AI automation stack?", a: "Start with one orchestrator, one data home, and one AI text tool. Ship one workflow end-to-end before buying more software. Browse stacks with AI Finder and price pilots with a calculator before you promise retainers." },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Explore more in the Blog and Tools sections—we keep internal links light so this guide stays easy to read.</p>
+      </div>
+    </div>
+  ),
+
 };
