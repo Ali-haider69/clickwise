@@ -4093,7 +4093,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         Here&apos;s the part nobody puts in the thumbnail: the gap isn&apos;t talent. It&apos;s that you&apos;re trying to sell a buzzword instead of a boring, specific outcome someone would actually pay for before lunch tomorrow. Learning <strong>how to get AI clients</strong> starts there—not with another model, not with a perfect life story.
       </p>
       <p>
-        This walkthrough is the messy middle: one tight offer, one place you&apos;ll show up, one day where you stop consuming and start sending messages. When you want to go deeper on gear and tactics, start with <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> (our tested picks), <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> for real client workflows, and <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles that work</InternalLink> for beginners—then come back after you&apos;ve done today&apos;s sprint.
+        This walkthrough is the messy middle: one tight offer, one place you&apos;ll show up, one day where you stop consuming and start sending messages. Selling automation instead? See <InternalLink href="/blog/ai-automation-agency">how to start an AI automation agency</InternalLink>. For tool picks that actually pay, use our tested <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> guide—then come back after today&apos;s sprint.
       </p>
 
       <BlogImage
@@ -4111,15 +4111,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
         <p className="text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Stuff on ClickWise that saves you from spreadsheet panic</p>
-        <p className="text-sm mb-3">None of this replaces sending the DM—but it stops you from guessing fees in your head at midnight.</p>
-        <ul className="text-sm space-y-2 list-disc list-inside">
-          <li><InternalLink href="/tools/ai-finder">AI Finder</InternalLink> — poke around before you promise a stack you haven&apos;t tried.</li>
-          <li><InternalLink href="/tools/freelancer-earnings-calculator">Freelancer earnings calculator</InternalLink> — so your &quot;cheap&quot; pilot still covers ramen and taxes.</li>
-          <li><InternalLink href="/tools/fiverr-fee-calculator">Fiverr fee calculator</InternalLink> — Fiverr&apos;s cut hurts less when you see it upfront.</li>
-          <li><InternalLink href="/tools/ai-linkedin-post-generator">AI LinkedIn post generator</InternalLink> — rough drafts for posts and DMs; you still sound like you.</li>
-          <li><InternalLink href="/tools/ai-blog-intro-generator">AI blog intro generator</InternalLink> — when your offer is writing, this gets you off the blank page.</li>
-          <li><InternalLink href="/tools/side-hustle-calculator">Side hustle calculator</InternalLink> — reality-check whether the hours match the dream.</li>
-        </ul>
+        <p className="text-sm mb-3">None of this replaces sending the DM—but it stops you from guessing fees in your head at midnight. Browse stacks with <InternalLink href="/tools/ai-finder">AI Finder</InternalLink>; use the freelancer earnings, Fiverr fee, LinkedIn post, blog intro, and side hustle calculators under /tools when you need numbers.</p>
       </div>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why most beginners never hear back</h2>
@@ -4133,7 +4125,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         The other trap is waiting for permission. You don&apos;t need three case studies. You need one sample labeled &quot;spec work&quot; or &quot;demo for a fictional brand&quot; that shows how you think. And please—skip the gig title that sounds like a slot machine. &quot;I will do AI work&quot; is the freelance equivalent of a store sign that just says &quot;Things.&quot;
       </p>
       <p>
-        Last one: if your whole day is tutorials and Twitter threads, you&apos;re busy, not in business. Ten rough DMs beat another &quot;ultimate guide.&quot; When you&apos;re ready to stack income, <InternalLink href="/blog/how-to-make-first-500-online-with-ai">our first $500 with AI roadmap</InternalLink> picks up where this day leaves off.
+        Last one: if your whole day is tutorials and Twitter threads, you&apos;re busy, not in business. Ten rough DMs beat another &quot;ultimate guide.&quot; When you&apos;re ready to stack income, our first $500 with AI roadmap on the blog picks up where this day leaves off.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The day you actually try: six steps, no mysticism</h2>
@@ -4143,7 +4135,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 1 — Shrink the job until it fits an afternoon</h3>
       <p>
-        Pick something you could finish in one to three hours while caffeinated: ten product blurbs, a tight FAQ page, a week of LinkedIn posts for one persona, a blog outline plus a rough intro. If you&apos;re doing LinkedIn, our <InternalLink href="/tools/ai-linkedin-post-generator">LinkedIn post generator</InternalLink> can get you messy first drafts—your job is to make them sound like a human with a reputation.
+        Pick something you could finish in one to three hours while caffeinated: ten product blurbs, a tight FAQ page, a week of LinkedIn posts for one persona, a blog outline plus a rough intro. If you&apos;re doing LinkedIn, the LinkedIn post generator on ClickWise can get you messy first drafts—your job is to make them sound like a human with a reputation.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 2 — Name it so a stranger gets it in one breath</h3>
@@ -4153,7 +4145,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 3 — Build one ugly proof document</h3>
       <p>
-        Use ChatGPT as a sparring partner, not a ghostwriter. Draft, then slash anything that sounds like a press release. For prompts that don&apos;t waste your night, steal shamelessly from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink>; if you need more than chat, peek at <InternalLink href="/blog/best-ai-tools-2026">free AI tools worth using in 2026</InternalLink>.
+        Use ChatGPT as a sparring partner, not a ghostwriter. Draft, then slash anything that sounds like a press release. For prompts that don&apos;t waste your night, steal shamelessly from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink>; if you need more than chat, peek at the best free AI tools in 2026 on the blog.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 4 — One watering hole for the next 24 hours</h3>
@@ -4163,7 +4155,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 5 — Send things that feel slightly scary</h3>
       <p>
-        Publish the gig or send twenty-five to fifty messages that reference something real—a line from their site, a post, a job detail. Templates below are training wheels, not copy-paste. On Fiverr, plug your price into the <InternalLink href="/tools/fiverr-fee-calculator">fee calculator</InternalLink> so you&apos;re not surprised when the platform eats a slice.
+        Publish the gig or send twenty-five to fifty messages that reference something real—a line from their site, a post, a job detail. Templates below are training wheels, not copy-paste. On Fiverr, plug your price into the Fiverr fee calculator on ClickWise so you&apos;re not surprised when the platform eats a slice.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 6 — Price for a &quot;yes,&quot; not a trophy</h3>
@@ -4185,7 +4177,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         ]}
       />
       <p className="text-sm">
-        If you&apos;re still assembling your stack, <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> helps you browse before you bluff. When you <strong>find clients using ChatGPT</strong> (or anything else), the win is always: honest about the workflow, obsessive about the edit.
+        When you <strong>find clients using ChatGPT</strong> (or anything else), the win is always: honest about the workflow, obsessive about the edit.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Messages that don&apos;t sound like a bot wrote them to a bot</h2>
@@ -4216,10 +4208,10 @@ export const blogContent: Record<string, React.ReactNode> = {
         ChatGPT—or whatever you like—is for outlines, ugly first drafts, and &quot;what am I missing&quot; passes. You&apos;re still the editor, the fact-checker, and the person who gets blamed if it&apos;s wrong. That&apos;s <strong>AI services for beginners</strong> done honestly: speed with a human signature.
       </p>
       <p>
-        For writing offers, <InternalLink href="/tools/ai-blog-intro-generator">the blog intro generator</InternalLink> is a decent unblocker when the cursor blinks too long. Everything else—who you contacted, who ghosted, who said maybe—goes in a spreadsheet so you remember to follow up. Most &quot;no&quot;s are just inbox timing.
+        For writing offers, the blog intro generator on ClickWise is a decent unblocker when the cursor blinks too long. Everything else—who you contacted, who ghosted, who said maybe—goes in a spreadsheet so you remember to follow up. Most &quot;no&quot;s are just inbox timing.
       </p>
       <p>
-        Big-picture money stuff lives in <InternalLink href="/blog/make-money-online-2026">our make money online 2026 breakdown</InternalLink>; plug your hours into the <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink> before you romanticize the grind.
+        Big-picture money stuff: read our make money online 2026 breakdown on the blog; plug your hours into the side hustle calculator under /tools before you romanticize the grind.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Ways to step on a rake (so you don&apos;t have to)</h2>
@@ -4240,23 +4232,16 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
       <FaqSection items={[
-        { q: "Do I need experience to land this kind of work?", a: <>You need a sentence that explains what you sell and a sample that proves you can sweat the details. Weirdly, showing your process sometimes beats a shiny portfolio. Tool-wise, our <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> roundup is a good bookmark.</> },
+        { q: "Do I need experience to land this kind of work?", a: "You need a sentence that explains what you sell and a sample that proves you can sweat the details. Weirdly, showing your process sometimes beats a shiny portfolio. Bookmark our AI freelancing tools guide on the blog when you scale." },
         { q: "Is a client in 24 hours realistic?", a: "If you mean &apos;someone pays you before the world ends&apos;—possible, not promised. It&apos;s a sprint to kill perfectionism, not a legally binding timeline." },
         { q: "Should I tell people I use AI?", a: "Usually, yes—frame it as you plus tools, not magic autopilot. People care that it&apos;s accurate and sounds like them." },
-        { q: "Where should a total beginner start?", a: <>Fiverr and Upwork hold the money in the middle, which matters when you&apos;re new. If you already talk to people on LinkedIn, start there—<InternalLink href="/tools/ai-linkedin-post-generator">our LinkedIn generator</InternalLink> is for drafts you still have to own.</> },
-        { q: "What should I charge at first?", a: <>Whatever makes saying yes feel easy for a stranger—not for your ego. Model it in the <InternalLink href="/tools/freelancer-earnings-calculator">earnings calculator</InternalLink>, then raise rates after you&apos;ve got proof.</> },
+        { q: "Where should a total beginner start?", a: "Fiverr and Upwork hold the money in the middle, which matters when you&apos;re new. If you already talk to people on LinkedIn, start there—use the LinkedIn generator on ClickWise for drafts you still have to own." },
+        { q: "What should I charge at first?", a: "Whatever makes saying yes feel easy for a stranger—not for your ego. Model it in the freelancer earnings calculator on ClickWise, then raise rates after you&apos;ve got proof." },
       ]} />
 
       <div className="glass rounded-2xl p-5 my-6">
-        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>When you&apos;re done doom-scrolling—read these</p>
-        <div className="flex flex-col gap-2 text-sm">
-          <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money online — 7 tested picks for 2026</InternalLink>
-          <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">Best AI freelancing tools to earn more in 2026</InternalLink>
-          <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles for beginners that actually work (2026)</InternalLink>
-          <InternalLink href="/blog/how-to-make-first-500-online-with-ai">How to Make Your First $500 Online Using AI</InternalLink>
-          <InternalLink href="/blog/chatgpt-prompts-save-time-2026">Top ChatGPT Prompts That Save 10+ Hours Per Week</InternalLink>
-          <InternalLink href="/tools/ai-finder">AI Finder — Find the Right AI Tools</InternalLink>
-        </div>
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Explore more in the Blog and Tools sections—we keep internal links light so this guide stays easy to read.</p>
       </div>
     </div>
   ),
@@ -4287,7 +4272,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         Here&apos;s the part nobody puts in the thumbnail: buyers don&apos;t pay for &quot;AI.&quot; They pay for fewer manual hours and fewer dropped leads. Your positioning starts when you can describe a chain of events on one screen—not a roadmap deck.
       </p>
       <p>
-        This walkthrough is the messy middle: one tight niche, one workflow you can maintain, one price that covers your tools. When you want to go deeper on gear and tactics, start with <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> (our tested picks), <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> for real client workflows, and <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles that work</InternalLink> for beginners—then come back after you&apos;ve shipped your demo. If you need cash flow before big builds, read <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> in parallel.
+        This walkthrough is the messy middle: one tight niche, one workflow you can maintain, one price that covers your tools. <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> covers our tested picks; if you need cash flow before big builds, read <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> in parallel—then come back after you&apos;ve shipped your demo.
       </p>
 
       <BlogImage
@@ -4305,15 +4290,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
         <p className="text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Stuff on ClickWise that saves you from spreadsheet panic</p>
-        <p className="text-sm mb-3">None of this replaces shipping the demo—but it stops you from guessing fees and stacks at midnight.</p>
-        <ul className="text-sm space-y-2 list-disc list-inside">
-          <li><InternalLink href="/tools/ai-finder">AI Finder</InternalLink> — poke around before you promise a stack you haven&apos;t tried.</li>
-          <li><InternalLink href="/tools/freelancer-earnings-calculator">Freelancer earnings calculator</InternalLink> — so your pilot still covers tools, taxes, and sleep.</li>
-          <li><InternalLink href="/tools/fiverr-fee-calculator">Fiverr fee calculator</InternalLink> — if you list automation gigs on Fiverr, see your take-home upfront.</li>
-          <li><InternalLink href="/tools/ai-linkedin-post-generator">AI LinkedIn post generator</InternalLink> — rough drafts for posts and DMs to founders; you still edit.</li>
-          <li><InternalLink href="/tools/ai-blog-intro-generator">AI blog intro generator</InternalLink> — when your offer includes content handoffs, get off the blank page.</li>
-          <li><InternalLink href="/tools/side-hustle-calculator">Side hustle calculator</InternalLink> — reality-check hours vs. income before you scale retainers.</li>
-        </ul>
+        <p className="text-sm mb-3">None of this replaces shipping the demo—but it stops you from guessing fees and stacks at midnight. Browse <InternalLink href="/tools/ai-finder">AI Finder</InternalLink>; use the freelancer earnings, Fiverr fee, LinkedIn post, blog intro, and side hustle calculators under /tools when you need numbers.</p>
       </div>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why most &quot;AI automation agencies&quot; die quietly</h2>
@@ -4321,7 +4298,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         The failure pattern is always the same: you market &quot;AI&quot; and &quot;efficiency,&quot; prospects nod, then nothing happens because nobody can picture the invoice line item. A real offer sells a chain of events: form submitted → tagged in CRM → Slack alert → draft email sent for human approval. That&apos;s boring—and sellable.
       </p>
       <p>
-        The second trap is stack hopping—n8n this week, Make next, custom Python after that—while your <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> folder turns into a museum. Pick two connectors you&apos;ll still support in ninety days.
+        The second trap is stack hopping—n8n this week, Make next, custom Python after that—while your AI freelancing tools folder turns into a museum. Pick two connectors you&apos;ll still support in ninety days.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step-by-step: launch a credible agency in weeks, not quarters</h2>
@@ -4333,12 +4310,12 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 2 — Productize one workflow</h3>
       <p>
-        Build a demo that runs on sample data: webhook → AI summary or routing → Google Sheet or HubSpot update → notification. Charge for setup + monthly health check—not &quot;AI strategy.&quot; For prompt-heavy steps, reuse patterns from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink>; if you need more than chat, peek at <InternalLink href="/blog/best-ai-tools-2026">free AI tools worth using in 2026</InternalLink>.
+        Build a demo that runs on sample data: webhook → AI summary or routing → Google Sheet or HubSpot update → notification. Charge for setup + monthly health check—not &quot;AI strategy.&quot; For prompt-heavy steps, reuse patterns from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink>; if you need more than chat, peek at free AI tools in 2026 on the blog.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 3 — Stack like a minimalist</h3>
       <p>
-        Common <strong>workflow automation services</strong> stacks in 2026: <strong>n8n</strong> (self-hosted or cloud) or <strong>Make</strong> for glue; <strong>Zapier</strong> when the client already pays for it; OpenAI/Anthropic APIs for text; Notion, Airtable, or Supabase for light data. You don&apos;t need twenty apps—see <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> when you&apos;re unsure what fits.
+        Common <strong>workflow automation services</strong> stacks in 2026: <strong>n8n</strong> (self-hosted or cloud) or <strong>Make</strong> for glue; <strong>Zapier</strong> when the client already pays for it; OpenAI/Anthropic APIs for text; Notion, Airtable, or Supabase for light data. You don&apos;t need twenty apps—see AI Finder when you&apos;re unsure what fits.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 4 — Price like infrastructure, not magic</h3>
@@ -4348,7 +4325,7 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 5 — Get three conversations</h3>
       <p>
-        Message founders on LinkedIn, walk into local businesses with a one-page before/after, or list a fixed offer on <strong>Upwork</strong> (&quot;I&apos;ll connect your Typeform to HubSpot + Slack in 10 days&quot;). On <strong>Fiverr</strong>, sell a labeled gig with a video of the demo—not &quot;I do AI.&quot; Same playbook as <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> (our tested picks) in practice: proof beats adjectives.
+        Message founders on LinkedIn, walk into local businesses with a one-page before/after, or list a fixed offer on <strong>Upwork</strong> (&quot;I&apos;ll connect your Typeform to HubSpot + Slack in 10 days&quot;). On <strong>Fiverr</strong>, sell a labeled gig with a video of the demo—not &quot;I do AI.&quot; Same playbook as our AI tools to make money guide in practice: proof beats adjectives.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How much should you charge clients?</h2>
@@ -4366,7 +4343,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         ]}
       />
       <p className="text-sm">
-        Adjust for your country and niche: e-commerce and clinics with PHI need higher margins and contracts. Run every number through the <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink> so <strong>make money with AI automation</strong> doesn&apos;t mean &quot;make money for SaaS vendors after your fees.&quot;
+        Adjust for your country and niche: e-commerce and clinics with PHI need higher margins and contracts. Run every number through the freelancer earnings calculator on ClickWise so <strong>make money with AI automation</strong> doesn&apos;t mean &quot;make money for SaaS vendors after your fees.&quot;
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tools and platforms that won&apos;t fight you</h2>
@@ -4380,7 +4357,7 @@ export const blogContent: Record<string, React.ReactNode> = {
         ]}
       />
       <p className="text-sm">
-        If you&apos;re still assembling your stack, <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> helps you browse before you bluff. If you&apos;re comparing stacks for <strong>local business automation</strong>, optimize for what you can debug at 9 p.m.—not what looks coolest on Twitter.
+        If you&apos;re still assembling your stack, AI Finder helps you browse before you bluff. If you&apos;re comparing stacks for <strong>local business automation</strong>, optimize for what you can debug at 9 p.m.—not what looks coolest on Twitter.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>n8n vs Zapier vs Make: which should your agency use?</h2>
@@ -4419,30 +4396,218 @@ export const blogContent: Record<string, React.ReactNode> = {
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Bottom line</h2>
       <p>
-        A sustainable <strong>AI automation agency</strong> is a logistics company for information—pick a lane, ship one workflow beautifully, then repeat. Layer <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles that work</InternalLink> or broader <InternalLink href="/blog/make-money-online-2026">ways to make money online</InternalLink> only after the core offer pays for your time.
+        A sustainable <strong>AI automation agency</strong> is a logistics company for information—pick a lane, ship one workflow beautifully, then repeat. Layer AI side hustles or broader ways to make money online on the blog only after the core offer pays for your time.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
       <FaqSection items={[
-        { q: "Do I need to code to run an AI automation agency?", a: <>No. Most beginner agencies use no-code tools like n8n, Make, or Zapier plus AI for prompts and copy. You need logic and QA, not a computer science degree. Tool-wise, our <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> roundup helps when you scale.</> },
+        { q: "Do I need to code to run an AI automation agency?", a: "No. Most beginner agencies use no-code tools like n8n, Make, or Zapier plus AI for prompts and copy. You need logic and QA, not a computer science degree. Tool-wise, the AI freelancing tools guide on the blog helps when you scale." },
         { q: "How much can a small AI automation agency make in 2026?", a: "Many solo operators land $2,000–$8,000 per month within six to twelve months with a clear offer and referrals. Results vary with niche, pricing, and follow-through." },
         { q: "What should I sell first?", a: "Sell one repeatable automation—for example lead follow-up from form to CRM, or AI-assisted email triage—not a vague monthly retainer on day one." },
         { q: "Is an AI automation agency saturated?", a: "Generic agencies are crowded. Narrow niches—dentists, real estate teams, e-commerce brands—still have messy manual work that owners will pay to fix." },
-        { q: "How do I find my first client?", a: <>Outbound to businesses you can name, offer a paid pilot, and show a Loom of a working demo. Marketplaces and warm intros also work once your offer is specific. See <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> for outreach rhythm.</> },
+        { q: "How do I find my first client?", a: "Outbound to businesses you can name, offer a paid pilot, and show a Loom of a working demo. Marketplaces and warm intros also work once your offer is specific. See how to get AI clients on the blog for outreach rhythm." },
       ]} />
 
       <div className="glass rounded-2xl p-5 my-6">
-        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>When you&apos;re done doom-scrolling—read these</p>
-        <div className="flex flex-col gap-2 text-sm">
-          <InternalLink href="/blog/how-to-get-ai-clients">How to get AI clients (first revenue)</InternalLink>
-          <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money online — 7 tested picks for 2026</InternalLink>
-          <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">Best AI freelancing tools to earn more in 2026</InternalLink>
-          <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles for beginners that actually work (2026)</InternalLink>
-          <InternalLink href="/blog/how-to-make-first-500-online-with-ai">How to Make Your First $500 Online Using AI</InternalLink>
-          <InternalLink href="/blog/chatgpt-prompts-save-time-2026">Top ChatGPT Prompts That Save 10+ Hours Per Week</InternalLink>
-          <InternalLink href="/tools/ai-finder">AI Finder — Find the Right AI Tools</InternalLink>
-        </div>
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Explore more in the Blog and Tools sections—we keep internal links light so this guide stays easy to read.</p>
       </div>
     </div>
   ),
+
+  "ai-automation-ideas-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        You don&apos;t have an idea problem—you have a packaging problem. The market is full of <strong>ai automation ideas</strong>; what&apos;s rare is someone who can name the trigger, the systems touched, and the invoice line in one breath.
+      </p>
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What are the best AI automation ideas to sell in 2026?
+        </h2>
+        <p className="text-sm md:text-base mb-4" style={{ color: "var(--text-secondary)" }}>
+          The best <strong>automation services to sell</strong> in 2026 are boring, visible, and tied to revenue or time saved:
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li>Lead follow-up and CRM routing (forms → CRM → Slack/email).</li>
+          <li>Email triage with AI classification + human approval.</li>
+          <li>Support deflection: FAQ bot + ticket tagging.</li>
+          <li>CRM hygiene: dedupe, enrichment, stage updates from activity.</li>
+          <li>Content repurposing: one long asset → many formats.</li>
+          <li>Invoice and payment chase automations.</li>
+          <li>Social scheduling with guardrails (queue + approval).</li>
+          <li>E-commerce order and inventory alerts.</li>
+          <li>AI-assisted cold outreach personalization at small batch scale.</li>
+          <li>Appointment booking and reminder flows.</li>
+        </ol>
+      </div>
+
+      <p>
+        Below is the full menu—each one is a real <strong>ai business ideas 2026</strong> lane freelancers actually invoice for. When you&apos;re ready to stack offers into a business, read <InternalLink href="/blog/ai-automation-agency">how to start an AI automation agency</InternalLink> (step-by-step + pricing). For tools and income proof, start with <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> (our tested picks)—then browse the rest of the blog when you scale.
+      </p>
+
+      <BlogImage
+        src="/images/ai-automation-ideas-2026.png"
+        alt="AI automation ideas that actually sell — central AI chip connecting to CRM, email, retail, and growth icons; $100 to $2,000 pilot range"
+        caption="Sell the outcome (hours back, fewer dropped leads)—not the logo on the box."
+      />
+
+      <StatBox items={[
+        ["10", "Sellable ideas"],
+        ["$100–$2k", "Typical pilot range"],
+        ["n8n/Zapier", "Orchestration"],
+        ["1", "Pick & ship first"],
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
+        <p className="text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Stuff on ClickWise that saves you from spreadsheet panic</p>
+        <p className="text-sm mb-3">None of this replaces a signed scope—but it stops you from guessing fees and stacks at midnight. Browse <InternalLink href="/tools/ai-finder">AI Finder</InternalLink>; use the freelancer earnings, Fiverr fee, LinkedIn post, blog intro, and side hustle calculators under /tools when you need numbers.</p>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why most AI automation ideas never get paid</h2>
+      <p>
+        Three killers: <strong>vague scope</strong> (&quot;we&apos;ll automate your business&quot;), <strong>magic AI</strong> with no human approval on risky steps, and <strong>no observable KPI</strong>. Buyers fund workflows they can screenshot when something breaks—not slides about &quot;efficiency.&quot; If you want to <strong>make money with automation</strong>, sell a named path: trigger → systems → owner → alert.
+      </p>
+      <p>
+        Opinion: the best freelancers say no to HIPAA-grade pipelines until contracts exist. The second-best charge for discovery and still say no when the data&apos;s a mess.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>10 AI automation ideas (with tools, buyers, and pricing)</h2>
+      <p className="text-sm mb-4">
+        Ranges are US-style solo freelancers in 2026—adjust for country and complexity. Always write scope: integrations, volumes, SLAs, and who approves AI output.
+      </p>
+
+      <DataTable
+        headers={["#", "Idea", "Typical pilot / build"]}
+        rows={[
+          ["1", "Lead follow-up automation", "$400–$1,800"],
+          ["2", "Email triage AI", "$500–$2,000"],
+          ["3", "Support chatbot + ticket tagging", "$600–$2,000"],
+          ["4", "CRM auto-updates", "$400–$1,500"],
+          ["5", "Content repurposing system", "$300–$1,400"],
+          ["6", "Invoice + payment reminders", "$250–$1,200"],
+          ["7", "Social auto-posting (approved queue)", "$300–$1,500"],
+          ["8", "E-commerce order alerts", "$350–$1,600"],
+          ["9", "AI cold outreach personalization", "$400–$1,800"],
+          ["10", "Appointment booking automation", "$350–$1,500"],
+        ]}
+      />
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. Lead follow-up automation</h3>
+      <p><strong>What it does:</strong> New form or ad lead → instant CRM card → Slack or SMS ping → first email or SMS sequence with delay rules.</p>
+      <p><strong>Who needs it:</strong> Local services (dentists, contractors), small agencies, B2B teams with leaky handoffs between marketing and sales.</p>
+      <p><strong>Tools:</strong> <strong>Zapier</strong> or <strong>Make</strong> for speed; <strong>n8n</strong> when routing is gnarly; HubSpot/Pipedrive/Airtable; optional <strong>OpenAI</strong> for draft first-touch copy (human approves).</p>
+      <p><strong>How to sell it:</strong> Loom of a fake lead hitting Slack in 30 seconds. Pitch &quot;we stop leads from dying in the inbox.&quot; List on Upwork with a fixed title: &quot;Typeform to HubSpot + Slack in 10 days.&quot;</p>
+      <p><strong>Pricing:</strong> $400–$1,800 pilot; $200–$800/mo care.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Email triage AI</h3>
+      <p><strong>What it does:</strong> Inbound mail → classify (refund, sales, vendor) → route to folder or assignee → draft reply for approval.</p>
+      <p><strong>Who needs it:</strong> Founders drowning in shared inboxes, small e-commerce, professional services.</p>
+      <p><strong>Tools:</strong> Gmail/Outlook APIs + <strong>OpenAI</strong> or Claude; <strong>n8n</strong> for branching; logging to Sheets for QA.</p>
+      <p><strong>How to sell it:</strong> Before/after: &quot;200 emails/week → 40 that need a human.&quot; Offer a 2-week pilot on one alias.</p>
+      <p><strong>Pricing:</strong> $500–$2,000 build; monthly depends on volume.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. Customer support chatbot (deflection-first)</h3>
+      <p><strong>What it does:</strong> Site chat answers top FAQs from a doc you control; escalates to ticket with transcript and intent tag.</p>
+      <p><strong>Who needs it:</strong> SaaS with repeat questions, Shopify brands, online schools.</p>
+      <p><strong>Tools:</strong> Intercom/Zendesk or Crisp + retrieval on help docs; <strong>OpenAI</strong> with citations; Zapier for ticket creation.</p>
+      <p><strong>How to sell it:</strong> Never promise 100% resolution—promise deflection rate + faster human handoff. Show a guardrail: &quot;unknown → human.&quot;</p>
+      <p><strong>Pricing:</strong> $600–$2,000 setup; retainer for doc updates.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. CRM auto-updates</h3>
+      <p><strong>What it does:</strong> Meetings, emails, or Stripe events create tasks, move stages, or append last-touch fields—no Sunday data janitor work.</p>
+      <p><strong>Who needs it:</strong> Sales teams on HubSpot/Salesforce/Pipedrive with dirty CRMs.</p>
+      <p><strong>Tools:</strong> Native CRM automations + <strong>n8n</strong> for custom joins; Clearbit/enrichment APIs if budget allows.</p>
+      <p><strong>How to sell it:</strong> &quot;Close the loop between calendar and pipeline&quot;—one dashboard screenshot beats ten AI buzzwords.</p>
+      <p><strong>Pricing:</strong> $400–$1,500 per workflow cluster.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Content repurposing system</h3>
+      <p><strong>What it does:</strong> One webinar or blog → LinkedIn posts, email snippet, short script, and asset folder in Drive—human edits last mile.</p>
+      <p><strong>Who needs it:</strong> Creators, indie SaaS, agencies packaging founder content.</p>
+      <p><strong>Tools:</strong> <strong>OpenAI</strong> + Google Docs; <strong>Make</strong> to fan out; optional Descript for clips. Prompt library from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink>.</p>
+      <p><strong>How to sell it:</strong> Sell &quot;content ops&quot; with a template pack—not raw &quot;AI writing.&quot;</p>
+      <p><strong>Pricing:</strong> $300–$1,400 per playbook build.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>6. Invoice + payment reminders</h3>
+      <p><strong>What it does:</strong> Invoice sent → scheduled reminders → escalation to owner when overdue; optional late fee rules.</p>
+      <p><strong>Who needs it:</strong> Freelance-heavy firms, clinics, contractors with cash-flow pain.</p>
+      <p><strong>Tools:</strong> QuickBooks/Xero/Stripe + email sequences; <strong>Zapier</strong> glue; keep compliance boring.</p>
+      <p><strong>How to sell it:</strong> ROI in plain English: &quot;recover one missed payment a quarter and this pays for itself.&quot;</p>
+      <p><strong>Pricing:</strong> $250–$1,200.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>7. Social media auto-posting (queue + approval)</h3>
+      <p><strong>What it does:</strong> Approved posts drop into Buffer/Later/Metricool on a schedule; optional RSS or blog → draft queue for human click.</p>
+      <p><strong>Who needs it:</strong> Local brands, busy founders, small marketing teams without a full-time social person.</p>
+      <p><strong>Tools:</strong> Buffer/Later + Sheets + <strong>Zapier</strong>; avoid full autoposting without approval unless they love risk.</p>
+      <p><strong>How to sell it:</strong> &quot;You stop logging into five accounts&quot; + show approval flow.</p>
+      <p><strong>Pricing:</strong> $300–$1,500.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>8. E-commerce order alerts</h3>
+      <p><strong>What it does:</strong> High-value order, fraud flag, or low-stock SKU → Slack/SMS; optional tag in helpdesk.</p>
+      <p><strong>Who needs it:</strong> Shopify/Woo brands doing real volume.</p>
+      <p><strong>Tools:</strong> Shopify webhooks + <strong>n8n</strong>; Klaviyo/partners as needed.</p>
+      <p><strong>How to sell it:</strong> Night-shift coverage story: &quot;Nothing crazy happens—but you see it when it does.&quot;</p>
+      <p><strong>Pricing:</strong> $350–$1,600.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>9. AI cold outreach personalization (batch, not spam)</h3>
+      <p><strong>What it does:</strong> Enrich lead list → generate first-line + angle from public facts → human approves → sends via Instantly/Smartlead/GMass.</p>
+      <p><strong>Who needs it:</strong> Small B2B sales teams, agencies, recruiters.</p>
+      <p><strong>Tools:</strong> Clay/Apollo + <strong>OpenAI</strong>; strict daily caps; domain warmup not your job unless contracted.</p>
+      <p><strong>How to sell it:</strong> Ethics in the pitch: &quot;Human approves every variant before send.&quot; Deliverability first or you&apos;re fired.</p>
+      <p><strong>Pricing:</strong> $400–$1,800 build + monthly for list ops.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>10. Appointment booking automation</h3>
+      <p><strong>What it does:</strong> Calendly/Cal.com bookings → CRM update → reminder sequence → no-show follow-up.</p>
+      <p><strong>Who needs it:</strong> Clinics, consultancies, real estate, coaches.</p>
+      <p><strong>Tools:</strong> Cal.com/Calendly + Twilio/email; <strong>Zapier</strong> or <strong>Make</strong>.</p>
+      <p><strong>How to sell it:</strong> Show reduced no-shows and reclaimed admin hours—one KPI.</p>
+      <p><strong>Pricing:</strong> $350–$1,500.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Best idea to start with (beginner pick)</h2>
+      <p>
+        Start with <strong>lead follow-up automation</strong>. It&apos;s legible to every buyer, demos in a single Loom, and maps cleanly to <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> style outbound: you&apos;re not selling &quot;AI&quot;—you&apos;re selling &quot;your leads stop vanishing.&quot; Build one reference build, then raise prices.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to get your first client using these ideas</h2>
+      <ol className="list-decimal list-inside space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+        <li>Pick <strong>one</strong> idea and one niche (e.g. &quot;Shopify stores doing $20k–$200k/mo&quot;).</li>
+        <li>Ship a demo with fake brand data—no NDA drama.</li>
+        <li>Send 20–40 DMs or emails with the Loom + fixed pilot price (same rhythm as our how to get AI clients guide on the blog).</li>
+        <li>Post the same offer on Upwork/Fiverr with a boring, specific title.</li>
+        <li>After the first win, productize: template SOW + video + monthly care tier.</li>
+      </ol>
+      <p className="text-sm mt-4">
+        Going deeper on positioning and offers: the AI automation agency guide on the blog plus the free AI tools in 2026 roundup for stack research.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Mistakes beginners make</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm">
+        <li><strong>Selling &quot;AI&quot; instead of minutes saved or dollars recovered.</strong></li>
+        <li><strong>No logging or alerts</strong>—you get 3 a.m. texts when a webhook silently fails.</li>
+        <li><strong>Unlimited revisions</strong> for flat fee—define change tickets.</li>
+        <li><strong>Skipping discovery paid or unpaid</strong>—bad inputs mean you eat the rework.</li>
+        <li><strong>Copying someone else&apos;s stack</strong> instead of one you can debug—see what actually gets invoices paid in our AI tools to make money guide on the blog.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Bottom line</h2>
+      <p>
+        The <strong>automation services to sell</strong> in 2026 are not exotic—they&apos;re reliable. Pick one lane, publish the price, and ship a demo. Stack learning with make money online strategy on the blog once the first checks clear.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Do I need experience to sell AI automation services?", a: "You need one workflow you can demo end-to-end and a clear scope document. Experience helps, but buyers pay for reliability and communication—especially on small pilots." },
+        { q: "Which automation idea is best for total beginners?", a: "Lead follow-up from form to CRM plus Slack alert is the fastest to demo and explain. It is boring, visible, and easy to price as a pilot." },
+        { q: "How much can I charge for these automations?", a: "Most solo freelancers price pilots between roughly $300 and $2,000 depending on complexity, then monthly care from a few hundred dollars up. Always scope in writing." },
+        { q: "Should I use n8n, Zapier, or Make?", a: "Use what you can maintain. Zapier when the client already pays for it; n8n or Make when you need branching, logging, and margin at higher volume." },
+        { q: "How do I get my first client for automation work?", a: "Outbound with a Loom demo, fixed pilot price, and one niche sentence. Pair with how to get AI clients on the blog for outreach templates and rhythm." },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Explore more in the Blog and Tools sections—we keep internal links light so this guide stays easy to read.</p>
+      </div>
+    </div>
+  ),
+
 };

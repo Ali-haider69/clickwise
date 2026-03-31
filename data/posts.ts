@@ -17,15 +17,18 @@ export interface Post {
   schemaType?: "Article" | "BlogPosting";
   /** Plain-text Q&A for FAQPage JSON-LD (rich results). Answers must match on-page FAQ copy. */
   faqSchema?: { question: string; answer: string }[];
+  /** One primary keyword per post; `seoKeywords` should be 5–10 supporting phrases (avoid near-duplicates of the primary). */
+  primaryKeyword?: string;
 }
 
 export const posts: Post[] = [
   {
     slug: "how-to-get-ai-clients",
     title: "How to Get Your First AI Client in 24 Hours (No Experience Needed)",
-    metaTitle: "How to Get AI Clients in 24 Hours (Beginner Guide 2026)",
+    metaTitle: "How to Get AI Clients in 24 Hours (Step-by-Step Beginner Guide 2026)",
+    primaryKeyword: "how to get ai clients",
     metaDescription:
-      "Want to know how to get AI clients fast? This beginner-friendly guide shows proven methods, outreach templates, and platforms to land your first client in 24 hours.",
+      "Learn how to get AI clients: one tight offer, one platform, and outreach that sounds human. Beginner-friendly steps, templates, and where to land your first paid client.",
     excerpt:
       "Learn how to get AI clients in 24 hours — even with zero experience. Proven step-by-step method, outreach templates, and platforms to land your first paying client fast.",
     category: "Make Money",
@@ -74,7 +77,6 @@ export const posts: Post[] = [
       },
     ],
     seoKeywords: [
-      "how to get ai clients",
       "get first client with ai",
       "ai freelancing for beginners",
       "how to make money with ai clients",
@@ -82,12 +84,7 @@ export const posts: Post[] = [
       "ai services for beginners",
       "how to sell ai services",
       "freelance ai jobs 2026",
-      "get clients online fast",
-      "how to get your first ai client fast",
       "how to get ai clients without experience",
-      "how to find freelance clients using ai tools",
-      "best way to get clients online as a beginner",
-      "ai freelancing step by step guide",
     ],
   },
   {
@@ -122,7 +119,7 @@ export const posts: Post[] = [
       {
         question: "Do I need to code to run an AI automation agency?",
         answer:
-          "No. Most beginner agencies use no-code tools like n8n, Make, or Zapier plus AI for prompts and copy. You need logic and QA, not a computer science degree. Tool-wise, our AI freelancing tools roundup helps when you scale.",
+          "No. Most beginner agencies use no-code tools like n8n, Make, or Zapier plus AI for prompts and copy. You need logic and QA, not a computer science degree. Tool-wise, the AI freelancing tools guide on the blog helps when you scale.",
       },
       {
         question: "How much can a small AI automation agency make in 2026?",
@@ -142,7 +139,7 @@ export const posts: Post[] = [
       {
         question: "How do I find my first client?",
         answer:
-          "Outbound to businesses you can name, offer a paid pilot, and show a Loom of a working demo. Marketplaces and warm intros also work once your offer is specific. See how to get AI clients for outreach rhythm.",
+          "Outbound to businesses you can name, offer a paid pilot, and show a Loom of a working demo. Marketplaces and warm intros also work once your offer is specific. See how to get AI clients on the blog for outreach rhythm.",
       },
     ],
     seoKeywords: [
@@ -158,6 +155,72 @@ export const posts: Post[] = [
       "make money with automation",
       "make money with ai automation",
       "n8n vs zapier vs make",
+    ],
+  },
+  {
+    slug: "ai-automation-ideas-2026",
+    title: "10 AI Automation Ideas That Actually Sell in 2026 (With Real Examples)",
+    metaTitle: "10 AI Automation Ideas That Sell in 2026 (Real Examples + Pricing)",
+    metaDescription:
+      "Discover ai automation ideas that convert: lead follow-up, email triage, CRM updates, and more. Real tools (n8n, Zapier), pricing $100–$2K, and how to sell automation services in 2026.",
+    excerpt:
+      "Looking for ai automation ideas that actually sell? Ten proven automation services to sell in 2026—with tools, pricing, and how to land clients. Built for freelancers ready to make money with automation.",
+    category: "Make Money",
+    readTime: "20 min",
+    date: "Apr 2, 2026",
+    image: "/images/ai-automation-ideas-2026.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Automation",
+      "n8n",
+      "Zapier",
+      "Freelancing",
+      "Make Money Online",
+      "Workflow Automation",
+      "Make Money with AI",
+      "AI Side Hustle",
+      "Freelancing 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Do I need experience to sell AI automation services?",
+        answer:
+          "You need one workflow you can demo end-to-end and a clear scope document. Experience helps, but buyers pay for reliability and communication—especially on small pilots.",
+      },
+      {
+        question: "Which automation idea is best for total beginners?",
+        answer:
+          "Lead follow-up from form to CRM plus Slack alert is the fastest to demo and explain. It is boring, visible, and easy to price as a pilot.",
+      },
+      {
+        question: "How much can I charge for these automations?",
+        answer:
+          "Most solo freelancers price pilots between roughly $300 and $2,000 depending on complexity, then monthly care from a few hundred dollars up. Always scope in writing.",
+      },
+      {
+        question: "Should I use n8n, Zapier, or Make?",
+        answer:
+          "Use what you can maintain. Zapier when the client already pays for it; n8n or Make when you need branching, logging, and margin at higher volume.",
+      },
+      {
+        question: "How do I get my first client for automation work?",
+        answer:
+          "Outbound with a Loom demo, fixed pilot price, and one niche sentence. Pair with how to get AI clients on the blog for outreach templates and rhythm.",
+      },
+    ],
+    seoKeywords: [
+      "ai automation ideas",
+      "automation services to sell",
+      "ai business ideas 2026",
+      "make money with automation",
+      "ai automation freelance",
+      "n8n automation ideas",
+      "zapier automation services",
+      "sell automation online",
+      "workflow automation ideas",
+      "ai side hustle automation",
     ],
   },
   {

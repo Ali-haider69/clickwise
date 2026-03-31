@@ -22,7 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: metaTitle,
     description: metaDescription,
-    keywords: [...post.tags, ...(post.seoKeywords ?? [])].join(", "),
+    keywords: [
+      ...(post.primaryKeyword ? [post.primaryKeyword] : []),
+      ...post.tags,
+      ...(post.seoKeywords ?? []),
+    ].join(", "),
     alternates: { canonical: `/blog/${slug}` },
     openGraph: { title: metaTitle, description: metaDescription, images: [post.image], type: "article" },
   };
@@ -46,7 +50,11 @@ export default async function BlogPostPage({ params }: Props) {
     url: `https://clickwise.website/blog/${slug}`,
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
-    keywords: [...post.tags, ...(post.seoKeywords ?? [])].join(", "),
+    keywords: [
+      ...(post.primaryKeyword ? [post.primaryKeyword] : []),
+      ...post.tags,
+      ...(post.seoKeywords ?? []),
+    ].join(", "),
     author: {
       "@type": "Organization",
       name: "ClickWise Editorial",
