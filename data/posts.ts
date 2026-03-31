@@ -10,9 +10,86 @@ export interface Post {
   featured?: boolean;
   tags: string[];
   seoKeywords?: string[];
+  /** Overrides `<title>` and meta description for SEO / CTR when set. */
+  metaTitle?: string;
+  metaDescription?: string;
+  /** schema.org `@type` for main article JSON-LD (e.g. BlogPosting). Defaults to Article. */
+  schemaType?: "Article" | "BlogPosting";
+  /** Plain-text Q&A for FAQPage JSON-LD (rich results). Answers must match on-page FAQ copy. */
+  faqSchema?: { question: string; answer: string }[];
 }
 
 export const posts: Post[] = [
+  {
+    slug: "how-to-get-ai-clients",
+    title: "How to Get Your First AI Client in 24 Hours (No Experience Needed)",
+    metaTitle: "How to Get AI Clients in 24 Hours (Beginner Guide 2026)",
+    metaDescription:
+      "Want to know how to get AI clients fast? This beginner-friendly guide shows proven methods, outreach templates, and platforms to land your first client in 24 hours.",
+    excerpt:
+      "Learn how to get AI clients in 24 hours — even with zero experience. Proven step-by-step method, outreach templates, and platforms to land your first paying client fast.",
+    category: "Make Money",
+    readTime: "18 min",
+    date: "Mar 31, 2026",
+    image: "/images/how-to-get-ai-clients.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Freelancing",
+      "Get Clients",
+      "Fiverr",
+      "Upwork",
+      "ChatGPT",
+      "Beginners",
+      "Make Money with AI",
+      "AI Side Hustle",
+      "Freelancing 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Do I need experience to land this kind of work?",
+        answer:
+          "You need a sentence that explains what you sell and a sample that proves you can sweat the details. Showing your process sometimes beats a shiny portfolio. Pair with a freelancer AI tools shortlist when you are ready to scale.",
+      },
+      {
+        question: "Is a client in 24 hours realistic?",
+        answer:
+          "If you mean someone pays you quickly—possible, not promised. It is a sprint to kill perfectionism, not a legally binding timeline.",
+      },
+      {
+        question: "Should I tell people I use AI?",
+        answer:
+          "Usually yes. Frame it as you plus tools, not magic autopilot. People care that it is accurate and sounds like them.",
+      },
+      {
+        question: "Where should a total beginner start?",
+        answer:
+          "Fiverr and Upwork hold the money in the middle, which matters when you are new. If you already talk to people on LinkedIn, start there—use drafts you still edit yourself.",
+      },
+      {
+        question: "What should I charge at first?",
+        answer:
+          "Whatever makes saying yes feel easy for a stranger—not for your ego. Model numbers with an earnings calculator, then raise rates after you have proof.",
+      },
+    ],
+    seoKeywords: [
+      "how to get ai clients",
+      "get first client with ai",
+      "ai freelancing for beginners",
+      "how to make money with ai clients",
+      "find clients using chatgpt",
+      "ai services for beginners",
+      "how to sell ai services",
+      "freelance ai jobs 2026",
+      "get clients online fast",
+      "how to get your first ai client fast",
+      "how to get ai clients without experience",
+      "how to find freelance clients using ai tools",
+      "best way to get clients online as a beginner",
+      "ai freelancing step by step guide",
+    ],
+  },
   {
     slug: "chatgpt-prompts-save-time-2026",
     title: "Top ChatGPT Prompts That Save 10+ Hours Per Week (2026 Guide)",

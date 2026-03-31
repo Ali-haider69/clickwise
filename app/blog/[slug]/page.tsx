@@ -17,12 +17,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
+  const metaTitle = post.metaTitle ?? post.title;
+  const metaDescription = post.metaDescription ?? post.excerpt;
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: metaTitle,
+    description: metaDescription,
     keywords: [...post.tags, ...(post.seoKeywords ?? [])].join(", "),
     alternates: { canonical: `/blog/${slug}` },
-    openGraph: { title: post.title, description: post.excerpt, images: [post.image], type: "article" },
+    openGraph: { title: metaTitle, description: metaDescription, images: [post.image], type: "article" },
   };
 }
 
@@ -34,11 +36,12 @@ export default async function BlogPostPage({ params }: Props) {
   const content = blogContent[slug];
   const related = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 3);
 
+  const articleDescription = post.metaDescription ?? post.excerpt;
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": post.schemaType ?? "Article",
     headline: post.title,
-    description: post.excerpt,
+    description: articleDescription,
     image: post.image,
     url: `https://clickwise.website/blog/${slug}`,
     datePublished: new Date(post.date).toISOString(),
@@ -64,12 +67,34 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
+  const faqJsonLd =
+    post.faqSchema && post.faqSchema.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faqSchema.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <div className="min-h-screen pt-20 pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <div className="relative h-64 md:h-80 w-full overflow-hidden">
         <Image src={post.image} alt={post.title} fill className="object-cover opacity-50" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--bg-primary)]" />
