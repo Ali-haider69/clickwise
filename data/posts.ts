@@ -91,6 +91,76 @@ export const posts: Post[] = [
     ],
   },
   {
+    slug: "ai-automation-agency",
+    title: "How to Start an AI Automation Agency in 2026 (Step-by-Step + First Client Fast)",
+    metaTitle: "How to Start an AI Automation Agency in 2026 (Step-by-Step + First Client Fast)",
+    metaDescription:
+      "Want to know how to start an AI automation agency? This beginner-friendly guide covers niche, n8n/Zapier stacks, pricing, and landing your first automation clients in 2026.",
+    excerpt:
+      "Learn how to start an AI automation agency in 2026 — even with zero experience. Proven niche, offer, pricing, and outreach steps to land your first paid automation build fast.",
+    category: "Make Money",
+    readTime: "17 min",
+    date: "Apr 1, 2026",
+    image: "/images/ai-automation-agency.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Automation Agency",
+      "Workflow Automation",
+      "n8n",
+      "Zapier",
+      "Make Money Online",
+      "AI Business 2026",
+      "Local Business",
+      "SaaS",
+      "Make Money with AI",
+      "AI Side Hustle",
+      "Freelancing 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Do I need to code to run an AI automation agency?",
+        answer:
+          "No. Most beginner agencies use no-code tools like n8n, Make, or Zapier plus AI for prompts and copy. You need logic and QA, not a computer science degree. Tool-wise, our AI freelancing tools roundup helps when you scale.",
+      },
+      {
+        question: "How much can a small AI automation agency make in 2026?",
+        answer:
+          "Many solo operators land $2,000–$8,000 per month within six to twelve months with a clear offer and referrals. Results vary with niche, pricing, and follow-through.",
+      },
+      {
+        question: "What should I sell first?",
+        answer:
+          "Sell one repeatable automation—for example lead follow-up from form to CRM, or AI-assisted email triage—not a vague monthly retainer on day one.",
+      },
+      {
+        question: "Is an AI automation agency saturated?",
+        answer:
+          "Generic agencies are crowded. Narrow niches—dentists, real estate teams, e-commerce brands—still have messy manual work that owners will pay to fix.",
+      },
+      {
+        question: "How do I find my first client?",
+        answer:
+          "Outbound to businesses you can name, offer a paid pilot, and show a Loom of a working demo. Marketplaces and warm intros also work once your offer is specific. See how to get AI clients for outreach rhythm.",
+      },
+    ],
+    seoKeywords: [
+      "ai automation agency",
+      "how to start ai automation agency",
+      "ai automation business",
+      "workflow automation services",
+      "n8n automation agency",
+      "ai agency for beginners",
+      "sell automation services",
+      "local business automation",
+      "ai automation pricing 2026",
+      "make money with automation",
+      "make money with ai automation",
+      "n8n vs zapier vs make",
+    ],
+  },
+  {
     slug: "chatgpt-prompts-save-time-2026",
     title: "Top ChatGPT Prompts That Save 10+ Hours Per Week (2026 Guide)",
     excerpt: "Most people use ChatGPT wrong and wonder why results are mediocre. These 20+ battle-tested prompts for writing, business, freelancing, and automation will change how you work — starting today.",

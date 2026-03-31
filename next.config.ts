@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/how-to-get-ai-clients",
         permanent: true,
       },
+      {
+        source: "/blog/how-to-start-ai-automation-agency-2026",
+        destination: "/blog/ai-automation-agency",
+        permanent: true,
+      },
     ];
   },
   images: {

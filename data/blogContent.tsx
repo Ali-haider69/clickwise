@@ -4260,4 +4260,189 @@ export const blogContent: Record<string, React.ReactNode> = {
       </div>
     </div>
   ),
+
+  "ai-automation-agency": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Everyone says &quot;start an <strong>AI automation agency</strong>.&quot; Almost nobody tells you what to sell on Monday morning—or how to quote it without sounding like you rented a slide deck. If you want to <strong>make money with AI automation</strong>, you need a real <strong>AI automation business</strong> offer buyers can budget for—not a vibe.
+      </p>
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the fastest way to start an AI automation agency?
+        </h2>
+        <p className="text-sm md:text-base mb-4" style={{ color: "var(--text-secondary)" }}>
+          The fastest way to start an AI automation agency is to:
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li>Write one niche sentence (who you help + one workflow you own end-to-end).</li>
+          <li>Build a demo automation on sample data—form → CRM or sheet → Slack—with human approval on AI steps.</li>
+          <li>Cap your stack at three core tools (e.g. n8n or Make + one data store + one AI API).</li>
+          <li>Price a paid pilot with a fixed scope, then a monthly care tier—not vague &quot;AI strategy.&quot;</li>
+          <li>Get three real conversations: outbound, marketplaces, or intros—then send a Loom of the demo.</li>
+        </ol>
+      </div>
+
+      <p>
+        Here&apos;s the part nobody puts in the thumbnail: buyers don&apos;t pay for &quot;AI.&quot; They pay for fewer manual hours and fewer dropped leads. Your positioning starts when you can describe a chain of events on one screen—not a roadmap deck.
+      </p>
+      <p>
+        This walkthrough is the messy middle: one tight niche, one workflow you can maintain, one price that covers your tools. When you want to go deeper on gear and tactics, start with <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> (our tested picks), <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> for real client workflows, and <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles that work</InternalLink> for beginners—then come back after you&apos;ve shipped your demo. If you need cash flow before big builds, read <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> in parallel.
+      </p>
+
+      <BlogImage
+        src="/images/ai-automation-agency.png"
+        alt="How to start an AI automation agency — team workflow and automation"
+        caption="Automation agencies win when the client sees fewer clicks—not when you show them your model names."
+      />
+
+      <StatBox items={[
+        ["1", "Niche first"],
+        ["3", "Core tools max"],
+        ["$2k–$8k", "Solo monthly range"],
+        ["Pilot", "Before retainer"],
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
+        <p className="text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Stuff on ClickWise that saves you from spreadsheet panic</p>
+        <p className="text-sm mb-3">None of this replaces shipping the demo—but it stops you from guessing fees and stacks at midnight.</p>
+        <ul className="text-sm space-y-2 list-disc list-inside">
+          <li><InternalLink href="/tools/ai-finder">AI Finder</InternalLink> — poke around before you promise a stack you haven&apos;t tried.</li>
+          <li><InternalLink href="/tools/freelancer-earnings-calculator">Freelancer earnings calculator</InternalLink> — so your pilot still covers tools, taxes, and sleep.</li>
+          <li><InternalLink href="/tools/fiverr-fee-calculator">Fiverr fee calculator</InternalLink> — if you list automation gigs on Fiverr, see your take-home upfront.</li>
+          <li><InternalLink href="/tools/ai-linkedin-post-generator">AI LinkedIn post generator</InternalLink> — rough drafts for posts and DMs to founders; you still edit.</li>
+          <li><InternalLink href="/tools/ai-blog-intro-generator">AI blog intro generator</InternalLink> — when your offer includes content handoffs, get off the blank page.</li>
+          <li><InternalLink href="/tools/side-hustle-calculator">Side hustle calculator</InternalLink> — reality-check hours vs. income before you scale retainers.</li>
+        </ul>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why most &quot;AI automation agencies&quot; die quietly</h2>
+      <p>
+        The failure pattern is always the same: you market &quot;AI&quot; and &quot;efficiency,&quot; prospects nod, then nothing happens because nobody can picture the invoice line item. A real offer sells a chain of events: form submitted → tagged in CRM → Slack alert → draft email sent for human approval. That&apos;s boring—and sellable.
+      </p>
+      <p>
+        The second trap is stack hopping—n8n this week, Make next, custom Python after that—while your <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> folder turns into a museum. Pick two connectors you&apos;ll still support in ninety days.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step-by-step: launch a credible agency in weeks, not quarters</h2>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 1 — Nail one niche sentence</h3>
+      <p>
+        Not &quot;SMBs.&quot; Try: &quot;I automate lead follow-up for independent dental clinics&quot; or &quot;I connect Shopify orders to inventory Slack alerts for brands doing $500K–$5M.&quot; <strong>How to start an AI automation agency with no experience</strong> starts here—without a niche, you&apos;re a general contractor quoting the sky.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 2 — Productize one workflow</h3>
+      <p>
+        Build a demo that runs on sample data: webhook → AI summary or routing → Google Sheet or HubSpot update → notification. Charge for setup + monthly health check—not &quot;AI strategy.&quot; For prompt-heavy steps, reuse patterns from <InternalLink href="/blog/chatgpt-prompts-save-time-2026">our ChatGPT prompts guide</InternalLink>; if you need more than chat, peek at <InternalLink href="/blog/best-ai-tools-2026">free AI tools worth using in 2026</InternalLink>.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 3 — Stack like a minimalist</h3>
+      <p>
+        Common <strong>workflow automation services</strong> stacks in 2026: <strong>n8n</strong> (self-hosted or cloud) or <strong>Make</strong> for glue; <strong>Zapier</strong> when the client already pays for it; OpenAI/Anthropic APIs for text; Notion, Airtable, or Supabase for light data. You don&apos;t need twenty apps—see <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> when you&apos;re unsure what fits.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 4 — Price like infrastructure, not magic</h3>
+      <p>
+        <strong>AI automation pricing 2026</strong> that works for beginners: a $1,500–$4,000 setup for the first workflow, then $300–$1,500/month for monitoring, small changes, and SLA-style response. Use the <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink> so your &quot;cheap&quot; pilot still pays your tools and taxes.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>Step 5 — Get three conversations</h3>
+      <p>
+        Message founders on LinkedIn, walk into local businesses with a one-page before/after, or list a fixed offer on <strong>Upwork</strong> (&quot;I&apos;ll connect your Typeform to HubSpot + Slack in 10 days&quot;). On <strong>Fiverr</strong>, sell a labeled gig with a video of the demo—not &quot;I do AI.&quot; Same playbook as <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money</InternalLink> (our tested picks) in practice: proof beats adjectives.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How much should you charge clients?</h2>
+      <p>
+        Clear pricing converts. Most solo operators use a <strong>paid pilot</strong> to prove scope, then a <strong>build fee</strong> plus <strong>monthly care</strong>. You are not selling hours—you are selling fewer errors and less manual work.
+      </p>
+      <DataTable
+        headers={["What to charge", "Typical range (solo, 2026)", "What the client gets"]}
+        rows={[
+          ["Discovery / scoping call", "$0–$250 (or free if you qualify hard)", "Map triggers, systems, approvals, and failure modes"],
+          ["Paid pilot (fixed scope)", "$800–$2,500", "One workflow live on test data + handoff doc + 30-day fix window"],
+          ["First production build", "$1,500–$6,000+", "Integrations, AI steps with approval, logging, alerts, basic training"],
+          ["Monthly care / retainer", "$300–$2,000/mo", "Monitoring, small tweaks, incident response within SLA, quota of change requests"],
+          ["Urgent changes / new branch", "$100–$175/hr or ticket packs", "Anything outside the retainer—always written change orders"],
+        ]}
+      />
+      <p className="text-sm">
+        Adjust for your country and niche: e-commerce and clinics with PHI need higher margins and contracts. Run every number through the <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink> so <strong>make money with AI automation</strong> doesn&apos;t mean &quot;make money for SaaS vendors after your fees.&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tools and platforms that won&apos;t fight you</h2>
+      <DataTable
+        headers={["Layer", "Tool examples", "When to use it"]}
+        rows={[
+          ["Orchestration", "n8n, Make, Zapier", "n8n/Make for complex branching; Zapier when clients already live there"],
+          ["AI text", "OpenAI API, Claude API", "Classification, summarization, draft replies—always with human approval gates"],
+          ["Data", "Airtable, Supabase, Sheets", "Start ugly; migrate when revenue justifies it"],
+          ["Comms", "Slack, email webhooks", "Where humans actually look when something breaks"],
+        ]}
+      />
+      <p className="text-sm">
+        If you&apos;re still assembling your stack, <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> helps you browse before you bluff. If you&apos;re comparing stacks for <strong>local business automation</strong>, optimize for what you can debug at 9 p.m.—not what looks coolest on Twitter.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>n8n vs Zapier vs Make: which should your agency use?</h2>
+      <p className="mb-4">
+        This comparison is the question clients and beginners Google on repeat. Pick based on <strong>who pays</strong>, <strong>how complex</strong> the graph is, and whether you need self-hosted control.
+      </p>
+      <DataTable
+        headers={["", "n8n", "Zapier", "Make (Integromat)"]}
+        rows={[
+          ["Best for", "Complex workflows, branching, self-host option, tighter margins at scale", "Fast setup, huge app directory, non-technical buyers already on it", "Visual scenarios, solid middle ground for multi-step logic"],
+          ["Pricing feel (2026)", "Cloud tiers + fair-source; self-host can cut per-task cost", "Per-task pricing; simple to explain on invoices", "Ops-based; watch usage when volume spikes"],
+          ["Learning curve", "Steeper—worth it if you sell technical reliability", "Lowest—sell speed to market", "Moderate—great for visual thinkers"],
+          ["AI / API depth", "Strong: HTTP nodes, code when needed, long runs (plan-dependent)", "Good for packaged actions; custom AI often via webhooks + other tools", "Strong routing + iterators; pair with OpenAI modules or HTTP"],
+          ["When we&apos;d pick it for an AI automation agency", "Default if you want power, logs, and margin—especially n8n Cloud for clients", "When the client already pays for Zapier and wants zero migration drama", "When the team wants Make&apos;s UI and you need fewer edge cases than n8n"],
+        ]}
+      />
+      <p className="text-sm">
+        Rule of thumb: <strong>n8n vs Zapier vs Make</strong> is not a religion—it&apos;s billing. Standardize on one primary orchestrator per client so you sleep at night. Same stack across clients is optional; same <em>discipline</em> is not.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Mistakes that trigger refunds</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm">
+        <li><strong>Black-box AI:</strong> clients must see inputs, outputs, and who approves what.</li>
+        <li><strong>No logging:</strong> when a run fails, you need alerts—not silent partial writes.</li>
+        <li><strong>Unscoped &quot;monthly AI&quot;:</strong> sell tickets or small change bundles instead.</li>
+        <li><strong>Ignoring compliance:</strong> health and finance data need contracts—say no until you have them.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Pro tips that close deals</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm">
+        <li><strong>Loom over PDF:</strong> record the demo hitting real (or realistic) sample data.</li>
+        <li><strong>One KPI:</strong> &quot;Cut manual entry from 6 hours to 20 minutes per week&quot; beats &quot;we use GPT-4.&quot;</li>
+        <li><strong>Referral line in SOW:</strong> offer a discount for intros after a win—<strong>how to sell automation services</strong> gets easier with proof.</li>
+        <li><strong>Backup owner:</strong> document handoff so you&apos;re not the only human who understands the graph.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Bottom line</h2>
+      <p>
+        A sustainable <strong>AI automation agency</strong> is a logistics company for information—pick a lane, ship one workflow beautifully, then repeat. Layer <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles that work</InternalLink> or broader <InternalLink href="/blog/make-money-online-2026">ways to make money online</InternalLink> only after the core offer pays for your time.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Do I need to code to run an AI automation agency?", a: <>No. Most beginner agencies use no-code tools like n8n, Make, or Zapier plus AI for prompts and copy. You need logic and QA, not a computer science degree. Tool-wise, our <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">AI freelancing tools</InternalLink> roundup helps when you scale.</> },
+        { q: "How much can a small AI automation agency make in 2026?", a: "Many solo operators land $2,000–$8,000 per month within six to twelve months with a clear offer and referrals. Results vary with niche, pricing, and follow-through." },
+        { q: "What should I sell first?", a: "Sell one repeatable automation—for example lead follow-up from form to CRM, or AI-assisted email triage—not a vague monthly retainer on day one." },
+        { q: "Is an AI automation agency saturated?", a: "Generic agencies are crowded. Narrow niches—dentists, real estate teams, e-commerce brands—still have messy manual work that owners will pay to fix." },
+        { q: "How do I find my first client?", a: <>Outbound to businesses you can name, offer a paid pilot, and show a Loom of a working demo. Marketplaces and warm intros also work once your offer is specific. See <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> for outreach rhythm.</> },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>When you&apos;re done doom-scrolling—read these</p>
+        <div className="flex flex-col gap-2 text-sm">
+          <InternalLink href="/blog/how-to-get-ai-clients">How to get AI clients (first revenue)</InternalLink>
+          <InternalLink href="/blog/7-best-ai-tools-make-money-online-2026">AI tools to make money online — 7 tested picks for 2026</InternalLink>
+          <InternalLink href="/blog/best-ai-tools-for-freelancers-2026">Best AI freelancing tools to earn more in 2026</InternalLink>
+          <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">AI side hustles for beginners that actually work (2026)</InternalLink>
+          <InternalLink href="/blog/how-to-make-first-500-online-with-ai">How to Make Your First $500 Online Using AI</InternalLink>
+          <InternalLink href="/blog/chatgpt-prompts-save-time-2026">Top ChatGPT Prompts That Save 10+ Hours Per Week</InternalLink>
+          <InternalLink href="/tools/ai-finder">AI Finder — Find the Right AI Tools</InternalLink>
+        </div>
+      </div>
+    </div>
+  ),
 };
