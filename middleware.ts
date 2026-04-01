@@ -5,17 +5,17 @@ import { NextResponse, type NextRequest } from "next/server";
  * Host-level www/http should also be set in your hosting (e.g. Vercel) — this is a safety net.
  */
 export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone();
+  const url = new URL(request.url);
   const host = request.headers.get("host") ?? "";
 
   if (host.startsWith("www.")) {
     url.hostname = host.replace(/^www\./, "");
-    return NextResponse.redirect(url, 308);
+    return NextResponse.redirect(url.toString(), 308);
   }
 
   if (url.pathname !== "/" && url.pathname.endsWith("/")) {
     url.pathname = url.pathname.replace(/\/+$/, "") || "/";
-    return NextResponse.redirect(url, 308);
+    return NextResponse.redirect(url.toString(), 308);
   }
 
   return NextResponse.next();
