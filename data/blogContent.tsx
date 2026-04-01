@@ -5435,4 +5435,149 @@ Open to a 15-min call Tuesday or Wednesday? I’ll show a live demo flow.`}
       </div>
     </div>
   ),
+
+  "make-money-with-n8n-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        You did the tutorials. You cloned the templates. You can drag nodes until 2 a.m. and still have <strong>$0 in your Stripe account</strong>. That is not a talent problem—it is a positioning problem. If you want to <strong>make money with n8n</strong>, you stop collecting workflows and start selling outcomes: fewer missed leads, fewer copy-paste hours, fewer &quot;we forgot to follow up&quot; moments. Tools do not pay rent. Invoices do.
+      </p>
+      <p>
+        This guide is the blunt version: why n8n is winning in 2026, five <strong>n8n automation ideas</strong> that map to real invoices, price bands, how to pitch each one, and a simple path from one Loom to your first buyer. If you need clients before you touch another node, read <InternalLink href="/blog/how-to-get-ai-clients">how to get your first AI client</InternalLink> in parallel—outreach and packaging beat another &quot;n8n tutorial 2026&quot; rabbit hole.
+      </p>
+
+      <BlogImage
+        src="/images/make-money-with-n8n-2026.webp"
+        alt="Make money with n8n 2026 — MAKE MONEY WITH n8n headline, zero to two thousand dollars growth arrow, robot mascot and workflow nodes"
+        caption="One shipped workflow with a price tag beats fifty half-built graphs."
+      />
+
+      <StatBox items={[
+        ["5", "Sellable flows"],
+        ["$200+", "Entry builds"],
+        ["$2k", "Complex cap"],
+        ["1", "Demo only"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why n8n is exploding in 2026 (and why that is money for you)</h2>
+      <p>
+        Two forces matter: <strong>cost</strong> and <strong>flexibility</strong>. Self-hosted or fairly priced cloud n8n can beat per-task SaaS bills when volume spikes—critical when you <strong>sell automation services n8n</strong> and your margin is the spread between what the client pays you and what the stack costs. Second, n8n graphs handle ugly branching, code when you need it, and logging that does not feel like a toy. That is why agencies standardize on it for real business processes—not just &quot;notify Slack.&quot;
+      </p>
+      <p>
+        Compare stacks before you promise flat pricing: our <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make comparison</InternalLink> breaks down task pricing, hidden costs, and who each tool is for. If a client only needs a straight line, Zapier might win on speed—but <strong>n8n workflows for clients</strong> that look like actual operations (routers, retries, human approval) are where n8n earns its keep.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How n8n actually makes money (service angle)</h2>
+      <p>
+        You are not monetizing &quot;automation&quot;—you are monetizing <strong>time returned</strong>, <strong>revenue recovered</strong>, and <strong>errors removed</strong>. Businesses pay when a workflow touches money: leads, pipeline, renewals, support SLAs. Your offer is implementation + documentation + a care window—then optional retainer. That is the same spine people use when they <InternalLink href="/blog/ai-automation-agency">start an AI automation agency</InternalLink>: productized outcomes, not mystery engineering hours.
+      </p>
+      <p>
+        For a menu of angles you can steal, cross-reference <InternalLink href="/blog/ai-automation-ideas-2026">automation ideas that actually sell</InternalLink>—then filter for flows n8n can own end-to-end. And keep your tool stack honest with the <InternalLink href="/blog/best-ai-tools-automation-2026">best AI automation tools</InternalLink> shortlist so you are not duct-taping fifteen subscriptions before you have one paid pilot.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Five n8n workflows that clients actually pay for</h2>
+      <p>
+        Each block below is a <strong>n8n automation example</strong> you can demo on fake data. Same structure: what it does, tools, why they pay, pricing, how you sell it. This is how you turn &quot;<strong>n8n business ideas 2026</strong>&quot; into a Stripe receipt.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. Lead follow-up automation</h3>
+      <p><strong>What it does:</strong> New lead → instant enrichment (optional) → CRM or HubSpot contact → Slack alert → timed email sequence if no owner reply → log in Google Sheets for reporting.</p>
+      <p><strong>Tools:</strong> n8n, form or ad webhook, CRM API, Slack, email (Gmail/SendGrid), Sheets.</p>
+      <p><strong>Why businesses pay:</strong> Speed-to-lead is revenue. If your workflow shaves minutes off response time, you are not selling n8n—you are selling money left on the table yesterday.</p>
+      <p><strong>Pricing:</strong> <strong>$400–$1200</strong> for a solid pilot; <strong>$800–$2000</strong> when CRM rules, dedupe, and multiple sources are involved.</p>
+      <p><strong>How to sell it:</strong> Show a before/after: &quot;Lead sits in inbox&quot; vs &quot;Lead is owned, messaged, and measured.&quot; One Loom, one sheet dashboard, one fixed price.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. AI email responder (human in the loop)</h3>
+      <p><strong>What it does:</strong> Inbound email → classify (sales/support/refund) → draft reply via OpenAI → route to reviewer or auto-send for tier-1 FAQs → ticket updated in Help Scout/Linear/Notion.</p>
+      <p><strong>Tools:</strong> n8n, email API (Gmail/Microsoft), OpenAI, ChatGPT-style prompts stored in n8n, optional vector DB later.</p>
+      <p><strong>Why businesses pay:</strong> Support volume scales faster than headcount. They pay for first-response speed and consistent tone—not for &quot;AI&quot; buzzwords.</p>
+      <p><strong>Pricing:</strong> <strong>$400–$1500</strong> for a bounded FAQ + routing; <strong>$1200–$2000+</strong> when you add multi-language, brand voice training, and strict guardrails.</p>
+      <p><strong>How to sell it:</strong> Never promise unsupervised refunds. Sell &quot;draft + review&quot; or &quot;auto only for these 5 intents&quot;—then expand.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. CRM auto-update system</h3>
+      <p><strong>What it does:</strong> Calendar events, emails, or Stripe payments → update deal stage → create tasks → sync custom fields → nightly dedupe + stale-deal alerts.</p>
+      <p><strong>Tools:</strong> n8n, CRM (HubSpot/Pipedrive/Attio), calendar, optional Stripe.</p>
+      <p><strong>Why businesses pay:</strong> Dirty CRMs kill forecasting. They pay when pipeline reflects reality without reps clicking boxes all day.</p>
+      <p><strong>Pricing:</strong> <strong>$400–$1200</strong> for one source of truth; <strong>$1000–$2000</strong> for multi-team rules and custom objects.</p>
+      <p><strong>How to sell it:</strong> Audit their CRM in a paid discovery call. Quote from pain: &quot;How many deals are stale &gt;14 days?&quot;</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. Content repurposing automation</h3>
+      <p><strong>What it does:</strong> New long-form video or blog URL → transcript → chapters → quote cards → LinkedIn posts → email snippet → asset folder in Drive.</p>
+      <p><strong>Tools:</strong> n8n, YouTube/blog RSS or webhooks, OpenAI, Drive/Dropbox, optional Canva API or manual handoff step.</p>
+      <p><strong>Why businesses pay:</strong> Distribution is the bottleneck. They will pay for a repeatable assembly line that turns one asset into ten.</p>
+      <p><strong>Pricing:</strong> <strong>$200–$800</strong> for a basic chop-and-repurpose; <strong>$800–$2000</strong> when brand voice, approvals, and multi-channel scheduling are included.</p>
+      <p><strong>How to sell it:</strong> Show one input → one week of posts. Creators and B2B marketing teams love visible output.</p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. WhatsApp / Slack notification system</h3>
+      <p><strong>What it does:</strong> Critical events (new payment, refund, high-score lead, SLA breach) → rich message to Slack/WhatsApp via approved APIs → escalation paths if no ack in X minutes.</p>
+      <p><strong>Tools:</strong> n8n, Slack, WhatsApp Business Platform via BSP, PagerDuty optional.</p>
+      <p><strong>Why businesses pay:</strong> Outages and hot leads are time-sensitive. They pay for alerts that do not get lost in email.</p>
+      <p><strong>Pricing:</strong> <strong>$400–$1200</strong> for internal alerts; <strong>$800–$2000</strong> when routing + on-call schedules + multi-channel.</p>
+      <p><strong>How to sell it:</strong> Quantify downtime or missed revenue. This pairs well with messaging plays—see our <InternalLink href="/blog/whatsapp-ai-automation-businesses-2026">WhatsApp AI automation for businesses</InternalLink> guide if the client wants customer-facing chat too.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step-by-step: from zero to a paying client</h2>
+      <ol className="list-decimal list-inside space-y-2 text-sm md:text-base">
+        <li><strong>Pick a niche:</strong> agencies, clinics, ecommerce, real estate—one vertical so your demos look familiar.</li>
+        <li><strong>Build one workflow</strong> on fake data—real integrations, fake credentials where needed—until it is boring-reliable.</li>
+        <li><strong>Record a Loom demo</strong> under five minutes: trigger → branches → logs → success.</li>
+        <li><strong>Send outreach</strong> with a specific pain + your clip + fixed pilot price. Use <InternalLink href="/blog/how-to-get-ai-clients">how to get your first AI client</InternalLink> for volume and follow-ups.</li>
+      </ol>
+      <p className="font-semibold mt-4" style={{ color: "var(--text-primary)" }}>Outreach script (copy, adapt)</p>
+      <div className="glass rounded-xl p-4 my-3 text-sm font-mono whitespace-pre-wrap" style={{ color: "var(--text-secondary)" }}>
+        {`Subject: 6–12 hours/week back on [lead follow-up / CRM]
+
+Hi [Name],
+
+Most [niche] teams lose leads between form submit and first human reply. I build n8n automations that route leads, log CRM updates, and alert Slack/WhatsApp—fixed scope, fixed price.
+
+Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Beginner stack (do not overcomplicate)</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm md:text-base">
+        <li><strong>n8n</strong> — cloud or self-hosted—pick one and commit for 90 days.</li>
+        <li><strong>ChatGPT / OpenAI API</strong> — for classification and drafts inside your workflow.</li>
+        <li><strong>Google Sheets</strong> — the universal truth table until you earn a CRM.</li>
+        <li><strong>CRM later</strong> — HubSpot/Pipedrive when the client pays for it.</li>
+      </ul>
+      <p>
+        That stack is enough for <strong>how to use n8n for freelancing</strong> without pretending you are a platform engineer. If you want to go deeper on <strong>n8n vs zapier pricing</strong> for your own margins, the <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make comparison</InternalLink> post has the numbers mindset—model usage before you quote flat retainer.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Mistakes that keep you broke</h2>
+      <ul className="space-y-2 list-disc list-inside text-sm">
+        <li><strong>Infinite scope:</strong> if the graph does everything, nobody signs—because nobody owns the result.</li>
+        <li><strong>No error path:</strong> if failures fail silently, you are not a vendor—you are a liability.</li>
+        <li><strong>Ignoring credentials:</strong> OAuth and API keys are part of the job—document handoff.</li>
+        <li><strong>Chasing novelty:</strong> you need one repeatable <strong>n8n workflows that make money</strong> story, not a portfolio of half-finished experiments.</li>
+        <li><strong>Underpricing forever:</strong> cheap pilots are fine; staying cheap is a choice.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Start today (no more excuses)</h2>
+      <p>
+        Pick one workflow from the five above. Rebuild it with logs. Record the Loom. Send twenty messages. That is <strong>how to make money with n8n without coding</strong> your way into paralysis—because the code was never the bottleneck; the invoice was. If you want a broader business map, combine this with <InternalLink href="/blog/ai-automation-ideas-2026">automation ideas that actually sell</InternalLink> and <InternalLink href="/blog/ai-automation-agency">start an AI automation agency</InternalLink> once you have proof. The <InternalLink href="/blog/best-ai-tools-automation-2026">best AI automation tools</InternalLink> list keeps your stack lean; <InternalLink href="/blog/how-to-get-ai-clients">how to get your first AI client</InternalLink> keeps your calendar full.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Can you make money with n8n without being a full-time developer?", a: "Yes. Most client work is integration, clear logic, and reliable logging—not writing a new framework. If you can read API docs, handle OAuth, and test failure paths, you can sell n8n services. Add AI steps carefully with human review for risky outputs." },
+        { q: "How much should I charge for n8n automation?", a: "Small pilots often land around $200–$800. Typical business workflows run roughly $400–$1500. Complex multi-system graphs with CRM rules, SLAs, and monitoring often reach $800–$2000 or more. Always model usage costs and your support time." },
+        { q: "Is n8n cheaper than Zapier for freelancers?", a: "Often yes at higher volume when you self-host or use n8n Cloud with predictable execution pricing—but cheaper is not automatic. Compare task or operation costs for your client’s expected volume, and include your own maintenance time for self-hosted setups." },
+        { q: "What is the best first n8n workflow to sell?", a: "Lead follow-up: it is easy to demo, easy to measure, and ties directly to revenue. Pair form → CRM → Slack alert → timed follow-up as a clean package with a fixed price." },
+        { q: "Do I need self-hosted n8n to sell automation services?", a: "No. Many freelancers start on n8n Cloud or a managed host. Self-host when you need margin control, custom networking, or client compliance requirements—and when you will maintain it." },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/ai-automation-agency">AI automation agency</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-ai-tools-automation-2026">Best AI automation tools</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/how-to-get-ai-clients">Get your first AI client</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };
