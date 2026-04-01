@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Calculator, Sparkles, TrendingUp, ArrowRight, Zap, Code2, PenTool } from "lucide-react";
 import type { Metadata } from "next";
+import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Free Online Tools 2026 — AI Generators, Dev Tools & Calculators",
   description: "Free tools: AI LinkedIn post generator, Instagram caption generator, JSON formatter, JWT decoder, age calculator, Fiverr fee calculator and more. No signup required.",
+  ...canonicalMeta("/tools"),
 };
 
 const toolCategories = [

@@ -1,20 +1,26 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 
+/**
+ * Normalize URLs so crawlers see one preferred host + path shape (reduces duplicate URLs).
+ * Host-level www/http should also be set in your hosting (e.g. Vercel) — this is a safety net.
+ */
 export function middleware(request: NextRequest) {
-  const host = request.headers.get("host") || "";
+  const url = request.nextUrl.clone();
+  const host = request.headers.get("host") ?? "";
 
-  if (host === "clickwise-pi.vercel.app") {
-    const url = request.nextUrl.clone();
-    url.host = "clickwise.website";
-    url.protocol = "https:";
-    url.port = "";
-    return NextResponse.redirect(url, { status: 301 });
+  if (host.startsWith("www.")) {
+    url.hostname = host.replace(/^www\./, "");
+    return NextResponse.redirect(url, 308);
+  }
+
+  if (url.pathname !== "/" && url.pathname.endsWith("/")) {
+    url.pathname = url.pathname.replace(/\/+$/, "") || "/";
+    return NextResponse.redirect(url, 308);
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: "/:path*",
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.(?:ico|png|jpg|jpeg|gif|webp|svg|txt|xml|json)$).*)"],
 };

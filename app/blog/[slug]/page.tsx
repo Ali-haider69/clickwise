@@ -6,6 +6,7 @@ import Link from "next/link";
 import AdSenseUnit from "@/components/AdSenseUnit";
 import { Clock, Calendar, ArrowLeft, Share2, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
+import { canonicalUrl } from "@/lib/seo";
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...post.tags,
       ...(post.seoKeywords ?? []),
     ].join(", "),
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: canonicalUrl(`/blog/${slug}`) },
     openGraph: { title: metaTitle, description: metaDescription, images: [post.image], type: "article" },
   };
 }

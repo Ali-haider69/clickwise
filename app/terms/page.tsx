@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms of Service — ClickWise",
   description: "ClickWise Terms of Service — rules and guidelines for using our website.",
+  ...canonicalMeta("/terms"),
 };
 
 const sections = [

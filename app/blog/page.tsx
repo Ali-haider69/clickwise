@@ -3,11 +3,17 @@ import { posts, categories } from "@/data/posts";
 import BlogCard from "@/components/BlogCard";
 import BlogFilter from "@/components/BlogFilter";
 import type { Metadata } from "next";
+import { canonicalMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Blog — AI Tools, Make Money, Gadgets & More",
-  description: "Guides, comparisons, and reviews on AI tools, side hustles, gadgets, and finance. Everything you need to make smarter decisions in 2026.",
-};
+/** Always canonical /blog — avoids duplicate index URLs for ?q= search variants. */
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Blog — AI Tools, Make Money, Gadgets & More",
+    description:
+      "Guides, comparisons, and reviews on AI tools, side hustles, gadgets, and finance. Everything you need to make smarter decisions in 2026.",
+    ...canonicalMeta("/blog"),
+  };
+}
 
 interface BlogPageProps {
   searchParams: Promise<{ q?: string }>;

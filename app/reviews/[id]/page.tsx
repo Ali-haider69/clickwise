@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star, CheckCircle, XCircle, ExternalLink, ArrowLeft, ShieldCheck, Clock, Award } from "lucide-react";
 import type { Metadata } from "next";
+import { canonicalUrl } from "@/lib/seo";
 
 interface Props { params: Promise<{ id: string }> }
 
@@ -18,6 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} Review 2026 — Is It Worth It?`,
     description: product.description,
+    alternates: { canonical: canonicalUrl(`/reviews/${id}`) },
   };
 }
 

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { AlertCircle } from "lucide-react";
+import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Affiliate Disclosure — ClickWise",
   description: "ClickWise affiliate disclosure — how we earn commissions and how it affects our content.",
+  ...canonicalMeta("/disclosure"),
 };
 
 export default function DisclosurePage() {

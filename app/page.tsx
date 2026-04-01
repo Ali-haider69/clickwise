@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { canonicalMeta } from "@/lib/seo";
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
 import Newsletter from "@/components/Newsletter";
@@ -13,6 +14,7 @@ import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
 export const metadata: Metadata = {
   title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
   description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
+  ...canonicalMeta("/"),
 };
 
 const tools = [

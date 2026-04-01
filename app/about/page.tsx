@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Zap, Users, Star, TrendingUp } from "lucide-react";
+import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About ClickWise — Who We Are",
   description: "ClickWise is your go-to source for unbiased reviews, AI tool comparisons, and side hustle guides in 2026.",
+  ...canonicalMeta("/about"),
 };
 
 export default function AboutPage() {

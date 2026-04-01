@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — ClickWise",
   description: "ClickWise Privacy Policy — how we collect, use, and protect your data.",
+  ...canonicalMeta("/privacy"),
 };
 
 const sections = [

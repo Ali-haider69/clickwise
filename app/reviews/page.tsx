@@ -4,10 +4,12 @@ import ProductCard from "@/components/ProductCard";
 import AdSenseUnit from "@/components/AdSenseUnit";
 import { ShieldCheck, Star, SlidersHorizontal } from "lucide-react";
 import type { Metadata } from "next";
+import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Product Reviews — Top Picks 2026",
   description: "Independently tested and ranked product reviews for 2026.",
+  ...canonicalMeta("/reviews"),
 };
 
 const filterCategories = ["All", "Earbuds", "Laptops", "Smartphones", "Smart Home", "Fitness"];

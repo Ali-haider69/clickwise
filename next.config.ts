@@ -3,6 +3,7 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname),
+  trailingSlash: false,
   async redirects() {
     return [
       // Canonical post slug is only how-to-get-ai-clients — old URLs consolidate here (avoid duplicate indexed URLs).
