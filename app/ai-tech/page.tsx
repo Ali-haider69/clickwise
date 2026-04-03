@@ -4,7 +4,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "AI & Tech — Latest Trends, Tools & Insights",
-  description: "Stay ahead with the latest AI tools, tech trends, and innovations shaping 2026.",
+  description: "Stay ahead with the latest AI tools, emerging tech trends, and expert insights shaping 2026. Discover how artificial intelligence is changing the future.",
   ...canonicalMeta("/ai-tech"),
 };
 

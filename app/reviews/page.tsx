@@ -8,7 +8,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Product Reviews — Top Picks 2026",
-  description: "Independently tested and ranked product reviews for 2026.",
+  description: "Browse our independently tested and ranked product reviews for 2026. Get honest verdicts on laptops, earbuds, smartphones, and software before you buy.",
   ...canonicalMeta("/reviews"),
 };
 

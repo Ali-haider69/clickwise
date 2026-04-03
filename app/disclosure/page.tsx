@@ -4,7 +4,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Affiliate Disclosure — ClickWise",
-  description: "ClickWise affiliate disclosure — how we earn commissions and how it affects our content.",
+  description: "Read the ClickWise affiliate disclosure to learn how we maintain editorial integrity, how we earn commissions, and how it transparently affects our content.",
   ...canonicalMeta("/disclosure"),
 };
 

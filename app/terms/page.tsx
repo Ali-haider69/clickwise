@@ -3,7 +3,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms of Service — ClickWise",
-  description: "ClickWise Terms of Service — rules and guidelines for using our website.",
+  description: "Review the ClickWise Terms of Service to understand the rules, guidelines, and user agreements for safely and responsibly using our website and digital tools.",
   ...canonicalMeta("/terms"),
 };
 

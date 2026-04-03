@@ -3,7 +3,7 @@ import CategoryPage from "@/components/CategoryPage";
 import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Make Money Online — Side Hustles, Freelancing & Passive Income",
+  title: "Make Money Online 2026 — Side Hustles & Freelancing",
   description: "Proven ways to make money online in 2026. Side hustles, freelancing tips, passive income strategies, and more.",
   ...canonicalMeta("/make-money"),
 };

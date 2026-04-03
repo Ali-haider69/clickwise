@@ -25,10 +25,9 @@ export const posts: Post[] = [
   {
     slug: "how-to-get-ai-clients",
     title: "How to Get Your First AI Client in 24 Hours (No Experience Needed)",
-    metaTitle: "How to Get AI Clients in 24 Hours (Step-by-Step Beginner Guide 2026)",
+    metaTitle: "How to Get AI Clients in 24 Hours (2026 Guide)",
     primaryKeyword: "how to get ai clients",
-    metaDescription:
-      "Learn how to get AI clients: one tight offer, one platform, and outreach that sounds human. Beginner-friendly steps, templates, and where to land your first paid client.",
+    metaDescription: "Learn how to get AI clients with one tight offer, one platform, and human outreach. Beginner steps, templates, and where to land paid clients.",
     excerpt:
       "Learn how to get AI clients in 24 hours — even with zero experience. Proven step-by-step method, outreach templates, and platforms to land your first paying client fast.",
     category: "Make Money",
@@ -90,9 +89,8 @@ export const posts: Post[] = [
   {
     slug: "ai-automation-agency",
     title: "How to Start an AI Automation Agency in 2026 (Step-by-Step + First Client Fast)",
-    metaTitle: "How to Start an AI Automation Agency in 2026 (Step-by-Step + First Client Fast)",
-    metaDescription:
-      "Want to know how to start an AI automation agency? This beginner-friendly guide covers niche, n8n/Zapier stacks, pricing, and landing your first automation clients in 2026.",
+    metaTitle: "How to Start an AI Automation Agency in 2026",
+    metaDescription: "Start an AI automation agency in 2026. This guide covers your niche, n8n/Zapier stacks, pricing, and landing your first automation client.",
     excerpt:
       "Learn how to start an AI automation agency in 2026 — even with zero experience. Proven niche, offer, pricing, and outreach steps to land your first paid automation build fast.",
     category: "Make Money",
@@ -160,9 +158,8 @@ export const posts: Post[] = [
   {
     slug: "ai-automation-ideas-2026",
     title: "10 AI Automation Ideas That Actually Sell in 2026 (With Real Examples)",
-    metaTitle: "10 AI Automation Ideas That Sell in 2026 (Real Examples + Pricing)",
-    metaDescription:
-      "Discover ai automation ideas that convert: lead follow-up, email triage, CRM updates, and more. Real tools (n8n, Zapier), pricing $100–$2K, and how to sell automation services in 2026.",
+    metaTitle: "10 Profitable AI Automation Ideas for 2026",
+    metaDescription: "Discover AI automation ideas that convert: lead follow-up, email triage, and CRM updates. Includes tools, pricing, and how to sell in 2026.",
     excerpt:
       "Looking for ai automation ideas that actually sell? Ten proven automation services to sell in 2026—with tools, pricing, and how to land clients. Built for freelancers ready to make money with automation.",
     category: "Make Money",
@@ -226,10 +223,9 @@ export const posts: Post[] = [
   {
     slug: "ai-automation-for-beginners",
     title: "AI Automation for Beginners (Step-by-Step Setup Guide 2026)",
-    metaTitle: "AI Automation for Beginners (Step-by-Step Setup Guide 2026)",
+    metaTitle: "AI Automation for Beginners: 2026 Setup Guide",
     primaryKeyword: "ai automation for beginners",
-    metaDescription:
-      "Learn ai automation for beginners: pick a workflow, wire n8n, Zapier, or Make, add ChatGPT, and ship your first build. Step-by-step setup, tool table, and how to get paid in 2026.",
+    metaDescription: "AI automation for beginners: pick a workflow, wire n8n, Zapier, or Make, and ship your first build. Step-by-step setup and how to get paid.",
     excerpt:
       "Step-by-step AI automation for beginners—no jargon. One simple workflow, the right stack, your first AI layer, and how to turn it into freelance or agency income in 2026.",
     category: "Make Money",
@@ -293,8 +289,7 @@ export const posts: Post[] = [
     title: "Best AI Tools for Automation in 2026 (Free + Paid)",
     metaTitle: "Best AI Tools for Automation in 2026 (Free + Paid)",
     primaryKeyword: "ai automation tools",
-    metaDescription:
-      "Best ai automation tools in 2026: workflow builders (n8n, Zapier, Make), AI writing, CRM data, and outreach—real use cases, free vs paid pricing, beginner picks, and stack examples for business.",
+    metaDescription: "Best AI automation tools in 2026: n8n, Zapier, Make, and AI writing. Real use cases, free vs paid pricing, and stack examples for business.",
     excerpt:
       "The best AI tools for automation in 2026—free and paid. Workflow, writing, CRM, and outreach stacks with real use cases, pricing, beginner pick, and how to build a business with them.",
     category: "Make Money",
@@ -356,10 +351,9 @@ export const posts: Post[] = [
   {
     slug: "n8n-vs-zapier-vs-make-2026",
     title: "n8n vs Zapier vs Make (Which One Should You Use in 2026?)",
-    metaTitle: "n8n vs Zapier vs Make (Which One Should You Use in 2026?)",
+    metaTitle: "n8n vs Zapier vs Make: 2026 Comparison Guide",
     primaryKeyword: "n8n vs zapier vs make",
-    metaDescription:
-      "n8n vs Zapier vs Make in 2026: ease of use, pricing, integrations, and scalability. Clear winner by use case—beginners, freelancers, agencies—plus real workflows, hidden costs, and FAQ.",
+    metaDescription: "n8n vs Zapier vs Make in 2026: pricing, ease of use, and scalability. The clear winner by use case, plus real workflows and hidden costs.",
     excerpt:
       "Stop guessing which automation tool to use. Compare n8n, Zapier, and Make for 2026—pricing, flexibility, learning curve, and who each tool is actually for—beginners to agencies.",
     category: "Make Money",
@@ -420,10 +414,9 @@ export const posts: Post[] = [
   {
     slug: "full-stack-web-app-guide-2026",
     title: "How to Build a Full-Stack Web App for Clients in 2026 (Beginner to Pro Guide)",
-    metaTitle: "How to Build Full-Stack Web Apps in 2026 (React, Next.js, Node.js Guide)",
+    metaTitle: "Build Full-Stack Web Apps in 2026 Guide",
     primaryKeyword: "full stack web app 2026",
-    metaDescription:
-      "Learn how to build full-stack web apps for clients using React, Next.js, Node.js, and modern tools. Step-by-step guide for freelancers in 2026.",
+    metaDescription: "Complete guide to building full-stack web apps for clients in 2026 using React, Next.js, and Node.js. Includes pricing and client tips.",
     excerpt:
       "A practical full stack freelance guide: what clients actually buy, how to pick React + Next + Node, ship a portfolio that looks like a product, price projects, and land work—without drowning in tutorials.",
     category: "Make Money",
@@ -485,10 +478,9 @@ export const posts: Post[] = [
   {
     slug: "whatsapp-ai-automation-businesses-2026",
     title: "WhatsApp AI Automation for Businesses (2026 Guide: Get Clients & Charge $500+)",
-    metaTitle: "WhatsApp AI Automation for Businesses (2026): Get Clients & Charge $500+",
+    metaTitle: "WhatsApp AI Automation for Businesses (2026)",
     primaryKeyword: "whatsapp ai automation",
-    metaDescription:
-      "WhatsApp AI automation for businesses in 2026: what to sell, tools (API, n8n, Zapier), pricing $100–$1500+, outreach templates, and how to make money with WhatsApp automation without coding paralysis.",
+    metaDescription: "WhatsApp AI automation for businesses: what to sell, tools (n8n, Zapier), pricing $100–$1500+, and outreach templates to make money in 2026.",
     excerpt:
       "Local businesses are bleeding leads in WhatsApp DMs. This guide unpacks whatsapp ai automation for businesses—five sellable builds, a beginner workflow, client scripts, and pricing that actually sticks.",
     category: "Make Money",
@@ -553,10 +545,9 @@ export const posts: Post[] = [
   {
     slug: "make-money-with-n8n-2026",
     title: "How to Make Money with n8n in 2026 (5 Real Workflows That Clients Pay For)",
-    metaTitle: "How to Make Money with n8n in 2026 (5 Workflows Clients Pay For)",
+    metaTitle: "How to Make Money with n8n in 2026",
     primaryKeyword: "make money with n8n",
-    metaDescription:
-      "Make money with n8n in 2026: five sellable workflows ($200–$2000), beginner stack, outreach script, pricing vs Zapier, and how to sell n8n automation services—without tutorial hell.",
+    metaDescription: "Make money with n8n in 2026: 5 sellable workflows, beginner stack, pricing vs Zapier, and how to sell automation services without coding.",
     excerpt:
       "Stop learning n8n for free. Five real n8n workflows for clients—lead follow-up, AI email, CRM sync, content repurposing, alerts—plus pricing, how to sell each, and a first-client path.",
     category: "Make Money",
@@ -623,10 +614,9 @@ export const posts: Post[] = [
   {
     slug: "openclaw-ai-full-breakdown-2026",
     title: "OpenClaw AI: The New AI Tool Everyone Is Talking About (Full Breakdown 2026)",
-    metaTitle: "OpenClaw AI Explained (2026): What It Is, Features, vs ChatGPT, Worth It?",
+    metaTitle: "OpenClaw AI Explained (2026): Features & Comparison",
     primaryKeyword: "OpenClaw AI",
-    metaDescription:
-      "OpenClaw AI breakdown 2026: what it is, key features, why it’s trending, use cases for freelancers and developers, OpenClaw AI vs ChatGPT, pros & cons, and whether it’s worth installing.",
+    metaDescription: "Full breakdown of OpenClaw AI: Key features, use cases for freelancers, and how it compares to ChatGPT in 2026.",
     excerpt:
       "Everyone’s mentioning OpenClaw AI. Here’s a human, no-hype look at the open-source agent framework—who it’s for, what it does well, where it’s overrated, and how it compares to ChatGPT.",
     category: "AI & Tech",
@@ -696,10 +686,9 @@ export const posts: Post[] = [
   {
     slug: "top-ai-agent-tools-like-openclaw-2026",
     title: "Top 5 AI Agent Tools Like OpenClaw AI (Ranked & Tested 2026)",
-    metaTitle: "Top 5 AI Agent Tools Like OpenClaw AI (Ranked & Tested 2026)",
+    metaTitle: "Top 5 AI Agent Tools Like OpenClaw AI (2026)",
     primaryKeyword: "AI agent tools 2026",
-    metaDescription:
-      "Best AI agent tools like OpenClaw AI in 2026: ranked comparison of OpenClaw AI, CrewAI, LangChain, n8n, and AutoGPT—pros, cons, and who each is for (developers, freelancers, beginners).",
+    metaDescription: "Ranked comparison of the best AI agent tools in 2026: OpenClaw AI, CrewAI, LangChain, n8n, and more. Find the right tool for you.",
     excerpt:
       "OpenClaw AI started the conversation—here are five AI agent tools worth knowing in 2026, ranked with honest testing notes, a comparison table, and a verdict that cares more about shipping than hype.",
     category: "AI & Tech",
@@ -761,10 +750,9 @@ export const posts: Post[] = [
   {
     slug: "best-n8n-workflows-make-money-2026",
     title: "Best n8n Workflows to Make Money in 2026 (Step-by-Step Guide)",
-    metaTitle: "Best n8n Workflows to Make Money in 2026 (Step-by-Step Guide)",
+    metaTitle: "Best n8n Workflows to Make Money in 2026",
     primaryKeyword: "n8n workflows",
-    metaDescription:
-      "Profitable n8n workflows for 2026: lead gen, social, email outreach, AI content, reporting, invoicing, and reputation—what each does, how to sell it, tools, mistakes, and a beginner roadmap.",
+    metaDescription: "Profitable n8n workflows for 2026: Lead gen, CRM hygiene, and AI content. Step-by-step roadmap to landing your first automation client.",
     excerpt:
       "You know n8n—here are the n8n workflows that actually pay in 2026: seven real use cases, how to price them, who should build them, and a step-by-step roadmap to land your first automation client.",
     category: "Make Money",
@@ -824,6 +812,8 @@ export const posts: Post[] = [
   },
   {
     slug: "chatgpt-prompts-save-time-2026",
+    metaTitle: "Top ChatGPT Prompts to Save 10+ Hours/Week (2026)",
+    metaDescription: "Use ChatGPT right. These 20+ battle-tested prompts for writing, business, freelancing, and automation will save you 10+ hours per week in 2026.",
     title: "Top ChatGPT Prompts That Save 10+ Hours Per Week (2026 Guide)",
     excerpt: "Most people use ChatGPT wrong and wonder why results are mediocre. These 20+ battle-tested prompts for writing, business, freelancing, and automation will change how you work — starting today.",
     category: "AI & Tech",
@@ -837,6 +827,8 @@ export const posts: Post[] = [
   },
   {
     slug: "ai-changing-everything-2026",
+    metaTitle: "AI in 2026: Opportunities & Risks Explained",
+    metaDescription: "AI is reshaping the world faster than predicted, from healthcare to jobs. What's actually happening in 2026, what it means for you, and how to adapt.",
     title: "AI is Changing Everything in 2026 — Opportunities & Risks You Need to Know",
     excerpt: "From healthcare to job markets, AI is reshaping the world faster than anyone predicted. Here's what's actually happening, what it means for you, and how to stay ahead.",
     category: "AI & Tech",
@@ -850,6 +842,8 @@ export const posts: Post[] = [
   },
   {
     slug: "i-tested-ai-trends-2026",
+    metaTitle: "Testing AI Trends in 2026: What Actually Matters",
+    metaDescription: "I spent 30 days testing the biggest AI trends of 2026. Here is what is hype, what is real, and what will change how you work.",
     title: "I Tested Every Major AI Trend in 2026 — Here's What Actually Matters",
     excerpt: "I spent 30 days testing the biggest AI trends of 2026 so you don't have to. Spoiler: most hype is fake, but a few things genuinely changed how I work forever.",
     category: "AI & Tech",
@@ -874,6 +868,8 @@ export const posts: Post[] = [
   },
   {
     slug: "top-ai-trends-before-too-late",
+    metaTitle: "10 AI Trends You Must Know in 2026",
+    metaDescription: "The AI landscape shifts every 90 days. Miss these trends and risk falling behind. Here are the top 10 AI trends you must know in 2026.",
     title: "Top 10 AI Trends You Must Know Before It's Too Late (2026 Guide)",
     excerpt: "The AI landscape shifts every 90 days. Miss these trends and you risk falling behind in your career, business, and finances. Here are the 10 that matter most right now.",
     category: "AI & Tech",
@@ -886,6 +882,7 @@ export const posts: Post[] = [
   },
   {
     slug: "top-10-ai-gadgets-2026",
+    metaDescription: "AI is now built into the hardware you touch daily. These 10 gadgets are the most impressive AI-powered devices available in 2026.",
     title: "Top 10 AI Gadgets in 2026 You Must See",
     excerpt: "AI is no longer just software — it is now built into the hardware you touch every day. These 10 gadgets are the most impressive AI-powered devices available in 2026.",
     category: "Gadgets",
@@ -898,6 +895,7 @@ export const posts: Post[] = [
   },
   {
     slug: "tested-best-gadgets-2026",
+    metaDescription: "I tested 18 of the most hyped gadgets of 2026. Some were life-changing, some were frauds. Honest results you need before buying anything.",
     title: "I Tested the Best Gadgets of 2026 — Shocking Results",
     excerpt: "I bought and tested 18 of the most hyped gadgets of 2026. Some were life-changing. Some were complete frauds. Here are the honest results you need before buying anything.",
     category: "Gadgets",
@@ -910,6 +908,8 @@ export const posts: Post[] = [
   },
   {
     slug: "gadgets-replacing-your-phone-2026",
+    metaTitle: "Gadgets That Will Replace Your Phone in 2026",
+    metaDescription: "The smartphone era is ending. In 2026, a new wave of wearable and ambient computing devices is taking over. See what gadgets are coming next.",
     title: "These Gadgets Will Replace Your Phone Sooner Than You Think",
     excerpt: "The smartphone has dominated for 15 years. In 2026, a new wave of wearable and ambient computing devices is beginning to chip away at that dominance. Here is what is coming.",
     category: "Gadgets",
@@ -922,6 +922,7 @@ export const posts: Post[] = [
   },
   {
     slug: "best-budget-gadgets-under-100-2026",
+    metaDescription: "You don't need a fortune for great tech. The best gadgets under $100 in 2026 — personally tested and ranked by value and usefulness.",
     title: "Best Budget Gadgets in 2026 Under $100 (All Tested)",
     excerpt: "You do not need to spend a fortune to get great tech. These are the best gadgets under $100 in 2026 — all personally tested and ranked by value, quality, and real-world usefulness.",
     category: "Gadgets",
@@ -934,6 +935,8 @@ export const posts: Post[] = [
   },
   {
     slug: "best-ai-tools-2026",
+    metaTitle: "15 Best Free AI Tools in 2026",
+    metaDescription: "15 free AI tools that replace expensive software. Top picks for writing, design, and coding that will save you $500/month.",
     title: "15 Best Free AI Tools in 2026 That Replace $500/mo Software",
     excerpt: "Discover the top free AI tools disrupting paid software across writing, design, coding, and more. All tested by our team.",
     category: "AI & Tech",
@@ -959,6 +962,8 @@ export const posts: Post[] = [
   },
   {
     slug: "7-best-ai-tools-make-money-online-2026",
+    metaTitle: "7 Best AI Tools to Make Money Online in 2026",
+    metaDescription: "Stop playing with prompts. Others earn $1k–$10k/month with AI. Here are the 7 AI tools that actually work and how to get your first client.",
     title: "I Tested 7 AI Tools — Here Are the Ones Actually Making Money in 2026",
     excerpt: "Most people use AI wrong. While they play with prompts, others quietly earn $1,000–$10,000/month with the same tools. Here's what actually works — and how to get your first client fast.",
     category: "Make Money",
@@ -972,6 +977,8 @@ export const posts: Post[] = [
   },
   {
     slug: "10-ai-side-hustles-that-work-2026",
+    metaTitle: "10 Best AI Side Hustles That Work in 2026",
+    metaDescription: "Real AI side hustles for 2026: No hype, just proven methods, income numbers, and action plans for beginners to start earning.",
     title: "10 AI Side Hustles That Actually Work in 2026 (Beginner Guide)",
     excerpt: "Most 'AI side hustle' lists are pure hype. These 10 are different — real methods, real income numbers, and a clear action plan to start earning this week.",
     category: "Make Money",
@@ -985,6 +992,8 @@ export const posts: Post[] = [
   },
   {
     slug: "best-ai-tools-for-freelancers-2026",
+    metaTitle: "Best AI Tools for Freelancers in 2026",
+    metaDescription: "The exact AI tools top freelancers use in 2026 to double their income. Tools for writing, productivity, and client management.",
     title: "Best AI Tools for Freelancers to Earn $1,000+/Month in 2026",
     excerpt: "Freelancers using AI are closing twice the clients in half the time. Here are the exact tools the top earners use — and how to add them to your workflow today.",
     category: "Make Money",
@@ -1058,6 +1067,8 @@ export const posts: Post[] = [
   },
   {
     slug: "how-to-start-affiliate-marketing-2026",
+    metaTitle: "Start Affiliate Marketing in 2026 Guide",
+    metaDescription: "Complete beginner guide to starting affiliate marketing in 2026. How to pick a niche, build an audience, and earn commissions.",
     title: "How to Start Affiliate Marketing in 2026 — Step-by-Step for Beginners",
     excerpt: "The complete beginner's guide to affiliate marketing in 2026. How to pick a niche, build an audience, and earn commissions.",
     category: "Make Money",
@@ -1069,6 +1080,8 @@ export const posts: Post[] = [
   },
   {
     slug: "best-credit-cards-beginners-2026",
+    metaTitle: "Best Credit Cards for Beginners in 2026",
+    metaDescription: "Build credit fast with these no-annual-fee beginner credit cards. Top 2026 picks for cash back and credit building.",
     title: "Best Credit Cards for Beginners in 2026 — No Credit History Needed",
     excerpt: "Build your credit score fast with these no-annual-fee beginner cards that offer real cash back rewards.",
     category: "Finance",
@@ -1091,6 +1104,8 @@ export const posts: Post[] = [
   },
   {
     slug: "best-fitness-trackers-2026",
+    metaTitle: "Best Fitness Trackers 2026: Top Picks",
+    metaDescription: "We tested 8 fitness trackers for 60 days. Apple Watch vs Garmin vs Fitbit compared to find the best health tracker for 2026.",
     title: "Best Fitness Trackers 2026 — Apple Watch vs Garmin vs Fitbit",
     excerpt: "We wore 8 fitness trackers for 60 days straight. Only one came out on top — and the winner might surprise you.",
     category: "Health",
@@ -1102,6 +1117,8 @@ export const posts: Post[] = [
   },
   {
     slug: "best-apple-products-2026",
+    metaTitle: "Best Apple Products in 2026: Buying Guide",
+    metaDescription: "Every Apple device ranked for 2026: iPhone 17, MacBook Air M4, and Vision Pro 2. The ultimate buying guide for Apple fans.",
     title: "Best Apple Products in 2026 — Complete Buying Guide (Every Device Ranked)",
     excerpt: "From iPhone 17 Pro Max to MacBook Air M4 and Apple Vision Pro 2 — here is every Apple product ranked by value, performance, and who should buy it in 2026.",
     category: "Gadgets",
@@ -1115,6 +1132,8 @@ export const posts: Post[] = [
   },
   {
     slug: "iphone-17-pro-max-vs-16-pro-max",
+    metaTitle: "iPhone 17 Pro Max vs 16 Pro Max Comparison",
+    metaDescription: "Is the iPhone 17 Pro Max worth it? Full comparison of price, camera, and performance against the iPhone 16 Pro Max.",
     title: "iPhone 17 Pro Max vs iPhone 16 Pro Max — Full Comparison (Price, Camera, Performance)",
     excerpt: "Is the iPhone 17 Pro Max worth the upgrade from the 16 Pro Max? We compared every spec, camera result, and real-world performance test so you can decide.",
     category: "Gadgets",
@@ -1127,6 +1146,8 @@ export const posts: Post[] = [
   },
   {
     slug: "israel-ground-invasion-iran-2026",
+    metaTitle: "Israel-Iran War 2026: Ground Invasion Updates",
+    metaDescription: "Israel is considering a ground invasion of Iran. A full breakdown of the ground situation, why Israel is escalating, and the regional impact.",
     title: "Israel Ground Invasion of Iran — What's Happening & What Comes Next (2026)",
     excerpt: "After weeks of airstrikes, Israel is now considering a ground invasion of Iran. Here is a full breakdown of what is happening on the ground, why Israel is escalating, and what a ground war would actually mean for the region.",
     category: "News",
@@ -1140,6 +1161,8 @@ export const posts: Post[] = [
   },
   {
     slug: "houthis-entering-iran-us-war-2026",
+    metaTitle: "Houthis Join Iran-US War (2026 Impact)",
+    metaDescription: "Yemen's Houthis have entered the Iran-US war, firing missiles at Israel and US ships. Who they are, why they joined, and the 2026 impact.",
     title: "Houthis Enter the War — What It Means for the Iran-US Conflict (2026)",
     excerpt: "Yemen's Houthi rebels have officially entered the Iran-US war, firing ballistic missiles at Israel and US warships. Here is who the Houthis are, why they joined, and how their involvement changes everything.",
     category: "News",
@@ -1153,6 +1176,8 @@ export const posts: Post[] = [
   },
   {
     slug: "trump-15-point-iran-peace-plan-2026",
+    metaTitle: "Trump's 15-Point Iran Peace Plan (2026 Breakdown)",
+    metaDescription: "A 15-point peace proposal to end the Iran war was rejected. Here is every point explained, why Iran said no, and if there is any path to peace.",
     title: "Trump's 15-Point Iran Peace Plan — Full Breakdown & Will It Work? (2026)",
     excerpt: "US envoy Steve Witkoff has floated a 15-point peace proposal to end the Iran war. Iran has rejected it. Here is every point explained, why Iran said no, and whether there is any path to peace.",
     category: "News",
@@ -1166,6 +1191,8 @@ export const posts: Post[] = [
   },
   {
     slug: "countries-involved-iran-us-war-2026",
+    metaTitle: "Countries in the 2026 Iran-US War (Full List)",
+    metaDescription: "The Iran-US conflict involves Russia, China, Israel, Saudi Arabia, and proxy groups. A breakdown of every nation involved and their motives.",
     title: "Who Will Join? Every Country Involved in the Iran-US War (2026 Full List)",
     excerpt: "The Iran-US conflict is not a two-country war. Russia, China, Israel, Saudi Arabia, and a dozen proxy groups are already picking sides. Here is a full breakdown of every nation involved, whose side they are on, and what they stand to gain or lose.",
     category: "News",
@@ -1179,6 +1206,8 @@ export const posts: Post[] = [
   },
   {
     slug: "petrol-prices-skyrocket-war-impact-2026",
+    metaTitle: "Why Petrol Prices are Skyrocketing in 2026",
+    metaDescription: "Petrol prices are surging globally due to the US-Iran conflict. Why fuel costs are rising so fast in 2026 and how to protect yourself.",
     title: "Petrol Prices Skyrocket! Why Fuel Costs Are Rising Fast — War Impact Explained (2026)",
     excerpt: "The Iran crisis is hitting your wallet right now. Petrol prices are surging globally as oil markets react to the US-Iran conflict. Here is exactly why fuel costs are rising, how bad it could get, and what you can do to protect yourself.",
     category: "News",
@@ -1192,6 +1221,8 @@ export const posts: Post[] = [
   },
   {
     slug: "red-sea-crisis-shipping-war-2026",
+    metaTitle: "Red Sea Crisis 2026: Houthi Attacks & Shipping",
+    metaDescription: "The Red Sea is on fire. Houthi attacks, a Suez Canal collapse, and tripling shipping costs. Everything about the 2026 global shipping chaos.",
     title: "Red Sea Crisis 2026 — Houthi Attacks, Suez Canal Collapse & Global Shipping Chaos",
     excerpt: "The Red Sea is on fire. Houthi missiles are hitting ships daily, Suez Canal traffic has dropped over 60%, and global shipping costs have tripled. Here is everything you need to know about the worst maritime crisis in decades.",
     category: "News",
@@ -1205,6 +1236,8 @@ export const posts: Post[] = [
   },
   {
     slug: "world-war-3-usa-vs-iran-2026",
+    metaTitle: "USA vs Iran 2026: Is World War 3 Happening?",
+    metaDescription: "Tensions between the USA and Iran hit a boiling point in 2026. Military buildups, nuclear threats, and whether World War 3 is on the table.",
     title: "World War 3? What's Really Happening Between USA and Iran (2026)",
     excerpt: "Tensions between the United States and Iran have reached a boiling point in 2026. Military buildups, nuclear threats, proxy wars, and diplomatic breakdowns — here is a full breakdown of what is really happening and whether World War 3 is actually on the table.",
     category: "News",
@@ -1218,6 +1251,8 @@ export const posts: Post[] = [
   },
   {
     slug: "apple-macbook-air-m4-full-review",
+    metaTitle: "MacBook Air M4 Review 2026: The Best Laptop",
+    metaDescription: "Complete MacBook Air M4 review: Performance, battery life, and display tested. Why it is the best laptop for most people in 2026.",
     title: "MacBook Air M4 Full Review 2026 — The Best Laptop for Most People",
     excerpt: "After 4 months of daily use, here is our complete verdict on the MacBook Air M4. Performance, battery life, display, and whether it is worth buying right now.",
     category: "Gadgets",

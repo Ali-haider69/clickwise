@@ -4,7 +4,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Trending — Most Popular Articles Right Now",
-  description: "The most popular and trending articles on ClickWise right now. Don't miss what everyone is reading.",
+  description: "Discover the most popular and trending articles on ClickWise right now. Stay ahead of the curve with our most-read tech, finance, and AI news of the week.",
   ...canonicalMeta("/trending"),
 };
 

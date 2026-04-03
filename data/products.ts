@@ -40,7 +40,7 @@ export const products: Product[] = [
       "Connectivity": "Bluetooth 5.3",
       "Charging": "MagSafe / Lightning",
     },
-    description: "The AirPods Pro 3 are Apple's best-ever earbuds. With the H2 chip, the noise cancellation is a full generation ahead of anything else in this price range. Adaptive Audio intelligently blends ANC and Transparency based on your environment — it actually works.",
+    description: "The AirPods Pro 3 are Apple's best earbuds. With the H2 chip, ANC is a generation ahead. Adaptive Audio intelligently blends ANC and Transparency perfectly.",
     verdict: "If you are in the Apple ecosystem, these are the best earbuds you can buy in 2026. The price is justified by the audio quality and noise cancellation alone.",
   },
   {
@@ -64,7 +64,7 @@ export const products: Product[] = [
       "Connectivity": "Bluetooth 5.4",
       "Charging": "Wireless / USB-C",
     },
-    description: "The Galaxy Buds 4 Pro deliver remarkable value at $199. The 360 Audio spatial sound is genuinely impressive, and at IPX7 they are more water-resistant than the AirPods Pro. If you have a Samsung Galaxy phone, the integration is seamless.",
+    description: "The Galaxy Buds 4 Pro deliver remarkable value at $199. 360 Audio is impressive, and IPX7 water-resistance beats AirPods Pro. Seamless Samsung integration.",
     verdict: "The best Android earbuds under $200 in 2026. A non-Samsung user will still enjoy great sound and ANC, but Samsung phone owners get an elite experience.",
   },
   {
@@ -88,7 +88,7 @@ export const products: Product[] = [
       "Connectivity": "Bluetooth 5.3 (LDAC)",
       "Audio": "Hi-Res Wireless (LDAC)",
     },
-    description: "The Sony WF-1000XM6 are the audiophile's choice. LDAC codec delivers near-lossless hi-res audio over Bluetooth — something neither Apple nor Samsung can match. The auto-optimising ANC is the best we have ever tested in true wireless form.",
+    description: "Sony WF-1000XM6 are the audiophile's choice. LDAC codec delivers near-lossless hi-res audio over Bluetooth. The auto-optimising ANC is the best in 2026.",
     verdict: "Buy these if audio quality is your top priority. The bulkier fit and lack of wireless charging are real trade-offs, but no other earbud in 2026 comes close for pure sound performance.",
   },
   {
@@ -113,7 +113,7 @@ export const products: Product[] = [
       "Battery": "Up to 18 hours",
       "Weight": "2.7 lbs (1.24 kg)",
     },
-    description: "The MacBook Air M4 is the best laptop for most people in 2026 — full stop. The M4 chip is so efficient that Apple removed the fan entirely, making it completely silent under any workload. Battery life of 18 hours in real-world use means you go days without reaching for a charger.",
+    description: "The MacBook Air M4 is the best laptop for most people in 2026. The M4 chip is so efficient that it is completely silent, with 18 hours of real-world battery.",
     verdict: "If you do not need a dedicated GPU, the MacBook Air M4 is the smartest laptop purchase you can make in 2026. It handles creative work, coding, and video editing without breaking a sweat.",
   },
   {
@@ -195,7 +195,7 @@ export const products: Product[] = [
       "Battery": "6-8 hours real-world",
       "Weight": "4.2 lbs (1.9 kg)",
     },
-    description: "The Dell XPS 15 2026 is the top Windows laptop for creators and power users who need a real GPU. The 3.5K OLED panel is jaw-dropping — colours are vivid, blacks are perfect, and 120Hz refresh makes everything buttery smooth.",
+    description: "The Dell XPS 15 2026 is the top Windows laptop for creators. The 3.5K OLED panel is jaw-dropping — vivid colours, perfect blacks, and buttery smooth 120Hz.",
     verdict: "Choose the XPS 15 over the MacBook Air if you need Nvidia GPU power for 3D, gaming, or heavy ML workloads. The battery is a compromise but the raw performance makes up for it.",
   },
 ];

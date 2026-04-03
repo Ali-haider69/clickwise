@@ -3,7 +3,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — ClickWise",
-  description: "ClickWise Privacy Policy — how we collect, use, and protect your data.",
+  description: "Read the ClickWise Privacy Policy to understand how we collect, use, and rigorously protect your personal data, ensuring a secure and transparent experience.",
   ...canonicalMeta("/privacy"),
 };
 

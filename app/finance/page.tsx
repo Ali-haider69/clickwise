@@ -4,7 +4,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Finance — Investing, Budgeting & Money Tips",
-  description: "Smart finance tips, investing strategies, budgeting advice, and money management guides.",
+  description: "Master your money with our smart finance tips, proven investing strategies, practical budgeting advice, and comprehensive wealth management guides for 2026.",
   ...canonicalMeta("/finance"),
 };
 

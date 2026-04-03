@@ -4,7 +4,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Health & Wellness — Tips, Guides & Insights",
-  description: "Health and wellness guides, fitness tips, and lifestyle advice to help you live better.",
+  description: "Explore comprehensive health and wellness guides, fitness tracker reviews, and practical lifestyle advice designed to help you live a better, healthier life.",
   ...canonicalMeta("/health"),
 };
 

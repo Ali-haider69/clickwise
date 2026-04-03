@@ -8,13 +8,21 @@ export function middleware(request: NextRequest) {
   const url = new URL(request.url);
   const host = request.headers.get("host") ?? "";
 
+  let changed = false;
+
+  // 1. Redirect www. to non-www.
   if (host.startsWith("www.")) {
     url.hostname = host.replace(/^www\./, "");
-    return NextResponse.redirect(url.toString(), 308);
+    changed = true;
   }
 
+  // 2. Normalize trailing slashes (Next.js default is no trailing slash)
   if (url.pathname !== "/" && url.pathname.endsWith("/")) {
     url.pathname = url.pathname.replace(/\/+$/, "") || "/";
+    changed = true;
+  }
+
+  if (changed) {
     return NextResponse.redirect(url.toString(), 308);
   }
 

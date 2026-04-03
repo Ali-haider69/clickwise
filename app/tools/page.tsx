@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Free Online Tools 2026 — AI Generators, Dev Tools & Calculators",
-  description: "Free tools: AI LinkedIn post generator, Instagram caption generator, JSON formatter, JWT decoder, age calculator, Fiverr fee calculator and more. No signup required.",
+  title: "Free Online Tools 2026 — AI Generators & Calculators",
+  description: "Free tools: AI LinkedIn & Instagram generators, JSON formatter, JWT decoder, age calculator, Fiverr fee calculator, and more. No signup required.",
   ...canonicalMeta("/tools"),
 };
 

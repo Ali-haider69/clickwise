@@ -4,7 +4,7 @@ import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Latest News — ClickWise",
-  description: "Breaking news and updates on tech, AI, gadgets, and more. Stay informed with ClickWise.",
+  description: "Get breaking news and real-time updates on global events, artificial intelligence, technology trends, and market shifts. Stay informed daily with ClickWise.",
   ...canonicalMeta("/news"),
 };
 
