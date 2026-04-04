@@ -6596,4 +6596,218 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  /* ─────────────────────────────────────────────
+     MAKE MONEY — 15 n8n Templates Copy 2026
+  ───────────────────────────────────────────── */
+  "n8n-templates-copy-2026-free-download": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-lg font-medium space-y-3" style={{ color: "var(--text-primary)" }}>
+        <span className="block">Most people using n8n are making $0.</span>
+        <span className="block pt-2">
+          Not because the tool is hard—<br />
+          but because they don&apos;t know what to <strong>SELL</strong>.
+        </span>
+        <span className="block pt-2">
+          This guide gives you 15 proven n8n workflows that freelancers are already selling for <strong>$200 to $2,000</strong>.
+        </span>
+        <span className="block pt-2">You can copy them, customize them, and get paid this week.</span>
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to Make Money with n8n Templates (Step-by-Step)</h2>
+      <p>
+        If you&apos;re searching for <strong>&quot;how to make money with n8n&quot;</strong>, here&apos;s the simplest path—the same one behind most <strong>n8n freelance</strong> wins and <strong>n8n business ideas</strong> that actually ship:
+      </p>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Pick <strong>one</strong> template from this list</li>
+        <li>Customize it for a niche (real estate, ecom, agencies)</li>
+        <li>Sell it as a <strong>$300–$1,000</strong> service (pilot or fixed build)</li>
+      </ul>
+      <p>
+        For a deeper playbook, pair this with <InternalLink href="/blog/make-money-with-n8n-2026">how to make money with n8n</InternalLink> and—when clients ask about tools—<InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make</InternalLink>.
+      </p>
+
+      <p>
+        The uncomfortable truth: <strong>building workflows from scratch</strong> is where projects die—unclear triggers, mystery credentials, and &quot;we will fix it in prod.&quot; <strong>n8n templates</strong> flip the script. You start from a proven graph, swap keys, and prove value in days, not quarters.
+      </p>
+
+      <div className="my-6 glass rounded-2xl p-5 md:p-6 border-l-4 border-l-emerald-500">
+        <p className="font-bold text-base mb-3" style={{ color: "var(--text-primary)" }}>
+          <span aria-hidden="true">💰 </span>Real results
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-sm">
+          <li><strong>Lead gen workflow</strong> → $500/client</li>
+          <li><strong>Cold email automation</strong> → $800 setup</li>
+          <li><strong>AI content workflow</strong> → $300/month retainer</li>
+        </ul>
+        <p className="mt-4 text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
+          These are not ideas — these are services people are already paying for.
+        </p>
+      </div>
+
+      <StatBox items={[["15","Workflow blueprints"],["0","Courses required"],["$200–$2k+","Typical build range"],["2026","Ship this quarter"]].map(([v,l]) => [v,l] as [string,string])} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why &quot;n8n workflows download&quot; is trending (and what it actually means)</h2>
+      <p>
+        <strong>n8n templates</strong> are pre-built workflows—nodes, logic, and connections—exported as JSON you can import into your workspace. They are trending because teams want <strong>AI automation and no-code tools</strong> without hiring a full integration team. A template is not magic; it is a shortcut that still needs your credentials, error handling, and brand-safe prompts.
+      </p>
+      <ul className="list-disc pl-5 space-y-2">
+        <li><strong>Speed:</strong> skip blank-canvas paralysis and ship a demo on sample data.</li>
+        <li><strong>Margin:</strong> sell implementation and support, not reinventing HTTP requests.</li>
+        <li><strong>Proof:</strong> show before/after metrics (leads captured, emails sent, hours saved).</li>
+      </ul>
+      <p>
+        Treat every <strong>n8n workflows download</strong> like a starter kit: verify triggers, rate limits, and data privacy before you promise autonomy. For tool choice, compare ecosystems in <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make</InternalLink>—same client problem, different ops overhead.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>15 ready-to-use n8n templates (what each does + who should use it)</h2>
+      <p className="text-sm" style={{ color: "var(--text-muted)" }}>Below: practical names you can search in the n8n template library or community—then adapt nodes to your stack.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. Lead generation workflow</h3>
+      <p><strong>What it does:</strong> captures inbound leads (form, ad, landing page), dedupes, scores lightly, routes to CRM and Slack, and logs source.</p>
+      <p><strong>Who should use it:</strong> B2B founders, agencies, and SDR-led teams that cannot afford dropped form fills.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Cold email automation</h3>
+      <p><strong>What it does:</strong> pulls prospects from a sheet or CRM, personalizes with AI within guardrails, sends in safe batches, and pauses on replies or bounces.</p>
+      <p><strong>Who should use it:</strong> outbound freelancers and small agencies selling to US SMBs (compliance and domain health matter—never blast blindly).</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. AI content generator</h3>
+      <p><strong>What it does:</strong> turns briefs, URLs, or transcripts into drafts (blog, email, social) with brand voice snippets and human approval steps.</p>
+      <p><strong>Who should use it:</strong> creators, marketing teams, and operators who need volume without publishing unchecked hallucinations.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. Social media auto-posting</h3>
+      <p><strong>What it does:</strong> schedules posts from an approved sheet or Notion, attaches media, retries failures, and writes results back to a log.</p>
+      <p><strong>Who should use it:</strong> solo brands and lean marketing teams that want consistency without living inside five native apps.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. CRM automation</h3>
+      <p><strong>What it does:</strong> syncs contacts and deals across tools, enriches fields, assigns owners, and triggers tasks when stages change.</p>
+      <p><strong>Who should use it:</strong> sales-led companies with messy spreadsheets pretending to be a CRM—this is revenue hygiene, not vanity.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>6. Web scraping workflow</h3>
+      <p><strong>What it does:</strong> fetches pages or listings on a schedule, parses fields, stores rows, and alerts on changes (price, stock, rankings).</p>
+      <p><strong>Who should use it:</strong> ecommerce operators, analysts, and agencies monitoring public data—respect robots.txt and terms of service.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>7. AI chatbot workflow</h3>
+      <p><strong>What it does:</strong> ingests FAQs and docs, answers in-channel (site chat, Telegram, etc.), escalates to a human with context, and logs transcripts.</p>
+      <p><strong>Who should use it:</strong> support-heavy SMBs that need 24/7 first-line coverage without promising legal or medical advice via bot.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>8. Email follow-up system</h3>
+      <p><strong>What it does:</strong> sequences timed follow-ups after demos, proposals, or cart abandons; stops on reply; notifies sales on hot signals.</p>
+      <p><strong>Who should use it:</strong> founders and closers who lose deals to &quot;I will circle back&quot;—automation nudges; humans still close.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>9. Data sync automation</h3>
+      <p><strong>What it does:</strong> two-way or one-way sync between databases, Sheets, Airtable, and SaaS APIs with conflict rules and audit rows.</p>
+      <p><strong>Who should use it:</strong> ops teams tired of CSV roulette—ideal when finance and sales need one source of truth.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>10. Invoice automation</h3>
+      <p><strong>What it does:</strong> creates or pulls invoices, sends reminders, flags overdue accounts, and posts payment status to accounting tools.</p>
+      <p><strong>Who should use it:</strong> freelancers and agencies where cash flow dies in the gap between &quot;sent&quot; and &quot;paid.&quot;</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>11. Customer onboarding &amp; welcome sequence</h3>
+      <p><strong>What it does:</strong> triggers after signup or purchase—creates accounts, sends segmented emails, assigns onboarding tasks, and pings CS on risk signals.</p>
+      <p><strong>Who should use it:</strong> SaaS and service businesses that lose revenue in the first 14 days after conversion.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>12. E-commerce order &amp; fulfillment alerts</h3>
+      <p><strong>What it does:</strong> new order → inventory check → Slack/email to warehouse or 3PL → tracking updates back to customers.</p>
+      <p><strong>Who should use it:</strong> Shopify/Woo brands drowning in manual &quot;where is my order?&quot; tickets.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>13. Meeting notes → CRM &amp; tasks</h3>
+      <p><strong>What it does:</strong> ingests transcripts or summaries, extracts action items and stakeholders, updates CRM fields, and creates tasks with owners.</p>
+      <p><strong>Who should use it:</strong> sales teams and consultants who already record calls but fail to operationalize follow-ups.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>14. RSS &amp; competitor monitoring digest</h3>
+      <p><strong>What it does:</strong> watches feeds or site changes, summarizes with AI, and posts a daily or weekly digest to Slack or email.</p>
+      <p><strong>Who should use it:</strong> marketers, investors, and founders who need signal without doom-scrolling.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>15. Review &amp; reputation automation</h3>
+      <p><strong>What it does:</strong> after a positive experience (delivery, appointment), requests reviews on Google or industry sites; routes unhappy replies privately first.</p>
+      <p><strong>Who should use it:</strong> local services and ecommerce brands where star ratings directly move conversion.</p>
+
+      <InfoBox title="Action checklist before you bill a client" items={[
+        ["Map the trigger", "One primary event (form submit, new row, webhook)—avoid five triggers on day one."],
+        ["Define “done”", "What row, message, or ticket proves the workflow succeeded?"],
+        ["Failure path", "Retries, dead-letter logging, and who gets paged when APIs flake."],
+        ["Cost model", "OpenAI tokens + email sends + task volume—quote in USD with margin."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to import templates into n8n (step-by-step)</h2>
+      <ol className="list-decimal pl-5 space-y-2">
+        <li>Open n8n (Cloud or self-hosted) and create a <strong>new workflow</strong>.</li>
+        <li>Open the <strong>Templates</strong> gallery or paste <strong>JSON</strong> from a trusted <strong>n8n workflows download</strong> source.</li>
+        <li>Click <strong>Import from File</strong> or <strong>Import from URL</strong> (if enabled) and select the template JSON.</li>
+        <li><strong>Credential sweep:</strong> reconnect every node—OAuth, API keys, SMTP—never ship with author keys.</li>
+        <li><strong>Rename and tag</strong> the workflow (client, environment, owner).</li>
+        <li>Run <strong>Test workflow</strong> on sandbox data; fix node versions if prompted.</li>
+        <li>Turn on <strong>Error Workflow</strong> or alerting (Slack/email) before production.</li>
+        <li>Activate—start with a narrow trigger (one form, one list) then expand.</li>
+      </ol>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to customize templates for clients</h2>
+      <ul className="list-disc pl-5 space-y-2">
+        <li><strong>Clone first:</strong> duplicate the template per client so you never cross-wire data.</li>
+        <li><strong>Swap “system of record”:</strong> Sheets vs Airtable vs Postgres—pick one source of truth.</li>
+        <li><strong>Brand the AI:</strong> system prompts, tone samples, banned phrases, and PII redaction rules.</li>
+        <li><strong>Add approvals:</strong> human-in-the-loop for sends, refunds, and anything legally sensitive.</li>
+        <li><strong>Document:</strong> one-page SOP: triggers, owners, monthly cost estimate, and how to pause.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to sell these workflows (pricing in USD)</h2>
+      <p>
+        Sell outcomes—hours saved, leads recovered, invoices paid faster—not node counts. Typical US-facing ranges freelancers use in 2026:
+      </p>
+      <DataTable
+        headers={["Offer", "What you deliver", "Typical USD range"]}
+        rows={[
+          ["Pilot / setup", "One workflow, sandbox test, handoff call", "$250–$800"],
+          ["Production build", "CRM + comms + logging + error path", "$800–$2,000"],
+          ["Retainer", "Monitoring, tweaks, monthly reporting", "$200–$800 / mo"],
+          ["AI-heavy flows", "Content, classification, chat with guardrails", "Add 20–40% for token risk + QA"],
+        ]}
+      />
+      <p className="text-sm">Adjust for enterprise security reviews, SLAs, and after-hours support—charge for those explicitly.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Best tools to combine (OpenAI, Google Sheets, APIs)</h2>
+      <ul className="list-disc pl-5 space-y-2">
+        <li><strong>OpenAI (or similar):</strong> drafting, classification, summarization—always log prompts and outputs for disputes.</li>
+        <li><strong>Google Sheets:</strong> fastest client-facing control panel for non-technical teams—validate row locks before scaling.</li>
+        <li><strong>CRM APIs (HubSpot, Salesforce, Pipedrive):</strong> own the object model early—bad field mapping kills projects.</li>
+        <li><strong>Communication:</strong> Slack, email (Resend, SendGrid), Twilio—pick what the client already pays for.</li>
+        <li><strong>HTTP + webhooks:</strong> the universal duct tape—document payloads and idempotency keys.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Conclusion: copy, import, get paid</h2>
+      <p className="font-semibold text-lg space-y-3" style={{ color: "var(--text-primary)" }}>
+        <span className="block">Pick <strong>ONE</strong> workflow from this list.</span>
+        <span className="block pt-2">Build it in the next <strong>24 hours</strong>.</span>
+        <span className="block pt-2">
+          Then message 10 people on LinkedIn:{' '}
+          <span style={{ color: "var(--text-secondary)" }} className="font-semibold not-italic">
+            &quot;I built a small automation that can help you with X—want to try it?&quot;
+          </span>
+        </span>
+        <span className="block pt-2">That&apos;s how you get your first client.</span>
+      </p>
+      <p className="text-sm mt-4" style={{ color: "var(--text-muted)" }}>
+        Import the JSON from the official n8n template gallery (or your curated pack), run it on sample data first, then send that message. Still choosing a stack? See <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Where can I find free n8n automation templates to download?", a: "Start with the official n8n template gallery and community submissions—import JSON into your workspace, then replace credentials. Treat third-party templates like untrusted code: review nodes, scopes, and external calls before you connect production data." },
+        { q: "Are n8n templates safe to use for client work?", a: "They are safe when you audit them: check for external webhooks, unexpected HTTP requests, and over-broad API scopes. Clone per client, use least-privilege keys, add error workflows, and test with sample data before go-live." },
+        { q: "Do I still need to learn n8n if I use templates?", a: "You need enough skill to debug, handle OAuth, and explain failure modes—templates remove the blank page, not the responsibility. That is still far less time than building every integration from scratch." },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          <InternalLink href="/blog/make-money-with-n8n-2026">Make money with n8n</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-n8n-workflows-make-money-2026">Best n8n workflows to make money</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };
