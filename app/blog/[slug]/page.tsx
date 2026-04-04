@@ -29,7 +29,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...(post.seoKeywords ?? []),
     ].join(", "),
     alternates: { canonical: canonicalUrl(`/blog/${slug}`) },
-    openGraph: { title: metaTitle, description: metaDescription, images: [post.image], type: "article" },
+    openGraph: {
+      url: canonicalUrl(`/blog/${slug}`),
+      title: metaTitle,
+      description: metaDescription,
+      images: [post.image],
+      type: "article",
+    },
   };
 }
 

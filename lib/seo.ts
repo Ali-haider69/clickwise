@@ -13,6 +13,10 @@ export function canonicalUrl(path: string): string {
 }
 
 /** Use in page/layout `metadata` to set rel=canonical for indexable URLs. */
-export function canonicalMeta(path: string): Pick<Metadata, "alternates"> {
-  return { alternates: { canonical: canonicalUrl(path) } };
+export function canonicalMeta(path: string): Pick<Metadata, "alternates" | "openGraph"> {
+  const url = canonicalUrl(path);
+  return {
+    alternates: { canonical: url },
+    openGraph: { url: url },
+  };
 }

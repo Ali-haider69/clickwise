@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star, CheckCircle, XCircle, ExternalLink, ArrowLeft, ShieldCheck, Clock, Award } from "lucide-react";
 import type { Metadata } from "next";
-import { canonicalUrl } from "@/lib/seo";
+import { canonicalUrl, canonicalMeta } from "@/lib/seo";
 
 interface Props { params: Promise<{ id: string }> }
 
@@ -16,10 +16,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const product = products.find((p) => p.id === id);
   if (!product) return {};
+  const url = `/reviews/${id}`;
   return {
     title: `${product.name} Review 2026 — Is It Worth It?`,
     description: product.description,
-    alternates: { canonical: canonicalUrl(`/reviews/${id}`) },
+    ...canonicalMeta(url),
+    openGraph: {
+      url: canonicalUrl(url),
+      title: `${product.name} Review 2026 — Is It Worth It?`,
+      description: product.description,
+      images: [product.image],
+    },
   };
 }
 
