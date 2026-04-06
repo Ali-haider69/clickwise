@@ -1486,7 +1486,7 @@ export const posts: Post[] = [
       "Stop building AI workflows from scratch. Here are 100+ free AI automation templates for n8n, Zapier, and Make — copy, download, and deploy in minutes. Covers lead gen, email, content, CRM, WhatsApp, and more.",
     category: "Make Money",
     readTime: "18 min",
-    date: "Apr 6, 2026",
+    date: "Apr 16, 2026",
     image: "/images/Gemini_Generated_Image_4jhpvn4jhpvn4jhp.png",
     trending: true,
     featured: true,
