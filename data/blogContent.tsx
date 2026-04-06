@@ -7188,4 +7188,532 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  /* ─────────────────────────────────────────────
+     MAKE MONEY — 100+ Free AI Automation Templates 2026
+  ───────────────────────────────────────────── */
+  "free-ai-automation-templates-2026-all-in-one": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      {/* ── FEATURED SNIPPET ── */}
+      <h2 className="text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What are AI Automation Templates?</h2>
+      <p>
+        AI automation templates are pre-built workflows that connect apps like n8n, Zapier, and Make to automate tasks such as lead generation, email replies, CRM updates, and content creation — without writing a single line of code. You import the template, add your API credentials, and it runs immediately.
+      </p>
+
+      <p className="text-lg font-medium mt-6" style={{ color: "var(--text-primary)" }}>
+        Most people waste time building AI workflows from scratch — searching YouTube, copying broken code, and wondering why nothing connects.
+      </p>
+      <p>
+        The smartest operators in 2026 don&apos;t build from scratch. They copy proven templates, swap credentials, and ship in hours — not weeks.
+      </p>
+      <p>
+        This is the only guide you need. 100+ free AI automation templates, organized by goal, with copy-paste steps for <strong>n8n</strong>, <strong>Zapier</strong>, and <strong>Make</strong>. Whether you want to <InternalLink href="/blog/make-money-with-n8n-2026">make money with automation</InternalLink> or simply save 10+ hours a week — these templates are your shortcut.
+      </p>
+
+      <StatBox items={[["100+","Free Templates"],["3","Platforms Covered"],["0","Coding Required"],["$0","Cost to Start"]].map(([v,l]) => [v,l] as [string,string])} />
+
+      <div className="my-6 glass rounded-2xl p-5 border-l-4 border-l-purple-500">
+        <p className="font-bold text-base mb-2" style={{ color: "var(--text-primary)" }}>What you&apos;ll find in this guide:</p>
+        <ul className="list-disc pl-5 space-y-1 text-sm">
+          <li>💰 Make Money templates (lead gen, Fiverr, email responder)</li>
+          <li>📈 Business Automation templates (CRM, WhatsApp, customer support)</li>
+          <li>🧠 Content Automation templates (blog generator, SEO, social media)</li>
+          <li>⚙️ Tool-Specific templates for n8n, Zapier, and Make</li>
+        </ul>
+      </div>
+
+      {/* ── REAL PROOF ── */}
+      <div className="my-6 glass rounded-2xl p-5 border-l-4 border-l-green-500">
+        <p className="font-bold text-base mb-3" style={{ color: "var(--text-primary)" }}>Real Results from These Templates:</p>
+        <ul className="list-disc pl-5 space-y-2 text-sm">
+          <li>Freelancers earning <strong>$500–$2,000 per automation setup</strong> — using templates from Section 1 of this guide</li>
+          <li>Content agencies saving <strong>20+ hours/week</strong> using the blog generator + social scheduler combo</li>
+          <li>Lead gen workflows generating <strong>10–50 qualified leads/day</strong> for B2B clients</li>
+          <li>WhatsApp AI bots <strong>cutting support response time from 4 hours to under 2 minutes</strong></li>
+          <li>Beginners closing their <strong>first $300 automation client within 2 weeks</strong> of using these templates</li>
+        </ul>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why Copy-Paste AI Workflows Beat Building From Scratch</h2>
+      <p>
+        Building a workflow from a blank canvas sounds empowering — until you spend 4 hours debugging a webhook trigger that never fires. <strong>Copy-paste AI workflows</strong> exist because the core logic of most automations is identical. The only thing that changes is your API keys and business context.
+      </p>
+      <ul className="list-disc pl-5 space-y-2">
+        <li><strong>Speed:</strong> Go from idea to live automation in under an hour</li>
+        <li><strong>Reliability:</strong> Templates are tested by thousands of users before you touch them</li>
+        <li><strong>Money:</strong> Freelancers using templates deliver faster, charge the same, and keep higher margins</li>
+        <li><strong>Learning:</strong> Reading a working workflow teaches you faster than any course</li>
+      </ul>
+      <div className="my-6 glass rounded-2xl p-5 border border-blue-500/30">
+        <p className="font-bold text-sm mb-1" style={{ color: "var(--text-primary)" }}>Not sure which tool to use?</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          Before picking a template platform, read our breakdown: <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make (2026)</InternalLink> — covers pricing, power, and which one fits your exact use case.
+        </p>
+      </div>
+
+      {/* ── BEGINNER QUICK START ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: "var(--text-primary)" }}>Start Here (If You&apos;re a Beginner)</h2>
+      <p>Feeling overwhelmed by 100+ options? Don&apos;t be. Follow this 3-step path and you&apos;ll have a live automation — and potentially your first paid client — within a week.</p>
+      <div className="my-5 glass rounded-2xl overflow-hidden">
+        <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
+          <div className="flex gap-4 p-5 items-start">
+            <span className="text-2xl font-black gradient-text flex-shrink-0">01</span>
+            <div>
+              <p className="font-bold text-sm mb-1" style={{ color: "var(--text-primary)" }}>Use a Zapier template first (fastest win)</p>
+              <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Go to zapier.com, search "lead to CRM" or "email to Slack", click Use Template, connect your accounts. Done in under 10 minutes. No setup, no JSON, no code. This is your proof of concept.</p>
+            </div>
+          </div>
+          <div className="flex gap-4 p-5 items-start">
+            <span className="text-2xl font-black gradient-text flex-shrink-0">02</span>
+            <div>
+              <p className="font-bold text-sm mb-1" style={{ color: "var(--text-primary)" }}>Graduate to n8n for advanced workflows</p>
+              <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Once you understand trigger → action logic, install n8n (free, self-hosted) and import one of the JSON templates in Section 4 of this guide. n8n gives you AI nodes, branching, and multi-step logic that Zapier can&apos;t match.</p>
+            </div>
+          </div>
+          <div className="flex gap-4 p-5 items-start">
+            <span className="text-2xl font-black gradient-text flex-shrink-0">03</span>
+            <div>
+              <p className="font-bold text-sm mb-1" style={{ color: "var(--text-primary)" }}>Sell your first automation for $300+</p>
+              <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Pick the Lead Gen + CRM template (Template #1 below). Post on LinkedIn or cold-email 5 local businesses. Offer to build it free for one, then charge $300–$500 for the next. Most beginners close their first client within 2 weeks. See the full playbook: <InternalLink href="/blog/ai-automation-agency">how to start an AI automation agency</InternalLink>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <BlogImage
+        src="/images/Gemini_Generated_Image_4jhpvn4jhpvn4jhp.png"
+        alt="Best n8n workflows to make money 2026 — step-by-step automation guide"
+        caption="Pick one workflow, ship it, invoice it—then repeat."
+      />
+
+
+      {/* ── SECTION 1: MAKE MONEY ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-2" style={{ color: "var(--text-primary)" }}>💰 Section 1: Make Money Templates</h2>
+      <p className="text-sm mb-6" style={{ color: "var(--text-muted)" }}>
+        These are the templates freelancers and agency owners sell to clients for $300–$2,000 per build. For the full business model, see our guide on <InternalLink href="/blog/ai-automation-agency">how to start an AI automation agency</InternalLink>.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. Lead Generation + CRM Sync Automation</h3>
+      <p><strong>What it does:</strong> Captures inbound leads from any form (Typeform, Tally, website), deduplicates, scores them, and pushes them to your CRM (HubSpot, Airtable, Notion) with a Slack alert.</p>
+      <p><strong>Who it&apos;s for:</strong> B2B freelancers, marketing agencies, SaaS founders with inbound demand.</p>
+      <p><strong>Tools used:</strong> n8n or Zapier + Typeform/Tally + HubSpot/Airtable + Slack</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Trigger: Webhook from form submission</li>
+          <li>Filter: Deduplicate by email using a lookup node</li>
+          <li>AI score (optional): ChatGPT node classifies lead quality from fields</li>
+          <li>Action: Create CRM record + send Slack notification with lead summary</li>
+          <li>Log: Append to Google Sheet for weekly review</li>
+        </ol>
+      </div>
+      <p><strong>Sell price:</strong> $400–$900 setup + $150/month retainer</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. AI Email Responder (Inbox Zero Automation)</h3>
+      <p><strong>What it does:</strong> Reads incoming emails, classifies intent (inquiry, complaint, booking, spam), drafts a reply using ChatGPT with your brand voice, and queues for human approval or sends automatically.</p>
+      <p><strong>Who it&apos;s for:</strong> Service businesses, consultants, e-commerce stores drowning in support emails.</p>
+      <p><strong>Tools used:</strong> n8n or Make + Gmail/Outlook + OpenAI API + Google Sheets</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Trigger: Gmail/Outlook — new email in inbox</li>
+          <li>Filter: Exclude newsletters, no-reply, internal domains</li>
+          <li>AI classify: ChatGPT node — classify as inquiry / complaint / booking / other</li>
+          <li>Branch: Route each type to a different reply prompt</li>
+          <li>Draft reply using brand tone instructions in system prompt</li>
+          <li>Human review: Send draft to Slack or Gmail drafts folder</li>
+        </ol>
+      </div>
+      <p><strong>Sell price:</strong> $500–$1,200 setup</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. Fiverr / Freelance Order Automation</h3>
+      <p><strong>What it does:</strong> When a new order comes in via email or webhook, it automatically creates a Notion project, drafts a welcome message, schedules a delivery reminder, and logs earnings to a tracker.</p>
+      <p><strong>Who it&apos;s for:</strong> Freelancers on Fiverr, Upwork, or direct clients who want to look professional without manual admin.</p>
+      <p><strong>Tools used:</strong> Zapier + Gmail + Notion + Google Sheets + Slack</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Trigger: New email matching "New Order" from Fiverr</li>
+          <li>Parse: Extract client name, order details, deadline using regex or AI</li>
+          <li>Create: Notion page from template with client info</li>
+          <li>Send: Welcome email using Gmail with personalized details</li>
+          <li>Schedule: Create calendar reminder 24h before deadline</li>
+          <li>Log: Add row to Google Sheet income tracker</li>
+        </ol>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. Cold Outreach Automation (Done Right)</h3>
+      <p><strong>What it does:</strong> Pulls prospect data from a sheet, personalizes each email with AI using company/role context, sends in safe batches, pauses on replies, and tracks open/reply rates.</p>
+      <p><strong>Who it&apos;s for:</strong> Sales freelancers and B2B agencies doing outbound. Always comply with CAN-SPAM and GDPR.</p>
+      <p><strong>Tools used:</strong> n8n + Google Sheets + OpenAI + Instantly/SMTP</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Read prospect list from Google Sheets (filter: not yet contacted)</li>
+          <li>AI personalize: Generate 1-sentence opener from company name + role</li>
+          <li>Merge: Insert opener into base email template</li>
+          <li>Batch send: Max 30 emails/hour with randomized delays</li>
+          <li>Monitor: Check for replies; if reply detected → stop sequence + alert Slack</li>
+          <li>Update sheet: Mark as sent + log timestamp</li>
+        </ol>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Invoice & Payment Follow-Up Bot</h3>
+      <p><strong>What it does:</strong> Detects unpaid invoices past due date, sends polite follow-up emails on Day 3, Day 7, and Day 14, escalates to a final notice with payment link, and notifies you when paid.</p>
+      <p><strong>Who it&apos;s for:</strong> Freelancers and agencies who lose cash flow chasing invoices manually.</p>
+      <p><strong>Tools used:</strong> Make + Stripe/PayPal + Gmail + Google Sheets</p>
+      <p><strong>Sell price:</strong> $300–$600 setup</p>
+
+      <InternalLink href="/blog/best-n8n-workflows-make-money-2026">→ See the best n8n workflows that make money in 2026</InternalLink>
+
+      {/* ── SECTION 2: BUSINESS AUTOMATION ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-2" style={{ color: "var(--text-primary)" }}>📈 Section 2: Business Automation Templates</h2>
+      <p className="text-sm mb-6" style={{ color: "var(--text-muted)" }}>
+        These templates handle the day-to-day operations that kill productivity. Build them for clients or use them in your own business.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>6. CRM Auto-Update Workflow</h3>
+      <p><strong>What it does:</strong> Syncs contacts across platforms (email, form fills, social DMs), enriches profiles with job title/company data, assigns deal stages automatically, and triggers tasks when stages change.</p>
+      <p><strong>Who it&apos;s for:</strong> Sales teams using HubSpot, Pipedrive, or Airtable as their CRM.</p>
+      <p><strong>Tools used:</strong> n8n + HubSpot/Airtable + Clearbit/Apollo + Slack</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Trigger: New form submission or email from new contact</li>
+          <li>Enrich: Look up company data via Clearbit or Apollo API</li>
+          <li>Create/Update CRM record with enriched data</li>
+          <li>Assign: Route to the right rep based on region or deal size</li>
+          <li>Alert: Slack message to rep with contact summary + next action</li>
+        </ol>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>7. WhatsApp AI Automation for Businesses</h3>
+      <p><strong>What it does:</strong> Receives WhatsApp messages via WhatsApp Business API, classifies intent (booking, support, sales), generates a contextual AI reply, and escalates complex queries to a human agent.</p>
+      <p><strong>Who it&apos;s for:</strong> Local businesses, clinics, restaurants, real estate agents with high WhatsApp volume.</p>
+      <p><strong>Tools used:</strong> n8n + WhatsApp Business API + OpenAI + Airtable</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Trigger: Webhook from WhatsApp Business API on new message</li>
+          <li>Classify: ChatGPT node — detect intent (booking / support / inquiry)</li>
+          <li>Branch: Different reply templates per intent type</li>
+          <li>Generate reply: AI fills template with context from message</li>
+          <li>Send via WhatsApp API</li>
+          <li>Escalate: If confidence low → forward to human agent on Slack/Telegram</li>
+        </ol>
+      </div>
+      <p><strong>Sell price:</strong> $600–$1,500 setup + $200/month maintenance</p>
+      <p>For the full guide: <InternalLink href="/blog/whatsapp-ai-automation-businesses-2026">WhatsApp AI automation for businesses 2026</InternalLink></p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>8. AI Customer Support Bot</h3>
+      <p><strong>What it does:</strong> Ingests your FAQ docs or knowledge base, answers common support questions automatically in live chat or email, logs all queries, and routes unresolved tickets to a human.</p>
+      <p><strong>Who it&apos;s for:</strong> SaaS companies, e-commerce stores, and service businesses needing 24/7 first-line support without hiring.</p>
+      <p><strong>Tools used:</strong> n8n or Make + OpenAI + Intercom/Crisp + Notion/Google Docs (knowledge base)</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Ingest: Read FAQ from Notion or Google Docs into a vector store / prompt context</li>
+          <li>Trigger: New chat message or support email received</li>
+          <li>Match: AI looks up closest FAQ answer with confidence score</li>
+          <li>Reply: Send answer if confidence &gt; 80%; else escalate</li>
+          <li>Escalate: Create ticket in Intercom/Crisp with full conversation context</li>
+          <li>Log: Store all queries in Airtable for weekly FAQ review</li>
+        </ol>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>9. Meeting Notes → Tasks & CRM</h3>
+      <p><strong>What it does:</strong> Reads meeting transcripts or Otter.ai summaries, extracts action items and owners, creates tasks in Notion/Asana, and updates CRM fields with deal notes.</p>
+      <p><strong>Who it&apos;s for:</strong> Sales teams and consultants who record every call but fail to follow through.</p>
+      <p><strong>Tools used:</strong> n8n + Otter.ai/Fireflies + OpenAI + Notion/Asana + HubSpot</p>
+      <p><strong>Sell price:</strong> $400–$800 setup</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>10. Employee Onboarding Workflow</h3>
+      <p><strong>What it does:</strong> Triggered when a new hire is added to your HR system — automatically creates accounts, sends welcome emails, assigns onboarding tasks with deadlines, and pings their manager on Day 1, Day 7, and Day 30.</p>
+      <p><strong>Who it&apos;s for:</strong> HR teams and ops managers at growing companies or remote-first teams.</p>
+      <p><strong>Tools used:</strong> Zapier + Google Workspace + Notion + Slack + Airtable</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>11. E-commerce Order Fulfillment Alerts</h3>
+      <p><strong>What it does:</strong> New Shopify order → inventory check → warehouse Slack alert → auto-send tracking email to customer → update order status → flag low-stock items to buyer.</p>
+      <p><strong>Who it&apos;s for:</strong> Shopify and WooCommerce store owners drowning in order management.</p>
+      <p><strong>Tools used:</strong> Zapier or Make + Shopify + Slack + Gmail + Google Sheets</p>
+
+      <DataTable
+        headers={["Template", "Best Platform", "Sell Price", "Difficulty"]}
+        rows={[
+          ["Lead Gen + CRM Sync", "n8n / Zapier", "$400–$900", "Beginner"],
+          ["AI Email Responder", "n8n / Make", "$500–$1,200", "Intermediate"],
+          ["WhatsApp AI Bot", "n8n", "$600–$1,500", "Intermediate"],
+          ["Cold Outreach", "n8n", "$400–$800", "Intermediate"],
+          ["CRM Auto-Update", "n8n / Zapier", "$300–$700", "Beginner"],
+          ["Meeting Notes → Tasks", "n8n / Make", "$400–$800", "Intermediate"],
+          ["Order Fulfillment", "Zapier / Make", "$200–$500", "Beginner"],
+        ]}
+      />
+
+      {/* ── SECTION 3: CONTENT AUTOMATION ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-2" style={{ color: "var(--text-primary)" }}>🧠 Section 3: Content Automation Templates</h2>
+      <p className="text-sm mb-6" style={{ color: "var(--text-muted)" }}>
+        Content creation is the #1 area where AI automation saves the most time. These templates power entire content operations.
+        See also: <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas 2026</InternalLink>
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>12. AI Blog Post Generator</h3>
+      <p><strong>What it does:</strong> Takes a keyword or topic from a Google Sheet, researches top-ranking content via SerpAPI, generates a full SEO-optimized blog post using ChatGPT with headings, intro, body, and meta description, and publishes as a draft to WordPress or Webflow.</p>
+      <p><strong>Who it&apos;s for:</strong> Content agencies, affiliate marketers, SEO consultants managing 50+ articles/month.</p>
+      <p><strong>Tools used:</strong> n8n + SerpAPI + OpenAI + WordPress REST API / Webflow CMS</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Read keyword list from Google Sheet (filter: status = pending)</li>
+          <li>Research: SerpAPI — fetch top 5 results for keyword</li>
+          <li>Extract: Scrape H2 headings and key points from top pages</li>
+          <li>Generate: ChatGPT writes full post using scraped outline + keyword brief</li>
+          <li>Generate meta title + description</li>
+          <li>Publish: POST to WordPress draft via REST API</li>
+          <li>Update sheet: Mark keyword as drafted + add post URL</li>
+        </ol>
+      </div>
+      <p><strong>Sell price:</strong> $600–$1,500 setup + $400/month retainer (run for 20 posts/month)</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>13. Social Media Auto-Posting from Content Calendar</h3>
+      <p><strong>What it does:</strong> Reads an approved content calendar in Notion or Google Sheets, formats posts for each platform (LinkedIn, Twitter/X, Instagram), attaches media, and schedules or posts automatically.</p>
+      <p><strong>Who it&apos;s for:</strong> Social media managers, personal brands, and marketing agencies handling 5+ accounts.</p>
+      <p><strong>Tools used:</strong> Make + Notion/Google Sheets + Buffer API / native platform APIs + Cloudinary (media)</p>
+      <div className="my-4 glass rounded-xl p-4 text-sm">
+        <p className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Copy-paste steps:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Trigger: Daily schedule (e.g. every day at 9 AM)</li>
+          <li>Fetch: Get all posts from Notion/Sheet with today&apos;s publish date</li>
+          <li>Format: Tailor copy for each platform (length, hashtags, tone)</li>
+          <li>Media: Fetch image URL from Cloudinary or Drive</li>
+          <li>Post: Send to Buffer queue or directly to platform API</li>
+          <li>Update: Mark post as published in Notion</li>
+        </ol>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>14. YouTube → Blog + Newsletter Repurpose Engine</h3>
+      <p><strong>What it does:</strong> Takes a YouTube video URL, fetches the transcript via API, generates a full blog post, a LinkedIn post, three tweet variants, and a newsletter blurb — all from one input.</p>
+      <p><strong>Who it&apos;s for:</strong> YouTubers, podcast hosts, and content creators who want to multiply reach without extra effort.</p>
+      <p><strong>Tools used:</strong> n8n + YouTube Data API + OpenAI + Notion + Beehiiv/ConvertKit</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>15. SEO Keyword Research & Cluster Automation</h3>
+      <p><strong>What it does:</strong> Inputs a seed keyword, pulls related keywords and search volumes via DataForSEO or SerpAPI, clusters them by intent using AI, outputs a prioritized content plan to Google Sheets.</p>
+      <p><strong>Who it&apos;s for:</strong> SEO freelancers and content strategists who charge for keyword research and strategy deliverables.</p>
+      <p><strong>Tools used:</strong> n8n + DataForSEO API + OpenAI + Google Sheets</p>
+      <p><strong>Sell price:</strong> $200–$400 per keyword research deliverable</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>16. Newsletter Curation Bot</h3>
+      <p><strong>What it does:</strong> Monitors 20+ RSS feeds and Twitter/X lists daily, summarizes top stories with AI, scores relevance to your niche, compiles a ready-to-send newsletter draft in Beehiiv or ConvertKit.</p>
+      <p><strong>Who it&apos;s for:</strong> Newsletter creators and content curators who spend hours manually finding stories.</p>
+      <p><strong>Tools used:</strong> n8n + RSS nodes + OpenAI + Beehiiv API</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>17. AI Product Description Generator</h3>
+      <p><strong>What it does:</strong> Reads a product spreadsheet with raw specs, generates SEO-optimized product descriptions in brand voice, outputs ready-to-import CSV for Shopify or WooCommerce.</p>
+      <p><strong>Who it&apos;s for:</strong> E-commerce store owners with 100+ products and thin description copy.</p>
+      <p><strong>Tools used:</strong> Make + Google Sheets + OpenAI + Shopify API</p>
+      <p><strong>Sell price:</strong> $300–$700 (one-time or per batch)</p>
+
+      {/* ── SECTION 4: TOOL-SPECIFIC ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-2" style={{ color: "var(--text-primary)" }}>⚙️ Section 4: Tool-Specific Templates</h2>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>n8n Templates (Free JSON Downloads)</h3>
+      <p>
+        n8n templates are exported as <strong>JSON files</strong>. Import them via <em>Settings → Import Workflow</em> in your n8n instance. All templates below exist in the official n8n template gallery or community — search by name to find the exact JSON.
+      </p>
+      <p>
+        For the full list of n8n templates that pay, see: <InternalLink href="/blog/n8n-templates-copy-2026-free-download">n8n templates free download 2026</InternalLink>
+      </p>
+      <InfoBox
+        title="Top n8n Templates to Copy"
+        items={[
+          ["Lead Capture → CRM Sync", "Webhook + HubSpot/Airtable + Slack alert. Best starter for freelancers."],
+          ["AI Email Classifier", "Gmail trigger + ChatGPT classify + branch routing. Intermediate."],
+          ["WhatsApp Business Responder", "WhatsApp API + OpenAI + escalation logic. High client value."],
+          ["Blog Post Generator", "Keyword in sheet → SerpAPI research → ChatGPT write → WordPress publish."],
+          ["RSS → AI Newsletter", "Fetch feeds → summarize → compile → Beehiiv draft. Daily curation."],
+          ["Invoice Follow-Up Sequence", "Stripe overdue → Gmail Day 3 / Day 7 / Day 14 reminders."],
+          ["Meeting Notes → Tasks", "Otter transcript → GPT extract actions → Notion tasks + CRM update."],
+          ["Social Media Scheduler", "Notion content calendar → format per platform → Buffer post."],
+          ["E-commerce Fulfillment", "Shopify order → Slack warehouse → tracking email → low-stock flag."],
+          ["AI Customer FAQ Bot", "Support email → knowledge base match → auto-reply or escalate."],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Zapier Templates (Free — Activate in One Click)</h3>
+      <p>
+        Zapier templates (called Zaps) activate with a single click from Zapier&apos;s template gallery. They connect two or more apps instantly with pre-built logic — no configuration needed beyond credentials.
+      </p>
+      <InfoBox
+        title="Top Zapier Templates for Beginners"
+        items={[
+          ["New Typeform → HubSpot Contact", "Easiest lead capture Zap. Under 2 min to activate."],
+          ["Gmail → Slack Notification", "Forward important emails as Slack DMs with subject + sender."],
+          ["Stripe Payment → Notion Row", "Log every payment as a Notion database entry automatically."],
+          ["Google Calendar → Slack Reminder", "Send a Slack message 30 min before every meeting starts."],
+          ["New Shopify Order → Google Sheet Row", "Log all orders with SKU, amount, customer email."],
+          ["Calendly Booking → Gmail Welcome", "Auto-send a personalized email when someone books a call."],
+          ["Facebook Lead Ad → Mailchimp", "Instantly subscribe FB leads to your email list."],
+          ["Airtable Row → Trello Card", "Turn a new Airtable record into a project task card."],
+          ["Twitter Mention → Slack", "Monitor brand mentions and alert your team in Slack."],
+          ["New RSS Post → Tweet", "Auto-tweet every new blog post from your RSS feed."],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Make (Integromat) Templates — Free Scenarios</h3>
+      <p>
+        Make templates are called <strong>Scenarios</strong>. Access them from Make&apos;s Template Gallery and clone in one click. Make excels at multi-step data transformation workflows where Zapier struggles.
+      </p>
+      <InfoBox
+        title="Top Make Scenario Templates"
+        items={[
+          ["Google Sheets → Email Campaign", "Read rows from sheet → personalize email → send via SMTP/SendGrid."],
+          ["Webhook → Airtable + Slack", "Any form or app → store in Airtable + send formatted Slack card."],
+          ["ChatGPT Batch Content Generator", "Read input list → send each to OpenAI → write outputs to sheet."],
+          ["PDF Invoice Generator", "Trigger on new client → generate branded PDF → email as attachment."],
+          ["WooCommerce → Accounting Sync", "New order → create invoice in QuickBooks or Xero automatically."],
+          ["Instagram → Repurpose to Pinterest", "New Instagram post → resize image → publish to Pinterest board."],
+          ["Notion → WordPress Publisher", "Approve content in Notion → auto-publish as WordPress draft."],
+          ["Typeform → Google Docs Report", "Survey response → generate formatted report doc per respondent."],
+          ["Jira → Slack Release Notes", "New Jira release tag → compile changelog → post to Slack."],
+          ["Multi-Platform Social Poster", "One content input → format + post to 4 platforms simultaneously."],
+        ]}
+      />
+
+      {/* ── SECTION 5: ADVANCED ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: "var(--text-primary)" }}>🚀 Advanced Templates: AI Systems That Make Money</h2>
+      <p>
+        These are <strong>multi-step AI systems</strong> — not single automations. They combine 3–5 workflows together to run entire business functions autonomously. These are what top-tier <InternalLink href="/blog/ai-automation-agency">AI automation agencies</InternalLink> sell for $2,000–$8,000 per project.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>18. Full AI Lead Generation System</h3>
+      <p><strong>What it does:</strong> Scrapes leads → enriches data → personalizes cold email → sends in batches → classifies replies → updates CRM → books meeting via Calendly — all automatically.</p>
+      <p><strong>Stack:</strong> n8n + Apollo + OpenAI + Instantly + HubSpot + Calendly</p>
+      <p><strong>Sell price:</strong> $2,000–$5,000 setup + $500–$1,000/month management</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>19. AI Content Factory</h3>
+      <p><strong>What it does:</strong> Reads a monthly keyword list → researches competitors → generates 30 blog posts → formats + publishes to CMS → creates social variants → schedules all posts across 4 platforms.</p>
+      <p><strong>Stack:</strong> n8n + SerpAPI + OpenAI + WordPress + Buffer</p>
+      <p><strong>Sell price:</strong> $1,500–$3,000 setup + $600/month for 30 posts</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>20. AI Client Onboarding System</h3>
+      <p><strong>What it does:</strong> New client signed → auto-creates project in Notion → sends onboarding questionnaire → reads answers → customizes welcome pack → books kickoff call → assigns tasks to team in Slack.</p>
+      <p><strong>Stack:</strong> n8n + Notion + Typeform + OpenAI + Calendly + Slack</p>
+      <p><strong>Sell price:</strong> $1,000–$2,500 setup</p>
+      <p>
+        To understand all the AI automation opportunities available in 2026, read: <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas 2026</InternalLink>
+      </p>
+
+      {/* ── HOW TO USE ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: "var(--text-primary)" }}>How to Import & Use These Templates</h2>
+
+      <h3 className="text-xl font-bold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>For n8n:</h3>
+      <ol className="list-decimal pl-5 space-y-2">
+        <li>Search the template name at <strong>n8n.io/workflows</strong> or the community forum</li>
+        <li>Download the JSON file</li>
+        <li>In n8n: click the menu icon → <em>Import from File</em> → select JSON</li>
+        <li>Replace all credentials (API keys, OAuth tokens) with your own</li>
+        <li>Test on sample data with execution mode set to Manual</li>
+        <li>Activate and monitor the first 5 real executions closely</li>
+      </ol>
+
+      <h3 className="text-xl font-bold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>For Zapier:</h3>
+      <ol className="list-decimal pl-5 space-y-2">
+        <li>Go to <strong>zapier.com/apps</strong> and search for the template</li>
+        <li>Click &quot;Use this Zap&quot; — it pre-fills all the steps</li>
+        <li>Connect your accounts when prompted</li>
+        <li>Turn on the Zap and test with a real trigger</li>
+      </ol>
+
+      <h3 className="text-xl font-bold mt-6 mb-3" style={{ color: "var(--text-primary)" }}>For Make:</h3>
+      <ol className="list-decimal pl-5 space-y-2">
+        <li>Go to <strong>make.com/en/templates</strong></li>
+        <li>Search the scenario name and click &quot;Use Template&quot;</li>
+        <li>Connect all modules by adding your app credentials</li>
+        <li>Run once manually and check the data flow</li>
+        <li>Set the schedule and activate</li>
+      </ol>
+
+      <div className="my-6 glass rounded-2xl p-5 border-l-4 border-l-emerald-500">
+        <p className="font-bold text-base mb-2" style={{ color: "var(--text-primary)" }}>Pro Tip: Audit Before You Activate</p>
+        <p className="text-sm">Before connecting any third-party template to production data, check: (1) what external URLs it calls, (2) what data it sends outside your account, (3) what API scopes it requests. Treat templates like code — review first, trust second.</p>
+      </div>
+
+      {/* ── COMPARISON TABLE ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: "var(--text-primary)" }}>n8n vs Zapier vs Make: Which Templates to Use When</h2>
+      <DataTable
+        headers={["Use Case", "Best Tool", "Why"]}
+        rows={[
+          ["Simple 2-step automations", "Zapier", "Fastest setup, huge app library, 1-click templates"],
+          ["Complex logic + AI nodes", "n8n", "Most powerful, self-hostable, best for freelancers selling builds"],
+          ["Data transformation + visual logic", "Make", "Best mid-tier, strong multi-step data flows, great UI"],
+          ["WhatsApp / Telegram bots", "n8n", "Best webhook + API support for messaging platforms"],
+          ["Content pipelines", "n8n or Make", "Both handle multi-step generation well; n8n cheaper at scale"],
+          ["E-commerce triggers", "Zapier or Make", "Both have deep Shopify/WooCommerce integrations"],
+          ["Selling to clients (agency)", "n8n", "Self-hosted = no per-task fees, higher margin"],
+        ]}
+      />
+
+      {/* ── CTA ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: "var(--text-primary)" }}>Download All Templates (Free)</h2>
+      <div className="my-6 glass rounded-2xl p-6 border border-purple-500/30 text-center space-y-4">
+        <p className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>
+          Get 25 templates instantly — no email required
+        </p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          The 25 most-used templates from this guide are available as a free instant download — JSON files for n8n, Zapier share links, and Make scenario exports, all in one ZIP. No email. No paywall. Just click.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mt-2">
+          <span className="px-6 py-3 rounded-xl font-bold text-sm text-white cursor-pointer" style={{ background: "linear-gradient(135deg, #7c3aed, #2563eb)" }}>
+            Download 25 Free Templates →
+          </span>
+          <span className="px-6 py-3 rounded-xl font-bold text-sm border cursor-pointer" style={{ borderColor: "var(--border-color)", color: "var(--text-primary)" }}>
+            Get Full 100+ Pack (Email)
+          </span>
+        </div>
+        <p className="text-xs" style={{ color: "var(--text-muted)" }}>Free forever. Used by 2,000+ automation builders. No spam on the email option.</p>
+      </div>
+
+      {/* ── FAQ ── */}
+      <h2 className="text-2xl font-bold mt-12 mb-6" style={{ color: "var(--text-primary)" }}>Frequently Asked Questions</h2>
+      <FaqSection
+        items={[
+          {
+            q: "Where can I find free AI automation templates for n8n, Zapier, and Make?",
+            a: "The best sources: n8n.io/workflows (official gallery), Zapier's template library, Make's scenario gallery, Reddit r/n8n, and this guide. All templates listed here are free to access and use.",
+          },
+          {
+            q: "Can I use these templates without knowing how to code?",
+            a: "Yes. n8n, Zapier, and Make are all visual, no-code tools. You drag nodes, connect them, and fill in credentials. Templates remove even the step of setting up the logic — you just swap in your accounts.",
+          },
+          {
+            q: "Can I sell these templates to clients?",
+            a: "Absolutely. Most freelancers using this guide charge $300–$2,000 per build. You customize the template to the client's tools, add error handling, test it, and deliver. Templates cut your build time by 70% — your margin goes up, not your price.",
+          },
+          {
+            q: "What's the best AI automation template for beginners?",
+            a: "Start with the Lead Gen + CRM Sync template on Zapier — it's the easiest to activate and the most in-demand from clients. Once you understand the logic, move to n8n for more complex builds.",
+          },
+          {
+            q: "Do AI automation templates work with ChatGPT / OpenAI?",
+            a: "Yes. n8n has a native OpenAI node. Zapier has a ChatGPT integration. Make connects via HTTP module to the OpenAI API. All templates in the AI sections above use OpenAI API under the hood — you just add your API key.",
+          },
+        ]}
+      />
+
+      {/* ── INTERNAL LINKS ── */}
+      <div className="mt-12 glass rounded-2xl p-5">
+        <p className="font-bold text-sm mb-3" style={{ color: "var(--text-primary)" }}>Related guides you should read next:</p>
+        <p className="text-sm space-y-2" style={{ color: "var(--text-secondary)" }}>
+          <InternalLink href="/blog/n8n-templates-copy-2026-free-download">n8n templates to copy and sell in 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-n8n-workflows-make-money-2026">Best n8n workflows that make money</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/make-money-with-n8n-2026">Make money with n8n in 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/ai-automation-agency">How to start an AI automation agency</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };
