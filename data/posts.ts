@@ -1436,6 +1436,7 @@ export const posts: Post[] = [
       "freelance ai automation services",
     ],
   },
+  //asd
   {
     slug: "7-ai-saas-ideas-weekend",
     title: "7 AI SaaS Ideas You Can Build in a Weekend (Even Without Coding)",
