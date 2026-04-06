@@ -6810,4 +6810,382 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  /* ─────────────────────────────────────────────
+     MAKE MONEY — AI Agents & Automation 2026 Beginners Guide
+  ───────────────────────────────────────────── */
+  "ai-agents-automation-2026-beginners-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+
+      {/* ── VIRAL HOOK ── */}
+      <div className="glass rounded-2xl p-6 my-2 border-l-4 border-purple-500">
+        <p className="text-base font-semibold" style={{ color: "var(--text-primary)" }}>
+          In 2026, AI agents are replacing entire job roles — not just tasks.
+        </p>
+        <p className="text-base mt-2">
+          And right now, beginners are getting paid <strong>$500–$5,000</strong> to build them using no-code tools like n8n, Zapier, and ChatGPT.
+        </p>
+        <p className="text-base mt-2 font-medium" style={{ color: "var(--text-primary)" }}>
+          This guide shows you exactly how.
+        </p>
+      </div>
+
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Three years ago, AI was a chatbox you typed questions into. Two years ago, it became a writing assistant. Today, in 2026, AI is doing the actual work — browsing the web, sending emails, updating spreadsheets, booking meetings, and closing loops that used to require a full-time employee. That shift is the biggest income opportunity most people are missing.
+      </p>
+      <p>
+        This guide is your complete introduction to <strong>AI agents 2026</strong>: what they are, how to build your first agent with no code, and a step-by-step path to making real money with AI automation — for beginners, freelancers, and anyone who wants to start an AI business. No computer science degree required.
+      </p>
+
+      <StatBox items={[
+        ["$500B+", "Global automation market by 2026"],
+        ["67%", "SMBs actively seeking automation help"],
+        ["$0", "Coding skills required"],
+        ["$2k–$10k", "Realistic monthly income range"],
+      ]} />
+
+      {/* ── SECTION 1: HOOK ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>AI Has Crossed a Line — And Most People Haven't Noticed</h2>
+      <p>
+        The progression happened fast. First came AI <strong>tools</strong> — ChatGPT, Midjourney, Canva AI. You used them manually. Then came AI <strong>automation</strong> — connecting those tools to workflows so they ran on a schedule or trigger. Now we have AI <strong>agents</strong>: systems that perceive their environment, make decisions, take multi-step actions, and report back results without being asked twice.
+      </p>
+      <p>
+        The gap between people who understand this and people who don't is widening every week. Businesses in the USA, UK, and Australia are scrambling to implement these systems. The freelancers and agencies who know how to build them are charging $500–$5,000 per project. The ones who don't are being replaced by the systems they ignored.
+      </p>
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-purple-500">
+        <p className="text-sm font-semibold mb-1" style={{ color: "var(--text-primary)" }}>The real opportunity in 2026:</p>
+        <p className="text-sm">You don't need to build AI. You need to <strong>deploy</strong> it. Businesses have the money, the problems, and the urgency. They just lack the people who know how to wire it all together. That's you — after reading this.</p>
+      </div>
+
+      {/* ── SECTION 2: WHAT ARE AI AGENTS ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What Are AI Agents? (Simple Explanation for Beginners)</h2>
+      <p>
+        An <strong>AI agent</strong> is a software system that can perceive inputs (a new lead form, an incoming email, a product review), reason about them using an AI model like ChatGPT, and take action — updating a CRM, replying to a customer, creating a task — without a human in the loop.
+      </p>
+      <p>
+        Think of it this way: a basic Zapier automation moves data from point A to point B when triggered. An AI agent reads that data, decides what it means, chooses the best response, executes multiple steps across different apps, and flags anything that needs human review. It's the difference between a conveyor belt and an employee.
+      </p>
+      <InfoBox title="AI agent vs chatbot vs basic automation" items={[
+        ["Basic automation", "If this → then that. No intelligence. Zapier moving a form submission to a spreadsheet."],
+        ["Chatbot", "Answers questions via a conversational interface. Reactive, not proactive."],
+        ["AI agent", "Perceives context, reasons, acts across multiple steps. Can draft, decide, route, and log — autonomously."],
+      ]} />
+      <p>
+        Real AI agents real world examples in 2026: a property management company's AI agent handles every new rental enquiry — it reads the email, checks available units in the database, drafts a personalised reply, books a showing in the calendar, and creates a CRM contact. Zero human input required for 80% of leads.
+      </p>
+
+      {/* ── SECTION 3: WHY BOOMING ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why AI Automation Is Booming in the USA, UK & Australia</h2>
+      <p>
+        Three markets. One shared problem: labour is expensive, leads are fast-moving, and business owners have no time. The demand for people who can build <strong>AI automation for businesses</strong> has never been higher.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>United States</h3>
+      <p>
+        US SMBs spend an average of 120 hours per month on repetitive admin. With labour costs rising, even a $2,000 automation that saves 20 hours a month pays for itself in weeks. Platforms like Upwork are flooded with US businesses posting automation projects — and not enough qualified freelancers to fill them.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>United Kingdom</h3>
+      <p>
+        Post-Brexit regulatory complexity and tighter hiring margins have pushed UK businesses toward automation faster than most markets. Sectors including legal, property, and e-commerce are actively seeking freelance AI automation services — particularly lead capture, document processing, and customer communication workflows.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Australia</h3>
+      <p>
+        Australia's service sector — real estate agents, tradies, healthcare clinics — runs on tight margins and high referral volume. An AI chatbot for customer support that handles bookings and follow-ups 24/7 is an easy sell to any business losing leads after hours. The <strong>ai side hustle 2026</strong> opportunity here is massive and still largely untapped.
+      </p>
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-green-500">
+        <p className="text-sm font-bold mb-2" style={{ color: "var(--text-primary)" }}>Demand signal you can act on right now:</p>
+        <p className="text-sm">Search "automation" on Upwork. Filter by "Posted last 24 hours." You'll find 50–100 new projects every single day — lead gen, CRM, email, WhatsApp, content. That's the live size of this market.</p>
+      </div>
+
+      {/* ── SECTION 4: REAL EXAMPLES ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>5 Real AI Automation Examples That Make Money in 2026</h2>
+      <p>
+        These aren't hypothetical. These are the <strong>ai automation workflows that make money</strong> that freelancers and agencies are selling right now. See our deeper breakdown in the <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas that sell</InternalLink> guide.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. Lead Generation Automation</h3>
+      <p>
+        A form on a business's website triggers a workflow: the lead's details hit a CRM, a personalised AI-drafted email goes out within 60 seconds, a Slack alert fires to the sales team, and a follow-up is scheduled for day 3. The business goes from responding to leads in 6 hours to 60 seconds. Conversion rates jump 20–40%.
+      </p>
+      <p><strong>Who pays for it:</strong> Real estate agents, SaaS companies, law firms, dental clinics. Price: $500–$2,000 setup + $200–$500/mo retainer.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. AI Email Responder</h3>
+      <p>
+        Every inbound email hits a workflow. ChatGPT reads it, classifies it (support, sales, complaint, spam), drafts an appropriate reply using the business's tone and knowledge base, and queues it for one-click human approval — or sends autonomously for low-risk categories. Support ticket volume drops by 60%.
+      </p>
+      <p><strong>Who pays for it:</strong> E-commerce brands, agencies, subscription businesses. Price: $800–$3,000 setup.</p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. WhatsApp AI Automation</h3>
+      <p>
+        A <strong>WhatsApp AI automation business</strong> is one of the highest-demand services in 2026, especially in the UK and Australia. Incoming WhatsApp messages trigger an AI to classify intent, draft a reply, book appointments via calendar API, and log the conversation in a CRM. Local services businesses — salons, clinics, tradies — pay $300–$1,500 for this build.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. CRM Automation</h3>
+      <p>
+        Connects the dots between lead capture, sales pipeline, and follow-up sequences. When a deal moves stage, the AI generates a personalised check-in email. When a contact goes cold, a re-engagement sequence fires automatically. No manual CRM data entry, no missed follow-ups.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Content Automation</h3>
+      <p>
+        A business submits a topic or keyword. The workflow pulls research, writes a draft via ChatGPT, formats it for their CMS, generates a social post for each platform, and schedules everything via Buffer or Hootsuite. One person running this for 10 clients is a real AI automation agency.
+      </p>
+
+      {/* ── SECTION 5: TOOLS ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The Best No-Code AI Tools for Beginners in 2026</h2>
+      <p>
+        You don't need to code a single line. These are the <strong>no code ai tools</strong> powering the entire industry. For a full breakdown with pricing and stack recommendations, see the <InternalLink href="/blog/best-ai-tools-automation-2026">best AI automation tools</InternalLink> guide.
+      </p>
+
+      <DataTable
+        headers={["Tool", "Best For", "Free Tier", "Starts At"]}
+        rows={[
+          ["n8n", "Power users, agencies, self-hosted setups", "Yes (self-host)", "$20/mo cloud"],
+          ["Zapier", "Beginners, fast setup, huge app library", "Yes (5 Zaps)", "$19.99/mo"],
+          ["Make (Integromat)", "Visual logic, branching, intermediate users", "Yes (1,000 ops)", "$9/mo"],
+          ["ChatGPT API", "AI brain inside any workflow", "Trial credits", "Pay per use"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>n8n — The Power Tool</h3>
+      <p>
+        <strong>n8n automation examples for business</strong> include everything from multi-step lead pipelines to AI document processors. It's open-source, self-hostable, and the favourite of serious automation agencies because it keeps costs low at scale. Steep learning curve vs. Zapier, but the payoff is control and margin.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Zapier — The Beginner's Best Friend</h3>
+      <p>
+        <strong>Zapier AI automation workflows</strong> are the easiest to build and sell. The app directory has 6,000+ integrations, which means almost any tool a client uses is already connected. Start here if you want to land your first client fast.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Make — The Visual Powerhouse</h3>
+      <p>
+        <strong>Make.com automation examples 2026</strong> shine when you need conditional logic, multiple branches, and complex data transformations without going full code. Cheaper than Zapier at volume, more visual than n8n. Excellent middle ground.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>ChatGPT — The AI Brain</h3>
+      <p>
+        <strong>ChatGPT automation</strong> lives inside your orchestration tool as an HTTP node or native integration. You send it a prompt and context; it returns a decision, draft, or classification. This is the AI layer that transforms a basic automation into a genuinely intelligent workflow.
+      </p>
+
+      {/* ── SECTION 6: BEGINNER GUIDE ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step-by-Step Beginner Guide: Build Your First AI Automation</h2>
+      <p>
+        This is the fastest path from zero to a working, sellable workflow. Follow the full setup tutorial in the <InternalLink href="/blog/ai-automation-for-beginners">AI automation for beginners step by step</InternalLink>.
+      </p>
+
+      <div className="glass rounded-2xl p-6 my-4">
+        <div className="space-y-5">
+          {[
+            ["Step 1: Pick a niche", "Don't automate everything. Pick one industry (real estate, e-commerce, dental) and one problem (lead follow-up, appointment booking, content creation). Specificity makes you easy to hire and easy to refer."],
+            ["Step 2: Build one workflow", "Choose Zapier (easiest) or Make (more powerful). Connect a trigger — a new form submission, an inbound email — to an AI step (ChatGPT draft) and an action (send email, update CRM). One trigger, one AI step, one action. Done."],
+            ["Step 3: Test on real data", "Use sample data first. Check every branch. Break it deliberately — what happens when the AI returns an unexpected format? Add an error handler before you show anyone."],
+            ["Step 4: Record a Loom demo", "Screen-record the automation running on realistic sample data. This 60-second video is your entire sales pitch. No deck needed."],
+            ["Step 5: Sell to clients", "Find 10 businesses who have the problem you solved. Send them the Loom. Offer a fixed-scope paid pilot. Close one. Then repeat."],
+          ].map(([title, body]) => (
+            <div key={title as string} className="flex gap-4">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-xs mt-1">→</div>
+              <div>
+                <p className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{title as string}</p>
+                <p className="text-sm mt-1">{body as string}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── SECTION 6B: REAL WORKFLOW BUILD ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Build Your First AI Agent — Real Example in 10 Minutes</h2>
+      <p>
+        This is a complete, working AI agent workflow you can build right now with a free Zapier or Make account. It covers the three core components every agent needs: a <strong>trigger</strong>, an <strong>AI reasoning step</strong>, and one or more <strong>actions</strong>. Once you understand this pattern, every other agent you build is a variation of it.
+      </p>
+      <p>
+        <strong>The workflow:</strong> A new contact fills out a form → ChatGPT writes a personalised reply → the email sends automatically → the contact saves to a CRM. Zero human clicks after setup.
+      </p>
+
+      <div className="glass rounded-2xl overflow-hidden my-6">
+        <div className="px-5 py-3 border-b" style={{ borderColor: "var(--border-color)", background: "var(--glass-bg)" }}>
+          <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>Step-by-Step: Your First AI Agent Workflow</span>
+        </div>
+        <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
+          {([
+            ["Step 1 — Trigger: New Form Submission", "In Zapier or Make, create a new workflow. Set the trigger app to Typeform, Tally, or Google Forms. Connect your form and select 'New Submission' as the trigger event. Test it with a sample submission to confirm the fields (name, email, message) are flowing through correctly."],
+            ["Step 2 — AI Step: ChatGPT Writes the Reply", "Add an action step using the 'OpenAI (ChatGPT)' app. Select 'Send Prompt.' In the prompt field, write: 'You are a friendly assistant for [Business Name]. A new enquiry has arrived from {{name}}: {{message}}. Write a warm, professional reply that acknowledges their enquiry and asks one clarifying question to move the conversation forward. Keep it under 120 words.' Map the name and message fields from Step 1 into the prompt dynamically."],
+            ["Step 3 — Action A: Send the Email", "Add a Gmail or Outlook action: 'Send Email.' Set the To field to {{email}} from the form. Set the Subject to 'Thanks for reaching out, {{name}}!' Set the Body to the ChatGPT output from Step 2. This fires the AI-drafted reply to the lead within seconds of form submission."],
+            ["Step 4 — Action B: Save to CRM", "Add a second action — HubSpot, Pipedrive, Airtable, or even Google Sheets works fine to start. Create a new contact record with the lead's name, email, and message. Add a tag: 'AI Responded.' Now you have a clean, searchable record of every lead your agent handled."],
+            ["Step 5 — Test, Break, and Fix", "Turn the automation on and submit a test form. Check the email received, check the CRM record created. Then test edge cases: a blank message field, a name with special characters, a very long message. Add a filter or error-handler step for anything that breaks. This QA step is what separates professional automation builders from hobbyists."],
+          ] as [string, string][]).map(([title, body]) => (
+            <div key={title} className="flex gap-0 group">
+              <div className="w-1 flex-shrink-0 bg-gradient-to-b from-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <div className="px-5 py-4 flex-1">
+                <p className="font-semibold text-sm mb-1" style={{ color: "var(--text-primary)" }}>{title}</p>
+                <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="glass rounded-xl p-5 my-4 border-l-4 border-green-500">
+        <p className="text-sm font-bold mb-1" style={{ color: "var(--text-primary)" }}>What you just built:</p>
+        <p className="text-sm">A real, sellable AI agent. A local business or SaaS company with 20+ leads/month will pay <strong>$500–$1,500</strong> for this exact setup — because it eliminates 2–3 hours of manual email every week and cuts response time from hours to seconds. Record a Loom of it running. That Loom is your portfolio.</p>
+      </div>
+      <p className="text-sm">
+        Want to go deeper on the tool comparison before you build? The <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make comparison</InternalLink> breaks down exactly which platform fits your skill level and client type.
+      </p>
+
+      {/* ── SECTION 7: HOW TO MAKE MONEY ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to Make Money with AI Automation in 2026</h2>
+      <p>
+        There are three business models. Start with freelancing, evolve toward agency, and lock in retainers for predictable income. Here's how <strong>how to make money with ai automation 2026</strong> actually works in practice.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Model 1: Freelancing</h3>
+      <p>
+        List one specific service on Upwork or Fiverr: "I will build a lead follow-up automation using Zapier and ChatGPT." Fixed scope. Fixed price. Fastest path to first income. Most beginner automators land their first paid project within 2–4 weeks of building their first demo.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Model 2: AI Automation Agency</h3>
+      <p>
+        Once you have 3–5 clients and a repeatable process, you have an <strong>ai automation agency</strong>. You sell packaged services, subcontract parts of delivery, and charge premiums for speed and reliability. A solo agency owner with 8–10 clients can clear $5,000–$12,000/month. Read the full playbook in the <InternalLink href="/blog/ai-automation-agency">AI automation agency guide</InternalLink>.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Model 3: Monthly Retainers</h3>
+      <p>
+        The real money in automation is the retainer. After you build and deliver, offer ongoing monitoring, updates, and expansion for $200–$800/month per client. Five clients on $400/month retainers = $2,000/month in recurring revenue on top of new build fees.
+      </p>
+
+      {/* ── SECTION 8: OUTREACH SCRIPTS ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Client Outreach Scripts That Actually Work</h2>
+      <p>
+        These are the exact approaches that get responses. For a full library of outreach methods and platforms, see <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink>.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Script 1: LinkedIn Cold DM (Service Businesses)</h3>
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-blue-500">
+        <p className="text-sm font-mono" style={{ color: "var(--text-secondary)" }}>
+          Hi [Name], I help [real estate agents / dental clinics / e-commerce brands] automate their lead follow-up so no enquiry goes unanswered — even at 11pm.
+          <br /><br />
+          I built a workflow last week that cut one client's response time from 6 hours to under 2 minutes. Happy to record a 60-second Loom showing how it works for your setup — no obligation.
+          <br /><br />
+          Worth a look?
+        </p>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Script 2: Cold Email (Agency / SaaS Founders)</h3>
+      <div className="glass rounded-2xl p-5 my-4 border-l-4 border-blue-500">
+        <p className="text-sm font-mono" style={{ color: "var(--text-secondary)" }}>
+          Subject: [Business name] — quick automation idea
+          <br /><br />
+          Hi [Name],
+          <br /><br />
+          I noticed [specific observation — your contact form has no auto-responder / your reviews go unanswered for days].
+          <br /><br />
+          I build AI automation workflows for [niche] businesses. Most of my clients see results in week one — faster lead response, fewer manual tasks, cleaner CRM data.
+          <br /><br />
+          I recorded a 90-second demo of a workflow built specifically for businesses like yours: [Loom link]
+          <br /><br />
+          Pilots start at $[X]. Want me to scope one for you?
+          <br /><br />
+          [Your name]
+        </p>
+      </div>
+
+      {/* ── SECTION 9: PRICING ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>AI Automation Pricing in 2026: What to Charge</h2>
+      <p>
+        Price by value delivered, not by hours worked. A workflow that saves a business 15 hours/month is worth $1,500 setup even if it took you 4 hours to build. Here's a practical pricing framework:
+      </p>
+
+      <DataTable
+        headers={["Tier", "What's Included", "Price Range"]}
+        rows={[
+          ["Beginner / Starter", "1 workflow, 2–3 app connections, no AI layer, basic testing", "$250–$600"],
+          ["Intermediate", "2–4 workflows, ChatGPT integration, error handling, Loom handoff", "$600–$2,000"],
+          ["Advanced / Agency", "Full automation stack, multi-step AI flows, monitoring + retainer", "$2,000–$8,000+"],
+          ["Monthly Retainer", "Ongoing monitoring, tweaks, error fixes, expansion builds", "$200–$800/mo"],
+        ]}
+      />
+
+      <div className="glass rounded-xl p-5 my-4 border-l-4 border-yellow-500">
+        <p className="text-sm font-semibold mb-1" style={{ color: "var(--text-primary)" }}>Pricing rule for beginners:</p>
+        <p className="text-sm">Charge whatever makes it easy for a stranger to say yes to a pilot — not whatever feels good to your ego. Get one testimonial. Then raise your rate by 30%.</p>
+      </div>
+
+      {/* ── SECTION 10: MISTAKES ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>5 Mistakes Beginners Make with AI Automation (Avoid These)</h2>
+      <InfoBox title="Common mistakes to avoid" items={[
+        ["Building before validating", "Don't spend 3 weeks building a workflow nobody asked for. Find the pain point first, then build. A Loom mockup closes more clients than a perfect automation nobody's seen."],
+        ["Trying to automate everything at once", "One workflow. One client. One niche. Breadth kills beginners. Depth pays the bills."],
+        ["Skipping error handling", "Every automation breaks eventually. A workflow with no error handler silently fails and destroys client trust overnight. Always add an alert step."],
+        ["Selling 'AI automation' as a concept", "Clients don't buy technology — they buy outcomes. Sell 'never miss a lead again' not 'I will build you a Zapier workflow with ChatGPT.'"],
+        ["Underpricing forever", "Low prices signal low confidence, not good value. A business paying $200 for a workflow won't value it. Price your pilots at what they're worth."],
+      ]} />
+
+      {/* ── CONCLUSION ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Conclusion: The Window Is Open — But Not Forever</h2>
+      <p>
+        Every major technology shift creates a window: a period where the skill is in demand, the market is hungry, and the competition is thin. Cloud computing had that window in 2012. Mobile apps in 2010. SEO in 2008. <strong>AI agents for beginners</strong> is that window right now, in 2026.
+      </p>
+      <p>
+        The barrier has never been lower. You don't need to code. You don't need a degree. You need one niche, one workflow, one demo, and one client. Then you multiply.
+      </p>
+      <p>
+        Businesses in the US, UK, and Australia are spending real money to solve real operational problems with AI automation right now. The only question is whether you're the person building those solutions — or the person wondering why you missed it.
+      </p>
+      <div className="glass rounded-2xl p-6 my-6 border-l-4 border-purple-500">
+        <p className="font-semibold text-base" style={{ color: "var(--text-primary)" }}>Your action plan — starting today:</p>
+        <ol className="mt-3 space-y-2 text-sm list-decimal list-inside">
+          <li>Pick one niche and one problem</li>
+          <li>Sign up for Zapier free or n8n free</li>
+          <li>Build one lead follow-up or email AI automation</li>
+          <li>Record a 60-second Loom demo</li>
+          <li>Send that demo to 10 businesses this week</li>
+        </ol>
+        <p className="text-sm mt-3">One yes is all you need to start. Go get it.</p>
+      </div>
+
+      {/* ── FAQ ── */}
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently Asked Questions</h2>
+      <FaqSection items={[
+        {
+          q: "What are AI agents examples in 2026?",
+          a: <span>Real <strong>AI agents 2026</strong> examples: a lead follow-up agent that reads a form, drafts a personalised email via ChatGPT, and saves a CRM contact — automatically; a WhatsApp agent that classifies messages and books appointments; a content agent that researches, writes, formats, and schedules posts end-to-end. Browse more in <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas that actually sell</InternalLink>.</span>
+        },
+        {
+          q: "How do AI agents work?",
+          a: "An AI agent works in three steps: perceive (read an input — email, form, message), reason (use ChatGPT or Claude to decide the best response), and act (execute steps — send email, update CRM, post to Slack). No-code tools like n8n, Zapier, and Make connect all three without a single line of code."
+        },
+        {
+          q: "Are AI agents replacing jobs?",
+          a: "AI agents are replacing specific tasks — data entry, lead follow-up, email triage, appointment booking — rather than entire roles. The people who know how to build and manage these agents are among the highest-demand workers in 2026. Learning to deploy AI agents is one of the best career moves available right now."
+        },
+        {
+          q: "Which AI agent tools are best in 2026?",
+          a: <span>The best tools for building AI agents in 2026: <strong>Zapier</strong> (easiest, 6,000+ integrations), <strong>Make</strong> (visual branching, best value mid-tier), <strong>n8n</strong> (most powerful, self-hostable). For the AI reasoning layer, ChatGPT API and Claude API are industry standard. See the full <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make comparison</InternalLink> to pick yours.</span>
+        },
+        {
+          q: "Can beginners really make money with AI agents?",
+          a: <span>Yes. Most beginners land their first paid AI automation client within 2–4 weeks of building a demo. Entry-level projects pay $300–$1,500. Intermediate builds command $800–$3,000. Freelancers with 5–10 retainer clients clear $3,000–$10,000/month. No coding required. Start with <InternalLink href="/blog/ai-automation-for-beginners">AI automation for beginners step by step</InternalLink> to build your first demo today.</span>
+        },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Related on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          <InternalLink href="/blog/ai-automation-for-beginners">AI automation for beginners step by step</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/ai-automation-agency">How to start an AI automation agency</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/how-to-get-ai-clients">How to get AI clients fast</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/ai-automation-ideas-2026">AI automation ideas that sell</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-ai-tools-automation-2026">Best AI automation tools 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/n8n-vs-zapier-vs-make-2026">n8n vs Zapier vs Make comparison</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };
