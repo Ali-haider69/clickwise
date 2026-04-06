@@ -7287,6 +7287,8 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
 
 
       {/* ── SECTION 1: MAKE MONEY ── */}
+      {/* ── SECTION 1: MAKE MONEY ── */}
+
       <h2 className="text-2xl font-bold mt-12 mb-2" style={{ color: "var(--text-primary)" }}>💰 Section 1: Make Money Templates</h2>
       <p className="text-sm mb-6" style={{ color: "var(--text-muted)" }}>
         These are the templates freelancers and agency owners sell to clients for $300–$2,000 per build. For the full business model, see our guide on <InternalLink href="/blog/ai-automation-agency">how to start an AI automation agency</InternalLink>.
