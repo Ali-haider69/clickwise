@@ -4,7 +4,13 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import AdSenseUnit from "@/components/AdSenseUnit";
-import { Clock, Calendar, ArrowLeft, Share2, BookOpen } from "lucide-react";
+import ReadingProgress from "@/components/ReadingProgress";
+import TableOfContents from "@/components/TableOfContents";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import ShareButtons from "@/components/ShareButtons";
+import ReadNext from "@/components/ReadNext";
+import ScrollToTop from "@/components/ScrollToTop";
+import { Clock, Calendar, ArrowLeft, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
 import { canonicalUrl } from "@/lib/seo";
 
@@ -46,6 +52,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const content = blogContent[slug];
   const related = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 3);
+  const readNextPosts = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(3, 5);
 
   const articleDescription = post.metaDescription ?? post.excerpt;
   const jsonLd = {
@@ -100,6 +107,9 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <div className="min-h-screen pt-20 pb-20">
+      <ReadingProgress />
+      <ScrollToTop />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -120,6 +130,13 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Article */}
           <article className="lg:col-span-2">
+            <Breadcrumbs items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: post.category, href: `/${post.category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}` },
+              { label: post.title },
+            ]} />
+
             <Link href="/blog" className="inline-flex items-center gap-2 text-sm mb-6 transition-colors hover:text-purple-600 dark:hover:text-purple-400" style={{ color: "var(--text-muted)" }}>
               <ArrowLeft className="w-4 h-4" /> Back to Blog
             </Link>
@@ -138,10 +155,12 @@ export default async function BlogPostPage({ params }: Props) {
               <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" />{post.date}</span>
               <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" />{post.readTime} read</span>
               <span className="flex items-center gap-1.5"><BookOpen className="w-4 h-4" />ClickWise Editorial</span>
-              <button className="ml-auto flex items-center gap-1.5 hover:text-purple-600 transition-colors">
-                <Share2 className="w-4 h-4" />Share
-              </button>
+              <div className="ml-auto">
+                <ShareButtons title={post.title} slug={slug} />
+              </div>
             </div>
+
+            <TableOfContents />
 
             <AdSenseUnit format="horizontal" className="mb-8" />
 
@@ -160,10 +179,26 @@ export default async function BlogPostPage({ params }: Props) {
               )}
             </div>
 
+            {/* Internal link trap - "Keep Reading" */}
+            <ReadNext posts={readNextPosts.length > 0 ? readNextPosts : related} />
+
+            {/* Mid-article CTA */}
+            <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+              <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Want more guides like this?</p>
+              <p className="text-sm mb-4" style={{ color: "var(--text-muted)" }}>Join 50K+ readers getting weekly tips on AI, automation & making money online.</p>
+              <Link href="/#newsletter" className="btn-primary inline-block text-sm px-6">Subscribe Free</Link>
+            </div>
+
             <div className="flex flex-wrap gap-2 mt-10 pt-6" style={{ borderTop: "1px solid var(--border-color)" }}>
               {post.tags.map((tag) => (
                 <span key={tag} className="text-sm glass px-3 py-1 rounded-full" style={{ color: "var(--text-muted)" }}>#{tag}</span>
               ))}
+            </div>
+
+            {/* Bottom share bar */}
+            <div className="flex items-center justify-between mt-6 pt-6" style={{ borderTop: "1px solid var(--border-color)" }}>
+              <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>Share this article</p>
+              <ShareButtons title={post.title} slug={slug} />
             </div>
           </article>
 

@@ -1,17 +1,40 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Sparkles, CheckCircle } from "lucide-react";
+import { Mail, Sparkles, CheckCircle, Loader2 } from "lucide-react";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
+    if (!email) return;
+
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setErrorMsg(data.error || "Something went wrong.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
       setEmail("");
+    } catch {
+      setErrorMsg("Network error. Please try again.");
+      setStatus("error");
     }
   };
 
@@ -40,7 +63,7 @@ export default function Newsletter() {
             and side hustle ideas every week. No spam, unsubscribe anytime.
           </p>
 
-          {submitted ? (
+          {status === "success" ? (
             <div className="flex items-center justify-center gap-3 text-green-600 dark:text-green-400 text-lg font-semibold">
               <CheckCircle className="w-6 h-6" />
               You&apos;re in! Check your inbox.
@@ -55,14 +78,23 @@ export default function Newsletter() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
-                  className="w-full rounded-xl pl-12 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-purple-500/50 glass"
+                  disabled={status === "loading"}
+                  className="w-full rounded-xl pl-12 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-purple-500/50 glass disabled:opacity-50"
                   style={{ color: "var(--text-primary)" }}
                 />
               </div>
-              <button type="submit" className="btn-primary whitespace-nowrap">
-                Subscribe Free
+              <button type="submit" className="btn-primary whitespace-nowrap flex items-center justify-center gap-2" disabled={status === "loading"}>
+                {status === "loading" ? (
+                  <><Loader2 className="w-4 h-4 animate-spin" /> Subscribing...</>
+                ) : (
+                  "Subscribe Free"
+                )}
               </button>
             </form>
+          )}
+
+          {status === "error" && (
+            <p className="text-sm text-red-500 mt-3">{errorMsg}</p>
           )}
 
           <p className="text-xs mt-4" style={{ color: "var(--text-muted)" }}>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Zap, Send, Check } from "lucide-react";
+import { Zap, Send, Check, Loader2 } from "lucide-react";
 
 const footerLinks = {
   Categories: [
@@ -31,15 +31,39 @@ function FooterContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name.trim() || !email.trim() || !message.trim()) return;
-    setSent(true);
+
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setErrorMsg(data.error || "Failed to send.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+    } catch {
+      setErrorMsg("Network error. Please try again.");
+      setStatus("error");
+    }
   }
 
-  if (sent) {
+  if (status === "success") {
     return (
       <div className="glass rounded-xl p-4 flex items-center gap-3">
         <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
@@ -47,7 +71,7 @@ function FooterContactForm() {
         </div>
         <div>
           <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Message sent!</p>
-          <p className="text-xs" style={{ color: "var(--text-muted)" }}>We'll get back to you within 24–48 hrs.</p>
+          <p className="text-xs" style={{ color: "var(--text-muted)" }}>We&apos;ll get back to you within 24–48 hrs.</p>
         </div>
       </div>
     );
@@ -60,7 +84,8 @@ function FooterContactForm() {
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Your name"
-        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+        disabled={status === "loading"}
+        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 disabled:opacity-50"
         style={{ color: "var(--text-primary)" }}
       />
       <input
@@ -69,7 +94,8 @@ function FooterContactForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="your@email.com"
-        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+        disabled={status === "loading"}
+        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 disabled:opacity-50"
         style={{ color: "var(--text-primary)" }}
       />
       <textarea
@@ -78,15 +104,24 @@ function FooterContactForm() {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Your message..."
-        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 resize-none"
+        disabled={status === "loading"}
+        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 resize-none disabled:opacity-50"
         style={{ color: "var(--text-primary)", fontFamily: "inherit" }}
       />
+      {status === "error" && (
+        <p className="text-xs text-red-500">{errorMsg}</p>
+      )}
       <button
         type="submit"
-        className="flex items-center gap-2 text-sm font-semibold text-white rounded-xl px-4 py-2 transition-opacity hover:opacity-90 w-full justify-center"
+        disabled={status === "loading"}
+        className="flex items-center gap-2 text-sm font-semibold text-white rounded-xl px-4 py-2 transition-opacity hover:opacity-90 w-full justify-center disabled:opacity-50"
         style={{ background: "linear-gradient(to right, #9333ea, #3b82f6)" }}
       >
-        <Send className="w-3.5 h-3.5" /> Send Message
+        {status === "loading" ? (
+          <><Loader2 className="w-3.5 h-3.5 animate-spin" /> Sending...</>
+        ) : (
+          <><Send className="w-3.5 h-3.5" /> Send Message</>
+        )}
       </button>
     </form>
   );
