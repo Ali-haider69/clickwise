@@ -16,16 +16,22 @@ export default function Newsletter() {
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
+      const res = await fetch(
+        `https://api.convertkit.com/v3/forms/9299535/subscribe`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            api_key: "Z6SyeuD-_B1FzdGMhbbT-g",
+            email,
+          }),
+        }
+      );
 
       const data = await res.json();
 
-      if (!res.ok) {
-        setErrorMsg(data.error || "Something went wrong.");
+      if (!res.ok || data.error) {
+        setErrorMsg(data.message || "Something went wrong.");
         setStatus("error");
         return;
       }
@@ -59,7 +65,7 @@ export default function Newsletter() {
           </h2>
 
           <p className="max-w-xl mx-auto mb-8" style={{ color: "var(--text-secondary)" }}>
-            Join 50,000+ subscribers who get the top trending products, AI tools,
+            Join our growing community and get the top trending products, AI tools,
             and side hustle ideas every week. No spam, unsubscribe anytime.
           </p>
 
@@ -102,7 +108,7 @@ export default function Newsletter() {
           </p>
 
           <div className="flex items-center justify-center gap-6 mt-8">
-            {["50K+ Subscribers", "Weekly Deals", "Zero Spam"].map((item) => (
+            {["Weekly Deals", "AI Tool Picks", "Zero Spam"].map((item) => (
               <div key={item} className="flex items-center gap-1.5 text-sm" style={{ color: "var(--text-muted)" }}>
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 {item}

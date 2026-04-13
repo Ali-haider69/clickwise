@@ -5,7 +5,10 @@ import { canonicalMeta } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Affiliate Disclosure — ClickWise",
   description: "Read the ClickWise affiliate disclosure to learn how we maintain editorial integrity, how we earn commissions, and how it transparently affects our content.",
-  ...canonicalMeta("/disclosure"),
+  ...canonicalMeta("/disclosure", {
+    title: "Affiliate Disclosure — ClickWise",
+    description: "How ClickWise earns affiliate commissions and how we maintain editorial independence in our reviews.",
+  }),
 };
 
 export default function DisclosurePage() {

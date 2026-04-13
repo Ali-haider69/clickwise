@@ -6,7 +6,10 @@ import { canonicalMeta } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Free Online Tools 2026 — AI Generators & Calculators",
   description: "Free tools: AI LinkedIn & Instagram generators, JSON formatter, JWT decoder, age calculator, Fiverr fee calculator, and more. No signup required.",
-  ...canonicalMeta("/tools"),
+  ...canonicalMeta("/tools", {
+    title: "Free Online Tools 2026 — AI Generators & Calculators",
+    description: "Free AI tools and calculators: LinkedIn generator, Instagram captions, JSON formatter, age calculator, and more. No signup required.",
+  }),
 };
 
 const toolCategories = [

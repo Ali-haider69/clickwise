@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Zap, Users, Star, TrendingUp } from "lucide-react";
+import { Zap, BookOpen, TrendingUp, Wrench, Shield, Eye } from "lucide-react";
 import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About ClickWise — Who We Are",
   description: "ClickWise is your go-to source for unbiased reviews, AI tool comparisons, and side hustle guides in 2026.",
-  ...canonicalMeta("/about"),
+  ...canonicalMeta("/about", {
+    title: "About ClickWise — Who We Are",
+    description: "ClickWise is your go-to source for unbiased reviews, AI tool comparisons, and side hustle guides in 2026.",
+  }),
 };
 
 export default function AboutPage() {
@@ -26,25 +29,26 @@ export default function AboutPage() {
 
         <div className="glass rounded-3xl p-8 mb-8 space-y-5 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
           <p>
-            ClickWise was built with one mission: cut through the noise. The internet is full of sponsored listicles, biased reviews, and generic advice written by people who've never actually used the products they write about.
+            ClickWise was built with one mission: cut through the noise. The internet is full of sponsored listicles, biased reviews, and generic advice written by people who have never actually used the products they write about.
           </p>
           <p>
-            We do things differently. Every tool we recommend, every gadget we review, and every comparison we publish goes through rigorous real-world testing. We buy products with our own money, test AI tools ourselves, and share honest verdicts — even when that means recommending a cheaper alternative over a big brand.
+            We do things differently. Every tool we recommend, every gadget we review, and every comparison we publish goes through real-world testing. We use products ourselves, test AI tools hands-on, and share honest verdicts — even when that means recommending a cheaper alternative over a big brand.
           </p>
           <p>
-            Our team covers AI & tech, make money online strategies, consumer gadgets, finance, and health. We update our content regularly to make sure you're always getting the most current information — not outdated guides from 3 years ago.
+            Our coverage spans AI and technology, online income strategies, consumer electronics, personal finance, and health and wellness. We update our content regularly to make sure you are always getting current, accurate information.
           </p>
           <p>
-            <strong style={{ color: "var(--text-primary)" }}>Reader-supported, not brand-supported.</strong> We may earn affiliate commissions when you buy through our links — but that never influences our editorial decisions. If a product doesn't deserve a recommendation, we say so.
+            <strong style={{ color: "var(--text-primary)" }}>Reader-supported, not brand-supported.</strong> We may earn affiliate commissions when you buy through our links — but that never influences our editorial decisions. If a product does not deserve a recommendation, we say so. You can read more about this in our{" "}
+            <a href="/disclosure" className="text-purple-600 dark:text-purple-400 underline">affiliate disclosure</a>.
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           {[
-            { icon: Star, label: "Reviews Published", value: "500+" },
-            { icon: Users, label: "Monthly Readers", value: "200K+" },
+            { icon: BookOpen, label: "Articles Published", value: "50+" },
             { icon: TrendingUp, label: "Categories", value: "6" },
-            { icon: Zap, label: "Free Tools", value: "12" },
+            { icon: Wrench, label: "Free Tools", value: "12" },
+            { icon: Eye, label: "Products Reviewed", value: "8+" },
           ].map(({ icon: Icon, label, value }) => (
             <div key={label} className="glass rounded-2xl p-5 text-center">
               <Icon className="w-6 h-6 text-purple-600 mx-auto mb-2" />
@@ -54,18 +58,39 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <div className="glass rounded-3xl p-8">
+        <div className="glass rounded-3xl p-8 mb-8">
           <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>What We Cover</h2>
+          <ul className="space-y-4" style={{ color: "var(--text-secondary)" }}>
+            {[
+              { heading: "AI Tools & Tech", text: "Reviews and comparisons of the most popular AI software, from writing assistants and image generators to automation platforms." },
+              { heading: "Make Money Online", text: "Tested side hustles, freelancing strategies, and income guides with realistic expectations — not hype." },
+              { heading: "Gadgets & Reviews", text: "Hands-on testing of smartphones, laptops, earbuds, and wearables with detailed specs and honest verdicts." },
+              { heading: "Finance", text: "Investing fundamentals, budgeting methods, and financial tool reviews written in plain language." },
+              { heading: "Health & Wellness", text: "Fitness tracker reviews, wellness tips, and health resources grounded in evidence-based information." },
+              { heading: "Trending", text: "The most-read articles and timely topics our readers are engaging with right now." },
+            ].map((item) => (
+              <li key={item.heading} className="text-sm leading-relaxed">
+                <strong style={{ color: "var(--text-primary)" }}>{item.heading}</strong> — {item.text}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="glass rounded-3xl p-8">
+          <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
+            <Shield className="w-5 h-5 inline-block mr-2 text-purple-600" />
+            Our Editorial Standards
+          </h2>
           <ul className="space-y-3" style={{ color: "var(--text-secondary)" }}>
             {[
-              "🤖 AI Tools & Tech — Reviews and comparisons of the best AI software in 2026",
-              "💰 Make Money Online — Real side hustles, freelancing tips, and income strategies",
-              "📱 Gadgets & Reviews — Hands-on testing of the latest consumer electronics",
-              "📈 Finance — Investing basics, credit cards, and money management guides",
-              "💪 Health & Fitness — Wearables, trackers, and wellness tools reviewed",
-              "🔥 Trending — Whatever the internet is talking about right now, fact-checked",
+              "We never accept payment in exchange for a positive review.",
+              "Affiliate links are clearly disclosed and never influence our editorial recommendations.",
+              "We update articles when products change, prices shift, or new information becomes available.",
+              "If we have not personally tested a product, we say so — and we explain how we gathered our information.",
+              "We welcome corrections and feedback through our contact page.",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-sm leading-relaxed">
+                <span className="text-purple-600 mt-1 shrink-0">•</span>
                 <span>{item}</span>
               </li>
             ))}

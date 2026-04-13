@@ -9046,4 +9046,296 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  /* ─────────────────────────────────────────────
+     AI & TECH — How to Use AI in Everyday Life
+  ───────────────────────────────────────────── */
+  "how-to-use-ai-in-everyday-life-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        You do not need to be a tech expert to use AI. Here are 20 practical ways real people are using it every single day in 2026 — and how you can start in the next 5 minutes.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Most AI guides are written for developers or entrepreneurs. This one is for everyone else — the parent trying to plan meals faster, the student drowning in assignments, the professional who spends too long on emails, and the retiree who keeps hearing about AI but does not know where to start.
+      </p>
+
+      <HookBanner headline="What this guide covers" items={[
+        "20 practical, everyday AI use cases — not theory, not hype",
+        "The exact tool to use for each task (all free, no credit card needed)",
+        "Step-by-step instructions a complete beginner can follow",
+        "Real examples from people in the US, UK, Canada, and Australia",
+        "What AI cannot do well (so you do not waste your time)",
+      ]} />
+
+      <AlertBox type="tip" title="Before you read" body="You only need one tool to try everything in this guide: ChatGPT (free) or Google Gemini (free). Both work in your browser — no downloads, no setup, no account required for Gemini. If you want to follow along, open one of them in a new tab now." />
+
+      <StatBox items={[
+        ["20", "Practical Uses"],
+        ["$0", "Cost to Start"],
+        ["5 min", "To Get Going"],
+        ["0", "Tech Skills Needed"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Part 1: AI for Your Home and Personal Life</h2>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. Meal Planning and Grocery Lists</h3>
+      <p>
+        <strong>The problem:</strong> It is 5:30 PM, you are staring into the fridge, and you have no idea what to cook. You have chicken thighs, half a bag of rice, and some vegetables that need to be used before they go bad.
+      </p>
+      <p>
+        <strong>How AI helps:</strong> Tell ChatGPT or Gemini what ingredients you have on hand and it will suggest 3 to 5 recipes you can make tonight — with step-by-step cooking instructions. You can also ask it to plan an entire week of meals based on your dietary preferences, budget, and how many people you are feeding.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;I have chicken thighs, rice, broccoli, soy sauce, and garlic. Give me 3 dinner recipes I can make in under 30 minutes. I am cooking for 2 adults.&quot;
+      </p>
+      <p>
+        <strong>Take it further:</strong> Ask AI to generate a weekly meal plan with a combined grocery list sorted by store section (produce, dairy, meat, pantry). This alone can save you 30 to 45 minutes of planning per week and reduce food waste. Families in the US and UK report saving $50 to $100 per month on groceries by planning meals with AI instead of impulse shopping.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Writing Better Emails (Without Spending 20 Minutes Each)</h3>
+      <p>
+        <strong>The problem:</strong> You need to write a professional email — maybe a complaint to your landlord, a follow-up to a job application, or a tricky message to a colleague — and you have been staring at the blank compose window for 10 minutes.
+      </p>
+      <p>
+        <strong>How AI helps:</strong> Describe the situation in plain language and ask AI to draft the email for you. It handles tone, structure, and politeness so you can focus on the substance. You can also paste a received email and ask AI to draft a reply.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Draft a polite but firm email to my landlord requesting that the broken heating system be repaired within the next 7 days. Mention that I reported this issue on March 15 and have not received a response.&quot;
+      </p>
+      <p>
+        <strong>Important:</strong> Always read and edit AI-drafted emails before sending. The AI does not know your exact situation — it gives you a strong starting point, not a finished product. Add your personal details and adjust the tone to match your relationship with the recipient.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. Travel Planning and Itineraries</h3>
+      <p>
+        <strong>The problem:</strong> You are planning a trip to Melbourne, Tokyo, or New York and spending hours across TripAdvisor, Google Maps, blogs, and YouTube trying to figure out what to do, where to eat, and how to get around.
+      </p>
+      <p>
+        <strong>How AI helps:</strong> Give AI your destination, number of days, budget, and interests — and it builds a complete day-by-day itinerary with restaurant recommendations, travel tips, and estimated costs. It is like having a free travel agent who has been everywhere.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Plan a 5-day trip to Tokyo for 2 people on a moderate budget. We like street food, temples, and shopping. Include daily itineraries with estimated costs in USD and tips for getting around on public transport.&quot;
+      </p>
+      <p>
+        <strong>Pro tip:</strong> Ask follow-up questions like &quot;What is the best neighbourhood to stay in for first-time visitors?&quot; or &quot;What local customs should we know about?&quot; AI handles these naturally because it works like a conversation, not a search engine.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. Understanding Bills, Contracts, and Legal Documents</h3>
+      <p>
+        <strong>The problem:</strong> You received a medical bill, insurance policy, or rental agreement that is 15 pages of legal jargon and you have no idea what it actually says or what you are agreeing to.
+      </p>
+      <p>
+        <strong>How AI helps:</strong> Paste the text (or upload the document) into ChatGPT and ask it to explain the document in plain language. It will highlight key terms, identify important deadlines, and flag anything unusual. This works for insurance policies, employment contracts, terms of service, and medical bills.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Explain this rental agreement in simple terms. Highlight any clauses that could be problematic for the tenant, any hidden fees, and the key dates I need to remember.&quot;
+      </p>
+
+      <AlertBox type="warning" title="Important disclaimer" body="AI can help you understand documents, but it is not a lawyer. For important legal decisions — signing a lease, disputing a bill, or reviewing an employment contract — use AI to prepare your questions, then consult a qualified professional." />
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Helping Kids with Homework (Without Doing It for Them)</h3>
+      <p>
+        <strong>The problem:</strong> Your child asks for help with a maths problem or a science concept and you either do not remember the material or cannot explain it at their level.
+      </p>
+      <p>
+        <strong>How AI helps:</strong> AI excels at explaining concepts at any level. You can say &quot;explain photosynthesis to a 10-year-old&quot; or &quot;walk me through long division step by step for a Year 5 student&quot; and it adjusts its language accordingly. The key is to use AI as a tutor, not a cheat sheet.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;My 12-year-old is struggling with fractions. Explain how to add fractions with different denominators using a simple example, then give them 3 practice problems to try.&quot;
+      </p>
+      <p>
+        <strong>Parenting tip:</strong> Sit with your child while they use AI. Teach them to ask questions and verify answers rather than copy-pasting. This builds critical thinking skills that will serve them for the rest of their lives — which is more valuable than any single homework assignment.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Part 2: AI for Your Money and Finances</h2>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>6. Creating a Personal Budget</h3>
+      <p>
+        <strong>How AI helps:</strong> Tell AI your monthly income, fixed expenses, and financial goals — and it will create a realistic budget breakdown using methods like 50/30/20 (needs/wants/savings) customised to your situation. It can also suggest areas where you might be overspending.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;I earn $4,500/month after tax. My rent is $1,400, car payment is $350, and utilities are about $200. Create a monthly budget for me that includes savings, groceries, and entertainment. I want to save $500/month for an emergency fund.&quot;
+      </p>
+      <p>
+        Want to go deeper? Use our <InternalLink href="/tools/investment-calculator">investment calculator</InternalLink> to see how your savings grow over time, or check the <InternalLink href="/tools/tax-calculator">tax calculator</InternalLink> to understand your take-home pay in different countries.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>7. Comparing Products Before You Buy</h3>
+      <p>
+        <strong>The problem:</strong> You want to buy a new laptop, vacuum cleaner, or phone — but every website has a different &quot;best pick&quot; and you suspect most of them are just promoting whoever pays the highest affiliate commission.
+      </p>
+      <p>
+        <strong>How AI helps:</strong> Ask AI to compare specific products across the features you actually care about. Unlike review sites, you can ask follow-up questions and get personalised recommendations based on your specific needs and budget.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Compare the MacBook Air M4 and Dell XPS 15 for a university student who needs it for essay writing, web browsing, and light photo editing. Budget is under $1,500 USD. Which is better value?&quot;
+      </p>
+      <p>
+        For trusted, hands-on reviews of specific products, check our <InternalLink href="/reviews">product reviews section</InternalLink> where we test everything ourselves, or use our <InternalLink href="/compare">comparison tool</InternalLink> for side-by-side specs.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>8. Negotiating Bills and Subscriptions</h3>
+      <p>
+        <strong>How AI helps:</strong> AI can draft negotiation scripts for calling your internet provider, insurance company, or phone carrier to ask for a better rate. It can also help you identify which subscriptions you are paying for but not using.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Write a phone script I can use to call Comcast and negotiate a lower internet bill. My current plan is $89/month and I have been a customer for 3 years. Include what to say if they refuse the first time.&quot;
+      </p>
+      <p>
+        People in the US and Canada regularly save $20 to $50 per month by using AI-drafted scripts to negotiate with service providers. The key is being polite, prepared, and willing to mention competitor pricing.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Part 3: AI for Work and Productivity</h2>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>9. Summarising Long Documents and Articles</h3>
+      <p>
+        <strong>How AI helps:</strong> Paste a long article, report, or PDF into ChatGPT and ask for a summary. You can specify the length (&quot;summarise this in 3 bullet points&quot;) or focus (&quot;summarise only the financial implications&quot;). This is invaluable for professionals who need to read dozens of reports per week.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>10. Preparing for Job Interviews</h3>
+      <p>
+        <strong>How AI helps:</strong> AI can act as an interview coach. Give it the job description and your resume, and it will generate likely interview questions with suggested answers. It can also conduct mock interviews where it plays the interviewer and gives feedback on your responses.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;I am interviewing for a marketing manager position at a tech company in Toronto. The job requires 5 years of experience in digital marketing. Generate 10 likely interview questions and help me prepare answers. Focus on behavioral questions.&quot;
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>11. Writing Professional Documents</h3>
+      <p>
+        Resumes, cover letters, LinkedIn profiles, performance reviews, project proposals — AI handles all of these. The key is providing context about your specific experience and the role or audience you are targeting.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Rewrite my LinkedIn summary. I am a project manager with 8 years of experience in construction management in Australia. I want to transition into tech project management. Keep it under 200 words and make it sound professional but approachable.&quot;
+      </p>
+      <p>
+        For LinkedIn-specific content, try our <InternalLink href="/tools/ai-linkedin-post-generator">LinkedIn Post Generator</InternalLink> — it is free and designed for professional social media content.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>12. Learning New Skills Faster</h3>
+      <p>
+        <strong>How AI helps:</strong> AI is the most patient teacher you will ever have. It never gets frustrated, it explains things as many times as you need, and it adjusts its explanations based on your level of understanding. Use it to learn anything from Excel formulas to basic coding to photography techniques.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;I want to learn basic Excel for my office job. I know absolutely nothing. Create a 7-day learning plan with one lesson per day, starting from the very basics. Include practice exercises for each day.&quot;
+      </p>
+
+      <DataTable
+        headers={["Everyday Task", "Time Without AI", "Time With AI", "Best Free Tool"]}
+        rows={[
+          ["Weekly meal planning", "45-60 min", "5-10 min", "ChatGPT / Gemini"],
+          ["Writing a professional email", "15-20 min", "3-5 min", "ChatGPT / Gemini"],
+          ["Planning a vacation itinerary", "3-5 hours", "15-30 min", "ChatGPT / Perplexity"],
+          ["Understanding a legal document", "1-2 hours + lawyer", "10-15 min + verification", "ChatGPT"],
+          ["Comparing products before buying", "1-2 hours of research", "5-10 min", "Perplexity / Gemini"],
+          ["Preparing for a job interview", "2-4 hours", "30-45 min", "ChatGPT / Claude"],
+          ["Creating a budget", "1-2 hours", "10-15 min", "ChatGPT + spreadsheet"],
+          ["Learning a new skill", "Weeks of searching", "Structured plan in 5 min", "ChatGPT / Gemini"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Part 4: AI for Health, Fitness, and Wellbeing</h2>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>13. Creating Workout Plans</h3>
+      <p>
+        <strong>How AI helps:</strong> Tell AI your fitness level, available equipment, time per session, and goals — and it will create a personalised workout plan. This is especially useful for people who cannot afford a personal trainer but want structured guidance.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;Create a 4-week beginner workout plan for someone who wants to lose weight and build basic strength. I can exercise 3 times per week for 30 minutes. I only have dumbbells and a yoga mat at home. No gym access.&quot;
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>14. Understanding Health Information</h3>
+      <p>
+        <strong>How AI helps:</strong> AI can explain medical terms, translate doctor&apos;s notes into plain language, and help you prepare questions for your next appointment. It can also explain medication side effects and interactions in language you can actually understand.
+      </p>
+
+      <AlertBox type="warning" title="Health disclaimer" body="AI is not a doctor. Never use AI to self-diagnose, skip medical appointments, or change medication. Use it to understand information and prepare better questions for your healthcare provider. If you have a medical emergency, call emergency services immediately." />
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>15. Sleep and Mental Health Support</h3>
+      <p>
+        AI can suggest evidence-based sleep hygiene practices, guided breathing exercises, journaling prompts for stress management, and help you identify patterns in your mood or energy levels. It is not a replacement for therapy, but it can be a helpful daily companion for building healthier habits.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Part 5: AI for Fun, Creativity, and Social Life</h2>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>16. Planning Events and Parties</h3>
+      <p>
+        From birthday party themes and decoration ideas to guest lists, timelines, and menu planning — AI handles event planning end to end. Especially useful for parents planning children&apos;s parties or people organising gatherings on a budget.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>17. Writing Personal Messages</h3>
+      <p>
+        Struggling with what to write in a wedding card, sympathy note, or thank-you message? AI helps you find the right words for emotional moments when your brain goes blank. Just describe the relationship and the occasion.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>18. Getting Book, Movie, and Music Recommendations</h3>
+      <p>
+        <strong>Try this prompt:</strong> &quot;I loved the TV show Severance and the movie Arrival. Recommend 5 similar shows and 5 similar movies with a brief explanation of why I would like each one.&quot;
+      </p>
+      <p>
+        AI recommendations are often better than algorithm-based suggestions (like Netflix&apos;s &quot;Because you watched...&quot;) because you can explain <em>why</em> you liked something, not just what you watched.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>19. Learning a Language</h3>
+      <p>
+        AI is a free conversation partner for language learning. You can practice conversations in Spanish, French, Japanese, or any language — and ask for corrections, explanations of grammar rules, and vocabulary building exercises. It is more flexible than apps like Duolingo because you can practice real-world scenarios like ordering food or asking for directions.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>20. Home Improvement and DIY Projects</h3>
+      <p>
+        From fixing a leaky tap to planning a kitchen renovation to figuring out why your WiFi is slow in the bedroom — AI can walk you through troubleshooting steps, explain tools you need, estimate costs, and provide step-by-step instructions for common home repairs.
+      </p>
+      <p>
+        <strong>Try this prompt:</strong> &quot;My kitchen tap is dripping constantly. Walk me through how to fix it step by step. I have no plumbing experience but I have a basic toolkit. What parts might I need to buy?&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to Get Started (5-Minute Quick Start)</h2>
+      <StepCard steps={[
+        { title: "Pick one tool", body: "Go to ChatGPT (chat.openai.com) or Google Gemini (gemini.google.com). Both are free. If you have a Google account, Gemini is the fastest to start — no signup needed." },
+        { title: "Start with something simple", body: "Ask it to do something you would normally spend 10+ minutes on: plan tonight's dinner, draft an email, explain a bill, or recommend a movie. See how it handles a real task." },
+        { title: "Be specific in your requests", body: "Instead of 'help me cook dinner', say 'I have salmon, asparagus, and lemon. Give me a 20-minute recipe for 2 people.' The more detail you provide, the better the output." },
+        { title: "Have a conversation, not a command", body: "If the first response is not quite right, tell AI what to change. Say 'make it shorter', 'use a friendlier tone', or 'include vegetarian options too.' AI improves with feedback in the same conversation." },
+        { title: "Try one new use case per week", body: "Do not try all 20 things today. Pick one new task each week — meal planning this week, email drafting next week, budget planning the week after. Build the habit gradually." },
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What AI Cannot Do Well (Honest Limitations)</h2>
+      <CheckList title="Where AI falls short in 2026" items={[
+        "Real-time information — AI does not always have today's news, stock prices, or weather (use Google for that)",
+        "Personal opinions — AI has no taste. Its restaurant recommendations are based on popularity, not personal experience",
+        "Emotional support — AI can suggest coping strategies but it is not a therapist and cannot replace human connection",
+        "Guaranteed accuracy — AI sometimes generates confident-sounding information that is wrong. Always verify important facts",
+        "Privacy — anything you type into AI could potentially be stored. Never share passwords, financial account numbers, or sensitive personal data",
+        "Complex maths — AI can explain concepts but sometimes makes calculation errors. Double-check any numbers it gives you",
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "How can I start using AI with no experience?", a: "Go to Google Gemini (gemini.google.com) — it is free, requires no signup if you have a Google account, and works in your browser. Type a question in plain English, just like you would text a friend. Try asking it to plan a meal, explain something you are curious about, or draft an email. That is literally all there is to getting started." },
+        { q: "Is AI safe to use for personal tasks?", a: "Yes, for general tasks. Major AI tools from Google, OpenAI, and Microsoft are safe for everyday use like writing, planning, and research. The main rule: do not enter passwords, bank details, or highly sensitive personal information. Use AI the way you would use a helpful stranger — great for general advice, not for sharing your secrets." },
+        { q: "What is the easiest AI tool for beginners?", a: "Google Gemini is the easiest because it requires no setup and connects to Google services you probably already use. ChatGPT is the most versatile. Both work by typing in plain language — no coding or technical knowledge needed. If you can send a text message, you can use AI." },
+        { q: "Can AI help me save money?", a: "Yes. People regularly use AI to plan cheaper meals (saving $50-100/month on groceries), negotiate lower bills (saving $20-50/month on subscriptions), compare products before buying (avoiding overspending), and create budgets they actually follow. The time savings alone — 5 to 10 hours per month — are valuable." },
+        { q: "Do I need to pay for AI tools?", a: "No. The free tiers of ChatGPT, Google Gemini, and Microsoft Copilot cover all 20 use cases in this guide. You only need paid plans if you use AI heavily for professional work or need advanced features. Most people never need to upgrade from the free tier." },
+        { q: "Will AI replace my job?", a: "AI is more likely to change your job than replace it entirely. The people most at risk are those who refuse to learn how AI can help them. The people most secure are those who use AI to become more productive and valuable. Think of AI as a power tool — it does not replace the carpenter, but the carpenter who uses it builds faster." },
+      ]} />
+
+      <div className="glass rounded-2xl p-5 my-6">
+        <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>Free tools on ClickWise</p>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          We build free tools you can use right now: <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> to match with the right AI tool for your needs, <InternalLink href="/tools/age-calculator">Age Calculator</InternalLink>, <InternalLink href="/tools/investment-calculator">Investment Calculator</InternalLink>, <InternalLink href="/tools/tax-calculator">Tax Calculator</InternalLink>, and <InternalLink href="/tools/side-hustle-calculator">Side Hustle Calculator</InternalLink>. All free, no signup required.
+        </p>
+      </div>
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related guides to read next</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/best-ai-tools-2026">15 Best Free AI Tools in 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/chatgpt-prompts-save-time-2026">ChatGPT Prompts That Save Time</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/chatgpt-vs-claude-2026">ChatGPT vs Claude: Which Is Better?</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/10-ai-side-hustles-that-work-2026">10 AI Side Hustles That Actually Work</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };

@@ -42,16 +42,22 @@ function FooterContactForm() {
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({
+          access_key: "dd138ee6-cf47-424e-8ccf-0cf2e0279ba4",
+          subject: `New message from ${name} — ClickWise`,
+          from_name: name,
+          email,
+          message,
+        }),
       });
 
       const data = await res.json();
 
-      if (!res.ok) {
-        setErrorMsg(data.error || "Failed to send.");
+      if (!data.success) {
+        setErrorMsg(data.message || "Failed to send.");
         setStatus("error");
         return;
       }

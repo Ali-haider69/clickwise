@@ -3,13 +3,30 @@ import { posts, categories } from "@/data/posts";
 import BlogCard from "@/components/BlogCard";
 import BlogFilter from "@/components/BlogFilter";
 
+interface TopicHighlight {
+  title: string;
+  text: string;
+}
+
 interface CategoryPageProps {
   category: string;
   title: string;
   description: string;
+  introHeading?: string;
+  introParagraphs?: string[];
+  topicHighlights?: TopicHighlight[];
+  ctaText?: string;
 }
 
-export default function CategoryPage({ category, title, description }: CategoryPageProps) {
+export default function CategoryPage({
+  category,
+  title,
+  description,
+  introHeading,
+  introParagraphs,
+  topicHighlights,
+  ctaText,
+}: CategoryPageProps) {
   const filtered = posts.filter((p) =>
     category === "Trending" ? p.trending : p.category === category
   );
@@ -31,6 +48,46 @@ export default function CategoryPage({ category, title, description }: CategoryP
             {description}
           </p>
         </div>
+
+        {/* Unique intro content section */}
+        {(introParagraphs || topicHighlights) && (
+          <div className="mb-12">
+            {introHeading && (
+              <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
+                {introHeading}
+              </h2>
+            )}
+
+            {introParagraphs && (
+              <div className="glass rounded-2xl p-6 md:p-8 mb-6 space-y-4 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                {introParagraphs.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
+            )}
+
+            {topicHighlights && topicHighlights.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                {topicHighlights.map((topic) => (
+                  <div key={topic.title} className="glass rounded-2xl p-5">
+                    <h3 className="font-bold text-sm mb-2" style={{ color: "var(--text-primary)" }}>
+                      {topic.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                      {topic.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {ctaText && (
+              <p className="text-sm italic" style={{ color: "var(--text-muted)" }}>
+                {ctaText}
+              </p>
+            )}
+          </div>
+        )}
 
         <BlogFilter
           categories={categories}

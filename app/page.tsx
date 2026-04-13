@@ -14,7 +14,10 @@ import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
 export const metadata: Metadata = {
   title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
   description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
-  ...canonicalMeta("/"),
+  ...canonicalMeta("/", {
+    title: "ClickWise — Smart Picks. Real Reviews. Best Deals.",
+    description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
+  }),
 };
 
 const tools = [

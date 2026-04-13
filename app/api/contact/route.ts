@@ -36,13 +36,16 @@ export async function POST(req: NextRequest) {
     });
 
     const data = await res.json();
+    console.log("Web3Forms response:", res.status, data);
 
     if (!data.success) {
-      return NextResponse.json({ error: "Failed to send message." }, { status: 500 });
+      console.error("Web3Forms failed:", data);
+      return NextResponse.json({ error: data.message ?? "Failed to send message." }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("Contact route error:", err);
     return NextResponse.json({ error: "Something went wrong." }, { status: 500 });
   }
 }

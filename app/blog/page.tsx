@@ -11,7 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Blog — AI Tools, Make Money, Gadgets & More",
     description:
       "Guides, comparisons, and reviews on AI tools, side hustles, gadgets, and finance. Everything you need to make smarter decisions in 2026.",
-    ...canonicalMeta("/blog"),
+    ...canonicalMeta("/blog", {
+      title: "Blog — AI Tools, Make Money, Gadgets & More",
+      description: "Guides, comparisons, and reviews on AI tools, side hustles, gadgets, and finance. Smarter decisions in 2026.",
+    }),
   };
 }
 

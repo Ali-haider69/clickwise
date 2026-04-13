@@ -20,13 +20,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} Review 2026 — Is It Worth It?`,
     description: product.description,
-    ...canonicalMeta(url),
-    openGraph: {
-      url: canonicalUrl(url),
+    ...canonicalMeta(url, {
       title: `${product.name} Review 2026 — Is It Worth It?`,
-      description: product.description,
-      images: [product.image],
-    },
+      description: product.description ?? product.name,
+      image: product.image,
+      type: "article",
+    }),
   };
 }
 
