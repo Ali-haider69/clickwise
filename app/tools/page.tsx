@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Free Online Tools 2026 — AI Generators & Calculators",
-  description: "Free tools: AI LinkedIn & Instagram generators, JSON formatter, JWT decoder, age calculator, Fiverr fee calculator, and more. No signup required.",
+  title: "Free Online Tools 2026 — AI Generators, Calculators & Utilities",
+  description: "Free tools: QR code generator, image compressor, password generator, resume builder, YouTube thumbnail downloader, AI generators, and more. No signup required.",
   ...canonicalMeta("/tools", {
-    title: "Free Online Tools 2026 — AI Generators & Calculators",
-    description: "Free AI tools and calculators: LinkedIn generator, Instagram captions, JSON formatter, age calculator, and more. No signup required.",
+    title: "Free Online Tools 2026 — AI Generators, Calculators & Utilities",
+    description: "Free online tools: QR code generator, image compressor, resume builder, password generator, AI generators, and more. No signup required.",
   }),
 };
 
@@ -119,7 +119,60 @@ const toolCategories = [
     ],
   },
   {
-    label: "Existing Tools",
+    label: "High-Traffic Utilities",
+    icon: "🔥",
+    color: "from-red-500 to-orange-500",
+    badge: "5M+ Monthly Searches",
+    tools: [
+      {
+        href: "/tools/qr-code-generator",
+        icon: "📱",
+        title: "QR Code Generator",
+        description: "Generate custom QR codes for URLs, text, WiFi, email, and phone. Customize colors and size.",
+        badge: "5M+ Searches",
+        badgeColor: "from-red-500 to-orange-500",
+        stats: ["5 QR types", "Custom colors", "PNG download"],
+      },
+      {
+        href: "/tools/image-compressor",
+        icon: "🗜️",
+        title: "Image Compressor",
+        description: "Compress images without losing quality. Supports JPG, PNG, WebP with batch processing.",
+        badge: "3M+ Searches",
+        badgeColor: "from-blue-500 to-cyan-500",
+        stats: ["Batch upload", "WebP output", "Quality control"],
+      },
+      {
+        href: "/tools/password-generator",
+        icon: "🔐",
+        title: "Password Generator",
+        description: "Generate strong passwords with cryptographic randomness. Includes strength meter and crack time estimate.",
+        badge: "2M+ Searches",
+        badgeColor: "from-green-500 to-emerald-500",
+        stats: ["Strength meter", "Crack time", "Crypto-secure"],
+      },
+      {
+        href: "/tools/resume-builder",
+        icon: "📄",
+        title: "Resume Builder",
+        description: "Build a professional resume in minutes. Choose from 3 templates and export as PDF or HTML.",
+        badge: "4M+ Searches",
+        badgeColor: "from-purple-500 to-blue-500",
+        stats: ["3 templates", "PDF export", "Live preview"],
+      },
+      {
+        href: "/tools/youtube-thumbnail-downloader",
+        icon: "🎬",
+        title: "YouTube Thumbnail Downloader",
+        description: "Download YouTube video thumbnails in all available resolutions. Just paste the URL.",
+        badge: "1.5M+ Searches",
+        badgeColor: "from-pink-500 to-rose-500",
+        stats: ["All resolutions", "One-click save", "Shorts support"],
+      },
+    ],
+  },
+  {
+    label: "More Tools",
     icon: "⚡",
     color: "from-orange-500 to-pink-500",
     badge: "Popular",
@@ -172,7 +225,7 @@ export default function ToolsPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm font-medium text-purple-600 dark:text-purple-400 mb-6">
-            <Zap className="w-4 h-4" /> 12 Free Tools — No Signup Required
+            <Zap className="w-4 h-4" /> 19 Free Tools — No Signup Required
           </div>
           <h1 className="text-4xl md:text-6xl font-black mb-4">
             <span className="gradient-text">Free Tools</span>

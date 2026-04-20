@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   description:
     "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
-  keywords: ["reviews", "best products", "AI tools", "gadgets", "make money online", "affiliate", "deals"],
+  keywords: ["reviews", "best products", "AI tools", "gadgets", "make money online", "affiliate", "deals", "free online tools", "QR code generator", "image compressor", "password generator", "resume builder", "YouTube thumbnail downloader"],
   openGraph: {
     type: "website",
     locale: "en_US",

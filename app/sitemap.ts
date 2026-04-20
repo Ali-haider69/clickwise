@@ -38,6 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "side-hustle-calculator",
     "ai-finder",
     "investment-calculator",
+    "qr-code-generator",
+    "image-compressor",
+    "password-generator",
+    "resume-builder",
+    "youtube-thumbnail-downloader",
   ].map((slug) => ({
     url: `${BASE}/tools/${slug}`,
     lastModified: new Date(),

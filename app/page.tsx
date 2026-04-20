@@ -30,8 +30,32 @@ export default function HomePage() {
   const topProducts = products.slice(0, 3);
   const latestPosts = posts.slice(1, 5); // skip featured
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "ClickWise",
+    url: "https://clickwise.website",
+    logo: "https://clickwise.website/opengraph-image",
+    description: "Unbiased reviews, honest comparisons, and smart picks for AI tools, gadgets, side hustles, finance, and everything trending in 2026.",
+    sameAs: [],
+  };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ClickWise",
+    url: "https://clickwise.website",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://clickwise.website/blog?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       {/* Hero */}
       <Hero />
 
