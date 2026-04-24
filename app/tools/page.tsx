@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 import { canonicalMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Free Online Tools 2026 — AI Generators, Calculators & Utilities",
+  title: "Free Online Tools 2026 — AI & Utilities",
   description: "Free tools: QR code generator, image compressor, password generator, resume builder, YouTube thumbnail downloader, AI generators, and more. No signup required.",
   ...canonicalMeta("/tools", {
-    title: "Free Online Tools 2026 — AI Generators, Calculators & Utilities",
+    title: "Free Online Tools 2026 — AI & Utilities",
     description: "Free online tools: QR code generator, image compressor, resume builder, password generator, AI generators, and more. No signup required.",
   }),
 };

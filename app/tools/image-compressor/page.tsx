@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { ArrowLeft, Download, Upload, ImageIcon, Trash2 } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 interface CompressedImage {
   name: string;
@@ -272,6 +273,7 @@ export default function ImageCompressor() {
           </>
         )}
       </div>
+      <RelatedTools currentTool="image-compressor" />
     </div>
     </>
   );

@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { Copy, Download, Check, Search, Globe } from "lucide-react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Method = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
 type ContentType = "JSON" | "XML" | "Text";
@@ -555,6 +556,7 @@ export default function ApiResponseViewerPage() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="api-response-viewer" />
     </div>
   );
 }

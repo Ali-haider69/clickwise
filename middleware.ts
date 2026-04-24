@@ -1,28 +1,38 @@
 import { NextResponse, type NextRequest } from "next/server";
 
+/** Legacy slug → canonical slug (must match next.config.ts redirects). */
+const SLUG_REDIRECTS: Record<string, string> = {
+  "/blog/how-to-get-ai-clients-24-hours-no-experience": "/blog/how-to-get-ai-clients",
+  "/blog/how-to-get-ai-clients-fast": "/blog/how-to-get-ai-clients",
+  "/blog/how-to-start-ai-automation-agency-2026": "/blog/ai-automation-agency",
+};
+
 /**
  * Normalize URLs so crawlers see one preferred host + path shape (reduces duplicate URLs).
- * Host-level www/http should also be set in your hosting (e.g. Vercel) — this is a safety net.
+ * All normalization happens in a single redirect to avoid redirect chains.
  */
 export function middleware(request: NextRequest) {
   const url = new URL(request.url);
   const host = request.headers.get("host") ?? "";
 
-  let changed = false;
-
   // 1. Redirect www. to non-www.
   if (host.startsWith("www.")) {
     url.hostname = host.replace(/^www\./, "");
-    changed = true;
   }
 
   // 2. Normalize trailing slashes (Next.js default is no trailing slash)
   if (url.pathname !== "/" && url.pathname.endsWith("/")) {
     url.pathname = url.pathname.replace(/\/+$/, "") || "/";
-    changed = true;
   }
 
-  if (changed) {
+  // 3. Resolve legacy slugs so the chain collapses into one hop
+  const canonical = SLUG_REDIRECTS[url.pathname];
+  if (canonical) {
+    url.pathname = canonical;
+  }
+
+  // Single redirect for all normalizations
+  if (url.toString() !== request.url) {
     return NextResponse.redirect(url.toString(), 308);
   }
 

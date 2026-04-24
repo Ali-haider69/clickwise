@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Plus, Trash2, Download, Eye, FileText } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 interface Experience {
   id: string;
@@ -339,6 +340,7 @@ export default function ResumeBuilder() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="resume-builder" />
     </div>
     </>
   );

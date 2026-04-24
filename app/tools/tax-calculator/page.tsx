@@ -1,6 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
 import { Sparkles, RefreshCw } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Country = "US" | "UK" | "Canada" | "Australia" | "Pakistan" | "India";
 type FilingStatus = "single" | "married" | "head";
@@ -470,6 +471,7 @@ export default function TaxCalculator() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="tax-calculator" />
     </div>
   );
 }

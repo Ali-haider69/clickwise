@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ExternalLink, RotateCcw, Star } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 const questions = [
   {
@@ -184,6 +185,7 @@ export default function AIFinder() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="ai-finder" />
     </div>
   );
 }

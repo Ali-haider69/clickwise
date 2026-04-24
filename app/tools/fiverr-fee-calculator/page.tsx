@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ArrowLeft, TrendingDown, TrendingUp, Info } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Mode = "seller" | "buyer";
 type Currency = "USD" | "GBP" | "EUR" | "PKR" | "INR";
@@ -358,6 +359,7 @@ export default function FiverrFeeCalculator() {
           </p>
         </div>
       </div>
+      <RelatedTools currentTool="fiverr-fee-calculator" />
     </div>
   );
 }

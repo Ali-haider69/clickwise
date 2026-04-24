@@ -13,7 +13,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
     return (
       <Link href={`/blog/${post.slug}`} className="group glass rounded-3xl overflow-hidden card-hover flex flex-col md:flex-row">
         <div className="relative md:w-1/2 h-56 md:h-auto overflow-hidden">
-          <Image src={post.image} alt={post.title} fill className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
+          <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
         </div>
         <div className="p-6 md:p-8 md:w-1/2 flex flex-col justify-center">
           <div className="flex items-center gap-2 mb-3">
@@ -49,7 +49,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
   return (
     <Link href={`/blog/${post.slug}`} className="group glass rounded-2xl overflow-hidden card-hover flex flex-col">
       <div className="relative h-44 overflow-hidden">
-        <Image src={post.image} alt={post.title} fill className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
+        <Image src={post.image} alt={post.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
         {post.trending && (
           <div className="absolute top-3 left-3">

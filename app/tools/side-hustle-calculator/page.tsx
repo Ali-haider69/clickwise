@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink, Share2, ChevronDown } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 const skillOptions = ["Writing & Content","Coding & Development","Design & Creative","Marketing & SEO","Teaching & Coaching","Video & Editing","Social Media","Admin & Virtual Assistant","Sales & Copywriting","Finance & Accounting"];
 
@@ -197,6 +198,7 @@ export default function SideHustleCalculator() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="side-hustle-calculator" />
     </div>
   );
 }

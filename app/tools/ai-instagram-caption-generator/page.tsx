@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Camera, Copy, Check, Sparkles, Loader2, Hash, Smile } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Niche = "Food" | "Travel" | "Fitness" | "Tech" | "Fashion" | "Business" | "Lifestyle";
 type Mood = "Fun & Playful" | "Motivational" | "Aesthetic" | "Educational" | "Behind the Scenes";
@@ -503,6 +504,7 @@ export default function InstagramCaptionGenerator() {
       <style>{`
         @keyframes spin { to { transform: rotate(360deg); } }
       `}</style>
+      <RelatedTools currentTool="ai-instagram-caption-generator" />
     </main>
   );
 }

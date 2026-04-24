@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink, TrendingUp } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 const platforms = [
   { name: "Fidelity", type: "Stocks & ETFs", minReturn: 7, url: "#", badge: "Best Overall" },
@@ -164,6 +165,7 @@ export default function InvestmentCalculator() {
           </div>
         </div>
       </div>
+      <RelatedTools currentTool="investment-calculator" />
     </div>
   );
 }

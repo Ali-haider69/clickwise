@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ArrowLeft, DollarSign, TrendingUp, Info } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Platform = "Direct Client" | "Upwork" | "Fiverr" | "Freelancer.com" | "Toptal" | "PeoplePerHour";
 type Experience = "Beginner" | "Intermediate" | "Expert";
@@ -415,6 +416,7 @@ export default function FreelancerEarningsCalculator() {
           </p>
         </div>
       </div>
+      <RelatedTools currentTool="freelancer-earnings-calculator" />
     </div>
   );
 }

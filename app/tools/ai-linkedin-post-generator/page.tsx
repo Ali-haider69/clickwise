@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Linkedin, Copy, Check, Sparkles, Loader2, Users, Zap, Lock } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Tone = "Professional" | "Casual" | "Inspirational" | "Storytelling";
 type Industry =
@@ -327,6 +328,7 @@ export default function LinkedInPostGenerator() {
       <style>{`
         @keyframes spin { to { transform: rotate(360deg); } }
       `}</style>
+      <RelatedTools currentTool="ai-linkedin-post-generator" />
     </main>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FileText, Copy, Check, Sparkles, Loader2 } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type Tone = "Conversational" | "Professional" | "Bold" | "Educational";
 type HookStyle = "Question Hook" | "Stat Hook" | "Story Hook" | "Bold Statement";
@@ -357,6 +358,7 @@ export default function BlogIntroGenerator() {
       <style>{`
         @keyframes spin { to { transform: rotate(360deg); } }
       `}</style>
+      <RelatedTools currentTool="ai-blog-intro-generator" />
     </main>
   );
 }

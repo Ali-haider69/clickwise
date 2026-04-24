@@ -323,8 +323,66 @@ export default async function ReviewPage({ params }: Props) {
   const related = products.filter((p) => p.id !== id && p.category === product.category);
   const buyLabel = product.affiliateUrl.includes("apple.com") ? "View on Apple.com" : "Check Price on Amazon";
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    image: product.image,
+    brand: {
+      "@type": "Brand",
+      name: product.name.split(" ")[0],
+    },
+    offers: {
+      "@type": "Offer",
+      url: `https://clickwise.website/reviews/${id}`,
+      priceCurrency: "USD",
+      price: product.price.replace(/[^0-9.]/g, ""),
+      availability: "https://schema.org/InStock",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: product.rating,
+      reviewCount: product.reviews,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    review: {
+      "@type": "Review",
+      author: {
+        "@type": "Organization",
+        name: "ClickWise Editorial",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: product.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      reviewBody: product.verdict,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://clickwise.website/" },
+      { "@type": "ListItem", position: 2, name: "Reviews", item: "https://clickwise.website/reviews" },
+      { "@type": "ListItem", position: 3, name: `${product.name} Review` },
+    ],
+  };
+
   return (
     <div className="min-h-screen pt-20 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Hero Image */}
       <div className="relative h-64 md:h-80 w-full overflow-hidden">
         <Image src={product.image} alt={product.name} fill className="object-cover opacity-40" priority />

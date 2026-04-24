@@ -3,6 +3,7 @@
 import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { ArrowLeft, Download, Copy, Check, QrCode } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 const TABS = ["URL", "Text", "Email", "WiFi", "Phone"] as const;
 type Tab = (typeof TABS)[number];
@@ -236,6 +237,7 @@ export default function QRCodeGenerator() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="qr-code-generator" />
     </div>
     </>
   );

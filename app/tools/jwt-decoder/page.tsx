@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Copy, Check, ShieldAlert, KeyRound } from "lucide-react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type ActiveTab = "header" | "payload" | "signature";
 
@@ -369,6 +370,7 @@ export default function JwtDecoderPage() {
           </div>
         )}
       </div>
+      <RelatedTools currentTool="jwt-decoder" />
     </div>
   );
 }

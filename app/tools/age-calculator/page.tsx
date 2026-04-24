@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Star, Gift, Cake } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 const today = () => new Date().toISOString().split("T")[0];
 
@@ -276,6 +277,7 @@ export default function AgeCalculator() {
           </>
         )}
       </div>
+      <RelatedTools currentTool="age-calculator" />
     </div>
   );
 }

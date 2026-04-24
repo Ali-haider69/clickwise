@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { ArrowLeft, Copy, Check, RefreshCw, Shield, ShieldCheck, ShieldAlert } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 const CHARSETS = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
@@ -226,6 +227,7 @@ export default function PasswordGenerator() {
           </>
         )}
       </div>
+      <RelatedTools currentTool="password-generator" />
     </div>
     </>
   );

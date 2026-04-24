@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Download, Search, Image } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 interface Thumbnail {
   label: string;
@@ -201,6 +202,7 @@ export default function YouTubeThumbnailDownloader() {
           </>
         )}
       </div>
+      <RelatedTools currentTool="youtube-thumbnail-downloader" />
     </div>
     </>
   );

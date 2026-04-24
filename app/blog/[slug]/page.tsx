@@ -55,12 +55,13 @@ export default async function BlogPostPage({ params }: Props) {
   const readNextPosts = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(3, 5);
 
   const articleDescription = post.metaDescription ?? post.excerpt;
+  const absoluteImage = post.image.startsWith("http") ? post.image : `https://clickwise.website${post.image}`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": post.schemaType ?? "Article",
     headline: post.title,
     description: articleDescription,
-    image: post.image,
+    image: absoluteImage,
     url: `https://clickwise.website/blog/${slug}`,
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
@@ -105,6 +106,18 @@ export default async function BlogPostPage({ params }: Props) {
         }
       : null;
 
+  const categorySlug = post.category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-");
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://clickwise.website/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://clickwise.website/blog" },
+      { "@type": "ListItem", position: 3, name: post.category, item: `https://clickwise.website/${categorySlug}` },
+      { "@type": "ListItem", position: 4, name: post.title },
+    ],
+  };
+
   return (
     <div className="min-h-screen pt-20 pb-20">
       <ReadingProgress />
@@ -113,6 +126,10 @@ export default async function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {faqJsonLd && (
         <script
@@ -181,6 +198,23 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* Internal link trap - "Keep Reading" */}
             <ReadNext posts={readNextPosts.length > 0 ? readNextPosts : related} />
+
+            {/* Free tools cross-link */}
+            <div className="my-10 glass rounded-2xl p-6">
+              <h3 className="font-bold mb-3" style={{ color: "var(--text-primary)" }}>Try Our Free Tools</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {[
+                  { href: "/tools/ai-finder", label: "AI Tool Finder" },
+                  { href: "/tools/freelancer-earnings-calculator", label: "Earnings Calculator" },
+                  { href: "/tools/qr-code-generator", label: "QR Code Generator" },
+                  { href: "/tools/resume-builder", label: "Resume Builder" },
+                  { href: "/tools/image-compressor", label: "Image Compressor" },
+                  { href: "/tools/password-generator", label: "Password Generator" },
+                ].map((tool) => (
+                  <Link key={tool.href} href={tool.href} className="text-sm text-purple-600 dark:text-purple-400 hover:underline">{tool.label}</Link>
+                ))}
+              </div>
+            </div>
 
             {/* Mid-article CTA */}
             <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>

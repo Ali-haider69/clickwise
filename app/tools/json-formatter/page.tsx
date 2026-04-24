@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { Copy, Download, Check, ChevronRight, ChevronDown, FileJson } from "lucide-react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 
 type ViewMode = "formatted" | "minified" | "tree";
 type IndentSize = 2 | 4;
@@ -432,6 +433,7 @@ export default function JsonFormatterPage() {
           </div>
         </div>
       </div>
+      <RelatedTools currentTool="json-formatter" />
     </div>
   );
 }

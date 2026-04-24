@@ -17,8 +17,17 @@ const footerLinks = {
     { label: "Latest Posts", href: "/blog" },
     { label: "Top Reviews", href: "/reviews" },
     { label: "Compare Products", href: "/compare" },
+    { label: "Free Tools", href: "/tools" },
     { label: "About ClickWise", href: "/about" },
     { label: "Contact Us", href: "/contact" },
+  ],
+  "Free Tools": [
+    { label: "QR Code Generator", href: "/tools/qr-code-generator" },
+    { label: "Image Compressor", href: "/tools/image-compressor" },
+    { label: "Resume Builder", href: "/tools/resume-builder" },
+    { label: "AI Tool Finder", href: "/tools/ai-finder" },
+    { label: "Earnings Calculator", href: "/tools/freelancer-earnings-calculator" },
+    { label: "Password Generator", href: "/tools/password-generator" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy" },
@@ -138,7 +147,7 @@ export default function Footer() {
     <footer style={{ borderTop: "1px solid var(--border-color)" }} className="mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Top */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
           {/* Brand + Contact */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
