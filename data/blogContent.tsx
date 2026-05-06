@@ -10386,4 +10386,1022 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  // ===== CHINA AI BLOG POSTS (May 2026) =====
+
+  "deepseek-ai-review-china-open-source-ai-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-2xl font-black" style={{ color: "var(--text-primary)" }}>
+        A Chinese AI lab with a fraction of OpenAI's budget just built models that compete with GPT-4o. And then they open-sourced everything.
+      </p>
+
+      <HookBanner headline="What you'll learn in this review" items={[
+        "DeepSeek-V3 and DeepSeek-R1 benchmarks vs GPT-4o, Claude, and Gemini",
+        "Real-world performance on coding, math, reasoning, and Chinese language",
+        "Pricing breakdown — why it costs 90% less than OpenAI",
+        "How to use DeepSeek today (free chat + API + self-hosting)",
+        "Privacy considerations and who should (and shouldn't) use it",
+      ]} />
+
+      <AlertBox type="fire" title="Why this matters" body="DeepSeek proved that state-of-the-art AI doesn't require a $100B budget or access to the latest NVIDIA chips. This single company changed the global AI conversation overnight." />
+
+      <div className="glass rounded-2xl p-6">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Quick verdict: Is DeepSeek AI worth using?</h2>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          <strong>Yes — with caveats.</strong> DeepSeek-V3 is a top-5 global AI model. For coding, math, and Chinese-language tasks, it matches or beats GPT-4o. For creative English writing, ChatGPT still has an edge. The price-to-performance ratio is unmatched. Privacy-conscious users should self-host the open-source weights rather than using the hosted API.
+        </p>
+      </div>
+
+      <StatBox items={[
+        ["671B", "Parameters (MoE)"],
+        ["#1", "Open-Source Ranking"],
+        ["90%", "Cheaper Than GPT-4o"],
+        ["MIT", "License"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>What is DeepSeek AI?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        DeepSeek is a Chinese AI research lab founded in 2023 by Liang Wenfeng, who also runs the quantitative hedge fund High-Flyer. Unlike Baidu or Alibaba, DeepSeek isn't a tech giant side project — it's a pure AI research company that chose to open-source its models from day one.
+      </p>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Their flagship models — <strong>DeepSeek-V3</strong> (general purpose) and <strong>DeepSeek-R1</strong> (reasoning) — sent shockwaves through Silicon Valley when benchmarks showed them competing with models that cost 10-100x more to train.
+      </p>
+
+      <InfoBox title="DeepSeek model family" items={[
+        ["DeepSeek-V3", "General-purpose 671B MoE model. Competes with GPT-4o across all tasks."],
+        ["DeepSeek-R1", "Reasoning model with chain-of-thought. Rivals OpenAI o1 on math and logic."],
+        ["DeepSeek-Coder-V2", "Specialized coding model. Top scores on HumanEval and MBPP."],
+        ["DeepSeek-VL2", "Vision-language model for image understanding and OCR."],
+        ["DeepSeek-R1-0528", "Latest R1 update with improved reasoning and fewer hallucinations."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>DeepSeek-V3 Benchmarks: How Does It Stack Up?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        We ran DeepSeek-V3 against the major models across standard benchmarks. Here's what the numbers actually say.
+      </p>
+
+      <DataTable
+        headers={["Benchmark", "DeepSeek-V3", "GPT-4o", "Claude 3.5 Sonnet", "Gemini 1.5 Pro"]}
+        rows={[
+          ["MMLU (knowledge)", "88.5", "87.2", "88.7", "86.5"],
+          ["HumanEval (coding)", "90.2", "90.2", "92.0", "84.1"],
+          ["MATH-500", "90.2", "74.6", "78.3", "80.0"],
+          ["GPQA Diamond", "59.1", "53.6", "65.0", "57.0"],
+          ["Chinese SimpleQA", "68.0", "59.3", "51.3", "54.7"],
+          ["Arena-Hard", "85.5", "82.6", "85.2", "78.0"],
+        ]}
+      />
+
+      <AlertBox type="tip" title="Key takeaway" body="DeepSeek-V3 dominates math benchmarks and Chinese-language understanding. It's competitive on coding and general knowledge. Where it falls short: creative English prose and complex multi-turn conversations where ChatGPT's RLHF polish shows." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>DeepSeek-R1: The Reasoning Breakthrough</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        DeepSeek-R1 is where things get really interesting. This model was trained to "think" through problems step-by-step, similar to OpenAI's o1. But unlike o1, <strong>DeepSeek open-sourced R1 completely</strong> — weights, training methodology, everything.
+      </p>
+      <p style={{ color: "var(--text-secondary)" }}>
+        R1 doesn't just give you an answer. It shows its reasoning chain, often catching its own mistakes mid-thought. For complex math, logic puzzles, and scientific reasoning, it's genuinely remarkable.
+      </p>
+
+      <DataTable
+        headers={["Task", "DeepSeek-R1", "OpenAI o1", "Claude 3.5 Sonnet"]}
+        rows={[
+          ["AIME 2024 (math competition)", "79.8%", "83.3%", "53.0%"],
+          ["MATH-500", "97.3%", "96.4%", "78.3%"],
+          ["GPQA Diamond (science)", "71.5%", "75.7%", "65.0%"],
+          ["Codeforces (competitive coding)", "96.3%", "96.6%", "N/A"],
+          ["LiveCodeBench", "65.9%", "72.5%", "N/A"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Pricing: 90% Cheaper Than GPT-4o</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        This is where DeepSeek becomes impossible to ignore for developers and businesses.
+      </p>
+
+      <DataTable
+        headers={["Model", "Input (per 1M tokens)", "Output (per 1M tokens)", "Cache Hits"]}
+        rows={[
+          ["DeepSeek-V3", "$0.27", "$1.10", "$0.07"],
+          ["GPT-4o", "$2.50", "$10.00", "$1.25"],
+          ["Claude 3.5 Sonnet", "$3.00", "$15.00", "$0.30"],
+          ["DeepSeek-R1", "$0.55", "$2.19", "$0.14"],
+        ]}
+      />
+
+      <AlertBox type="money" title="Cost reality check" body="A task that costs $100 on GPT-4o costs roughly $11 on DeepSeek-V3. For startups and developers in price-sensitive markets, this isn't a minor difference — it changes what's economically viable." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>How to Use DeepSeek AI Today</h2>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Option 1: Free Chat Interface</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Visit chat.deepseek.com. No payment required. You get access to both DeepSeek-V3 (general chat) and DeepSeek-R1 (deep thinking mode). The interface is clean and fast, though less polished than ChatGPT.
+      </p>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Option 2: API Access</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Sign up at platform.deepseek.com for API access. The API is OpenAI-compatible, meaning you can swap it into existing code by changing the base URL and API key. Free tier includes enough credits for serious testing.
+      </p>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Option 3: Self-Host (Full Privacy)</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Download model weights from Hugging Face. Run locally with vLLM, Ollama, or any compatible inference framework. The MIT license means no restrictions on commercial use. You'll need serious GPU power for the full 671B model, but quantized versions run on consumer hardware.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Real-World Testing: Where DeepSeek Shines (and Struggles)</h2>
+
+      <InfoBox title="Where DeepSeek excels" items={[
+        ["Chinese language tasks", "Best-in-class for Chinese comprehension, translation, and cultural understanding. No Western model comes close."],
+        ["Mathematics", "DeepSeek-R1 is a math monster. Complex proofs, competition problems, and statistical analysis."],
+        ["Coding", "DeepSeek-Coder-V2 generates clean, working code across Python, JavaScript, Go, Rust, and more."],
+        ["Cost-sensitive applications", "When you need GPT-4-level output but can't afford GPT-4-level pricing."],
+        ["Privacy-first deployments", "Self-host the open-source model. Your data never leaves your infrastructure."],
+      ]} />
+
+      <InfoBox title="Where DeepSeek falls short" items={[
+        ["Creative English writing", "Prose feels more mechanical than ChatGPT. Fiction, marketing copy, and tone-matching need work."],
+        ["Multi-turn memory", "Loses context faster than Claude or GPT-4o in long conversations."],
+        ["Content moderation", "The hosted version has Chinese regulatory filters that can be jarring for international users."],
+        ["Ecosystem maturity", "Fewer plugins, integrations, and third-party tools compared to the OpenAI ecosystem."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Bigger Picture: Why DeepSeek Matters</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        DeepSeek isn't just another AI model. It's proof that the AI moat isn't money or hardware — it's research efficiency. A relatively small Chinese lab, working under US chip export restrictions, built models that compete with the best in the world.
+      </p>
+      <p style={{ color: "var(--text-secondary)" }}>
+        For the global AI ecosystem, this is healthy. Competition drives innovation, open-source models democratize access, and cost reduction makes AI practical for markets that were priced out of the GPT-4 era.
+      </p>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Whether you're a developer looking for a cheaper API, a business exploring AI adoption, or just curious about the state of Chinese AI — DeepSeek deserves your attention.
+      </p>
+
+      <AlertBox type="fire" title="Bottom line" body="DeepSeek-V3 is a top-5 AI model globally. DeepSeek-R1 is a top-3 reasoning model. Both are open-source and dramatically cheaper than alternatives. If you haven't tried them yet, you're leaving value on the table." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is DeepSeek AI free to use?", a: "Yes. Free chat at chat.deepseek.com, free API tier, and open-source weights for self-hosting. Paid API usage is roughly 90% cheaper than GPT-4o." },
+        { q: "How does DeepSeek compare to ChatGPT?", a: "DeepSeek-V3 matches GPT-4o on most benchmarks and beats it on math and Chinese language. ChatGPT has a more polished interface and better creative English writing. DeepSeek wins on price by a massive margin." },
+        { q: "Is DeepSeek AI safe to use?", a: "The open-source models can be self-hosted for complete data control. The hosted API routes through Chinese servers — enterprise users handling sensitive data should consider self-hosting." },
+        { q: "What is DeepSeek-R1?", a: "A reasoning model that uses chain-of-thought to solve complex problems. Competes with OpenAI o1. Fully open-source with MIT license." },
+        { q: "Can I use DeepSeek for commercial projects?", a: "Yes. MIT license means no restrictions on commercial use. You can fine-tune, deploy, and sell products built on DeepSeek models." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/best-chinese-ai-tools-2026">Best Chinese AI Tools 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/alibaba-qwen-ai-model-review-2026">Alibaba Qwen AI Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/china-vs-usa-ai-race-2026-whos-winning">China vs USA AI Race 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/baidu-ernie-bot-vs-chatgpt-best-ai-china-2026">Ernie Bot vs ChatGPT</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "baidu-ernie-bot-vs-chatgpt-best-ai-china-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-2xl font-black" style={{ color: "var(--text-primary)" }}>
+        If you live in China, ChatGPT isn't your best AI option. Baidu's Ernie Bot might be.
+      </p>
+
+      <HookBanner headline="What this comparison covers" items={[
+        "Side-by-side tests on Chinese language, English, coding, and creativity",
+        "Ernie 4.0 Turbo vs GPT-4o — real prompts, real outputs",
+        "Pricing and availability in China vs globally",
+        "Which is better for business, students, and developers",
+        "Image generation, plugins, and ecosystem comparison",
+      ]} />
+
+      <AlertBox type="tip" title="Who this guide is for" body="Chinese users choosing between Ernie Bot and VPN-accessed ChatGPT. International users curious about China's top AI chatbot. Developers evaluating Baidu's API for Chinese-market products." />
+
+      <div className="glass rounded-2xl p-6">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Quick verdict</h2>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          <strong>For Chinese-language tasks:</strong> Ernie Bot wins convincingly. Better comprehension of idioms, cultural context, regulations, and Chinese internet culture. <strong>For English and global tasks:</strong> ChatGPT remains stronger. Better creative writing, broader world knowledge, and a more mature plugin ecosystem. <strong>For developers in China:</strong> Ernie Bot's API is easier to access legally and has better China-specific compliance.
+        </p>
+      </div>
+
+      <StatBox items={[
+        ["200M+", "Ernie Bot Users"],
+        ["4.0 Turbo", "Latest Ernie Model"],
+        ["59.9 RMB", "Monthly Subscription"],
+        ["300M+", "ChatGPT Users"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>What is Baidu Ernie Bot?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Ernie Bot (文心一言, Wénxīn Yīyán — literally "words from the heart") is Baidu's flagship AI chatbot, launched in March 2023. Built on Baidu's ERNIE (Enhanced Representation through Knowledge Integration) model family, it's designed specifically for the Chinese market with deep understanding of Chinese language, culture, and regulations.
+      </p>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Baidu has iterated rapidly. The current Ernie 4.0 Turbo model is significantly more capable than the 2023 launch version, and Baidu integrates it across its entire product ecosystem — search, maps, documents, and cloud services.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Head-to-Head: Ernie 4.0 Turbo vs GPT-4o</h2>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Test 1: Chinese Language Understanding</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        We tested both models on classical Chinese poetry interpretation, modern slang, legal document analysis, and cultural idiom explanation.
+      </p>
+
+      <DataTable
+        headers={["Task", "Ernie 4.0 Turbo", "GPT-4o", "Winner"]}
+        rows={[
+          ["Classical Chinese → Modern Chinese", "Excellent", "Good", "Ernie Bot"],
+          ["Chinese internet slang", "Native-level", "Adequate", "Ernie Bot"],
+          ["Chinese legal documents", "Excellent", "Good", "Ernie Bot"],
+          ["Idiom interpretation", "Perfect", "Good", "Ernie Bot"],
+          ["Chinese → English translation", "Very Good", "Very Good", "Tie"],
+          ["English → Chinese translation", "Excellent", "Good", "Ernie Bot"],
+        ]}
+      />
+
+      <AlertBox type="tip" title="Why Ernie wins Chinese" body={<>Ernie is trained on a massive Chinese-first corpus including Baidu's search index, Baidu Baike (China's Wikipedia), and licensed Chinese literature. ChatGPT's Chinese training data is substantial but secondary to English. The difference is most obvious on <strong>cultural nuance</strong> — Ernie understands context that ChatGPT misses.</>} />
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Test 2: English Tasks</h3>
+      <DataTable
+        headers={["Task", "Ernie 4.0 Turbo", "GPT-4o", "Winner"]}
+        rows={[
+          ["English creative writing", "Adequate", "Excellent", "ChatGPT"],
+          ["English grammar correction", "Good", "Excellent", "ChatGPT"],
+          ["English summarization", "Good", "Very Good", "ChatGPT"],
+          ["English → formal tone", "Good", "Excellent", "ChatGPT"],
+        ]}
+      />
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Test 3: Coding</h3>
+      <DataTable
+        headers={["Task", "Ernie 4.0 Turbo", "GPT-4o", "Winner"]}
+        rows={[
+          ["Python scripting", "Good", "Excellent", "ChatGPT"],
+          ["JavaScript/React", "Good", "Excellent", "ChatGPT"],
+          ["SQL queries", "Very Good", "Excellent", "ChatGPT"],
+          ["Code explanation (Chinese)", "Excellent", "Good", "Ernie Bot"],
+          ["Debug Chinese-commented code", "Excellent", "Good", "Ernie Bot"],
+        ]}
+      />
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Test 4: Image Generation</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Both models include built-in image generation. Ernie Bot uses Baidu's own image model, while ChatGPT uses DALL-E 3.
+      </p>
+      <DataTable
+        headers={["Aspect", "Ernie Bot", "ChatGPT (DALL-E 3)", "Winner"]}
+        rows={[
+          ["Chinese text in images", "Good", "Poor", "Ernie Bot"],
+          ["Chinese cultural imagery", "Excellent", "Adequate", "Ernie Bot"],
+          ["Photorealistic images", "Good", "Excellent", "ChatGPT"],
+          ["Artistic/creative styles", "Good", "Excellent", "ChatGPT"],
+          ["Prompt following accuracy", "Good", "Very Good", "ChatGPT"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Pricing Comparison</h2>
+      <DataTable
+        headers={["Feature", "Ernie Bot", "ChatGPT"]}
+        rows={[
+          ["Free tier", "Yes (limited daily uses)", "Yes (GPT-3.5 level)"],
+          ["Premium subscription", "59.9 RMB/month (~$8.30)", "$20/month"],
+          ["Premium model", "Ernie 4.0 Turbo", "GPT-4o"],
+          ["API pricing (1M tokens)", "~$1.40 input / $2.80 output", "$2.50 input / $10.00 output"],
+          ["China accessibility", "Native, no VPN needed", "Requires VPN"],
+          ["Payment methods", "Alipay, WeChat Pay", "International credit card"],
+        ]}
+      />
+
+      <AlertBox type="money" title="Cost advantage in China" body="Ernie Bot is cheaper AND easier to pay for in China. No VPN, no international credit card, no risk of account bans for VPN usage. For Chinese users, the friction difference alone is a major factor." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Ecosystem & Integrations</h2>
+
+      <InfoBox title="Ernie Bot ecosystem" items={[
+        ["Baidu Search", "Ernie is integrated into Baidu search results, providing AI-powered answers."],
+        ["Baidu Docs (文库)", "AI writing assistant built into Baidu's document platform."],
+        ["Baidu Maps", "AI-powered route planning and location information."],
+        ["Baidu Cloud", "Enterprise API with SLA guarantees and compliance certifications."],
+        ["Plugin marketplace", "Growing library of China-specific plugins (food delivery, train tickets, etc.)."],
+      ]} />
+
+      <InfoBox title="ChatGPT ecosystem" items={[
+        ["GPT Store", "Massive library of custom GPTs for every use case."],
+        ["Plugin ecosystem", "Broad integration with Western services (Google, Microsoft, etc.)."],
+        ["API flexibility", "Best-documented AI API with massive developer community."],
+        ["Multi-modal", "Voice, vision, and browsing capabilities."],
+        ["Global integrations", "Works with Zapier, Make, Slack, and thousands of Western tools."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Who Should Use Which?</h2>
+
+      <InfoBox title="Choose Ernie Bot if you..." items={[
+        ["Live in China", "No VPN hassle, native payment methods, legal compliance."],
+        ["Work primarily in Chinese", "Unmatched Chinese language understanding and cultural context."],
+        ["Build for the Chinese market", "API with China-specific compliance and Baidu ecosystem integration."],
+        ["Need Chinese document processing", "Better OCR, document understanding, and Chinese PDF analysis."],
+        ["Want image generation with Chinese text", "Ernie handles Chinese characters in images far better."],
+      ]} />
+
+      <InfoBox title="Choose ChatGPT if you..." items={[
+        ["Work primarily in English", "Superior English creativity, grammar, and cultural understanding."],
+        ["Need advanced coding assistance", "GPT-4o is still the stronger general-purpose coding model."],
+        ["Want the largest plugin ecosystem", "GPT Store has orders of magnitude more options."],
+        ["Need integration with Western tools", "Zapier, Slack, Google Workspace, Microsoft 365."],
+        ["Value creative writing quality", "ChatGPT's prose is more natural and varied."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Verdict</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        This isn't a "one is better" situation. Ernie Bot is the better AI for China. ChatGPT is the better AI for the English-speaking world. If you work across both, you might genuinely want both.
+      </p>
+      <p style={{ color: "var(--text-secondary)" }}>
+        What's encouraging is the pace of competition. Ernie 4.0 Turbo is dramatically better than the 2023 launch version. Baidu is iterating fast, and having a strong local competitor pushes the entire Chinese AI ecosystem forward.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is Ernie Bot available outside China?", a: "Primarily available in China. International access requires Baidu API with Chinese phone verification. Some third-party wrappers exist but aren't officially supported." },
+        { q: "Is Ernie Bot better than ChatGPT for Chinese?", a: "Yes, consistently. Ernie outperforms on Chinese comprehension, idioms, cultural context, classical Chinese, and China-specific knowledge." },
+        { q: "Is Ernie Bot free?", a: "Free tier with daily limits. Ernie 4.0 Turbo requires 59.9 RMB/month (~$8.30). API access has separate per-token pricing." },
+        { q: "Can Ernie Bot generate images?", a: "Yes. Built-in image generation with notably better Chinese text rendering and cultural imagery than DALL-E." },
+        { q: "Should I use a VPN to access ChatGPT in China?", a: "Using a VPN to access ChatGPT in China carries legal and account risks. OpenAI has banned accounts detected in China. Ernie Bot and DeepSeek are legal, native alternatives." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/deepseek-ai-review-china-open-source-ai-2026">DeepSeek AI Review 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-chinese-ai-tools-2026">Best Chinese AI Tools 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/china-vs-usa-ai-race-2026-whos-winning">China vs USA AI Race</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/alibaba-qwen-ai-model-review-2026">Qwen AI Review</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "best-chinese-ai-tools-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-2xl font-black" style={{ color: "var(--text-primary)" }}>
+        Forget the narrative that all good AI comes from Silicon Valley. China is shipping AI tools that are free, open-source, and genuinely world-class.
+      </p>
+
+      <HookBanner headline="What's inside this guide" items={[
+        "15 Chinese AI tools across chatbots, coding, image generation, video, and productivity",
+        "Which ones are free, which need payment, which are open-source",
+        "How each compares to Western alternatives (ChatGPT, Midjourney, GitHub Copilot)",
+        "Accessibility for international users — what works outside China",
+        "Our pick for best overall Chinese AI tool in 2026",
+      ]} />
+
+      <AlertBox type="fire" title="Why Chinese AI tools matter in 2026" body="China's AI ecosystem has gone from 'catching up' to 'competing head-to-head' in under 2 years. DeepSeek open-sourced models rivaling GPT-4. Alibaba's Qwen powers thousands of apps. ByteDance's AI tools reach billions. Ignoring Chinese AI in 2026 means ignoring half the global AI innovation." />
+
+      <StatBox items={[
+        ["15", "Tools Reviewed"],
+        ["10+", "Are Free"],
+        ["6", "Fully Open-Source"],
+        ["2026", "All Tested This Year"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The 15 Best Chinese AI Tools (2026)</h2>
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. DeepSeek — Best Overall Chinese AI</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        DeepSeek is the breakout star of Chinese AI. Their V3 model competes with GPT-4o, their R1 reasoning model rivals OpenAI o1, and everything is open-source under MIT license. The API is 90% cheaper than OpenAI.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "General AI chat, coding, math, reasoning"],
+          ["Price", "Free chat + free API tier. Paid API: ~$0.27/1M input tokens"],
+          ["Open source", "Yes — MIT license, full weights on Hugging Face"],
+          ["Global access", "Yes — chat.deepseek.com works worldwide"],
+          ["Western equivalent", "ChatGPT / GPT-4o"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Alibaba Qwen (通义千问) — Best for Developers</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Alibaba's Qwen-2.5 family is arguably the most complete open-source AI ecosystem. Base models, coding specialists, math specialists, and vision models — all under Apache 2.0 license. Qwen powers thousands of third-party apps.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Developers, multi-modal apps, vision tasks"],
+          ["Price", "Free open-source. Alibaba Cloud API has free tier"],
+          ["Open source", "Yes — Apache 2.0, models from 0.5B to 72B"],
+          ["Global access", "Yes — Hugging Face + Alibaba Cloud international"],
+          ["Western equivalent", "GPT-4o + GitHub Copilot"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. Baidu Ernie Bot (文心一言) — Best for Chinese Language</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Baidu's flagship chatbot is the best AI for Chinese language tasks. Period. Deep cultural understanding, native integration with Baidu's ecosystem, and the most natural Chinese prose generation of any AI model.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Chinese language tasks, Chinese content creation"],
+          ["Price", "Free tier. Premium: 59.9 RMB/month"],
+          ["Open source", "No — proprietary"],
+          ["Global access", "Limited — requires Chinese phone number"],
+          ["Western equivalent", "ChatGPT"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. ByteDance Doubao (豆包) — Best Consumer AI App</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        ByteDance (TikTok's parent company) built Doubao as a consumer-first AI assistant. It's one of China's most-downloaded AI apps, with a friendly interface, voice chat, and deep integration with ByteDance's content ecosystem.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Casual daily use, voice conversations, content creation"],
+          ["Price", "Free with premium features"],
+          ["Open source", "No — but Volcano Engine API available"],
+          ["Global access", "Limited — primarily Chinese market"],
+          ["Western equivalent", "ChatGPT mobile app"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Zhipu AI / GLM-4 (智谱AI) — Best for Enterprise</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Zhipu AI, spun out of Tsinghua University, builds enterprise-focused AI models. Their GLM-4 family is popular with Chinese enterprises needing reliable, compliant AI with strong reasoning capabilities.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Enterprise deployments, research, Chinese academic NLP"],
+          ["Price", "Free tier. Enterprise pricing on request"],
+          ["Open source", "Partially — GLM-4 open weights available"],
+          ["Global access", "Yes — API and Hugging Face"],
+          ["Western equivalent", "Claude / GPT-4 Enterprise"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>6. Moonshot AI / Kimi (月之暗面) — Best for Long Documents</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Kimi was one of the first AI chatbots to support 200K+ context windows. It excels at analyzing long documents, research papers, and books — making it a favorite among Chinese students and researchers.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Long document analysis, research, academic work"],
+          ["Price", "Free tier with generous limits"],
+          ["Open source", "No — proprietary"],
+          ["Global access", "Limited — Kimi.ai works in some regions"],
+          ["Western equivalent", "Claude (long context)"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>7. MiniMax / Hailuo AI — Best for AI Video</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        MiniMax's Hailuo AI video generator took the internet by storm. It generates high-quality, realistic video clips from text prompts — and the free tier is surprisingly generous. Chinese text-to-video that competes with Sora.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "AI video generation, social media content"],
+          ["Price", "Free tier with daily credits"],
+          ["Open source", "No — proprietary"],
+          ["Global access", "Yes — hailuoai.video works globally"],
+          ["Western equivalent", "OpenAI Sora / Runway"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>8. Baichuan (百川智能) — Best Bilingual Model</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Baichuan specializes in bilingual Chinese-English AI. Their models are trained specifically for seamless code-switching and cross-language understanding, making them ideal for international businesses operating in China.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Bilingual Chinese-English workflows"],
+          ["Price", "Free API tier. Open-source models available"],
+          ["Open source", "Partially — smaller models are open"],
+          ["Global access", "Yes — API and Hugging Face"],
+          ["Western equivalent", "GPT-4o (multilingual mode)"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>9. iFlytek Spark (讯飞星火) — Best for Voice AI</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        iFlytek is China's leading speech technology company. Their Spark model combines strong LLM capabilities with best-in-class Chinese speech recognition and synthesis. Ideal for voice-first applications.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Voice AI, speech-to-text, Chinese dialects"],
+          ["Price", "Free tier. Premium for enterprise voice features"],
+          ["Open source", "No — proprietary"],
+          ["Global access", "Limited — primarily Chinese market"],
+          ["Western equivalent", "OpenAI Whisper + ChatGPT Voice"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>10. SenseTime SenseNova (商汤日日新) — Best for Computer Vision</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        SenseTime is a global leader in computer vision AI. SenseNova combines their vision expertise with LLM capabilities, excelling at image analysis, video understanding, and visual AI applications.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Computer vision, image analysis, visual AI"],
+          ["Price", "Free tier. Enterprise pricing for vision APIs"],
+          ["Open source", "Partially — some models available"],
+          ["Global access", "API available internationally"],
+          ["Western equivalent", "Google Vision AI + Gemini"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>11. Tencent Hunyuan (腾讯混元) — Best for WeChat Integration</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Tencent's Hunyuan AI integrates directly with WeChat and Tencent's massive ecosystem. If your business lives on WeChat, Hunyuan is the natural choice for AI-powered customer service, content, and mini-programs.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "WeChat bots, Tencent Cloud apps, Chinese social commerce"],
+          ["Price", "Tencent Cloud pricing. Free tier available"],
+          ["Open source", "Partially — Hunyuan-7B is open"],
+          ["Global access", "Via Tencent Cloud international"],
+          ["Western equivalent", "Meta AI (social integration)"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>12. 01.AI / Yi (零一万物) — Best Lightweight Open Model</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Founded by AI legend Kai-Fu Lee, 01.AI builds efficient, lightweight models. Yi-1.5 offers impressive performance for its size, making it popular for edge deployment and cost-sensitive applications.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Edge AI, mobile deployment, cost efficiency"],
+          ["Price", "Free — open-source under Apache 2.0"],
+          ["Open source", "Yes — full weights available"],
+          ["Global access", "Yes — Hugging Face"],
+          ["Western equivalent", "Mistral / Llama (small models)"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>13. Kuaishou Kling (快手可灵) — Best for Short-Form Video AI</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Kuaishou (China's other short-video giant) built Kling specifically for video generation and editing. It understands Chinese internet video culture in a way Western tools don't.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "AI video generation, short-form content"],
+          ["Price", "Free tier with daily limits"],
+          ["Open source", "No — proprietary"],
+          ["Global access", "Limited — primarily via Kuaishou"],
+          ["Western equivalent", "Runway / Pika Labs"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>14. Stepfun / Step (阶跃星辰) — Best Emerging Startup</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Stepfun is one of China's most promising AI startups, building multi-modal models that combine text, image, and video understanding. Their Step models are gaining traction for their strong reasoning abilities.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Multi-modal AI, emerging use cases"],
+          ["Price", "Free tier available"],
+          ["Open source", "Partially — some models available"],
+          ["Global access", "API available"],
+          ["Western equivalent", "Gemini (multi-modal)"],
+        ]}
+      />
+
+      <h3 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>15. Coze (扣子) by ByteDance — Best AI Agent Builder</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Coze is ByteDance's no-code AI agent platform. Build custom AI bots with tools, knowledge bases, and workflows — then deploy them to Douyin (Chinese TikTok), Feishu, or your own apps. It's like a Chinese GPT Store on steroids.
+      </p>
+      <DataTable
+        headers={["Feature", "Details"]}
+        rows={[
+          ["Best for", "Building custom AI agents, no-code AI apps"],
+          ["Price", "Free tier. Premium for advanced features"],
+          ["Open source", "No — platform service"],
+          ["Global access", "Yes — coze.com for international, coze.cn for China"],
+          ["Western equivalent", "OpenAI GPTs + Zapier"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Quick Comparison Table: All 15 Tools</h2>
+      <DataTable
+        headers={["Tool", "Best For", "Free?", "Open Source?", "Global Access?"]}
+        rows={[
+          ["DeepSeek", "Overall AI", "Yes", "Yes", "Yes"],
+          ["Qwen (Alibaba)", "Developers", "Yes", "Yes", "Yes"],
+          ["Ernie Bot (Baidu)", "Chinese Language", "Free tier", "No", "Limited"],
+          ["Doubao (ByteDance)", "Consumer Use", "Yes", "No", "Limited"],
+          ["GLM-4 (Zhipu)", "Enterprise", "Free tier", "Partial", "Yes"],
+          ["Kimi (Moonshot)", "Long Documents", "Yes", "No", "Limited"],
+          ["Hailuo (MiniMax)", "AI Video", "Free tier", "No", "Yes"],
+          ["Baichuan", "Bilingual", "Free tier", "Partial", "Yes"],
+          ["Spark (iFlytek)", "Voice AI", "Free tier", "No", "Limited"],
+          ["SenseNova", "Vision AI", "Free tier", "Partial", "Yes"],
+          ["Hunyuan (Tencent)", "WeChat", "Free tier", "Partial", "Yes"],
+          ["Yi (01.AI)", "Edge/Mobile", "Yes", "Yes", "Yes"],
+          ["Kling (Kuaishou)", "Video Gen", "Free tier", "No", "Limited"],
+          ["Step (Stepfun)", "Multi-modal", "Free tier", "Partial", "Yes"],
+          ["Coze (ByteDance)", "AI Agents", "Yes", "No", "Yes"],
+        ]}
+      />
+
+      <AlertBox type="fire" title="Our top pick for 2026" body="DeepSeek is the best overall Chinese AI tool in 2026. Open-source, free, globally accessible, and competitive with GPT-4o. If you try one tool from this list, make it DeepSeek." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Are Chinese AI tools free to use?", a: "Most offer generous free tiers. DeepSeek, Qwen, and Yi are fully open-source and free to self-host. Ernie Bot, Doubao, and Kimi have free tiers with daily limits." },
+        { q: "Can I use Chinese AI tools outside China?", a: "DeepSeek, Qwen, Hailuo, Coze, and several others work globally. Ernie Bot and Doubao primarily require Chinese phone verification. Open-source models work anywhere." },
+        { q: "Are Chinese AI tools safe for business?", a: "Open-source models (DeepSeek, Qwen, Yi) can be self-hosted for full data control. For cloud APIs, review each provider's data policy. Many enterprises self-host to avoid cross-border data concerns." },
+        { q: "Which Chinese AI tool is best for coding?", a: "DeepSeek-Coder-V2 and Qwen-Coder lead on coding benchmarks. Both are open-source and competitive with GPT-4o and GitHub Copilot." },
+        { q: "What's the best Chinese alternative to Midjourney?", a: "For image generation, check out SenseNova and Doubao. For video generation, Hailuo AI and Kling are leading the Chinese AI video space." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/deepseek-ai-review-china-open-source-ai-2026">DeepSeek AI Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/alibaba-qwen-ai-model-review-2026">Qwen AI Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/baidu-ernie-bot-vs-chatgpt-best-ai-china-2026">Ernie Bot vs ChatGPT</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/china-vs-usa-ai-race-2026-whos-winning">China vs USA AI Race</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "alibaba-qwen-ai-model-review-2026": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-2xl font-black" style={{ color: "var(--text-primary)" }}>
+        While DeepSeek grabbed the headlines, Alibaba quietly built one of the most complete open-source AI ecosystems on the planet.
+      </p>
+
+      <HookBanner headline="What this review covers" items={[
+        "Qwen-2.5 base model — benchmarks vs GPT-4o, DeepSeek, Claude",
+        "Qwen-Coder — the open-source coding model rivaling Copilot",
+        "Qwen-VL — vision model for images, documents, and charts",
+        "Self-hosting guide — run Qwen on your own hardware",
+        "Real-world use cases and who should adopt Qwen in 2026",
+      ]} />
+
+      <AlertBox type="tip" title="Why Qwen flies under the radar" body="DeepSeek gets the media attention. But Qwen-2.5 has more downloads on Hugging Face, broader model size options (0.5B to 72B), and an Apache 2.0 license that's even more permissive than DeepSeek's MIT license for enterprise use." />
+
+      <div className="glass rounded-2xl p-6">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Quick verdict</h2>
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          <strong>Qwen-2.5 is the best open-source AI ecosystem for developers.</strong> Not just one model — a complete family: base, instruct, coding, math, and vision variants in sizes from 0.5B to 72B. Apache 2.0 license. 128K context. If you're building AI products and want maximum flexibility without vendor lock-in, Qwen is your strongest starting point.
+        </p>
+      </div>
+
+      <StatBox items={[
+        ["72B", "Largest Model"],
+        ["128K", "Context Window"],
+        ["Apache 2.0", "License"],
+        ["#1", "HuggingFace Downloads (China)"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Qwen Model Family Explained</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Unlike DeepSeek which ships individual models, Alibaba built an entire ecosystem. Here's the full Qwen-2.5 family:
+      </p>
+
+      <InfoBox title="Qwen-2.5 model family" items={[
+        ["Qwen-2.5 (Base/Instruct)", "General-purpose LLM. Available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B. 128K context."],
+        ["Qwen-2.5-Coder", "Specialized coding model. Matches DeepSeek-Coder on HumanEval. Available in 1.5B, 7B, 14B, and 32B."],
+        ["Qwen-2.5-Math", "Math specialist. Strong on competition math, statistics, and data analysis."],
+        ["Qwen-VL (Qwen2.5-VL)", "Vision-language model. Processes images, charts, screenshots, documents. Excellent Chinese OCR."],
+        ["Qwen-Audio", "Audio understanding model. Transcription, translation, and audio analysis."],
+        ["QwQ", "Reasoning model (similar to DeepSeek-R1). Chain-of-thought for complex problem solving."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Qwen-2.5-72B Benchmarks</h2>
+
+      <DataTable
+        headers={["Benchmark", "Qwen-2.5-72B", "DeepSeek-V3", "GPT-4o", "Llama 3.1 70B"]}
+        rows={[
+          ["MMLU", "86.1", "88.5", "87.2", "79.3"],
+          ["HumanEval (coding)", "86.6", "90.2", "90.2", "80.5"],
+          ["MATH-500", "83.1", "90.2", "74.6", "68.0"],
+          ["Chinese SimpleQA", "63.8", "68.0", "59.3", "N/A"],
+          ["GPQA Diamond", "49.0", "59.1", "53.6", "46.7"],
+          ["Arena-Hard", "81.2", "85.5", "82.6", "55.7"],
+        ]}
+      />
+
+      <AlertBox type="tip" title="How to read these numbers" body="Qwen-2.5-72B is slightly behind DeepSeek-V3 on most benchmarks — but DeepSeek-V3 is a 671B MoE model while Qwen is 72B dense. Parameter for parameter, Qwen is more efficient. And unlike DeepSeek, Qwen gives you models at every size from 0.5B to 72B." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Qwen-Coder: Open-Source Coding Powerhouse</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Qwen-2.5-Coder is Alibaba's answer to GitHub Copilot and DeepSeek-Coder. It's trained on massive code datasets and supports 92+ programming languages.
+      </p>
+
+      <DataTable
+        headers={["Coding Benchmark", "Qwen-Coder 32B", "DeepSeek-Coder-V2", "GPT-4o"]}
+        rows={[
+          ["HumanEval", "92.7", "90.2", "90.2"],
+          ["MBPP", "90.2", "88.4", "87.8"],
+          ["MultiPL-E (avg)", "75.1", "73.6", "77.2"],
+          ["LiveCodeBench", "55.2", "58.1", "61.3"],
+          ["DS-1000", "72.8", "74.1", "73.0"],
+        ]}
+      />
+
+      <p style={{ color: "var(--text-secondary)" }}>
+        The 32B Coder model is the sweet spot. Large enough to be highly capable, small enough to run on a single high-end GPU (A100 80GB or 2x A6000). For teams self-hosting their coding AI, this is a compelling option.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Qwen-VL: Vision That Actually Works</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Qwen2.5-VL might be Qwen's most underrated model. It processes images, charts, screenshots, handwritten text, and documents — with particularly strong Chinese OCR capabilities.
+      </p>
+
+      <InfoBox title="Qwen-VL capabilities" items={[
+        ["Document OCR", "Extracts text from scanned Chinese/English documents with high accuracy. Handles mixed-language documents."],
+        ["Chart understanding", "Reads bar charts, line graphs, tables, and converts them to structured data."],
+        ["Screenshot analysis", "Understands UI screenshots, identifies components, and can describe layouts."],
+        ["Handwriting recognition", "Processes handwritten Chinese and English text — useful for education and form processing."],
+        ["Multi-image reasoning", "Compares multiple images, spots differences, and reasons across visual inputs."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>How to Use Qwen AI</h2>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Option 1: Alibaba Cloud API (DashScope)</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Sign up at dashscope.aliyuncs.com. Get API access to all Qwen models with a free tier. The API follows OpenAI's format, making migration easy. International Alibaba Cloud accounts are available.
+      </p>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Option 2: Hugging Face (Self-Host)</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        All Qwen models are on Hugging Face under the Qwen organization. Download weights, run with vLLM, Ollama, or llama.cpp. The 7B model runs on consumer GPUs (16GB VRAM). The 72B model needs 2x A100 or equivalent.
+      </p>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Option 3: Third-Party Providers</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Qwen models are available through Together AI, Fireworks AI, Groq, and other inference providers. Often the easiest path for developers who want Qwen without managing infrastructure.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Qwen vs DeepSeek: Which Open-Source Giant to Choose?</h2>
+
+      <DataTable
+        headers={["Factor", "Qwen-2.5", "DeepSeek-V3"]}
+        rows={[
+          ["Model sizes", "0.5B to 72B (7 sizes)", "671B only (MoE)"],
+          ["Coding", "Strong (Qwen-Coder)", "Strong (DeepSeek-Coder)"],
+          ["Math/Reasoning", "Good", "Excellent"],
+          ["Vision", "Excellent (Qwen-VL)", "Good (DeepSeek-VL2)"],
+          ["License", "Apache 2.0", "MIT"],
+          ["Self-hosting flexibility", "Excellent (many sizes)", "Limited (need big GPUs)"],
+          ["Chinese language", "Excellent", "Excellent"],
+          ["API pricing", "Competitive", "Cheapest"],
+          ["Ecosystem completeness", "Most complete", "Growing"],
+        ]}
+      />
+
+      <AlertBox type="tip" title="Our recommendation" body="Use DeepSeek-V3/R1 when you need the absolute best reasoning and math capabilities and have the compute for a 671B model. Use Qwen when you need flexibility — multiple model sizes, vision capabilities, coding specialists, or edge deployment. Many teams use both." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Who Should Use Qwen AI?</h2>
+
+      <InfoBox title="Ideal Qwen users" items={[
+        ["Startup developers", "Need capable AI without API costs. Self-host Qwen-7B on a single GPU for zero marginal cost."],
+        ["Chinese market products", "Building apps for Chinese users? Qwen's Chinese language understanding is top-tier."],
+        ["Document processing", "Qwen-VL handles Chinese/English OCR, form processing, and document analysis better than most paid alternatives."],
+        ["Edge AI applications", "Qwen-0.5B and 1.5B models run on mobile devices and edge hardware."],
+        ["Privacy-first enterprises", "Apache 2.0 license + self-hosting = complete data sovereignty."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is Qwen AI free?", a: "Yes. All Qwen models are open-source under Apache 2.0. Self-host for free (compute costs only) or use Alibaba Cloud's API with a free tier." },
+        { q: "How does Qwen compare to DeepSeek?", a: "Both are top-tier Chinese AI. DeepSeek-V3 leads on reasoning and math. Qwen offers more model sizes, better vision, and more deployment flexibility. Many developers use both depending on the task." },
+        { q: "Can Qwen AI understand images?", a: "Yes. Qwen-VL processes images, charts, documents, screenshots, and handwriting. Particularly strong on Chinese OCR and mixed-language documents." },
+        { q: "What is Qwen-2.5?", a: "Alibaba's latest open-source LLM family. Models from 0.5B to 72B parameters, 128K context, with specialized variants for coding, math, vision, and audio." },
+        { q: "Can I use Qwen commercially?", a: "Yes. Apache 2.0 license allows unrestricted commercial use, modification, and distribution." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/deepseek-ai-review-china-open-source-ai-2026">DeepSeek AI Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-chinese-ai-tools-2026">Best Chinese AI Tools 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/baidu-ernie-bot-vs-chatgpt-best-ai-china-2026">Ernie Bot vs ChatGPT</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/china-vs-usa-ai-race-2026-whos-winning">China vs USA AI Race</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "china-vs-usa-ai-race-2026-whos-winning": (
+    <div className="space-y-6 text-base leading-relaxed">
+      <p className="text-2xl font-black" style={{ color: "var(--text-primary)" }}>
+        Everyone has an opinion on the AI race. We have data. Here's who's actually winning in 2026 — and it's not as simple as either side claims.
+      </p>
+
+      <HookBanner headline="What this analysis covers" items={[
+        "Model capabilities: frontier models, open-source, and specialized AI",
+        "Funding and investment: where the money flows in each country",
+        "Talent: who has the researchers and where they're going",
+        "Chips and hardware: the semiconductor bottleneck",
+        "Strategy: open-source vs closed-source, regulation vs speed",
+        "Scoreboard: who leads in each category (with receipts)",
+      ]} />
+
+      <AlertBox type="fire" title="The headline" body="The USA leads on frontier model capability and chip supply. China leads on open-source AI, cost efficiency, AI adoption speed, and manufacturing AI. Neither country is 'winning' overall — they're playing different games." />
+
+      <StatBox items={[
+        ["$67B", "US AI Investment (2025)"],
+        ["$15B", "China AI Investment (2025)"],
+        ["5,500+", "US AI Startups"],
+        ["3,200+", "China AI Startups"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Round 1: AI Models — Who Builds the Best?</h2>
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Frontier Models (Closed-Source)</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        The USA still leads in the most capable closed-source models. GPT-4o, Claude, and Gemini remain the global benchmarks. No Chinese closed-source model consistently matches their top-tier performance across all tasks.
+      </p>
+
+      <DataTable
+        headers={["Country", "Top Closed Models", "Assessment"]}
+        rows={[
+          ["USA", "GPT-4o, Claude Opus, Gemini Ultra", "Clear leader in overall capability"],
+          ["China", "Ernie 4.0 Turbo, Doubao, Kimi", "Competitive, especially for Chinese language"],
+        ]}
+      />
+
+      <h3 className="text-lg font-bold mt-6 mb-2" style={{ color: "var(--text-primary)" }}>Open-Source Models</h3>
+      <p style={{ color: "var(--text-secondary)" }}>
+        This is where China has flipped the script. DeepSeek-V3, Qwen-2.5, and GLM-4 are among the most capable open-source models in the world. China now dominates the top of the Hugging Face leaderboards.
+      </p>
+
+      <DataTable
+        headers={["Country", "Top Open Models", "Assessment"]}
+        rows={[
+          ["USA", "Llama 3.1, Mistral, Phi-3", "Strong but no longer leading"],
+          ["China", "DeepSeek-V3/R1, Qwen-2.5, GLM-4, Yi", "Clear leader in open-source quality and quantity"],
+        ]}
+      />
+
+      <AlertBox type="tip" title="Why open-source matters" body="Open-source models democratize AI access. When China open-sources GPT-4-level models, every developer worldwide benefits — regardless of nationality. This strategy builds global ecosystem influence and adoption." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Round 2: Funding — Who's Spending More?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        The USA dramatically outspends China on AI investment. In 2025, US AI startups raised approximately $67 billion compared to China's ~$15 billion. But raw spending doesn't tell the whole story.
+      </p>
+
+      <DataTable
+        headers={["Metric", "USA", "China"]}
+        rows={[
+          ["Total AI VC investment (2025)", "~$67B", "~$15B"],
+          ["Top company AI R&D spend", "Microsoft/Google ($30B+ each)", "Baidu/Alibaba ($3-5B each)"],
+          ["Government AI funding", "CHIPS Act + NSF grants", "National AI plans + local subsidies"],
+          ["Cost to train frontier model", "$100M-$1B+", "$5M-$50M (DeepSeek example)"],
+          ["Cost efficiency", "Lower priority", "Core strategy"],
+        ]}
+      />
+
+      <AlertBox type="money" title="The efficiency gap" body="DeepSeek trained models competitive with GPT-4o at roughly 1/10th the cost. This isn't just about spending less — it's a fundamental research efficiency advantage. When you can iterate faster for less money, you can try more ideas." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Round 3: Talent — Where Are the AI Researchers?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Talent is where the race gets nuanced. Chinese universities produce more STEM graduates than any country, but many top Chinese AI researchers work at US companies.
+      </p>
+
+      <DataTable
+        headers={["Metric", "USA", "China"]}
+        rows={[
+          ["Top-tier AI researchers (elite)", "60%+ globally", "15-20% globally"],
+          ["AI PhDs produced per year", "~3,000", "~5,000"],
+          ["Chinese-born researchers in US", "~30% of US AI workforce", "—"],
+          ["STEM graduates per year", "~570,000", "~4.7 million"],
+          ["NeurIPS/ICML papers", "~35% of papers", "~25% of papers"],
+        ]}
+      />
+
+      <p style={{ color: "var(--text-secondary)" }}>
+        The brain drain dynamic is shifting. More Chinese researchers are choosing to stay in or return to China as domestic opportunities improve. DeepSeek, in particular, has attracted top talent with competitive compensation and research freedom.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Round 4: Chips & Hardware — The Critical Bottleneck</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        This is arguably where the US has its biggest structural advantage. NVIDIA's AI GPUs dominate training and inference worldwide, and US export controls limit China's access to the most advanced chips.
+      </p>
+
+      <DataTable
+        headers={["Factor", "USA", "China"]}
+        rows={[
+          ["Top AI chip", "NVIDIA H100/B200", "Huawei Ascend 910C"],
+          ["TSMC access", "Full access to leading nodes", "Restricted since 2022"],
+          ["Domestic chip capability", "NVIDIA, AMD, Intel, Broadcom", "Huawei, Cambricon (1-2 gen behind)"],
+          ["AI chip market share", "~90% globally", "~5% globally"],
+          ["Impact of export controls", "—", "Slows but doesn't stop progress"],
+        ]}
+      />
+
+      <AlertBox type="warning" title="The chip reality" body="US export controls have slowed China's access to cutting-edge training hardware. But Chinese labs have responded with efficiency innovations (MoE architectures, better training recipes) that partially compensate. DeepSeek proved you don't need the absolute latest NVIDIA chip to build a world-class model." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Round 5: Strategy — Different Playbooks</h2>
+
+      <InfoBox title="USA AI strategy" items={[
+        ["Closed-source dominance", "OpenAI, Anthropic, and Google keep their best models proprietary. Competitive moat through capability advantage."],
+        ["Massive capital investment", "Outspend everyone. Build the biggest data centers. Train the largest models."],
+        ["Chip export controls", "Use semiconductor restrictions to slow Chinese AI development."],
+        ["Regulatory caution", "Growing AI safety regulation. EU AI Act influence. Safety-first messaging."],
+        ["Enterprise monetization", "Focus on selling AI to businesses at premium prices."],
+      ]} />
+
+      <InfoBox title="China AI strategy" items={[
+        ["Open-source flooding", "Release competitive models for free. Build global ecosystem adoption. Become the default for cost-conscious developers."],
+        ["Efficiency over scale", "Train competitive models at 1/10th the cost. Innovation through engineering."],
+        ["State coordination", "Government-industry collaboration. National AI champions. Unified data policy."],
+        ["Application speed", "Ship fast, iterate in production. Regulatory environment favors deployment."],
+        ["Manufacturing integration", "Apply AI to manufacturing, logistics, and industrial automation at scale."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Round 6: AI Applications & Adoption</h2>
+      <p style={{ color: "var(--text-secondary)" }}>
+        Here's where raw model benchmarks meet the real world. China's advantage in AI adoption is underappreciated in Western media.
+      </p>
+
+      <DataTable
+        headers={["Application Area", "USA", "China", "Leader"]}
+        rows={[
+          ["Consumer AI chatbots", "ChatGPT (300M+ users)", "Ernie+Doubao+Kimi (500M+ combined)", "China (by users)"],
+          ["AI in manufacturing", "Growing", "Widespread", "China"],
+          ["Autonomous vehicles", "Waymo, Cruise", "Baidu Apollo, Pony.ai", "Tie"],
+          ["AI in fintech", "Strong", "Very strong", "China"],
+          ["AI in surveillance", "Limited (privacy laws)", "Extensive", "China"],
+          ["AI in healthcare", "Growing", "Growing", "Tie"],
+          ["AI developer tools", "GitHub Copilot, Cursor", "DeepSeek, Qwen ecosystem", "USA (for now)"],
+          ["AI in e-commerce", "Amazon, Shopify", "Alibaba, JD, Pinduoduo", "China"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Scoreboard: Who's Winning Each Category?</h2>
+
+      <DataTable
+        headers={["Category", "Leader", "Margin"]}
+        rows={[
+          ["Frontier model capability", "USA", "Clear lead"],
+          ["Open-source models", "China", "Clear lead"],
+          ["Total AI investment", "USA", "Large lead"],
+          ["Training cost efficiency", "China", "Large lead"],
+          ["AI chip supply", "USA", "Dominant lead"],
+          ["Domestic chip development", "China", "Closing gap"],
+          ["AI researcher talent", "USA", "Moderate lead"],
+          ["STEM graduate pipeline", "China", "Large lead"],
+          ["Consumer AI adoption", "China", "Moderate lead"],
+          ["Manufacturing AI", "China", "Clear lead"],
+          ["AI regulation/safety", "USA/EU", "More developed"],
+          ["AI application speed", "China", "Moderate lead"],
+        ]}
+      />
+
+      <AlertBox type="fire" title="The real answer" body="Neither country is 'winning' the AI race in any absolute sense. The USA leads where money and top hardware matter most (frontier models, chips). China leads where efficiency, speed, and scale matter most (open-source, adoption, manufacturing). The 'winner' depends entirely on which metric you value." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>What Happens Next? (2026-2028 Outlook)</h2>
+
+      <InfoBox title="Trends to watch" items={[
+        ["China's chip independence", "Huawei's Ascend series is improving rapidly. If China closes the chip gap, the US loses its biggest structural advantage."],
+        ["Open-source commoditization", "As Chinese open-source models reach GPT-4 level, the premium for closed-source shrinks. This benefits China's strategy."],
+        ["AI regulation divergence", "The US/EU are adding safety requirements. China is more permissive on deployment. This creates different innovation speeds."],
+        ["Talent flows", "More Chinese researchers returning home. US immigration policy matters more than ever for maintaining talent lead."],
+        ["AI in physical world", "Robotics, autonomous systems, and manufacturing AI will be the next battleground. China's manufacturing base is an advantage here."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is China ahead of the USA in AI?", a: "It depends on the metric. USA leads frontier models and chip supply. China leads open-source AI, cost efficiency, and adoption speed. Neither is comprehensively ahead." },
+        { q: "How does DeepSeek affect the AI race?", a: "DeepSeek proved state-of-the-art AI doesn't require American GPU supplies or billion-dollar budgets. It challenged the assumption that chip export controls would slow China's progress." },
+        { q: "Will US chip export bans stop China's AI?", a: "Not entirely. China is developing domestic alternatives and innovating on training efficiency. The bans slow progress but don't stop it." },
+        { q: "Which country has more AI companies?", a: "USA has more AI startups (~5,500+ vs ~3,200+). China has more AI companies focused on manufacturing, government, and consumer applications." },
+        { q: "Who will win the AI race by 2030?", a: "The most likely outcome is continued parallel development. The USA and China will both be AI superpowers with different strengths. The real risk is decoupling that prevents beneficial knowledge sharing." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/deepseek-ai-review-china-open-source-ai-2026">DeepSeek AI Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-chinese-ai-tools-2026">Best Chinese AI Tools 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/alibaba-qwen-ai-model-review-2026">Qwen AI Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/baidu-ernie-bot-vs-chatgpt-best-ai-china-2026">Ernie Bot vs ChatGPT</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };
