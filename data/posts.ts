@@ -23,6 +23,298 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "what-is-vibe-coding",
+    title: "What Is Vibe Coding? How People With Zero Coding Skills Ship Apps (and Get Paid) in 2026",
+    metaTitle: "What Is Vibe Coding? 2026 Guide + How to Profit",
+    primaryKeyword: "what is vibe coding",
+    metaDescription:
+      "Vibe coding explained for 2026: what it is, why 92% of developers use AI coding daily, the real risks, and 5 ways non-coders are making money with it.",
+    excerpt:
+      "92% of US developers now use AI coding tools daily, and 63% of vibe coders aren't developers at all. Here's what vibe coding actually is, where it breaks, and how complete beginners are shipping paid apps with it.",
+    category: "AI & Tech",
+    readTime: "12 min",
+    date: "Aug 5, 2026",
+    image: "/images/what-is-vibe-coding.png",
+    trending: true,
+    featured: true,
+    tags: [
+      "Vibe Coding",
+      "AI Coding",
+      "No Code",
+      "Cursor",
+      "Claude Code",
+      "AI Development",
+      "Make Money with AI",
+      "AI Trends 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is vibe coding?",
+        answer:
+          "Vibe coding is building software by describing what you want in plain language and letting AI coding tools generate, run, and fix the code — with minimal manual review. The term was popularized by AI researcher Andrej Karpathy in early 2025 and became mainstream practice by 2026.",
+      },
+      {
+        question: "Can you vibe code with no programming experience?",
+        answer:
+          "Yes — around 63% of vibe coding tool users aren't professional developers. Beginners regularly ship working web apps, tools, and prototypes. The catch: without basic review habits, AI-generated code carries security and quality risks, so keep real user data and payments out of pure vibe-coded apps until they're checked.",
+      },
+      {
+        question: "Is vibe-coded software safe to use in production?",
+        answer:
+          "Be careful. Studies in 2026 found AI co-authored code contains about 1.7x more major issues than human-written code, and only 29% of developers say they trust AI output without review. Vibe coding is great for prototypes and internal tools; production apps still need testing and review.",
+      },
+      {
+        question: "How do people make money with vibe coding?",
+        answer:
+          "The main paths in 2026: building micro SaaS tools, selling custom internal tools to small businesses, freelance rapid prototyping, creating and selling website templates, and building free tools that earn via ads and affiliate revenue.",
+      },
+    ],
+    seoKeywords: [
+      "vibe coding meaning",
+      "vibe coding for beginners",
+      "vibe coding tools 2026",
+      "make money vibe coding",
+      "vibe coding without experience",
+      "is vibe coding real programming",
+      "karpathy vibe coding",
+      "ai coding statistics 2026",
+    ],
+  },
+  {
+    slug: "best-ai-browsers-2026",
+    title: "Best AI Browsers in 2026: ChatGPT Atlas vs Perplexity Comet vs Dia (Honest Comparison)",
+    metaTitle: "Best AI Browsers 2026: Atlas vs Comet vs Dia",
+    primaryKeyword: "best ai browser",
+    metaDescription:
+      "Best AI browser 2026 compared: ChatGPT Atlas, Perplexity Comet, and Dia — features, platforms, pricing, agent modes, and the security risk nobody mentions.",
+    excerpt:
+      "AI browsers went mainstream in 2026 — your browser now reads pages, fills forms, and completes tasks for you. We compare ChatGPT Atlas, Perplexity Comet, and Dia, and cover the prompt-injection risk every user should know.",
+    category: "AI & Tech",
+    readTime: "12 min",
+    date: "Aug 5, 2026",
+    image: "/images/best-ai-browsers-2026.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Browsers",
+      "ChatGPT Atlas",
+      "Perplexity Comet",
+      "Dia Browser",
+      "Agentic AI",
+      "AI Tools 2026",
+      "Productivity",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best AI browser in 2026?",
+        answer:
+          "For most people, Perplexity Comet — it's free, fully agentic, and available on Mac, Windows, iOS, and Android. ChatGPT Atlas is the strongest for deep agent tasks tied to your ChatGPT history but is Mac-only, and its best agent features require a paid plan. Dia wins for lightweight everyday browsing with AI chat.",
+      },
+      {
+        question: "What does an AI browser actually do?",
+        answer:
+          "AI browsers embed an assistant that can read the page you're viewing, summarize and compare across tabs, remember context between sessions, and — in agent mode — take actions for you: filling forms, comparing products, booking reservations, and completing multi-step workflows.",
+      },
+      {
+        question: "Are AI browsers safe?",
+        answer:
+          "There's a real risk called prompt injection: malicious text hidden in a webpage can trick the browser's AI agent into unintended actions. Security researchers confirmed in 2026 that this can't be fully patched in Atlas, Comet, or Dia — so don't let agent mode run unattended with access to logins, email, or payments.",
+      },
+      {
+        question: "Is ChatGPT Atlas available on Windows?",
+        answer:
+          "As of mid-2026, ChatGPT Atlas is macOS-only. Windows users wanting a fully agentic AI browser should look at Perplexity Comet, which is free across Mac, Windows, iOS, and Android.",
+      },
+    ],
+    seoKeywords: [
+      "ai browser comparison",
+      "chatgpt atlas review",
+      "perplexity comet review",
+      "dia browser review",
+      "atlas vs comet",
+      "agentic browser",
+      "ai browser security",
+      "best browser 2026",
+    ],
+  },
+  {
+    slug: "make-money-ai-video-faceless-youtube",
+    title: "How to Make Money With AI Video in 2026 (Faceless YouTube, Sora 2 & Veo 3.1)",
+    metaTitle: "Make Money With AI Video 2026 (Faceless YouTube)",
+    primaryKeyword: "make money with ai video",
+    metaDescription:
+      "How to make money with AI video in 2026: faceless YouTube channels with Sora 2 & Veo 3.1, best niches by RPM, startup costs under $50/month, and monetization rules.",
+    excerpt:
+      "Faceless channels now make up close to 4 in 10 new creator monetization ventures. Here's the full 2026 playbook: which AI video tools to use, the niches that pay $12–20 RPM, real startup costs, and the YouTube rules that get AI channels demonetized.",
+    category: "Make Money",
+    readTime: "13 min",
+    date: "Aug 5, 2026",
+    image: "/images/make-money-ai-video-faceless-youtube.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Video",
+      "Faceless YouTube",
+      "Sora 2",
+      "Veo 3",
+      "Make Money Online",
+      "Passive Income",
+      "YouTube Automation",
+      "Side Hustle 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Can you really make money with AI-generated videos?",
+        answer:
+          "Yes — established faceless channels report $1,000–10,000+ per month from ads, affiliates, and sponsorships. But it's a content business, not a lottery: channels that win pick one niche, publish consistently for months, and edit AI output instead of uploading raw generations.",
+      },
+      {
+        question: "What are the best niches for faceless YouTube in 2026?",
+        answer:
+          "By ad rates, the top faceless niches are personal finance (around $12–20 RPM), business and investing ($10–18 RPM), and technology tutorials ($8–15 RPM). Lower-RPM niches like relaxation, facts, and stories can still win on volume.",
+      },
+      {
+        question: "How much does it cost to start an AI video channel?",
+        answer:
+          "Roughly $30–50/month gets a working stack: an AI video tool with Sora 2/Veo 3.1 access, an AI voice tool like ElevenLabs, and music licensing. You can start even cheaper using free tiers while you validate your niche.",
+      },
+      {
+        question: "Will YouTube demonetize AI-generated content?",
+        answer:
+          "YouTube monetizes AI-assisted content that adds original value — commentary, editing, structure — but targets 'inauthentic' mass-produced content and requires disclosure of realistic synthetic media. Raw text-to-video uploads with no transformation are the highest demonetization risk.",
+      },
+    ],
+    seoKeywords: [
+      "faceless youtube channel ai",
+      "sora 2 make money",
+      "veo 3 youtube",
+      "ai video side hustle",
+      "youtube automation 2026",
+      "faceless channel niches",
+      "ai video tools 2026",
+      "make money youtube without showing face",
+    ],
+  },
+  {
+    slug: "ai-resume-tips-beat-ats",
+    title: "How to Use AI to Write a Resume That Beats the ATS in 2026 (Without Getting Auto-Rejected)",
+    metaTitle: "AI Resume That Beats ATS in 2026 (Step-by-Step)",
+    primaryKeyword: "ai resume tips",
+    metaDescription:
+      "Use AI to write a resume that beats ATS filters in 2026 — keyword matching, formatting rules, ChatGPT prompts that work, and the AI-sounding phrases recruiters reject.",
+    excerpt:
+      "Most resumes are now screened by software before a human ever sees them — and most AI-written resumes sound identical. Here's how to use AI to pass the ATS and still sound like a person worth interviewing.",
+    category: "Make Money",
+    readTime: "11 min",
+    date: "Aug 5, 2026",
+    image: "/images/ai-resume-tips-beat-ats.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Resume",
+      "ATS Resume",
+      "Job Search 2026",
+      "ChatGPT Resume",
+      "Career",
+      "Resume Tips",
+      "Job Hunting",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Do employers really use ATS to reject resumes?",
+        answer:
+          "Yes — the large majority of mid-size and enterprise employers use applicant tracking systems to filter, rank, or search applications before recruiters review them. Resumes missing role keywords or using unparseable formatting often never reach human eyes.",
+      },
+      {
+        question: "Can recruiters tell if AI wrote my resume?",
+        answer:
+          "Often, yes. AI-written resumes share the same tells as AI articles: words like 'spearheaded', 'leveraged', and 'dynamic professional', plus generic bullet points with no numbers. Recruiters reading hundreds of resumes spot the pattern instantly — which is why editing the AI draft matters more than generating it.",
+      },
+      {
+        question: "What resume format works best for ATS in 2026?",
+        answer:
+          "Single column, standard section headings (Experience, Education, Skills), no tables, no text boxes, no graphics, standard fonts, and a .docx or text-based PDF. Fancy templates are the #1 cause of silent parsing failures.",
+      },
+      {
+        question: "How do I match my resume to a job description with AI?",
+        answer:
+          "Paste the job description and your resume into ChatGPT or Claude and ask it to list required skills and keywords you're missing, then add the ones that are true for you — in your own words, with a real metric per bullet. Never paste in keywords for skills you don't have.",
+      },
+    ],
+    seoKeywords: [
+      "ats resume 2026",
+      "chatgpt resume prompts",
+      "ai resume builder free",
+      "resume keywords ats",
+      "how to pass ats screening",
+      "ai resume mistakes",
+      "resume tips 2026",
+      "job search with ai",
+    ],
+  },
+  {
+    slug: "sell-notion-templates",
+    title: "How to Make and Sell Notion Templates in 2026 (Realistic Passive Income Guide)",
+    metaTitle: "Sell Notion Templates in 2026: Full Income Guide",
+    primaryKeyword: "sell notion templates",
+    metaDescription:
+      "How to sell Notion templates in 2026: what actually sells, pricing that works, where to list (Gumroad, Etsy, Notion Marketplace), and honest income expectations.",
+    excerpt:
+      "Notion templates are one of 2026's top digital product trends — near-zero cost to build, sold while you sleep. Here's what actually sells, real pricing data, the marketplaces that matter, and what 'passive' honestly looks like.",
+    category: "Make Money",
+    readTime: "12 min",
+    date: "Aug 5, 2026",
+    image: "/images/sell-notion-templates.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Notion Templates",
+      "Digital Products",
+      "Passive Income",
+      "Gumroad",
+      "Etsy",
+      "Make Money Online",
+      "Side Hustle 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Can you still make money selling Notion templates in 2026?",
+        answer:
+          "Yes, but the free-template era is over as a shortcut — buyers pay for solved problems, not aesthetics. Sellers earning consistently focus on niche workflows (freelancer CRM, content pipelines, small business ops) priced $19–79, marketed through content, not marketplace luck.",
+      },
+      {
+        question: "How much do Notion templates sell for?",
+        answer:
+          "Simple personal templates sell for $5–19, serious workflow systems for $29–79, and business/team operating systems for $99–249. Bundles and lifetime-update pricing raise average order value significantly.",
+      },
+      {
+        question: "Where is the best place to sell Notion templates?",
+        answer:
+          "Gumroad is the standard for creators (simple setup, keeps your audience), the official Notion Marketplace adds discovery and credibility, and Etsy reaches buyers who don't follow creator communities. Most successful sellers list on two or three simultaneously.",
+      },
+      {
+        question: "Is selling Notion templates really passive income?",
+        answer:
+          "Semi-passive. Building and listing is upfront work; sales continue without per-sale effort, but growth requires ongoing marketing — SEO content, social posts, or a small audience. Expect months of compounding, not overnight income.",
+      },
+    ],
+    seoKeywords: [
+      "notion templates passive income",
+      "make money notion",
+      "notion template ideas that sell",
+      "gumroad notion templates",
+      "digital products to sell 2026",
+      "notion marketplace selling",
+      "how to price notion templates",
+      "notion creator income",
+    ],
+  },
+  {
     slug: "ai-words-to-avoid",
     title: "50+ AI Words to Avoid in 2026 (These Instantly Expose ChatGPT Writing)",
     metaTitle: "50+ AI Words to Avoid in 2026 (Full List + Fixes)",

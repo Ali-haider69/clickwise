@@ -156,6 +156,550 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "what-is-vibe-coding": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Nearly half of all new code is now written by AI — and 63% of the people &quot;coding&quot; with these tools aren&apos;t developers at all. That&apos;s vibe coding, and it&apos;s quietly the biggest shift in who gets to build software.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        You describe the app you want in plain English. The AI writes it, runs it, hits an error, and fixes it — while you watch. You never read the code. Sounds irresponsible? Sometimes it is. It&apos;s also how thousands of non-programmers shipped real, paying products this year.
+      </p>
+
+      <HookBanner headline="What this guide covers" items={[
+        "What vibe coding actually means (and where the term came from)",
+        "The 2026 numbers: adoption, market size, and the trust gap",
+        "The tools people actually vibe code with",
+        "Where it breaks — the honest risk section",
+        "5 realistic ways non-coders are getting paid with it",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is vibe coding?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Vibe coding is building software by <strong>describing what you want in natural language and letting AI generate, run, and debug the code</strong> — with minimal manual review. AI researcher Andrej Karpathy coined the term in early 2025 (&quot;fully give in to the vibes... forget that the code even exists&quot;), and by 2026 it went from joke to standard practice.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/what-is-vibe-coding.png"
+        alt="What is vibe coding in 2026 — building software by describing it in plain English"
+        caption="The code still exists. You've just stopped being the one who types it."
+      />
+
+      <StatBox items={[
+        ["92%", "US devs use AI coding daily"],
+        ["46%", "of new code is AI-generated"],
+        ["63%", "of vibe coders aren't developers"],
+        ["$4.7B", "vibe coding tool market"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How it actually works</h2>
+      <p>
+        The loop is simple: you write a prompt (&quot;build me a habit tracker with streaks and a dark mode&quot;), the AI generates the project, you run it, and instead of debugging you paste errors back — or the tool reads them itself and self-corrects. Modern agentic tools run this loop autonomously: they plan, write, execute, test, and iterate while you steer in plain language.
+      </p>
+      <p>
+        The skill that matters shifts from syntax to <em>specification</em>: people who can describe behavior precisely, break features into small steps, and sanity-check results get dramatically better output than people who type &quot;make it better.&quot; It&apos;s the same lesson as AI writing — the tool amplifies clear thinking and exposes fuzzy thinking.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The tools people vibe code with in 2026</h2>
+      <DataTable
+        headers={["Tool", "Style", "Best for"]}
+        rows={[
+          ["Cursor", "AI-first code editor", "The default for serious vibe coders"],
+          ["Claude Code", "Terminal/agentic coding", "Multi-step autonomous builds"],
+          ["GitHub Copilot", "In-editor assistant", "Developers augmenting normal work"],
+          ["Replit", "Browser IDE + agent", "Beginners — zero setup, instant deploy"],
+          ["Lovable / Bolt", "Prompt-to-app builders", "Non-coders shipping web apps fast"],
+          ["v0", "Prompt-to-UI", "Front-end screens and components"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest part: where vibe coding breaks</h2>
+      <p>
+        The same 2026 surveys that show 92% adoption show only <strong>29% of developers trust the output</strong> — and audits found AI co-authored code carries roughly <strong>1.7x more major issues</strong> than human-written code. The failure modes are consistent:
+      </p>
+      <InfoBox title="Known failure modes" items={[
+        ["Security holes", "exposed API keys, missing auth checks, injection-vulnerable queries — invisible if you never read the code"],
+        ["The 80% wall", "the demo works in an afternoon; the last 20% (edge cases, data integrity) fights back"],
+        ["Unmaintainable sprawl", "AI happily generates duplicate logic across files until changes break things unpredictably"],
+        ["Confident wrongness", "the app runs and looks right while silently mishandling data"],
+      ]} />
+      <AlertBox type="warning" title="The one rule" body="Vibe code anything for yourself. But the moment an app touches other people's data, logins, or money, someone who can read code must review it — or you keep those features out. Prototypes and internal tools: vibe freely. Production: verify." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>5 ways people actually get paid</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Micro SaaS.</strong> Small niche tools with subscriptions — the classic path, now buildable in weekends. Our <InternalLink href="/blog/7-ai-saas-ideas-weekend">7 AI SaaS ideas you can build in a weekend</InternalLink> pairs perfectly with vibe coding.</li>
+          <li><strong>Custom internal tools for small businesses.</strong> Dashboards, calculators, booking forms — businesses pay $500–3,000 for tools that took you days. Selling is the skill; see <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink>.</li>
+          <li><strong>Rapid prototyping for founders.</strong> Non-technical founders pay for clickable MVPs to show investors before hiring real engineering.</li>
+          <li><strong>Templates and boilerplates.</strong> Vibe-code a polished starter (landing page kit, dashboard template), sell it repeatedly on Gumroad — same model as <InternalLink href="/blog/sell-notion-templates">selling Notion templates</InternalLink>.</li>
+          <li><strong>Free tools + traffic.</strong> Build calculators and utilities that rank in search and earn through ads and affiliates. (This site&apos;s <InternalLink href="/tools">free tools</InternalLink> are exactly that playbook.)</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is vibe coding?",
+          a: "Vibe coding is building software by describing what you want in plain language and letting AI coding tools generate, run, and fix the code — with minimal manual review. The term was popularized by Andrej Karpathy in early 2025 and became mainstream practice by 2026.",
+        },
+        {
+          q: "Can you vibe code with no programming experience?",
+          a: "Yes — around 63% of vibe coding tool users aren't professional developers. Beginners regularly ship working web apps and tools. The catch: without review habits, AI code carries security and quality risks, so keep real user data and payments out of unreviewed apps.",
+        },
+        {
+          q: "Is vibe-coded software safe to use in production?",
+          a: "Be careful. 2026 audits found AI co-authored code contains about 1.7x more major issues than human-written code, and only 29% of developers trust AI output without review. Great for prototypes and internal tools; production still needs testing and review.",
+        },
+        {
+          q: "How do people make money with vibe coding?",
+          a: "The main paths in 2026: micro SaaS tools, custom internal tools for small businesses, freelance rapid prototyping, selling templates and boilerplates, and building free tools that earn through ads and affiliate revenue.",
+        },
+      ]} />
+
+      <p>
+        The gatekeeping is gone: if you can describe software clearly, you can build software. Just be the person who also checks it — that combination is rarer, and it&apos;s where the money is.
+      </p>
+    </div>
+  ),
+  "best-ai-browsers-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Your browser stopped being a window and became a coworker: it reads pages, compares tabs, fills forms, and books things for you. The question is which one deserves the job — and how much you should trust it.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Three AI browsers dominate 2026: OpenAI&apos;s ChatGPT Atlas, Perplexity&apos;s Comet, and Dia. We compare what each does best, what they cost, and the security problem researchers say can&apos;t be fully fixed.
+      </p>
+
+      <HookBanner headline="What this comparison covers" items={[
+        "Atlas vs Comet vs Dia — features, platforms, and pricing",
+        "What 'agent mode' actually does day to day",
+        "The prompt-injection risk every AI browser shares",
+        "Which browser fits which kind of user",
+        "The settings to change before you let an agent loose",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best AI browser in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          For most people, <strong>Perplexity Comet</strong> — it&apos;s free, fully agentic, and runs on Mac, Windows, iOS, and Android. <strong>ChatGPT Atlas</strong> is stronger for deep agent tasks tied to your ChatGPT history, but it&apos;s Mac-only and its best agent features sit behind a paid plan. <strong>Dia</strong> is the lightest option for everyday browsing with AI chat built in.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-ai-browsers-2026.png"
+        alt="Best AI browsers 2026 compared — ChatGPT Atlas vs Perplexity Comet vs Dia"
+        caption="The browser wars restarted — this time the browsers do the browsing."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The comparison at a glance</h2>
+      <DataTable
+        headers={["Browser", "Maker", "Platforms", "Price", "Standout"]}
+        rows={[
+          ["Comet", "Perplexity", "Mac, Windows, iOS, Android", "Free", "Full agent + research engine, everywhere"],
+          ["ChatGPT Atlas", "OpenAI", "macOS only (mid-2026)", "Free; best agent features paid", "Deep ChatGPT memory + Agent Mode"],
+          ["Dia", "The Browser Company", "Mac-first", "Free tier", "Lightweight AI chat with your tabs"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>ChatGPT Atlas — the deep-integration play</h2>
+      <p>
+        Atlas is Chromium rebuilt around ChatGPT: a sidebar that understands the page you&apos;re on, memory that carries context across sessions, and Agent Mode that executes multi-step tasks — comparing products across tabs, filling forms, booking reservations. If your work already lives in ChatGPT, the continuity is genuinely useful: it remembers what you researched yesterday and picks up mid-task.
+      </p>
+      <p>
+        The limits are practical: macOS only as of mid-2026, and the strongest agent features require a paid ChatGPT plan. If you&apos;re on Windows, this one&apos;s a waitlist, not an option.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Perplexity Comet — the one most people should pick</h2>
+      <p>
+        Comet made the boldest move of the year: full agentic browsing, free, on every major platform. Perplexity&apos;s citation-first research engine is built into the address bar — every AI answer links its sources, which matters more than ever (it&apos;s the same citation behavior that makes <InternalLink href="/blog/generative-engine-optimization-geo">generative engine optimization</InternalLink> worth doing for site owners). Students and researchers particularly rate it for sourced summaries.
+      </p>
+      <p>
+        The agent handles the same form-filling, tab-comparing, task-running work as Atlas. Cross-platform availability is the killer feature: your AI browser on your phone is the same one on your desktop.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Dia — the minimalist</h2>
+      <p>
+        From the team behind Arc, Dia takes the opposite approach: instead of a do-everything agent, it makes chatting with your tabs feel native. Ask questions about the page, write with context from what you&apos;re reading, keep browsing. If agent mode feels like overkill and you mostly want AI comprehension without AI autonomy, Dia is the calmest option.
+      </p>
+
+      <AlertBox type="warning" title="The security section (read this one)" body="All AI browsers share an unsolved flaw: prompt injection. A malicious page can hide instructions that the AI agent reads and obeys — researchers confirmed in 2026 this can't be fully patched in Atlas, Comet, or Dia. Practical rules: don't run agent mode unattended, don't give it standing access to email/banking/payments, review what it did before trusting results, and use a separate browser profile for sensitive accounts." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Which one fits you</h2>
+      <InfoBox title="Quick picks" items={[
+        ["Windows user", "Comet — it's the only full agentic option you can actually install"],
+        ["Heavy ChatGPT user on Mac", "Atlas — the memory integration compounds daily"],
+        ["Researcher / student", "Comet — cited answers beat confident answers"],
+        ["AI-curious minimalist", "Dia — assistance without autonomy"],
+        ["Security-first user", "Any of them with agent mode off — or stay on Chrome/Brave for now"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best AI browser in 2026?",
+          a: "For most people, Perplexity Comet — free, fully agentic, and available on Mac, Windows, iOS, and Android. ChatGPT Atlas is strongest for agent tasks tied to your ChatGPT history but is Mac-only with paid agent features. Dia wins for lightweight everyday browsing with AI chat.",
+        },
+        {
+          q: "What does an AI browser actually do?",
+          a: "AI browsers embed an assistant that reads the page you're viewing, summarizes and compares across tabs, remembers context between sessions, and — in agent mode — takes actions for you: filling forms, comparing products, booking reservations, completing multi-step workflows.",
+        },
+        {
+          q: "Are AI browsers safe?",
+          a: "There's a real risk called prompt injection: malicious text hidden in a webpage can trick the agent into unintended actions. Researchers confirmed in 2026 this can't be fully patched — so don't let agent mode run unattended with access to logins, email, or payments.",
+        },
+        {
+          q: "Is ChatGPT Atlas available on Windows?",
+          a: "As of mid-2026, Atlas is macOS-only. Windows users wanting a fully agentic AI browser should use Perplexity Comet, which is free across Mac, Windows, iOS, and Android.",
+        },
+      ]} />
+
+      <p>
+        Try Comet free, keep agent mode on a leash, and re-evaluate in six months — this category is moving faster than any software since the original browser wars.
+      </p>
+    </div>
+  ),
+  "make-money-ai-video-faceless-youtube": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Nearly 4 in 10 new creator monetization ventures are now faceless channels — because AI video finally got good enough that one person with a laptop can run what used to take a production team.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Sora 2 and Veo 3.1 generate footage that would have cost thousands per minute two years ago. The channels making $1,000–10,000/month aren&apos;t uploading raw AI clips, though — they&apos;re running a system. Here&apos;s the whole system.
+      </p>
+
+      <HookBanner headline="The full playbook inside" items={[
+        "The 2026 AI video stack (and what it really costs per month)",
+        "Best faceless niches ranked by actual ad rates (RPM)",
+        "The workflow: script → voice → video → edit → publish",
+        "YouTube's AI content rules — what gets demonetized",
+        "Realistic timeline and income math, no lambo promises",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can you really make money with AI-generated videos?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes — established faceless channels report <strong>$1,000–10,000+ per month</strong> from ads, affiliates, and sponsorships. But it&apos;s a content business, not a lottery: winners pick one niche, publish consistently for months, and <strong>edit AI output into real videos</strong> instead of uploading raw generations.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/make-money-ai-video-faceless-youtube.png"
+        alt="Make money with AI video in 2026 — faceless YouTube channels using Sora 2 and Veo 3.1"
+        caption="The camera shortage is over. The attention shortage isn't."
+      />
+
+      <StatBox items={[
+        ["~38%", "of new creator ventures are faceless"],
+        ["$12–20", "RPM in finance niches"],
+        ["$30–50", "monthly tool stack"],
+        ["90%", "production time cut with AI"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The 2026 stack and what it costs</h2>
+      <DataTable
+        headers={["Layer", "Tools", "Cost"]}
+        rows={[
+          ["Script", "ChatGPT / Claude + your editing", "Free–$20/mo"],
+          ["Voice", "ElevenLabs", "From ~$5–6/mo"],
+          ["Video generation", "Sora 2, Veo 3.1, Kling (direct or via InVideo AI)", "~$28/mo via bundlers"],
+          ["Editing", "CapCut / DaVinci Resolve", "Free"],
+          ["Music", "Licensed library", "~$10–15/mo"],
+        ]}
+      />
+      <p>
+        Rule of thumb from current users: <strong>Veo 3.1 for cinematic shots and channel b-roll, Sora 2 for realistic physics and product-style footage.</strong> Total working stack: roughly $30–50/month — validate your niche on free tiers before paying for any of it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Niches ranked by what ads actually pay</h2>
+      <DataTable
+        headers={["Niche", "Typical RPM", "Notes"]}
+        rows={[
+          ["Personal finance", "$12–20", "Highest ad rates; needs accuracy — verify everything"],
+          ["Business & investing", "$10–18", "Sponsorships add heavily on top"],
+          ["Tech tutorials & AI news", "$8–15", "Fast-moving; consistency wins"],
+          ["Health & wellness", "$6–12", "YMYL topic — cite sources or get buried"],
+          ["Relaxation / ambient", "$2–5", "Low RPM, huge watch-time volume"],
+          ["Facts / stories / history", "$3–7", "Easiest entry, most crowded"],
+        ]}
+      />
+      <AlertBox type="money" title="RPM math in one line" body="RPM is revenue per 1,000 views. A finance video at $15 RPM needs ~67K views for $1,000; a facts video at $4 RPM needs 250K. Pick your niche knowing that math — then check your numbers with our free side hustle calculator at /tools/side-hustle-calculator." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The weekly workflow</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Script (2 hrs):</strong> Draft with AI, then rewrite the hook and add your angle — raw AI scripts sound like everyone else&apos;s. The same <InternalLink href="/blog/how-to-humanize-ai-text">humanizing principles</InternalLink> apply to spoken words, doubly.</li>
+          <li><strong>Voice (30 min):</strong> Generate narration, regenerate flat lines. One consistent voice becomes your brand.</li>
+          <li><strong>Visuals (2–3 hrs):</strong> Generate scene-by-scene clips matching script beats — don&apos;t generate one long video.</li>
+          <li><strong>Edit (2 hrs):</strong> Cut, caption, pace, sound design. This step is why some channels grow and identical-topic channels don&apos;t.</li>
+          <li><strong>Package (1 hr):</strong> Thumbnail and title decide everything. Study winners with our free <InternalLink href="/tools/youtube-thumbnail-downloader">thumbnail downloader</InternalLink>.</li>
+        </ol>
+      </div>
+      <p>That&apos;s roughly 8 hours per polished video — one committed weekend day for a weekly channel.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The rules that get AI channels demonetized</h2>
+      <InfoBox title="YouTube's line in 2026" items={[
+        ["Monetizable", "AI-assisted videos with original commentary, editing, structure, and value added"],
+        ["Required", "disclosure when realistic synthetic media could be mistaken for real footage"],
+        ["Targeted", "'inauthentic content' — mass-produced, repetitive, low-transformation uploads"],
+        ["Highest risk", "raw text-to-video dumps, duplicated formats across channels, fake-news-style realism without disclosure"],
+      ]} />
+      <p>
+        Translation: the platform doesn&apos;t hate AI, it hates spam — the same logic as <InternalLink href="/blog/does-google-penalize-ai-content">Google&apos;s AI content policy</InternalLink>. Add real value per video and disclose realistic synthetic footage, and you&apos;re inside the rules.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Honest timeline</h2>
+      <p>
+        Months 1–2: publish weekly, expect near-zero views, iterate on packaging. Months 3–4: one or two videos outperform — make more of those. Months 4–6: cross monetization thresholds (1,000 subs + 4,000 watch hours) if you held consistency. Month 6+: ads plus affiliate links start compounding; sponsorships follow channels, not view counts. Most channels that fail simply stopped uploading in month two.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can you really make money with AI-generated videos?",
+          a: "Yes — established faceless channels report $1,000–10,000+ per month from ads, affiliates, and sponsorships. But it's a content business, not a lottery: channels that win pick one niche, publish consistently for months, and edit AI output instead of uploading raw generations.",
+        },
+        {
+          q: "What are the best niches for faceless YouTube in 2026?",
+          a: "By ad rates: personal finance (~$12–20 RPM), business and investing ($10–18), and tech tutorials ($8–15). Lower-RPM niches like relaxation, facts, and stories can still win on volume.",
+        },
+        {
+          q: "How much does it cost to start an AI video channel?",
+          a: "Roughly $30–50/month for a working stack: AI video generation with Sora 2/Veo 3.1 access, an AI voice tool, and music licensing. Start on free tiers while validating your niche.",
+        },
+        {
+          q: "Will YouTube demonetize AI-generated content?",
+          a: "YouTube monetizes AI-assisted content that adds original value — commentary, editing, structure — but targets mass-produced 'inauthentic' content and requires disclosure of realistic synthetic media. Raw text-to-video uploads with no transformation carry the highest risk.",
+        },
+      ]} />
+
+      <p>
+        The tools got cheap; the discipline didn&apos;t. Pick one niche, ship weekly for three months, and let the compounding do what it does.
+      </p>
+    </div>
+  ),
+  "ai-resume-tips-beat-ats": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Your resume will probably be read by software before any human sees it — and if you wrote it with AI, the human who eventually reads it has seen your exact phrasing four hundred times this month.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Beating 2026&apos;s hiring pipeline means winning twice: pass the ATS robot, then don&apos;t sound like one to the recruiter. AI helps with both — if you use it the right way. Here&apos;s the complete workflow.
+      </p>
+
+      <HookBanner headline="What you'll get" items={[
+        "How ATS filtering actually works (less magic than you fear)",
+        "The formatting rules that silently kill parseable resumes",
+        "Copy-paste AI prompts for keyword matching that isn't lying",
+        "The AI-resume phrases recruiters instantly recognize",
+        "A free resume builder that exports ATS-clean files",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How do you beat the ATS in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Use a <strong>single-column layout with standard headings</strong> (Experience, Education, Skills), no tables or graphics; <strong>mirror the job description&apos;s exact keywords</strong> for skills you genuinely have; and submit a .docx or text-based PDF. Then edit the language so a human wants to interview you — the ATS shortlists, but people hire.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/ai-resume-tips-beat-ats.png"
+        alt="Using AI to write a resume that beats ATS screening in 2026"
+        caption="Two gatekeepers, one document: parse for the robot, persuade the human."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the ATS actually does</h2>
+      <p>
+        An applicant tracking system parses your resume into structured data — names, titles, dates, skills — then lets recruiters filter and rank candidates by keyword and criteria. Two failure modes matter: <strong>parsing failure</strong> (your fancy template turns into scrambled text) and <strong>keyword absence</strong> (you say &quot;built dashboards,&quot; the search says &quot;Power BI,&quot; you don&apos;t exist). Most &quot;the ATS rejected me&quot; stories are one of these two — both fully fixable.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Formatting rules (non-negotiable)</h2>
+      <InfoBox title="ATS-safe formatting" items={[
+        ["Single column", "multi-column layouts parse out of order or not at all"],
+        ["Standard headings", "'Experience', 'Education', 'Skills' — not 'My Journey'"],
+        ["No tables, text boxes, or graphics", "the #1 cause of silent parsing failures"],
+        ["Standard fonts", "Arial, Calibri, Georgia — nothing decorative"],
+        ["Real text", "never submit your resume as an image; .docx or text-based PDF"],
+        ["Dates in standard format", "'Jan 2023 – Present' parses; creative formats don't"],
+      ]} />
+      <p>
+        Our free <InternalLink href="/tools/resume-builder">Resume Builder</InternalLink> follows all of these by default — clean single-column templates, live preview, PDF export, no signup.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The AI keyword workflow (prompts included)</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Extract:</strong> &quot;Here&apos;s a job description. List the 15 most important skills, tools, and qualifications, ranked. Mark which are must-haves vs nice-to-haves.&quot;</li>
+          <li><strong>Gap-check:</strong> &quot;Here&apos;s my resume. Which of those 15 are missing or phrased differently than the job description?&quot;</li>
+          <li><strong>Integrate honestly:</strong> add missing keywords <em>only where true</em>, using the JD&apos;s exact phrasing (&quot;stakeholder management,&quot; not &quot;managing stakeholders&quot;).</li>
+          <li><strong>Quantify:</strong> &quot;Rewrite each bullet to lead with an action verb and include one number.&quot; Then replace AI&apos;s invented numbers with your real ones — it will invent them.</li>
+          <li><strong>Tailor per application:</strong> repeat steps 1–3 for every serious application. Ten tailored beats a hundred identical.</li>
+        </ol>
+      </div>
+      <AlertBox type="warning" title="Never keyword-stuff skills you don't have" body="ATS keywords get you into an interview where humans probe those exact keywords. Lying to a parser means failing in person — the most expensive way to fail." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Don&apos;t sound like everyone else&apos;s ChatGPT</h2>
+      <p>
+        Recruiters in 2026 can smell an unedited AI resume in one line. The tells are the resume cousins of the <InternalLink href="/blog/ai-words-to-avoid">AI words that expose ChatGPT writing</InternalLink>:
+      </p>
+      <DataTable
+        headers={["AI resume cliché", "Write instead"]}
+        rows={[
+          ["'Dynamic results-driven professional'", "Delete. Your first bullet proves it or nothing does"],
+          ["'Spearheaded' (everywhere)", "led, built, launched — varied"],
+          ["'Leveraged synergies…'", "plain verbs: used, ran, cut, grew"],
+          ["'Proven track record of success'", "one actual number from that track record"],
+          ["Identical bullet rhythm", "vary length; lead with the metric sometimes"],
+          ["'Passionate about excellence'", "a real project you shipped"],
+        ]}
+      />
+      <p>
+        Quick fix: run your summary and bullets through the free <InternalLink href="/tools/ai-text-humanizer">AI Text Humanizer</InternalLink> to strip the robotic phrasing, then re-add your specifics. Draft with AI, but the numbers, decisions, and voice have to be yours.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Do employers really use ATS to reject resumes?",
+          a: "Yes — the large majority of mid-size and enterprise employers use applicant tracking systems to filter, rank, or search applications before recruiters review them. Resumes missing role keywords or using unparseable formatting often never reach human eyes.",
+        },
+        {
+          q: "Can recruiters tell if AI wrote my resume?",
+          a: "Often, yes. AI resumes share the same tells as AI articles: 'spearheaded', 'leveraged', 'dynamic professional', and generic bullets with no numbers. Recruiters reading hundreds of resumes spot the pattern instantly — editing the AI draft matters more than generating it.",
+        },
+        {
+          q: "What resume format works best for ATS in 2026?",
+          a: "Single column, standard section headings, no tables, no text boxes, no graphics, standard fonts, and a .docx or text-based PDF. Fancy templates are the #1 cause of silent parsing failures.",
+        },
+        {
+          q: "How do I match my resume to a job description with AI?",
+          a: "Paste the job description and your resume into ChatGPT or Claude, ask which required keywords you're missing, then add the ones that are true for you — in your own words, with a real metric per bullet. Never add skills you don't have.",
+        },
+      ]} />
+
+      <p>
+        Robot first, human second, honesty throughout. Build the clean version free with the <InternalLink href="/tools/resume-builder">Resume Builder</InternalLink>, tailor it per job, and let the interviews start.
+      </p>
+    </div>
+  ),
+  "sell-notion-templates": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Somewhere right now, a freelancer is paying $49 for a Notion template that took its creator a weekend to build — and has sold three hundred copies since. That&apos;s the whole business model. Here&apos;s how to run it properly.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Notion templates sit near the top of 2026&apos;s digital product trends for a reason: zero inventory, zero shipping, near-zero build cost. But the &quot;aesthetic dashboard&quot; era is over — what sells now is solved problems. Let&apos;s get specific about what, where, and for how much.
+      </p>
+
+      <HookBanner headline="The complete guide inside" items={[
+        "What actually sells in 2026 (and the saturated stuff to skip)",
+        "Real pricing tiers from $5 to $249",
+        "Gumroad vs Notion Marketplace vs Etsy — where to list",
+        "The build-and-launch checklist, start to first sale",
+        "What 'passive income' honestly looks like month by month",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can you still make money selling Notion templates in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes — but buyers now pay for <strong>solved problems, not pretty pages</strong>. Sellers earning consistently build niche workflow systems (freelancer CRM, content pipeline, small-business ops) priced <strong>$19–79</strong>, and market them through content rather than waiting on marketplace luck.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/sell-notion-templates.png"
+        alt="How to make and sell Notion templates for passive income in 2026"
+        caption="Build once, sell while you sleep — after you do the unsexy marketing part."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What sells vs what's saturated</h2>
+      <DataTable
+        headers={["Sells in 2026", "Saturated / skip"]}
+        rows={[
+          ["Freelancer OS: clients, invoices, pipeline", "Generic aesthetic dashboards"],
+          ["Content creator systems: idea → publish → repurpose", "Basic habit trackers"],
+          ["Small business ops: CRM, SOPs, team wikis", "Simple to-do lists"],
+          ["Niche pro tools: real estate, coaches, agencies, students in specific programs", "'Life OS' clones of famous creators"],
+          ["AI-workflow templates: prompt libraries, AI content pipelines", "Anything Notion ships as a free default"],
+        ]}
+      />
+      <p>
+        The pattern: the tighter the audience and the more painful the problem, the easier the sale and the higher the price. &quot;Notion template for wedding photographers&apos; client pipeline&quot; beats &quot;productivity dashboard&quot; every single time.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Pricing that actually works</h2>
+      <DataTable
+        headers={["Tier", "Price", "What justifies it"]}
+        rows={[
+          ["Simple personal", "$5–19", "Single-purpose: budget tracker, reading log"],
+          ["Workflow system", "$29–79", "Connected databases solving a full job-to-be-done"],
+          ["Business OS", "$99–249", "Team-ready operations with docs and onboarding"],
+          ["Bundle / lifetime updates", "+40–60% AOV", "Stack related templates; promise updates"],
+        ]}
+      />
+      <AlertBox type="money" title="The underpricing trap" body="New sellers default to $9 because they fear zero sales. But a $39 template needs 26 sales for $1,000; a $9 one needs 112. Serious buyers read low prices as low quality — price on the problem solved, not your hours." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where to sell</h2>
+      <InfoBox title="The three channels" items={[
+        ["Gumroad", "creator standard: fast setup, you keep the customer emails — your future launches depend on that list"],
+        ["Notion Marketplace", "official discovery and credibility; standards are stricter, competition is curated"],
+        ["Etsy", "reaches buyers who search Etsy for everything; surprisingly strong for planners and student templates"],
+      ]} />
+      <p>
+        Most consistent sellers list on two or three at once — the product is identical, only the listing changes. Track which channel converts with proper links before doubling down.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Build and launch checklist</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Solve your own real workflow first</strong> — templates built from lived pain beat imagined ones, and you&apos;ll market it credibly.</li>
+          <li><strong>Ship a polished duplicate:</strong> sample data, a start-here page, and a 3–5 minute Loom walkthrough (walkthroughs measurably cut refunds).</li>
+          <li><strong>Write the listing around the outcome</strong> — &quot;never lose a client follow-up again,&quot; not &quot;includes 6 databases.&quot; Humanize the copy; robotic AI product descriptions kill conversion the same way they kill <InternalLink href="/blog/how-to-humanize-ai-text">any other content</InternalLink>.</li>
+          <li><strong>Launch where your buyers already are:</strong> a free lite version to build the email list, posts in the niche&apos;s subreddit/community (give value, don&apos;t spam), and one SEO article per template targeting &quot;[niche] notion template.&quot;</li>
+          <li><strong>Iterate on questions:</strong> every buyer question is a missing feature or unclear doc — fix it, announce the update, sell the improvement.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest income curve</h2>
+      <p>
+        Month 1: build and launch — a handful of sales from communities. Months 2–3: your SEO content starts ranking; sales trickle daily instead of spiking. Months 4–6: second and third templates launch to an existing email list — this is where income steps up, because the list compounds. Sellers clearing $1,000+/month almost all have a portfolio of 3–6 templates and a content engine, not one viral hit. Model your own numbers with the <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink>, and if you&apos;re choosing between digital product paths, compare this with <InternalLink href="/blog/what-is-vibe-coding">vibe-coded micro tools</InternalLink> — same marketing muscle, different build skill.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can you still make money selling Notion templates in 2026?",
+          a: "Yes, but buyers pay for solved problems, not aesthetics. Sellers earning consistently focus on niche workflows — freelancer CRM, content pipelines, small business ops — priced $19–79 and marketed through content, not marketplace luck.",
+        },
+        {
+          q: "How much do Notion templates sell for?",
+          a: "Simple personal templates sell for $5–19, serious workflow systems for $29–79, and business/team operating systems for $99–249. Bundles and lifetime-update pricing raise average order value significantly.",
+        },
+        {
+          q: "Where is the best place to sell Notion templates?",
+          a: "Gumroad is the creator standard (simple setup, you keep your audience), the official Notion Marketplace adds discovery and credibility, and Etsy reaches buyers outside creator communities. Most successful sellers list on two or three simultaneously.",
+        },
+        {
+          q: "Is selling Notion templates really passive income?",
+          a: "Semi-passive. Building and listing is upfront work; sales continue without per-sale effort, but growth requires ongoing marketing — SEO content, social posts, or a small email list. Expect months of compounding, not overnight income.",
+        },
+      ]} />
+
+      <p>
+        One niche, one painful problem, one polished template, one listing this month. The compounding only starts after you ship.
+      </p>
+    </div>
+  ),
   "ai-words-to-avoid": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
