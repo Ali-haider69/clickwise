@@ -8,6 +8,7 @@ interface Tool {
 }
 
 const allTools: Tool[] = [
+  { href: "/tools/ai-text-humanizer", title: "AI Text Humanizer", description: "Make AI text sound human instantly" },
   { href: "/tools/qr-code-generator", title: "QR Code Generator", description: "Generate custom QR codes instantly" },
   { href: "/tools/image-compressor", title: "Image Compressor", description: "Compress images without losing quality" },
   { href: "/tools/password-generator", title: "Password Generator", description: "Create strong, secure passwords" },

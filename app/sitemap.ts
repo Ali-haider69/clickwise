@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const toolPages: MetadataRoute.Sitemap = [
+    "ai-text-humanizer",
     "ai-linkedin-post-generator",
     "ai-instagram-caption-generator",
     "ai-blog-intro-generator",

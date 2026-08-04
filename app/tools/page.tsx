@@ -20,6 +20,15 @@ const toolCategories = [
     badge: "#1 Traffic Driver",
     tools: [
       {
+        href: "/tools/ai-text-humanizer",
+        icon: "🪄",
+        title: "AI Text Humanizer",
+        description: "Make ChatGPT text sound human. Removes AI clichés, em-dashes, and robotic phrasing instantly.",
+        badge: "🔥 Hot in 2026",
+        badgeColor: "from-red-500 to-orange-500",
+        stats: ["100+ AI-tell fixes", "AI-pattern score", "100% private"],
+      },
+      {
         href: "/tools/ai-linkedin-post-generator",
         icon: "💼",
         title: "LinkedIn Post Generator",
@@ -225,7 +234,7 @@ export default function ToolsPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm font-medium text-purple-600 dark:text-purple-400 mb-6">
-            <Zap className="w-4 h-4" /> 19 Free Tools — No Signup Required
+            <Zap className="w-4 h-4" /> 20 Free Tools — No Signup Required
           </div>
           <h1 className="text-4xl md:text-6xl font-black mb-4">
             <span className="gradient-text">Free Tools</span>
