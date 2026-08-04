@@ -156,6 +156,582 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "ai-words-to-avoid": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        There&apos;s a list of words that instantly tells readers, clients, and detectors that ChatGPT wrote your content. You&apos;re about to see all of them — and what to write instead.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Usage of the word &quot;delve&quot; in published writing exploded after 2023 — not because humans changed, but because AI picked a favorite word and used it a few hundred million times. Now everyone recognizes it. And it&apos;s far from alone.
+      </p>
+
+      <HookBanner headline="What you get in this guide" items={[
+        "The complete 2026 list of AI-tell words, grouped by how badly they expose you",
+        "Human replacements for every single one",
+        "The punctuation and structure tells nobody talks about",
+        "Why density matters more than any single word",
+        "A free tool that fixes all of them in one click",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What words make writing sound like ChatGPT?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          The most recognizable AI words are <strong>delve, leverage, utilize, furthermore, moreover, seamless, robust, tapestry, plethora, myriad, pivotal,</strong> and <strong>game-changer</strong>. Combined with heavy em-dash use and openers like &quot;In today&apos;s fast-paced world,&quot; they form a statistical fingerprint that both readers and AI detectors recognize instantly.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/ai-words-to-avoid.png"
+        alt="50+ AI words to avoid in 2026 — the vocabulary that exposes ChatGPT writing"
+        caption="No single word convicts you. The density of them does."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 1 — The dead giveaways</h2>
+      <p>
+        These words went from &quot;normal English&quot; to &quot;AI fingerprint&quot; in under three years. One of them raises an eyebrow; three in one article is a verdict.
+      </p>
+
+      <DataTable
+        headers={["AI word", "Write instead"]}
+        rows={[
+          ["Delve / delve into", "dig into, look at, explore"],
+          ["Tapestry", "mix, blend, combination"],
+          ["Plethora / myriad", "plenty, lots, a bunch"],
+          ["Leverage (as a verb)", "use"],
+          ["Utilize", "use"],
+          ["Furthermore / Moreover", "Plus, Also, And"],
+          ["Seamless / seamlessly", "smooth, easily — or cut it"],
+          ["Robust", "solid, strong"],
+          ["Game-changer", "name the actual benefit"],
+          ["Elevate", "improve, raise"],
+          ["Embark (on a journey)", "start, begin"],
+          ["Unlock / unleash", "get, access"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 2 — The corporate padding</h2>
+      <p>
+        These are less famous but do the same damage: they add syllables without adding information, which is exactly how a model trained to sound &quot;professional&quot; behaves.
+      </p>
+
+      <DataTable
+        headers={["AI word", "Write instead"]}
+        rows={[
+          ["Pivotal / paramount", "key, critical"],
+          ["Crucial", "important, key"],
+          ["Facilitate", "help, make easier"],
+          ["Foster", "build, encourage"],
+          ["Holistic", "complete, full"],
+          ["Synergy", "teamwork — or delete"],
+          ["Cutting-edge / state-of-the-art", "modern, new"],
+          ["Revolutionize / transformative", "change, improve"],
+          ["Comprehensive", "complete, full"],
+          ["Notably / Importantly", "delete — just say the thing"],
+          ["In the realm of", "in"],
+          ["Navigate the complexities of", "handle, deal with"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 3 — The phrases and structures</h2>
+      <p>
+        Single words are only half the fingerprint. AI also has favorite sentence skeletons, and these are harder to unsee once you know them:
+      </p>
+      <InfoBox title="Structural AI tells" items={[
+        ["The throat-clearing opener", "'In today's fast-paced digital landscape...' — delete it, start with your point"],
+        ["The it's-important-to-note", "'It's worth noting that X' — just say X"],
+        ["The not-only-but-also", "'Not only does it save time, but it also...' — pick the stronger half"],
+        ["The whether-you're", "'Whether you're a beginner or an expert...' — address one reader"],
+        ["The summary closer", "'In conclusion, as we've seen...' — end on your last useful point"],
+        ["The em-dash addiction", "AI uses — constantly — like this. Swap for commas and periods"],
+        ["The rule of three", "AI loves triads: 'fast, reliable, and efficient.' Vary your list lengths"],
+      ]} />
+
+      <AlertBox type="warning" title="Density is the real tell" body="Every word on this list is legitimate English. Humans say 'crucial.' The fingerprint isn't any one word — it's fifteen of them in 800 words, plus uniform sentence lengths, plus em-dashes. Fix the density and the rhythm, and occasional use of these words is completely fine." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The fastest way to strip them all</h2>
+      <p>
+        You could hunt these manually with find-and-replace. Or paste your draft into the free <InternalLink href="/tools/ai-text-humanizer">ClickWise AI Text Humanizer</InternalLink> — it swaps 100+ AI-tell words and patterns, fixes em-dashes and curly quotes, adds natural contractions, and shows a before/after AI-pattern score. It runs entirely in your browser, so nothing you paste ever leaves your device.
+      </p>
+      <p>
+        Then do the part no tool can: read it out loud, chop a few sentences short, and add one detail only you could know. That combination — mechanical cleanup plus human edits — is the full workflow we break down in <InternalLink href="/blog/how-to-humanize-ai-text">how to humanize AI text</InternalLink>.
+      </p>
+
+      <AlertBox type="money" title="This skill pays" body={<>Businesses generate endless AI drafts full of these words and pay $30–75/hr for people who can fix them. See the <InternalLink href="/blog/ai-content-editor-side-hustle">AI content editor side hustle guide</InternalLink> for the full roadmap.</>} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What words make writing sound like ChatGPT?",
+          a: "The most recognizable ChatGPT words are delve, leverage, utilize, furthermore, moreover, seamless, robust, tapestry, plethora, pivotal, and game-changer. Heavy em-dash use and openers like 'In today's fast-paced world' are equally strong tells.",
+        },
+        {
+          q: "Why does AI keep using the same words?",
+          a: "Language models are trained to pick statistically 'safe' professional vocabulary, so they over-select the same polite, inflated words across millions of outputs. That repetition is exactly what makes the words detectable.",
+        },
+        {
+          q: "Should I remove every AI word from my writing?",
+          a: "No — these are normal English words. The problem is density. One 'leverage' is fine; five per page plus em-dashes plus 'furthermore' creates the statistical fingerprint detectors and readers recognize.",
+        },
+        {
+          q: "Is there a tool that removes AI words automatically?",
+          a: <>Yes. The free <InternalLink href="/tools/ai-text-humanizer">ClickWise AI Text Humanizer</InternalLink> replaces 100+ AI-tell words and patterns with natural alternatives in one click, entirely in your browser with no signup or word limit.</>,
+        },
+      ]} />
+
+      <p>
+        Keep this list open next time you edit an AI draft. Better yet, let the <InternalLink href="/tools/ai-text-humanizer">humanizer</InternalLink> do the first pass and spend your time on the sentences that need a real person.
+      </p>
+    </div>
+  ),
+  "best-ai-humanizer-tools-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        AI humanizers went from &quot;never heard of it&quot; to a crowded market almost overnight — and most of them are the same paraphrasing model with a different landing page and a $30/month price tag.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        We looked at the tools people actually use in 2026 — free and paid — and compared them on the things that matter: output quality, detection results, privacy, and whether the free tier is usable or just bait.
+      </p>
+
+      <HookBanner headline="What this comparison covers" items={[
+        "7 AI humanizer tools compared on quality, price, and privacy",
+        "Which free tools are actually free (and which are 200-word teasers)",
+        "The privacy problem nobody mentions — where your text really goes",
+        "When a paid humanizer is worth it, and when it's a waste",
+        "The workflow that beats every tool on this list",
+      ]} />
+
+      <BlogImage
+        src="/images/best-ai-humanizer-tools-2026.png"
+        alt="Best AI humanizer tools compared in 2026 — free and paid options tested"
+        caption="Half this market is the same model behind different paywalls. Here's what's actually different."
+      />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best AI humanizer in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          For most people, the best approach is a <strong>free rule-based cleanup</strong> (like the ClickWise AI Text Humanizer — unlimited, private, client-side) followed by quick manual edits. Paid AI paraphrasers like Undetectable.ai or StealthWriter make sense only for high-volume workflows, and even then results vary by detector.
+        </p>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The comparison at a glance</h2>
+      <DataTable
+        headers={["Tool", "Type", "Free tier", "Privacy", "Best for"]}
+        rows={[
+          ["ClickWise AI Text Humanizer", "Rule-based cleanup", "100% free, unlimited", "Client-side — text never uploaded", "Everyone's first pass"],
+          ["Undetectable.ai", "AI paraphraser", "Trial words only", "Server-side", "High-volume detection-focused work"],
+          ["StealthWriter", "AI paraphraser", "Limited daily words", "Server-side", "Multiple rewrite variants"],
+          ["QuillBot Paraphraser", "AI paraphraser", "Usable free tier, capped length", "Server-side", "Students, casual rewrites"],
+          ["HIX Bypass", "AI paraphraser", "Small trial", "Server-side", "Multi-detector targeting"],
+          ["Humanize AI (humanizeai.pro)", "AI paraphraser", "Limited free credits", "Server-side", "Quick one-off rewrites"],
+          ["Grammarly (tone rewrite)", "AI editor", "Free tier available", "Server-side", "Polish, not humanizing"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>1. ClickWise AI Text Humanizer — best free first pass</h2>
+      <p>
+        Full disclosure: this one is ours, and it takes a deliberately different approach. Instead of running your text through another AI model (which can garble meaning), it applies 100+ deterministic fixes — AI-cliché words like &quot;delve&quot; and &quot;leverage,&quot; em-dashes, curly quotes, missing contractions — and shows a before/after AI-pattern score. No signup, no word limit, and it&apos;s fully client-side, so confidential client work never leaves your browser. Try the <InternalLink href="/tools/ai-text-humanizer">AI Text Humanizer here</InternalLink>.
+      </p>
+      <p>
+        What it deliberately doesn&apos;t do: restructure your sentences. That&apos;s the part a human should own anyway — see our <InternalLink href="/blog/how-to-humanize-ai-text">full humanizing workflow</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>2. Undetectable.ai — the biggest paid name</h2>
+      <p>
+        The market leader in the &quot;bypass detectors&quot; niche. It rewrites text with its own model and scores it against multiple detectors. On our reading of independent tests, it does lower detection scores on most tools most of the time — but output quality is inconsistent, and complex or technical text sometimes comes back subtly wrong. Plans run roughly $10–20/month depending on volume. Fact-check everything it touches.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>3. StealthWriter — multiple variants per rewrite</h2>
+      <p>
+        Similar pitch to Undetectable, with one nice touch: it generates several rewrite variants so you can pick the least mangled one. The free daily allowance is small but real. Same caveats — server-side processing, meaning drift on nuanced text, and no guarantees against Turnitin.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>4. QuillBot — best-known paraphraser</h2>
+      <p>
+        QuillBot isn&apos;t marketed as a &quot;humanizer,&quot; but its paraphraser is what many people actually use. The free tier is genuinely usable (with a length cap), and the output reads naturally more often than the bypass-focused tools. It won&apos;t specifically target AI tells, though — you&apos;ll still want a cleanup pass for the <InternalLink href="/blog/ai-words-to-avoid">AI words that expose ChatGPT writing</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>5–7. HIX Bypass, Humanize AI, Grammarly</h2>
+      <p>
+        HIX Bypass and humanizeai.pro are competent entries in the same paraphraser category — small free trials, monthly subscriptions, server-side processing. Grammarly deserves a mention for a different reason: its tone rewrites polish text nicely, but polishing is the opposite of humanizing. Grammarly-perfected AI text often scores <em>more</em> AI-like, because flawless uniformity is itself a tell.
+      </p>
+
+      <AlertBox type="warning" title="The privacy problem" body="Every server-side humanizer receives, processes, and may log your text. If you're editing client deliverables under NDA, internal docs, or unpublished research, that's a real exposure. Use client-side tools for confidential work, full stop." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The workflow that beats every tool</h2>
+      <p>
+        After all the comparisons, the honest answer is that no single tool &quot;makes text human.&quot; The reliable stack is:
+      </p>
+      <InfoBox title="The 3-step stack" items={[
+        ["Step 1 — Free cleanup", "Run the draft through the ClickWise humanizer to strip clichés, em-dashes, and stiff phrasing in seconds"],
+        ["Step 2 — Human edit", "Vary sentence lengths, cut the intro/outro, add one first-hand detail per section"],
+        ["Step 3 — Optional AI rewrite", "Only if a detector score contractually matters, run a paid paraphraser — then fact-check its output"],
+      ]} />
+      <p>
+        For most bloggers and freelancers, steps 1–2 are enough — and they&apos;re free. The people making real money here aren&apos;t buying humanizers; they&apos;re <InternalLink href="/blog/ai-content-editor-side-hustle">selling the editing skill itself</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best free AI humanizer in 2026?",
+          a: <>For rule-based cleanup, the free <InternalLink href="/tools/ai-text-humanizer">ClickWise AI Text Humanizer</InternalLink> removes 100+ AI tells with no word limit, no signup, and full privacy. For AI-powered paraphrasing on a free tier, QuillBot is the most usable, though it caps input length.</>,
+        },
+        {
+          q: "Do paid AI humanizers actually work?",
+          a: "The better ones lower detection scores on most tests, but results vary by detector and they sometimes distort meaning. No paid tool guarantees a 0% AI score, whatever the landing page says.",
+        },
+        {
+          q: "Are AI humanizers safe for client or business content?",
+          a: "Check where your text goes. Most paid humanizers process content on their servers, which can violate client NDAs. Client-side tools that never upload your text are the safe option for confidential work.",
+        },
+        {
+          q: "Can I humanize AI text without any tool?",
+          a: "Yes — cut cliché words, replace em-dashes, add contractions, vary sentence length, and inject first-hand details. A tool just does the mechanical 40% instantly so you can focus on the edits that actually need a human.",
+        },
+      ]} />
+
+      <p>
+        Start free, add paid only if volume demands it — and remember that the &quot;human&quot; in humanized content still has to come from you.
+      </p>
+    </div>
+  ),
+  "generative-engine-optimization-geo": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Less than a third of Google searches now end in a click. The traffic didn&apos;t disappear — it moved into AI answers. GEO is how you follow it there.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Search interest in &quot;generative engine optimization&quot; is up nearly 1,000% in 18 months, AI Overviews reach billions of users, and ChatGPT answers product questions for millions daily. The sites winning in 2026 are the ones AI engines quote. Here&apos;s how to become one of them.
+      </p>
+
+      <HookBanner headline="What this guide gives you" items={[
+        "What GEO actually is (and how it differs from SEO)",
+        "How ChatGPT, AI Overviews, and Perplexity choose what to cite",
+        "The 7-point GEO checklist you can apply to any page today",
+        "The content formats AI engines quote most",
+        "Why humanized, experience-rich content wins in AI search",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is generative engine optimization (GEO)?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Generative engine optimization (GEO) is the practice of structuring and writing content so AI systems — Google AI Overviews, ChatGPT, Perplexity, Gemini — <strong>cite it as a source in their answers</strong>. Where classic SEO competes for ranked links, GEO competes for being the quoted authority inside the AI&apos;s response.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/generative-engine-optimization-geo.png"
+        alt="Generative engine optimization (GEO) in 2026 — ranking inside ChatGPT and Google AI Overviews"
+        caption="SEO gets you on the results page. GEO gets you inside the answer."
+      />
+
+      <StatBox items={[
+        ["~1,000%", "GEO search growth in 18 months"],
+        ["<33%", "of Google searches end in a click"],
+        ["2B+", "monthly AI Overviews users"],
+        ["80%+", "informational queries trigger AI answers"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>GEO vs SEO: what actually changes</h2>
+      <p>
+        Good news first: GEO doesn&apos;t replace SEO. AI engines overwhelmingly cite content that is crawlable, fast, and already ranks — Perplexity and AI Overviews pull heavily from top-10 results. Your SEO foundation is still the ticket to the game.
+      </p>
+      <p>
+        What changes is <em>what wins once you&apos;re in the game</em>. A ranked page that buries its answer in paragraph six gets read by the AI and skipped. A page that answers the question directly, cites a statistic, and shows first-hand experience gets quoted — and the quote includes your brand.
+      </p>
+      <DataTable
+        headers={["Dimension", "Classic SEO", "GEO"]}
+        rows={[
+          ["Target", "Ranked blue link", "Citation inside the AI answer"],
+          ["Unit of competition", "The page", "The passage (quotable chunk)"],
+          ["Winning format", "Comprehensive coverage", "Direct answers + unique data"],
+          ["Key signal", "Links, relevance, experience", "Quotability, citations, statistics, entity clarity"],
+          ["Measurement", "Rankings, clicks", "AI citations, brand mentions, referral from AI surfaces"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How AI engines decide what to cite</h2>
+      <p>
+        Across published research and what practitioners see in 2026, the pattern is consistent. AI engines prefer passages that:
+      </p>
+      <InfoBox title="What gets quoted" items={[
+        ["Answer immediately", "the first two sentences under a heading resolve the query — no throat-clearing"],
+        ["Contain numbers", "statistics, prices, dates, percentages — models love citable specifics"],
+        ["Show experience", "'we tested', 'in our data', first-hand detail generic AI content can't fake"],
+        ["Name entities clearly", "products, brands, and people spelled out, not 'this tool'"],
+        ["Carry structure", "question-based H2s, FAQ schema, tables, lists — easy for models to parse"],
+        ["Come from consistent topical authority", "sites with clusters of interlinked pages on one theme"],
+      ]} />
+      <p>
+        Notice what&apos;s missing: word count. A tight 900-word page with three quotable passages beats a 4,000-word wall that never commits to an answer.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The 7-point GEO checklist</h2>
+      <p>Apply this to any page you want cited:</p>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Open every H2 section with the answer.</strong> Question in the heading, direct two-sentence answer immediately below, detail after.</li>
+          <li><strong>Add one unique statistic or data point per page</strong> — your own numbers if possible. AI engines quote sources, and data is the most quotable thing you own.</li>
+          <li><strong>Use FAQ + Article schema.</strong> Structured data helps engines extract Q&A pairs cleanly.</li>
+          <li><strong>Build topic clusters.</strong> Five interlinked pages on one theme signal authority better than fifty scattered posts.</li>
+          <li><strong>Keep pages crawlable and fast.</strong> Check that your robots.txt doesn&apos;t block AI crawlers you want (GPTBot, PerplexityBot, Google-Extended) — blocking them removes you from those answers entirely.</li>
+          <li><strong>Name your brand in quotable sentences.</strong> &quot;ClickWise&apos;s free humanizer removes 100+ AI tells&quot; can be quoted with attribution; &quot;our tool is great&quot; cannot.</li>
+          <li><strong>Humanize the writing.</strong> Generic AI phrasing contains nothing worth quoting. Distinctive, experience-rich writing does — run drafts through the <InternalLink href="/tools/ai-text-humanizer">AI Text Humanizer</InternalLink> and then add your own data and opinions.</li>
+        </ol>
+      </div>
+
+      <AlertBox type="tip" title="The irony worth understanding" body={<>AI engines are terrible at citing AI-sounding content — median phrasing gives them nothing distinctive to quote. That&apos;s why GEO and <InternalLink href="/blog/how-to-humanize-ai-text">humanizing AI text</InternalLink> are the same project: original voice, first-hand data, direct answers. One workflow, two wins.</>} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to measure GEO in 2026</h2>
+      <p>
+        Ask ChatGPT, Perplexity, and Gemini the questions your customers ask, and record who gets cited — that&apos;s your visibility audit, and repeating it monthly shows movement. Watch referral traffic from chatgpt.com and perplexity.ai in your analytics. And track branded search volume: people who see your name in AI answers search for you directly. If you&apos;re worried about the flip side — whether AI-assisted content puts rankings at risk — read <InternalLink href="/blog/does-google-penalize-ai-content">does Google penalize AI content</InternalLink> next.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is generative engine optimization (GEO)?",
+          a: "GEO is the practice of optimizing content so AI systems — ChatGPT, Google AI Overviews, Perplexity, Gemini — cite and recommend it in their answers. Where SEO targets ranked links, GEO targets being the source an AI quotes.",
+        },
+        {
+          q: "Is GEO replacing SEO in 2026?",
+          a: "No — it sits on top of SEO. AI engines mostly pull from content that already ranks and is crawlable, so strong SEO remains the foundation. GEO adds structure, citations, statistics, and direct answers that AI models prefer to quote.",
+        },
+        {
+          q: "How do I get my website cited in Google AI Overviews?",
+          a: "Lead each section with a direct, quotable answer, use question-based H2s, add FAQ and Article schema, include unique statistics or first-hand data, and keep pages fast and crawlable. AI Overviews heavily favor content that answers the query in the first two sentences.",
+        },
+        {
+          q: "Does AI-generated content rank in AI search engines?",
+          a: <>Generic AI content rarely gets cited because it contains nothing worth quoting. AI engines favor original data, expert opinion, and first-hand experience — which is why <InternalLink href="/blog/how-to-humanize-ai-text">humanized, experience-rich content</InternalLink> wins in GEO.</>,
+        },
+      ]} />
+
+      <p>
+        The search result page is becoming an answer page. Structure your content to be the answer, and the traffic shift works for you instead of against you.
+      </p>
+    </div>
+  ),
+  "does-google-penalize-ai-content": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        No — Google does not penalize content for being written by AI. And yes — sites publishing AI content lost 80–100% of their traffic in 2026. Both are true, and the difference between them is the whole game.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        If you publish anything online, this is probably your most expensive open question. Here&apos;s the straight answer, what Google&apos;s policies actually say, and the checklist that separates the sites that grew from the ones that vanished.
+      </p>
+
+      <HookBanner headline="What you'll know by the end" items={[
+        "Google's actual written policy on AI content (not the Twitter version)",
+        "What 'scaled content abuse' means and who really gets hit",
+        "The signals Google measures instead of running an AI detector",
+        "A 6-point publishing checklist that keeps AI-assisted content safe",
+        "What to do if your traffic already dropped",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Does Google penalize AI-generated content?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Google does not penalize content for being AI-generated. Its published position rewards &quot;high-quality content, however it is produced.&quot; What Google penalizes is <strong>content produced primarily to manipulate rankings</strong> — thin, unedited, mass-produced pages with no first-hand value. Most raw AI output fits that description, which is why unedited AI content and penalties travel together.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/does-google-penalize-ai-content.png"
+        alt="Does Google penalize AI content in 2026 — what core updates actually punish"
+        caption="Google isn't detecting AI. It's detecting the absence of a human."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the policy actually says</h2>
+      <p>
+        Two documents matter. First, Google&apos;s AI content guidance: quality, originality, and E-E-A-T (experience, expertise, authoritativeness, trust) determine rankings — the production method doesn&apos;t. Second, the <strong>scaled content abuse</strong> spam policy: publishing many pages of low-value content primarily for search traffic is spam <em>whether a human or a machine wrote it</em>.
+      </p>
+      <p>
+        Read those together and the picture is clear. AI is a tool, like a keyboard. Using it to help an expert publish faster: fine. Using it to generate 500 posts nobody edited: that&apos;s the exact behavior the spam policy names.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Who actually got hit in 2026</h2>
+      <p>
+        The 2026 core updates sharpened a trend that started with the 2024 helpful content wave. The sites that collapsed shared a profile:
+      </p>
+      <InfoBox title="The penalty profile" items={[
+        ["Publishing velocity no human could edit", "dozens or hundreds of posts per week, near-zero editing"],
+        ["Zero first-hand experience", "no original data, screenshots, tests, or opinions — pure summarization"],
+        ["Template scent", "identical structures, identical AI phrasing across every post"],
+        ["Coverage without authority", "thin posts across dozens of unrelated topics instead of depth in one"],
+        ["No accountable author", "no real person or organization standing behind claims"],
+      ]} />
+      <p>
+        Meanwhile, sites using AI for drafts but adding real editing, real data, and real experience largely held or grew. The dividing line was never &quot;did AI touch this&quot; — it was &quot;did a human add anything.&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How Google &quot;detects&quot; AI without a detector</h2>
+      <p>
+        Google has said it doesn&apos;t need to identify AI text — and it doesn&apos;t. Its systems measure outcomes that correlate with unedited AI content: generic phrasing that adds nothing beyond existing results, absence of experience signals, uniform site-wide patterns, and user behavior (searchers bouncing back to results). The statistical fingerprint of raw AI output — the <InternalLink href="/blog/ai-words-to-avoid">same words</InternalLink>, the same rhythm — just makes those measurements easy.
+      </p>
+
+      <AlertBox type="warning" title="The Grammarly trap" body="Polishing raw AI text until it's grammatically flawless doesn't help — uniform perfection is itself a machine signal. What helps is adding the things machines can't: your data, your tests, your opinions, your voice." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The safe-publishing checklist</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Edit every draft.</strong> If you can&apos;t edit at your publishing pace, publish slower. Velocity you can&apos;t quality-control is the #1 penalty predictor.</li>
+          <li><strong>Add experience per page.</strong> One original screenshot, number, test result, or honest opinion minimum — the E in E-E-A-T.</li>
+          <li><strong>Strip the AI fingerprint.</strong> Run drafts through the free <InternalLink href="/tools/ai-text-humanizer">AI Text Humanizer</InternalLink>, then follow the <InternalLink href="/blog/how-to-humanize-ai-text">full humanizing workflow</InternalLink> to fix rhythm and voice.</li>
+          <li><strong>Verify every fact.</strong> AI-invented statistics are a trust signal killer — one fabricated claim can taint a domain&apos;s credibility.</li>
+          <li><strong>Build depth, not sprawl.</strong> Interlinked clusters on your core topic beat scattered posts chasing every keyword.</li>
+          <li><strong>Put a name on it.</strong> Author or organization accountability, about page, contact — the trust layer thin AI sites never bother with.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>If your traffic already dropped</h2>
+      <p>
+        Triage honestly: list your pages, and for each ask &quot;does this contain anything a searcher can&apos;t get from the top result already?&quot; Rewrite your highest-potential pages with real experience, consolidate overlapping thin posts, and delete what you can&apos;t defend. Recovery from content-quality demotions is slow — typically visible only after subsequent core updates — but sites that genuinely fixed quality have recovered. And the upside is real: content that clears this bar also gets cited by AI engines, which is the whole point of <InternalLink href="/blog/generative-engine-optimization-geo">generative engine optimization</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Does Google penalize AI-generated content?",
+          a: "Google doesn't penalize content for being AI-generated — its policy targets content made to manipulate rankings regardless of how it's produced. What gets punished is scaled, unedited, zero-experience content, which most raw AI output happens to be.",
+        },
+        {
+          q: "Can Google tell if content was written by AI?",
+          a: "Google doesn't need a detector. Unedited AI content shares statistical patterns, generic phrasing, and zero first-hand experience — signals Google's helpful content systems already measure. Heavily edited AI-assisted content is effectively indistinguishable.",
+        },
+        {
+          q: "What is the scaled content abuse policy?",
+          a: "It's Google's spam policy against publishing many low-value pages primarily to capture search traffic — AI-generated or not. Sites pumping out hundreds of thin AI posts are the main target and several lost 80–100% of traffic in 2026 updates.",
+        },
+        {
+          q: "How do I make AI content safe to publish?",
+          a: <>Edit every draft: add first-hand experience, verify facts, cut AI clichés with a <InternalLink href="/tools/ai-text-humanizer">humanizer pass</InternalLink>, include original data or opinions, and publish at a pace you can quality-control.</>,
+        },
+      ]} />
+
+      <p>
+        Use AI for the draft. Be the human in the byline. That&apos;s the entire policy, translated.
+      </p>
+    </div>
+  ),
+  "ai-content-editor-side-hustle": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Every business on earth can now generate infinite content drafts. Almost none of them can publish those drafts without embarrassment. That gap is a job — and in 2026 it pays $30–75 an hour.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        AI content editing is what happened when &quot;content writer&quot; met the AI wave: less blank-page writing, more turning machine drafts into human work that ranks and converts. It&apos;s remote, it needs no degree, and demand is growing faster than the supply of people who can do it well.
+      </p>
+
+      <HookBanner headline="The full roadmap in this guide" items={[
+        "What AI content editors actually do (it's not proofreading)",
+        "Real 2026 rates — hourly, per-article, and retainer",
+        "The 5 skills that matter and how to learn each one free",
+        "How to build a portfolio in one weekend with zero clients",
+        "Where the clients are and what to say to land the first one",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What does an AI content editor do?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          An AI content editor takes AI-generated drafts and makes them publishable: fixing robotic phrasing, verifying facts AI tends to invent, injecting brand voice and first-hand detail, and making sure the piece can rank in search and pass reader trust. It&apos;s editing plus AI literacy — knowing exactly what AI gets wrong and how to fix it fast.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/ai-content-editor-side-hustle.png"
+        alt="AI content editor side hustle 2026 — turning AI drafts into publishable human content"
+        caption="The writing jobs didn't disappear. They turned into editing jobs that pay better per hour."
+      />
+
+      <StatBox items={[
+        ["$30–75", "typical hourly rate"],
+        ["$50–150", "per edited article"],
+        ["0", "degrees required"],
+        ["1 weekend", "to build a portfolio"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why this exploded in 2026</h2>
+      <p>
+        Two forces collided. Businesses adopted AI writing at scale — infinite drafts, near-zero cost. Then Google&apos;s core updates started punishing exactly that kind of unedited output (<InternalLink href="/blog/does-google-penalize-ai-content">here&apos;s what actually gets penalized</InternalLink>), and clients started running freelancer deliverables through AI detectors before paying.
+      </p>
+      <p>
+        Suddenly &quot;we generate our content with AI&quot; became &quot;we generate drafts with AI and desperately need someone to make them publishable.&quot; Content agencies feel it worst: their writers produce AI-assisted drafts faster than their editors can clean them. That bottleneck is your market.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The 5 skills (and how to get each one free)</h2>
+      <InfoBox title="Skill stack" items={[
+        ["Spotting AI tells", "learn the vocabulary and structural fingerprints — our AI words to avoid list is the syllabus"],
+        ["Rhythm editing", "breaking uniform sentence patterns so text reads human — practice out loud"],
+        ["Fact verification", "AI invents statistics confidently; checking claims is half the job's value"],
+        ["Voice matching", "rewriting a paragraph in a client's existing tone — study their published posts first"],
+        ["SEO basics", "keeping keywords, headings, and search intent intact while you edit"],
+      ]} />
+      <p>
+        You can practice all five today: take any ChatGPT output, run it through the free <InternalLink href="/tools/ai-text-humanizer">AI Text Humanizer</InternalLink> for the mechanical pass, then apply the <InternalLink href="/blog/how-to-humanize-ai-text">5-step humanizing workflow</InternalLink> for the judgment work. That two-layer process — tool for the tells, human for the voice — is literally the service you&apos;ll sell.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Build the portfolio in one weekend</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Generate 3 realistic drafts</strong> — ask ChatGPT for a blog post, a product page, and a LinkedIn article in different niches.</li>
+          <li><strong>Edit each one fully</strong> — humanizer pass, rhythm fixes, one invented-fact catch (document it), voice adjustment.</li>
+          <li><strong>Package as before/after pairs</strong> with a short note on what you changed and why. The before/after format sells the skill instantly.</li>
+          <li><strong>Add detector receipts</strong> — screenshot detection scores before and after. Clients love the visual proof.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Rates and where the clients are</h2>
+      <DataTable
+        headers={["Channel", "What to offer", "Typical pay"]}
+        rows={[
+          ["Upwork", "'AI content editing / humanization' — active search demand", "$30–60/hr to start"],
+          ["Fiverr", "Fixed gigs: 'I will humanize and edit your AI content'", "$25–75 per article"],
+          ["Content agencies (direct pitch)", "Overflow editing capacity, fast turnaround", "$40–75/hr or retainer"],
+          ["LinkedIn", "B2B founders drowning in AI drafts", "$300–1,000/mo light retainers"],
+        ]}
+      />
+      <p>
+        The pitch is simple: &quot;You&apos;re already generating drafts with AI. I make them publishable — human, accurate, on-brand, and safe for Google. Here are three before/afters.&quot; Then a small paid trial. The same first-client mechanics from our <InternalLink href="/blog/how-to-get-ai-clients">AI clients in 24 hours guide</InternalLink> apply directly — one channel, one tight offer, real messages.
+      </p>
+
+      <AlertBox type="money" title="The scale path" body={<>Solo editing caps at your hours. The next rung is packaging editing into content operations for clients — at that point you&apos;re running a lean version of an <InternalLink href="/blog/start-ai-content-agency-2026">AI content agency</InternalLink>, billing for outcomes instead of hours.</>} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What does an AI content editor do?",
+          a: "An AI content editor takes AI-generated drafts and makes them publishable — fixing robotic phrasing, verifying facts, adding brand voice and first-hand detail, and ensuring the content can rank and convert. It's editing plus AI-detection literacy.",
+        },
+        {
+          q: "How much do AI content editors make in 2026?",
+          a: "Freelance AI content editors typically charge $30–75 per hour, or $50–150 per article on a per-piece basis. Experienced editors with SEO skills who work with agencies clear more, since agencies bill clients multiples of that.",
+        },
+        {
+          q: "Do I need a degree or certification to become an AI content editor?",
+          a: "No. Clients care about one thing: can you turn an AI draft into something that reads human, ranks, and doesn't embarrass them. A before/after portfolio of 2–3 samples beats any certificate.",
+        },
+        {
+          q: "Where do I find AI content editing clients?",
+          a: "Start on Upwork and Fiverr where 'AI content editing' and 'humanize AI content' gigs are actively searched, then pitch content agencies directly — most are drowning in AI drafts and short on editors who understand AI tells.",
+        },
+      ]} />
+
+      <p>
+        The draft economy created an editing economy. Spend a weekend on the portfolio, send ten pitches on Monday, and you&apos;re in it.
+      </p>
+    </div>
+  ),
   "how-to-humanize-ai-text": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>

@@ -23,6 +23,296 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "ai-words-to-avoid",
+    title: "50+ AI Words to Avoid in 2026 (These Instantly Expose ChatGPT Writing)",
+    metaTitle: "50+ AI Words to Avoid in 2026 (Full List + Fixes)",
+    primaryKeyword: "ai words to avoid",
+    metaDescription:
+      "The complete list of AI words to avoid in 2026 — delve, leverage, tapestry & 50+ more that expose ChatGPT writing, with human replacements for each one.",
+    excerpt:
+      "Readers, clients, and AI detectors all spot the same words. Here's the full 2026 list of AI words to avoid — with the exact human replacements — so your content never screams 'ChatGPT wrote this.'",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 4, 2026",
+    image: "/images/ai-words-to-avoid.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Words to Avoid",
+      "ChatGPT Writing",
+      "AI Writing",
+      "Humanize AI Text",
+      "Content Writing",
+      "AI Detection",
+      "Copywriting 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What words make writing sound like ChatGPT?",
+        answer:
+          "The most recognizable ChatGPT words are delve, leverage, utilize, furthermore, moreover, seamless, robust, tapestry, plethora, myriad, pivotal, and game-changer. Heavy em-dash use and openers like 'In today's fast-paced world' are equally strong tells.",
+      },
+      {
+        question: "Why does AI keep using the same words?",
+        answer:
+          "Language models are trained to pick statistically 'safe' professional vocabulary, so they over-select the same polite, inflated words across millions of outputs. That repetition is exactly what makes the words detectable.",
+      },
+      {
+        question: "Should I remove every AI word from my writing?",
+        answer:
+          "No — these are normal English words. The problem is density. One 'leverage' is fine; five per page plus em-dashes plus 'furthermore' creates the statistical fingerprint detectors and readers recognize.",
+      },
+      {
+        question: "Is there a tool that removes AI words automatically?",
+        answer:
+          "Yes. The free ClickWise AI Text Humanizer replaces 100+ AI-tell words and patterns with natural alternatives in one click, entirely in your browser with no signup or word limit.",
+      },
+    ],
+    seoKeywords: [
+      "words that sound like chatgpt",
+      "chatgpt words list",
+      "overused ai words",
+      "ai vocabulary list",
+      "words ai uses too much",
+      "how to not sound like ai",
+      "ai writing tells",
+      "delve ai word",
+    ],
+  },
+  {
+    slug: "best-ai-humanizer-tools-2026",
+    title: "7 Best AI Humanizer Tools in 2026 (Free & Paid — Honestly Compared)",
+    metaTitle: "7 Best AI Humanizer Tools 2026 (Free & Paid Compared)",
+    primaryKeyword: "best ai humanizer tools",
+    metaDescription:
+      "We compared the best AI humanizer tools of 2026 — free and paid. See which ones actually make ChatGPT text sound human, real pricing, and what to skip.",
+    excerpt:
+      "AI humanizers exploded in 2026 — but half of them garble your text and charge $30/month for it. Here's an honest comparison of the 7 best AI humanizer tools, including the free ones that actually work.",
+    category: "AI & Tech",
+    readTime: "13 min",
+    date: "Aug 4, 2026",
+    image: "/images/best-ai-humanizer-tools-2026.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Humanizer",
+      "Humanize AI Text",
+      "AI Tools 2026",
+      "AI Detection",
+      "Undetectable AI",
+      "Content Marketing",
+      "Tool Comparison",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best free AI humanizer in 2026?",
+        answer:
+          "For rule-based cleanup, the free ClickWise AI Text Humanizer removes 100+ AI tells with no word limit, no signup, and full privacy (client-side). For AI-powered paraphrasing on a free tier, QuillBot's free plan is the most usable, though it caps input length.",
+      },
+      {
+        question: "Do paid AI humanizers actually work?",
+        answer:
+          "The better ones (Undetectable.ai, StealthWriter) lower detection scores on most tests, but results vary by detector and they sometimes distort meaning. No paid tool guarantees a 0% AI score, whatever the landing page says.",
+      },
+      {
+        question: "Are AI humanizers safe for client or business content?",
+        answer:
+          "Check where your text goes. Most paid humanizers process content on their servers, which can violate client NDAs. Client-side tools that never upload your text are the safe option for confidential work.",
+      },
+      {
+        question: "Can I humanize AI text without any tool?",
+        answer:
+          "Yes — cut cliché words, replace em-dashes, add contractions, vary sentence length, and inject first-hand details. A tool just does the mechanical 40% instantly so you can focus on the edits that actually need a human.",
+      },
+    ],
+    seoKeywords: [
+      "ai humanizer free",
+      "free ai humanizer no sign up",
+      "undetectable ai alternative",
+      "ai humanizer comparison",
+      "humanize chatgpt text tool",
+      "stealthwriter vs undetectable ai",
+      "ai humanizer no word limit",
+      "best ai humanizer reddit",
+    ],
+  },
+  {
+    slug: "generative-engine-optimization-geo",
+    title: "Generative Engine Optimization (GEO): How to Rank in ChatGPT & AI Overviews in 2026",
+    metaTitle: "Generative Engine Optimization (GEO) — 2026 Guide",
+    primaryKeyword: "generative engine optimization",
+    metaDescription:
+      "Generative engine optimization (GEO) explained for 2026: how to get your site cited by ChatGPT, Google AI Overviews, and Perplexity — with a step-by-step checklist.",
+    excerpt:
+      "Search volume for 'generative engine optimization' is up nearly 1,000% — because AI answers now decide who gets traffic. Here's exactly how GEO works and how to get your content cited by ChatGPT, AI Overviews, and Perplexity.",
+    category: "AI & Tech",
+    readTime: "14 min",
+    date: "Aug 3, 2026",
+    image: "/images/generative-engine-optimization-geo.png",
+    trending: true,
+    featured: true,
+    tags: [
+      "Generative Engine Optimization",
+      "GEO",
+      "AI Overviews",
+      "AI SEO",
+      "ChatGPT Search",
+      "Perplexity",
+      "SEO 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is generative engine optimization (GEO)?",
+        answer:
+          "GEO is the practice of optimizing content so AI systems — ChatGPT, Google AI Overviews, Perplexity, Gemini — cite and recommend it in their answers. Where SEO targets ranked links, GEO targets being the source an AI quotes.",
+      },
+      {
+        question: "Is GEO replacing SEO in 2026?",
+        answer:
+          "No — it sits on top of SEO. AI engines mostly pull from content that already ranks and is crawlable, so strong SEO remains the foundation. GEO adds structure, citations, statistics, and direct answers that AI models prefer to quote.",
+      },
+      {
+        question: "How do I get my website cited in Google AI Overviews?",
+        answer:
+          "Lead each section with a direct, quotable answer, use question-based H2s, add FAQ and Article schema, include unique statistics or first-hand data, and keep pages fast and crawlable. AI Overviews heavily favor content that answers the query in the first two sentences.",
+      },
+      {
+        question: "Does AI-generated content rank in AI search engines?",
+        answer:
+          "Generic AI content rarely gets cited because it contains nothing worth quoting. AI engines favor original data, expert opinion, and first-hand experience — which is why humanized, experience-rich content wins in GEO.",
+      },
+    ],
+    seoKeywords: [
+      "what is geo seo",
+      "geo vs seo",
+      "rank in ai overviews",
+      "get cited by chatgpt",
+      "ai search optimization",
+      "llm seo",
+      "answer engine optimization",
+      "perplexity seo",
+    ],
+  },
+  {
+    slug: "does-google-penalize-ai-content",
+    title: "Does Google Penalize AI Content in 2026? (What Actually Gets Sites Deindexed)",
+    metaTitle: "Does Google Penalize AI Content? 2026 Truth",
+    primaryKeyword: "does google penalize ai content",
+    metaDescription:
+      "Does Google penalize AI content in 2026? No — and yes. Here's what Google's core updates actually punish, what's safe, and how to publish AI-assisted content that ranks.",
+    excerpt:
+      "Sites lost 90% of their traffic in 2026 core updates — others publish AI-assisted content daily and keep growing. Here's what Google actually penalizes, with the exact publishing checklist that keeps you safe.",
+    category: "AI & Tech",
+    readTime: "12 min",
+    date: "Aug 2, 2026",
+    image: "/images/does-google-penalize-ai-content.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Google AI Content",
+      "AI Content Penalty",
+      "Google Core Update",
+      "SEO 2026",
+      "Helpful Content",
+      "AI Writing",
+      "Content Strategy",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Does Google penalize AI-generated content?",
+        answer:
+          "Google doesn't penalize content for being AI-generated — its policy targets content made to manipulate rankings regardless of how it's produced. What gets punished is scaled, unedited, zero-experience content, which most raw AI output happens to be.",
+      },
+      {
+        question: "Can Google tell if content was written by AI?",
+        answer:
+          "Google doesn't need a detector. Unedited AI content shares statistical patterns, generic phrasing, and zero first-hand experience — signals Google's helpful content systems already measure. Heavily edited AI-assisted content is effectively indistinguishable.",
+      },
+      {
+        question: "What is the scaled content abuse policy?",
+        answer:
+          "It's Google's spam policy against publishing many low-value pages primarily to capture search traffic — AI-generated or not. Sites pumping out hundreds of thin AI posts are the main target and several lost 80–100% of traffic in 2026 updates.",
+      },
+      {
+        question: "How do I make AI content safe to publish?",
+        answer:
+          "Edit every draft: add first-hand experience, verify facts, cut AI clichés, include original data or opinions, and publish at a pace you can quality-control. A humanizer pass plus real expertise turns AI drafts into content Google rewards.",
+      },
+    ],
+    seoKeywords: [
+      "google ai content policy",
+      "ai content seo",
+      "will ai content hurt my rankings",
+      "google core update ai content",
+      "scaled content abuse",
+      "is ai content bad for seo",
+      "google helpful content ai",
+      "ai content deindexed",
+    ],
+  },
+  {
+    slug: "ai-content-editor-side-hustle",
+    title: "AI Content Editor: 2026's Easiest High-Paying Side Hustle (No Degree Needed)",
+    metaTitle: "AI Content Editor Side Hustle — 2026 Guide ($30–75/hr)",
+    primaryKeyword: "ai content editor",
+    metaDescription:
+      "AI content editor is 2026's fastest-growing side hustle — businesses drown in AI drafts and pay $30–75/hr to make them human. Full roadmap: skills, rates, first client.",
+    excerpt:
+      "Every business now generates infinite AI drafts — and almost none of them are publishable. AI content editors fix that for $30–75/hr. Here's the full 2026 roadmap, from skills to your first paying client.",
+    category: "Make Money",
+    readTime: "13 min",
+    date: "Aug 1, 2026",
+    image: "/images/ai-content-editor-side-hustle.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Content Editor",
+      "Side Hustle",
+      "Make Money with AI",
+      "Freelancing 2026",
+      "AI Editing",
+      "Humanize AI Text",
+      "Remote Work",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What does an AI content editor do?",
+        answer:
+          "An AI content editor takes AI-generated drafts and makes them publishable — fixing robotic phrasing, verifying facts, adding brand voice and first-hand detail, and ensuring the content can rank and convert. It's editing plus AI-detection literacy.",
+      },
+      {
+        question: "How much do AI content editors make in 2026?",
+        answer:
+          "Freelance AI content editors typically charge $30–75 per hour, or $50–150 per article on a per-piece basis. Experienced editors with SEO skills who work with agencies clear more, since agencies bill clients multiples of that.",
+      },
+      {
+        question: "Do I need a degree or certification to become an AI content editor?",
+        answer:
+          "No. Clients care about one thing: can you turn an AI draft into something that reads human, ranks, and doesn't embarrass them. A before/after portfolio of 2–3 samples beats any certificate.",
+      },
+      {
+        question: "Where do I find AI content editing clients?",
+        answer:
+          "Start on Upwork and Fiverr where 'AI content editing' and 'humanize AI content' gigs are actively searched, then pitch content agencies directly — most are drowning in AI drafts and short on editors who understand AI tells.",
+      },
+    ],
+    seoKeywords: [
+      "ai content editor jobs",
+      "ai editing side hustle",
+      "make money editing ai content",
+      "humanize ai content jobs",
+      "ai content editor salary",
+      "freelance ai editor",
+      "ai proofreading jobs",
+      "side hustles 2026",
+    ],
+  },
+  {
     slug: "how-to-humanize-ai-text",
     title: "How to Humanize AI Text in 2026 (So It Doesn't Sound Like a Robot Wrote It)",
     metaTitle: "How to Humanize AI Text (2026 Guide + Free Tool)",
