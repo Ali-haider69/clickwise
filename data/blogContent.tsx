@@ -156,6 +156,1999 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "i-let-ai-plan-my-week": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        On June 2nd I gave an AI agent my calendar, my task list, and permission to tell me what to do all week. By June 30th it had planned 4 weeks, roughly 160 working hours, and I&apos;d obeyed it maybe 70% of the time. Week two was the most productive week I&apos;ve had this year. Week three nearly broke me.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        This is the honest version of the experiment — the setup, the numbers, the one Thursday it scheduled me into the ground, and what I kept after the month ended.
+      </p>
+
+      <HookBanner headline="What's in this experiment log" items={[
+        "The exact Sunday-night planning prompt I used all month",
+        "Week-by-week results, including the failure week",
+        "The 3 things the AI did better than me",
+        "The 2 things it got badly, repeatedly wrong",
+        "The hybrid system I actually kept",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can an AI agent really plan your week?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes — mechanically, it&apos;s excellent. Give it your calendar, tasks, and priorities, and it produces a full time-blocked week in about 3 minutes that would take you 25 by hand. What it can&apos;t do is feel your energy levels, so the winning setup is <strong>AI drafts, human edits for 5 minutes</strong>, not full autopilot.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/i-let-ai-plan-my-week.png"
+        alt="AI agent planning a weekly calendar with time blocks"
+        caption="Turns out the robot is great at Tetris and terrible at knowing I'm human."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The setup: simpler than you&apos;d think</h2>
+      <p>
+        No exotic tools. An AI assistant with calendar access, a task list where every item had a rough time estimate, and one recurring Sunday 8pm session. The prompt that ran the whole month:
+      </p>
+      <p>
+        <em>&quot;Here are my fixed commitments, my task list with estimates, and my three priorities for the week. Build a time-blocked Monday-Friday schedule. Rules: no deep work after 4pm, gym three times, lunch is sacred, leave 20% of hours unscheduled as buffer.&quot;</em>
+      </p>
+      <p>
+        That last rule — the 20% buffer — came from painful experience, and we&apos;ll get to it. The whole planning session took under 10 minutes including my edits. My old hand-planning ritual took 40 and I skipped it half the time.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Week by week: what actually happened</h2>
+      <DataTable
+        headers={["Week", "Compliance", "What happened"]}
+        rows={[
+          ["Week 1", "~60%", "Constant friction. The plan ignored my energy patterns and I rebelled by Wednesday."],
+          ["Week 2", "~85%", "Best week of my year. Added energy rules to the prompt; deep work landed in mornings and it flowed."],
+          ["Week 3", "~50%", "The overpacking disaster. Zero buffer, back-to-back blocks, one sick kid, whole plan collapsed by Tuesday."],
+          ["Week 4", "~80%", "Added the 20% buffer rule. Plan survived two surprise meetings and a dentist appointment."],
+        ]}
+      />
+      <p>
+        Week two deserves explanation. After week one I added a single line: &quot;I do my best thinking 8-11am and I&apos;m useless for deep work after 3pm.&quot; The AI restructured everything around that, and suddenly the schedule felt like it was built by someone who knew me. I shipped a project that had been stuck for six weeks.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downside: week three</h2>
+      <p>
+        Here&apos;s where I stop selling you the dream. In week three I got greedy and told the agent to &quot;maximize output.&quot; It took me literally. Every hour from 8am to 6pm was assigned. It looked beautiful. It was a fantasy.
+      </p>
+      <p>
+        AI planners optimize for fitting things in, because that&apos;s the puzzle they can see. They can&apos;t see that a 90-minute budget meeting leaves you fried, or that Tuesday&apos;s task ran long, or that your kid woke up with a fever. By Wednesday of week three I was 11 tasks behind a plan that assumed a version of me who doesn&apos;t exist, and being behind a schedule feels worse than having no schedule. I nearly quit the experiment right there.
+      </p>
+      <AlertBox
+        type="warning"
+        title="The overpacking trap"
+        body="An AI will schedule 100% of your hours if you let it, and a 100% scheduled week has a 0% survival rate. Force a buffer rule — I use 20% unscheduled — and treat any plan without slack as a bug, not a feature."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the AI did better than me</h2>
+      <p>
+        Three things, honestly. First, it never forgot anything — recurring commitments, half-promised follow-ups, the invoice due on the 15th. My hand-written plans forgot something every single week. Second, zero decision fatigue: Sunday-night me made one decision (approve the plan) instead of forty. Third, it was ruthless about my own stated priorities. When I tried to slip a fun-but-pointless task into Monday, it asked which of my three priorities it served. None. Cut.
+      </p>
+      <p>
+        What it got wrong, even in week four: emotional weight and context-switching costs. It treated &quot;write difficult email to client&quot; as a 15-minute task because that&apos;s what the estimate said. The estimate didn&apos;t capture the 45 minutes of dread and rewriting. If you want the drafting part to hurt less, I wrote up my favorite <InternalLink href="/blog/chatgpt-prompts-save-time-2026">time-saving ChatGPT prompts</InternalLink> separately — pairing those with the schedule was a quiet unlock.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The system I kept</h2>
+      <p>
+        A month later, I still do the Sunday session. But the contract changed: the AI proposes, I dispose. I spend 5 minutes editing its draft — usually moving one hard task earlier and deleting one block entirely. I also stopped letting it touch weekends. Some things shouldn&apos;t be optimized.
+      </p>
+      <p>
+        A privacy note before you try this: the agent reads every meeting title and note on your calendar. Rename anything sensitive first, and check what your provider stores. And if you&apos;re still choosing an assistant, our free <InternalLink href="/tools/ai-finder">AI finder</InternalLink> narrows it down by what you actually need. If you want to build these habits into a broader skillset, the <InternalLink href="/blog/learn-ai-skills-free">90-day free AI roadmap</InternalLink> covers automation basics like this in weeks 5-8.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can an AI agent really plan your week?",
+          a: "Yes, with supervision. Modern agents can read your calendar, task list, and priorities, then propose a full weekly schedule. They handle the mechanical scheduling well, but you still need to review the plan because they don't feel deadlines, energy dips, or office politics the way you do.",
+        },
+        {
+          q: "What tools do you need to let AI plan your schedule?",
+          a: "At minimum: a calendar the AI can read, a task list with rough time estimates, and an assistant that supports scheduled or recurring prompts. I used a general AI assistant with calendar access plus a simple weekly planning prompt. No paid scheduling tool is strictly required.",
+        },
+        {
+          q: "Is AI scheduling better than time blocking by hand?",
+          a: "It's faster, not smarter. The AI produced in 3 minutes what took me 25 by hand, and it never forgot recurring commitments. But hand planning forced me to think about priorities, so the best setup is AI drafts the week and you spend 5 minutes editing it.",
+        },
+        {
+          q: "What are the biggest risks of letting AI manage your calendar?",
+          a: "Overpacking is the big one — agents optimize for fitting things in, not for how tired you'll be by Thursday. Also watch privacy: the agent sees every meeting title and note, so strip sensitive details and check what your provider stores before connecting anything.",
+        },
+      ]} />
+
+      <p>
+        Would I recommend the experiment? Yes, with the buffer rule tattooed on the prompt. The AI didn&apos;t make me superhuman. It made Sunday nights 30 minutes shorter and Mondays a lot less negotiable — and that turned out to be worth more.
+      </p>
+    </div>
+  ),
+  "best-ai-note-taking-apps": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I ran five AI note apps through the same two weeks of real work — 6 meetings, 2 research projects, and roughly 200 quick captures. Two earned a permanent spot on my phone. One got uninstalled in four days.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Notion AI, Obsidian with AI plugins, Mem, NotebookLM, and Otter. Same notes, same questions, same annoyances. Here&apos;s who each one is actually for, and who&apos;s wasting money.
+      </p>
+
+      <HookBanner headline="The test at a glance" items={[
+        "5 apps, 14 days, identical real-world workload",
+        "Scored on capture speed, AI answers, privacy, and price",
+        "The clear winner for students (it's free)",
+        "The privacy pick that never touches the cloud",
+        "Which subscription I'd cancel first",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What&apos;s the best AI note-taking app in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          There&apos;s no single winner — it depends on where your notes come from. <strong>Notion AI</strong> wins if notes live next to projects, <strong>Obsidian</strong> wins on privacy and ownership, <strong>NotebookLM</strong> is the best free research assistant, and <strong>Otter</strong> is the pick if your notes are mostly meetings.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-ai-note-taking-apps.png"
+        alt="Best AI note-taking apps 2026 comparison on desk with laptop"
+        caption="Five apps walked in. Two got to stay."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How I tested (so you can distrust me properly)</h2>
+      <p>
+        Every app got the same job: capture daily notes, ingest a 60-page research PDF, summarize 6 recorded meetings, and answer 10 questions about my own notes a week later. I timed captures, counted wrong answers, and read every privacy policy&apos;s data-training section so you don&apos;t have to. Not a lab. Just two honest weeks.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The scoreboard</h2>
+      <DataTable
+        headers={["App", "Best for", "Price", "Verdict"]}
+        rows={[
+          ["NotebookLM", "Research & studying sources", "Free (paid tier optional)", "Best free tool here. Grounded answers with citations."],
+          ["Obsidian + AI plugins", "Privacy, ownership, tinkerers", "Free core", "Most powerful, steepest setup. Your files, forever."],
+          ["Notion AI", "Teams and project-linked notes", "Bundled into paid plans", "Convenient, rarely essential. Great if you already live there."],
+          ["Otter", "Meetings and interviews", "Free tier, ~$17/mo Pro", "Superb transcripts, mediocre notebook."],
+          ["Mem", "Auto-organized quick capture", "Subscription", "Clever ideas, but I stopped trusting the auto-filing."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>NotebookLM: the free one that embarrassed the paid ones</h2>
+      <p>
+        Upload sources — PDFs, docs, links — and ask questions. It answers with citations pointing at the exact passage, which means when it&apos;s wrong you can see it&apos;s wrong in about five seconds. For my 60-page PDF test it answered 9 of 10 questions correctly and hedged honestly on the tenth. The audio overview feature, which turns your sources into a podcast-style discussion, is a genuinely good way to review notes on a commute.
+      </p>
+      <p>
+        The catch: it&apos;s a research assistant, not a notebook. Quick capture is clumsy, and it only knows what you upload. Students should pair it with something lightweight — I covered that combo in the <InternalLink href="/blog/best-ai-tools-for-students">best AI tools for students</InternalLink> guide.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Obsidian: the privacy pick with a learning curve</h2>
+      <p>
+        Obsidian stores notes as plain text files on your machine. Add a community AI plugin pointed at a local model and you get AI answers over your notes where nothing ever leaves your laptop. For journals, client work, or anything under NDA, that&apos;s the whole argument. Setup took me about 40 minutes and one moment of confusion; after that it just worked.
+      </p>
+      <p>
+        Downsides, honestly: mobile capture is slower than everything else here, plugins occasionally break after updates, and local models are noticeably dumber than cloud ones — fine for summarizing and finding, weaker at synthesis.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Notion AI, Otter, and Mem: the quick verdicts</h2>
+      <p>
+        <strong>Notion AI</strong> is good glue. Meeting notes become action items in the project database without leaving the app, and the Q&amp;A over your workspace works well when your workspace is tidy. But the AI itself isn&apos;t better than a general chatbot, so if you&apos;re paying primarily for AI answers, that math is shaky. <strong>Otter</strong> nails its one job: transcripts were the most accurate of anything I tested, speaker labels mostly right, summaries usable. As a general notebook, it&apos;s not trying and it shows. <strong>Mem</strong> was my four-day uninstall — the self-organizing pitch is lovely, but twice it surfaced the wrong note in a moment that mattered, and trust doesn&apos;t survive that.
+      </p>
+      <AlertBox
+        type="tip"
+        title="The two-app stack that beat every single app"
+        body="NotebookLM for anything with sources, plus one fast-capture notebook (Obsidian or Notion, per your privacy stance). Total cost: $0 if you pick Obsidian. Every all-in-one I tested did one of those jobs worse than this pair."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The uncomfortable privacy paragraph</h2>
+      <p>
+        Every cloud app here processes your notes on someone else&apos;s servers, and policies on whether content improves their services vary and change. Read the current policy, look for an explicit no-training setting, and keep genuinely sensitive material local. Also: AI summaries of your own notes inherit AI writing tics. If you republish them anywhere, run them past the <InternalLink href="/blog/ai-words-to-avoid">AI words to avoid</InternalLink> list, or through our <InternalLink href="/tools/ai-text-humanizer">AI text humanizer</InternalLink> first.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best AI note-taking app in 2026?",
+          a: "There's no single winner. Notion AI is best if your notes live next to projects and databases, Obsidian with AI plugins wins for privacy and ownership, NotebookLM is unbeatable for studying source documents, and Otter is the pick if most of your notes start as meetings.",
+        },
+        {
+          q: "Is NotebookLM good enough to replace a note app?",
+          a: "Not quite. NotebookLM is brilliant at answering questions about documents you upload — think research assistant, not notebook. It's weak at quick capture and daily jotting, so most people pair it with a lightweight capture app rather than replacing one.",
+        },
+        {
+          q: "Are AI note apps safe for private or work notes?",
+          a: "Read the data policy before you commit. Cloud apps process notes on their servers, and some use content to improve services unless you opt out. Obsidian with a local model is the safest route for sensitive material since notes never leave your machine.",
+        },
+        {
+          q: "Is Notion AI worth the extra cost?",
+          a: "Only if you already live in Notion. The AI features are convenient but not dramatically better than pasting into a chatbot. If you're paying mainly for AI answers over your own notes, NotebookLM does that part free and often better.",
+        },
+      ]} />
+
+      <p>
+        My wallet&apos;s verdict after two weeks: NotebookLM stayed, Obsidian stayed, and one subscription quietly didn&apos;t renew. Start free, add paid only when a specific pain demands it.
+      </p>
+    </div>
+  ),
+  "chatgpt-prompts-for-work": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I asked 14 colleagues to show me the prompts they actually reuse — not the clever ones they screenshot, the boring ones they paste five times a day. The overlap was striking. Almost everything fell into four buckets: email, summaries, planning, analysis.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here are all 25, grouped and copy-paste ready. No prompt theory, no &quot;act as a world-class expert&quot; padding. Just the wording that works.
+      </p>
+
+      <HookBanner headline="What you're getting" items={[
+        "7 email prompts, including the tone-fixer everyone steals",
+        "6 summary prompts for meetings, docs, and threads",
+        "6 planning prompts for weeks, projects, and decisions",
+        "6 analysis prompts that make data talk",
+        "The one-line rule that makes all 25 work better",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What makes a ChatGPT prompt actually work at work?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Three ingredients: <strong>context, constraints, and an example</strong>. Say who you are and who the output is for, set length and tone limits, and show one sample of what good looks like. That combination beats clever phrasing every time, because the model stops guessing.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/chatgpt-prompts-for-work.png"
+        alt="25 ChatGPT prompts for work displayed on a laptop screen"
+        caption="The boring prompts win. It's not close."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Email prompts (1-7)</h2>
+      <p><strong>1. The tone fixer:</strong> <em>&quot;Rewrite this email so it&apos;s warm but direct. Keep it under 120 words. Don&apos;t change any facts or dates.&quot;</em></p>
+      <p><strong>2. The de-escalator:</strong> <em>&quot;I&apos;m annoyed and it shows. Rewrite this so I sound calm and professional but the request stays firm.&quot;</em></p>
+      <p><strong>3. The follow-up:</strong> <em>&quot;Write a polite follow-up to this thread. It&apos;s been 6 days. One short paragraph, one clear ask, no guilt-tripping.&quot;</em></p>
+      <p><strong>4. The bad-news email:</strong> <em>&quot;Help me tell a client their deadline will slip by a week. Lead with the new date, own the miss in one sentence, offer one concrete make-good.&quot;</em></p>
+      <p><strong>5. The decline:</strong> <em>&quot;Write a 3-sentence no to this request that keeps the relationship warm and doesn&apos;t invent fake excuses.&quot;</em></p>
+      <p><strong>6. The cold email:</strong> <em>&quot;Draft a cold email to [ROLE] at [COMPANY TYPE]. Under 90 words, one specific compliment, one clear ask, no buzzwords.&quot;</em></p>
+      <p><strong>7. The style cloner:</strong> <em>&quot;Here are 3 emails I&apos;ve written. Learn my voice. Now draft a reply to the email below in that voice.&quot;</em> This one has the highest ceiling of the whole list.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Summary prompts (8-13)</h2>
+      <p><strong>8. Meeting notes:</strong> <em>&quot;Turn this transcript into: decisions made, action items with owners and dates, open questions. Nothing else.&quot;</em></p>
+      <p><strong>9. The doc gutting:</strong> <em>&quot;Summarize this document in 5 bullets, then list the 3 claims I should double-check before repeating them.&quot;</em></p>
+      <p><strong>10. Thread rescue:</strong> <em>&quot;Here&apos;s a 40-message email thread I ignored. What&apos;s the current state, what&apos;s being asked of me, and what happens if I do nothing?&quot;</em></p>
+      <p><strong>11. The exec version:</strong> <em>&quot;Summarize this for someone with 30 seconds who only cares about cost, risk, and dates.&quot;</em></p>
+      <p><strong>12. Two-sided summary:</strong> <em>&quot;Summarize this debate fairly: strongest case for each side in 3 bullets, then what evidence would settle it.&quot;</em></p>
+      <p><strong>13. The so-what:</strong> <em>&quot;I&apos;ve read this. Don&apos;t summarize it. Tell me what changes for my team, in plain terms.&quot;</em></p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Planning prompts (14-19)</h2>
+      <p><strong>14. Weekly plan:</strong> <em>&quot;Here are my tasks with time estimates and my 3 priorities. Build a Monday-Friday plan with 20% buffer time and deep work only before noon.&quot;</em> (This one ran a whole <InternalLink href="/blog/i-let-ai-plan-my-week">month-long experiment</InternalLink> for me.)</p>
+      <p><strong>15. Project kickoff:</strong> <em>&quot;I&apos;m starting [PROJECT]. Ask me 8 questions, one at a time, then produce a one-page plan with milestones and risks.&quot;</em></p>
+      <p><strong>16. Premortem:</strong> <em>&quot;This project failed 6 months from now. Write the postmortem: 5 most likely causes, ranked, with an early warning sign for each.&quot;</em></p>
+      <p><strong>17. The decision matrix:</strong> <em>&quot;I&apos;m choosing between [A], [B], [C]. Build a comparison table using the criteria I actually mentioned, then tell me which criterion I&apos;m overweighting.&quot;</em></p>
+      <p><strong>18. Estimate reality-check:</strong> <em>&quot;I think this task takes 4 hours. List everything similar tasks include that people forget to count, and give a realistic range.&quot;</em></p>
+      <p><strong>19. The delegation drafter:</strong> <em>&quot;Turn this task into a delegation brief: outcome, constraints, deadline, what done looks like, what NOT to do.&quot;</em></p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Analysis prompts (20-25)</h2>
+      <p><strong>20. Data first pass:</strong> <em>&quot;Here&apos;s a table. Give me the 3 most surprising things in it before any obvious observations.&quot;</em></p>
+      <p><strong>21. The steelman:</strong> <em>&quot;Here&apos;s my recommendation. Argue against it as my smartest skeptical colleague would. Be specific, not contrarian for sport.&quot;</em></p>
+      <p><strong>22. Assumption audit:</strong> <em>&quot;List every assumption this plan depends on, then mark each as verified, plausible, or wishful.&quot;</em></p>
+      <p><strong>23. The blind-spot check:</strong> <em>&quot;What question should I be asking about this situation that I haven&apos;t asked?&quot;</em></p>
+      <p><strong>24. Feedback decoder:</strong> <em>&quot;Here&apos;s vague feedback I received. Give me 3 plausible interpretations and a clarifying question for each.&quot;</em></p>
+      <p><strong>25. The 5 whys:</strong> <em>&quot;This problem keeps recurring: [PROBLEM]. Walk the 5 whys with me, one why at a time, and challenge weak answers.&quot;</em></p>
+
+      <AlertBox
+        type="warning"
+        title="Before you paste anything from work"
+        body="Strip names, account numbers, and identifiers, or swap in placeholders like [CLIENT]. If your company runs an enterprise plan with a no-training guarantee, follow its rules. A prompt is never worth a data-leak conversation with legal."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest caveat</h2>
+      <p>
+        These prompts make output faster, not automatically good. AI drafts share a recognizable flavor — the same 30 words, the same rhythm — and colleagues notice faster than you think. I keep a list of <InternalLink href="/blog/ai-words-to-avoid">AI words to avoid</InternalLink> pinned for exactly this reason, and anything client-facing gets a human edit or a pass through the <InternalLink href="/tools/ai-text-humanizer">text humanizer</InternalLink>. The 30-second edit is the difference between &quot;helpful tool&quot; and &quot;obviously outsourced.&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What makes a ChatGPT prompt good for work tasks?",
+          a: "Three things: context (who you are and who it's for), constraints (length, tone, format), and an example of what good looks like. A prompt with those three consistently beats a clever one-liner, because the model stops guessing what you want.",
+        },
+        {
+          q: "Should I paste confidential work information into ChatGPT?",
+          a: "Not raw. Strip names, numbers, and identifiers, or use placeholders like [CLIENT]. If your company has an enterprise plan with no-training guarantees, follow its policy. When in doubt, describe the situation generically instead of pasting the actual document.",
+        },
+        {
+          q: "Do these prompts work in Claude or Gemini too?",
+          a: "Yes. All 25 prompts are model-agnostic — they rely on context and constraints, not tricks specific to one model. You may need to tweak tone instructions slightly since each model has a different default voice.",
+        },
+        {
+          q: "How do I stop ChatGPT emails from sounding like AI?",
+          a: "Give it three of your real emails as a style sample, ask for short sentences, and ban corporate filler words in the prompt itself. Then edit for 30 seconds — cut the first sentence if it restates the subject line, which it usually does.",
+        },
+      ]} />
+
+      <p>
+        Steal all 25, but expect to keep about 8. That&apos;s the pattern with everyone I asked: a small stable of boring, reliable prompts, worn smooth by daily use. Boring is what working looks like.
+      </p>
+    </div>
+  ),
+  "ai-in-healthcare-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        My last doctor visit had an AI in the room and I almost didn&apos;t notice. No robot, no diagnosis-by-algorithm. Just a doctor who looked at me instead of a screen, because software was writing the visit note from our conversation.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        That&apos;s the real story of AI in healthcare in 2026: quiet, administrative, and further along than most patients realize. Here&apos;s what&apos;s actually changed, what&apos;s hype, and what you&apos;re allowed to ask about.
+      </p>
+
+      <HookBanner headline="What this covers" items={[
+        "AI scribes: why your doctor finally makes eye contact",
+        "Triage tools: what happens before you're even seen",
+        "Imaging AI: the second pair of eyes on your scans",
+        "The honest limitations and bias problems",
+        "5 questions you can ask your clinic",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How is AI used in doctor visits in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Three main ways: <strong>ambient scribes</strong> that draft the visit note from your conversation, <strong>triage tools</strong> that help sort how urgent symptoms are, and <strong>imaging software</strong> that flags possible findings for the radiologist. In every case, a licensed clinician reviews and owns the final decision.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/ai-in-healthcare-2026.png"
+        alt="AI in healthcare 2026 - doctor using AI scribe during patient visit"
+        caption="The biggest change in the exam room is where the doctor's eyes point."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The scribe revolution nobody advertised</h2>
+      <p>
+        For years, doctors spent a huge slice of their day on documentation — commonly cited figures run around 1-2 hours of paperwork for every few hours of patient care, much of it after hours. Ambient AI scribes listen to the visit (with consent), draft the clinical note, and hand it to the doctor for review and correction.
+      </p>
+      <p>
+        Clinicians using these tools widely report saving on the order of an hour a day, and health systems have rolled them out to tens of thousands of physicians. The patient-visible effect is subtle but real: more eye contact, fewer keyboard pauses, and visits that feel like conversations. The catch: transcription errors happen, especially with accents, interruptions, and drug names that sound alike. The doctor&apos;s review is the safety net, and rushed reviews are the new failure mode everyone in the field worries about.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Triage: the sorting hat before the visit</h2>
+      <p>
+        Symptom checkers and nurse-line tools now use large language models instead of rigid question trees, so they handle &quot;it hurts when I breathe deep, started after moving furniture&quot; in plain language. Their job is one narrow question: how urgent is this — emergency, same-day, this week, or self-care? Used that way, they route people reasonably well and take pressure off phone lines.
+      </p>
+      <p>
+        Used the other way — as a diagnosis machine — they&apos;re a gamble. Studies of symptom checkers have long shown accuracy that swings widely by condition, and the newer models still inherit that problem while sounding far more confident. Confidence without calibration is dangerous in medicine. If a tool says emergency, take it seriously; if it says you&apos;re fine and your body disagrees, trust your body and call a human.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Imaging: where the evidence is strongest</h2>
+      <p>
+        Radiology is AI&apos;s most mature corner of medicine. Regulators have cleared hundreds of AI-enabled medical imaging tools — the majority of all approved medical AI devices are in radiology. In practice the software pre-screens scans, flags suspicious regions, and pushes likely-urgent cases up the reading queue. Large screening studies, including major mammography trials in Europe, have found AI-assisted reading can catch more cancers while cutting radiologist workload substantially.
+      </p>
+      <p>
+        Notice the word &quot;assisted.&quot; The consistent finding is that AI plus radiologist beats either alone. Nobody serious is arguing for removing the human, and the tools cleared for use don&apos;t.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The part the press releases skip</h2>
+      <p>
+        Three honest problems. Bias: models trained mostly on data from certain populations perform worse on others — this is documented, and fixing it is slow. Automation complacency: when the AI is right 95% of the time, humans get worse at catching the 5%, and that&apos;s a known human-factors trap, not a hypothetical. And the money question: documentation time is genuinely dropping, but there&apos;s little sign yet of AI making your bill smaller. Savings are going to burnout reduction and backlogs first. Maybe that&apos;s the right order. It&apos;s still worth saying out loud.
+      </p>
+      <AlertBox
+        type="tip"
+        title="5 questions you're allowed to ask your clinic"
+        body="1) Is an AI scribe recording this visit, and is audio stored? 2) Can I opt out? 3) Does a radiologist personally review my imaging? 4) Was AI involved in this triage decision? 5) Who do I talk to if I think the note is wrong? Clinics using these tools properly answer all five without flinching."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What this means for you, practically</h2>
+      <p>
+        Don&apos;t fear the scribe — it&apos;s probably the best thing to happen to visit quality in a decade. Do read your visit notes in the patient portal, because you&apos;re the last error-check in the chain, and note mistakes were common even before AI. And keep using chatbots to prepare for visits, not to replace them: asking an AI to help you list symptoms and questions beforehand is genuinely useful. If you&apos;re building broader AI literacy for this new world, our <InternalLink href="/blog/learn-ai-skills-free">free 90-day AI roadmap</InternalLink> is a decent place to start, and knowing <InternalLink href="/blog/how-accurate-are-ai-detectors">how confidently wrong AI systems can be</InternalLink> is useful calibration for medical chatbots too.
+      </p>
+      <p>
+        None of this is medical advice — it&apos;s a map of what&apos;s changed. Decisions about your health belong with you and your clinicians.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How is AI used in doctor visits in 2026?",
+          a: "The three biggest uses are ambient scribes that draft visit notes from the conversation, triage tools that help decide how urgent your symptoms are, and imaging software that flags possible findings on scans for a radiologist to review. In all three, a clinician stays responsible for the final call.",
+        },
+        {
+          q: "Can AI diagnose me instead of a doctor?",
+          a: "No, and it shouldn't. AI tools support clinicians by flagging patterns and drafting paperwork, but diagnosis and treatment decisions remain with licensed professionals. Symptom chatbots can help you decide whether to seek care, not what condition you have.",
+        },
+        {
+          q: "Is it safe for my doctor to use an AI scribe?",
+          a: "Generally yes — reputable scribe tools are built for healthcare privacy rules, and the doctor reviews every note before it's saved. You can always ask what tool is used, whether audio is stored, and request it be turned off for a visit.",
+        },
+        {
+          q: "Will AI make healthcare cheaper or faster?",
+          a: "Faster in places: documentation time drops noticeably with scribes, and imaging queues move quicker when software pre-sorts urgent cases. Cheaper is less clear so far — savings often go to reducing clinician burnout and backlogs before they show up on your bill.",
+        },
+      ]} />
+
+      <p>
+        The honest summary: AI took over the paperwork before it took over the medicine, and that&apos;s probably the right order. Your doctor is still your doctor. They&apos;re just finally looking at you.
+      </p>
+    </div>
+  ),
+  "ai-scams-deepfake-protection": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Three seconds of audio. That&apos;s roughly what modern voice-cloning tools need to make a convincing copy of your voice — and if you&apos;ve ever posted a video, that sample already exists. The call that says &quot;Mom, I&apos;m in trouble, I need money now&quot; can sound exactly like your kid.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        I&apos;m not writing this to scare you into unplugging the router. The defenses are simple, mostly free, and they work. But they only work if you set them up before the call comes.
+      </p>
+
+      <HookBanner headline="Your defense kit" items={[
+        "How voice cloning scams actually run, step by step",
+        "The family passphrase: 10 minutes to set up, defeats most of it",
+        "Deepfake video calls and the live tests that expose them",
+        "Why AI phishing killed the 'look for typos' advice",
+        "What to do in the first 3 hours if money already moved",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How do AI voice cloning scams work?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Scammers pull a short voice sample from social media, clone it with cheap tools, then call a relative with a fake emergency — an arrest, an accident, a kidnapping — demanding money fast. The voice is real enough, the story is urgent, and <strong>the urgency is the weapon</strong>: it exists to stop you from verifying.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/ai-scams-deepfake-protection.png"
+        alt="AI scams protection - phone showing suspicious voice call warning"
+        caption="The most dangerous phone call of 2026 sounds exactly like someone you love."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The scale of this, honestly</h2>
+      <p>
+        Fraud losses reported to the US FTC have run over $10 billion a year recently, and imposter scams sit at or near the top of the list every single year. AI didn&apos;t invent these scams. It industrialized them: one scammer can now produce personalized, grammatically perfect, voice-matched attacks at a volume that used to require a call center. Surveys consistently find a majority of adults can&apos;t reliably distinguish cloned voices from real ones. Neither can you. Plan accordingly.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The family passphrase: set it up tonight</h2>
+      <p>
+        This is the single highest-value 10 minutes in this article. Pick a word or question-answer pair that never appears on social media — an inside joke, a childhood detail, something absurd. Share it in person or on a call you initiated. The rule: <strong>any urgent request involving money or emergencies gets the passphrase check, no exceptions, no matter how real the voice sounds.</strong>
+      </p>
+      <p>
+        And agree on the failure protocol in advance: no passphrase means hang up and call the person back on the number you already have saved. Not the number that just called you. A real family member in a real emergency will not be offended. A scammer will push back on exactly this step — which is itself the tell.
+      </p>
+      <AlertBox
+        type="warning"
+        title="The 4 pressure signs that scream scam"
+        body="1) Urgency — act in minutes, not hours. 2) Secrecy — don't tell Dad, don't call the bank. 3) Unusual payment — gift cards, wire transfer, crypto. 4) Verification resistance — anger or panic when you try to confirm through another channel. Any two together: hang up and call back on a known number."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Deepfake video calls: yes, that&apos;s real too</h2>
+      <p>
+        Live video deepfakes have graduated from research demos to actual heists — the widely reported case where a finance worker in Hong Kong transferred about $25 million after a video conference where every other participant was faked is the canonical example. On a call that feels off, ask for live actions: turn fully sideways, wave a hand across the face, stand up. Current real-time fakes still struggle with profiles and occlusion, and glitch when you push them off-script.
+      </p>
+      <p>
+        But here&apos;s my honest position: detection tips age badly. Every artifact I could list will be fixed within a couple of years. The durable defense isn&apos;t your eyes; it&apos;s process. Verify big requests through a second channel you initiate. That rule doesn&apos;t expire.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Phishing lost its accent</h2>
+      <p>
+        For twenty years we taught people to spot scam emails by their typos and weird grammar. That advice is now dead — AI writes flawless, personalized phishing in any language, referencing your real job and your real colleagues scraped from public profiles. Security researchers have tracked an enormous surge in phishing volume since generative tools went mainstream, with some analyses reporting increases well over tenfold.
+      </p>
+      <p>
+        The new rules are structural, not stylistic: never log in through an emailed link (go to the site directly), turn on two-factor authentication everywhere that matters, and use a password manager with unique passwords per site — our free <InternalLink href="/tools/password-generator">password generator</InternalLink> exists for exactly this. It&apos;s a strange symmetry: the same tells that expose <InternalLink href="/blog/how-accurate-are-ai-detectors">AI writing to detectors</InternalLink> are vanishing from scams too, and faster.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>If money already moved: the 3-hour window</h2>
+      <p>
+        Speed beats shame. First hour: call your bank or payment app and request a recall or fraud freeze — wire transfers are sometimes reversible if caught fast, and card payments have dispute paths. Same day: report to police and your national fraud portal (in the US, reportfraud.ftc.gov and ic3.gov), and change any passwords or codes you revealed. Then tell your family what happened, because scammers re-target people who paid once, and shame-driven silence is their best friend.
+      </p>
+      <InfoBox title="The 10-minute family security setup" items={[
+        ["Passphrase", "— one unguessable word, shared in person, mandatory for money/emergency calls"],
+        ["Callback rule", "— urgent request means hang up and call the saved number, always"],
+        ["Grandparent briefing", "— older relatives are targeted most; walk them through one fake scenario"],
+        ["Voice hygiene", "— lock down public videos of kids and elders where practical"],
+        ["Payment tripwire", "— gift cards and crypto are never how real institutions collect money"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How do AI voice cloning scams work?",
+          a: "Scammers grab a short voice sample — often from social media videos — clone it with cheap AI tools, then call a relative claiming an emergency that needs money fast. The voice sounds real, the story is urgent, and the pressure to skip verification is the entire trick.",
+        },
+        {
+          q: "What is a family passphrase and how do I set one up?",
+          a: "It's a pre-agreed word or question only your family knows, used to verify identity during any urgent money or emergency call. Pick something unguessable from social media, share it in person, and agree that no passphrase means hang up and call back on a known number.",
+        },
+        {
+          q: "Can you tell if a video call is a deepfake?",
+          a: "Sometimes — watch for odd lighting on face edges, delayed lip sync, and refusal to do simple live actions like turning sideways or waving a hand across the face. But detection is unreliable, so verify through a second channel instead of trusting your eyes.",
+        },
+        {
+          q: "What should I do if I already sent money to a scammer?",
+          a: "Act within hours: contact your bank or payment app to attempt a reversal, report to local police and your national fraud portal, and change any passwords you shared. Speed matters most with wire transfers and gift cards, which are hardest to claw back.",
+        },
+      ]} />
+
+      <p>
+        The scams got smarter; the defense stayed simple. One passphrase, one callback rule, one honest conversation with your parents this week. Ten minutes of setup against the most convincing fraud machine ever built — take the deal.
+      </p>
+    </div>
+  ),
+  "learn-ai-skills-free": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The AI course industry wants you to believe competence costs $500 and a certificate. It doesn&apos;t. Everything you need to get genuinely useful with AI is free — the models, the docs, the tutorials. What&apos;s missing is a plan. This is the plan.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        90 days, about an hour a day, five days a week. You end with real skills and 2-3 portfolio pieces that prove them. No purchases anywhere in this article.
+      </p>
+
+      <HookBanner headline="The 90-day map" items={[
+        "Days 1-30: prompting until it's boring",
+        "Days 31-60: tools and your first automations",
+        "Days 61-90: build 2-3 things people can see",
+        "The free resource stack for each phase",
+        "The honest part: what free can't give you",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can you really learn AI skills for free in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes — the practical layer, completely. Free chatbot tiers, official docs, and free courses from major providers cover prompting, tool workflows, and automation basics. The paid courses mostly sell <strong>structure and accountability</strong>, which a 90-day plan and a calendar replace for $0.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/learn-ai-skills-free.png"
+        alt="Learn AI skills free - 90 day self-taught roadmap on a desk calendar"
+        caption="Tuition: $0. The catch: you have to actually show up."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Days 1-30: prompting until it&apos;s boring</h2>
+      <p>
+        Skip the theory videos. Open a free chatbot — any of the big three — and spend the first month doing your actual life through it. Draft real emails. Plan real meals. Summarize real documents. The skill you&apos;re building isn&apos;t &quot;prompting&quot; as a party trick; it&apos;s describing what you want precisely enough that a very literal assistant gets it right.
+      </p>
+      <p>
+        Structure for the month: week 1, basic tasks and rewrites. Week 2, add context and constraints to everything — who it&apos;s for, how long, what to avoid. Week 3, iteration: never accept a first draft, always push two rounds of &quot;make it shorter, make it warmer, cut the filler.&quot; Week 4, evaluation: deliberately ask questions you know the answers to and catch the confident mistakes. That last week matters most. If you want ready-made practice material, my <InternalLink href="/blog/chatgpt-prompts-for-work">25 daily-use work prompts</InternalLink> double as a training set.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Days 31-60: tools and first automations</h2>
+      <p>
+        Month two is breadth. Pick one tool per week and do a real project with it: a research tool (NotebookLM-style) on a topic you care about, an image generator for something you&apos;d actually use, an AI coding assistant to build a tiny web page even if you&apos;ve never coded, and a no-code automation platform for your first real automation.
+      </p>
+      <p>
+        That first automation should be embarrassingly small. Mine was: when a form is submitted, summarize the response with AI and send it to my email. Maybe 45 minutes of setup on a free tier. It ran 60+ times in its first month, and something clicks permanently when software does work while you sleep. Free tiers of the major automation platforms typically give you around 100 runs a month, which is plenty for learning.
+      </p>
+      <AlertBox
+        type="money"
+        title="The market context, plainly"
+        body="Job postings mentioning AI skills have grown severalfold in the past couple of years, and multiple large surveys report a majority of knowledge workers now use AI at work — often without training. That gap between usage and competence is exactly the space a self-taught person walks into."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Days 61-90: build things people can see</h2>
+      <p>
+        Certificates prove attendance. Portfolios prove ability. Spend the last month building 2-3 of these, sized to your target:
+      </p>
+      <InfoBox title="Portfolio pieces that actually get looked at" items={[
+        ["The workflow write-up", "— document a real process you automated: before, after, time saved, screenshots"],
+        ["The prompt library", "— 15-20 tested prompts for one niche (real estate, teaching, support), with example outputs"],
+        ["The tiny tool", "— a single-purpose page or script built with an AI assistant, deployed and linkable"],
+        ["The research brief", "— a source-grounded report built with an AI research tool, with citations"],
+        ["The teaching post", "— explain one thing you learned, clearly; it signals communication plus competence"],
+      ]} />
+      <p>
+        Put them anywhere public and linkable. Then get your resume telling the same story — our free <InternalLink href="/tools/resume-builder">resume builder</InternalLink> helps you phrase AI skills as outcomes (&quot;automated X, saving Y hours monthly&quot;) instead of buzzwords.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest part: what free doesn&apos;t include</h2>
+      <p>
+        Three real gaps. Accountability — nobody emails you when you skip a week, so tell one person your plan and report weekly; it&apos;s crude and it works. Feedback — a course instructor catches your bad habits, so substitute public posting and communities, where strangers will happily tell you what&apos;s wrong. And depth — if your goal is machine learning engineering, this roadmap is a doorway, not the building; you&apos;d follow it with real math and programming study, and that path is longer than 90 days no matter who&apos;s charging you.
+      </p>
+      <p>
+        Also, a warning from someone who&apos;s reviewed a lot of AI-assisted portfolios: work that&apos;s obviously pasted straight from a chatbot reads as a negative signal, not a skill. Learn <InternalLink href="/blog/how-to-humanize-ai-text">how to humanize AI text</InternalLink> and make everything you publish sound like you.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can you really learn AI skills for free in 2026?",
+          a: "Yes — the practical layer, absolutely. Free chatbot tiers, official documentation, YouTube walkthroughs, and free courses from major providers cover prompting, tool workflows, and automation basics. What you can't get free is discipline, which is what the 90-day structure replaces.",
+        },
+        {
+          q: "Do I need to know how to code to learn AI skills?",
+          a: "No for the first 60 days — prompting, tool fluency, and no-code automation need zero code. Light scripting helps in the final month and beyond, and honestly, AI assistants now write most of that starter code for you if you can describe what you want clearly.",
+        },
+        {
+          q: "What AI skills are actually worth learning in 2026?",
+          a: "Four stack up: writing clear specs and prompts, evaluating AI output critically, connecting tools into small automations, and knowing when not to use AI. Employers care less about certificates and more about a portfolio showing you shipped something real.",
+        },
+        {
+          q: "How many hours a day does the 90-day roadmap take?",
+          a: "About an hour a day, five days a week. Weeks 1-4 are mostly practice with a chatbot, weeks 5-8 add tools and automation, weeks 9-12 build two or three portfolio pieces. Doubling the hours roughly halves the calendar, if you're in a hurry.",
+        },
+      ]} />
+
+      <p>
+        Day 1 is an hour with a chatbot and a real task. Day 90 is a portfolio and a skillset most of your coworkers don&apos;t have. The entire cost is showing up 60-ish times for an hour. That&apos;s the whole secret, and nobody can sell it to you.
+      </p>
+    </div>
+  ),
+  "how-accurate-are-ai-detectors": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        AI detectors have flagged the US Constitution as machine-written. They&apos;ve flagged Genesis. They&apos;ve flagged essays by students who&apos;d never touched a chatbot — while waving through AI text that someone spent ten minutes paraphrasing. Both failures happen for the same reason, and it&apos;s built into how these tools work.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        I&apos;ve tested these tools extensively for this site. Here&apos;s how they actually score text, what the accuracy claims hide, and what to do if one accuses you.
+      </p>
+
+      <HookBanner headline="What you'll understand by the end" items={[
+        "Perplexity and burstiness — the two signals, explained plainly",
+        "Why 99% accuracy claims and real accuracy are different animals",
+        "Who gets falsely flagged most (the pattern is ugly)",
+        "The paraphrase problem that breaks detection",
+        "Exactly what to do if you're accused",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How accurate are AI detectors really?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Much less than advertised. Vendor claims of 98-99% come from lab tests on clean, unedited samples. Independent testing on real-world writing finds meaningful false positive rates, and light paraphrasing can slash detection dramatically. The honest position: <strong>a detector score is a weak signal, never proof</strong>.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-accurate-are-ai-detectors.png"
+        alt="How accurate are AI detectors - detection score screen with false positive warning"
+        caption="A confident percentage is not the same thing as a correct one."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How detectors actually work: perplexity and burstiness</h2>
+      <p>
+        Strip away the marketing and most detectors measure two things. <strong>Perplexity</strong> asks: how surprised would a language model be by each next word? AI text is generated by picking probable words, so it&apos;s low-perplexity — smooth, predictable, statistically average. <strong>Burstiness</strong> asks: how much does sentence rhythm vary? Humans write a five-word punch, then a rambling forty-word thought. AI tends toward even, medium-length sentences unless pushed.
+      </p>
+      <p>
+        Low perplexity plus low burstiness equals an AI flag. Notice what&apos;s missing: any actual knowledge of where the text came from. It&apos;s statistical vibes, formalized. That&apos;s why the Constitution gets flagged — it&apos;s quoted so often in training data that every word is highly predictable.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The accuracy shell game</h2>
+      <p>
+        When a vendor says &quot;99% accurate,&quot; ask: on what? Pure, unedited output from one model, tested in-house, usually. Change any variable — a newer model, a human edit pass, a non-native English writer, text under 300 words — and the numbers move, sometimes a lot. Independent studies have repeatedly found false positive rates in the single digits for the better tools and much worse for the weaker ones. Even 1-2% is brutal at scale: run 5,000 student essays through a detector and a 2% false positive rate accuses roughly 100 innocent people. Per assignment.
+      </p>
+      <p>
+        It says a lot that OpenAI shut down its own text detector back in 2023 for low accuracy, and that major plagiarism-tool vendors publicly caution against using scores as sole evidence. The people closest to the technology are the most careful about it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Who gets falsely flagged (the ugly pattern)</h2>
+      <p>
+        A widely cited Stanford study found detectors flagged essays by non-native English speakers as AI-generated at rates above 50% in some configurations, while near-perfectly clearing native speakers on the same task. The mechanism is obvious once you see it: writing in a second language tends toward safer, more standard constructions. Lower perplexity. More machine-like, statistically.
+      </p>
+      <p>
+        The same logic hits technical writers, anyone trained in rigid five-paragraph essay structure, and frankly anyone who writes cleanly. The tools punish polish. Meanwhile, AI text that&apos;s been paraphrased — by hand or by tool — routinely drops from &quot;98% AI&quot; to &quot;mostly human&quot; in minutes. So the system over-catches innocent careful writers and under-catches motivated cheaters. That&apos;s not a bug being fixed; it&apos;s the shape of the method.
+      </p>
+      <AlertBox
+        type="warning"
+        title="If you're falsely accused: your evidence checklist"
+        body="1) Version history — Google Docs and Word both keep it; it's your strongest card. 2) Drafts, outlines, and notes. 3) Browser research history. 4) Ask which tool was used and its documented false positive rate. 5) Point out that detector vendors themselves say scores shouldn't be sole proof. Stay calm and procedural — most institutions now require corroborating evidence."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What this means for students and writers</h2>
+      <p>
+        Students: your best protection is process, not prose. Write in a tool with version history, keep your outline, and save sources. If you use AI legitimately — brainstorming, feedback on a draft — know your institution&apos;s actual written policy, because &quot;allowed with disclosure&quot; and &quot;forbidden&quot; both exist in 2026, sometimes at the same school.
+      </p>
+      <p>
+        Writers and freelancers: clients increasingly run detectors, wrongly treating them as truth machines. Protect yourself the same way — drafts and history — and make your writing sound like a person, which is good advice regardless of robots. We&apos;ve broken down the vocabulary tells in <InternalLink href="/blog/ai-words-to-avoid">AI words to avoid</InternalLink> and the full editing approach in <InternalLink href="/blog/how-to-humanize-ai-text">how to humanize AI text</InternalLink>. And if you&apos;re wondering whether search engines run detectors on your content: that&apos;s a different question with a different answer, covered in <InternalLink href="/blog/does-google-penalize-ai-content">does Google penalize AI content</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>My honest take</h2>
+      <p>
+        Detectors aren&apos;t useless — as one weak signal among many, they can prompt a human conversation. Used as verdicts, they&apos;re a coin with a thumb on it, and the thumb presses hardest on people writing in their second language. Institutions that expel students on a percentage from a black box aren&apos;t practicing integrity. They&apos;re outsourcing it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How accurate are AI detectors really?",
+          a: "Far less than their marketing suggests. Vendors advertise 98-99% accuracy from lab tests on clean samples, but independent testing on real-world writing shows meaningful false positive rates, and light paraphrasing drops detection sharply. No detector output should be treated as proof on its own.",
+        },
+        {
+          q: "How do AI detectors actually work?",
+          a: "Most score two signals: perplexity, meaning how predictable each word is to a language model, and burstiness, meaning how much sentence length and structure vary. Human writing tends to be less predictable and more uneven, so smooth, consistent text scores as AI — even when a careful human wrote it.",
+        },
+        {
+          q: "Why do AI detectors flag human writing as AI?",
+          a: "Because clear, well-structured writing is statistically predictable. Non-native English speakers, technical writers, and students taught rigid essay formats get flagged most, since their prose is smoother and more formulaic — exactly what the perplexity signal treats as machine-like.",
+        },
+        {
+          q: "What should I do if I'm falsely accused by an AI detector?",
+          a: "Bring your process evidence: version history, drafts, notes, and browser research trail. Ask what tool was used and its documented false positive rate, and note that detector vendors themselves say scores shouldn't be sole proof. Most institutions now require corroborating evidence beyond a score.",
+        },
+      ]} />
+
+      <p>
+        The uncomfortable summary: we built tools that guess, marketed them as tools that know, and handed them power over grades and careers. Until that changes, keep your drafts. They&apos;re worth more than any percentage.
+      </p>
+    </div>
+  ),
+  "is-prompt-engineering-dead": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        In 2023, job boards carried prompt engineering roles advertising up to $335,000 a year. In 2026, try finding one. The title has nearly vanished — and half the internet concluded the skill died with it. That conclusion is wrong in an interesting way.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Prompt engineering didn&apos;t die. It got promoted, split into pieces, and renamed. Here&apos;s my honest read on what actually happened and what&apos;s worth learning now.
+      </p>
+
+      <HookBanner headline="The argument, in brief" items={[
+        "What actually died: magic words and incantation culture",
+        "Why models got better at guessing intent",
+        "Where the skill migrated: context and spec writing",
+        "What happened to the jobs and the salaries",
+        "The 20% of prompting still worth deliberate practice",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Is prompt engineering dead in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          The trick-based version is dead — modern models understand plain intent, so magic phrases barely move results anymore. But the underlying skill of <strong>specifying exactly what you want</strong>, with the right context and constraints, matters more than ever. It just answers to names like context engineering now.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/is-prompt-engineering-dead.png"
+        alt="Is prompt engineering dead in 2026 - tombstone with prompt tricks, spec writing rising"
+        caption="RIP 'You are a world-class expert.' You will not be missed."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What actually died: the incantation era</h2>
+      <p>
+        Cast your mind back to 2023. We told models to take deep breaths. We offered fictional $200 tips. We threatened fictional kittens. We opened every prompt with &quot;You are a world-class expert with 20 years of experience,&quot; and — here&apos;s the embarrassing part — some of it measurably worked, because early models were erratic enough that ritual phrasing shifted outcomes.
+      </p>
+      <p>
+        Then models got better at inferring intent. Ask a 2026 frontier model a sloppy question and it often asks a clarifying question back, or covers the likely interpretations. The gap between a mediocre prompt and an &quot;engineered&quot; one collapsed for everyday tasks. When the baseline understands you fine, wordsmithing the request stops being a profession. That part really is dead, and good riddance.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where the skill went: three migrations</h2>
+      <p>
+        But watch what the good prompt people are doing now. They didn&apos;t retire. Their work moved up a level, in three directions.
+      </p>
+      <InfoBox title="The three migrations" items={[
+        ["Context engineering", "— deciding what the model sees: which documents, examples, and history. The prompt is 50 words; the context is 50,000. Curation became the job."],
+        ["Spec writing", "— agents now work for minutes or hours per request, so the input looks like a project brief: goals, constraints, edge cases, what done means. Bad specs now cost real compute and real hours."],
+        ["System design", "— prompts became versioned, tested artifacts inside products: evaluated, A/B tested, maintained like code."],
+      ]} />
+      <p>
+        Notice these were always the hard 20% of prompting. The magic-words 80% evaporated; the judgment layer got more valuable. When an agent runs 40 minutes on your instructions, an ambiguity you&apos;d have caught in chat within seconds becomes an expensive wrong turn. This is the same shift driving the <InternalLink href="/blog/what-is-vibe-coding">vibe coding</InternalLink> conversation: describing what you want, precisely, became the developer skill.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The jobs, honestly</h2>
+      <p>
+        The standalone title peaked fast and folded into other roles — AI engineer, product manager, technical writer — the way &quot;webmaster&quot; dissolved into five separate careers. That&apos;s not death; that&apos;s absorption, and it&apos;s what happens to every skill that becomes general-purpose. Prompting now appears inside thousands of job descriptions and almost no job titles. The $300k-for-prompts-alone era lasted maybe eighteen months, which is about standard for a gold rush.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian bit: most people still prompt badly</h2>
+      <p>
+        Here&apos;s where I&apos;ll argue with the &quot;models handle it now&quot; crowd. Yes, models infer intent well. But sit next to average users and watch: one-line requests, zero context, first draft accepted, then complaints that AI is overrated. Model capability didn&apos;t fix human vagueness — it just raised the floor. The ceiling still belongs to people who specify well, and the gap between floor and ceiling is, if anything, wider than in 2023 because agents amplify both good and bad instructions.
+      </p>
+      <AlertBox
+        type="tip"
+        title="What's actually worth practicing in 2026"
+        body="Skip the prompt-formula courses. Practice four things: stating the goal and audience in one sentence, choosing what context to include (and exclude), defining what 'done' looks like before you ask, and reviewing output against the spec instead of vibes. That's the durable 20%."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>So should you learn it?</h2>
+      <p>
+        Learn the basics in an afternoon — they&apos;re genuinely quick now. Then invest in the migrated skill: writing clear specs, which pays off with AI agents, human contractors, and your own thinking equally. If you want a structured path, weeks 1-4 of our <InternalLink href="/blog/learn-ai-skills-free">free 90-day AI roadmap</InternalLink> are exactly this, and the <InternalLink href="/blog/chatgpt-prompts-for-work">25 work prompts</InternalLink> collection shows what boring, effective specification looks like in practice.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Is prompt engineering dead in 2026?",
+          a: "The trick-based version is. Modern models understand plain intent, so magic phrases and elaborate role-play scaffolding matter far less. But the underlying skill — specifying exactly what you want, with context and constraints — matters more than ever. It just goes by names like context engineering now.",
+        },
+        {
+          q: "What replaced prompt engineering?",
+          a: "Context and spec writing: deciding what documents, examples, and constraints a model sees, and writing clear specifications for agents that work over many steps. The one-shot clever prompt became a small piece of a larger design problem.",
+        },
+        {
+          q: "Are prompt engineer jobs still hiring?",
+          a: "Standalone prompt engineer roles have mostly folded into other titles — AI engineer, product roles, and content-adjacent positions that include prompting as one skill among several. The skill shows up inside job descriptions far more often than in job titles.",
+        },
+        {
+          q: "Is it still worth learning prompting in 2026?",
+          a: "Yes, for the same reason writing clear emails is still worth learning after spellcheck. An afternoon gets you the basics; the durable skill is describing tasks precisely — which improves everything you do with AI, whatever the industry calls it this year.",
+        },
+      ]} />
+
+      <p>
+        So: dead? The costume is. The job title mostly is. The skill underneath — knowing exactly what you want and saying it precisely — just became the most portable ability in tech. It always was. We just needed a gold rush to notice.
+      </p>
+    </div>
+  ),
+  "run-ai-models-locally": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        There&apos;s a capable AI model running on my laptop right now. No subscription, no internet, no server logging my questions. Setup took 15 minutes and the software cost nothing. The only real question is whether your machine has the RAM — and whether you can live with the honest trade-offs.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the full picture: Ollama vs LM Studio, what hardware you actually need (not what forums claim), and where local models genuinely can&apos;t compete with the cloud.
+      </p>
+
+      <HookBanner headline="The practical guide" items={[
+        "15-minute setup with Ollama or LM Studio",
+        "Real hardware requirements by model size",
+        "The 3 reasons to bother: privacy, cost, offline",
+        "Honest limits — where cloud models still win clearly",
+        "Which models to try first in 2026",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What do I need to run AI models locally?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Realistically: <strong>16GB of RAM</strong> for solid small models (7-8B parameters), 32GB for the noticeably smarter mid-size class, and either an Apple Silicon Mac or a PC with a decent GPU. Software is free — Ollama or LM Studio — and first chat is about 15 minutes away.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/run-ai-models-locally.png"
+        alt="Run AI models locally in 2026 - laptop running local LLM offline"
+        caption="No cloud, no subscription, no one reading over your shoulder."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why bother, when cloud models are smarter?</h2>
+      <p>
+        Because three things matter that benchmarks don&apos;t measure. <strong>Privacy:</strong> everything you type into a cloud model crosses the internet and lands on someone&apos;s server, under a policy you skimmed. A local model processes contracts, medical notes, journals, and client data without any of it leaving the room. For some professions that&apos;s a preference; for lawyers and therapists it&apos;s close to a requirement. <strong>Cost:</strong> a $20/month subscription is $240 a year, forever. Heavy API use can run far past that. Local is $0 forever on hardware you own. <strong>Reliability:</strong> no outages, no rate limits, works on a plane.
+      </p>
+      <p>
+        If none of those three move you, stop reading and keep your cloud subscription. Genuinely. The cloud models are better at being smart; local wins on everything around the smartness.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Ollama vs LM Studio: pick your door</h2>
+      <p>
+        <strong>LM Studio</strong> is the friendly one: a desktop app with a chat window, a model browser with download buttons, and settings you can ignore. Install, pick a model, chat. If you&apos;ve never touched a terminal, start here. <strong>Ollama</strong> is the plumbing: install it, type <em>ollama run</em> and a model name in a terminal, done — and its real strength is that dozens of other apps can plug into it, so your notes app or code editor can quietly use your local model. Both are free. Plenty of people run both.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Hardware: the honest table</h2>
+      <DataTable
+        headers={["Your RAM", "What runs well", "What it feels like"]}
+        rows={[
+          ["8GB", "3-4B models only", "A bright intern with amnesia. Fine for quick rewrites, frustrating beyond that."],
+          ["16GB", "7-8B models comfortably", "The sweet spot for most people. Solid drafts, summaries, coding help."],
+          ["32GB", "14-30B class models", "Noticeably smarter reasoning. Where local starts feeling like a real assistant."],
+          ["64GB+ or big GPU", "70B class and up", "Approaches last year's cloud quality. Enthusiast territory, and worth it there."],
+        ]}
+      />
+      <p>
+        Two notes the spec sheets skip. Apple Silicon Macs punch above their weight because unified memory lets the model use most of your RAM; a MacBook with 32GB is one of the easiest good local rigs you can buy. And model files are chunky — a mid-size model is typically a 4-20GB download — so budget disk space and patience for the first pull.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest limits (read before you get excited)</h2>
+      <p>
+        Local models on consumer hardware sit roughly where top cloud models were one to two years ago. That&apos;s genuinely impressive and also a real gap. In my daily use: summaries, drafts, rewrites, and standard coding help are all comfortably fine. Long multi-step reasoning, obscure knowledge, and huge-context work degrade noticeably. Speed varies from snappy (small models on good hardware) to watching-paint-dry (big models on marginal hardware).
+      </p>
+      <AlertBox
+        type="warning"
+        title="The mistake everyone makes first"
+        body="Downloading the biggest model their machine can barely load. A model that fits comfortably in memory responds in seconds; one that barely fits crawls and stutters. Start one size smaller than your maximum — a fast 8B you actually use beats a 30B you avoid because it takes a minute per answer."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>A sane first week</h2>
+      <p>
+        Day one: install LM Studio or Ollama, download one well-reviewed 7-8B general model, and just chat. Day two: feed it a real private task — summarize a contract, rewrite a sensitive email — the stuff you&apos;d hesitate to paste into a cloud chatbot. Then decide if the quality clears your bar. If it does, explore: a coding-tuned model, a bigger general model, maybe wiring Ollama into your other apps. This pairs naturally with a privacy-focused browser setup — see <InternalLink href="/blog/best-ai-browsers-2026">best AI browsers for 2026</InternalLink> — and if you&apos;re developer-inclined, a local model plus <InternalLink href="/blog/what-is-vibe-coding">vibe coding</InternalLink> is a fun zero-cost sandbox. For picking your first model by use case, our <InternalLink href="/tools/ai-finder">AI finder</InternalLink> can shortcut the research.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What do I need to run AI models locally?",
+          a: "Realistically: 16GB of RAM for solid 7-8B models, 32GB for the noticeably smarter 14-30B class, and a modern machine — Apple Silicon Macs are the easiest path, or a PC with a decent GPU. Software-wise, Ollama or LM Studio gets you running in about 15 minutes, free.",
+        },
+        {
+          q: "Is Ollama or LM Studio better for beginners?",
+          a: "LM Studio if you want a friendly app with a chat window and model browser — it's the gentler start. Ollama if you're comfortable with a terminal and want something other apps and scripts can plug into. Plenty of people install both since they're free.",
+        },
+        {
+          q: "Are local AI models as good as ChatGPT?",
+          a: "No — and pretending otherwise sets you up for disappointment. The best open models you can run on consumer hardware land roughly where top cloud models were a year or two ago. Great for drafts, summaries, coding help, and private data; weaker at long complex reasoning.",
+        },
+        {
+          q: "Why run AI locally instead of using the cloud?",
+          a: "Three reasons: privacy (nothing leaves your machine, ideal for contracts, journals, client data), cost (no monthly subscription or per-token fees), and reliability (works offline, no rate limits). If none of those matter to you, cloud models are simply better.",
+        },
+      ]} />
+
+      <p>
+        My setup landed here: local model for anything private or routine, cloud model for the genuinely hard stuff. That split costs less, leaks less, and covers 100% of what I do. Fifteen minutes to find out if it covers yours.
+      </p>
+    </div>
+  ),
+  "ai-email-inbox-management": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Six months ago my inbox collected around 200 emails a day and I touched maybe 40 of them meaningfully. Today AI triages everything overnight, drafts the routine replies, and roughly 15-20 messages actually need me. Getting there took one weekend of setup and one uncomfortable privacy decision I&apos;ll walk you through honestly.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        This is the exact workflow — triage, drafting, and the great unsubscribe purge — plus the two places I refuse to let AI act alone.
+      </p>
+
+      <HookBanner headline="The workflow, layer by layer" items={[
+        "The 3-bucket triage system AI can actually maintain",
+        "Drafting in your voice (the 3-email trick)",
+        "The one-hour unsubscribe purge: 80+ lists gone",
+        "The privacy decision nobody talks about honestly",
+        "The 2 rules that prevent AI email disasters",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can AI really manage your email inbox?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          The mechanical parts, yes: once tuned, AI triage sorts mail into needs-reply, FYI, and junk with roughly <strong>90% reliability</strong>, and drafts routine replies you edit in seconds. The judgment stays yours — anything touching money, conflict, or commitments should never send without a human read.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/ai-email-inbox-management.png"
+        alt="AI email management - inbox zero dashboard with AI triage labels"
+        caption="Inbox zero isn't an empty inbox. It's an inbox where everything left actually matters."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The privacy decision, first — because it should be</h2>
+      <p>
+        Let&apos;s not bury this. Giving an AI tool email access means it can read everything: password resets, bank statements, medical messages, that argument from 2019. Before connecting anything, I check four things: does the vendor train models on my mail (look for an explicit no-training commitment), is access via OAuth rather than my password, can I revoke access in one click, and does the company have a security track record I can find. I said no to two popular tools on the training question alone.
+      </p>
+      <AlertBox
+        type="warning"
+        title="The quarterly audit rule"
+        body="Every three months, open your email account's connected-apps page and revoke anything you don't actively use. Most people find 5-10 forgotten apps with full mailbox access — abandoned tools from years ago, still holding the keys. Takes 4 minutes. Do it today, before any of the rest."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Layer 1: triage into three buckets</h2>
+      <p>
+        Forget 15-folder taxonomies; AI maintains three buckets brilliantly and anything fancier decays. <strong>Needs me:</strong> a human wrote this expecting my reply or decision. <strong>FYI:</strong> useful information, no action — receipts, updates, threads I&apos;m cc&apos;d on. <strong>Noise:</strong> marketing, notifications, everything else. Modern email AI (built-in or bolted-on) handles this with plain-language rules: mine literally include &quot;anything from a real person asking me a direct question goes to Needs me&quot; and &quot;newsletters never do, even good ones.&quot;
+      </p>
+      <p>
+        The first week, it misfiled maybe 1 in 10 — mostly warm marketing emails pretending to be personal, which honestly fool humans too. Each correction tightened the rules. By week three the morning routine was: 12-18 messages in Needs me, a 60-second skim of FYI, and Noise never seen at all.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Layer 2: drafting that sounds like you</h2>
+      <p>
+        Generic AI drafts are recognizable within one sentence — too formal, too long, weirdly enthusiastic. The fix that changed everything: I keep a saved prompt with three of my real emails as style samples, plus rules (&quot;under 100 words, no exclamation points, get to the point in sentence one&quot;). Drafts went from rewrite-everything to change-three-words. Routine replies — scheduling, confirmations, polite declines — now take 20 seconds each instead of 3-4 minutes.
+      </p>
+      <p>
+        Two rules I never break. Rule one: <strong>AI drafts, I send.</strong> No auto-send, ever, on anything. Rule two: anything emotional, financial, or legal gets written by me from scratch — AI can&apos;t read the relationship, and a tone-deaf reply to a sensitive email costs more than every minute the system ever saved. If your drafts still smell robotic, the fixes in <InternalLink href="/blog/how-to-humanize-ai-text">how to humanize AI text</InternalLink> apply directly to email, and the <InternalLink href="/blog/ai-words-to-avoid">AI words to avoid</InternalLink> list is basically a spam-filter for your own writing.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Layer 3: the great unsubscribe purge</h2>
+      <p>
+        Triage manages flow; unsubscribing reduces it. One Saturday session: I had AI list every sender from the past 90 days ranked by volume, marked what I actually read, and worked down the list. 84 subscriptions gone in about 50 minutes. Daily volume dropped by roughly a third permanently — the single best ratio of effort to result in this whole system.
+      </p>
+      <p>
+        One caution: for legitimate senders, the unsubscribe link is fine. For sketchy spam, clicking that link confirms your address is alive — mark as spam instead and let the provider handle it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What this actually gets you</h2>
+      <p>
+        My honest numbers after six months: email time down from about 90 minutes a day to about 30, zero missed genuinely-important messages (the old system missed a couple a month), and — the part I didn&apos;t expect — email stopped occupying background brain. The system isn&apos;t magic. It&apos;s three boring layers, tuned for a few weeks, audited quarterly. This kind of layered automation is also a perfect first project if you&apos;re working through the <InternalLink href="/blog/learn-ai-skills-free">free 90-day AI roadmap</InternalLink> — it&apos;s real, personal, and the results show up in week one.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can AI really manage your email inbox?",
+          a: "The triage and drafting parts, yes — AI can sort mail into needs-reply, FYI, and junk with roughly 90% reliability once tuned, and draft replies you edit in seconds. The judgment part stays yours: anything involving money, conflict, or commitments should never send without human review.",
+        },
+        {
+          q: "Is it safe to give an AI tool access to my email?",
+          a: "It's a real trade-off. Email access means the tool can read everything — password resets, financial statements, private conversations. Check whether the vendor trains on your data, look for a no-training guarantee, use OAuth instead of passwords, and audit connected apps quarterly.",
+        },
+        {
+          q: "What's the best way to start using AI for email?",
+          a: "Start with drafting, not automation: paste an email and ask for a reply in your voice. Once that feels natural, add triage rules and AI-assisted labeling. Full auto-send is the last step, and honestly most people should stop one step before it.",
+        },
+        {
+          q: "Can AI unsubscribe me from mailing lists automatically?",
+          a: "Mostly. AI-assisted cleanup tools and built-in unsubscribe suggestions handle the standard cases well, and one batch session can kill 50-100 subscriptions in under an hour. Be careful with sketchy senders — for obvious spam, marking as spam beats clicking their unsubscribe link.",
+        },
+      ]} />
+
+      <p>
+        Start with the connected-apps audit and the unsubscribe purge this weekend — an hour total, no new tools, immediate relief. Add triage and drafting once you&apos;ve picked a vendor you actually trust. The inbox stops being a to-do list someone else writes for you. That&apos;s the whole point.
+      </p>
+    </div>
+  ),
+  "best-ai-meeting-notetakers": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I sat through 40+ meetings last quarter with five different AI note-takers running. Most of them are fine. Only two are worth paying for.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        And one of them might be quietly annoying everyone else on your calls without you realizing it.
+      </p>
+
+      <HookBanner headline="What you'll get from this comparison" items={["Honest verdicts on Otter, Fireflies, Fathom, Granola, and built-in Zoom/Teams AI", "Real 2026 pricing, not the homepage teaser numbers", "The consent and privacy rules that can actually get you in trouble", "A clear pick for solo users, sales teams, and bot-haters"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What&apos;s the best AI meeting note-taker in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>For most individuals, <strong>Fathom is the best value</strong> thanks to a genuinely unlimited free tier. Granola wins if you hate bots joining calls, Fireflies wins for sales teams that live in a CRM, and built-in Zoom or Teams AI is good enough for internal meetings you were already paying for.</p></div>
+
+      <p>Quick context: an AI note-taker joins (or listens to) your meeting, transcribes it, and spits out a summary with action items. In 2026 they all do that competently. The differences are in how they join, what they cost, and what happens to your data afterward. That last part matters more than the marketing pages admit.</p>
+
+      <BlogImage src="/images/best-ai-meeting-notetakers.png" alt="Comparison of the best AI meeting note-takers in 2026" caption="Five tools walk into a meeting. Only one of them reads the room." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The five contenders, honestly reviewed</h2>
+      <p><strong>Otter.ai</strong> is the veteran. Live transcription is still excellent, and the free plan gives you around 300 minutes a month, which sounds generous until you realize that&apos;s maybe six meetings. Paid plans start around $8-17 a month. My gripe: Otter has gotten aggressive about auto-joining calls and emailing everyone afterward. I&apos;ve had clients ask &quot;what is this thing and why is it emailing me?&quot; That&apos;s not a great look.</p>
+      <p><strong>Fireflies.ai</strong> is built for teams, especially sales. It transcribes across Zoom, Meet, and Teams, pushes notes into your CRM, and lets you search every meeting you&apos;ve ever had. The free tier limits storage; paid starts around $10-18 per seat monthly. If you&apos;re a manager who wants to search &quot;what did the client say about budget in March,&quot; Fireflies is your tool. Solo users will find it heavier than they need.</p>
+      <p><strong>Fathom</strong> is the value pick. The free plan for individuals includes unlimited recordings and summaries, which is almost suspiciously generous, and the paid team features run about $15-24 a seat. Summaries are tight and it doesn&apos;t spam your attendees. If you&apos;re one person who just wants good notes, start here.</p>
+      <p><strong>Granola</strong> is the interesting one. No bot joins your call. It transcribes from your device&apos;s audio and blends the AI transcript with notes you type yourself, so the output reads like notes a smart human took. It runs roughly $14-18 a month after a free trial period. The catch: because there&apos;s no visible bot, attendees may not know they&apos;re being transcribed, which pushes the consent responsibility entirely onto you.</p>
+      <p><strong>Built-in Zoom AI Companion and Microsoft Copilot</strong> are the sleeper picks. If your company already pays for Zoom&apos;s paid tiers or Microsoft 365 Copilot, you may have meeting summaries included at no extra cost. They&apos;re genuinely decent for internal meetings now. They lose on cross-platform support and searchable long-term archives, but &quot;free with what you already pay for&quot; is a strong argument.</p>
+
+      <DataTable headers={["Tool", "Best for", "Free tier", "Rough paid price"]} rows={[["Fathom", "Solo users", "Unlimited recordings", "$15-24/seat teams"], ["Granola", "Bot-haters, execs", "Trial period", "$14-18/mo"], ["Fireflies", "Sales teams + CRM", "Limited storage", "$10-18/seat"], ["Otter", "Live transcription", "~300 min/mo", "$8-17/mo"], ["Zoom/Teams AI", "Internal meetings", "With paid plans", "Often included"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The consent section nobody reads (but should)</h2>
+      <p>Here&apos;s the uncomfortable part. Recording laws aren&apos;t uniform. Many US states require only one party&apos;s consent to record a conversation, but roughly a dozen, including California, effectively require everyone&apos;s. In the EU, GDPR means you should inform participants and have a lawful basis for processing what is, after all, their voice data. If you&apos;re on a call with people in three jurisdictions, the strictest rule is the one that matters.</p>
+      <p>The practical fix takes ten seconds: announce it. &quot;Hey, I&apos;ve got an AI note-taker running so I can stay present, anyone mind?&quot; Nobody has ever said no to me, and now I&apos;m covered ethically and mostly legally. With Granola specifically, because there&apos;s no bot in the attendee list, saying this out loud isn&apos;t optional. It&apos;s the whole consent mechanism.</p>
+      <p>Also check what your tool does with transcripts. Some vendors use customer data to improve their models unless you opt out, and retention defaults vary wildly. If you discuss anything confidential, dig into the settings before your legal team does it for you. I wrote more about this problem in my piece on <InternalLink href="/blog/ai-privacy-what-apps-know">what AI apps actually know about you</InternalLink>.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downside of all of them</h2>
+      <p>AI notes make people lazy. I&apos;ve watched it happen. When everyone knows a transcript exists, attention drops, and the summary becomes a substitute for actually deciding things in the room. Summaries also flatten nuance: sarcasm gets recorded as agreement, a hesitant &quot;maybe&quot; becomes an action item. I treat AI notes as a backup memory, not a source of truth, and I still write down the two or three decisions that actually matter myself.</p>
+      <p>Accuracy is also not solved. Heavy accents, crosstalk, and bad mics still produce transcripts that are 90-95% right, and the missing 5% is often a name, a number, or a deadline. The exact things you needed.</p>
+
+      <AlertBox type="warning" title="Before you install anything" body="Check whether your company already has an approved note-taker. IT departments in 2026 are actively blocking unapproved AI bots from joining calls, and showing up to a client meeting with a banned bot is a bad first impression." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>My actual recommendations</h2>
+      <p>Solo freelancer or job hunter: Fathom, free tier, done. Sales or customer success team: Fireflies, because the CRM sync pays for itself. Executive who takes 20+ meetings a week and hates bots: Granola. Company already on Microsoft 365 or paid Zoom: try the built-in AI for a month before paying anyone else. And if you&apos;re a freelancer using these on client calls, good notes are a genuine edge; pair them with the tactics in <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> and you&apos;ll follow up better than 90% of your competition.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What is the best free AI meeting note-taker in 2026?", a: "Fathom has the most generous free plan for individuals, with unlimited recordings and AI summaries at no cost. Granola's free tier is smaller but great if you hate bots joining your calls. Otter's free plan caps you at around 300 transcription minutes a month, which runs out fast." }, { q: "Do AI note-takers join meetings as a visible bot?", a: "Most do. Otter, Fireflies, and Fathom send a bot participant that everyone can see in the attendee list. Granola is the exception, since it transcribes from your device's audio without joining the call, which feels less intrusive but also means attendees may not know they're being transcribed." }, { q: "Is it legal to record meetings with an AI note-taker?", a: "It depends on where participants are. Many US states only require one-party consent, but states like California and countries covered by GDPR effectively require you to inform everyone. The safe move is simple: always announce the note-taker at the start and get a verbal okay." }, { q: "Are built-in Zoom and Teams AI summaries good enough?", a: "For internal meetings, honestly, yes. Zoom AI Companion and Microsoft Copilot summaries are decent and included in many paid plans you may already have. Dedicated tools still win on searchable archives, CRM integrations, and cross-platform support." }]} />
+
+      <p>Pick one tool, announce it on your calls, and turn off the auto-email-everyone setting. That&apos;s 90% of doing this right. The other 10% is still paying attention in the meeting.</p>
+    </div>
+  ),
+  "will-ai-take-my-job": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        No, AI probably won&apos;t take your job. But someone using AI might, and pretending otherwise is how people get blindsided.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s an honest 2026 breakdown by job type, without the doom and without the cope.
+      </p>
+
+      <HookBanner headline="The honest version of this conversation" items={["Which jobs face real replacement vs just reshaping", "Why 'tasks, not jobs' is the framing that actually predicts things", "The three job categories: exposed, augmented, insulated", "A 90-day plan that beats panic-learning to code"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Will AI take my job?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>For most people, no. Research from the OECD and McKinsey consistently finds that <strong>AI automates tasks, not entire jobs</strong>: many roles have 30-50% of their tasks exposed, while very few are fully automatable. The real risk is teams shrinking because fewer people can now do the same work.</p></div>
+
+      <p>I&apos;ve read a lot of takes on this, and most fail in one of two directions. Doomers say every white-collar job dies by 2030. Optimists say it&apos;s just like the calculator. Both are wrong in ways that matter, so let&apos;s be specific.</p>
+
+      <BlogImage src="/images/will-ai-take-my-job.png" alt="Will AI take my job - 2026 assessment by job type" caption="The robot isn't coming for your chair. It's coming for about a third of your calendar." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The framing that actually works: tasks, not jobs</h2>
+      <p>Your job is a bundle of tasks. AI in 2026 is very good at some tasks (drafting text, summarizing documents, writing routine code, answering common questions) and still bad at others (owning outcomes, navigating office politics, physical work, being legally accountable when things go wrong).</p>
+      <p>So the question isn&apos;t &quot;can AI do my job?&quot; It&apos;s &quot;what percentage of my week is tasks AI does well, and what happens to headcount when that work gets 5x faster?&quot; A copywriter whose week is 70% first drafts is in a very different position than one whose week is 70% client strategy, even though they share a job title.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The three categories every job falls into</h2>
+      <p><strong>1. Genuinely exposed.</strong> Roles that are almost entirely routine information work: basic data entry, first-line chat support, simple translation, transcription, template-driven content production. These aren&apos;t vanishing overnight, but the math is brutal. A support team that needed 10 agents can often run with 4-5 agents plus AI handling the easy 60% of tickets. If you&apos;re here, the honest advice is to move, not to hope.</p>
+      <p><strong>2. Augmented (most of us).</strong> Developers, marketers, analysts, designers, lawyers, accountants, teachers, most managers. AI takes the drafting and grunt work; you keep the judgment, relationships, and accountability. The catch: augmentation still compresses teams. If one analyst with AI does the work of two, companies eventually notice. Within this category, the person who masters the tools wins the musical chairs. This is where most of the actual career risk lives in 2026, and it&apos;s why learning to direct AI well, the way I described in <InternalLink href="/blog/ai-content-editor-side-hustle">the AI content editor side hustle</InternalLink>, is quietly one of the best career moves available.</p>
+      <p><strong>3. Insulated.</strong> Skilled trades, nursing and hands-on care, emergency services, in-person sales, roles with legal liability attached to a human signature. AI can draft the electrician&apos;s invoice, but it cannot rewire the panel. Ironically, several of these jobs were labeled &quot;low-skill&quot; for decades and now look like the safe ones.</p>
+
+      <InfoBox title="A quick self-audit: how exposed are you?" items={[["Track one week", "Log your tasks in three buckets: routine text/data work, judgment and decisions, human interaction."], ["Over 50% routine?", "You're exposed. Start shifting your role toward the other two buckets now, while it's a choice."], ["Mostly judgment?", "You're augmented. Your job is to become the AI power user on your team before someone else does."], ["Mostly physical or in-person?", "You're insulated for now. Use AI for the admin side and enjoy the peace of mind."]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian bit: the danger isn&apos;t replacement, it&apos;s stagnation</h2>
+      <p>Here&apos;s what the doom content misses. Very few people get a meeting invite titled &quot;AI is replacing you.&quot; What actually happens is quieter: hiring freezes for junior roles, teams that don&apos;t backfill departures, raises that stall because your output is now &quot;easy.&quot; Entry-level rungs are the real casualty. If AI does the work juniors used to learn on, companies hire fewer juniors, and that&apos;s a genuine problem for anyone entering the workforce between now and 2030.</p>
+      <p>And a second uncomfortable truth: some of the panic is overblown. AI still confidently makes things up, still can&apos;t be sued, and still needs someone to check its work. Companies that fired too aggressively in 2024-2025 quietly rehired. The technology is remarkable; the deployment is messier than the demos.</p>
+
+      <AlertBox type="tip" title="The 90-day anti-panic plan" body="Week 1-2: use AI daily for your actual work tasks until you know exactly what it's good and bad at. Week 3-6: automate or accelerate one visible process at work and tell your manager. Week 7-12: build one piece of external proof, like a portfolio project or a side income stream. That combination beats any online certificate." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What to actually do about it</h2>
+      <p>Three moves, in order. First, get good at the tools; not prompt-engineering theory, but genuinely doing your job faster with AI. Second, deliberately shift your time toward the tasks AI can&apos;t own: client trust, decisions under ambiguity, accountability. Third, build something outside your job title, whether that&apos;s a side income or a public portfolio, so one employer&apos;s org chart isn&apos;t your whole safety net. Our <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink> is a decent place to sanity-check that third move, and if a job search is in your future, start with <InternalLink href="/blog/ai-resume-tips-beat-ats">these AI resume tips</InternalLink> because the screening software you&apos;re up against is AI too.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Which jobs is AI most likely to replace by 2030?", a: "Roles built almost entirely on routine text and data work face the most pressure: basic data entry, first-line customer support chat, simple translation, and template-driven content writing. These jobs aren't vanishing overnight, but teams that needed ten people often now run with four or five." }, { q: "Which jobs are safest from AI?", a: "Jobs that mix physical skill, trust, and judgment: skilled trades, nursing and hands-on healthcare, roles with legal accountability, and anything requiring in-person relationships. AI can draft a contract, but it can't rewire your house or hold a scared patient's hand." }, { q: "Does AI replace jobs or just tasks?", a: "Mostly tasks, at least so far. Research from groups like the OECD and McKinsey consistently finds that a large share of jobs have 30-50% of tasks exposed to automation, while very few jobs are close to fully automatable. The risk is fewer people doing the same total work, not your title disappearing." }, { q: "What should I do right now to protect my career from AI?", a: "Three things: become the person on your team who uses AI tools well, shift your time toward judgment-heavy work like client relationships and decisions, and build a visible track record outside your job title. People who direct AI are getting more valuable, not less." }]} />
+
+      <p>The people who&apos;ll struggle most aren&apos;t the ones in exposed jobs. They&apos;re the ones in augmented jobs who decided this whole thing was a fad. Don&apos;t be them.</p>
+    </div>
+  ),
+  "best-ai-coding-assistants": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I&apos;ve shipped real projects with Copilot, Cursor, and Claude Code this year. They are not interchangeable, and picking wrong wastes months.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the honest comparison I wish someone had given me: who each tool is for, what it costs, and where each one falls flat.
+      </p>
+
+      <HookBanner headline="The short version, expanded below" items={["Copilot: the safe, cheap default that lives where you already work", "Cursor: the power editor for people who code daily", "Claude Code: the terminal agent you delegate whole tasks to", "Plus: the one mistake beginners make with all three"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Which AI coding assistant is best in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>There&apos;s no single winner. <strong>Copilot is best for beginners and casual coders</strong>, Cursor is best for professional developers who want deep codebase-aware editing, and Claude Code is best for delegating multi-step tasks like refactors, test fixes, and whole features from the terminal.</p></div>
+
+      <p>One framing before the reviews: these tools represent three different philosophies. Copilot autocompletes as you type. Cursor rebuilds the editor around AI. Claude Code skips the editor entirely and works like a junior developer you message. Your workflow, more than the model quality, determines which one fits.</p>
+
+      <BlogImage src="/images/best-ai-coding-assistants.png" alt="Copilot vs Cursor vs Claude Code AI coding assistant comparison 2026" caption="Three tools, three philosophies, one very confused beginner picking based on YouTube hype." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>GitHub Copilot: the sensible default</h2>
+      <p>Copilot in 2026 is far more than the autocomplete it launched as. It has chat, an agent mode, and it plugs into VS Code, JetBrains, and even the GitHub website itself. The free tier gives you a monthly allowance of completions and chat, and the Pro plan runs about $10 a month, with heavier tiers around $39 for people who burn through premium model requests.</p>
+      <p>Why it wins for beginners: it lives inside VS Code, which is what every tutorial on earth uses, and its suggestions are incremental. You still type, still see the code, still learn. The weakness is depth. On a large codebase, Copilot&apos;s context handling lags the other two, and its agent mode, while improving fast, still feels like a feature bolted onto an editor rather than the editor&apos;s reason to exist.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Cursor: the power tool</h2>
+      <p>Cursor is a VS Code fork rebuilt around AI, and for daily professional coding it&apos;s the strongest editor experience I&apos;ve used. Tab completions predict multi-line edits eerily well, and its agent can plan and execute changes across a dozen files while you watch. Pricing starts around $20 a month, and heavy users on the bigger plans can spend $60-200 monthly once usage-based model costs kick in. That&apos;s real money, and you should know it going in.</p>
+      <p>The honest downsides: cost creep is the big one, since the best models burn through usage allowances fast. And Cursor makes it dangerously easy to accept large diffs you haven&apos;t really read. For experienced developers that&apos;s a speed boost. For beginners it&apos;s how you end up with a codebase you can&apos;t debug, which is the trap at the heart of <InternalLink href="/blog/what-is-vibe-coding">vibe coding</InternalLink>.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Claude Code: the delegate</h2>
+      <p>Claude Code is different in kind, not degree. It&apos;s a terminal agent: you describe a task in plain English, and it reads your repo, makes a plan, edits files, runs your tests, sees the failures, and fixes them, looping until things pass. Access comes through Claude&apos;s paid plans, roughly $20-200 a month depending on tier, or pay-per-use API pricing.</p>
+      <p>Where it shines: tasks with a clear definition of done. &quot;Migrate these components to the new API and make the tests pass&quot; is a 20-minute delegation instead of an afternoon. Where it doesn&apos;t: exploratory UI work where you need to see and click things, and any situation where you can&apos;t review diffs competently, because an agent with file-system access and your blind trust is a bad combination. It also lives in the terminal, which genuinely filters out some beginners.</p>
+
+      <DataTable headers={["", "Copilot", "Cursor", "Claude Code"]} rows={[["Form", "Editor plugin", "Full editor", "Terminal agent"], ["Rough price", "Free-$39/mo", "$20-200/mo", "$20-200/mo"], ["Best at", "Inline speed", "Codebase-aware edits", "Whole delegated tasks"], ["Worst at", "Big refactors", "Cost predictability", "Visual/UI iteration"], ["Best for", "Beginners, casual", "Daily pro devs", "Devs who delegate"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The uncomfortable truth about all three</h2>
+      <p>None of these tools removes the need to understand code; they just move the work from writing to reviewing. In my experience the tools get you to 80-90% shockingly fast, and the last 10% — edge cases, security, performance under real load — is exactly where they hallucinate plausible-looking nonsense. Studies and team retrospectives keep landing on the same finding: AI assistance speeds up experienced developers a lot and can actively mislead novices who can&apos;t spot the mistakes.</p>
+      <p>My rule: never merge a diff you couldn&apos;t explain to a colleague. It sounds obvious. Almost nobody follows it consistently.</p>
+
+      <AlertBox type="tip" title="The setup I'd actually recommend" body="Beginner: free Copilot in VS Code, nothing else, for at least three months. Working developer: Cursor as your daily editor plus Claude Code for grunt-work tasks like test fixing and migrations. Team lead: pilot one tool for a month with 2-3 devs before buying seats for everyone, because usage patterns vary wildly." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>So which one should you pick?</h2>
+      <p>If you&apos;re learning: Copilot, free tier, and resist the urge to let it write everything. If you code professionally every day: Cursor, and budget realistically for usage. If your bottleneck is boring multi-step tasks rather than typing speed: Claude Code will feel like hiring help. Plenty of developers I know run Cursor and Claude Code together, and freelancers are already turning these skills into income; my guide on <InternalLink href="/blog/how-to-get-ai-clients">getting AI clients</InternalLink> covers how to package that.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Which AI coding assistant is best for beginners in 2026?", a: "GitHub Copilot, and it's not close. It has a free tier, lives inside VS Code which most tutorials use, and its suggestions are conservative enough that you can still learn. Cursor's agent mode is powerful but will happily write code you don't understand yet." }, { q: "Is Cursor worth paying for over free Copilot?", a: "If you code more than 10 hours a week on real projects, usually yes. Cursor's multi-file edits and codebase-aware chat save serious time on refactors that Copilot's inline suggestions can't touch. For occasional scripting, the free Copilot tier is plenty." }, { q: "What makes Claude Code different from Copilot and Cursor?", a: "Claude Code is a terminal-based agent rather than an editor plugin. You describe a task, and it reads your codebase, edits files, runs tests, and iterates until things pass. It's less about autocomplete and more about delegating whole chunks of work." }, { q: "Can AI coding assistants replace developers?", a: "No, but they've changed what junior work looks like. The tools produce plausible code fast, which means someone still has to review, test, and own the architecture. Developers who can direct these tools and catch their mistakes are more productive, not obsolete." }]} />
+
+      <p>Try before you commit. All three have free tiers or trials, and one honest week with each will tell you more than any comparison article, including this one.</p>
+    </div>
+  ),
+  "ai-privacy-what-apps-know": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        You&apos;ve probably told an AI chatbot things you&apos;ve never told your doctor. Most people have no idea where those words go next.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        The good news: the situation is more fixable than the scary headlines suggest. Five settings, ten minutes, tonight.
+      </p>
+
+      <HookBanner headline="What this guide covers" items={["What ChatGPT, Gemini, Claude, and Copilot actually collect", "The truth about training data and the 'delete' button", "Five settings to change today, in order of impact", "What you should genuinely never type into any chatbot"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Do AI apps train on my conversations?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>On consumer plans, often yes, by default. Most major AI chatbots <strong>use consumer conversations to improve their models unless you opt out</strong> in settings. Business and enterprise tiers usually exclude your data from training by contract, which is a large part of what companies are paying for.</p></div>
+
+      <p>Let me be clear about what this article is not: it&apos;s not &quot;AI companies are reading your chats and laughing at you.&quot; Humans review only tiny samples, mostly for safety. The real issues are quieter: default training settings, retention windows, memory features, and the growing pile of third-party apps you&apos;ve connected. Let&apos;s take them in order.</p>
+
+      <BlogImage src="/images/ai-privacy-what-apps-know.png" alt="AI privacy settings and what AI apps know about you in 2026" caption="Your chat history: part diary, part therapy session, part search engine. All stored somewhere." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What AI apps actually collect</h2>
+      <p>Four buckets. First, your conversations themselves, including every file, photo, and voice note you&apos;ve attached. Second, account and device data: email, rough location from IP, device type, usage patterns. Third, memory: most major assistants in 2026 build a persistent profile of you across chats, remembering your job, your kids&apos; names, your writing style. Genuinely useful, genuinely a dossier. Fourth, connected context: if you&apos;ve linked your email, calendar, or drive to an assistant, its knowledge of you jumps from &quot;what you typed&quot; to &quot;how you live.&quot;</p>
+      <p>On retention: deleting a chat usually doesn&apos;t delete it instantly. Providers commonly keep deleted conversations for a window of around 30 days for abuse monitoring and legal compliance before purging. Temporary or incognito modes typically have shorter retention and skip training, and they&apos;re underused. And note that retention can stretch further when courts get involved; litigation holds have forced AI companies to preserve chats longer than their own policies stated. Assume anything typed could persist.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The training data question, honestly</h2>
+      <p>Here&apos;s the nuance most coverage flattens. Your individual chat is a drop in an ocean of training data; nobody is targeting you. The realistic risks are different: your information being surfaced in ways you didn&apos;t expect, a future breach exposing stored history, or memory features connecting dots you preferred unconnected. Low probability per person, high impact when it hits, and entirely worth ten minutes of settings hygiene.</p>
+      <p>Also worth knowing: workplace AI accounts usually route through your employer&apos;s agreement, which typically means no training on your data but also means your admin may have access logs. Your work chatbot is not your diary either, just for different reasons.</p>
+
+      <InfoBox title="The 5 settings to change today, in order" items={[["1. Turn off training", "In ChatGPT: Settings, Data Controls, 'Improve the model for everyone' off. Gemini: pause Activity. Claude: review the training toggle in Privacy Settings. One minute, biggest win."], ["2. Audit memory", "Open the memory or personalization page and delete anything you wouldn't want in a profile of you. You'll be surprised what's in there."], ["3. Use temporary chats", "For health, legal, financial, and emotional topics, use the incognito-style mode. No history, no training, shorter retention."], ["4. Disconnect unused apps", "Review connected integrations and third-party GPTs/extensions. Each one is another party with access."], ["5. Delete old history", "Bulk-delete conversations you don't need. Less stored data means less breach exposure. Do it quarterly."]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What never to type into any chatbot</h2>
+      <p>My personal red lines, and I&apos;d suggest adopting them: passwords and 2FA codes, full card or bank account numbers, government ID numbers, other people&apos;s private information (this one gets forgotten constantly), confidential work documents on a personal account, and anything you&apos;d be devastated to see quoted back to you in a breach notification. The test is simple: would you paste it into a random web form? A chatbot is a web form with better conversation skills.</p>
+
+      <AlertBox type="warning" title="The wearables and voice mode wrinkle" body="Always-listening AI devices and voice modes raise the stakes: they can capture other people who never consented to anything. If you use voice AI around family or coworkers, check whether recordings are stored and tell the people around you. The consent problem from meeting note-takers is coming to your living room." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian take: don&apos;t quit AI, just stop being the free lunch</h2>
+      <p>Some privacy advice ends with &quot;so use nothing.&quot; I think that&apos;s wrong and, frankly, a losing trade. These tools are too useful; I use them daily for work, including <InternalLink href="/blog/how-to-humanize-ai-text">editing AI text until it sounds human</InternalLink>. The rational position is the middle one: use AI heavily, feed it generously on topics that don&apos;t matter, and be deliberately stingy on the ones that do. Opting out of training costs you nothing; the features all still work. There&apos;s no prize for being the most generous data donor.</p>
+      <p>And if you use AI professionally, on client work, this stops being personal preference and becomes professional duty. Freelancers pasting client documents into consumer chatbots is quietly one of the most common confidentiality slips of 2026. If that&apos;s you, fix it this week; your contracts probably already prohibit it. It matters double if you&apos;re <InternalLink href="/blog/how-to-get-ai-clients">selling AI services to clients</InternalLink> who&apos;ll ask about your data handling.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Do AI chatbots train on my conversations?", a: "Often yes, by default, on consumer plans. Most major chatbots use consumer conversations to improve models unless you opt out in settings. Business and enterprise tiers typically exclude your data from training by contract, which is a big reason companies pay for them." }, { q: "Does deleting an AI chat actually delete it?", a: "Not instantly. Most providers keep deleted conversations for a retention window, commonly around 30 days, for abuse monitoring and legal reasons before permanent deletion. Temporary or incognito chat modes usually have shorter retention, but almost nothing vanishes the second you hit delete." }, { q: "What should I never tell an AI chatbot?", a: "Treat it like a smart stranger: no passwords, full financial account numbers, government ID numbers, medical records you'd want sealed, or confidential work documents. If pasting it into a random website would feel reckless, don't paste it into a chatbot either." }, { q: "Which AI privacy settings should I change first?", a: "Turn off model training on your chats, disable chat history where you don't need it, review connected apps and integrations, and delete old conversations. The training opt-out is the single highest-impact toggle, and it takes under a minute in most apps." }]} />
+
+      <p>Ten minutes tonight: training off, memory audited, old chats gone. Then go back to using these tools like the superpower they are, on your terms this time.</p>
+    </div>
+  ),
+  "faceless-instagram-theme-pages": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Theme pages still make real money in 2026. The part the gurus lie about is how long it takes and how boring the work is.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the honest playbook: niche selection, a content system you can sustain, and monetization math that isn&apos;t fantasy.
+      </p>
+
+      <HookBanner headline="The playbook, minus the course-seller hype" items={["Niches that actually monetize vs niches that just grow", "A 5-post-per-week system that takes ~4 hours", "Real income math: shoutouts, affiliates, digital products", "Honest timelines: what months 1, 6, and 12 look like"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Can faceless Instagram pages still make money in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Yes, but the easy era is over. A theme page with <strong>10,000-50,000 engaged followers in a buying niche</strong> can realistically earn $200-2,000 a month through affiliates, shoutouts, and digital products. Getting there typically takes 6-12 months of consistent posting, not the 90 days the courses promise.</p></div>
+
+      <p>A theme page is an account built around a topic instead of a person: finance memes, home gyms, AI tools, cabin aesthetics. No face, no dancing, no personal brand. I like this model because it&apos;s learnable and sellable, and because the skills transfer to every other content business. I dislike how it&apos;s marketed, so let&apos;s do this honestly.</p>
+
+      <BlogImage src="/images/faceless-instagram-theme-pages.png" alt="Faceless Instagram theme page growth and monetization in 2026" caption="No face, no problem. No system, big problem." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 1: pick a niche that buys, not just scrolls</h2>
+      <p>The classic beginner mistake is picking for growth instead of money. Meme pages grow fast and monetize terribly, because advertisers can&apos;t tell who&apos;s watching and the audience follows for free dopamine, not solutions. The niches that pay share one trait: the audience already spends money on the topic. Personal finance, fitness, AI tools, travel, home decor, productivity, niche hobbies with expensive gear.</p>
+      <p>Then narrow it. Not &quot;fitness&quot; but &quot;home workouts for people over 40.&quot; Not &quot;finance&quot; but &quot;budgeting for freelancers.&quot; A page that&apos;s obviously for someone converts followers at multiples of a page that&apos;s vaguely for everyone. The narrower page grows slower and earns faster; that&apos;s the trade, and it&apos;s usually worth taking.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 2: the content system (this is 80% of the game)</h2>
+      <p>In 2026, Reels drive reach and carousels drive saves and follows. A sustainable weekly template: 3 Reels, 2 carousels, daily Stories. That&apos;s roughly 4 hours a week once you have a rhythm, and batching is non-negotiable, because pages die from inconsistency, not from bad posts.</p>
+      <p>AI makes the production side almost trivial: draft carousel scripts, generate hooks, repurpose one idea into five formats. But here&apos;s the 2026 reality check: pure AI slop gets ignored. Instagram is drowning in generic AI content, and audiences scroll straight past it. The pages winning right now add curation, actual opinions, and a visual style you can recognize without seeing the username. Use AI for volume, add taste yourself, and run drafts through something like our <InternalLink href="/tools/ai-text-humanizer">AI text humanizer</InternalLink> so captions don&apos;t read like a press release.</p>
+
+      <DataTable headers={["Milestone", "Typical timeline", "Realistic monthly income"]} rows={[["0-1,000 followers", "Month 1-3", "$0, and that's normal"], ["1,000-10,000", "Month 3-8", "$0-150, early affiliates"], ["10,000-50,000", "Month 6-18", "$200-2,000"], ["50,000-100,000+", "Year 1-3", "$1,000-5,000+"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 3: monetization, in the order it actually happens</h2>
+      <p><strong>Affiliates first.</strong> This can start under 5,000 followers if your niche buys things. Link in bio, honest recommendations in Stories, Amazon and niche programs. Expect small numbers early: $20-100 a month, but it proves your audience trusts you.</p>
+      <p><strong>Shoutouts and brand posts second.</strong> Around 10,000-20,000 engaged followers, small brands start paying for promotion. Rough market rate is $10-30 per 10,000 followers per post in mid-tier niches, more in finance and business. It&apos;s income, but it&apos;s a treadmill; you&apos;re renting out your audience.</p>
+      <p><strong>Your own digital product third, and this is where the real money is.</strong> A $19 template, tracker, or guide sold to an audience that trusts you beats every shoutout deal. A page with 20,000 followers converting a fraction of a percent per month is 20-60 sales, $380-1,140, with 90%+ margins. If you go this route, <InternalLink href="/blog/sell-notion-templates">selling Notion templates</InternalLink> pairs unusually well with theme pages.</p>
+
+      <AlertBox type="warning" title="Don't buy followers. Ever." body="Purchased followers destroy your engagement rate, which is the first thing brands and the algorithm check. A 5,000-follower page with 6% engagement out-earns a 50,000-follower page with 0.5%. Every serious buyer in 2026 runs your page through an audit tool before paying you a cent." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downsides</h2>
+      <p>Three things the YouTube gurus skip. One: you don&apos;t own the audience. A single algorithm shift or account ban can erase years of work, which is why smart operators push followers to an email list from day one. Two: the first 90 days are demoralizing. Posting into a void of 12 likes is where most people quit, and there&apos;s no trick around it, just volume and iteration. Three: it&apos;s a real job disguised as passive income. The &quot;passive&quot; part only arrives after you build systems or hire help, usually deep into year one.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How many followers do you need to monetize an Instagram theme page?", a: "Less than people think. Affiliate income can start under 5,000 followers if your niche buys things. Shoutouts and small brand deals usually become realistic around 10,000-20,000 engaged followers. Selling your own digital product works at almost any size if engagement is real." }, { q: "How long does it take to grow a faceless Instagram page in 2026?", a: "Plan for 6-12 months of consistent posting to reach 10,000 followers in most niches. Some pages hit it in 8 weeks off one viral Reel, but that's survivorship bias. If someone promises 100k in 90 days, they're selling a course, not a result." }, { q: "What are the best niches for faceless Instagram pages?", a: "Niches where the audience spends money: personal finance, fitness and health, AI tools, travel, home decor, and motivation with a specific angle. Broad meme pages grow fast but monetize terribly because advertisers can't tell who's watching." }, { q: "Can you run a faceless Instagram page with AI tools?", a: "Yes, and most successful ones do. AI helps with captions, carousel scripts, and idea generation, while tools handle scheduling. But pure AI-generated slop gets ignored in 2026. The pages that win add curation, opinions, and a recognizable style." }]} />
+
+      <p>Pick a buying niche, post 5 times a week for six months, start an email list in month one, and launch a small product before you think you&apos;re ready. That&apos;s the whole playbook. The rest is just showing up.</p>
+    </div>
+  ),
+  "sell-digital-products-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        A template can ship in a weekend. A course can eat three months of your life. Both are &quot;digital products.&quot; That&apos;s a problem.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        So let&apos;s rank every major digital product type by the thing that actually matters: effort in versus margin out.
+      </p>
+
+      <HookBanner headline="What you'll walk away with" items={["Five product types ranked by effort vs margin", "Honest first-sale timelines for each", "Where to sell: Etsy vs Gumroad vs your own site", "The validation step that saves you a wasted month"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What&apos;s the best digital product to sell in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>For beginners, <strong>templates offer the best effort-to-margin ratio</strong>: build in a weekend, sell at $10-40, keep 90%+ margins forever. Ebooks and presets come next, while courses have the highest ceilings but demand an audience first. Traffic, not product quality, is almost always the real bottleneck.</p></div>
+
+      <p>I&apos;ve watched a lot of people start digital product businesses. The pattern that separates the ones who earn from the ones who quit isn&apos;t talent. It&apos;s picking a product type that matches their available time and existing audience, which is exactly what this ranking is for.</p>
+
+      <BlogImage src="/images/sell-digital-products-2026.png" alt="Best digital products to sell in 2026 ranked by effort vs margin" caption="Effort on one axis, margin on the other. Choose your corner wisely." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>1. Templates: best ratio in the game</h2>
+      <p>Notion templates, spreadsheet trackers, Canva packs, resume templates, pitch decks. Effort: a weekend to a week. Price: $10-40, with bundles hitting $50-100. Margin: essentially 100% after platform fees. The buyer psychology is what makes these work; people pay to skip setup, and the value is obvious in one screenshot. They&apos;re also the easiest to validate: post the free version, and if nobody wants it free, nobody will pay. I&apos;ve covered the Notion angle specifically in <InternalLink href="/blog/sell-notion-templates">how to sell Notion templates</InternalLink>. Downside: low ceiling per product, so winners stack 5-10 templates rather than betting on one.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>2. Ebooks and guides: cheap to make, hard to sell</h2>
+      <p>Effort: 3-6 weeks part-time for a solid 15,000-25,000 word nonfiction guide, less with AI assistance. Price: $2.99-9.99 on Amazon, $15-50 on Gumroad for niche expertise. Margin: near 100% direct; Amazon takes 30-65% depending on your price. The honest problem: ebooks are the most oversupplied product type on this list, and AI has flooded the market with thin ones. The winners in 2026 are narrow and specific: &quot;pricing guide for wedding photographers&quot; beats &quot;how to be productive&quot; every single time.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>3. Presets and creative assets: great if you already make things</h2>
+      <p>Lightroom presets, LUTs, sound packs, fonts, icons, stock illustrations. Effort: days, if the skill already exists; that&apos;s the catch. Price: $5-50 per pack. These sell genuinely well through Instagram and TikTok because the before/after is the ad. If you&apos;re a photographer or designer, this is found money sitting in your existing workflow. If you&apos;re not, skip it; buyers can tell.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>4. Courses: highest ceiling, worst beginner trap</h2>
+      <p>Effort: 1-3 months minimum for something worth money. Price: $50-500, with cohort-based versions higher. The margin math looks gorgeous and the graveyard is enormous. Courses are brutal to sell without an audience, and refund rates punish thin content. My rule: a course should be your third product, after a cheap template or ebook has proven people will pay you at all. The exception is if you already have an email list or an engaged following; then courses are the best monetization available.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>5. Micro-tools: the new 2026 category</h2>
+      <p>Small paid web tools, calculators, and utilities, now buildable by non-programmers thanks to AI coding assistants. Effort: 1-4 weeks. Price: $5-20 one-time or small subscriptions. This is the newest opportunity on the list because the supply is still low relative to templates and ebooks. It pairs naturally with <InternalLink href="/blog/what-is-vibe-coding">vibe coding</InternalLink> skills, and a tool that solves one annoying problem can sell for years. Downside: maintenance is forever, and support emails are real.</p>
+
+      <DataTable headers={["Product", "Build time", "Typical price", "Difficulty to sell"]} rows={[["Templates", "2-7 days", "$10-40", "Low-medium"], ["Ebooks", "3-6 weeks", "$3-50", "High"], ["Presets/assets", "2-5 days", "$5-50", "Medium"], ["Courses", "1-3 months", "$50-500", "Very high"], ["Micro-tools", "1-4 weeks", "$5-20", "Medium"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The part everyone skips: traffic is the product</h2>
+      <p>Here&apos;s my contrarian take: most digital products don&apos;t fail because they&apos;re bad. They fail because 40 people ever saw them. The honest math: most first products earn under $500 total, a solid product with steady traffic does $200-1,000 a month, and the $5,000+ months belong to people with audiences and multiple products. So your real decision isn&apos;t &quot;which product&quot; but &quot;which traffic source&quot;: Etsy&apos;s built-in search, a faceless social page, SEO through a blog, or short-form video. Pick the product type your traffic source sells best. Presets sell on Instagram; ebooks sell through search; tools sell through communities.</p>
+
+      <AlertBox type="money" title="Validate with $0 before building" body="Before you build anything, describe it in one paragraph and post it where your buyers hang out: a subreddit, a niche Discord, your own Stories. If you can't get 10 people to say 'I'd pay for that,' you've just saved yourself a month. Pre-selling at a discount is even better proof." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What is the easiest digital product to sell in 2026?", a: "Templates: Notion templates, spreadsheet trackers, Canva packs, and resume templates. You can build one in a weekend, price it at $10-40, and the buyer gets instant obvious value. They're also the easiest to validate before building." }, { q: "How much money can you make selling digital products?", a: "The honest range is wide. Most first products make under $500 total. A solid template or ebook with steady traffic can do $200-1,000 a month, and creators with an audience and several products can clear $5,000+ monthly. Traffic, not the product, is usually the bottleneck." }, { q: "Where should I sell digital products, Gumroad or Etsy?", a: "Etsy brings its own buyers but takes listing fees plus transaction fees and you compete on search. Gumroad and Lemon Squeezy charge roughly 10% or a flat fee but send zero traffic. Start on Etsy if you have no audience, move to your own store as you grow one." }, { q: "Are online courses still worth creating in 2026?", a: "Only if you already have an audience or a rare skill with proof. Courses have the best margins at $50-500 price points, but they take 1-3 months to build and are brutal to sell cold. Sell a cheap template or ebook first to test whether people pay you at all." }]} />
+
+      <p>Start with a template this weekend. Ship it ugly, price it at $19, and learn from real buyers instead of your imagination. Product two will be better because product one existed.</p>
+    </div>
+  ),
+  "high-income-skills-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The highest-paid people I know in 2026 aren&apos;t competing with AI. They&apos;re the ones telling it what to do.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here are 9 skills that get more valuable as AI gets better, how to learn each one free, and what people actually charge.
+      </p>
+
+      <HookBanner headline="Why these 9 made the list" items={["Every skill pairs with AI instead of fighting it", "All learnable free in 3-6 months at 5-10 hours a week", "Realistic starting rates, not top-1% screenshots", "One honest warning about the 'learn skills' industry itself"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What are the best high-income skills to learn in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>The skills worth learning share one trait: <strong>AI multiplies them instead of replacing them</strong>. AI-assisted copywriting, business automation, data analysis, video editing, and sales top the list, with freelance rates running $25-150+ an hour depending on skill and specialization.</p></div>
+
+      <p>Quick filter before the list. A high-income skill in 2026 needs three things: businesses pay for it directly, AI raises your output instead of erasing your role, and you can prove it with a portfolio instead of a degree. Everything below passes all three.</p>
+
+      <BlogImage src="/images/high-income-skills-2026.png" alt="High-income skills worth learning in 2026 with AI" caption="Nine skills, zero tuition, one uncomfortable amount of practice required." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Skills 1-3: the writing and content cluster</h2>
+      <p><strong>1. Copywriting + AI.</strong> Not &quot;writing,&quot; selling with words: landing pages, emails, ads. AI drafts; you bring positioning, psychology, and taste. Learn free via classic books, swipe files, and rewriting real companies&apos; pages. Realistic start: $25-50/hour or $150-500 per landing page, with specialists in email or SaaS clearing $80-150/hour within 2-3 years. Time to billable: 2-3 months of daily practice.</p>
+      <p><strong>2. AI content editing.</strong> The inverse skill: taking AI output and making it accurate, on-brand, and human. Demand exploded because companies produce 10x the drafts and trust none of them. It&apos;s the fastest on-ramp on this list, and I wrote a full guide to <InternalLink href="/blog/ai-content-editor-side-hustle">the AI content editor side hustle</InternalLink>. Rates: $20-45/hour early, more with niche expertise.</p>
+      <p><strong>3. Short-form video editing.</strong> Every business wants Reels, Shorts, and TikToks; almost none want to make them. Learn CapCut or Premiere free on YouTube, edit 30 practice clips, then pitch creators. Rates: $15-30 per short early, $50-150 per video once you can prove retention improvements. Time to billable: 2-3 months.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Skills 4-6: the technical cluster</h2>
+      <p><strong>4. Business automation.</strong> Connecting tools with Zapier, Make, and AI agents so a business stops doing things manually. This might be the single best rate-to-learning-time ratio in 2026: consultants charge $60-150/hour because they speak &quot;business process,&quot; not because the tools are hard. Learn free with the platforms&apos; own tutorials, then automate something real for a local business at a discount.</p>
+      <p><strong>5. Data analysis.</strong> SQL, spreadsheets, and a dashboard tool, plus AI to write the queries you describe. Companies drown in data and starve for people who can say what it means. Free path: SQL tutorials, public datasets, three portfolio dashboards. Rates: $30-60/hour freelance early, $70-120/hour experienced, and it&apos;s a strong salaried path too.</p>
+      <p><strong>6. AI-assisted development.</strong> Building small apps and tools with heavy AI help; the productized version of <InternalLink href="/blog/what-is-vibe-coding">vibe coding</InternalLink>. You won&apos;t be a senior engineer in six months, but you can build the internal tools and MVPs small businesses pay $500-5,000 for. Learn free: pick a stack, build 3 real things, ship them publicly.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Skills 7-9: the people cluster</h2>
+      <p><strong>7. Sales.</strong> The oldest high-income skill and still the most reliable. AI handles research and follow-up drafting; the actual trust-building call is yours. Tech and B2B sales roles routinely pay $60,000-120,000+ with commission, and no degree gatekeeps them. Learn free by doing it: sell anything, even your own freelance services, and study call recordings.</p>
+      <p><strong>8. Paid ads management.</strong> Running Meta and Google ads for small businesses. AI writes variants; you own strategy and budget accountability. Typical freelance retainers: $500-2,000 per client per month, and three clients is a living. Learn free with platform certifications plus a tiny budget spent on your own test campaigns.</p>
+      <p><strong>9. Design with AI tools.</strong> Brand kits, thumbnails, landing page design in Figma and Canva, accelerated by AI generation. Taste is the moat; AI raised the floor and made the ceiling more valuable. Rates: $25-40/hour early, $75+ specialized.</p>
+
+      <InfoBox title="The free learning formula (works for all 9)" items={[["Months 1-2: inputs", "One free course or docs deep-dive, 5-10 hours a week. No course-hopping; finish one thing."], ["Months 2-4: reps", "Do the skill 20-30 times on real or realistic projects. This is the part people skip and the reason they stay broke."], ["Months 4-6: proof", "Package your 3-5 best pieces into a portfolio and do 2-3 jobs cheap or free for testimonials."], ["Month 6+: charge", "Raise rates every 3-5 clients. Specialists out-earn generalists at every level."]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest warning about this whole genre</h2>
+      <p>Skill-learning content has a dirty secret: consuming it feels like progress and isn&apos;t. Nobody hires you for watching 60 hours of tutorials. The market pays for output, and the gap between &quot;took the course&quot; and &quot;did it 30 times&quot; is where all the income hides. Also, the rates above are medians for people who stick with it; your first month of outreach will mostly be silence, and that&apos;s the tuition. Pick one skill, ignore the other eight for six months, and check the math on your target income with our <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink> so your goal is a number instead of a vibe.</p>
+
+      <AlertBox type="fire" title="Pick using this tiebreaker" body="Torn between two skills? Choose the one adjacent to work you've already done. A retail worker picking sales, a teacher picking course design, an admin picking automation. Adjacent experience cuts months off the credibility problem, and credibility is the actual product early on." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What is the fastest high-income skill to learn in 2026?", a: "AI-assisted copywriting or short-form video editing. Both can reach billable quality in 2-3 months of daily practice, and both have huge demand from creators and small businesses. Neither requires a degree, just a portfolio of 3-5 strong samples." }, { q: "Can I really learn high-income skills for free?", a: "Yes, the learning material is free; the cost is time. YouTube, official docs, and free tool tiers cover every skill on this list. Budget 5-10 hours a week for 3-6 months. Paid courses mostly buy you structure, not secret information." }, { q: "Which skills pay the most for freelancers in 2026?", a: "Automation consulting, data work, and specialized sales roles top the list, with experienced freelancers charging $60-150+ an hour. Copywriting and video editing start lower, around $25-50 an hour, but scale well once you niche down and show results." }, { q: "Will AI make these skills obsolete too?", a: "These skills were picked because AI raises their value instead of erasing it. AI writes drafts, but someone must know what good looks like. It builds automations, but someone must map the business process. Judgment and taste are the durable part." }]} />
+
+      <p>One skill. Six months. Thirty reps. That&apos;s the entire secret, and it&apos;s free. The only thing the paid courses add is someone to blame.</p>
+    </div>
+  ),
+  "youtube-shorts-monetization": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        A million Shorts views sounds like a lottery win. Then the payout lands: often somewhere between $50 and $150. Total.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s how Shorts money actually works in 2026, why the RPM is structurally tiny, and how smart creators get paid anyway.
+      </p>
+
+      <HookBanner headline="The money mechanics, explained straight" items={["How the Shorts revenue share actually flows, step by step", "Real RPM ranges and what a million views pays", "Why Shorts RPM will never match long-form", "The funnel strategy that turns Shorts into real income"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>How much does YouTube Shorts pay in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Most creators earn roughly <strong>$0.05-0.15 per 1,000 Shorts views</strong>, meaning a million views typically pays about $50-150. Long-form RPMs in strong niches run 20-100x higher, which is why serious creators treat Shorts as a discovery engine, not a paycheck.</p></div>
+
+      <p>I&apos;m not here to tell you Shorts are worthless. They&apos;re the best free attention machine available to a normal person in 2026. But the gap between &quot;views&quot; and &quot;money&quot; is wider on Shorts than anywhere else on YouTube, and understanding why changes your entire strategy.</p>
+
+      <BlogImage src="/images/youtube-shorts-monetization.png" alt="YouTube Shorts monetization and RPM explained for 2026" caption="Ten million views, one modest dinner. Welcome to Shorts math." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How the revenue share actually works</h2>
+      <p>Shorts don&apos;t carry their own ads the way long-form videos do. Instead, YouTube pools the money from ads shown between Shorts in the feed. From that pool, YouTube first sets aside money to cover music licensing, based on how many Shorts use licensed tracks. The remainder becomes the creator pool, allocated to monetizing creators by their share of total views. From your allocation, YouTube keeps 55% and you get 45%.</p>
+      <p>Notice something? That&apos;s the reverse of long-form, where creators keep 55%. And because the pool is shared across an ocean of views, your slice is thin no matter how good your video is. Your Shorts RPM depends on things you don&apos;t control: how many other Shorts got watched that month, how much advertisers paid, how much music licensing cost.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The eligibility gates</h2>
+      <p>Two paths into the YouTube Partner Program for full monetization: 1,000 subscribers plus 4,000 public watch hours on long-form in 12 months, or 1,000 subscribers plus 10 million public Shorts views in 90 days. Ten million in 90 days is a genuinely hard bar; it filters for people already going viral consistently. There&apos;s also a lower &quot;fan funding&quot; tier at 500 subscribers that unlocks memberships and Super Thanks, which is worth grabbing on the way up.</p>
+
+      <DataTable headers={["Metric", "Shorts", "Long-form"]} rows={[["Typical RPM", "$0.05-0.15", "$2-15+ (niche-dependent)"], ["Creator revenue split", "45%", "55%"], ["1M views pays roughly", "$50-150", "$2,000-15,000+"], ["Best role", "Discovery + reach", "Income + depth"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why the RPM is structurally low (and won&apos;t be fixed)</h2>
+      <p>People keep waiting for YouTube to &quot;fix&quot; Shorts pay. It can&apos;t, really. A 30-second video supports at most one brief ad impression shared across a feed session; a 12-minute video carries pre-rolls and mid-rolls targeted at a viewer who chose to be there. Less ad inventory per minute of attention means less revenue per view. Add the music-licensing carve-out and the 45% split, and low RPM isn&apos;t a bug. It&apos;s the physics of the format, and it&apos;s roughly the same story on TikTok and Reels.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How creators actually make money with Shorts</h2>
+      <p><strong>The funnel model.</strong> Shorts create the audience; something else monetizes it. The classic 2026 stack: Shorts for discovery, long-form for ad revenue and depth, an email list or community for ownership, and a product or sponsorship for the real income. Channels running this stack treat a viral Short that converts 1-2% of viewers into subscribers as the win, not the $80 payout.</p>
+      <p><strong>Products beat ads at small scale.</strong> A creator with 20,000 niche subscribers selling a $29 template or guide can out-earn a 500,000-subscriber Shorts channel living on pool revenue. If you&apos;re building faceless, this pairs directly with the playbook in <InternalLink href="/blog/make-money-ai-video-faceless-youtube">making money with AI video on faceless YouTube</InternalLink>, and digital products like the ones in <InternalLink href="/blog/sell-notion-templates">this Notion template guide</InternalLink> are the natural thing to sell.</p>
+      <p><strong>Brand deals ignore RPM entirely.</strong> Sponsors pay for attention and fit, not for YouTube&apos;s pool math. Niche Shorts channels with 50,000-100,000 engaged subscribers land integrations worth $300-2,000 per video in business-adjacent niches. That&apos;s where consistent Shorts income actually lives.</p>
+
+      <AlertBox type="money" title="Run your own numbers before quitting your job" body="Take your average monthly Shorts views, multiply by $0.0001, and that's your realistic pool revenue. 2 million views a month is about $200. Now price what those same viewers would be worth joining an email list or buying a $19 product, and you'll see why the funnel model wins." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downside of the funnel advice too</h2>
+      <p>Fairness requires saying this: &quot;use Shorts as a funnel&quot; is easy to type and hard to execute. Shorts audiences are drive-by traffic; conversion to long-form viewers is often just 1-5%, and a channel built on viral Shorts can have weirdly dead long-form videos. The fix is making Shorts about the same topic you monetize, for the same audience, rather than chasing whatever trends. Slower growth, dramatically better economics.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How much does YouTube Shorts pay per 1,000 views in 2026?", a: "Typically somewhere between $0.05 and $0.15 per 1,000 views for most creators, though niche and geography move the number. That means a million views often pays out roughly $50-150. Long-form RPMs in good niches can run 20-100x higher." }, { q: "What are the requirements to monetize YouTube Shorts?", a: "For the Shorts revenue path into the YouTube Partner Program, you need 1,000 subscribers plus 10 million public Shorts views in 90 days, or the standard 1,000 subscribers with 4,000 watch hours on long-form. Fan funding perks unlock at lower thresholds." }, { q: "Why is Shorts RPM so much lower than regular videos?", a: "Ads between Shorts are pooled and split across all creators after music licensing costs, and a 30-second video simply can't carry mid-roll ads like a 12-minute one. Less ad inventory per view means less money per view. It's structural, not a glitch." }, { q: "Can you actually make a living from YouTube Shorts?", a: "From ad revenue alone, almost nobody does. Creators earning real money from Shorts use them to feed long-form videos, sell digital products, land brand deals, or grow an email list. Shorts are the best free attention engine available; they're just a bad direct paycheck." }]} />
+
+      <p>Make Shorts. Make lots of them. Just aim them at an audience you can actually own, because the view counter is a vanity metric and the email list is not.</p>
+    </div>
+  ),
+  "write-and-sell-ebooks-ai": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        AI can cut your ebook writing time in half. It can also help you publish garbage in record time. The difference is the workflow.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s how to write an ebook people actually finish, where to sell it, what to charge, and what you&apos;ll honestly earn.
+      </p>
+
+      <HookBanner headline="The full pipeline, start to sale" items={["AI-assisted vs AI-generated: the line that decides everything", "A 3-6 week workflow that produces a real book", "Amazon KDP vs Gumroad: fees, rules, and the both-platforms play", "Income expectations without the screenshot fantasy"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Can you really write and sell an ebook with AI in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Yes, if AI assists rather than generates. A focused <strong>15,000-25,000 word nonfiction ebook takes 3-6 weeks part-time</strong> with AI handling research, outlines, and rough drafts while you supply expertise and rewriting. Fully AI-generated books must be disclosed on Amazon KDP and mostly sink without a trace.</p></div>
+
+      <p>The ebook gold rush of 2023-2024 flooded Amazon with thin AI books, and the market responded exactly how you&apos;d expect: readers got suspicious, refunds rose, and Amazon tightened the rules, including a disclosure requirement for AI-generated content and a limit of three self-published titles per day (yes, that limit exists because people were exceeding it). The result in 2026 is actually good news for you: the bar for standing out is real but low. A genuinely useful, specific book competes against mostly slop.</p>
+
+      <BlogImage src="/images/write-and-sell-ebooks-ai.png" alt="How to write and sell an ebook with AI help in 2026" caption="AI holds the pen. You still have to be the author." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The line: AI-assisted vs AI-generated</h2>
+      <p>Amazon&apos;s own distinction is useful here. AI-generated means the machine wrote it and you lightly touched it; that requires disclosure at publishing and tends to read like a Wikipedia summary with confidence issues. AI-assisted means you created the content and used AI for brainstorming, drafting help, editing, and refinement; that currently requires no disclosure. Beyond compliance, the practical difference is simple: AI knows the average of everything, and readers pay for the specific. Your examples, your numbers, your mistakes, your opinions. AI can&apos;t fake those, and those are the whole product.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The workflow: 3-6 weeks, part-time</h2>
+      <p><strong>Week 1: pick narrow, outline hard.</strong> &quot;Productivity&quot; is dead on arrival; &quot;client onboarding systems for freelance designers&quot; can sell for years. Validate by checking Amazon: 3-10 competing books with decent sales ranks means a market exists. Then build the outline with AI as a sparring partner; ask it what questions your reader would have, argue with its structure, cut half.</p>
+      <p><strong>Weeks 2-4: draft in passes.</strong> My method: for each chapter, I brain-dump everything I actually know into a messy voice note or bullet list, have AI structure it into a rough draft, then rewrite that draft heavily in my own voice, adding stories and specifics AI couldn&apos;t know. The rewrite is the book. If a chapter comes out sounding like a chatbot, it&apos;ll read like one, and readers in 2026 have finely tuned slop detectors; my guide on <InternalLink href="/blog/how-to-humanize-ai-text">humanizing AI text</InternalLink> covers exactly this problem.</p>
+      <p><strong>Weeks 5-6: edit, package, publish.</strong> One full editing pass for accuracy (verify every fact AI touched; it will have invented at least one), one for voice. Cover via Canva or a $50-150 designer; covers sell books, so don&apos;t be cheap here. Format with free tools like Kindle Create or Atticus-style alternatives. Then publish.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where to sell: KDP, Gumroad, or both</h2>
+      <DataTable headers={["", "Amazon KDP", "Gumroad / Payhip"]} rows={[["Who brings buyers", "Amazon search does", "You do, entirely"], ["Cut taken", "30-65% by price tier", "Roughly 10% or flat fee"], ["Price sweet spot", "$2.99-9.99", "$15-50"], ["Best for", "Discovery, credibility", "Margin, bonuses, upsells"]]} />
+      <p>The play that works: publish on KDP at $4.99-9.99 for discovery and the &quot;I&apos;m on Amazon&quot; credibility, and sell a deluxe version on Gumroad at $19-39 with templates, worksheets, or a bonus chapter bundled in. KDP&apos;s 70% royalty tier requires pricing between $2.99 and $9.99; outside that band you drop to 35%, which is why almost everyone prices inside it. Gumroad&apos;s roughly 10% cut on a $29 bundle beats KDP&apos;s take on three book sales.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest income section</h2>
+      <p>Median outcome first, because nobody else leads with it: most self-published ebooks earn under $500 lifetime. That&apos;s the base rate, and pretending otherwise is how course-sellers make their money. The realistic good outcome: a specific, useful book with consistent marketing does $100-1,000 a month. The great outcomes belong to people with an audience, an email list, or several titles compounding. The book itself is maybe 40% of the work; distribution is the rest, which is why pairing an ebook with a blog, a theme page, or a YouTube channel changes the math completely. If you don&apos;t have any audience yet, <InternalLink href="/blog/how-to-start-a-blog-2026">starting a blog</InternalLink> alongside the book is the classic compounding move.</p>
+
+      <AlertBox type="warning" title="Verify everything AI wrote" body="AI will confidently invent statistics, studies, and quotes. In a published book, with your name on it, that's not embarrassing, it's a refund magnet and a credibility killer. Fact-check every claim you didn't personally know before you hit publish. Every single one." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Can you sell AI-written ebooks on Amazon KDP?", a: "Yes, but you must disclose AI-generated content during publishing, and Amazon can remove low-quality books. AI-assisted work, where you wrote and heavily edited with AI help, currently doesn't require disclosure. Either way, thin generic books get buried and refunded." }, { q: "How much money do ebooks actually make?", a: "The honest median is low: most self-published ebooks earn under $500 in their lifetime. A well-targeted nonfiction ebook with real marketing can do $100-1,000 a month, and authors with an audience and multiple titles earn far more. The book is maybe 40% of the work; selling it is the rest." }, { q: "Should I sell my ebook on Amazon KDP or Gumroad?", a: "Both, ideally. KDP gives you Amazon's search traffic but takes 30-65% depending on price, and forces pricing rules. Gumroad takes roughly 10%, lets you charge $15-50, but brings zero buyers. Use KDP for discovery and Gumroad for a higher-priced deluxe version." }, { q: "How long does it take to write an ebook with AI help?", a: "A focused 15,000-25,000 word nonfiction ebook takes about 3-6 weeks part-time with an AI-assisted workflow: a week for outline and research, 2-3 weeks drafting and rewriting, and a week for editing, cover, and formatting. Pure AI generation is faster and sells worse." }]} />
+
+      <p>Pick the narrow topic you&apos;re actually qualified to write, spend a month doing it properly, and publish on both platforms. Book one probably won&apos;t fund your retirement. It will teach you exactly how to make book two the one that earns.</p>
+    </div>
+  ),
+  "upwork-vs-fiverr": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Upwork makes you hunt for work. Fiverr makes work hunt for you. That single difference decides which one a beginner should pick.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the 2026 fee math, how work actually arrives on each platform, and a verdict that doesn&apos;t hedge.
+      </p>
+
+      <HookBanner headline="Everything this comparison covers" items={["The real fee math: Fiverr's 20% vs Upwork's 10% plus Connects", "How work arrives: proposals vs gigs, and why it matters more than fees", "Which skills thrive on which platform", "A straight verdict, plus the two-platform strategy"]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Upwork or Fiverr: which is better for beginners?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>For most beginners, <strong>Fiverr is the easier starting point</strong>: you create gigs and buyers come to you, no proposals or bidding costs. Upwork pays better per project and charges lower fees, but it rewards people who already have portfolios and can write persuasive proposals.</p></div>
+
+      <p>I&apos;ve watched a lot of people start freelancing on both platforms, and the failure patterns are completely different. Fiverr beginners fail from invisibility: gigs nobody finds. Upwork beginners fail from exhaustion: 30 proposals, 30 silences, quit. Understanding why tells you which platform fits you better than any feature list.</p>
+
+      <BlogImage src="/images/upwork-vs-fiverr.png" alt="Upwork vs Fiverr comparison for beginner freelancers in 2026" caption="Two marketplaces, two completely different games. Pick the one whose losing condition you can survive." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How work arrives: the real difference</h2>
+      <p><strong>On Fiverr, you&apos;re a shop.</strong> You create gigs: productized services with set prices and tiers, like &quot;I&apos;ll edit your podcast episode for $50.&quot; Buyers search, compare, and order, sometimes without ever messaging you. Your job is making the gig findable and the thumbnail clickable, then delivering fast. It&apos;s passive inbound: slow to start, compounding once reviews stack.</p>
+      <p><strong>On Upwork, you&apos;re a bidder.</strong> Clients post jobs; you spend Connects (Upwork&apos;s paid tokens) to submit proposals against 20-50 other freelancers. Proposals cost real money, typically a few dollars&apos; worth of Connects per serious bid, and beginners commonly send 20-40 proposals before their first win. The upside: jobs are bigger, hourly contracts exist, and long-term client relationships are the norm rather than the exception.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The fee math, honestly</h2>
+      <p>Fiverr takes a flat 20% from sellers on every order, full stop; a $100 order pays you $80. Upwork moved to a flat 10% freelancer fee, so a $100 job pays you $90, but you also buy Connects to bid, and unsuccessful proposals are pure cost. For a beginner winning maybe 1 in 15 proposals, the effective cost per won job is meaningfully higher than the headline 10%. Established Upwork freelancers with repeat clients get the best deal on either platform; struggling beginners arguably get the worst.</p>
+      <p>Run your own numbers on our <InternalLink href="/tools/fiverr-fee-calculator">Fiverr fee calculator</InternalLink> before you price your first gig, because underpricing plus a 20% fee is how beginners end up working for less than minimum wage and burning out by month two.</p>
+
+      <DataTable headers={["", "Fiverr", "Upwork"]} rows={[["Seller fee", "Flat 20%", "Flat 10% + Connects costs"], ["How work arrives", "Buyers order your gigs", "You bid on posted jobs"], ["Typical first win", "2-6 weeks (good gig)", "20-40 proposals"], ["Project size", "Small, productized", "Larger, often ongoing"], ["Best for", "Productizable skills", "Portfolio-backed skills"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Who suits which platform</h2>
+      <p><strong>Pick Fiverr if</strong> your skill productizes cleanly into a fixed deliverable: logo design, video editing, voiceovers, thumbnail design, resume rewrites, short translations. If you can describe your service in one sentence with one price, Fiverr&apos;s format was built for you. My deeper playbook on <InternalLink href="/blog/how-to-make-money-on-fiverr">making money on Fiverr</InternalLink> covers gig optimization in detail.</p>
+      <p><strong>Pick Upwork if</strong> your work is scoped per client: development, ongoing marketing, consulting, long-form writing, data work. Upwork clients pay for judgment and conversation, and hourly contracts with weekly billing are common; $2,000+ projects that would never fit a gig listing show up daily. You&apos;ll need 3-5 portfolio pieces and the stomach for rejection silence.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian bit: the platform matters less than you think</h2>
+      <p>Here&apos;s what both fan bases miss: in 2026, both platforms are crowded, both are flooded with AI-generated proposals and AI-generated gig descriptions, and both reward exactly the same boring fundamentals: a narrow niche, fast responses, and 10-15 genuine reviews. The freelancers earning $3,000+ a month on either platform would earn it on the other one too, because their advantage is specificity and proof, not platform choice. Meanwhile the race to the bottom on generic services (basic logos, generic articles) is fully lost to AI and $5 competition on both. Don&apos;t enter those categories at all.</p>
+
+      <AlertBox type="tip" title="The two-platform strategy that actually works" body="Month 1-3: launch 3 niched gigs on Fiverr and collect your first reviews while sending only 2-3 high-quality Upwork proposals a week for ideal jobs. Month 4+: use your Fiverr deliverables as portfolio pieces to win bigger Upwork contracts. Fiverr teaches you what clients want; Upwork pays you properly for knowing it." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The verdict</h2>
+      <p>Complete beginner with no portfolio: start on Fiverr. The waiting game beats the rejection game when you have no proof yet, and every completed order builds the proof. Have 3-5 solid work samples, or a skill that bills hourly: start on Upwork and treat proposal-writing as a skill in itself. Either way, set a real income target with the <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink> so you know when the platform is working and when it&apos;s time to raise prices.</p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Which is better for complete beginners, Upwork or Fiverr?", a: "Fiverr, for most people. You create gigs and wait for buyers instead of writing proposals and buying Connects to bid on jobs. It's slower to start but far less discouraging. Upwork rewards people who already have a portfolio and can write persuasive proposals." }, { q: "What are the fees on Upwork vs Fiverr in 2026?", a: "Fiverr takes a flat 20% from sellers on every order. Upwork charges freelancers a flat 10% service fee, plus you spend money on Connects to submit proposals. On paper Upwork is cheaper; in practice, proposal costs eat into that for beginners who don't win often." }, { q: "How long does it take to get your first order on Fiverr or Upwork?", a: "On Fiverr, a well-optimized gig in a real niche typically gets its first order within 2-6 weeks. On Upwork, beginners often send 20-40 proposals before landing a first job. Both platforms reward the boring stuff: niche gigs, fast replies, and stacked early reviews." }, { q: "Can you use both Upwork and Fiverr at the same time?", a: "Yes, and you probably should. Neither platform forbids it. A common pattern: start on Fiverr to collect reviews and learn what clients want, then use those samples as portfolio pieces for higher-paying Upwork proposals. Just never move a client off-platform mid-contract; both ban that." }]} />
+
+      <p>Stop researching platforms; that decision was worth one article, and you&apos;ve read it. Launch the gig or send the proposal this week. Your first review is worth more than your next ten hours of comparison videos.</p>
+    </div>
+  ),
+  "online-tutoring-side-hustle": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        In 2023, everyone told me tutoring was dead. ChatGPT could explain calculus for free, so why would anyone pay a human $50 an hour?
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Three years later, tutoring marketplaces are busier than ever and rates went up. The doomsayers misunderstood what parents were actually buying.
+      </p>
+      <HookBanner headline="Online tutoring in 2026, the short version" items={["Realistic rates run $15 to $80 per hour depending on subject", "Platforms take 15% to 33%, so independents earn the most", "AI made self-study free, but demand for humans grew anyway", "You can land a first paying student in under 2 weeks"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Is online tutoring still worth it in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Yes. Online tutors typically earn <strong>$15 to $80 per hour</strong> depending on subject, with test prep and advanced STEM at the top. AI tools made free explanations abundant, but families pay for accountability, structure, and a human who notices confusion, which is why demand kept growing.</p></div>
+      <p>
+        Here&apos;s the thing AI can&apos;t do: make a 16-year-old actually sit down on Tuesday at 5pm and work through practice problems. ChatGPT gives infinite explanations. It gives zero accountability. Parents figured this out fast, and they&apos;re paying for the accountability.
+      </p>
+      <BlogImage src="/images/online-tutoring-side-hustle.png" alt="online tutoring side hustle setup with laptop and webcam" caption="The whole business fits on one desk. That's kind of the point." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What tutors actually charge, by subject</h2>
+      <p>
+        Rates aren&apos;t random. They track two things: how scarce the skill is, and how much the outcome is worth to the person paying. A parent staring down college admissions will pay more for SAT prep than for third-grade reading help, even if the reading help is arguably more important.
+      </p>
+      <DataTable headers={["Subject", "Typical rate", "Why it pays that"]} rows={[["ESL conversation practice", "$15-25/hr", "Huge supply of fluent speakers"], ["Elementary and middle school help", "$20-35/hr", "Steady demand, low barrier"], ["High school math and science", "$30-50/hr", "Fewer qualified tutors"], ["SAT/ACT and test prep", "$40-70/hr", "High-stakes outcome, parents pay"], ["College CS, stats, organic chem", "$50-80/hr", "Scarce expertise, desperate students"]]} />
+      <p>
+        Those are marketplace rates. Independent tutors in wealthy metro areas charge more, sometimes a lot more. But start on a platform, because a platform&apos;s job is to hand you students you didn&apos;t have to find.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Picking a platform (and what they take)</h2>
+      <p>
+        Wyzant is the biggest US marketplace and takes roughly a quarter of what you earn. You set your own rate, so build the commission into it. Preply starts new tutors at a steep 33% commission that drops as you log hours, which stings early but the student flow is real. Cambly pays around $10 to $12 an hour for casual English conversation, which I&apos;d only recommend as a zero-prep way to test whether you enjoy teaching at all. Tutor.com hires you like a regular part-time job with set-ish rates, less upside, more predictability.
+      </p>
+      <p>
+        My honest take: treat platforms as a customer acquisition channel, not a career. Once you&apos;ve got 5 to 10 regular students and a stack of five-star reviews, new students start coming from referrals, and referrals don&apos;t pay commission. Just read each platform&apos;s rules first, since some prohibit taking students off-platform for a period.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How to actually start this month</h2>
+      <p>
+        Week one: pick the one subject where you&apos;re strongest, write a profile that names specific outcomes (&quot;raised my last student&apos;s SAT math score 120 points&quot; beats &quot;passionate about education&quot;), and record a 90-second intro video. Profiles with video get dramatically more contact requests on every platform that supports them.
+      </p>
+      <p>
+        Week two: price yourself 10 to 20 percent below the going rate for your subject, just until you have three reviews. Then raise it. Underpricing forever is the most common tutor mistake, and it signals low quality to exactly the parents who&apos;d pay the most. If you want to sanity-check whether the hours are worth it against other options, run your numbers through our <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink>.
+      </p>
+      <p>
+        And use AI as your prep assistant. I generate practice problem sets, lesson outlines, and parent progress emails with it, which cuts my unpaid prep time roughly in half. The teaching hour stays human. The busywork doesn&apos;t have to.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downsides nobody puts in their course</h2>
+      <p>
+        Tutoring income is lumpy and seasonal. Test prep booms from January through May, then summer arrives and half your students vanish to camp. Evenings and weekends are your prime hours forever, because that&apos;s when students are free. Cancellations will drive you insane until you adopt a written 24-hour cancellation policy, so do that in week one, not month six.
+      </p>
+      <p>
+        Also, this doesn&apos;t scale by itself. You&apos;re selling hours. Getting past that means group sessions, raising rates, or productizing your material, and honestly, selling study guides or <InternalLink href="/blog/sell-notion-templates">Notion templates</InternalLink> built from your lesson plans is the most natural upgrade path I&apos;ve seen tutors pull off.
+      </p>
+      <AlertBox type="money" title="The math on a modest version of this" body="Six students, one hour each per week, at $40/hr is roughly $960 a month before platform fees. That's not life-changing, but it's a car payment plus a Roth IRA contribution from about seven hours a week of work you might genuinely enjoy." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How much can I make tutoring online in 2026?", a: "Most online tutors earn between $15 and $80 per hour depending on subject and platform. ESL conversation practice sits at the low end, while test prep, advanced math, and college-level computer science command $50 to $80. Independent tutors keep the most since platforms take 15 to 33 percent." }, { q: "Do I need a teaching degree to tutor online?", a: "No. Most platforms require a bachelor's degree or proof of subject expertise, not a teaching license. Test prep companies usually want high score reports, and ESL platforms often just require fluency plus a short certification like a 120-hour TEFL." }, { q: "Didn't AI make tutoring obsolete?", a: "The opposite happened. AI tools made self-study cheaper, but parents and students still pay for accountability, structure, and a human who notices when you're confused. Tutoring marketplaces have reported growing demand since 2023, especially for exam prep." }, { q: "What's the best online tutoring platform for beginners?", a: "Preply and Wyzant are the easiest places to get your first students because they bring the traffic to you. Expect commissions from roughly 15 to 33 percent. Once you have 5 to 10 regulars, move them toward direct booking to keep your full rate." }]} />
+      <p>
+        Tutoring survived the AI wave because it was never really about information delivery. It&apos;s about a human showing up for another human, week after week. If you know something well enough to explain it patiently, someone will pay you for that in 2026. Probably more than you think.
+      </p>
+    </div>
+  ),
+  "best-remote-jobs-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        A single remote job posting can pull several hundred applications in 48 hours. Most of them are one-click spam that recruiters never read.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        That&apos;s actually good news. When 90% of your competition is noise, beating them takes effort, not magic.
+      </p>
+      <HookBanner headline="Remote job hunting in 2026, decoded" items={["Entry-level remote roles still exist: support, SDR, EA, editing", "Applying within 24-48 hours matters more than a perfect resume", "One referral message beats 50 cold applications", "AI-screened resumes reward mirroring the job description's language"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What are the best remote jobs in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>The best low-barrier remote jobs are <strong>customer support, sales development, executive assistant, and content/AI editing</strong>, typically paying $35,000 to $60,000. Higher-barrier roles like software engineering, product management, and data work pay $80,000 to $150,000+ but expect a portfolio or track record.</p></div>
+      <p>
+        I&apos;ve watched friends land remote roles in six weeks and watched others send 300 applications into the void over six months. The difference was never talent. It was strategy, and the strategy is learnable.
+      </p>
+      <BlogImage src="/images/best-remote-jobs-2026.png" alt="best remote jobs 2026 laptop with job listings on screen" caption="Everyone wants in. Most people apply lazily. Opportunity lives in that gap." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Remote roles ranked by how hard they are to get</h2>
+      <p>
+        Sorting by salary is a mistake if you can&apos;t clear the entry bar. Sort by barrier first, then climb.
+      </p>
+      <InfoBox title="Remote jobs by entry barrier" items={[["Low barrier ($35k-60k)", "Customer support, SDR/sales development, executive assistant, community moderation, AI-output editing. Hired on communication and reliability, not credentials."], ["Medium barrier ($55k-90k)", "Content marketing, QA testing, bookkeeping, technical support tier 2, recruiting coordination. Need a skill you can prove with samples or a certificate plus some experience."], ["High barrier ($80k-150k+)", "Software engineering, product management, data analytics, DevOps, senior design. Need a portfolio, referrals, and usually 2+ years of evidence you can work unsupervised."]]} />
+      <p>
+        A quiet trend worth naming: AI-adjacent editing work exploded. Companies generate mountains of draft content and need humans to fact-check and fix it. It pays $25 to $50 an hour freelance and it&apos;s a genuine on-ramp; we covered it in detail in our <InternalLink href="/blog/ai-content-editor-side-hustle">AI content editor guide</InternalLink>.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where the real listings live</h2>
+      <p>
+        We Work Remotely and Remote OK are the classic dedicated boards. LinkedIn&apos;s remote filter has the most volume and the most competition. FlexJobs charges a fee but screens out scams, which matters more than it used to, because fake job listings that harvest personal data are a genuine problem now. Rule of thumb: no legitimate employer ever asks you to pay for equipment or training upfront. Ever.
+      </p>
+      <p>
+        The underrated move is going direct. Pick 20 companies that are remote-first, follow their career pages, and apply the day something opens. Postings get hundreds of applicants by day three; the people who applied in the first 24 hours got read.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Standing out when 500 people apply</h2>
+      <p>
+        Three tactics, in order of impact. First, referrals. Before applying anywhere, search LinkedIn for someone doing that job at that company and send a short, specific message asking one question about the team. Maybe 1 in 5 replies. A referred candidate often gets interviewed at several times the rate of a cold applicant, so this is the single most valuable twenty minutes in your search.
+      </p>
+      <p>
+        Second, mirror the listing. Most mid-size companies run applicant tracking software, and in 2026 a lot of it uses AI to rank resumes against the job description. If the posting says &quot;customer onboarding,&quot; your resume should say &quot;customer onboarding,&quot; not &quot;client setup.&quot; This isn&apos;t gaming the system so much as speaking its language. Our free <InternalLink href="/tools/resume-builder">resume builder</InternalLink> makes tailoring per-application take minutes instead of an hour.
+      </p>
+      <p>
+        Third, attach proof. A 2-minute Loom video walking through how you&apos;d handle the role, a small work sample, a portfolio link. Fewer than 1 in 50 applicants does this. It works precisely because it&apos;s effort, and effort is the one thing the one-click crowd can&apos;t fake.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The part remote-work influencers skip</h2>
+      <p>
+        Remote work has real costs. Promotions tilt toward people the boss physically sees, loneliness is a documented problem, and some fully-remote listings quietly became hybrid over the last two years. Salaries for remote roles also face wider competition, since you&apos;re now up against applicants in cheaper cities and sometimes cheaper countries. And the entry-level rungs most exposed to AI, basic data entry, simple transcription, first-draft writing, really are shrinking. Aim at roles that mix judgment with communication. Those are holding up fine.
+      </p>
+      <AlertBox type="tip" title="The 10-3-1 weekly rhythm" body="Instead of spraying 50 applications, do this weekly: 10 tailored applications submitted within 48 hours of posting, 3 referral messages to real humans, 1 piece of proof (Loom, sample, portfolio update). Job seekers who switch to quality-over-volume almost always report more interviews from fewer applications." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What are the easiest remote jobs to get in 2026?", a: "Customer support, sales development (SDR), executive assistant, and content or AI-output editing roles have the lowest entry barriers. They typically pay $35,000 to $60,000 and hire based on communication skills and reliability rather than degrees or long resumes." }, { q: "Where do I find legitimate remote jobs?", a: "We Work Remotely, Remote OK, LinkedIn with the remote filter, and company career pages directly. Applying within the first 24 to 48 hours of a posting matters more than which board you use, since many recruiters stop reading after the first few hundred applications." }, { q: "How do I stand out when 500 people apply to one job?", a: "Speed, tailoring, and proof. Apply early, mirror the job description's exact language in your resume, and attach something concrete like a short Loom video or a small work sample. Referrals still beat everything, so message one current employee before applying." }, { q: "Are remote jobs going away because of AI?", a: "Some tasks are shrinking, but remote hiring overall has stayed strong, especially in support, sales, healthcare admin, and engineering. The roles most at risk are pure data entry and basic transcription. Roles that mix judgment with communication are holding up well." }]} />
+      <p>
+        The remote job market in 2026 isn&apos;t closed. It&apos;s crowded, which is different. Crowds are mostly people doing the minimum. Do the 10-3-1 rhythm for six weeks and you&apos;ll be competing against the 10% who try, not the 500 who clicked.
+      </p>
+    </div>
+  ),
+  "passive-income-ideas-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the dirty secret of passive income content: the people teaching it usually make their money teaching it, not doing it.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        So let&apos;s do the version nobody sells. Fifteen ideas, ranked by upfront effort and honest odds, with the fake ones named.
+      </p>
+      <HookBanner headline="What this ranking actually tells you" items={["Only interest and dividends are passive from day one", "Everything else is active work now, trickle later (6-18 months)", "At a 4% yield, $100/month of income needs about $30,000 invested", "Dropshipping and 'YouTube automation' get called out below"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What passive income actually works in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>The reliable tiers are <strong>interest, dividend index funds, and digital products</strong>. Cash yields around 4 percent with zero effort, index funds compound over decades, and digital products (templates, courses, ebooks) can pay for years after 1 to 6 months of real upfront work. Most everything else is either a business or a fantasy.</p></div>
+      <p>
+        My definition is strict: passive means it keeps paying when you stop working for at least a few months. By that bar, most of what TikTok calls passive income is just a job with extra steps.
+      </p>
+      <BlogImage src="/images/passive-income-ideas-2026.png" alt="passive income ideas 2026 ranked on a whiteboard" caption="Ranked by realism, which is why the fun ones are at the bottom." />
+      <DataTable headers={["Tier", "Examples", "Honest verdict"]} rows={[["1: Actually passive", "HYSA, index funds, REITs", "Works day one, scales with capital"], ["2: Work now, earn later", "Templates, blogs, courses, YouTube", "6-18 months of effort, then a real trickle"], ["3: Business in a costume", "Rentals, vending, apps", "Can pay well, never passive"], ["4: Mostly fake", "Dropshipping, faceless automation", "The course seller is the one earning"]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 1: Actually passive (boring, works)</h2>
+      <p>
+        <strong>1. High-yield savings and Treasury bills.</strong> Around 4% lately, hedged because rates move. $10,000 parked here earns roughly $400 a year while you sleep. This is the only entry on this list with zero skill requirement.
+      </p>
+      <p>
+        <strong>2. Dividend and total-market index funds.</strong> The S&amp;P 500 yields under 2% in dividends, but total returns have historically averaged somewhere near 10% annually before inflation over long stretches. Slow, unsexy, and the thing most millionaires actually did.
+      </p>
+      <p>
+        <strong>3. REITs.</strong> Real estate exposure without tenants, often yielding 3 to 5%. Prices swing like stocks, because they are stocks.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 2: Work now, earn later (the real opportunity)</h2>
+      <p>
+        <strong>4. Digital templates.</strong> Notion templates, spreadsheets, resume packs. Build once over a weekend, sell at $10 to $50 forever on Gumroad or Etsy. We wrote a full playbook on <InternalLink href="/blog/sell-notion-templates">selling Notion templates</InternalLink> if this one grabs you.
+      </p>
+      <p>
+        <strong>5. A niche blog with affiliate income.</strong> Expect 12 to 18 months before meaningful money, and AI-slop sites keep getting purged from search, which honestly helps the humans who remain. Start with our guide to <InternalLink href="/blog/how-to-start-a-blog-2026">starting a blog in 2026</InternalLink>.
+      </p>
+      <p>
+        <strong>6. An online course.</strong> Great if you already have an audience. Rough if you don&apos;t, because the course marketplace is savagely crowded.
+      </p>
+      <p>
+        <strong>7. Ebooks and Kindle publishing.</strong> Most self-published books earn under $100 a month. A catalog of 10+ decent books in one niche can stack into something real.
+      </p>
+      <p>
+        <strong>8. YouTube (the real kind).</strong> Videos you made in 2024 can still pay you in 2026. But it takes 1,000 subscribers and 4,000 watch hours just to monetize, and most channels never get there.
+      </p>
+      <p>
+        <strong>9. Print-on-demand.</strong> Design once, a printer ships forever. Margins are thin, maybe $3 to $8 per shirt, so you need volume or a genuinely distinctive niche.
+      </p>
+      <p>
+        <strong>10. Licensing music, photos, or code.</strong> Real for skilled creators, and stock photography specifically got gutted by AI image generators. Niche technical assets (plugins, sound kits, code components) held up much better.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 3: Businesses wearing a passive costume</h2>
+      <p>
+        <strong>11. Rental real estate.</strong> Wealth-building, yes. Passive, no, unless you pay a manager 8 to 10% of rent, and even then you own every burst pipe financially. Needs serious capital down.
+      </p>
+      <p>
+        <strong>12. Vending machines.</strong> Restocking, maintenance, location-hunting, coin jams. A route is a part-time logistics job. The people calling it passive are selling vending courses.
+      </p>
+      <p>
+        <strong>13. Building an app.</strong> AI coding tools cut development time massively, which means everyone else is building apps too. Distribution, not code, is the moat now.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 4: The fake ones. I&apos;ll take the angry comments.</h2>
+      <p>
+        <strong>14. Dropshipping.</strong> You run ads, chase suppliers, and handle refunds daily. That&apos;s retail with worse margins, not passive income. The average person who tries it loses money on ads before quitting.
+      </p>
+      <p>
+        <strong>15. Faceless YouTube automation.</strong> Pay editors to churn AI-voiced content while you collect ad revenue, says the guru selling the $997 course. Platforms have been demonetizing mass-produced low-effort content, and the economics rarely survive the payroll. A few winners, mostly people who got in years ago, market the dream to everyone else.
+      </p>
+      <AlertBox type="warning" title="This is information, not financial advice" body="Everything here is general education, not personalized financial advice. Returns vary, past performance doesn't guarantee anything, and any money you invest can lose value. Talk to a licensed financial advisor before making significant decisions." />
+      <p>
+        Want to compare a few of these against your actual hours and money? Our free <InternalLink href="/tools/investment-calculator">investment calculator</InternalLink> shows what compounding does to boring Tier 1 money over 10 to 30 years. Spoiler: more than you&apos;d guess.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What is the most realistic passive income for beginners?", a: "Interest from a high-yield savings account or Treasury bills, then broad index funds with dividends reinvested. They're boring, but they require zero skill and actually work. On $10,000 at around 4 percent, that's roughly $400 a year with no effort." }, { q: "Which passive income ideas are mostly fake?", a: "Dropshipping, most YouTube automation channels, and vending machine empires sold via courses. Each can work as an active business, but they're marketed as passive when they demand constant work, upfront cash, or both. If someone's selling you the course, that's the real business model." }, { q: "How much money do I need to start passive income?", a: "Digital products can start under $100 since you're spending time instead of money. Investment-based income needs capital: at a 4 percent yield you need about $30,000 invested to generate $100 a month. Anyone promising $1,000 a month from a $500 start is selling something." }, { q: "How long until passive income actually becomes passive?", a: "For digital products, blogs, and courses, expect 6 to 18 months of active work before income runs without you. Investment income is passive from day one but scales with capital. The honest pattern is active effort now, trickle later, not overnight cash flow." }]} />
+      <p>
+        The formula that actually works is unglamorous: earn actively, invest the surplus in Tier 1, and build one Tier 2 asset you genuinely care about. Do that for five years and you&apos;ll lap everyone who spent those years buying courses about vending machines.
+      </p>
+    </div>
+  ),
+  "affiliate-marketing-with-ai": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I&apos;ve watched two kinds of affiliate sites use AI since 2023. One kind got faster and richer. The other got deleted from search results.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Same tools. Opposite outcomes. The difference is everything that happens after the AI draft.
+      </p>
+      <HookBanner headline="AI affiliate marketing in 2026, straight" items={["AI compresses research and drafting from weeks to days", "Unedited AI sites keep getting wiped out in search updates", "Amazon pays 1-4% on most items; SaaS pays 20-40% recurring", "FTC disclosure goes before the links, not in the footer"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Can you do affiliate marketing with AI in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Yes, if AI is your assistant, not your author. Use it for <strong>keyword research, outlines, and first drafts</strong>, then add human testing, real opinions, and heavy editing. Sites that publish raw AI output at scale have been repeatedly deranked since 2024, while hybrid human-AI sites keep growing.</p></div>
+      <p>
+        Quick primer for the new folks: affiliate marketing means recommending products and earning a commission when someone buys through your link. Amazon pays a thin 1 to 4% on most categories. Software affiliate programs commonly pay 20 to 40%, often recurring monthly, which is why almost every serious affiliate in 2026 leans toward SaaS.
+      </p>
+      <BlogImage src="/images/affiliate-marketing-with-ai.png" alt="affiliate marketing with AI workflow on a laptop screen" caption="The robot writes the draft. You supply the reasons anyone should trust it." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The workflow that works: AI as research department</h2>
+      <p>
+        Here&apos;s where AI genuinely earns its subscription. Keyword brainstorming: feed a model your niche and ask for 50 long-tail questions buyers actually ask, then verify volume in a keyword tool. Competitor teardowns: paste the top 3 ranking articles and ask what questions they fail to answer. That gap analysis used to take me an afternoon per article. Now it&apos;s 20 minutes.
+      </p>
+      <p>
+        Outlining and first drafts are fine too, with one rule: the draft is scaffolding. AI writes confident generic paragraphs about products it has never touched. Your job is to replace every generic claim with something specific: the actual battery life you measured, the onboarding step that annoyed you, the cheaper alternative that&apos;s better for 80% of people.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why raw AI affiliate sites die</h2>
+      <p>
+        Three reasons, and they compound. First, search engines have run repeated crackdowns on scaled content with no original value since early 2024, and entire portfolios of AI-generated niche sites lost most of their traffic overnight. Second, readers bounce. A review with no photos of the actual product, no numbers, and no downsides reads exactly like what it is, and people close the tab. Third, conversion: generic content attracts generic trust, and nobody spends $300 through the link of a site that obviously never touched the product.
+      </p>
+      <p>
+        The pattern in every purge is the same: sites that added nothing died, sites with real experience survived and often grew because their competition vanished. That&apos;s the actual opportunity in 2026. AI flooded the internet with mediocre content and made genuine content more valuable, not less.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Humanizing: the step everyone skips</h2>
+      <p>
+        After the draft, I do four passes. Kill the AI-isms (you know the words). Vary the rhythm, because models write medium-length sentence after medium-length sentence and human writing doesn&apos;t. Insert first-person evidence in at least 3 places per article. Add one honest negative about the product I&apos;m recommending, because a review with zero cons converts worse than one with a real con, and readers can smell the difference. We&apos;ve got a deeper walkthrough in our guide on <InternalLink href="/blog/how-to-humanize-ai-text">how to humanize AI text</InternalLink>, and our free <InternalLink href="/tools/ai-text-humanizer">AI text humanizer</InternalLink> handles the first mechanical pass.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Disclosure rules, because the FTC is not joking</h2>
+      <InfoBox title="Disclosure rules that actually apply" items={[["Affiliate links: mandatory", "FTC rules require clear and conspicuous disclosure of your financial relationship, placed before the links where readers will see it. A footer link labeled 'disclaimer' doesn't count."], ["Fake experience: dangerous", "Publishing 'I tested this for 3 weeks' about a product you never opened is deceptive advertising territory, AI-written or not. The FTC has pursued fake review cases."], ["AI use: mostly your call", "No general federal rule forces you to label marketing content as AI-assisted. Some ad platforms and programs have their own policies, so check the terms of each network you join."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest math</h2>
+      <p>
+        Most affiliate sites earn close to nothing for their first 6 to 12 months. That&apos;s not failure, that&apos;s the timeline. A realistic arc: 30 to 50 genuinely good articles over a year, then a niche site pulling 20,000 monthly visitors might earn anywhere from a few hundred to a few thousand dollars a month depending on niche and offer. AI shortens the production time. It does not shorten the trust-building time, and anyone telling you otherwise is selling a course.
+      </p>
+      <AlertBox type="fire" title="The 60/40 rule I actually follow" body="Spend at most 40% of your content time generating and at least 60% editing, testing, and adding original evidence. Every time I've flipped that ratio to move faster, the articles ranked worse and converted worse. The editing IS the business now." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Can you do affiliate marketing entirely with AI?", a: "You can publish entirely with AI, but you probably can't rank or convert with it. Sites built on unedited AI content have been repeatedly wiped out in search updates since 2024. AI works as a research and drafting layer; the testing, opinions, and editing need to be human." }, { q: "Do I have to disclose AI-written affiliate content?", a: "You must disclose affiliate relationships clearly and conspicuously under FTC rules, before the links, not buried in a footer. AI use itself isn't federally mandated disclosure for marketing content, but faking firsthand product experience you don't have can cross into deceptive territory." }, { q: "How much do affiliate marketers actually earn?", a: "Most earn very little, and a minority earn a lot. Amazon pays roughly 1 to 4 percent on most categories, while software programs commonly pay 20 to 40 percent recurring. A niche site with 20,000 monthly visitors might earn a few hundred to a few thousand dollars monthly depending on niche." }, { q: "Why do raw AI affiliate sites die?", a: "Because they add nothing. Search engines have gotten aggressive about scaled content with no original information, and readers bounce off generic reviews. Sites that survive add real testing, specific numbers, actual opinions, and authors who verifiably exist." }]} />
+      <p>
+        AI didn&apos;t break affiliate marketing. It broke lazy affiliate marketing, then handed the survivors a power tool. If you&apos;re starting from zero, begin with our <InternalLink href="/blog/how-to-start-a-blog-2026">blog setup guide</InternalLink>, pick a niche you can honestly test products in, and let the machines do the boring half.
+      </p>
+    </div>
+  ),
+  "ai-investing-apps-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Every investing app in 2026 says it&apos;s powered by AI. Scratch the surface and most are running the same index-fund allocation math robos used a decade ago.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        That&apos;s not a scandal. The boring math is actually good. The scandal is what some apps charge to repackage it.
+      </p>
+      <HookBanner headline="AI investing apps, minus the marketing" items={["Robo-advisors typically charge around 0.25% per year", "A total-market index fund can cost as little as 0.03%", "No retail AI app has credible evidence of beating the market", "Robos earn their fee mainly by fixing your behavior"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Are AI investing apps worth it in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Mostly no for stock-picking, sometimes yes for automation. Robo-advisors charging <strong>around 0.25% a year</strong> add real value through auto-rebalancing, diversification, and tax-loss harvesting, but a DIY index fund at near-zero cost does the core job. AI stock-picking apps promising market-beating returns are hype.</p></div>
+      <p>
+        Let&apos;s separate the two products hiding under one label, because they deserve very different verdicts.
+      </p>
+      <BlogImage src="/images/ai-investing-apps-2026.png" alt="AI investing apps and robo-advisor dashboard on a phone" caption="Beautiful interface. Ten-year-old math. Sometimes that's fine." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Product one: robo-advisors (legit, with caveats)</h2>
+      <p>
+        Betterment, Wealthfront, and the robo arms of the big brokerages do four real things: build a diversified ETF portfolio matched to your goals, rebalance it automatically, reinvest dividends, and on taxable accounts, harvest tax losses. The going rate is about 0.25% annually, and some brokerage robos run cheaper or free above certain balances. None of this is new AI. It&apos;s automation, and it works.
+      </p>
+      <p>
+        The AI garnish added over the last couple of years is mostly chat interfaces and forecasting widgets. Pleasant, occasionally useful for planning, not a reason to pick one app over another.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Product two: AI stock pickers (hype, mostly)</h2>
+      <p>
+        Then there&apos;s the wave of apps claiming their AI finds winning stocks before the market does. Here&apos;s the uncomfortable backdrop: decades of industry scorecards show the large majority of professional fund managers, armed with better data and armies of analysts, fail to beat a plain index fund over 10 to 15 year periods. If billion-dollar quant funds struggle to sustain an edge, a $9.99-a-month app doesn&apos;t have one. If it did, they&apos;d trade it themselves instead of selling subscriptions.
+      </p>
+      <p>
+        My rule: any app whose pitch is &quot;beat the market&quot; is entertainment. Budget for it like entertainment, if at all.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the fee actually costs you</h2>
+      <p>
+        0.25% sounds like nothing. Compounding disagrees.
+      </p>
+      <DataTable headers={["Option", "Typical annual cost", "Effect on $100k over 30 yrs"]} rows={[["DIY total-market index fund", "~0.03%", "Baseline"], ["Robo-advisor", "~0.25% plus fund fees", "Often $40k-60k less at the end"], ["Human advisor at 1% AUM", "~1.0% or more", "Frequently $150k+ less"], ["Active AI picking app", "Sub fees plus tax drag", "Unknowable, usually worse"]]} />
+      <p>
+        Those end-balance gaps assume historical-ish 7 to 8% returns and will vary with markets, but the direction never changes: fees compound against you exactly like returns compound for you. Run your own scenario in our <InternalLink href="/tools/investment-calculator">investment calculator</InternalLink> and watch what a quarter point does over three decades.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>When a robo genuinely makes sense</h2>
+      <p>
+        Here&apos;s my contrarian defense of paying the fee: the biggest destroyer of retail returns isn&apos;t fees, it&apos;s behavior. Panic-selling in crashes. Chasing hot stocks. Leaving cash idle for years because investing feels intimidating. Research on investor behavior consistently finds the average fund investor trails the very funds they hold, purely through badly timed buying and selling.
+      </p>
+      <p>
+        If a robo gets you invested this month instead of never, pulls $400 in automatically every payday, and stops you from selling during the next crash, that 0.25% is the best money you&apos;ll ever spend. The math purists comparing 0.25% to 0.03% quietly assume you&apos;d execute the DIY plan calmly for 30 straight years. Lots of people won&apos;t, and pretending otherwise is its own kind of hype.
+      </p>
+      <p>
+        Tax-loss harvesting is the other honest case: on a taxable account of decent size, it can plausibly offset the fee. On a $6,000 IRA it does nothing, so don&apos;t choose an app for that feature alone.
+      </p>
+      <AlertBox type="warning" title="This is information, not financial advice" body="Nothing here is personalized financial advice. Markets can lose money, past performance doesn't predict future results, and fees, features, and yields change constantly. Talk to a licensed financial advisor about your specific situation before investing." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>A decision rule that fits on a sticky note</h2>
+      <p>
+        Would you actually open a brokerage account, buy a target-date fund or a three-fund portfolio, and leave it alone? Then do that and keep the 0.25%. Would you honestly procrastinate, tinker, or panic? Pay the robo and consider it therapy for your money habits. Either way, automate the deposit, because the deposit matters roughly ten times more than the platform. And if finding money to deposit is the actual bottleneck, our <InternalLink href="/blog/chatgpt-budgeting-guide">ChatGPT budgeting guide</InternalLink> is the place to start.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Are AI investing apps better than index funds?", a: "For most people, no. Robo-advisors typically charge around 0.25 percent per year on top of fund fees, while a total market index fund costs as little as 0.03 percent. The robo's value is automation and behavior control, not superior stock picking." }, { q: "Do AI stock-picking apps actually beat the market?", a: "There's no credible evidence that retail AI stock-picking apps consistently beat the market after fees. Decades of data show most professional funds trail index funds long term, and adding an AI label hasn't changed that. Treat any beat-the-market claim as marketing." }, { q: "When does a robo-advisor make sense?", a: "When you'd otherwise do nothing, panic-sell, or leave cash idle. Robos are genuinely good at automatic rebalancing, diversified portfolios, and tax-loss harvesting on taxable accounts. Paying 0.25 percent to fix bad behavior is a fine trade for many investors." }, { q: "How much do robo-advisor fees cost over time?", a: "On a $100,000 portfolio, 0.25 percent is $250 a year now, but the compounding drag is bigger. Over 30 years, a quarter-point fee can reduce a final balance by tens of thousands of dollars versus a near-zero-cost index fund, depending on returns." }]} />
+      <p>
+        The AI label on investing apps is mostly paint. What&apos;s underneath, boring automated index investing, happens to be excellent. Buy the automation if you need it, skip the fortune-telling, and let three decades of compounding do the part no algorithm can speed up.
+      </p>
+    </div>
+  ),
+  "how-to-save-money-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Money advice loves ranking tactics by how virtuous they feel. I&apos;m ranking them by dollars, and the famous latte advice lands near the bottom.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Twelve tactics, biggest annual savings first. The top three take one afternoon combined.
+      </p>
+      <HookBanner headline="Where the real money hides" items={["Requoting insurance commonly saves $300-800 a year in one hour", "Households routinely underestimate subscription spend by 2-3x", "Groceries beat coffee: meal planning can save $1,200+ a year", "Fixed-cost cuts repeat automatically; willpower cuts don't"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What&apos;s the fastest way to save money in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Attack fixed costs first: <strong>requote your insurance, audit subscriptions, and switch to a discount phone carrier</strong>. Those three commonly free up $800 to $2,000 a year, take a few hours once, and keep paying every month without any ongoing willpower.</p></div>
+      <p>
+        The principle behind the whole ranking: a saving you set up once beats a saving you must re-decide daily. Willpower is a terrible budget line.
+      </p>
+      <BlogImage src="/images/how-to-save-money-2026.png" alt="how to save money 2026 with cash jar and calculator" caption="The jar is decorative. The insurance requote is where the money is." />
+      <DataTable headers={["Tactic", "Typical annual savings", "Effort"]} rows={[["Grocery meal planning", "$1,200+", "30 minutes a week"], ["Cook lunch, not buy", "$1,000-1,500", "Sunday batch cooking"], ["MVNO phone switch", "$360-960", "1 hour, once"], ["Insurance requote", "$300-800", "1 hour a year"], ["Subscription audit", "$240-600", "1 hour, twice a year"], ["The coffee cut", "$500-650", "Daily willpower, forever"]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The big five (do these first)</h2>
+      <p>
+        <strong>1. Requote car and home insurance: $300-800/yr.</strong> Insurers quietly raise renewal prices on loyal customers. Get three quotes, then call your current insurer and ask them to match. One hour of phone calls, and the saving repeats every year you stay on top of it.
+      </p>
+      <p>
+        <strong>2. Subscription audit: $240-600/yr.</strong> Pull three months of card statements and list every recurring charge. Most people find 2 to 5 they forgot existed, and surveys keep showing households lowball their subscription total by double or more. Cancel ruthlessly. Anything you genuinely miss, you can resubscribe to in 30 seconds.
+      </p>
+      <p>
+        <strong>3. Grocery meal planning: $1,200+/yr.</strong> Unplanned shopping means duplicate buys, impulse grabs, and food in the trash. Plan five dinners a week, shop one list, and cutting $100+ a month is realistic for a family. Store brands alone run 20 to 40% cheaper than name brands for often-identical products.
+      </p>
+      <p>
+        <strong>4. Switch to a discount phone carrier: $360-960/yr.</strong> MVNOs like Mint or Visible ride the exact same networks as the big three for $15 to $30 a month versus $50 to $90. Same towers, smaller bill. It still amazes me how few people do this.
+      </p>
+      <p>
+        <strong>5. Move idle cash to high-yield savings: $200-400/yr per $10k.</strong> Big banks still pay nearly nothing while high-yield accounts hover around 4%. Ten minutes of paperwork for free money.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The middle tier</h2>
+      <p>
+        <strong>6. Negotiate internet and bills: $120-360/yr.</strong> Call, quote a competitor&apos;s price, ask for the retention department. Works maybe half the time, which is still a great hourly rate for the times it works.
+      </p>
+      <p>
+        <strong>7. Cook lunch instead of buying: $1,000-1,500/yr</strong> if you currently buy $13 lunches four times a week and cut that to once. Bigger than coffee. Weirdly less famous.
+      </p>
+      <p>
+        <strong>8. The 24-hour rule: $300-600/yr.</strong> Any non-essential purchase over $50 waits a day in the cart. A surprising share doesn&apos;t survive the night.
+      </p>
+      <p>
+        <strong>9. Cashback on spending you&apos;d do anyway: $200-400/yr</strong> at 2% on $1,000 to $1,600 of monthly spend. Only counts if you pay in full monthly; carrying a balance at 20%+ APR vaporizes this instantly. If cards are new territory, read our guide to <InternalLink href="/blog/how-to-build-credit-fast">building credit fast</InternalLink> first.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The small stuff, honestly sized</h2>
+      <p>
+        <strong>10. Energy tweaks: $100-300/yr.</strong> Thermostat schedules and LED swaps. Real, just not dramatic.
+      </p>
+      <p>
+        <strong>11. The gym you don&apos;t use: $120-480/yr.</strong> Went four times last quarter? Cancel and walk outside for free until the habit is real.
+      </p>
+      <p>
+        <strong>12. The famous coffee cut: roughly $500-650/yr.</strong> Yes, a $5 coffee five days a week is about $1,300 a year, and realistically you&apos;ll still buy some. I refuse to pretend this is the cornerstone of anyone&apos;s finances. It&apos;s tactic 12 of 12 for a reason.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian bit: frugality has a ceiling</h2>
+      <p>
+        Here&apos;s what saving-tips articles won&apos;t tell you: you can only cut so far. Stack everything above and you might free up $3,000 to $5,000 a year, which is genuinely great. But income has no ceiling, and past a point, one raise, one certification, or one decent side income beats another year of coupon discipline. Do the afternoon of fixed-cost surgery, automate the difference into savings, then point your remaining energy at earning. Our roundup of <InternalLink href="/blog/best-money-making-apps">money-making apps</InternalLink> is a low-stakes place to start on the income side.
+      </p>
+      <AlertBox type="money" title="This is information, not financial advice" body="These figures are typical ranges, not guarantees, and yours will differ by location, provider, and habits. This article is general education, not personalized financial advice. For big moves like insurance changes or refinancing, compare full terms, not just prices." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What saves the most money the fastest?", a: "Requoting your car and home insurance, auditing subscriptions, and switching your phone plan to a discount carrier. Together those three commonly free up $800 to $2,000 a year, and each takes under two hours once. Big fixed costs beat daily willpower." }, { q: "Is cutting daily coffee actually worth it?", a: "It's real money but small money. A $5 coffee five days a week is about $1,300 a year, and swapping half of those for home brew saves maybe $500 to $650. Fine, but one insurance requote can match it in an afternoon without changing your habits." }, { q: "How much should I be saving per month?", a: "A common target is 15 to 20 percent of take-home pay, but the honest answer is whatever number you can automate and sustain. Even $100 a month into a high-yield account earning around 4 percent builds real momentum and an emergency buffer within a year." }, { q: "Where should the money I save actually go?", a: "First a starter emergency fund of $1,000 to $2,000 in a high-yield savings account, then high-interest debt, then a full 3 to 6 month emergency fund, then investing. Savings that sit in a checking account tend to quietly get spent." }]} />
+      <p>
+        Skip the guilt-based version of frugality. Spend one Saturday on the big five, set an automatic transfer for whatever you freed up, and let the boring machinery run. That&apos;s the whole trick.
+      </p>
+    </div>
+  ),
+  "side-hustle-taxes-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The first year of side hustle income has a rite of passage: opening your tax software in April and discovering you owe a few thousand dollars you didn&apos;t plan for.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        It happens because nobody withholds anything from gig money. Let&apos;s make sure it never happens to you.
+      </p>
+      <HookBanner headline="The four numbers that prevent the April surprise" items={["Self-employment tax is roughly 15.3% on net earnings", "It kicks in once net side income passes just $400 for the year", "Set aside 25-30% of every payout in a separate account", "Quarterly estimates are due April, June, September, January"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>How are side hustle taxes calculated in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Your net profit (income minus business expenses) gets taxed twice: <strong>self-employment tax of about 15.3%</strong> covering Social Security and Medicare, plus regular federal income tax at your bracket. That combination is why setting aside 25 to 30 percent of profit is the standard safety margin.</p></div>
+      <p>
+        Quick framing. At a W-2 job, your employer pays half your Social Security and Medicare and withholds the rest before you ever see a dollar. Self-employed, you&apos;re both employer and employee, so you pay both halves: 12.4% for Social Security plus 2.9% for Medicare, roughly 15.3% total, on top of ordinary income tax. That&apos;s the number that ambushes people.
+      </p>
+      <BlogImage src="/images/side-hustle-taxes-guide.png" alt="side hustle taxes paperwork with calculator and 1099 forms" caption="Nobody's favorite part of the hustle. Also the part you can't skip." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The thresholds people get wrong</h2>
+      <p>
+        Two myths to kill immediately. Myth one: &quot;under $600 doesn&apos;t count.&quot; The $600 figure only concerns when clients or platforms must send certain 1099 forms. Income is taxable from dollar one, and self-employment tax specifically applies once your net earnings pass $400 for the year. Myth two: &quot;no 1099, no taxes.&quot; The IRS receives copies of the forms you receive, payment platforms report too, and 1099-K reporting rules have tightened over recent years. Assume everything is visible, because increasingly it is.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Quarterly estimates: the system nobody explains</h2>
+      <p>
+        The US tax system is pay-as-you-go. If you expect to owe $1,000 or more beyond any W-2 withholding, the IRS wants estimated payments four times a year: mid-April, mid-June, mid-September, and mid-January. Miss them and the tax doesn&apos;t vanish. It arrives later as a lump sum, plus a possible underpayment penalty calculated at interest rates that have been painfully high in recent years.
+      </p>
+      <p>
+        The mechanics are easy: IRS Direct Pay online, five minutes. Estimating is the hard part, so here&apos;s the shortcut: send 25 to 30% of each quarter&apos;s actual net profit. Or use the safe harbor: pay at least 100% of last year&apos;s total tax across the year (110% for higher earners) and you dodge penalties no matter what you end up owing. If you also have a day job, the laziest legal fix is bumping your W-2 withholding to cover the gap.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Deductions: where side hustlers leave money on the table</h2>
+      <p>
+        Every legitimate expense reduces both income tax and self-employment tax, so a $1,000 deduction can be worth $300 to $400 in actual cash depending on your bracket.
+      </p>
+      <InfoBox title="Deductions worth tracking from day one" items={[["Home office", "A space used regularly and exclusively for the business. The simplified method pays $5 per square foot up to 300 square feet, a max of $1,500, with no receipt gymnastics."], ["Mileage", "Business driving at the IRS standard rate, which has run around 65 to 70 cents per mile in recent years. A delivery driver logging 10,000 business miles is looking at a deduction in the $6,500 to $7,000 range."], ["Software and gear", "Laptops, cameras, subscriptions, hosting, the tools of whatever you do. Items used both personally and professionally get split by business-use percentage."], ["Fees and education", "Platform commissions, payment processing, and courses that improve your existing hustle. Half of your self-employment tax itself is also deductible from your income."]]} />
+      <p>
+        The record-keeping bar is lower than people fear: a separate checking account for hustle money, a mileage app if you drive, and a photo of every receipt into one folder. Twenty minutes a month. In an audit, contemporaneous records are the difference between a shrug and a nightmare.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian take: don&apos;t over-engineer this</h2>
+      <p>
+        Hustle influencers will tell you to form an LLC immediately and elect S-corp status for the tax savings. For most people netting under roughly $40,000 to $50,000 from a side gig, that&apos;s premature. An LLC by itself changes your taxes exactly zero; it&apos;s a liability shield, not a tax move. S-corp elections can save real money at higher profits, but payroll costs and extra filings eat the benefit at side-hustle scale. Master the basics first: separate account, quarterly payments, tracked deductions. Optimize later, when the income justifies a professional&apos;s hourly rate.
+      </p>
+      <p>
+        Want your actual numbers? Run projected profit through our free <InternalLink href="/tools/tax-calculator">tax calculator</InternalLink>, and if you freelance, the <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink> shows what your real hourly rate looks like after tax.
+      </p>
+      <AlertBox type="warning" title="This is information, not tax advice" body="This article is general educational information for US taxpayers, not personalized tax advice. Rates, thresholds, and rules change yearly, and states add their own layers. If real money is involved, talk to a CPA or enrolled agent." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How much should I set aside for side hustle taxes?", a: "A safe rule of thumb is 25 to 30 percent of your net side hustle profit. That covers the roughly 15.3 percent self-employment tax plus federal income tax at typical brackets. Higher earners and people in states with income tax should lean toward 30 percent or more." }, { q: "Do I have to report side hustle income under $600?", a: "Yes. The $600 figure is about when platforms send certain forms, not about what's taxable. Legally, self-employment income is taxable from the first dollar, and you owe self-employment tax once net earnings pass $400 for the year." }, { q: "When do I need to pay quarterly estimated taxes?", a: "Generally when you expect to owe $1,000 or more for the year beyond withholding. Payments are due in April, June, September, and January. Skipping them doesn't mean the tax disappears; it means a lump sum plus a possible underpayment penalty later." }, { q: "What can I actually deduct as a side hustler?", a: "Ordinary and necessary business expenses: software, equipment, a dedicated home office, business mileage at the IRS standard rate, supplies, platform fees, and education tied to your existing work. Deductions reduce both income tax and self-employment tax, so tracking them is worth real money." }]} />
+      <p>
+        The whole system compresses into one habit: every time hustle money lands, move 25 to 30% into a separate account before you can mentally spend it. Do that, pay quarterly, photograph receipts. April becomes a formality instead of an ambush.
+      </p>
+    </div>
+  ),
+  "ai-therapy-apps-mental-health": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        At 3am, when the spiral hits, a therapist costs $150 and is asleep. A chatbot costs nothing and answers in two seconds. Of course people are using them.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        The interesting question isn&apos;t whether AI therapy apps are good or bad. It&apos;s where, exactly, the line sits between useful support and risky substitute.
+      </p>
+      <HookBanner headline="AI mental health tools, honestly mapped" items={["Therapy runs $100-200 per session; most AI apps run $0-20 a month", "Decent evidence for CBT-style exercises with mild symptoms", "Many wellness chatbots aren't covered by HIPAA privacy rules", "In a crisis: 988 in the US, not a chatbot, full stop"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Are AI therapy apps actually helpful?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Within limits, yes. Studies on structured chatbots suggest they can <strong>modestly reduce mild anxiety and depression symptoms</strong> through CBT-style exercises. But they can&apos;t diagnose, carry no accountability for your care, and have repeatedly failed in crisis situations. Supplement, not substitute.</p></div>
+      <p>
+        I&apos;ve used a few of these apps over the past year, partly for this article and partly out of genuine 2am curiosity. Some sessions were surprisingly useful. One was alarming. Both facts belong in the same article, which is what&apos;s wrong with most coverage of this topic.
+      </p>
+      <BlogImage src="/images/ai-therapy-apps-mental-health.png" alt="AI therapy app chatbot conversation on a phone at night" caption="Always awake, never liable. Both halves of that sentence matter." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What they&apos;re genuinely good for</h2>
+      <p>
+        Four things, in my experience and in the research. First, structured journaling with feedback: describing your day to something that asks decent follow-up questions beats a blank page for a lot of people. Second, CBT-style thought reframing. Cognitive behavioral therapy&apos;s core exercises, naming a distorted thought, examining the evidence, drafting a more accurate one, are formulaic enough that software delivers them competently. Apps like Woebot were built on exactly this, and randomized trials of structured chatbots have shown modest symptom reductions for mild anxiety and depression over a few weeks.
+      </p>
+      <p>
+        Third, the 3am problem. Rumination doesn&apos;t keep office hours, and having somewhere to put the spiral, tonight, has real value. Fourth, rehearsal: practicing a hard conversation with your boss or your dad, ten times if needed, with zero social cost.
+      </p>
+      <p>
+        There&apos;s also the access argument, and it&apos;s not small. Therapy in the US commonly runs $100 to $200 a session, many therapists carry weeks-long waitlists, and large swaths of the country have shortages of mental health providers. For someone who&apos;d otherwise get nothing, a decent app is not nothing.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The hard limits</h2>
+      <p>
+        Now the other column. A chatbot can&apos;t diagnose you, and it can&apos;t notice what a clinician notices: your flat affect, your weight change, the thing you&apos;re conspicuously not saying. It has no continuity of responsibility; if your condition deteriorates over six months, no one is tracking that arc or accountable for it. And these models are trained to be agreeable, which is close to the opposite of what good therapy sometimes requires. A skilled therapist challenges you. A chatbot validates you, endlessly, which can quietly reinforce the exact patterns you&apos;re trying to escape.
+      </p>
+      <p>
+        Crisis handling is the sharpest limit. There have been documented cases of chatbots responding badly to users expressing self-harm intent, and regulators and researchers have flagged this repeatedly. The companies themselves print &quot;not for emergencies&quot; in their terms. Believe them.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The privacy problem nobody reads about</h2>
+      <p>
+        Here&apos;s my contrarian take: privacy, not clinical quality, is the most underrated risk. Your therapist is bound by law and license. A wellness app is bound by its privacy policy, which it wrote and can revise. Many mental-health chatbots fall outside HIPAA entirely, and there have been real enforcement actions in recent years against mental health platforms for sharing user data with advertisers. You are typing your darkest material into a product. Read the policy, use an alias where possible, and never share anything you&apos;d need legally protected.
+      </p>
+      <InfoBox title="A sane way to use AI mental health tools" items={[["Green zone", "Journaling, mood tracking, CBT-style reframing exercises, venting after a bad day, rehearsing difficult conversations. Low stakes, decent evidence."], ["Yellow zone", "Persistent low mood or anxiety lasting weeks. Use the app if you like, but book a human professional too. Apps work best between sessions, not instead of them."], ["Red zone", "Thoughts of self-harm, psychosis, severe depression, substance crises. No chatbot, no exceptions. Call or text 988 in the US, or 911 if there's immediate danger."]]} />
+      <AlertBox type="warning" title="This is information, not medical advice" body="Nothing in this article is medical or psychological advice, and AI apps are not a substitute for professional care. If you or someone you know is in crisis, call or text 988 (Suicide and Crisis Lifeline, US, available 24/7) or call 911 for immediate danger." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Can AI chatbots replace a real therapist?", a: "No. They can deliver structured exercises and a place to vent, but they can't diagnose, build a real treatment plan, read your body language, or take responsibility for your care. Research support exists for mild symptoms; for moderate to severe conditions, human care is the standard." }, { q: "What are AI therapy apps actually good for?", a: "Journaling with feedback, practicing CBT-style thought reframing, 3am spirals when no human is available, and rehearsing hard conversations. They're best as a supplement between sessions or an on-ramp for people who aren't ready to see a therapist yet." }, { q: "Are AI therapy apps private?", a: "Often less than people assume. Many wellness chatbots are not covered by health privacy laws like HIPAA, and several popular mental health apps have been caught sharing data with advertisers. Read the privacy policy and never share anything you'd need legally protected." }, { q: "What should I do in a mental health crisis?", a: "Skip the chatbot entirely. In the US, call or text 988 for the Suicide and Crisis Lifeline, available 24/7, or call 911 if there's immediate danger. AI apps have repeatedly mishandled crisis conversations, and no chatbot is an emergency service." }]} />
+      <p>
+        My verdict after a year of poking at these: useful shovel, terrible surgeon. Use one for the daily maintenance work of your mind, and pair it with the unglamorous basics that outperform every app, like actual humans and <InternalLink href="/blog/how-to-sleep-better">decent sleep</InternalLink>. And if you want AI doing useful work in your life instead of feeding on your attention, our roundup of <InternalLink href="/blog/best-ai-tools-for-students">AI tools that actually help</InternalLink> shows the productive side of the same technology.
+      </p>
+    </div>
+  ),
+  "desk-worker-health-fixes": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        You will not do yoga at sunrise. You will not buy the $1,500 chair. Fine. Here&apos;s what actually moves the needle for a body that sits 9 hours a day.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Eight fixes, ranked roughly by evidence, all compatible with being a normal tired person with a job.
+      </p>
+      <HookBanner headline="The desk survival kit, compressed" items={["Break up sitting every 30-45 minutes, even for 2 minutes", "Top of monitor at eye level, roughly an arm's length away", "Eyes: every 20 minutes, 20 feet away, 20 seconds", "30-40 min of daily movement offsets much of the sitting risk"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What actually helps if you sit all day?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>The evidence points to <strong>frequent short movement breaks every 30 to 45 minutes</strong>, a monitor raised to eye level, the 20-20-20 rule for eye strain, and 30 to 40 minutes of real daily movement. Expensive gear is optional; interrupting stillness is not.</p></div>
+      <p>
+        The core problem isn&apos;t sitting. It&apos;s uninterrupted stillness for hours, repeated for decades. That reframe matters, because it means the fix isn&apos;t a heroic lifestyle overhaul. It&apos;s interruption.
+      </p>
+      <BlogImage src="/images/desk-worker-health-fixes.png" alt="desk worker health setup with raised monitor and good posture" caption="Not pictured: the $1,500 chair. You don't need it." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Fixes 1-3: movement, the part that matters most</h2>
+      <p>
+        <strong>1. Movement snacks.</strong> Every 30 to 45 minutes, stand up and move for 2 to 3 minutes. Walk to the kitchen, do 15 squats, climb a flight of stairs. Research on breaking up sedentary time shows even these tiny doses improve blood sugar response after meals and circulation compared with unbroken sitting. Tie it to something that already happens: every call ends, every episode of focus breaks, you move.
+      </p>
+      <p>
+        <strong>2. A real daily movement floor.</strong> Large pooled studies of hundreds of thousands of people suggest roughly 30 to 40 minutes of moderate-to-vigorous activity a day offsets much of the early-mortality risk associated with heavy sitting. A brisk walk counts. It doesn&apos;t have to be consecutive. This is the single biggest lever on the list, and it&apos;s free.
+      </p>
+      <p>
+        <strong>3. Strength twice a week.</strong> Desk life quietly erodes muscle, and muscle is the thing that holds your posture together and keeps your metabolism honest. Two 30-minute sessions, basic compound movements, done. Major health guidelines have recommended exactly this for years; almost nobody does it.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Fixes 4-6: the workstation</h2>
+      <p>
+        <strong>4. Monitor height.</strong> Top of the screen at eye level, about an arm&apos;s length away. If you&apos;re on a laptop, your screen is roughly a foot too low, which is why your neck aches; a $25 stand plus an external keyboard fixes what a $500 chair can&apos;t. Your head weighs 10 to 12 pounds, and the load on your neck multiplies as it tilts forward.
+      </p>
+      <p>
+        <strong>5. Chair basics.</strong> Feet flat, knees near 90 degrees, lower back supported, elbows at desk height. A rolled towel behind your lower back gets you most of what lumbar-support marketing sells.
+      </p>
+      <p>
+        <strong>6. The 20-20-20 rule.</strong> Every 20 minutes, look at something 20 feet away for 20 seconds. People blink far less at screens, which is why your eyes feel like sandpaper by 4pm. This costs nothing and helps within days.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Fixes 7-8: the neglected pair</h2>
+      <p>
+        <strong>7. Hip flexor and chest openers.</strong> Sitting shortens the front of your body all day. Two moves, 5 minutes total: a half-kneeling hip flexor stretch, 30 seconds per side, and a doorway chest stretch. Do them while your coffee brews.
+      </p>
+      <p>
+        <strong>8. Sleep, the multiplier.</strong> Under-slept, you&apos;ll skip the walks, slump in the chair, and snack through the afternoon. Every fix above gets easier with 7 to 9 hours. We&apos;ve got a full evidence-based rundown in our <InternalLink href="/blog/how-to-sleep-better">guide to sleeping better</InternalLink>.
+      </p>
+      <InfoBox title="The whole article on one sticky note" items={[["Every 30-45 minutes", "Stand up and move for 2-3 minutes: walk, squats, stairs, anything."], ["Every 20 minutes", "Eyes to something 20 feet away for 20 seconds."], ["Every day", "30-40 minutes of real movement. A brisk walk counts."], ["Twice a week", "30 minutes of basic strength work, compound movements."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian section: standing desks are oversold</h2>
+      <p>
+        The standing desk became the symbol of office health, and the evidence is underwhelming. Standing still for hours brings its own issues, from leg swelling to vein problems, and studies comparing sit-stand desks show modest benefits mostly when people alternate positions, roughly every 30 to 60 minutes, rather than standing heroically all day. A $400 desk that lets you stand motionless in the same spot solves very little. The cheap combo, a timer that makes you move every half hour plus one daily walk, beats it on the evidence and costs nothing. Buy the desk for variety if you like it. Just don&apos;t confuse it with the fix.
+      </p>
+      <AlertBox type="tip" title="This is information, not medical advice" body="This article is general health information, not medical advice. If you have existing pain, injuries, or health conditions, or if desk-related pain is persistent or worsening, see a doctor or physical therapist rather than self-treating off the internet." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How often should I get up from my desk?", a: "Aim to break up sitting every 30 to 45 minutes, even for just 2 to 3 minutes. Research on activity snacks suggests frequent short movement breaks improve blood sugar response and circulation more than one workout bolted onto an otherwise sedentary day." }, { q: "What is the 20-20-20 rule for eyes?", a: "Every 20 minutes, look at something about 20 feet away for at least 20 seconds. It relaxes the focusing muscles in your eyes and helps with the dryness and strain that come from staring at screens, partly because people blink far less at a monitor." }, { q: "Does a standing desk fix the problems of sitting?", a: "Not by itself. Standing still for hours brings its own problems, and the evidence favors alternating positions, roughly every 30 to 60 minutes, plus actual movement. A standing desk is a tool for variety, not a health intervention on its own." }, { q: "Can exercise cancel out sitting all day?", a: "Partially. Large pooled studies suggest around 30 to 40 minutes of moderate-to-vigorous activity a day offsets much of the mortality risk tied to long sitting. But breaking up sitting still matters independently, so you want both, not one or the other." }]} />
+      <p>
+        Pick two fixes, not eight. I&apos;d take movement snacks and the monitor raise, since one protects your metabolism and the other your neck, and both survive a busy week. And since chair time is usually work time, finishing faster is its own health plan; our roundup of <InternalLink href="/blog/best-ai-tools-for-students">AI tools that speed up study and work</InternalLink> can buy back an hour of your day to spend standing up.
+      </p>
+    </div>
+  ),
+  "digital-minimalism-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Check your screen time right now. Seriously, go look. Whatever number you guessed, the real one is probably an hour higher.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Surveys put average phone use around 4 to 5 hours a day. Over a year, that&apos;s roughly 60 to 75 full days. The feed took two months of your life and you don&apos;t remember most of it.
+      </p>
+      <HookBanner headline="The attention math, and the way out" items={["4-5 hours daily of phone use is now a normal, measured average", "AI-generated feeds removed the last limit: content never runs out", "Settings beat willpower: grayscale, dead notifications, app limits", "A one-week reset breaks the checking reflex for most people"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>How do I actually reduce my screen time in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Change the environment, not your willpower: <strong>grayscale mode, notifications off for everything non-human, social apps off the home screen, and time limits with a passcode you don&apos;t hold</strong>. Then run a one-week reset deleting your two stickiest apps. Friction works where resolve fails.</p></div>
+      <p>
+        Digital minimalism used to be a lifestyle preference. In 2026 it&apos;s closer to self-defense, because the thing on the other side of the glass changed. Feeds aren&apos;t just ranked by AI anymore; a growing share of what&apos;s in them is generated by AI, tuned to whatever holds you specifically. The old limit on infinite scrolling was that engaging content eventually ran out. It doesn&apos;t run out anymore.
+      </p>
+      <BlogImage src="/images/digital-minimalism-2026.png" alt="digital minimalism 2026 phone in grayscale on a clean desk" caption="Grayscale: the cheapest intervention in behavioral science." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why willpower keeps losing</h2>
+      <p>
+        You check your phone somewhere between dozens and a couple hundred times a day, mostly without deciding to. That&apos;s not weakness; it&apos;s a trained reflex, reinforced by variable rewards, the same mechanism that makes slot machines work. On the other side of that reflex sit teams of engineers whose success metric is your time on screen. You versus that, armed with resolve alone, is not a fair fight. So don&apos;t fight it with resolve. Fight it with friction.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The settings that actually work</h2>
+      <p>
+        Ranked by how much they helped me and roughly everyone I&apos;ve talked into trying them.
+      </p>
+      <InfoBox title="Five settings worth ten productivity books" items={[["Kill non-human notifications", "Humans only: calls, texts, DMs from actual people. Every app-generated ping dies. This one change removes dozens of interruptions a day, each of which costs recovery time measured in minutes."], ["Grayscale mode", "Color is candy for the scrolling brain. In grayscale, feeds turn weirdly boring within days. Both iOS and Android bury this in accessibility settings; map it to a triple-click shortcut."], ["Empty home screen", "Social and video apps go in a folder on the last page, or off the phone entirely with access via browser. Adding 10 seconds of friction breaks a shocking number of autopilot opens."], ["Limits you can't unlock", "App time limits work only if the override passcode belongs to someone else. Set 30 minutes, hand your partner the code, mean it."], ["Phone out of the bedroom", "A $12 alarm clock replaces the last excuse. This one doubles as the single best sleep upgrade most people can make."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The one-week reset protocol</h2>
+      <p>
+        Days 1-2: check your screen time report, write down the real number, and delete your two stickiest apps. Not log out. Delete. Keep messaging, maps, camera, banking. Expect phantom reaches for the missing icons; count them if you want a humbling metric, because day one is usually double digits.
+      </p>
+      <p>
+        Days 3-5: apply the five settings above. Notice the specific moments you reach for the phone: elevators, queues, toilet, the first 30 seconds of any boredom. You&apos;re mapping your triggers, and boredom itself starts feeling different, less like an emergency.
+      </p>
+      <p>
+        Days 6-7: decide, deliberately, what comes back. For each deleted app: what did it actually give you, and what did it take? Most people reinstall less than half, and the ones that return come back with time limits attached. That&apos;s the entire philosophy in one move: technology on purpose instead of by default.
+      </p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian bit: minimalism isn&apos;t the goal</h2>
+      <p>
+        Here&apos;s where I break with the purists. Screen time is a garbage metric by itself. Four hours spent learning a skill, video-calling your mom, or <InternalLink href="/blog/how-to-start-a-blog-2026">building something of your own</InternalLink> is not the same as four hours of algorithmic soup, and treating all screen use as sin just produces guilt, which, funny enough, people soothe by scrolling. The real question isn&apos;t &quot;how little can I use my phone?&quot; It&apos;s &quot;is my phone working for me or am I working for it?&quot; Students and knowledge workers especially shouldn&apos;t confuse tools with feeds; the same device that wastes your evening can run <InternalLink href="/blog/best-ai-tools-for-students">genuinely useful AI tools</InternalLink> in the morning. Keep the tools. Starve the feeds.
+      </p>
+      <AlertBox type="fire" title="The 30-day compounding effect" body="An hour a day reclaimed from the feed is about 365 hours a year. That's enough to get demonstrably better at almost anything: a language, a side income, a deadlift, a friendship. The feed will not remember you. The skill will. And the standard note: this article is general information, not medical advice; if compulsive phone use is seriously affecting your mental health, talk to a professional." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How much screen time is too much?", a: "There's no magic cutoff, but surveys put average phone use around 4 to 5 hours daily, and most people underestimate their own number by an hour or more. A better question is whether your screen time displaces sleep, movement, or people. If yes, it's too much." }, { q: "What phone settings actually reduce screen time?", a: "Grayscale mode, turning off all non-human notifications, moving social apps off the home screen, and app time limits with a passcode someone else holds. Settings work better than willpower because they add friction before the habit fires, not after." }, { q: "What is a one-week digital reset?", a: "Seven days where you delete or block your two stickiest apps, keep messaging and maps, and track what you miss. It's long enough to break the reflex-checking loop and short enough that you'll actually do it. Most people reinstall less than half of what they removed." }, { q: "Why are feeds harder to quit in the AI era?", a: "Because the content is now generated and ranked to match you personally, in effectively unlimited supply. Recommendation systems optimize for time spent, and generative AI removed the last constraint, which was running out of engaging content. The feed no longer ends." }]} />
+      <p>
+        Start tonight. Screen time report, honest number, two apps deleted, phone charging outside the bedroom. That&apos;s 15 minutes of setup for a week that will tell you more about your own attention than any article can, including this one.
+      </p>
+    </div>
+  ),
   "chatgpt-budgeting-guide": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
