@@ -156,6 +156,935 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "chatgpt-budgeting-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I tried four budgeting apps in three years. Deleted them all. The problem was never the tracking — it was that no app could answer &quot;so what should I actually do differently next month?&quot; Turns out the chatbot could.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        My whole budget now runs through a twenty-minute ChatGPT session on the first of each month. No subscriptions, no bank-linking permissions, no guilt-trip notifications. Here&apos;s the exact setup, prompts included.
+      </p>
+
+      <HookBanner headline="What you'll walk away with" items={[
+        "The monthly 20-minute review routine, step by step",
+        "Copy-paste prompts for categorizing, analyzing, and planning",
+        "The privacy rules — what to strip before pasting anything",
+        "How to make the AI challenge your spending, not just tally it",
+        "Where this beats budgeting apps, and where it doesn't",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can ChatGPT help with budgeting?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes, and it&apos;s genuinely good at it: categorizing spending from pasted statements, spotting patterns you missed, running what-if scenarios, and building a plan around your real numbers instead of a template&apos;s. It works best as a <strong>monthly review partner</strong>, not a daily tracker.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/chatgpt-budgeting-guide.png"
+        alt="Budgeting with ChatGPT in 2026 — the exact monthly setup and prompts"
+        caption="Apps tell you what you spent. A conversation tells you what to change."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Privacy first, before any prompts</h2>
+      <AlertBox type="warning" title="Strip before you paste" body="Delete account numbers, full names, addresses, and any merchant you consider sensitive. Category and amount are all the AI needs — 'groceries $412' budgets identically to the full transaction line. Turn off chat history/training where the setting exists. And never give any AI a bank login. Not once, not 'read-only', never." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The monthly routine (20 minutes)</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Export &amp; strip (5 min):</strong> download last month&apos;s transactions as CSV, delete the sensitive columns.</li>
+          <li><strong>Categorize (2 min):</strong> paste with: <em>&quot;Categorize these transactions into: housing, groceries, dining out, transport, subscriptions, shopping, health, fun, other. Show a table with totals and percentage of overall spending.&quot;</em></li>
+          <li><strong>Interrogate (5 min):</strong> <em>&quot;What are the three most surprising things in this data? Which category grew most vs the numbers I gave you last month? List every subscription and flag ones under $15 I probably forgot about.&quot;</em></li>
+          <li><strong>Stress-test (5 min):</strong> <em>&quot;My take-home is $X. Show my split vs the 50/30/20 rule. If I wanted to save $400 more monthly, propose three different ways, ranked from least painful to most.&quot;</em></li>
+          <li><strong>Commit (3 min):</strong> <em>&quot;Summarize this month in five bullets and give me two specific, measurable changes for next month.&quot;</em> Save that summary — it&apos;s next month&apos;s comparison baseline.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The prompts that make it actually useful</h2>
+      <p>
+        The magic isn&apos;t categorization — apps do that. It&apos;s that you can argue with it. A few that earn their keep:
+      </p>
+      <InfoBox title="Prompts worth stealing" items={[
+        ["The devil's advocate", "'Challenge my assumption that I can't cut my food spending. Be blunt.'"],
+        ["The annualizer", "'Convert my five smallest recurring costs to yearly totals.' ($14/month sounds fine; $168/year starts arguments)"],
+        ["The trade-off framer", "'What does this month's dining-out total equal in [thing I'm saving for]?'"],
+        ["The scenario runner", "'If my rent rises 8% in June, rebuild the budget three ways.'"],
+        ["The honesty check", "'Based on three months of data, what do I claim to value vs what my spending says I value?'"],
+      ]} />
+      <p>
+        That last one stings, fairly. For longer-horizon math — how this month&apos;s savings compound over a decade — hand the numbers to our free <InternalLink href="/tools/investment-calculator">investment calculator</InternalLink>, and check take-home assumptions against the <InternalLink href="/tools/tax-calculator">tax calculator</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where it beats apps, and where it doesn&apos;t</h2>
+      <p>
+        Wins: judgment, flexibility, zero subscription, and it explains itself when you ask why. Losses: no automatic transaction syncing (that&apos;s the privacy trade you chose), no real-time alerts, and it will occasionally miscount — sanity-check totals before acting on them. And for actual investment decisions, it&apos;s a calculator and explainer, not an advisor. Understanding compound interest? Great. Picking your funds? That&apos;s still on you or a professional.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can ChatGPT help with budgeting?",
+          a: "Yes — categorizing spending from pasted statements, spotting patterns you missed, running what-if scenarios, and building a plan around your actual numbers. It works best as a monthly review partner, not a daily tracker.",
+        },
+        {
+          q: "Is it safe to share bank statements with ChatGPT?",
+          a: "Strip them first: delete account numbers, names, and sensitive merchants — category and amount are all it needs. Use a chat with training/history off where possible, and never share login credentials with any AI.",
+        },
+        {
+          q: "What's the best budgeting method to use with AI?",
+          a: "Start with the 50/30/20 rule (needs/wants/savings) because the AI can instantly show where you deviate. Most people then drift into a custom split that fits their real life — which is exactly the point of doing it conversationally.",
+        },
+        {
+          q: "Can ChatGPT give investment advice?",
+          a: "It can explain concepts and run math clearly, but it's not a licensed advisor and shouldn't pick investments for you. Use it to understand options, then decide yourself or with a professional.",
+        },
+      ]} />
+
+      <p>
+        Twenty minutes, once a month, honest numbers, two concrete changes. It&apos;s the first budgeting system I&apos;ve kept for over a year — mostly because it talks back.
+      </p>
+    </div>
+  ),
+  "how-to-build-credit-fast": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Credit scores feel mysterious because an industry profits from the mystery. Underneath: five factors, known weights, boring math. Play the math and scores move faster than most people believe.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        This is the ranked list — what moves a score in 30 to 90 days, what takes a year, and the two popular pieces of advice that quietly cost people money.
+      </p>
+
+      <HookBanner headline="What's inside" items={[
+        "The five factors and their actual weights",
+        "Three moves that work within 1–2 reporting cycles",
+        "The statement-date trick almost nobody uses",
+        "Realistic timelines for every starting point",
+        "The myths that keep scores stuck (one costs real money)",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What&apos;s the fastest way to build credit in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Three moves work fastest: get reported utilization under 10% by <strong>paying before the statement closes</strong>, become an authorized user on an old account with perfect history, and dispute any reporting errors. Each can move a score within one or two reporting cycles — 30 to 60 days.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-build-credit-fast.png"
+        alt="How to build credit fast in 2026 — the moves that raise scores in 30 to 90 days"
+        caption="Five factors, known weights. It's math wearing a mask."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The five factors, weighted</h2>
+      <DataTable
+        headers={["Factor", "Weight", "Speed to influence"]}
+        rows={[
+          ["Payment history", "35%", "Slow to build, fast to destroy"],
+          ["Utilization (balance ÷ limit)", "30%", "Fast — resets every statement"],
+          ["Age of accounts", "15%", "Slow — pure time"],
+          ["Credit mix", "10%", "Slow, minor"],
+          ["New inquiries", "10%", "Small dings, fade within a year"],
+        ]}
+      />
+      <p>
+        Read the speed column again. Two-thirds of your score is payment history plus utilization — one you protect, one you can actively manage this month. That&apos;s where all the fast movement lives.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The statement-date trick</h2>
+      <p>
+        Here&apos;s the part most people never learn: the balance reported to bureaus isn&apos;t what you owe at the due date — it&apos;s usually the balance when your <strong>statement closes</strong>, days earlier. You can pay in full every month, never owe interest, and still report 80% utilization because the snapshot caught your spending mid-cycle.
+      </p>
+      <p>
+        The fix takes one calendar reminder: pay most of the balance two or three days <em>before</em> the statement closing date, let a small amount report, then pay the rest by the due date. Same spending, same zero interest — reported utilization drops from &quot;high&quot; to under 10%, and that&apos;s a 30%-weight factor moving in your favor within a single cycle. People routinely see 20–80 point jumps from this alone, depending on where they started.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Building from nothing</h2>
+      <InfoBox title="No-history starter kit" items={[
+        ["Secured card", "your deposit becomes the limit; use lightly, pay in full, upgrade in 6–12 months"],
+        ["Authorized user", "a parent or partner with an old, clean card adds you — their history helps your file (confirm the issuer reports AUs)"],
+        ["Credit-builder loan", "small installment loan that adds mix and payment history"],
+        ["Rent/utility reporting", "services that report bills add data to thin files; check fees first"],
+      ]} />
+      <p>
+        Stack two or three of those, and thin-file to solid-700s typically takes 6 to 12 months of boring on-time payments. Choosing a first card? Our <InternalLink href="/blog/best-credit-cards-beginners-2026">beginner credit cards guide</InternalLink> covers the options without the affiliate hype.
+      </p>
+
+      <AlertBox type="warning" title="The myth that costs actual money" body="'Carry a small balance to build credit' — no. Interest builds nothing; the bureaus don't know or care whether you paid interest. Use the card, let a small amount hit the statement, pay in full. The other big myth: checking your own score hurts it. It doesn't — soft inquiries are invisible to scoring." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Realistic timelines</h2>
+      <DataTable
+        headers={["Starting point", "Goal", "Honest timeline"]}
+        rows={[
+          ["High utilization, clean history", "+20–80 points", "30–60 days (fix the snapshot)"],
+          ["No credit history", "700+", "6–12 months"],
+          ["Missed payments on file", "Recovery", "12–24 months of clean history"],
+          ["Post-collection/charge-off", "Rebuild", "1–2 years, improving gradually"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What's the fastest way to build credit in 2026?",
+          a: "Get reported utilization under 10% (pay before the statement closes, not just the due date), become an authorized user on an old account with perfect history, and dispute any reporting errors. Those three can move a score within one or two reporting cycles.",
+        },
+        {
+          q: "How fast can I realistically raise my credit score?",
+          a: "Fixing high utilization can add 20–80 points in 30–60 days. Building from no history to solid 700+ typically takes 6–12 months of on-time payments. Missed-payment damage fades over 12–24 months of clean history.",
+        },
+        {
+          q: "Does checking my own credit score lower it?",
+          a: "No. Checking your own score is a soft inquiry and never affects it. Only hard inquiries — actual credit applications — cost a few points, and those fade within a year.",
+        },
+        {
+          q: "Should I carry a small balance to build credit?",
+          a: "No — that's the most expensive credit myth. Carrying a balance means paying interest for nothing. Use the card, let a small amount report on the statement, then pay in full.",
+        },
+      ]} />
+
+      <p>
+        Protect the payment history, manage the snapshot, let time do the rest. Boring wins this game — that&apos;s the good news.
+      </p>
+    </div>
+  ),
+  "best-ai-tools-for-students": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The gap between students who use AI well and students who don&apos;t is roughly a grade level now. Not because AI writes essays — because it turns dead time into study time and confusion into questions you can actually ask.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        This is the honest 2026 toolkit: what each tool is genuinely for, free options first, and a clear line on what crosses into cheating — because that line has teeth now.
+      </p>
+
+      <HookBanner headline="The toolkit" items={[
+        "The core free stack that covers 80% of student needs",
+        "NotebookLM — the most underrated study tool on this list",
+        "Research with real citations (not hallucinated ones)",
+        "Memorization, scheduling, and writing helpers",
+        "Where the cheating line actually sits in 2026",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best AI tool for students in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          For most students: a general assistant (<strong>ChatGPT or Claude</strong>) plus <strong>Perplexity</strong> for cited research covers 80% of needs, free. Add <strong>NotebookLM</strong> for turning your own lecture notes into study guides, and <strong>Anki</strong> for memorization. Total cost: zero.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-ai-tools-for-students.png"
+        alt="Best AI tools for students in 2026 — free study, research and note-taking tools"
+        caption="The tools are free. The grade difference comes from how you use them."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The core stack (all free)</h2>
+      <DataTable
+        headers={["Tool", "Use it for", "Free tier"]}
+        rows={[
+          ["ChatGPT / Claude", "Explaining concepts, practice problems, feedback on your drafts", "Genuinely usable"],
+          ["Perplexity", "Research with linked sources you can verify and cite", "Solid"],
+          ["NotebookLM", "Upload YOUR notes/readings → summaries, study guides, audio reviews", "Free"],
+          ["Anki", "Spaced-repetition flashcards — decades of evidence behind the method", "Free (desktop)"],
+          ["Gemini", "Long documents, YouTube lecture summaries, Google Docs integration", "Solid"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>NotebookLM deserves its own section</h2>
+      <p>
+        Most AI tools answer from the internet. NotebookLM answers from <em>your</em> materials: upload lecture slides, readings, and your notes, and it builds summaries, study guides, and quiz questions grounded in exactly what your course covers — with references back to your sources. The audio overview feature turns a folder of readings into a listenable review for the commute. For exam prep tied to a specific syllabus, nothing else on this list comes close.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The study patterns that actually raise grades</h2>
+      <InfoBox title="Worth building into your week" items={[
+        ["The reverse quiz", "'Quiz me on chapter 6, one question at a time, get harder as I get them right' — active recall beats rereading, every study ever"],
+        ["The dumb-question channel", "ask the AI what you'd never ask in lecture; confusion cleared same-day compounds"],
+        ["The explainer flip", "explain the concept TO the AI and ask it to find holes — teaching exposes what you don't know"],
+        ["The draft coach", "paste your (own) essay draft: 'strongest point, weakest point, what's missing?' — feedback, not ghostwriting"],
+        ["The schedule negotiator", "give it your deadlines and hours; make it build and adjust the study plan"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The line, clearly drawn</h2>
+      <p>
+        Using AI to understand material, quiz yourself, summarize your own notes, and get feedback on your drafts: studying. Submitting AI-written work as your own: cheating at most institutions, and the catch rate is higher than students think — detectors like Turnitin, style breaks from your previous writing, and the simple oral follow-up question you can&apos;t answer. Some students try to launder AI essays through humanizer tools; beyond the ethics, graders increasingly follow up in person, where the laundering doesn&apos;t help. (We build a <InternalLink href="/tools/ai-text-humanizer">humanizer</InternalLink> for marketers editing their own drafts — the academic-dishonesty use case is exactly where we draw the line too, as covered in <InternalLink href="/blog/how-to-humanize-ai-text">the humanizing guide</InternalLink>.)
+      </p>
+
+      <AlertBox type="tip" title="One habit worth stealing" body="End each study session by asking: 'Based on what I got wrong today, write me five questions for tomorrow.' Thirty seconds, and tomorrow starts exactly where today's weaknesses were." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best AI tool for students in 2026?",
+          a: "A general assistant (ChatGPT or Claude) plus Perplexity for cited research covers 80% of needs, free. Add NotebookLM for turning your own notes into study guides, and Anki for memorization.",
+        },
+        {
+          q: "Which AI tools are free for students?",
+          a: "ChatGPT, Claude, Gemini, Perplexity, and NotebookLM all have genuinely usable free tiers. Many paid tools discount with a .edu email. Most students never need the paid plans.",
+        },
+        {
+          q: "Is using AI for homework cheating?",
+          a: "Depends on the use. Explaining concepts, quizzing yourself, checking your work, summarizing your own notes: legitimate studying. Submitting AI-written essays as your own: cheating at most institutions, and detection plus oral follow-ups catch more than students expect.",
+        },
+        {
+          q: "Can professors detect AI-written essays?",
+          a: "Often yes — through detectors like Turnitin, style breaks from your previous work, and in-person follow-up questions. The reliable path: use AI to understand and outline, then write in your own words.",
+        },
+      ]} />
+
+      <p>
+        Free tools, honest use, active recall. That combination is quietly worth a grade level — and nobody can take it away in an oral exam.
+      </p>
+    </div>
+  ),
+  "best-free-ai-image-generators": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Every AI image tool advertises &quot;free.&quot; Then you sign up and discover free means five images, a watermark, and a pricing page. So here&apos;s the actual map: what each big generator gives you without paying, in 2026.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Short version — real free options exist, including one that&apos;s unlimited if your computer can handle it. The trade-offs are limits, queues, and licensing fine print. All covered below.
+      </p>
+
+      <HookBanner headline="What we compared" items={[
+        "Daily limits and watermarks on every major free tier",
+        "The unlimited option nobody wants to set up (but should)",
+        "Commercial use rules — the fine print that matters",
+        "Which free tier fits which job",
+        "When paying $10/month actually makes sense",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best completely free AI image generator?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          For unlimited free generation, <strong>local Stable Diffusion</strong> (via ComfyUI or similar) is unbeatable if your computer can run it. Among web tools, <strong>Bing Image Creator</strong> and <strong>Gemini&apos;s image generation</strong> offer the most usable free daily allowances without a subscription.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-free-ai-image-generators.png"
+        alt="Best free AI image generators in 2026 compared — limits, watermarks and commercial use"
+        caption="'Free' has fine print. Here's all of it in one place."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The free-tier map</h2>
+      <DataTable
+        headers={["Tool", "Free tier reality", "Commercial use (free tier)"]}
+        rows={[
+          ["Bing Image Creator (DALL·E)", "Daily boosted generations, then slower queue", "Generally allowed — check current terms"],
+          ["Gemini (Google)", "Usable daily allowance in chat", "Allowed with conditions"],
+          ["Stable Diffusion (local)", "Unlimited, needs a decent GPU", "Yes, model license permitting"],
+          ["Leonardo.ai", "Daily token allowance", "Plan-dependent — read carefully"],
+          ["Ideogram", "Limited free generations; strongest text-in-image", "Plan-dependent"],
+          ["Canva AI", "Limited generations inside free Canva", "Within Canva's content license"],
+          ["Midjourney", "No free tier since 2023", "Paid only, ~$10/month entry"],
+        ]}
+      />
+      <AlertBox type="warning" title="The licensing paragraph everyone skips" body="Terms differ per tool and change without notice. Some free tiers allow commercial use, some reserve it for paid plans, some watermark output, and most claim broad rights over prompts and generations. Thirty seconds on the current terms page before putting an image on merch or client work saves genuinely expensive mistakes — especially for print-on-demand sellers." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The unlimited option: local Stable Diffusion</h2>
+      <p>
+        If your machine has a reasonable GPU (or an Apple Silicon Mac), running Stable Diffusion locally changes the economics entirely: no limits, no queue, no watermark, full control over models and styles, and nothing leaves your computer. Setup takes an evening with ComfyUI or a one-click installer, and the community model library covers every style imaginable. It&apos;s the difference between renting images and owning the printer — worth the evening if you generate regularly.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Which free tool for which job</h2>
+      <InfoBox title="Quick picks" items={[
+        ["Blog covers & social posts", "Bing or Gemini — fast, decent, zero setup"],
+        ["Anything with text in the image", "Ideogram — it's the one that reliably spells"],
+        ["Consistent style across many images", "Local Stable Diffusion with a fixed model"],
+        ["Design mockups with layout", "Canva AI inside the design workflow"],
+        ["Client work / merch", "Whatever you pick: read the license, consider paying"],
+      ]} />
+      <p>
+        Generating images for content? Compress them before publishing — oversized images tank page speed, and our free <InternalLink href="/tools/image-compressor">image compressor</InternalLink> handles batches in the browser. If you&apos;re deeper into AI art platforms, our <InternalLink href="/blog/openart-ai-review-2026">OpenArt review</InternalLink> covers that ecosystem separately.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>When $10/month makes sense</h2>
+      <p>
+        Free tiers are fine for drafts, personal projects, and occasional use. The paid line is simple: the moment output goes to a client, on a product, or into anything with revenue attached, one paid tool (Midjourney, or a Leonardo/Ideogram plan) buys you cleaner licensing, higher resolution, and no daily ceiling mid-project. It&apos;s the same logic as any tool: hobby free, business paid.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best completely free AI image generator?",
+          a: "For unlimited free generation, local Stable Diffusion is unbeatable if your computer can run it. Among web tools, Bing Image Creator and Gemini offer the most usable free daily allowances without a subscription.",
+        },
+        {
+          q: "Can I use free AI-generated images commercially?",
+          a: "Read each tool's terms — they differ. Many free tiers allow commercial use with conditions, some restrict it to paid plans, and some watermark free output. Never assume; check the current license before putting an image on anything you sell.",
+        },
+        {
+          q: "Is Midjourney free in 2026?",
+          a: "No — Midjourney dropped its free trial years ago and remains subscription-only, starting around $10/month. For Midjourney-quality output free, your realistic option is local Stable Diffusion with good community models.",
+        },
+        {
+          q: "What's the catch with free AI image tools?",
+          a: "Daily caps, slower queues, watermarks, limited resolution, and training-data rights on your prompts and outputs. Free is genuinely fine for drafts and personal use; for client work you'll usually want one paid tool.",
+        },
+      ]} />
+
+      <p>
+        Start with Bing or Gemini today, set up local Stable Diffusion the evening you get serious, and read the license the day money gets involved. That&apos;s the whole game.
+      </p>
+    </div>
+  ),
+  "how-to-sleep-better": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Sleep advice became an industry, and industries need you slightly broken. Most of what&apos;s sold — supplements, gadgets, 14-step routines — sits on top of a short list of things with actual evidence. Here&apos;s that list, ranked.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Nine changes, ordered by impact-per-effort. The first three do more than the other six combined, and none of them cost money.
+      </p>
+
+      <HookBanner headline="Ranked inside" items={[
+        "The one anchor habit that beats every gadget",
+        "Light timing — the lever most people pull backwards",
+        "The real caffeine cutoff math (it's earlier than you think)",
+        "Temperature, alcohol, and the 3am wake-up",
+        "Sleep trackers: helpful tool or anxiety machine?",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the most effective way to sleep better?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          A <strong>consistent wake time — every day, including weekends</strong> — beats every gadget and supplement. Your circadian rhythm anchors to when you wake and see light. Pair that with morning daylight and a cool, dark room and you&apos;ve covered most of what sleep science agrees on.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-sleep-better.png"
+        alt="How to sleep better in 2026 — nine evidence-backed changes ranked by impact"
+        caption="The boring free stuff outperforms the expensive exciting stuff. As usual."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The big three (do these first)</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Fixed wake time, seven days a week.</strong> Sleeping in on weekends feels like recovery but works like jet lag — a two-hour Sunday lie-in is a flight two time zones west, and Monday pays for the return trip. Anchor the wake time; bedtime follows on its own within a couple of weeks.</li>
+          <li><strong>Daylight within an hour of waking.</strong> Ten to twenty minutes outside (cloudy counts; through-window is weaker) sets the circadian clock that decides tonight&apos;s sleepiness. This is the lever most people pull backwards — obsessing over evening light while skipping the morning signal that matters more.</li>
+          <li><strong>Cool, dark, quiet room.</strong> Core body temperature has to drop to initiate sleep — somewhere around 18–19°C / 65–67°F suits most people. Blackout curtains or a cheap eye mask handle the dark part. A warm shower before bed helps, counterintuitively: the after-shower cooldown is the signal.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The next six, ranked</h2>
+      <InfoBox title="Meaningful but secondary" items={[
+        ["Caffeine cutoff by early afternoon", "half-life is 5–6 hours: a 4pm coffee is still half-active at 9pm; stop 8–10 hours before bed"],
+        ["Alcohol honesty", "it knocks you out, then wrecks the second half of the night — the 3am wake-up after drinks isn't a coincidence"],
+        ["Consistent wind-down", "same boring 30 minutes nightly; the routine itself becomes the sleep cue"],
+        ["Content over blue light", "the doomscroll alerts your brain more than the glow does; boring beats bright"],
+        ["No clock-watching", "checking the time at 3am adds arithmetic anxiety; turn the clock away"],
+        ["The 20-minute rule", "can't sleep? get up, do something dull in dim light, return sleepy — beds are for sleeping, not lying awake practicing frustration"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>About your sleep tracker</h2>
+      <p>
+        Trackers earn their keep at pattern level: they&apos;ll show you that late meals, alcohol, or chaotic schedules correlate with your rough nights, and that feedback changes behavior. Their sleep-stage graphs, though, are estimates from movement and heart rate — not clinical measurements — and treating the nightly score as a grade backfires often enough that researchers named the condition: orthosomnia, anxiety about sleep data that itself degrades sleep.
+      </p>
+      <p>
+        Sensible use: check weekly trends, ignore nightly scores, and never argue with a graph about how you feel. If you&apos;re choosing hardware, our <InternalLink href="/blog/best-fitness-trackers-2026">fitness tracker guide</InternalLink> covers the options.
+      </p>
+
+      <AlertBox type="warning" title="When it's not a habits problem" body="Loud snoring with gasping, chronic 3am waking despite good habits, legs that crawl at night, or daytime sleepiness that never lifts — these are medical territory (sleep apnea, restless legs, insomnia disorder), and they respond to treatment, not tips. A sleep study is a normal thing to ask a doctor about. This article is information, not medical advice." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the most effective way to sleep better?",
+          a: "A consistent wake time, every day including weekends, beats every gadget and supplement. Your circadian rhythm anchors to when you wake and see light. Pair it with morning daylight and a cool, dark bedroom and you've covered most of what science agrees on.",
+        },
+        {
+          q: "When should I stop drinking caffeine?",
+          a: "Caffeine's half-life is five to six hours, so a 4pm coffee still has half its caffeine active at 9-10pm. Most researchers suggest a cutoff 8–10 hours before bed — for an 11pm bedtime, switch to decaf after about 1–3pm.",
+        },
+        {
+          q: "Do sleep trackers actually help?",
+          a: "They're useful for spotting patterns, but their sleep-stage data isn't clinically precise, and some people develop score anxiety that makes sleep worse — researchers call it orthosomnia. Use weekly trends, ignore nightly scores.",
+        },
+        {
+          q: "Does screen time before bed really ruin sleep?",
+          a: "The light matters less than the content. Blue light has a modest effect, but doomscrolling and work emails keep your brain alert far more than the glow does. A boring book on a dim screen beats an argument on a dim screen.",
+        },
+      ]} />
+
+      <p>
+        Fixed wake time, morning light, cool dark room. Free, boring, and more effective than anything you can buy — start tonight, judge in two weeks.
+      </p>
+    </div>
+  ),
+  "how-to-make-money-on-fiverr": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Fiverr didn&apos;t die. The lazy version of Fiverr died. If your plan was &quot;post a logo gig and wait,&quot; that plan stopped working around 2023. What works now is narrower, faster, and honestly more interesting.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        I&apos;ve watched a lot of new sellers go through the same arc: excitement, three weeks of silence, quit. The ones who break through do a few unglamorous things differently. That&apos;s this guide.
+      </p>
+
+      <HookBanner headline="What's inside" items={[
+        "The gigs buyers are actually searching for in 2026",
+        "Fee math: what you really keep from a $100 order",
+        "How to price your first three gigs (hint: not $5)",
+        "The profile mistakes that make you invisible",
+        "A two-week plan to your first order",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can beginners still make money on Fiverr in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes, but you have to pick a lane. New sellers who win choose one narrow service, price early gigs to collect reviews fast, and deliver quicker than promised. Broad gigs like &quot;I will design anything&quot; sit at zero forever now.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-make-money-on-fiverr.png"
+        alt="How to make money on Fiverr in 2026 as a new seller"
+        caption="Buyers don't browse Fiverr. They search a problem. Be the exact answer to one problem."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The fee math first, because it changes your pricing</h2>
+      <p>
+        Fiverr takes 20% of everything, tips included. A $100 order pays you $80. A $40 gig pays you $32. Withdrawal shaves a little more depending on method. None of this is a scandal, but price with it in mind: if you need $50 for a job to feel worth it, the gig price is $65, not $50. Run your own numbers in our free <InternalLink href="/tools/fiverr-fee-calculator">Fiverr fee calculator</InternalLink> before you set prices, not after your first payout surprises you.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What buyers want in 2026</h2>
+      <p>
+        The search bar tells the story. AI created a wave of new demand, and most of it is cleanup and setup work:
+      </p>
+      <DataTable
+        headers={["Gig type", "Why it's hot", "Typical price"]}
+        rows={[
+          ["Humanize / edit AI content", "Everyone generates drafts; nobody can publish them", "$25–75 per piece"],
+          ["Short-form video editing", "Reels and Shorts demand outstrips editors", "$30–100 per video"],
+          ["AI chatbot setup", "Small businesses want one, can't build one", "$100–500 per build"],
+          ["Automation builds (Zapier, n8n)", "Same story — demand, no in-house skill", "$150–800 per workflow"],
+          ["Logo / voiceover / classic gigs", "Still sell, but you're one of 40,000", "Race to the bottom unless niched"],
+        ]}
+      />
+      <p>
+        Notice what the first row is. If that one interests you, we&apos;ve got a whole guide on the <InternalLink href="/blog/ai-content-editor-side-hustle">AI content editor side hustle</InternalLink> — it pairs naturally with a Fiverr gig.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Pricing your first three gigs</h2>
+      <p>
+        Forget $5. That signals desperation and attracts the worst buyers. But don&apos;t price like a veteran either — you have zero reviews, and reviews are the currency. The move most successful sellers describe: start at maybe 60% of your target rate, raise prices after every five-star cluster. Ten good reviews later, you&apos;re at full rate with social proof. Three months of underpricing beats twelve months of silence.
+      </p>
+
+      <AlertBox type="warning" title="The mistakes that keep you invisible" body="Stock photos in your gig gallery. A profile description about your passion instead of the buyer's outcome. Three wildly different gigs (are you a designer or a translator?). Slow first responses — Fiverr's algorithm watches response time hard. Fix these four before blaming the platform." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The two-week plan</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Days 1–2:</strong> Pick one service you can deliver in under three hours. Make two samples for imaginary clients. Label them as spec work — that&apos;s fine.</li>
+          <li><strong>Days 3–4:</strong> Write the gig around the buyer&apos;s outcome. &quot;Your blog post, humanized and ready to publish in 24 hours&quot; beats &quot;I am a skilled editor.&quot;</li>
+          <li><strong>Days 5–14:</strong> Answer every relevant buyer brief within an hour. Personalize each response — two specific sentences beat a paste-in paragraph. Expect 15–30 responses per order early on.</li>
+          <li><strong>First order:</strong> Overdeliver slightly and deliver early. That first review is worth more than the payment.</li>
+        </ol>
+      </div>
+      <p>
+        Once money starts moving, check what you&apos;re actually clearing per hour with the <InternalLink href="/tools/freelancer-earnings-calculator">freelancer earnings calculator</InternalLink>, and read <InternalLink href="/blog/how-to-get-ai-clients">how to get AI clients</InternalLink> when you&apos;re ready to move beyond the platform.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can beginners still make money on Fiverr in 2026?",
+          a: "Yes, but the easy days are over. New sellers who win pick one narrow service, price their first gigs low enough to collect reviews fast, and deliver quicker than promised. Broad gigs like 'I will design anything' go nowhere now.",
+        },
+        {
+          q: "How much does Fiverr take from sellers?",
+          a: <>Fiverr takes 20% of every order, including tips. If a buyer pays $100, you receive $80 before withdrawal fees. Price your gigs with that 20% baked in — the <InternalLink href="/tools/fiverr-fee-calculator">fee calculator</InternalLink> does the math for you.</>,
+        },
+        {
+          q: "What Fiverr gigs are in demand in 2026?",
+          a: "AI-adjacent services lead: humanizing and editing AI content, short-form video editing, AI chatbot setup, and automation builds. Classic gigs like logo design and voiceover still sell but are far more crowded.",
+        },
+        {
+          q: "How long does it take to get your first Fiverr order?",
+          a: "With a sharp niche gig, good samples, and fast responses to buyer briefs, most committed sellers land a first order within two to four weeks. A generic gig with stock images can sit at zero for months.",
+        },
+      ]} />
+
+      <p>
+        One service, honest pricing, fast responses, small overdelivery. It&apos;s not a secret system. It&apos;s just the version of Fiverr that survived.
+      </p>
+    </div>
+  ),
+  "print-on-demand-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Print on demand has a marketing problem: the people telling you it&apos;s free money are selling courses, and the people saying it&apos;s dead tried it for three weeks in 2021. The truth pays less than the first group claims and more than the second group thinks.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the 2026 picture with actual numbers: what a shirt really nets you, which niches still have buyers, and why most stores die before their tenth sale.
+      </p>
+
+      <HookBanner headline="Inside this guide" items={[
+        "Real margin math: what you keep per shirt, hoodie, and mug",
+        "Niches with buyers vs niches with only sellers",
+        "Printful vs Printify, settled in one paragraph",
+        "The AI design question — allowed, but with a catch",
+        "Why stores fail at design #9",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Is print on demand still profitable in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes, for sellers who treat it as a design business rather than a slot machine. Typical net margins run <strong>$4–12 per shirt and $8–20 per hoodie</strong> after fees. Stores built around one niche with 30–50 strong designs consistently beat stores with 500 random uploads.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/print-on-demand-2026.png"
+        alt="Print on demand in 2026 — what still works and real profit margins"
+        caption="The product is a commodity. The niche and the design are the business."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The margin math nobody shows you</h2>
+      <DataTable
+        headers={["Product", "Base cost", "Typical sale price", "Net after fees"]}
+        rows={[
+          ["T-shirt", "$9–13", "$22–28", "$4–12"],
+          ["Hoodie", "$20–26", "$38–50", "$8–20"],
+          ["Mug", "$5–8", "$15–19", "$4–8"],
+          ["Poster", "$6–10", "$18–25", "$6–12"],
+          ["Tote bag", "$8–11", "$18–24", "$5–10"],
+        ]}
+      />
+      <p>
+        Then subtract marketing. If you run ads, a $10 margin can vanish in two clicks. That&apos;s why the sellers who last lean on free traffic: Etsy search, Pinterest, and short-form video of the products. Slow, compounding, and it doesn&apos;t eat the margin.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Niches: where the buyers still are</h2>
+      <p>
+        The pattern hasn&apos;t changed in years, because it&apos;s about human identity, not trends. People buy designs about who they are: their job, their dog breed, their hobby, their town, their inside joke. What&apos;s changed is saturation in the obvious lanes.
+      </p>
+      <InfoBox title="2026 reality check" items={[
+        ["Still working", "profession + humor (nurses, teachers, electricians), specific dog breeds, niche hobbies (disc golf, sourdough, birdwatching), local pride for smaller cities"],
+        ["Saturated", "generic motivation quotes, plain 'dog mom', anything trending on TikTok this week (10,000 sellers saw the same video)"],
+        ["Quietly good", "events people plan for: family reunions, bachelorette parties, marathon finishers, graduation years"],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Printful or Printify?</h2>
+      <p>
+        Printify usually wins on margin because you pick between competing print providers for each product. Printful wins on consistency since it runs its own facilities. A common path: start on Printify for the economics, order samples of your bestsellers, and move anything with quality complaints to Printful. Both plug into Etsy and Shopify in an afternoon.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The AI design question</h2>
+      <p>
+        Yes, most sellers now use AI somewhere in the design process. Two catches. First, platforms have started removing obvious one-prompt uploads, and buyers scroll past them anyway — edit AI output into something with an actual point of view. Second, check each marketplace&apos;s current AI policy before uploading; they keep changing. The same rule from <InternalLink href="/blog/does-google-penalize-ai-content">AI content and Google</InternalLink> applies here: the tool is fine, the laziness is what gets punished.
+      </p>
+
+      <AlertBox type="warning" title="Why stores die at design #9" body="The failure pattern is always the same: upload eight designs, get no sales in two weeks, conclude POD is dead, quit. But eight designs in a niche is a rounding error — established sellers describe 30–50 designs before patterns emerge about what sells. POD fails slowly or works slowly. There's no fast version." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Is print on demand still profitable in 2026?",
+          a: "Yes, for sellers who treat it like a design business. Typical net margins run $4–12 per shirt and $8–20 per hoodie after fees. Stores built around one niche with 30–50 strong designs outperform stores with 500 random uploads.",
+        },
+        {
+          q: "Printful or Printify — which is better?",
+          a: "Printify usually wins on price because you choose between print providers. Printful wins on consistency since it runs its own facilities. Many sellers start on Printify and move bestsellers to Printful.",
+        },
+        {
+          q: "Where should I sell print on demand products?",
+          a: "Etsy is the easiest place to get found without an audience. Amazon Merch has huge volume but a waitlist and strict rules. Your own Shopify store gives the best margins but you bring every visitor yourself.",
+        },
+        {
+          q: "Can I use AI to create print on demand designs?",
+          a: "Yes, and most sellers do — but edit the output into something distinct and check each platform's AI policy. Marketplaces remove obvious one-prompt uploads, and buyers skip them anyway.",
+        },
+      ]} />
+
+      <p>
+        Pick an identity niche you actually understand, make thirty designs better than the current page one, and give it ninety days before judging. That&apos;s the whole honest playbook. If digital-only products appeal more, <InternalLink href="/blog/sell-notion-templates">selling Notion templates</InternalLink> runs on the same muscles with zero shipping.
+      </p>
+    </div>
+  ),
+  "is-dropshipping-dead": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Dropshipping gets declared dead every January, and every year a new batch of stores quietly does six figures. Both things are real. The version that died and the version that works just aren&apos;t the same business.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        So: is dropshipping dead in 2026? The 2019 playbook, absolutely. The fulfillment model, no. Here&apos;s the difference, with numbers.
+      </p>
+
+      <HookBanner headline="The honest breakdown" items={[
+        "What killed the old AliExpress-to-Shopify game",
+        "The version still making money (and why it's harder)",
+        "Real startup costs — not the $0 fantasy",
+        "Dropshipping vs print on demand vs digital products",
+        "The four tests before you build anything",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Is dropshipping dead in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          The 2019 version is: slow AliExpress shipping, generic gadgets, and cheap Facebook ads don&apos;t work anymore. Dropshipping as a <strong>fulfillment method</strong> is alive for sellers using fast domestic suppliers, real branding, and content-driven traffic instead of pure paid ads.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/is-dropshipping-dead.png"
+        alt="Is dropshipping dead in 2026 — honest analysis with real numbers"
+        caption="The model survived. The shortcut didn't."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What actually killed the old game</h2>
+      <p>
+        Three things stacked up. Ad costs roughly tripled from the golden era while attention fragmented. Buyers learned the tricks: they reverse-image-search products and find them for a third of the price. And platforms tightened — payment processors, ad networks, and marketplaces all got aggressive about stores with 3-week shipping and 20% refund rates. The arbitrage closed. What&apos;s left is retail, which was always the real business hiding underneath.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The version that works in 2026</h2>
+      <InfoBox title="What surviving stores look like" items={[
+        ["Domestic or hybrid suppliers", "3–7 day shipping via US/EU warehouses; some negotiate directly with manufacturers"],
+        ["Higher-ticket niches", "$60–300 products where 15–30% margins leave room to operate"],
+        ["A real brand wrapper", "custom packaging inserts, actual support, a store that doesn't scream 'template'"],
+        ["Content traffic", "TikTok/Shorts showing the product, plus SEO — traffic they don't rent by the click"],
+        ["Boringly good operations", "fast answers, easy returns, accurate listings — retention over churn"],
+      ]} />
+      <p>
+        Read that list again and notice: it&apos;s just e-commerce. Dropshipping in 2026 is a cash-flow strategy (no inventory upfront) inside a normal retail business, not a way to skip the business part.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What it costs to find out</h2>
+      <p>
+        Realistically $500–2,000: Shopify plan, a few apps, samples of every product you sell (non-negotiable — you cannot brand what you haven&apos;t held), and enough budget to test three to five products with content or small ad spends. Anyone promising profit from zero dollars is monetizing you, not the market. Model scenarios honestly with the <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink> before committing.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Dropshipping vs the alternatives</h2>
+      <DataTable
+        headers={["Model", "Margin", "Upfront cost", "Best if you..."]}
+        rows={[
+          ["Dropshipping", "15–30%", "$500–2,000", "Spot products well, enjoy marketing"],
+          ["Print on demand", "20–35%", "$50–300", "Design well, prefer slower + safer"],
+          ["Digital products", "90%+", "Mostly time", "Can solve a problem once, sell it forever"],
+        ]}
+      />
+      <p>
+        All three run on the same engine: getting attention. If the marketing part sounds exhausting, none of them will save you; if it sounds fun, pick whichever matches your skills. Comparison guides for the other two: <InternalLink href="/blog/print-on-demand-2026">print on demand in 2026</InternalLink> and <InternalLink href="/blog/sell-notion-templates">selling digital templates</InternalLink>.
+      </p>
+
+      <AlertBox type="tip" title="Four tests before building anything" body="1) Would you personally pay this price for this product? 2) Can you get it to a buyer within a week? 3) Can you make ten pieces of content about it without getting bored? 4) Does the margin survive a 15% ad cost or three months of slow SEO? Four yeses: build. Any no: next product." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Is dropshipping dead in 2026?",
+          a: "The 2019-style version is: slow AliExpress shipping, generic products, and cheap Facebook ads no longer work. Dropshipping as a fulfillment method is alive for sellers using fast domestic suppliers, branded stores, and content-driven traffic.",
+        },
+        {
+          q: "How much money do you need to start dropshipping in 2026?",
+          a: "Realistically $500–2,000: a Shopify plan, apps, product samples you actually order, and enough budget to test 3–5 products properly. Anyone promising profits from $0 is selling a course, not a business.",
+        },
+        {
+          q: "What's better than dropshipping in 2026?",
+          a: "Depends on your skills. Digital products have better margins with no shipping. Print on demand suits designers. Dropshipping fits people good at spotting products and making content around them. All three live or die on marketing.",
+        },
+        {
+          q: "Do dropshipping stores still make money?",
+          a: "Some do — typically niche stores with 15–30% net margins on higher-ticket items, domestic 3–7 day shipping, and TikTok or SEO traffic they don't pay per click for. The winners look like real brands, because effectively they are.",
+        },
+      ]} />
+
+      <p>
+        Dead? No. Easy? Also no. It graduated into a real business, and real businesses pay people who treat them like one.
+      </p>
+    </div>
+  ),
+  "best-money-making-apps": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Most &quot;best money apps&quot; lists rank by affiliate commission. This one ranks by the only number that matters: what an hour of your attention actually earns. The spread is wild — some pay $25+, some pay 40 cents.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Quick framing: apps don&apos;t make money. Apps are marketplaces for something you&apos;re selling — your time, your skills, your stuff, or your spending data. Price accordingly.
+      </p>
+
+      <HookBanner headline="How this list works" items={[
+        "17 well-known apps sorted into four tiers by real hourly value",
+        "The math behind each tier, not vibes",
+        "Which 'passive' apps are actually passive",
+        "The tier you should skip entirely (most lists put it first)",
+      ]} />
+
+      <BlogImage
+        src="/images/best-money-making-apps.png"
+        alt="Best money making apps of 2026 ranked by real hourly rate"
+        caption="Same phone, same hour. Anywhere from $0.40 to $60. Choose the marketplace, not the app."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 1: Skill marketplaces ($20–60+/hr)</h2>
+      <p>
+        <strong>Upwork, Fiverr, Rover, TaskRabbit, Care.com.</strong> These pay real money because you&apos;re selling skills, and skills price like skills. Freelancing platforms commonly clear $20–60/hour once you have reviews (our <InternalLink href="/blog/how-to-make-money-on-fiverr">Fiverr guide</InternalLink> covers the ramp-up). Rover pet-sitting runs $20–40 per visit in most cities. TaskRabbit assembly and moving help clears $25–45/hour in metro areas. The catch is the cold start: two to four weeks of setup and first-review grinding before rates normalize.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 2: Gig work ($12–28/hr)</h2>
+      <p>
+        <strong>DoorDash, Uber Eats, Instacart, Amazon Flex.</strong> Predictable, flexible, and honest about what they are. Busy-area drivers report $15–28/hour before vehicle costs; subtract gas and wear and the real number drops a few dollars. Best used deliberately — peak hours only, near home — rather than as an always-on default. Fine as a bridge, rough as a career.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 3: Selling and cashback ($5–20/hr equivalent)</h2>
+      <p>
+        <strong>eBay, Facebook Marketplace, Poshmark, Mercari, Rakuten, Ibotta.</strong> Two different games in one tier. Selling your own unused stuff is the single best first move in this whole article: the average home has hundreds of dollars of idle resale value, and listing takes minutes per item. Cashback apps like Rakuten aren&apos;t income at all — they&apos;re a discount on spending you were doing anyway. Worth stacking (a few hundred a year for near-zero effort), worthless to chase.
+      </p>
+
+      <AlertBox type="warning" title="Tier 4: The time traps ($0.40–2/hr)" body="Survey apps, watch-videos-for-points apps, play-games-for-gift-cards apps. The math is brutal: users routinely report an effective 40 cents to $2 per hour. If you have an hour and want money, literally any tier above pays 10–50x more. These apps are entertainment with a rebate, and that's the kindest description." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The quick decision table</h2>
+      <DataTable
+        headers={["You have", "Best move", "Realistic monthly"]}
+        rows={[
+          ["A skill (writing, design, editing)", "Upwork / Fiverr", "$500–3,000+"],
+          ["A car and free evenings", "DoorDash at peak hours", "$400–1,200"],
+          ["A closet full of stuff", "eBay / Marketplace blitz", "$200–800 once"],
+          ["Just normal spending", "Rakuten + card rewards", "$20–60"],
+          ["Only idle scrolling time", "Skip Tier 4, learn a skill instead", "$0 now, real money later"],
+        ]}
+      />
+      <p>
+        That last row is the honest advice nobody&apos;s affiliate dashboard rewards: a month spent learning a sellable skill (see <InternalLink href="/blog/ai-side-hustles-no-coding-2026">AI side hustles that need no code</InternalLink>) outearns a year of survey apps. Project your numbers with the <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What app pays the most money in 2026?",
+          a: "Skill-based gig apps: Upwork and Fiverr freelancing commonly clears $20–60+/hour once established, and delivery or task apps run $15–28/hour in busy areas. Survey and game apps sit at the bottom, often under $2/hour.",
+        },
+        {
+          q: "Are money-making apps legit?",
+          a: "The well-known ones pay, but hourly rate is the real question. Cashback apps legitimately return money on spending you'd do anyway, while many survey apps pay so little per hour they're effectively entertainment, not income.",
+        },
+        {
+          q: "What's the best passive money app?",
+          a: "True passive options are limited: cashback on purchases and selling unused capacity. Anything that needs daily taps isn't passive — it's a low-wage job with good marketing.",
+        },
+        {
+          q: "How much can you realistically make from apps per month?",
+          a: "Casual use (cashback plus occasional selling): $30–100/month. Consistent gig work at 10 hours a week: $600–1,200/month. Full freelancing through app platforms: a real income. The rate depends on what you're selling, not the app.",
+        },
+      ]} />
+
+      <p>
+        Sell skills if you have them, stuff if you don&apos;t, time only at gig rates, and attention never. That&apos;s the whole ranking.
+      </p>
+    </div>
+  ),
+  "how-to-start-a-blog-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Starting a blog in 2026 sounds like opening a video rental store. AI answers half of Google&apos;s queries before anyone clicks. And yet — new blogs keep breaking through every month. They&apos;re just playing a different game than the dead ones did.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        This is the playbook for that different game: what to write about when AI has eaten generic content, the one-afternoon tech setup, and how the money actually arrives.
+      </p>
+
+      <HookBanner headline="The full playbook" items={[
+        "The niche test that predicts whether your blog can work",
+        "Setup in one afternoon for under $100/year",
+        "The content strategy AI can't eat",
+        "Monetization in the order it actually happens",
+        "A realistic 12-month timeline",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Is blogging still worth it in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes, with adjusted expectations. Generic info blogs are done — AI answers those queries directly. Blogs that work now offer <strong>first-hand experience, tools, original data, or a strong personal angle</strong>, and treat Google as one channel among several, not the whole strategy.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-start-a-blog-2026.png"
+        alt="How to start a blog in 2026 that makes money in the AI era"
+        caption="AI ate the generic middle. The specific edges are wide open."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The niche test</h2>
+      <p>
+        Before buying a domain, your topic idea has to pass three questions. One: can you say something a chatbot can&apos;t — from experience, testing, or data you own? Two: do buyers search this topic (products, tools, services — money has to change hands somewhere)? Three: can you write fifty posts about it without hating your life? &quot;Personal finance&quot; fails question one for a beginner. &quot;What I learned doing DoorDash in a small town for a year, with spreadsheets&quot; passes all three. Specific beats big every time now.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Setup: one afternoon, under $100</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Domain</strong> ($10–15/year). Short, spellable, no hyphens. Don&apos;t spend a week on this.</li>
+          <li><strong>Platform.</strong> WordPress on cheap hosting ($5–10/month) is still the default for ownership and plugins. Ghost if you want cleaner writing-first software. Avoid free subdomains — you&apos;re building on rented land.</li>
+          <li><strong>One clean theme, five pages.</strong> Home, blog, about, contact, and one cornerstone post. Skip the plugin buffet.</li>
+          <li><strong>Email list from day one.</strong> Even a free-tier newsletter tool. Search traffic is borrowed; the list is yours.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The content strategy AI can't eat</h2>
+      <p>
+        Write things that require having done something. Tests with results. Comparisons with real screenshots. Numbers from your own projects. Opinions with reasoning. Then structure each post so both readers and AI engines can use it — direct answers under clear headings, honest FAQs, one fact per post worth quoting. (That structure is <InternalLink href="/blog/generative-engine-optimization-geo">generative engine optimization</InternalLink>, and it&apos;s how new blogs get cited instead of buried.)
+      </p>
+      <p>
+        Use AI for drafts and outlines, absolutely. Just edit like it matters, because it does — <InternalLink href="/blog/does-google-penalize-ai-content">Google demotes unedited AI content</InternalLink>, and our <InternalLink href="/blog/how-to-humanize-ai-text">humanizing workflow</InternalLink> plus the free <InternalLink href="/tools/ai-text-humanizer">AI Text Humanizer</InternalLink> handle the cleanup in minutes. Draft with the machine, publish as yourself.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How the money actually arrives (in order)</h2>
+      <DataTable
+        headers={["Stage", "Usually starts", "What it looks like"]}
+        rows={[
+          ["Affiliate links", "Months 3–6", "First commissions from honest product mentions"],
+          ["Display ads", "Months 6–12", "Needs real volume; $10–30 per 1,000 views in good niches"],
+          ["Digital products", "Months 6–12", "Templates, guides — your margins, your price"],
+          ["Services/freelancing", "Anytime", "The blog as proof-of-skill portfolio"],
+          ["Sponsorships", "Year 1+", "Brands come to trusted niche voices"],
+        ]}
+      />
+      <p>
+        Notice products in the middle — most successful 2026 blogs are half media, half storefront. Something like <InternalLink href="/blog/sell-notion-templates">selling templates</InternalLink> pairs naturally with a blog that ranks for the niche.
+      </p>
+
+      <AlertBox type="tip" title="The 12-month honest timeline" body="Months 1–3: publish weekly into silence, fix your titles. Months 4–6: a few posts get traction; double down on what worked. Months 7–9: first affiliate income, compounding search impressions. Months 10–12: either clear signs of life or a clear pivot signal. The blogs that fail mostly just stopped in month three." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Is blogging still worth it in 2026?",
+          a: "Yes, with adjusted expectations. Generic info blogs are done — AI answers those queries. Blogs that work now offer first-hand experience, tools, original data, or a strong personal angle, and treat search as one channel among several.",
+        },
+        {
+          q: "How much does it cost to start a blog?",
+          a: "About $50–100 for year one: a domain ($10–15/year) and basic hosting ($5–10/month). Everything else has workable free tiers until you have traffic worth upgrading for.",
+        },
+        {
+          q: "How long until a new blog makes money?",
+          a: "Typically 6–12 months to meaningful traffic with consistent publishing and realistic keywords. Affiliate income usually arrives before ad income. Anyone promising profit in month one is selling something.",
+        },
+        {
+          q: "Should I use AI to write my blog posts?",
+          a: <>Use it for drafts and outlines, never for publish-ready copy. Google&apos;s 2026 updates demote unedited AI content and readers bounce off it. Draft with AI, then add your experience and voice — the <InternalLink href="/tools/ai-text-humanizer">free humanizer</InternalLink> speeds up the cleanup.</>,
+        },
+      ]} />
+
+      <p>
+        The rental store comparison fails in one way: nobody&apos;s attention span left. It just got pickier. Give it something only you could have written, weekly, for a year. That still works — it&apos;s the only thing that ever did.
+      </p>
+    </div>
+  ),
   "what-is-vibe-coding": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
