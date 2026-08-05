@@ -156,6 +156,468 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "which-ai-subscription-is-worth-it": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Four AI companies want the same $20 from you every month, and all four make the same pitch: this is the essential one. For most people, exactly one of them is telling the truth. The trick is figuring out which one is telling it to <em>you</em>.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        I&apos;ve paid for all four at different points. Here&apos;s the honest sorting, decided by what you actually do all day — plus the free-tier stack that makes paying optional for casual users.
+      </p>
+
+      <HookBanner headline="How this shakes out" items={[
+        "The one-question test that picks your subscription",
+        "What each $20 actually buys (and doesn't)",
+        "The free-tier stack that covers casual use completely",
+        "When paying for two makes sense — and the pair that works",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Which AI subscription is best in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          It depends on your main use. <strong>Writers and coders</strong> tend to get the most from Claude Pro, <strong>researchers</strong> from Perplexity Pro, <strong>Google Workspace people</strong> from Gemini&apos;s paid tier, and <strong>generalists</strong> who want images, voice, and agents in one place from ChatGPT Plus. Most people only need one.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/which-ai-subscription-is-worth-it.png"
+        alt="ChatGPT Plus vs Claude Pro vs Gemini vs Perplexity — which AI subscription is worth it in 2026"
+        caption="Same price tag, four different products. Pick by workload, not by logo."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The one-question test</h2>
+      <p>
+        Ask yourself: what did I use AI for most last week? Not what you imagine using it for — what actually happened. If the answer is writing and editing, that&apos;s one lane. Looking things up and comparing sources, another. Working inside Gmail, Docs, and Sheets, a third. A bit of everything plus images and voice chat, a fourth. Your last week predicts your next month far better than any feature list.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What each $20 actually buys</h2>
+      <DataTable
+        headers={["Subscription", "Strongest at", "Weakest at"]}
+        rows={[
+          ["ChatGPT Plus", "All-rounder: chat, images, voice, agents in one app", "Nothing terrible; masters nothing single-handedly"],
+          ["Claude Pro", "Long writing, editing, coding, careful reasoning", "No native image generation"],
+          ["Gemini paid tier", "Living inside Gmail, Docs, Drive; long context", "Feels thinner outside the Google ecosystem"],
+          ["Perplexity Pro", "Research with citations, comparisons, current info", "Not built for long-form writing or code"],
+        ]}
+      />
+      <p>
+        The pattern: ChatGPT Plus is a Swiss Army knife, the other three are excellent single blades. Swiss Army knives win for people with varied light use; blades win for people with one heavy use. A writer paying for ChatGPT Plus instead of Claude Pro is mildly mismatched; a researcher paying for anything but Perplexity is leaving the best tool on the table.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The free stack that beats paying (for casual users)</h2>
+      <p>
+        Honest admission the subscription pages won&apos;t make: free tiers got really good. If you use AI a few times a day rather than a few times an hour, this stack costs nothing and covers almost everything:
+      </p>
+      <InfoBox title="The $0 setup" items={[
+        ["Chat and writing", "ChatGPT free or Claude free — daily limits are generous for casual use"],
+        ["Research", "Perplexity free — cited answers, a few Pro searches daily"],
+        ["Inside Google apps", "Gemini free tier handles summaries and drafts in Gmail/Docs"],
+        ["Finding the right tool", "our free AI Finder matches tools to your task in three questions"],
+      ]} />
+      <p>
+        The upgrade signal is simple: you hit a rate limit twice in one week, or you realize a tool has become load-bearing for your income. Until then, keep the $20. If you&apos;re deciding between the two big chat models specifically, our <InternalLink href="/blog/chatgpt-vs-claude-2026">ChatGPT vs Claude comparison</InternalLink> goes deeper, and the <InternalLink href="/tools/ai-finder">AI Finder</InternalLink> sorts the wider field.
+      </p>
+
+      <AlertBox type="money" title="The two-subscription rule" body="Power users often run one chat model (Claude or ChatGPT) plus Perplexity for research — that pair genuinely doesn't overlap. Any other combination, name what the second subscription does that the first can't. If you pause longer than five seconds, cancel it. That's $240/year back." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The part nobody says out loud</h2>
+      <p>
+        These products converge. Every few months one launches a feature and the others ship their version within a quarter. The gap between them in 2026 is narrower than fans on either side admit, which means switching costs are low and loyalty buys you nothing. Subscribe monthly, never annually, and re-run the one-question test twice a year. The best AI subscription is a rental, not a marriage.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Which AI subscription is best in 2026?",
+          a: "It depends on your main use. Writers and coders tend to get the most from Claude Pro, researchers from Perplexity Pro, people living in Google Workspace from Gemini's paid tier, and generalists who want images, voice, and agents in one place from ChatGPT Plus. Most people only need one.",
+        },
+        {
+          q: "Is ChatGPT Plus still worth it in 2026?",
+          a: "For generalists, usually yes — it bundles strong models, image generation, voice, and agent features in one subscription. If you only chat occasionally, free tiers have become good enough that paying is optional.",
+        },
+        {
+          q: "Can I get by with free AI tools only?",
+          a: "Increasingly, yes. A stack of free tiers — ChatGPT or Claude free for chat, Perplexity free for research, Gemini free inside Google apps — covers casual use well. Pay when you hit limits daily or rely on one tool professionally.",
+        },
+        {
+          q: "Should I pay for two AI subscriptions?",
+          a: "Only if each earns its keep separately — the common power-user pair is one chat model plus Perplexity for research. If you can't name what the second one does that the first can't, cancel it.",
+        },
+      ]} />
+
+      <p>
+        One subscription, chosen by last week&apos;s actual usage, reviewed twice a year. Everything else is marketing.
+      </p>
+    </div>
+  ),
+  "best-side-hustles-for-students": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Student time doesn&apos;t work like job time. You&apos;re free at 2pm on a Tuesday, buried during finals, and any side hustle that ignores that rhythm dies by midterms. So this list is ranked for the schedule you actually have.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Eleven options, sorted by pay, flexibility, and one factor most lists skip: whether it builds your resume or just your coffee budget. Both are fine. Knowing which you&apos;re choosing is the point.
+      </p>
+
+      <HookBanner headline="Ranked inside" items={[
+        "The top tier: $15–50/hr and finals-week friendly",
+        "The resume builders that pay twice",
+        "Quick-cash options for broke weeks",
+        "The 10–15 hour rule that protects your GPA",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best side hustle for a student in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <strong>Tutoring</strong> is the strongest all-around pick: $15–50/hour, schedule-friendly, zero startup cost, and it strengthens your own understanding of the material. Online platforms mean you don&apos;t even need students on your campus.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-side-hustles-for-students.png"
+        alt="Best side hustles for students in 2026 that fit between classes"
+        caption="Free at 2pm Tuesday, dead during finals. Pick hustles built for that shape."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 1: High pay, high flexibility</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Tutoring ($15–50/hr).</strong> The subject you&apos;re good at is worth real money — STEM, languages, and test prep pay top of the range. Online platforms handle scheduling and payment; campus tutoring centers are the zero-effort entry. Full breakdown in our <InternalLink href="/blog/online-tutoring-side-hustle">tutoring side hustle guide</InternalLink>.</li>
+          <li><strong>Freelance skills ($15–60/hr).</strong> Writing, design, editing, video. Slow first month building samples, then it compounds — and unlike most student jobs, clients follow you after graduation. Start with our <InternalLink href="/blog/how-to-make-money-on-fiverr">Fiverr playbook</InternalLink>.</li>
+          <li><strong>AI content editing ($20–50/hr).</strong> Businesses drown in AI drafts and pay people who can make them readable. You already write essays; this is that skill, monetized. The <InternalLink href="/blog/ai-content-editor-side-hustle">full roadmap here</InternalLink>.</li>
+          <li><strong>User testing ($10–60/test).</strong> Companies pay for 15–30 minutes of you thinking aloud through their app. Irregular income, perfect for random free hours.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 2: Steady and simple</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" start={5} style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Campus jobs ($12–18/hr).</strong> Library and front-desk shifts often allow studying on the clock — effectively getting paid to do homework.</li>
+          <li><strong>Reselling ($50–300/month).</strong> Textbooks, dorm gear, thrift flips. Every semester end is a buying opportunity; every semester start, a selling one.</li>
+          <li><strong>Notes and study resources ($20–200/month).</strong> Where your university permits it, good notes and study guides sell. Check your school&apos;s academic policy first — seriously.</li>
+          <li><strong>Food delivery ($12–20/hr).</strong> Bike or scooter delivery near campus needs no car. Pure trade of time for money, zero resume value, instant start.</li>
+        </ol>
+      </div>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 3: Longer games</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" start={9} style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Content channel.</strong> A niche YouTube/TikTok about something you genuinely know. Months of nothing, then possibly your best-paying line on this list. Treat as a hobby that might pay, not income.</li>
+          <li><strong>Digital templates.</strong> Study planners, resume templates, budget sheets — build once, sell repeatedly. The <InternalLink href="/blog/sell-notion-templates">Notion template guide</InternalLink> maps this.</li>
+          <li><strong>Campus brand ambassador.</strong> Companies pay students with social reach. Modest money, decent perks, easy resume line.</li>
+        </ol>
+      </div>
+
+      <AlertBox type="warning" title="The 10–15 hour rule" body="Research on working students keeps landing in the same place: 10–15 hours a week is the sweet spot, and past 20 hours GPAs measurably drop. Your degree is the highest-paying project you're working on — a side hustle that damages it has negative ROI. Block finals weeks completely; any hustle that can't survive a two-week pause is the wrong hustle." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Quick comparison</h2>
+      <DataTable
+        headers={["Hustle", "Pay", "Resume value", "Finals-proof?"]}
+        rows={[
+          ["Tutoring", "$15–50/hr", "High", "Yes — pause anytime"],
+          ["Freelancing", "$15–60/hr", "High", "Mostly — manage deadlines"],
+          ["AI content editing", "$20–50/hr", "High", "Yes"],
+          ["Campus job", "$12–18/hr", "Medium", "Usually"],
+          ["Delivery", "$12–20/hr", "None", "Yes"],
+          ["Templates/content", "$0 then maybe a lot", "Medium-high", "Yes"],
+        ]}
+      />
+      <p>
+        Estimate your own numbers with the <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink> — and when applications season comes, the freelance work goes straight onto the resume you build with our <InternalLink href="/tools/resume-builder">free resume builder</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best side hustle for a student in 2026?",
+          a: "Tutoring is the strongest all-around pick: $15–50/hour, schedule-friendly, zero startup cost, and it strengthens your own understanding. Online tutoring platforms mean you don't even need students on your campus.",
+        },
+        {
+          q: "How many hours a week should a student work a side hustle?",
+          a: "Research on working students generally finds 10–15 hours weekly is the sweet spot — meaningful money without grade damage. Past 20 hours, GPAs measurably suffer. Treat finals weeks as blackout periods.",
+        },
+        {
+          q: "What side hustles can students do without a car?",
+          a: "Plenty: online tutoring, freelancing, campus jobs, selling notes where permitted, user testing, AI content editing, and reselling textbooks or dorm items online.",
+        },
+        {
+          q: "Do side hustles look good on a student resume?",
+          a: "The skill-based ones do. Freelance clients, a tutoring track record, or a small online business signal initiative and real-world skills — recruiters consistently rank demonstrated work above most club memberships.",
+        },
+      ]} />
+
+      <p>
+        Pick one from Tier 1, cap it at 15 hours, and let it quietly fund the degree that outearns all of it.
+      </p>
+    </div>
+  ),
+  "how-to-negotiate-salary": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The most expensive sentence in your career is &quot;that sounds great, I accept.&quot; Said too fast, it costs five figures — not once, but compounding through every raise and job change built on that base.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        And here&apos;s the absurd part: the person across the table expects you to negotiate. Most employers build room into first offers. Declining to use it isn&apos;t politeness; it&apos;s a donation. Scripts below.
+      </p>
+
+      <HookBanner headline="What you'll walk away with" items={[
+        "The 30-minute research step that does half the work",
+        "Word-for-word scripts: offer, counter, and the 'non-negotiable' wall",
+        "What to negotiate when salary truly is fixed",
+        "The raise conversation for your current job",
+        "The three mistakes that actually damage offers",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Should you always negotiate a job offer?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Almost always, politely. <strong>Most employers expect negotiation and build room into first offers</strong>, yet a large share of candidates accept immediately. A respectful, well-researched ask very rarely rescinds an offer; silence reliably costs money.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-negotiate-salary.png"
+        alt="How to negotiate salary in 2026 with scripts for offers and raises"
+        caption="They budgeted for this conversation. Have it."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 1: Thirty minutes of research</h2>
+      <p>
+        Negotiating without market data is just haggling. With it, you&apos;re quoting facts. Pull the salary range for your role and city from salary databases, Glassdoor, LinkedIn salary data, and — increasingly useful — pay ranges posted in job ads, which transparency laws now require in many places. You want three numbers: the market median, the top quartile, and your walk-away floor. Write them down before any call. Decisions made mid-conversation favor whoever prepared.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The scripts</h2>
+      <InfoBox title="Say it like this" items={[
+        ["When the offer lands", "'Thank you — I'm genuinely excited about this. I'd like a couple of days to review the full package. Can I come back to you Thursday?' (Never accept or counter in the moment.)"],
+        ["The counter", "'Based on market data for this role and my experience with X and Y, I was expecting something closer to $N. Is there flexibility to get there?' ($N = 10–20% above their number, defensible from your research.)"],
+        ["If they meet you partway", "'I appreciate you moving on this. If we can land at $M, I'm ready to sign this week.' (Give them a closing incentive.)"],
+        ["The silence", "After stating your number: stop talking. The urge to soften it — 'but I understand if...' — negotiates against yourself. Let the pause work."],
+      ]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>When they say the number is fixed</h2>
+      <p>
+        Sometimes it genuinely is — bands, budgets, internal equity. Base salary being locked doesn&apos;t end the negotiation; it redirects it. Signing bonus (one-time money is easier to approve than recurring), an extra week of vacation, remote days, a better title (which compounds into your next job), a guaranteed six-month review with written raise criteria, learning budget. Rank what you value and trade for that. Time, in particular, is wildly underpriced in these conversations.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Asking for a raise where you already work</h2>
+      <p>
+        Different game, same preparation. Build a one-page case: measurable wins since your last adjustment (money made, money saved, things shipped), market data for your role, and a specific number. Book a dedicated meeting — springing it inside a routine 1:1 frames it as an aside. If the answer is no, get specific: &quot;What would need to be true for a yes, and can we set a date to revisit?&quot; A no without criteria is a maybe that never matures; make them define the yes.
+      </p>
+
+      <AlertBox type="warning" title="The three real mistakes" body="1) Naming a number first when you're guessing — let them anchor if you haven't researched. 2) Bluffing a competing offer you don't have; it's checkable and fatal. 3) Negotiating hard, then accepting slowly — once you get your number, close fast and warmly. Everything else people fear ('they'll hate me', 'the offer will vanish') almost never happens to polite, prepared candidates." />
+
+      <p>
+        One more thing: know what the number is actually worth where you live. A $10K bump lands differently across states and tax situations — run it through the <InternalLink href="/tools/tax-calculator">tax calculator</InternalLink> before deciding what to fight for. And if the resume is what stands between you and the offer conversation, fix that first with the <InternalLink href="/blog/ai-resume-tips-beat-ats">ATS resume guide</InternalLink> and our <InternalLink href="/tools/resume-builder">free resume builder</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Should you always negotiate a job offer?",
+          a: "Almost always, politely. Most employers expect negotiation and build room into first offers, yet many candidates accept immediately. A respectful ask very rarely rescinds an offer; silence reliably costs money.",
+        },
+        {
+          q: "How much more should I ask for when negotiating salary?",
+          a: "A common, defensible range is 10–20% above the offer, anchored to market data for the role and location. The number matters less than the justification: comparable salaries, your specific skills, and competing interest if real.",
+        },
+        {
+          q: "What if the employer says the salary is non-negotiable?",
+          a: "Negotiate the rest: signing bonus, vacation days, remote flexibility, title, an early review with written raise criteria, learning budget. Companies often flex on total compensation when base is fixed.",
+        },
+        {
+          q: "How do I ask for a raise in my current job?",
+          a: "Build a one-page case: measurable wins, market data, and a specific number. Book a dedicated meeting, and if the answer is no, ask what specifically earns a yes and set a date to revisit.",
+        },
+      ]} />
+
+      <p>
+        Research for thirty minutes, ask once, hold the silence. The worst realistic outcome is the number you were about to accept anyway.
+      </p>
+    </div>
+  ),
+  "emergency-fund-how-much": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        &quot;Six months of expenses&quot; is the nutrition-label advice of personal finance: designed for an average person who doesn&apos;t exist. Your real emergency fund might be three months. It might be twelve. The difference is knowable in about ten minutes.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the actual math: how to size the fund to your life, where to keep it so it earns while it waits, and the order of operations when you&apos;re also staring at debt.
+      </p>
+
+      <HookBanner headline="The ten-minute version" items={[
+        "The risk factors that set YOUR number (not a slogan)",
+        "Essential expenses vs lifestyle spending — count the right one",
+        "Where to park it: earning, liquid, and away from temptation",
+        "Fund vs debt: the sequence that actually works",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How much emergency fund should I have?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Size it to risk: roughly <strong>3 months of essential expenses</strong> for dual-income households with stable jobs, <strong>6 months</strong> for single income or dependents, and <strong>9–12 months</strong> for freelancers, commission earners, or anyone in a volatile industry. Count essentials — housing, food, insurance, minimum payments — not your full lifestyle.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/emergency-fund-how-much.png"
+        alt="How much emergency fund you actually need in 2026, sized by risk"
+        caption="Three months or twelve — the answer is in your risk profile, not a rule of thumb."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Find your multiplier</h2>
+      <DataTable
+        headers={["Your situation", "Target", "Why"]}
+        rows={[
+          ["Two stable incomes, no dependents", "3 months", "Two paychecks rarely vanish together"],
+          ["Single stable income", "6 months", "One point of failure needs more runway"],
+          ["Dependents or a mortgage", "6+ months", "Fixed obligations don't pause with your job"],
+          ["Freelance / commission / seasonal", "9–12 months", "Income varies; the fund smooths the valleys"],
+          ["Volatile industry or visa-tied job", "9–12 months", "Job searches can run long; buffer buys calm decisions"],
+        ]}
+      />
+      <p>
+        Now the number you multiply: <strong>essential</strong> monthly spending. Rent or mortgage, utilities, groceries, insurance, transport, minimum debt payments. Not restaurants, not subscriptions you&apos;d cancel in week one of a crisis. For most people, essentials run 60–75% of normal spending — which shrinks the mountain considerably. Six months of essentials is a much friendlier target than six months of your current lifestyle. Not sure what your essentials total? A <InternalLink href="/blog/chatgpt-budgeting-guide">twenty-minute ChatGPT budgeting session</InternalLink> will sort your last three months of spending into exactly these buckets.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where to keep it</h2>
+      <p>
+        A high-yield savings account, full stop. It&apos;s liquid within a day, protected by deposit insurance, and earns real interest while it waits. The wrong places, and why: your checking account (you will spend it — friction protects savings), the stock market (it can be down 25% in exactly the month you lose your job; the fund&apos;s job is existing, not growing), and locked CDs for the core fund (penalties defeat the purpose, though a CD ladder works for the upper layers of a 12-month fund).
+      </p>
+      <p>
+        One structural trick that outperforms willpower: keep the fund at a <em>different bank</em> than your checking. The two-day transfer delay is a feature — long enough to stop impulse raids, short enough for real emergencies.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Emergency fund vs debt — the sequence</h2>
+      <div className="glass rounded-2xl p-6 my-4">
+        <ol className="list-decimal list-inside space-y-3 text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <li><strong>Starter fund first: $1,000–2,000.</strong> Without this buffer, the first car repair goes on the card and undoes your payoff progress. It&apos;s psychological armor as much as math.</li>
+          <li><strong>Then attack high-interest debt hard.</strong> Credit card interest outruns any savings rate; every extra dollar goes there. (Rebuilding credit at the same time? The <InternalLink href="/blog/how-to-build-credit-fast">credit guide</InternalLink> pairs with this step.)</li>
+          <li><strong>Then build the full fund</strong> to your multiplier from the table above.</li>
+          <li><strong>Then invest.</strong> With the floor in place, market money can actually stay in the market during bad months — which is the entire trick to compounding. See what that looks like with the <InternalLink href="/tools/investment-calculator">investment calculator</InternalLink>.</li>
+        </ol>
+      </div>
+
+      <AlertBox type="warning" title="What counts as an emergency (and what doesn't)" body="Job loss, medical bills, urgent home or car repair, emergency travel: yes. Holidays, sales, weddings, annual insurance premiums: no — those are predictable, and predictable expenses belong in sinking funds you save toward monthly. A fund that gets raided for 'almost emergencies' is a slow-motion checking account. (This is general information, not financial advice — your situation may warrant professional guidance.)" />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How much emergency fund should I have?",
+          a: "Size it to your risk: roughly 3 months of essential expenses for dual-income stable jobs, 6 months for single income or dependents, and 9–12 months for freelancers or volatile industries. Count essential expenses, not full lifestyle spending.",
+        },
+        {
+          q: "Where should I keep my emergency fund?",
+          a: "A high-yield savings account — liquid, protected, and earning meaningful interest. Not stocks (they can be down exactly when you need the money), not checking (you'll spend it), and not locked CDs for the core fund.",
+        },
+        {
+          q: "Should I build an emergency fund or pay off debt first?",
+          a: "Save a starter fund of $1,000–2,000 first, attack high-interest debt hard, then build the full fund. Without the starter buffer, the first surprise expense goes back on the card and undoes your progress.",
+        },
+        {
+          q: "What counts as a real emergency?",
+          a: "Job loss, medical bills, urgent home or car repairs, emergency travel. Not holidays, sales, or predictable annual costs — those belong in sinking funds you save toward monthly.",
+        },
+      ]} />
+
+      <p>
+        Ten minutes of math, one savings account at the right bank, automated monthly transfers. Boring — and it&apos;s the difference between a crisis and an inconvenience.
+      </p>
+    </div>
+  ),
+  "best-free-ai-photo-editors": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Ten years ago, removing a photobomber from a picture required Photoshop, a YouTube tutorial, and an evening of your life. Now it&apos;s one tap, free, on tools you might already have. The catch is knowing which free tool wins which job — because none of them wins all of them.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the job-by-job map for 2026: backgrounds, upscaling, object removal, retouching — what&apos;s genuinely free, what&apos;s a five-image teaser, and which tools never upload your photos at all.
+      </p>
+
+      <HookBanner headline="The map" items={[
+        "Best free tool for each editing job",
+        "Where free tiers quietly stop (resolution, watermarks, limits)",
+        "The privacy question: which tools process on-device",
+        "The fully-free open-source option most people miss",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best free AI photo editor in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          There&apos;s no single winner — free tools specialize. <strong>Canva&apos;s free tier</strong> covers general edits, dedicated removers handle background cutouts, <strong>Upscayl</strong> (fully free, open source, on-device) sharpens low-res images, and phone-native editors now do surprisingly good object removal.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-free-ai-photo-editors.png"
+        alt="Best free AI photo editors in 2026 for background removal, upscaling and retouching"
+        caption="One tap now does what an evening of Photoshop used to."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The job-by-job map</h2>
+      <DataTable
+        headers={["Job", "Best free option", "The free-tier catch"]}
+        rows={[
+          ["Remove background", "Dedicated web removers, Canva", "Full resolution often paywalled"],
+          ["Upscale / sharpen", "Upscayl (desktop, open source)", "None — genuinely free, needs a decent computer"],
+          ["Remove objects/people", "Phone-native editors (Pixel, iPhone, Samsung)", "Quality varies by scene complexity"],
+          ["Portrait retouch", "Phone editors, Canva free", "Heavy retouch features usually paid"],
+          ["General editing + design", "Canva free, Photopea (browser)", "Premium assets and some AI tools gated"],
+          ["Batch compression for web", "ClickWise Image Compressor", "None — free, browser-based, no upload"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The one most people miss: Upscayl</h2>
+      <p>
+        Blurry old photos, small images you need bigger, screenshots that look like soup — Upscayl handles all of it, free forever, because it&apos;s open source. It runs on your computer, which means two things: no upload of family photos to anyone&apos;s server, and no daily limit. The honest caveat applies to every AI upscaler: it reconstructs <em>plausible</em> detail rather than recovering real detail. Faces and text can come back subtly &quot;invented&quot; at high zoom — beautiful for viewing, wrong for evidence.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Check your phone before installing anything</h2>
+      <p>
+        The quiet winner of the last two years is the editor already in your gallery app. Recent Pixels, iPhones, and Samsungs erase objects, unblur shots, and relight portraits on-device — free, private, and no new account. For most casual fixes, your phone has already caught up to what web tools charge for. Test it on a photo with a stranger in the background before assuming you need anything else.
+      </p>
+
+      <AlertBox type="warning" title="The privacy line" body="Every web-based editor uploads your image to a server, and retention policies vary from 'deleted in an hour' to vague. For kids' photos, documents, and anything sensitive: use on-device tools only — phone editors, Upscayl, or desktop apps. The convenience gap between web and local closed years ago; the privacy gap didn't." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The workflow for web publishing</h2>
+      <p>
+        If you&apos;re editing images for a site or store: edit first, then compress — AI-edited PNGs come out heavy, and oversized images quietly wreck page speed. Our free <InternalLink href="/tools/image-compressor">image compressor</InternalLink> batch-processes in the browser without uploading anywhere. Generating images from scratch instead of editing photos? That&apos;s a different toolbox — covered in <InternalLink href="/blog/best-free-ai-image-generators">free AI image generators</InternalLink>. And for product shots headed to a <InternalLink href="/blog/print-on-demand-2026">print-on-demand store</InternalLink>, remember the mockup rule: edit the design, let the platform render the product.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best free AI photo editor in 2026?",
+          a: "No single winner — free tools specialize. Canva's free tier covers general edits, dedicated background removers handle cutouts, Upscayl (fully free, open source) sharpens low-res images, and phone-native editors do solid object removal.",
+        },
+        {
+          q: "How can I remove a photo background for free?",
+          a: "Dedicated background-removal tools and Canva's editor do it in one click on free tiers, usually at reduced resolution. For full-resolution results without paying, open-source options and phone gallery editors have caught up remarkably.",
+        },
+        {
+          q: "Can AI fix blurry photos for free?",
+          a: "Yes, within limits. Free AI upscalers can double or quadruple resolution convincingly. They reconstruct plausible detail rather than recover real detail, so faces and text can look slightly 'invented' at high zoom.",
+        },
+        {
+          q: "Are free AI photo editors safe for private photos?",
+          a: "Web tools upload your image to a server — read the retention policy before sending anything sensitive. For private photos, prefer on-device options: phone-native editors or open-source desktop tools like Upscayl.",
+        },
+      ]} />
+
+      <p>
+        Phone editor for quick fixes, Upscayl for rescues, Canva for design work, and the compressor before anything hits the web. Photoshop&apos;s fine too — you just don&apos;t need it anymore.
+      </p>
+    </div>
+  ),
   "i-let-ai-plan-my-week": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>

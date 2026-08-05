@@ -22,6 +22,286 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  {
+    slug: "which-ai-subscription-is-worth-it",
+    title: "ChatGPT Plus vs Claude Pro vs Gemini vs Perplexity: Which $20 Is Actually Worth It in 2026?",
+    metaTitle: "Which AI Subscription Is Worth It in 2026?",
+    primaryKeyword: "which ai subscription is worth it",
+    metaDescription:
+      "ChatGPT Plus, Claude Pro, Gemini Advanced, Perplexity Pro — all ~$20/month. Which AI subscription is worth it in 2026, by what you actually do all day.",
+    excerpt:
+      "Four AI subscriptions, all around $20 a month, all claiming to be essential. Most people need exactly one. Here's which one, decided by what you actually do all day — plus the free-tier setup that beats paying at all.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/which-ai-subscription-is-worth-it.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Subscriptions",
+      "ChatGPT Plus",
+      "Claude Pro",
+      "Gemini",
+      "Perplexity",
+      "AI Tools 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Which AI subscription is best in 2026?",
+        answer:
+          "It depends on your main use. Writers and coders tend to get the most from Claude Pro, researchers from Perplexity Pro, people living in Google Workspace from Gemini's paid tier, and generalists who want images, voice, and agents in one place from ChatGPT Plus. Most people only need one.",
+      },
+      {
+        question: "Is ChatGPT Plus still worth it in 2026?",
+        answer:
+          "For generalists, usually yes — it bundles strong models, image generation, voice, and agent features in one subscription. If you only chat occasionally, the free tiers across providers have become good enough that paying is optional.",
+      },
+      {
+        question: "Can I get by with free AI tools only?",
+        answer:
+          "Increasingly, yes. A stack of free tiers — ChatGPT or Claude free for chat, Perplexity free for research, Gemini free inside Google apps — covers casual use well. Paying makes sense when you hit limits daily or rely on one tool professionally.",
+      },
+      {
+        question: "Should I pay for two AI subscriptions?",
+        answer:
+          "Only if each earns its keep separately — a common power-user pair is one chat model (Claude or ChatGPT) plus Perplexity for research. If you can't name what the second one does that the first can't, cancel it.",
+      },
+    ],
+    seoKeywords: [
+      "chatgpt plus vs claude pro",
+      "best ai subscription 2026",
+      "is chatgpt plus worth it",
+      "claude pro worth it",
+      "perplexity pro review",
+      "gemini advanced worth it",
+      "ai subscription comparison",
+    ],
+  },
+  {
+    slug: "best-side-hustles-for-students",
+    title: "11 Best Side Hustles for Students in 2026 (Between Classes, No Car Needed)",
+    metaTitle: "11 Best Side Hustles for Students in 2026",
+    primaryKeyword: "side hustles for students",
+    metaDescription:
+      "The best side hustles for students in 2026: what pays $15-50/hr, fits between classes, and builds your resume — ranked by pay, flexibility, and career value.",
+    excerpt:
+      "Student time is weird — free at 2pm Tuesday, slammed during finals. These 11 side hustles fit that reality, ranked by hourly pay, schedule flexibility, and whether they build your resume or just your coffee budget.",
+    category: "Make Money",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/best-side-hustles-for-students.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Student Side Hustles",
+      "Make Money in College",
+      "Side Hustle",
+      "Students",
+      "Tutoring",
+      "Freelancing",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best side hustle for a student in 2026?",
+        answer:
+          "Tutoring is the strongest all-around pick: $15–50/hour, schedule-friendly, zero startup cost, and it strengthens your own understanding. Online tutoring platforms mean you don't even need students on your campus.",
+      },
+      {
+        question: "How many hours a week should a student work a side hustle?",
+        answer:
+          "Research on working students generally finds 10–15 hours weekly is the sweet spot — meaningful money without grade damage. Past 20 hours, GPAs measurably suffer. Treat finals weeks as blackout periods and pick hustles that allow that.",
+      },
+      {
+        question: "What side hustles can students do without a car?",
+        answer:
+          "Plenty: online tutoring, freelancing (writing, design, editing), campus jobs, selling notes and study resources where permitted, user testing, AI content editing, and reselling textbooks or dorm items online.",
+      },
+      {
+        question: "Do side hustles look good on a student resume?",
+        answer:
+          "The skill-based ones do. Freelance clients, a tutoring track record, or a small online business signal initiative and real-world skills. Recruiters consistently rank demonstrated work above most club memberships.",
+      },
+    ],
+    seoKeywords: [
+      "make money as a student",
+      "college side hustles 2026",
+      "online jobs for students",
+      "student jobs no experience",
+      "tutoring side hustle",
+      "side hustles between classes",
+      "make money in college online",
+    ],
+  },
+  {
+    slug: "how-to-negotiate-salary",
+    title: "How to Negotiate Salary in 2026 (Scripts Included — Most People Leave $5K+ on the Table)",
+    metaTitle: "How to Negotiate Salary in 2026 (With Scripts)",
+    primaryKeyword: "how to negotiate salary",
+    metaDescription:
+      "How to negotiate salary in 2026: exact scripts for offers and raises, the research step most people skip, and the mistakes that cost $5,000+ per job change.",
+    excerpt:
+      "Most people accept the first number, and the first number is almost never the best number. Here's how salary negotiation actually works in 2026 — research, scripts, timing, and the mistakes that cost five figures over a career.",
+    category: "Make Money",
+    readTime: "12 min",
+    date: "Aug 6, 2026",
+    image: "/images/how-to-negotiate-salary.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Salary Negotiation",
+      "Career",
+      "Job Offers",
+      "Raises",
+      "Career Growth",
+      "Money Tips",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Should you always negotiate a job offer?",
+        answer:
+          "Almost always, politely. Surveys consistently show most employers expect negotiation and build room into first offers, yet a large share of candidates — especially early-career — accept immediately. A respectful ask very rarely rescinds an offer; silence reliably costs money.",
+      },
+      {
+        question: "How much more should I ask for when negotiating salary?",
+        answer:
+          "A common, defensible range is 10–20% above the offer, anchored to market data for the role and your location. The number matters less than the justification: comparable salaries, your specific skills, and competing interest if you have it.",
+      },
+      {
+        question: "What if the employer says the salary is non-negotiable?",
+        answer:
+          "Then negotiate the rest: signing bonus, extra vacation days, remote flexibility, title, early review with raise criteria, learning budget. Total compensation has more moving parts than base salary, and companies often flex there when base is fixed.",
+      },
+      {
+        question: "How do I ask for a raise in my current job?",
+        answer:
+          "Build a one-page case: your measurable wins since your last adjustment, market data for your role, and a specific number. Book a dedicated meeting — don't ambush a 1:1 — and if the answer is no, ask what specifically earns a yes and a date to revisit.",
+      },
+    ],
+    seoKeywords: [
+      "salary negotiation scripts",
+      "negotiate job offer 2026",
+      "how to ask for a raise",
+      "counter offer salary",
+      "salary negotiation email",
+      "negotiate salary over email or phone",
+      "what to say when negotiating salary",
+    ],
+  },
+  {
+    slug: "emergency-fund-how-much",
+    title: "How Much Emergency Fund Do You Actually Need in 2026? (Not the Number You've Heard)",
+    metaTitle: "Emergency Fund: How Much Do You Need in 2026?",
+    primaryKeyword: "how much emergency fund",
+    metaDescription:
+      "How much emergency fund do you need in 2026? Why '6 months of expenses' is wrong for many people, how to size yours by risk, and where to keep it earning.",
+    excerpt:
+      "'Six months of expenses' is advice designed for nobody in particular. Your real number depends on income stability, dependents, and insurance — and could be three months or twelve. Here's how to calculate yours, and where to park it.",
+    category: "Finance",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/emergency-fund-how-much.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Emergency Fund",
+      "Personal Finance",
+      "Savings",
+      "Money Management",
+      "Finance 2026",
+      "Financial Planning",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "How much emergency fund should I have?",
+        answer:
+          "Size it to your risk, not a slogan: roughly 3 months of essential expenses for dual-income stable jobs, 6 months for single income or dependents, and 9–12 months for freelancers, commission earners, or volatile industries. Count essential expenses, not your full lifestyle spending.",
+      },
+      {
+        question: "Where should I keep my emergency fund?",
+        answer:
+          "A high-yield savings account — liquid, protected, and earning meaningful interest. Not stocks (they can be down exactly when you need the money), not your checking account (you'll spend it), and not locked CDs for the core fund.",
+      },
+      {
+        question: "Should I build an emergency fund or pay off debt first?",
+        answer:
+          "A common, sensible sequence: save a starter fund of $1,000–2,000 first, attack high-interest debt hard, then build the full fund. Without the starter buffer, the first surprise expense goes straight back on the card and undoes your progress.",
+      },
+      {
+        question: "What counts as a real emergency?",
+        answer:
+          "Job loss, medical bills, urgent home or car repairs, emergency travel. Not holidays, not sales, not predictable annual costs like insurance or gifts — those belong in sinking funds you save toward monthly.",
+      },
+    ],
+    seoKeywords: [
+      "emergency fund calculator",
+      "3 or 6 months emergency fund",
+      "emergency fund for freelancers",
+      "where to keep emergency fund",
+      "high yield savings emergency fund",
+      "emergency fund vs debt payoff",
+      "how to build emergency fund fast",
+    ],
+  },
+  {
+    slug: "best-free-ai-photo-editors",
+    title: "Best Free AI Photo Editors in 2026: Remove Backgrounds, Upscale, Retouch (No Photoshop)",
+    metaTitle: "Best Free AI Photo Editors 2026 (No Photoshop)",
+    primaryKeyword: "best free ai photo editors",
+    metaDescription:
+      "The best free AI photo editors in 2026: background removal, upscaling, object cleanup, and retouching — what each free tier really allows, no Photoshop needed.",
+    excerpt:
+      "You no longer need Photoshop or the skills to use it. Free AI tools now remove backgrounds, upscale blurry shots, and erase photobombers in seconds. Here's which free tool wins each job, and where the free tiers quietly stop.",
+    category: "AI & Tech",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/best-free-ai-photo-editors.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Photo Editing",
+      "Free AI Tools",
+      "Background Removal",
+      "Photo Upscaling",
+      "Image Editing",
+      "AI Tools 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best free AI photo editor in 2026?",
+        answer:
+          "There's no single winner — free tools specialize. Canva's free tier covers general edits, dedicated background removers handle cutouts, upscalers like Upscayl (fully free, open source) sharpen low-res images, and phone-native editors now do solid object removal.",
+      },
+      {
+        question: "How can I remove a photo background for free?",
+        answer:
+          "Dedicated background-removal tools and Canva's editor do this in one click on free tiers, usually at reduced resolution. For full-resolution results without paying, open-source options and phone gallery editors have caught up remarkably.",
+      },
+      {
+        question: "Can AI fix blurry photos for free?",
+        answer:
+          "Yes, within limits. Free AI upscalers can double or quadruple resolution and sharpen soft images convincingly. They reconstruct plausible detail rather than recover real detail, so faces and text can look slightly 'invented' at high zoom.",
+      },
+      {
+        question: "Are free AI photo editors safe for private photos?",
+        answer:
+          "Web tools upload your image to a server — read the retention policy before sending anything sensitive. For private photos, prefer on-device options: phone-native editors or open-source desktop tools like Upscayl process locally.",
+      },
+    ],
+    seoKeywords: [
+      "free ai photo editor online",
+      "remove background free",
+      "ai image upscaler free",
+      "ai photo retouch free",
+      "photoshop alternatives free",
+      "ai object removal photo",
+      "fix blurry photos free",
+    ],
+  },
 {
   slug: "i-let-ai-plan-my-week",
   title: "I Let an AI Agent Plan My Week for a Month — Here's What Happened",
