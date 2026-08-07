@@ -23,6 +23,401 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "freelance-portfolio-no-experience",
+    title: "How to Build a Freelance Portfolio With Zero Experience (The Weekend Plan)",
+    metaTitle: "Freelance Portfolio With No Experience",
+    primaryKeyword: "freelance portfolio with no experience",
+    metaDescription: "Build a freelance portfolio with no experience in one weekend: spec work, before-and-afters, one-page case studies, and what clients actually check first.",
+    excerpt: "Nobody hires you without a portfolio, and nobody gives you work to put in one. Here's how to break that loop in a single weekend with spec work clients actually respect.",
+    category: "Make Money",
+    readTime: "11 min",
+    date: "Aug 5, 2026",
+    image: "/images/freelance-portfolio-no-experience.png",
+    trending: true,
+    featured: false,
+    tags: ["Freelancing", "Portfolio", "Make Money Online", "Side Hustle", "Clients", "Beginners"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      { question: "Can I really build a freelance portfolio with no clients?", answer: "Yes. Spec work, redesigns of real products, and self-initiated projects are accepted by most clients as proof of skill. What matters is that the work solves a realistic problem and you explain your thinking, not whether someone paid you for it." },
+      { question: "How many portfolio pieces do I need to start freelancing?", answer: "Three strong pieces in one niche beat ten scattered ones. Clients typically look at two or three samples before deciding, so depth and relevance matter far more than volume." },
+      { question: "Should I label spec work as spec work?", answer: "Yes, always. Write 'concept project' or 'self-initiated redesign' clearly on the piece. Clients don't mind spec work, but they will drop you instantly if they feel misled about who it was for." },
+      { question: "Do I need a portfolio website or is a PDF enough?", answer: "A simple one-page site or a clean Notion page is enough to start. Clients care about loading it in under five seconds and seeing relevant work immediately. A fancy custom site can wait until you have paying clients." },
+    ],
+    seoKeywords: ["freelance portfolio with no experience", "how to build a freelance portfolio", "spec work portfolio", "freelance portfolio examples", "portfolio for beginners", "first freelance clients", "freelance case study"],
+  },
+  {
+    slug: "how-to-sell-on-etsy",
+    title: "How to Start Selling on Etsy in 2026 (What New Sellers Get Wrong)",
+    metaTitle: "How to Sell on Etsy in 2026: Honest Guide",
+    primaryKeyword: "how to sell on etsy",
+    metaDescription: "Learn how to sell on Etsy in 2026: the real fee math, digital vs physical vs print on demand, listing SEO, and why your first 40 listings matter most.",
+    excerpt: "Etsy isn't dead, but the easy era is. Here's the actual fee math, which product type fits you, and the first-40-listings strategy that separates shops that sell from shops that sit.",
+    category: "Make Money",
+    readTime: "12 min",
+    date: "Aug 6, 2026",
+    image: "/images/how-to-sell-on-etsy.png",
+    trending: true,
+    featured: false,
+    tags: ["Etsy", "E-commerce", "Digital Products", "Print on Demand", "Side Hustle", "Online Selling"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      { question: "How much does it actually cost to sell on Etsy?", answer: "Expect roughly 20 to 25 percent of your sale price to go to Etsy once you add the listing fee, the 6.5 percent transaction fee, payment processing of about 3 percent plus a fixed charge, and optional Offsite Ads at 12 to 15 percent. Price with that number in mind from day one." },
+      { question: "Is Etsy too saturated to start in 2026?", answer: "The broad categories are saturated; specific niches are not. Generic mugs and wall art are brutally competitive, but tightly targeted products for a specific audience still get found. Saturation punishes vague shops, not focused ones." },
+      { question: "Are digital products or physical products better for Etsy beginners?", answer: "Digital products are the easier start: no inventory, no shipping, and margins near 100 percent after fees. Physical and print-on-demand products can earn more per order but add cost, logistics, and customer service overhead." },
+      { question: "How many listings do I need before Etsy sales start?", answer: "Most successful new shops treat the first 40 listings as their real launch, not the first 5. More listings mean more search entry points and more data on what buyers actually click. Very few shops find consistent sales with under 10 listings." },
+    ],
+    seoKeywords: ["how to sell on etsy", "selling on etsy for beginners", "etsy fees 2026", "etsy digital products", "etsy print on demand", "etsy seo tips", "start an etsy shop"],
+  },
+  {
+    slug: "index-funds-for-beginners",
+    title: "Index Funds for Beginners: The 20-Minute Guide That's Actually Enough",
+    metaTitle: "Index Funds for Beginners: 20-Minute Guide",
+    primaryKeyword: "index funds for beginners",
+    metaDescription: "Index funds for beginners in 20 minutes: what they are, why low fees beat stock picking, expense ratios, dollar-cost averaging, and the myths to ignore.",
+    excerpt: "You don't need to understand the stock market to invest in it sensibly. This is the 20-minute version of index funds: what they are, why fees decide everything, and the myths that keep people out.",
+    category: "Finance",
+    readTime: "10 min",
+    date: "Aug 5, 2026",
+    image: "/images/index-funds-for-beginners.png",
+    trending: true,
+    featured: false,
+    tags: ["Investing", "Index Funds", "Personal Finance", "Beginners", "Retirement", "Wealth Building"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      { question: "What is an index fund in simple terms?", answer: "An index fund is a single investment that buys a small slice of hundreds or thousands of companies at once, following a list called an index. Instead of betting on one company, you own a piece of the whole market for a very low fee." },
+      { question: "Why do index funds beat most stock pickers?", answer: "Long-running research consistently shows that the large majority of professional fund managers fail to beat their benchmark index over 10 to 15 year periods, mostly because of fees and trading costs. If most professionals can't beat the index, buying the index is the rational default." },
+      { question: "How much money do I need to start investing in index funds?", answer: "Many brokerages now allow fractional investing, so you can start with as little as 10 to 50 dollars. The starting amount matters far less than consistency; investing a fixed amount every month is what builds the habit and the balance." },
+      { question: "What is a good expense ratio for an index fund?", answer: "Broad market index funds commonly charge between 0.03 and 0.20 percent per year. Anything under about 0.15 percent is competitive; anything near 1 percent is expensive and quietly eats a large share of your lifetime returns." },
+    ],
+    seoKeywords: ["index funds for beginners", "what is an index fund", "expense ratio explained", "dollar cost averaging", "index fund vs stock picking", "how to start investing", "passive investing guide"],
+  },
+  {
+    slug: "best-budgeting-methods",
+    title: "The 5 Big Budgeting Methods Compared: Which One Sticks?",
+    metaTitle: "Best Budgeting Methods Compared (2026)",
+    primaryKeyword: "best budgeting methods",
+    metaDescription: "The best budgeting methods compared: 50/30/20, zero-based, cash envelopes, pay-yourself-first, and no-budget tracking, plus which one actually fits you.",
+    excerpt: "Most budgets fail in under two months, and it's rarely a discipline problem. It's a fit problem. Here are the five big budgeting methods, who each suits, and how to pick one that survives real life.",
+    category: "Finance",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/best-budgeting-methods.png",
+    trending: true,
+    featured: false,
+    tags: ["Budgeting", "Personal Finance", "Money Management", "Saving Money", "50/30/20", "Zero-Based Budget"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      { question: "What is the easiest budgeting method for beginners?", answer: "The 50/30/20 rule is the easiest starting point: 50 percent of take-home pay to needs, 30 percent to wants, 20 percent to savings and debt. It only requires three categories, so it works even if you hate tracking." },
+      { question: "Why do most budgets fail?", answer: "Budgets usually fail because they're too detailed for the person using them, ignore irregular expenses like car repairs and gifts, or assume a perfect month that never happens. Picking a simpler method almost always works better than trying harder at a complicated one." },
+      { question: "Is zero-based budgeting worth the effort?", answer: "If you have irregular income, tight margins, or a specific debt payoff goal, yes; giving every dollar a job surfaces waste fast. If your finances are stable and you already save consistently, the 30 to 60 minutes a month it takes may not buy you much." },
+      { question: "Does cash envelope budgeting still work in a card-based world?", answer: "Yes, and it works precisely because cash is annoying. Handing over physical money creates more spending friction than tapping a card, which is why envelope users often cut discretionary spending noticeably. Digital envelope features in budgeting apps copy the idea for card spenders." },
+    ],
+    seoKeywords: ["best budgeting methods", "50/30/20 rule", "zero based budgeting", "cash envelope system", "pay yourself first", "how to budget money", "budgeting for beginners"],
+  },
+  {
+    slug: "morning-routine-science",
+    title: "What Science Actually Says About Morning Routines (Skip the 5am Club)",
+    metaTitle: "Morning Routine Science: What Actually Works",
+    primaryKeyword: "morning routine science",
+    metaDescription: "Morning routine science without the hype: light exposure, consistent wake times, caffeine timing, and a realistic 20-minute routine that beats the 5am club.",
+    excerpt: "The 5am cold-plunge routine is theater. The research points to four boring levers: light, consistency, caffeine timing, and movement. Here's the evidence, plus a 20-minute version that fits real life.",
+    category: "Health",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/morning-routine-science.png",
+    trending: true,
+    featured: false,
+    tags: ["Morning Routine", "Sleep", "Health", "Productivity", "Circadian Rhythm", "Habits"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      { question: "Is waking up at 5am actually better for you?", answer: "No, not inherently. Research on chronotypes shows people have genetically influenced sleep timing, and forcing an early wake against your body clock mostly produces sleep deprivation. What matters is a consistent wake time with enough total sleep, not an early one." },
+      { question: "Why does morning light exposure matter so much?", answer: "Bright light shortly after waking is the strongest signal that sets your circadian clock, which controls alertness, mood, and when you feel sleepy at night. Outdoor light is roughly 10 to 100 times brighter than indoor lighting, so even 5 to 10 minutes outside helps." },
+      { question: "Should I delay my morning coffee by 90 minutes?", answer: "The evidence for a strict 90-minute delay is thin. What's better supported is avoiding caffeine within about 8 to 10 hours of bedtime and not using coffee to mask chronic sleep deprivation. If your sleep is solid, coffee soon after waking is fine." },
+      { question: "How long should a morning routine be?", answer: "There's no evidence that longer routines produce better outcomes. The high-impact elements, light exposure, some movement, water, and a consistent wake time, fit comfortably in 15 to 20 minutes. Consistency across weeks beats an elaborate routine you abandon." },
+    ],
+    seoKeywords: ["morning routine science", "best morning routine", "morning light exposure", "consistent wake time", "caffeine timing morning", "5am club myth", "healthy morning habits"],
+  },
+  {
+    slug: "should-you-learn-to-code",
+    title: "Should You Still Learn to Code in 2026? (Yes — But Not the Way You Think)",
+    metaTitle: "Should You Learn to Code in 2026? Honest Answer",
+    primaryKeyword: "should you learn to code",
+    metaDescription:
+      "Should you learn to code in 2026 when AI writes half of it? Yes — but the valuable skill changed. What to learn now, what to skip, and who shouldn't bother.",
+    excerpt:
+      "AI writes nearly half of all new code now, and people keep asking if learning to code is pointless. It isn't — but the valuable part moved. Here's what's actually worth learning in 2026, and what you can skip.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 5, 2026",
+    image: "/images/should-you-learn-to-code.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Learn to Code",
+      "AI Coding",
+      "Programming",
+      "Career Advice",
+      "Vibe Coding",
+      "Tech Careers 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Is learning to code still worth it in 2026?",
+        answer:
+          "Yes, but the payoff shifted. Typing syntax from memory is worth less; reading code, reviewing AI output, designing systems, and debugging are worth more. People who can specify and verify software beat people who can only generate it.",
+      },
+      {
+        question: "Will AI replace programmers?",
+        answer:
+          "AI replaced a lot of typing, not the job. Around 46% of new code is AI-generated in 2026, yet demand stayed strong for people who can review, architect, and take responsibility for software. Junior roles changed the most; judgment roles grew.",
+      },
+      {
+        question: "What programming language should a beginner learn in 2026?",
+        answer:
+          "Python for general purposes and data work, JavaScript/TypeScript for the web. The language matters less than it used to — concepts transfer, and AI handles syntax. Pick one, build real things, and learn to read code critically.",
+      },
+      {
+        question: "Can I just vibe code instead of learning to code?",
+        answer:
+          "For prototypes and personal tools, yes. But unreviewed AI code carries about 1.7x more major issues than human-written code, so anything touching real users, data, or money needs someone who can actually read what was generated. That someone is worth paying.",
+      },
+    ],
+    seoKeywords: [
+      "is coding still worth learning",
+      "learn programming 2026",
+      "will ai replace programmers",
+      "coding vs ai",
+      "best language to learn 2026",
+      "coding career 2026",
+      "learn to code beginner",
+    ],
+  },
+  {
+    slug: "how-llms-actually-work",
+    title: "How LLMs Actually Work — Explained for Smart People Who Are Busy",
+    metaTitle: "How LLMs Work: Plain-English Guide (2026)",
+    primaryKeyword: "how llms work",
+    metaDescription:
+      "How LLMs actually work, in plain English: tokens, next-word prediction, training vs inference, why AI hallucinates, and why it's weirdly bad at math. No equations.",
+    excerpt:
+      "You use LLMs daily and probably couldn't explain what one does. Fifteen minutes fixes that: tokens, next-word prediction, why hallucinations aren't bugs, and why a system that passes law exams can't count letters. No equations.",
+    category: "AI & Tech",
+    readTime: "12 min",
+    date: "Aug 5, 2026",
+    image: "/images/how-llms-actually-work.png",
+    trending: true,
+    featured: true,
+    tags: [
+      "LLM",
+      "How AI Works",
+      "ChatGPT",
+      "AI Explained",
+      "Machine Learning",
+      "AI Basics",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "How does an LLM actually work?",
+        answer:
+          "An LLM is a system trained on enormous amounts of text to predict the next token (word fragment) given everything before it. Repeat that prediction over and over and you get sentences. Everything impressive — reasoning, code, essays — emerges from that one trick at massive scale.",
+      },
+      {
+        question: "Why do LLMs hallucinate?",
+        answer:
+          "Because they generate the most plausible continuation, not the verified truth. When the model lacks solid training signal for a fact, the statistically likely answer can be a confident invention. Hallucination is the same mechanism as fluency — not a separate bug.",
+      },
+      {
+        question: "Why are LLMs bad at math and counting?",
+        answer:
+          "They see tokens, not digits or letters, and they predict rather than calculate. Asking an LLM to multiply large numbers is asking it to remember what similar multiplications looked like in text. Modern tools fix this by letting the model call an actual calculator or code.",
+      },
+      {
+        question: "What's the difference between training and inference?",
+        answer:
+          "Training is the months-long, enormously expensive process of adjusting billions of parameters against training data. Inference is what happens when you chat: the frozen model just predicts tokens. Your conversations don't retrain the model in real time.",
+      },
+    ],
+    seoKeywords: [
+      "how do llms work explained",
+      "what is a large language model",
+      "why does ai hallucinate",
+      "llm tokens explained",
+      "how chatgpt works simple",
+      "llm training vs inference",
+      "ai explained plain english",
+    ],
+  },
+  {
+    slug: "what-is-agi-how-close",
+    title: "What Is AGI — and How Close Are We, Really? (An Honest 2026 Answer)",
+    metaTitle: "What Is AGI & How Close Are We in 2026?",
+    primaryKeyword: "what is agi",
+    metaDescription:
+      "What is AGI, and how close are we in 2026? What today's AI genuinely can and can't do, why expert timelines disagree by decades, and what it means for you.",
+    excerpt:
+      "Depending on who you ask, AGI arrives in two years, twenty, or never — and they're all looking at the same models. Here's what AGI actually means, what today's AI can and can't do, and the honest read between the hype and the dismissal.",
+    category: "AI & Tech",
+    readTime: "12 min",
+    date: "Aug 6, 2026",
+    image: "/images/what-is-agi-how-close.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AGI",
+      "Artificial General Intelligence",
+      "AI Future",
+      "AI Trends 2026",
+      "Superintelligence",
+      "AI Explained",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is AGI in simple terms?",
+        answer:
+          "AGI — artificial general intelligence — usually means AI that can learn and perform any intellectual task a human can, across domains, without being specifically built for each one. The catch: there's no agreed test, and definitions vary enough that people arguing about AGI timelines are often arguing about definitions.",
+      },
+      {
+        question: "How close are we to AGI in 2026?",
+        answer:
+          "Honest answer: nobody knows, and the expert range is enormous — some leading researchers say within a decade, others say fundamental pieces are still missing entirely. Today's systems are superhuman in narrow ways and strangely brittle in general ways, which is exactly why forecasts disagree.",
+      },
+      {
+        question: "What can today's AI still not do?",
+        answer:
+          "Reliably know when it's wrong, learn continuously from experience like humans do, maintain goals over long unsupervised horizons, and handle genuinely novel physical-world situations. Impressive benchmark scores coexist with failures a child wouldn't make.",
+      },
+      {
+        question: "Should I change my career plans because of AGI?",
+        answer:
+          "Plan for the AI that exists, not the AI that's prophesied. Current systems already reshape work — that's worth adapting to now. Skills that compound regardless: judgment, domain expertise, and fluency at directing AI tools.",
+      },
+    ],
+    seoKeywords: [
+      "agi meaning",
+      "how close is agi",
+      "agi timeline predictions",
+      "agi vs ai difference",
+      "artificial general intelligence explained",
+      "will agi happen",
+      "agi 2026",
+    ],
+  },
+  {
+    slug: "how-to-start-freelancing",
+    title: "How to Start Freelancing in 2026: From Zero to First Paying Client",
+    metaTitle: "How to Start Freelancing in 2026 (Zero to Client)",
+    primaryKeyword: "how to start freelancing",
+    metaDescription:
+      "How to start freelancing in 2026: pick a sellable skill, position it, choose platforms vs direct outreach, price your first work, and land a client in 30 days.",
+    excerpt:
+      "Freelancing has never been easier to start or harder to be mediocre at. Here's the from-zero path for 2026: choosing a skill people pay for, pricing without underselling, and a 30-day plan that ends with an invoice.",
+    category: "Make Money",
+    readTime: "12 min",
+    date: "Aug 5, 2026",
+    image: "/images/how-to-start-freelancing.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Freelancing",
+      "Start Freelancing",
+      "Make Money Online",
+      "Side Hustle",
+      "Upwork",
+      "Fiverr",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "How do I start freelancing with no experience?",
+        answer:
+          "Pick one narrow service, create 2-3 spec samples that prove you can do it, and start where money already flows: platforms like Upwork and Fiverr, or direct outreach to businesses you can concretely help. Reviews and referrals replace 'experience' within a few months.",
+      },
+      {
+        question: "What freelance skills are most in demand in 2026?",
+        answer:
+          "AI-adjacent services lead: editing and humanizing AI content, automation setup, short-form video editing, and web development. Classic evergreen skills — copywriting, design, bookkeeping — still sell when niched to a specific industry.",
+      },
+      {
+        question: "How much should a beginner freelancer charge?",
+        answer:
+          "Start around 60-70% of the market rate for your service to win first reviews, then raise prices every few completed jobs. Underpricing forever attracts the worst clients; the goal of low early rates is speed to proof, not a permanent identity.",
+      },
+      {
+        question: "Freelance platforms or direct outreach — which is better?",
+        answer:
+          "Platforms hold the money and bring buyers, at 10-20% fees — best for validation and first clients. Direct outreach pays better long-term but needs proof to show. Most successful freelancers start on platforms and shift direct as their portfolio grows.",
+      },
+    ],
+    seoKeywords: [
+      "start freelancing no experience",
+      "freelancing for beginners 2026",
+      "first freelance client",
+      "freelance skills in demand",
+      "how much to charge freelancing",
+      "freelancing side hustle",
+      "become a freelancer",
+    ],
+  },
+  {
+    slug: "make-money-writing-online",
+    title: "How to Make Money Writing Online in 2026 (Yes, Even Though AI Writes Too)",
+    metaTitle: "Make Money Writing Online in 2026 (AI Era)",
+    primaryKeyword: "make money writing online",
+    metaDescription:
+      "How to make money writing online in 2026: the writing work that survived AI and pays more — editing, expertise writing, email copy — with realistic rates and where to find it.",
+    excerpt:
+      "AI was supposed to kill paid writing. Instead it killed cheap generic writing and raised the price of everything it can't do. Here's the writing work that pays in 2026, the realistic rates, and where the clients actually are.",
+    category: "Make Money",
+    readTime: "12 min",
+    date: "Aug 6, 2026",
+    image: "/images/make-money-writing-online.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Freelance Writing",
+      "Make Money Writing",
+      "Content Writing",
+      "Copywriting",
+      "AI Writing",
+      "Writing Jobs 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Can you still make money writing online in 2026?",
+        answer:
+          "Yes — but not selling generic articles, which AI commoditized to near zero. What pays now: editing AI drafts into publishable work, writing grounded in real expertise or reporting, conversion copy tied to revenue, and email/newsletter writing with a voice.",
+      },
+      {
+        question: "How much do online writers make in 2026?",
+        answer:
+          "Generic content mill work collapsed to pennies, but the surviving tiers pay well: AI content editing runs $30-75/hour, specialist B2B writing $300-1,500 per article, email and conversion copywriting often more because it's measured in revenue, not words.",
+      },
+      {
+        question: "Where do I find online writing work?",
+        answer:
+          "Upwork and freelance platforms for volume, direct pitches to niche companies and agencies for better rates, and building a small public portfolio (a newsletter or blog) that makes clients come to you. Specialists get found; generalists have to hunt.",
+      },
+      {
+        question: "Should writers use AI tools?",
+        answer:
+          "Openly and skillfully, yes — clients now assume AI is in the workflow and pay for the judgment layered on top. The winning stack is AI for drafts and research, you for structure, voice, facts, and the parts a model can't know.",
+      },
+    ],
+    seoKeywords: [
+      "freelance writing 2026",
+      "get paid to write online",
+      "writing jobs from home",
+      "copywriting rates 2026",
+      "ai content editing jobs",
+      "newsletter writing income",
+      "b2b writing rates",
+    ],
+  },
+  {
     slug: "which-ai-subscription-is-worth-it",
     title: "ChatGPT Plus vs Claude Pro vs Gemini vs Perplexity: Which $20 Is Actually Worth It in 2026?",
     metaTitle: "Which AI Subscription Is Worth It in 2026?",

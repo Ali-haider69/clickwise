@@ -156,6 +156,659 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "freelance-portfolio-no-experience": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Every beginner freelancer faces the same rigged puzzle: clients want to see work, and you have no work to show because no client will hire you.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the secret nobody says out loud: clients don&apos;t care if the work in your portfolio was paid. They care if it&apos;s good. That loophole is big enough to drive a career through.
+      </p>
+      <HookBanner headline="What you'll walk away with" items={["Why spec work counts (and how to label it honestly)", "The one-page case study format clients actually read", "A realistic Saturday-to-Sunday build plan", "The 3 things clients check before they ever message you"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>How do you build a freelance portfolio with no experience?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>You create <strong>spec work: self-initiated projects for real or realistic businesses</strong>, then package 3 of them as one-page case studies that show your process, not just the result. Most freelancers can build a credible portfolio in a single focused weekend.</p></div>
+      <BlogImage src="/images/freelance-portfolio-no-experience.png" alt="Building a freelance portfolio with no experience using spec work and case studies" caption="Nobody checks the invoice. Everybody checks the thinking." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The chicken-and-egg problem is fake</h2>
+      <p>I believed the no-experience trap for months. Then I noticed something: a portfolio isn&apos;t proof you&apos;ve been hired. It&apos;s proof you can think.</p>
+      <p>A designer who redesigns a clunky local restaurant menu, a writer who rewrites a boring SaaS landing page, a video editor who recuts a creator&apos;s rambling intro into 45 tight seconds. None of that requires permission. All of it demonstrates exactly what a paying client would buy.</p>
+      <p>The one rule: label it. Write &quot;concept project&quot; or &quot;self-initiated redesign&quot; right on the piece. Clients don&apos;t punish spec work. They punish deception, instantly and permanently.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Before-and-afters are your unfair advantage</h2>
+      <p>The single most persuasive portfolio format is a before-and-after, because it lets a non-expert client see your value in about 4 seconds. They may not know good typography from bad, but they can absolutely see that the &quot;after&quot; looks like a real business and the &quot;before&quot; looks like 2011.</p>
+      <p>Find genuinely rough material in the wild. Small-town service businesses, old Etsy shops, and local nonprofits are full of it. Fix one thing well. Put the versions side by side. Then, and this is the part 90% of beginners skip, add three sentences explaining <em>why</em> you made each change. The explanation is what separates &quot;I have taste&quot; from &quot;I can be trusted with your money.&quot;</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The one-page case study format</h2>
+      <p>Forget sprawling portfolio sites with 20 thumbnails. Build one-page case studies with four sections: the problem (2 sentences), your approach (3 sentences), the work itself, and the outcome or intended outcome. That&apos;s it. A hiring manager skims each one in under 60 seconds, which is roughly 55 seconds more attention than a wall of thumbnails gets.</p>
+      <DataTable headers={["Portfolio piece type", "Time to create", "Client trust level"]} rows={[["Spec redesign of a real business", "3-5 hours", "High, if labeled honestly"], ["Before-and-after comparison", "2-4 hours", "Highest, instantly legible"], ["One-page niche case study", "2-3 hours", "High, shows process"], ["Free work for a friend's business", "5-10 hours", "High, plus a testimonial"], ["Generic practice exercises", "1-2 hours", "Low, screams tutorial"]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The weekend plan</h2>
+      <p>Saturday morning: pick one niche. Not &quot;design,&quot; but &quot;landing pages for local gyms&quot; or &quot;email sequences for course creators.&quot; Niching a portfolio triples its power because the client sees themselves in it. Saturday afternoon: build piece one, your strongest before-and-after, and give it 4 focused hours.</p>
+      <p>Sunday: build two more pieces, faster and looser, then write the one-page case study for each. Sunday evening: put all three on a simple one-page site or a clean Notion page. Total investment: maybe 14 hours. That&apos;s one weekend against months of &quot;I&apos;ll start when I have experience.&quot;</p>
+      <p>If you&apos;re brand new to the whole game, my <InternalLink href="/blog/how-to-start-freelancing">guide to starting freelancing from zero</InternalLink> covers what happens after the portfolio exists, and if you&apos;re deciding where to list yourself, the <InternalLink href="/blog/upwork-vs-fiverr">Upwork vs Fiverr breakdown</InternalLink> will save you a wrong turn.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What clients actually check</h2>
+      <InfoBox title="The real client checklist" items={[["Relevance in 5 seconds", "Does your first visible piece look like their business? Clients hire the freelancer who's clearly done 'their thing' before, even in spec form."], ["Your thinking, not your tools", "Two or three sentences of reasoning per piece. Clients are buying judgment; the software is assumed."], ["Signs of reliability", "Clean writing, no broken links, a working contact method. Sloppy portfolio, sloppy delivery, in their mind."], ["Just 2-3 pieces", "Almost no client reviews more than three samples. Your fourth-best piece is invisible; your worst piece is a liability."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downside</h2>
+      <p>A portfolio gets you considered. It does not get you clients. I&apos;ve seen beautiful portfolios attached to freelancers who send zero pitches and then conclude the market is dead. The portfolio is maybe 30% of the equation; outreach and follow-up are the rest. Also, spec work has a ceiling: after your first 2-3 real projects, swap the spec pieces out. A portfolio that&apos;s all-spec at month six signals you haven&apos;t closed anyone.</p>
+      <AlertBox type="tip" title="The 48-hour polish trick" body="After finishing each piece, wait two days, then review it before publishing. You'll catch the weak headline, the typo, and the padding your excited same-day brain missed. A tool like our resume builder mindset applies here too: ruthless, specific, scannable." />
+      <p>One more shortcut: your portfolio page is basically a resume for projects, so borrow the same principles that make a resume scannable. Our <InternalLink href="/tools/resume-builder">free resume builder</InternalLink> is a decent crash course in ruthless formatting even if you never send a resume again.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Can I really build a freelance portfolio with no clients?", a: "Yes. Spec work, redesigns of real products, and self-initiated projects are accepted by most clients as proof of skill. What matters is that the work solves a realistic problem and you explain your thinking, not whether someone paid you for it." }, { q: "How many portfolio pieces do I need to start freelancing?", a: "Three strong pieces in one niche beat ten scattered ones. Clients typically look at two or three samples before deciding, so depth and relevance matter far more than volume." }, { q: "Should I label spec work as spec work?", a: "Yes, always. Write 'concept project' or 'self-initiated redesign' clearly on the piece. Clients don't mind spec work, but they will drop you instantly if they feel misled about who it was for." }, { q: "Do I need a portfolio website or is a PDF enough?", a: "A simple one-page site or a clean Notion page is enough to start. Clients care about loading it in under five seconds and seeing relevant work immediately. A fancy custom site can wait until you have paying clients." }]} />
+      <p>You don&apos;t need experience to build a portfolio. You need a weekend, one niche, and the nerve to show your thinking. The freelancers earning real money next year are the ones who stopped waiting for permission this weekend.</p>
+    </div>
+  ),
+  "how-to-sell-on-etsy": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Most new Etsy shops die with fewer than 10 listings, a pricing spreadsheet that ignores fees, and an owner convinced the algorithm hates them.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        The algorithm doesn&apos;t hate them. It just never met them. Etsy doesn&apos;t reward the best product; it rewards the most findable one, and findability is a skill you can learn in an afternoon.
+      </p>
+      <HookBanner headline="What this guide covers" items={["The real fee math on a 25-dollar sale", "Digital vs physical vs print on demand, honestly compared", "Listing SEO that matches how buyers actually type", "Why 40 listings is the real starting line"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>How do you start selling on Etsy in 2026?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Pick one narrow niche, choose a product type that fits your time (digital is easiest), and price knowing that <strong>roughly 20 to 25 percent of every sale goes to fees</strong>. Then treat your first 40 listings as the launch, not your first 5.</p></div>
+      <BlogImage src="/images/how-to-sell-on-etsy.png" alt="How to sell on Etsy in 2026 with fees, listing SEO, and product strategy" caption="The shops that win treat Etsy like search, not like a gallery." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Do the fee math before you price anything</h2>
+      <p>New sellers price on vibes. Then the first sale lands and a quarter of it evaporates. Etsy&apos;s fee stack looks small individually: a $0.20 listing fee, a 6.5% transaction fee on the sale (including shipping you charge), payment processing at roughly 3% plus a fixed charge, and Offsite Ads at 12-15% if Etsy&apos;s ad brings the buyer.</p>
+      <p>Stack it up on a $25 physical item and you&apos;re handing over $2.50 to $6 depending on whether an ad was involved. That&apos;s before materials, packaging, or your time. The fix isn&apos;t outrage; it&apos;s pricing with the fees baked in from day one. Take your target profit, add costs, then divide by roughly 0.78 to absorb the typical fee load.</p>
+      <DataTable headers={["Fee on a 25-dollar sale", "Rate", "Approx. cost"]} rows={[["Listing fee", "Flat", "$0.20"], ["Transaction fee", "6.5%", "$1.63"], ["Payment processing", "~3% + fixed", "~$1.00"], ["Offsite Ads (if triggered)", "12-15%", "$3.00-$3.75"], ["Total without ads", "-", "~$2.83 (11%)"], ["Total with ads", "-", "~$6.20 (25%)"]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Digital, physical, or print on demand?</h2>
+      <p>This is the biggest fork in the road, and most beginners choose based on what they see on TikTok instead of what fits their life.</p>
+      <p>Digital products (planners, templates, printable art, SVG files) are the gentlest start: create once, sell forever, no shipping, margins near 100% after fees. The catch is that digital is also where competition is thickest, because everyone read the same advice. If you go this route, our guide to <InternalLink href="/blog/sell-digital-products-2026">selling digital products in 2026</InternalLink> goes deeper on what still works.</p>
+      <p>Physical handmade earns the most trust and the best margins per order, but you&apos;re running a tiny factory: materials, shipping supplies, post office runs. Print on demand splits the difference; a partner prints and ships your designs, but your margin often shrinks to $3-8 per item, so volume matters. The full trade-offs are in our <InternalLink href="/blog/print-on-demand-2026">print-on-demand breakdown</InternalLink>.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Listing SEO: write like a buyer types</h2>
+      <InfoBox title="The listing SEO checklist" items={[["Front-load the title", "The first 40 characters carry the most weight. Lead with what a buyer would type, not your brand name or a poetic product name."], ["Use all 13 tags", "Every empty tag is a search you've chosen not to appear in. Use multi-word phrases, not single words."], ["Match long-tail phrases", "'Boho nursery wall art girl' beats 'wall art.' Specific queries have fewer competitors and buyers closer to purchasing."], ["First photo wins the click", "Etsy search is a wall of thumbnails. Bright, clear, zoomed-in product on a clean background outperforms artsy shots almost every time."], ["Fill every field", "Category, attributes, materials. Etsy uses all of it for matching, and half-empty listings quietly rank lower."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The first-40-listings rule</h2>
+      <p>Here&apos;s the advice that separates shops that sell from shops that sit: don&apos;t judge anything until you have 40 listings. Five listings gives the algorithm five lottery tickets and gives you almost no data. Forty listings means 40 search entry points, 520 tags working for you, and enough click data to see what buyers actually want, which is rarely what you predicted.</p>
+      <p>Ship listings in batches of 5-10 per week. Watch which ones get views and favorites. Then make more of what&apos;s working and quietly retire what isn&apos;t. It&apos;s boring. It&apos;s also how nearly every consistent shop got there.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest saturation talk</h2>
+      <p>Is Etsy saturated? In the broad categories, brutally so. Generic mugs, minimalist wall art, and &quot;live laugh&quot; anything are a losing lottery. But saturation is a category problem, not a platform problem. &quot;Wedding invitation template&quot; is a war zone; &quot;wedding invitation template for a mountain elopement&quot; still has room. The narrower your first 40 listings, the less you compete with a million shops and the more you compete with a dozen.</p>
+      <p>Also, expect the first sale to take weeks, not days. New shops have zero reviews, and reviews are trust. Many sellers seed early momentum with friends-and-family purchases or a small launch discount. That&apos;s fine. What&apos;s not fine is quitting at listing number 8.</p>
+      <AlertBox type="money" title="Run your numbers before you commit" body="Before you spend a month making products, model the hours honestly. A shop netting 400 dollars a month on 20 hours of work is a 20-dollar-an-hour job with no benefits. Our side hustle calculator makes this take about two minutes." />
+      <p>Seriously, spend two minutes with the <InternalLink href="/tools/side-hustle-calculator">side hustle calculator</InternalLink> before you buy craft supplies. Enthusiasm is not a margin.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "How much does it actually cost to sell on Etsy?", a: "Expect roughly 20 to 25 percent of your sale price to go to Etsy once you add the listing fee, the 6.5 percent transaction fee, payment processing of about 3 percent plus a fixed charge, and optional Offsite Ads at 12 to 15 percent. Price with that number in mind from day one." }, { q: "Is Etsy too saturated to start in 2026?", a: "The broad categories are saturated; specific niches are not. Generic mugs and wall art are brutally competitive, but tightly targeted products for a specific audience still get found. Saturation punishes vague shops, not focused ones." }, { q: "Are digital products or physical products better for Etsy beginners?", a: "Digital products are the easier start: no inventory, no shipping, and margins near 100 percent after fees. Physical and print-on-demand products can earn more per order but add cost, logistics, and customer service overhead." }, { q: "How many listings do I need before Etsy sales start?", a: "Most successful new shops treat the first 40 listings as their real launch, not the first 5. More listings mean more search entry points and more data on what buyers actually click. Very few shops find consistent sales with under 10 listings." }]} />
+      <p>Etsy in 2026 isn&apos;t a gold rush. It&apos;s a craft: fee-aware pricing, buyer-shaped SEO, and 40 patient listings in a niche you actually picked on purpose. Do that, and the algorithm stops being a mystery and starts being a distribution channel.</p>
+    </div>
+  ),
+  "index-funds-for-beginners": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The dirty secret of investing is that the boring option wins, and the entire financial entertainment industry exists to talk you out of it.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        You can understand index funds well enough to invest sensibly for the rest of your life in about 20 minutes. This is those 20 minutes.
+      </p>
+      <HookBanner headline="The 20-minute syllabus" items={["What an index fund actually is (no jargon)", "Why fees quietly decide your outcome", "Dollar-cost averaging in one paragraph", "The 3 myths that keep beginners on the sidelines"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What is an index fund and why do beginners start there?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>An index fund is a single investment that <strong>buys a tiny slice of hundreds or thousands of companies at once</strong>, following a market list called an index. Beginners start there because it&apos;s diversified by default, costs almost nothing to own, and historically beats the vast majority of professional stock pickers over long periods.</p></div>
+      <BlogImage src="/images/index-funds-for-beginners.png" alt="Index funds for beginners explained with fees and dollar cost averaging" caption="Average, compounded for 30 years, turns out to be spectacular." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What an index fund actually is</h2>
+      <p>An index is just a list. The most famous ones track things like the 500 largest US companies or the entire US stock market, thousands of companies at once. An index fund is a fund that buys everything on the list, in proportion, automatically. No manager making bets. No genius required. When you buy one share, you own a microscopic sliver of essentially the whole economy.</p>
+      <p>That&apos;s the whole product. The elegance is the point: you&apos;re no longer betting on which company wins. You&apos;re betting that the economy, in aggregate, keeps growing over decades, which is the single most reliable bet in market history, even counting crashes.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why low fees beat stock picking for most people</h2>
+      <p>Long-running scorecards comparing professional fund managers to their benchmark index tell the same story every year: over 10-15 year periods, the large majority of professionals, often in the range of 80-90%, fail to beat the index they&apos;re paid to beat. Not amateurs. Professionals, with research teams.</p>
+      <p>The main culprit is cost. Active funds charge more, trade more, and every basis point comes out of your return. Which brings us to the one number a beginner must understand: the expense ratio. It&apos;s the annual fee, expressed as a percentage of your money. Broad index funds commonly charge 0.03% to 0.20%. Actively managed funds often charge 0.5% to 1% or more. That gap sounds trivial. Compounded, it&apos;s a house.</p>
+      <DataTable headers={["Scenario (500/month, ~30 yrs, 7% before fees)", "Expense ratio", "Approx. ending balance"]} rows={[["Low-cost broad index fund", "0.05%", "~$590,000"], ["Mid-cost fund", "0.50%", "~$540,000"], ["Typical active fund", "1.00%", "~$490,000"], ["Cost of the 1% fee vs the cheap fund", "-", "~$100,000 gone"]]} />
+      <p>Same contributions, same market. Roughly a hundred grand difference, paid to a manager who statistically probably underperformed anyway. Try your own numbers in our <InternalLink href="/tools/investment-calculator">free investment calculator</InternalLink>; watching the fee line move is radicalizing.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Dollar-cost averaging: the autopilot setting</h2>
+      <p>Dollar-cost averaging means investing a fixed amount on a fixed schedule, say $200 on the 1st of every month, regardless of what the market is doing. When prices are high, your $200 buys fewer shares; when prices crash, it buys more. You never have to guess the right moment, which is good, because nobody can. Its real superpower isn&apos;t mathematical. It&apos;s that automation removes your emotions from the transaction, and your emotions are the most expensive thing you own.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Know the types (not the tickers)</h2>
+      <InfoBox title="The main flavors of index fund" items={[["Total US market funds", "Own essentially every US public company in one fund. The default choice for maximum simplicity."], ["Large-cap (S&P 500-style) funds", "Track the ~500 biggest US companies. Behaves very similarly to total market over long periods."], ["International index funds", "Cover non-US developed and emerging markets. Many investors hold 20-40% here for diversification."], ["Bond index funds", "Lower risk, lower return. The stabilizer you add more of as your goals get closer."], ["Target-date funds", "A bundle of the above that automatically shifts from stocks toward bonds as your chosen year approaches. Set-and-forget in one purchase."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Three myths, quickly executed</h2>
+      <p><strong>&quot;I need a lot of money.&quot;</strong> Fractional shares mean many brokerages let you start with $10-50. Starting small and monthly beats starting big and never.</p>
+      <p><strong>&quot;It&apos;s risky, like picking stocks.&quot;</strong> A single stock can go to zero. A fund holding thousands of companies cannot, short of the entire economy ending, in which case your portfolio is not your biggest problem. The real risk in index funds is volatility, and the treatment is time: historically, longer holding periods have dramatically reduced the odds of loss.</p>
+      <p><strong>&quot;Settling for average is for losers.&quot;</strong> The market&apos;s average is the average that most professionals fail to reach after fees. You&apos;re not settling. You&apos;re skipping the part where you pay someone 1% a year to lose to a list.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest caveat</h2>
+      <p>Index funds are not a savings account. Markets have historically dropped 30-50% in bad crashes, and a low fee doesn&apos;t soften the fall; it just means you keep more of the recovery. That&apos;s why money you need within a few years belongs in cash, not the market. Build your safety cushion first; our guide on <InternalLink href="/blog/emergency-fund-how-much">how big your emergency fund should be</InternalLink> covers exactly that.</p>
+      <AlertBox type="warning" title="Information, not financial advice" body="This article is general education about how index funds work, not personalized financial advice. Everyone's tax situation, timeline, and risk tolerance differ. Consider consulting a licensed financial advisor before making investment decisions." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What is an index fund in simple terms?", a: "An index fund is a single investment that buys a small slice of hundreds or thousands of companies at once, following a list called an index. Instead of betting on one company, you own a piece of the whole market for a very low fee." }, { q: "Why do index funds beat most stock pickers?", a: "Long-running research consistently shows that the large majority of professional fund managers fail to beat their benchmark index over 10 to 15 year periods, mostly because of fees and trading costs. If most professionals can't beat the index, buying the index is the rational default." }, { q: "How much money do I need to start investing in index funds?", a: "Many brokerages now allow fractional investing, so you can start with as little as 10 to 50 dollars. The starting amount matters far less than consistency; investing a fixed amount every month is what builds the habit and the balance." }, { q: "What is a good expense ratio for an index fund?", a: "Broad market index funds commonly charge between 0.03 and 0.20 percent per year. Anything under about 0.15 percent is competitive; anything near 1 percent is expensive and quietly eats a large share of your lifetime returns." }]} />
+      <p>That&apos;s the whole guide. Buy the market, pay almost nothing, automate it monthly, and then do the hardest part: nothing, for decades. Boring has never paid so well.</p>
+    </div>
+  ),
+  "best-budgeting-methods": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Most budgets don&apos;t survive their second month, and it&apos;s almost never because the person lacked discipline.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        It&apos;s because they picked a budget built for someone else&apos;s brain. There are five big methods, and matching the method to your personality matters more than any spreadsheet skill.
+      </p>
+      <HookBanner headline="The 5 methods, compared" items={["50/30/20: the 5-minute default", "Zero-based: every dollar gets a job", "Cash envelopes: friction as a feature", "Pay-yourself-first and no-budget tracking: for people who hate budgets"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Which budgeting method is best?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>The best budgeting method is <strong>the one that matches your tolerance for tracking</strong>. Detail-lovers thrive on zero-based budgeting; overspenders respond to cash envelopes; everyone else does better with 50/30/20 or pay-yourself-first, which need under 15 minutes a month.</p></div>
+      <BlogImage src="/images/best-budgeting-methods.png" alt="The five best budgeting methods compared including 50/30/20 and zero-based" caption="The best budget isn't the strictest one. It's the one still alive in month six." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Method 1: The 50/30/20 rule</h2>
+      <p>Split take-home pay three ways: 50% needs (rent, groceries, insurance), 30% wants, 20% savings and debt payoff. Done. Setup takes five minutes and maintenance takes almost none, which is exactly why it works for beginners: it&apos;s a guardrail, not a leash.</p>
+      <p>The honest catch: in expensive cities, needs can swallow 60-70% of income, and the ratios become aspirational fiction. Treat the percentages as a compass, not a law. If you&apos;re at 65/25/10 and trending toward 20% savings, you&apos;re winning.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Method 2: Zero-based budgeting</h2>
+      <p>Income minus every planned expense equals zero. Each dollar gets assigned a job before the month starts, including &quot;fun&quot; and &quot;buffer.&quot; It&apos;s the most powerful method for finding leaks; people are routinely shocked to discover $150-300 a month in subscriptions and drift spending they&apos;d stopped noticing.</p>
+      <p>The cost is time: expect 30-60 minutes a month, plus micro-adjustments when reality disobeys the plan (it will). Best for irregular incomes, aggressive debt payoff, and people who find spreadsheets soothing rather than punishing.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Method 3: Cash envelopes</h2>
+      <p>Withdraw cash, divide it into labeled envelopes (groceries, eating out, fun), and when an envelope is empty, that category is closed until next month. It sounds like your grandmother&apos;s system because it is, and it works for one deeply human reason: handing over physical cash hurts a little, and tapping a card doesn&apos;t. Friction is the feature.</p>
+      <p>Downsides are real: cash is inconvenient online, and carrying it isn&apos;t for everyone. Budgeting apps now offer digital envelopes that recreate maybe 70% of the effect. If overspending on cards is your specific failure mode, this method attacks it directly.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Methods 4 and 5: For people who hate budgeting</h2>
+      <p>Pay-yourself-first inverts everything: automate savings, say 15-20% of income, on payday, then spend the rest guilt-free with zero tracking. It&apos;s the minimalist&apos;s budget, and honestly, it&apos;s what a lot of financially healthy people quietly do.</p>
+      <p>No-budget tracking is even lighter: don&apos;t plan, just review. Once a week, spend 10 minutes looking at what you spent. Awareness alone measurably shifts behavior for many people. The risk: with no targets, lifestyle creep tiptoes in annually. Pair it with one automated transfer and you&apos;ve accidentally built method 4.</p>
+      <DataTable headers={["Method", "Monthly effort", "Best for", "Biggest weakness"]} rows={[["50/30/20", "~15 min", "Beginners, steady paychecks", "Ratios break in high-cost cities"], ["Zero-based", "30-60 min", "Irregular income, debt payoff", "Burnout from detail"], ["Cash envelopes", "20-30 min", "Card overspenders", "Awkward for online spending"], ["Pay-yourself-first", "~5 min", "Budget-haters with decent margin", "Hides category-level leaks"], ["No-budget tracking", "~40 min", "Naturally frugal reviewers", "Lifestyle creep goes unchecked"]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why budgets actually fail</h2>
+      <InfoBox title="The four real budget killers" items={[["Wrong-sized detail", "A 40-category budget for a 3-category brain fails by week two. Complexity should match your patience, not your ambition."], ["Ignoring irregular expenses", "Car repairs, gifts, annual fees. They're not surprises; they're just not monthly. Budgets without a sinking fund die by December."], ["Planning a perfect month", "Every budget assumes nobody gets sick, nothing breaks, and no one has a birthday. Build in a buffer line of 5-10% or reality will."], ["No fast feedback", "If you only discover overspending 3 weeks later, the budget can't steer. Weekly 10-minute check-ins beat monthly autopsies."]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The contrarian bit: strictness is overrated</h2>
+      <p>Budgeting culture worships intensity: track everything, cut everything, optimize everything. But the data of real life points the other way. A slightly leaky budget you follow for two years beats a perfect one you abandon in February. If you&apos;ve failed at budgeting three times, the answer usually isn&apos;t more discipline. It&apos;s less method. Downgrade from zero-based to pay-yourself-first and watch your savings rate go up because your quit rate went down.</p>
+      <p>Modern tools help here too. If categorizing expenses is the part you dread, our <InternalLink href="/blog/chatgpt-budgeting-guide">ChatGPT budgeting guide</InternalLink> shows how to make an AI do the boring parts. And whichever method you pick, aim the first savings at a cushion; here&apos;s <InternalLink href="/blog/emergency-fund-how-much">how much emergency fund you actually need</InternalLink>. Once cash flow is stable, the same consistency does wonders for your credit; see <InternalLink href="/blog/how-to-build-credit-fast">how to build credit fast</InternalLink>.</p>
+      <AlertBox type="tip" title="Information, not financial advice" body="This article is general information about budgeting frameworks, not personalized financial advice. Incomes, debts, and obligations differ widely; for decisions with real stakes, consider talking to a qualified financial professional." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "What is the easiest budgeting method for beginners?", a: "The 50/30/20 rule is the easiest starting point: 50 percent of take-home pay to needs, 30 percent to wants, 20 percent to savings and debt. It only requires three categories, so it works even if you hate tracking." }, { q: "Why do most budgets fail?", a: "Budgets usually fail because they're too detailed for the person using them, ignore irregular expenses like car repairs and gifts, or assume a perfect month that never happens. Picking a simpler method almost always works better than trying harder at a complicated one." }, { q: "Is zero-based budgeting worth the effort?", a: "If you have irregular income, tight margins, or a specific debt payoff goal, yes; giving every dollar a job surfaces waste fast. If your finances are stable and you already save consistently, the 30 to 60 minutes a month it takes may not buy you much." }, { q: "Does cash envelope budgeting still work in a card-based world?", a: "Yes, and it works precisely because cash is annoying. Handing over physical money creates more spending friction than tapping a card, which is why envelope users often cut discretionary spending noticeably. Digital envelope features in budgeting apps copy the idea for card spenders." }]} />
+      <p>Pick the lightest method that solves your actual problem, automate what you can, and judge it after 90 days, not 9. A budget isn&apos;t a moral test. It&apos;s plumbing, and good plumbing is boring.</p>
+    </div>
+  ),
+  "morning-routine-science": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The 5am club mostly measures one thing: who can tolerate sleep deprivation with a straight face.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Strip away the ice baths and the journaling-by-candlelight, and the actual research on mornings points to four boring levers. They fit in 20 minutes, and none of them require waking up in the dark.
+      </p>
+      <HookBanner headline="What the evidence actually supports" items={["Morning light: the strongest clock-setter we know", "Consistent wake time beats early wake time", "Caffeine timing: the real rule (not the 90-minute one)", "A 20-minute routine you'll still do in November"]} />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5"><h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What does science say makes a good morning routine?</h2><p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>Four things carry nearly all the benefit: <strong>bright light within an hour of waking, a consistent wake time, sensible caffeine timing, and a few minutes of movement</strong>. Wake-up hour itself doesn&apos;t matter; total sleep and regularity do.</p></div>
+      <BlogImage src="/images/morning-routine-science.png" alt="Morning routine science showing light exposure and consistent wake times" caption="Sunlight is free, legal, and more effective than most of what influencers sell." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Lever 1: Light is the master switch</h2>
+      <p>Your circadian clock, the internal timer controlling alertness, mood, and when melatonin rises at night, is set primarily by light hitting your eyes. Morning light advances the clock; it&apos;s the signal that says &quot;the day has started, run the daytime program.&quot;</p>
+      <p>The catch is dose. Indoor lighting delivers a few hundred lux. Outside, even on an overcast day, you&apos;re getting thousands, often 10 to 100 times more. That&apos;s why 5-10 minutes on a balcony beats an hour under kitchen LEDs. People who get consistent morning light tend to report easier sleep onset at night, and that&apos;s the quiet trade: your morning routine is mostly a delivery system for tonight&apos;s sleep.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Lever 2: Consistency beats earliness</h2>
+      <p>Chronotype, your natural sleep timing, is substantially genetic. Some people are wired to peak at 7am, others at 11am, and no amount of motivational content rewires that. Forcing a night owl to 5am doesn&apos;t create a morning person; it creates a sleep-deprived night owl, and chronic short sleep is linked to worse mood, metabolic health, and immune function.</p>
+      <p>What research does reward is regularity. Large observational studies have associated irregular sleep schedules with worse cardiovascular and metabolic markers, independent of duration. Waking at 7:15 every single day, weekends included within an hour, does more for you than heroic 5am starts followed by weekend crashes. Social jet lag is still jet lag.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Levers 3 and 4: Caffeine and movement</h2>
+      <p>The viral rule says delay coffee 90 minutes to avoid an afternoon crash. The direct evidence for that specific ritual is thin, and researchers who study caffeine mostly shrug at it. What&apos;s solidly supported: caffeine has a half-life around 5-6 hours, so a 4pm coffee is still half-working at 9pm. The rule that matters is the evening cutoff, roughly 8-10 hours before bed, not the morning delay.</p>
+      <p>Movement is less glamorous and better proven. Even 5-10 minutes of walking, stretching, or light calisthenics raises core temperature and alertness, and morning exercise is associated with better adherence than evening plans, mainly because the day hasn&apos;t stolen the slot yet. It doesn&apos;t need to be a workout. It needs to be motion.</p>
+      <DataTable headers={["Popular routine item", "Verdict from research", "Worth your time?"]} rows={[["Waking at 5am", "No inherent benefit; chronotype is largely genetic", "Only if it fits your sleep need"], ["10 min of outdoor light", "Strong circadian evidence", "Yes, highest value per minute"], ["Cold plunges", "Acute alertness boost; long-term claims unproven", "Optional, not foundational"], ["90-min caffeine delay", "Weak evidence; evening cutoff matters more", "Skip the dogma"], ["2-hour 'miracle mornings'", "No dose-response evidence for length", "No; consistency wins"], ["5-10 min of movement", "Reliable alertness and adherence benefits", "Yes"]]} />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The influencer routine, audited</h2>
+      <p>Here&apos;s the honest downside section: most famous routines are survivorship theater. The CEO with the 4:30am ritual also has a driver, a chef, and no school run. The routine didn&apos;t build the success; the success funded the routine. And routines with 11 steps have an adherence problem no study needs to measure: you already know you&apos;ll quit by Thursday. A morning routine you can&apos;t do hungover, sick, or late is a performance, not a system.</p>
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The realistic 20-minute version</h2>
+      <InfoBox title="The 20-minute evidence-based morning" items={[["Minute 0: Wake at the same time", "Same time daily, within an hour on weekends. Alarm across the room if snoozing is your sport."], ["Minutes 1-3: Water, light on", "A glass of water and every curtain open. Skip your phone; cortisol doesn't need Slack's help."], ["Minutes 4-13: Outside light + movement", "Walk around the block, stretch on the balcony, anything in daylight. Two levers, one slot."], ["Minutes 14-20: Coffee plus one intention", "Have the coffee whenever you like; just set an evening cutoff. Write down the one thing today is for."]]} />
+      <p>That&apos;s it. No journaling curriculum, no $90 sunrise lamp required. If your mornings still feel wrecked, the problem is almost always upstream; our guide on <InternalLink href="/blog/how-to-sleep-better">how to sleep better</InternalLink> is the actual fix. And if you&apos;re building a morning around deep work, say you&apos;re <InternalLink href="/blog/how-to-start-freelancing">starting a freelance business</InternalLink>, protect the first focused hour after the routine; that&apos;s where the light and movement pay out.</p>
+      <AlertBox type="warning" title="Information, not medical advice" body="This article summarizes general sleep and circadian research for education; it is not medical advice. If you have insomnia, suspected sleep apnea, or persistent daytime fatigue, talk to a doctor or sleep specialist rather than adjusting routines on your own." />
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[{ q: "Is waking up at 5am actually better for you?", a: "No, not inherently. Research on chronotypes shows people have genetically influenced sleep timing, and forcing an early wake against your body clock mostly produces sleep deprivation. What matters is a consistent wake time with enough total sleep, not an early one." }, { q: "Why does morning light exposure matter so much?", a: "Bright light shortly after waking is the strongest signal that sets your circadian clock, which controls alertness, mood, and when you feel sleepy at night. Outdoor light is roughly 10 to 100 times brighter than indoor lighting, so even 5 to 10 minutes outside helps." }, { q: "Should I delay my morning coffee by 90 minutes?", a: "The evidence for a strict 90-minute delay is thin. What's better supported is avoiding caffeine within about 8 to 10 hours of bedtime and not using coffee to mask chronic sleep deprivation. If your sleep is solid, coffee soon after waking is fine." }, { q: "How long should a morning routine be?", a: "There's no evidence that longer routines produce better outcomes. The high-impact elements, light exposure, some movement, water, and a consistent wake time, fit comfortably in 15 to 20 minutes. Consistency across weeks beats an elaborate routine you abandon." }]} />
+      <p>Light, consistency, caffeine timing, movement. Twenty minutes, four levers, zero ice required. Do it for three weeks and your mornings will out-perform any routine you could buy.</p>
+    </div>
+  ),
+  "should-you-learn-to-code": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Every few months someone famous declares coding dead, and every few months companies keep paying six figures to people who can read it. Both signals are real. The confusion is that &quot;coding&quot; stopped meaning one thing.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Nearly half of new code is AI-generated now. So should you spend your evenings learning to write it by hand? Short answer: yes — but the valuable part isn&apos;t where it used to be, and knowing where it moved changes what you should study.
+      </p>
+
+      <HookBanner headline="The honest breakdown" items={[
+        "What AI actually changed about the job (typing died, judgment didn't)",
+        "The skills worth learning in 2026, ranked",
+        "What you can safely skip now",
+        "Who genuinely shouldn't bother — and what to do instead",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Is learning to code still worth it in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes — but the payoff shifted. Typing syntax from memory is worth less; <strong>reading code, reviewing AI output, designing systems, and debugging</strong> are worth more. People who can specify and verify software beat people who can only generate it.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/should-you-learn-to-code.png"
+        alt="Should you still learn to code in 2026 when AI writes half of it"
+        caption="AI didn't kill the pilot's license. It killed rowing."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What actually changed</h2>
+      <p>
+        Three numbers tell the story. Around <strong>46% of new code is AI-generated</strong> in 2026. About <strong>92% of US developers use AI coding tools daily</strong>. And only <strong>29% trust the output without review</strong> — because audits keep finding AI co-authored code carries roughly 1.7x more major issues than human-written code.
+      </p>
+      <p>
+        Read those together and the job description writes itself: the market is drowning in generated code and starving for people who can tell good from subtly broken. Writing code became cheap. Vouching for code became expensive. That&apos;s not the death of the skill — it&apos;s a price change within it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What to learn in 2026, ranked</h2>
+      <InfoBox title="The new curriculum" items={[
+        ["Reading code critically", "the #1 skill — can you spot what the AI got wrong? This is what reviews, interviews, and incidents all test"],
+        ["Debugging", "AI fixes what it understands; you fix what it doesn't — debugging is where human value concentrates"],
+        ["System thinking", "how pieces fit: data flow, APIs, state, failure modes — AI writes functions, humans design systems"],
+        ["Specification", "describing behavior precisely enough that AI (or a teammate) builds the right thing — the core of vibe coding done well"],
+        ["One language properly", "Python or JavaScript/TypeScript — not to memorize syntax, but to have a home base for the concepts"],
+        ["Version control + testing basics", "the safety rails that make AI-speed development survivable"],
+      ]} />
+      <p>
+        Notice what&apos;s missing: memorizing algorithms you&apos;ll never hand-write, chasing framework trends, grinding syntax flashcards. That&apos;s the part AI genuinely ate — let it stay eaten.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The two paths (pick by goal, not identity)</h2>
+      <DataTable
+        headers={["Your goal", "Path", "Time to useful"]}
+        rows={[
+          ["Build your own tools/products", "Vibe coding + enough reading skill to verify", "Weeks"],
+          ["Employable technical career", "Fundamentals + AI fluency + portfolio of real projects", "6-18 months"],
+          ["Career adjacent to code (PM, data, marketing ops)", "Python basics + automation + reading fluency", "2-4 months"],
+          ["Pure curiosity", "Build one real thing with AI help, learn what sticks", "This weekend"],
+        ]}
+      />
+      <p>
+        The first path is genuinely new. A founder or marketer who can <InternalLink href="/blog/what-is-vibe-coding">vibe code</InternalLink> a working prototype — and knows enough to sense when it&apos;s lying — has a capability that didn&apos;t exist three years ago. The second path still exists too, and pays: someone has to be the 29% who can review. Our <InternalLink href="/blog/best-ai-coding-assistants">coding assistant comparison</InternalLink> covers the tools either path uses daily.
+      </p>
+
+      <AlertBox type="warning" title="Who shouldn't bother" body="If you're learning to code purely because it sounds safe, stop — 2026's safe-sounding move is judgment plus AI fluency in a domain you already know. A nurse who automates scheduling, an accountant who scripts reconciliations, a marketer who builds their own tools: each beats a reluctant career-switcher grinding a bootcamp for a job they don't want. Code is a lever, not a religion." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The 90-day version</h2>
+      <p>
+        Month one: pick Python or JavaScript, build three tiny real things with AI assistance, and force yourself to read every line before running it. Month two: break things on purpose — introduce bugs, find them, fix them without AI. Month three: build one project someone else actually uses, with version control and a test or two. That&apos;s not mastery. It&apos;s the foundation that makes every AI tool 10x more useful in your hands, and it&apos;s free — the full path is in our <InternalLink href="/blog/learn-ai-skills-free">learn AI skills free roadmap</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Is learning to code still worth it in 2026?",
+          a: "Yes, but the payoff shifted. Typing syntax from memory is worth less; reading code, reviewing AI output, designing systems, and debugging are worth more. People who can specify and verify software beat people who can only generate it.",
+        },
+        {
+          q: "Will AI replace programmers?",
+          a: "AI replaced a lot of typing, not the job. Around 46% of new code is AI-generated in 2026, yet demand stayed strong for people who can review, architect, and take responsibility for software. Junior roles changed the most; judgment roles grew.",
+        },
+        {
+          q: "What programming language should a beginner learn in 2026?",
+          a: "Python for general purposes and data work, JavaScript/TypeScript for the web. The language matters less than it used to — concepts transfer, and AI handles syntax. Pick one, build real things, and learn to read code critically.",
+        },
+        {
+          q: "Can I just vibe code instead of learning to code?",
+          a: "For prototypes and personal tools, yes. But unreviewed AI code carries about 1.7x more major issues than human-written code, so anything touching real users, data, or money needs someone who can read what was generated.",
+        },
+      ]} />
+
+      <p>
+        Learn to read before you worry about writing. The machines type faster than you ever will — and they still can&apos;t tell when they&apos;re wrong.
+      </p>
+    </div>
+  ),
+  "how-llms-actually-work": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        You probably used an LLM three times today and couldn&apos;t explain what it does in one sentence. Here&apos;s the sentence: it predicts the next word fragment, over and over, having read more text than any human ever will. Everything else is detail — but the detail is where all the weirdness makes sense.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Fifteen minutes, zero equations, and by the end you&apos;ll understand why these things write beautiful essays, invent fake citations, and fail at counting the R&apos;s in &quot;strawberry.&quot;
+      </p>
+
+      <HookBanner headline="What clicks into place" items={[
+        "Tokens: why the model doesn't see letters or words",
+        "The one trick: next-token prediction at absurd scale",
+        "Training vs inference — and why your chats don't retrain it",
+        "Why hallucination is fluency's twin, not a bug",
+        "Why it aces essays and flunks arithmetic",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How does an LLM actually work?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          An LLM is trained on enormous amounts of text to do one thing: <strong>predict the next token</strong> (a word fragment) given everything before it. Generate a token, append it, predict again — repeat, and you get sentences, code, and essays. All the impressive behavior emerges from that single trick at massive scale.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-llms-actually-work.png"
+        alt="How LLMs actually work explained in plain English — tokens and next-word prediction"
+        caption="It's autocomplete that read everything. That's both less and more impressive than it sounds."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tokens: the model&apos;s alphabet isn&apos;t yours</h2>
+      <p>
+        The model never sees letters or even whole words. Text gets chopped into <strong>tokens</strong> — chunks that might be a word (&quot;the&quot;), a fragment (&quot;straw&quot; + &quot;berry&quot;), or punctuation. A typical model juggles a vocabulary of roughly 50,000-200,000 tokens, and everything you type becomes a sequence of them.
+      </p>
+      <p>
+        Hold onto this, because it explains a famous embarrassment: ask a model how many R&apos;s are in &quot;strawberry&quot; and it may fumble — it doesn&apos;t see R&apos;s at all. It sees a couple of chunks it has statistical opinions about. Asking it to count letters is like asking you to count the pixels in a photo of a word.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The one trick, at scale</h2>
+      <p>
+        Training works like this: show the model a mountain of text with the ending hidden, let it guess the next token, and nudge its billions of internal dials toward better guesses. Repeat trillions of times. That&apos;s it. Nobody teaches it grammar, facts, or logic — those get absorbed because knowing them makes next-token prediction more accurate. If the training text contains physics, predicting physics text well requires representing something like physics.
+      </p>
+      <p>
+        This is why scale mattered so much. Small models learn spelling and grammar. Bigger ones pick up facts and style. At some point, competent-looking reasoning shows up — not because anyone added a reasoning module, but because reasoning-shaped text demands reasoning-shaped predictions. Whether that&apos;s &quot;real&quot; understanding is a philosophy seminar; what it does is measurable either way. (Where that ceiling sits is the whole <InternalLink href="/blog/what-is-agi-how-close">AGI debate</InternalLink>.)
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Training vs inference</h2>
+      <DataTable
+        headers={["", "Training", "Inference (your chat)"]}
+        rows={[
+          ["What happens", "Billions of parameters adjusted against data", "Frozen model predicts tokens"],
+          ["Cost", "Months, massive compute budgets", "Fractions of a cent per response"],
+          ["Frequency", "Rarely — new model versions", "Every message you send"],
+          ["Does it learn?", "Yes — this is the learning", "No — it remembers nothing after the chat*"],
+        ]}
+      />
+      <p>
+        The asterisk: products bolt memory features on top — saved notes the model gets shown again later. That&apos;s a filing cabinet next to the brain, not a changing brain. Your 2am conversation didn&apos;t teach the model anything; it just might be pasted back into context tomorrow.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why hallucination isn&apos;t a bug</h2>
+      <p>
+        Here&apos;s the uncomfortable elegance: the mechanism that writes fluent prose and the mechanism that invents fake court cases are <em>the same mechanism</em>. The model always produces the most plausible continuation. When its training gave it solid signal, plausible equals true. When signal was thin, plausible equals a confident-sounding invention — right shape, wrong contents. It has no internal fact-checker, no feeling of &quot;I don&apos;t know&quot; unless trained to imitate one.
+      </p>
+      <p>
+        Same story with math: predicting what calculations look like isn&apos;t calculating. Modern systems patch both weaknesses the honest way — letting the model call search engines and calculators, then narrate verified results. The narration is still prediction; the facts come from outside.
+      </p>
+
+      <AlertBox type="tip" title="The practical takeaways" body="1) Never trust an unverified citation, statistic, or quote — plausibility is the product. 2) For math, ask it to compute with code, not in its head. 3) Give context generously: the model only knows what's in its training and your conversation. 4) Treat it as a brilliant, well-read intern with no memory and no shame about guessing." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why the writing all sounds the same</h2>
+      <p>
+        One more consequence worth knowing: because the model predicts the statistically safe continuation, its default prose converges on a recognizable median — the same polite words, the same rhythms, across millions of users. That&apos;s the fingerprint <InternalLink href="/blog/ai-words-to-avoid">readers and detectors spot instantly</InternalLink>, and it&apos;s why raw output needs <InternalLink href="/blog/how-to-humanize-ai-text">a human pass</InternalLink> before publishing. Understanding the mechanism makes the fix obvious: the model gives you the average; your job is to add the specific.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How does an LLM actually work?",
+          a: "An LLM is a system trained on enormous amounts of text to predict the next token (word fragment) given everything before it. Repeat that prediction over and over and you get sentences. Everything impressive — reasoning, code, essays — emerges from that one trick at massive scale.",
+        },
+        {
+          q: "Why do LLMs hallucinate?",
+          a: "Because they generate the most plausible continuation, not the verified truth. When the model lacks solid training signal for a fact, the statistically likely answer can be a confident invention. Hallucination is the same mechanism as fluency — not a separate bug.",
+        },
+        {
+          q: "Why are LLMs bad at math and counting?",
+          a: "They see tokens, not digits or letters, and they predict rather than calculate. Modern tools fix this by letting the model call an actual calculator or write code.",
+        },
+        {
+          q: "What's the difference between training and inference?",
+          a: "Training is the months-long, expensive process of adjusting billions of parameters against data. Inference is what happens when you chat: the frozen model predicts tokens. Your conversations don't retrain the model in real time.",
+        },
+      ]} />
+
+      <p>
+        Next-token prediction, absurd scale, no fact-checker. Hold those three facts and every strange AI behavior you&apos;ve seen stops being mysterious — and you start using the tool for what it is instead of what it pretends to be.
+      </p>
+    </div>
+  ),
+  "what-is-agi-how-close": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Ask five AI researchers when AGI arrives and you&apos;ll get two years, ten years, fifty years, &quot;it&apos;s already here,&quot; and &quot;wrong question.&quot; They&apos;re looking at the same models. The disagreement isn&apos;t about the technology — it&apos;s about what the word means.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        So let&apos;s do the unglamorous work: define the term, inventory what 2026&apos;s AI genuinely can and can&apos;t do, give both the optimist and skeptic their best case, and land on what any of it means for your actual life.
+      </p>
+
+      <HookBanner headline="Inside" items={[
+        "AGI defined — and why definitions do the arguing",
+        "The capability inventory: superhuman here, toddler there",
+        "The optimist's case and the skeptic's case, both steelmanned",
+        "What to actually do about it (calmer than you'd expect)",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is AGI in simple terms?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          AGI — artificial general intelligence — usually means AI that can <strong>learn and perform any intellectual task a human can</strong>, across domains, without being purpose-built for each one. The catch: there&apos;s no agreed test, so people arguing about timelines are often really arguing about definitions.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/what-is-agi-how-close.png"
+        alt="What is AGI and how close are we in 2026 — an honest assessment"
+        caption="The goalposts aren't moving. There were never goalposts — just fog."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The capability inventory, honestly</h2>
+      <DataTable
+        headers={["Domain", "2026 reality"]}
+        rows={[
+          ["Language, writing, translation", "At or beyond skilled human level for most tasks"],
+          ["Coding", "Generates ~46% of new code; still needs human review for trust"],
+          ["Exams and benchmarks", "Passes bar exams, medical boards, olympiad problems"],
+          ["Agentic work", "Completes multi-step tasks; reliability degrades over long horizons"],
+          ["Knowing when it's wrong", "Weak — confident errors remain routine"],
+          ["Continuous learning", "Absent — models are frozen between versions"],
+          ["Physical world", "Robotics improving but far behind the language story"],
+          ["Novel situations", "Brittle — impressive averages, strange failures"],
+        ]}
+      />
+      <p>
+        That table is the whole debate in miniature. Read the top half and AGI feels imminent. Read the bottom half and it feels like we built a magnificent library that occasionally insists the moon is a database. Both halves are true simultaneously — which is genuinely new in the history of technology, and why smart people disagree so hard.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The optimist&apos;s case, steelmanned</h2>
+      <p>
+        Scale keeps working. Every capability on that bottom half was once on a &quot;fundamental limitation&quot; list — reasoning, coding, tool use — until it wasn&apos;t. Models now direct other models, write meaningful fractions of the world&apos;s code (see <InternalLink href="/blog/how-llms-actually-work">how they actually work</InternalLink>), and improve the infrastructure that trains their successors. If the pattern of the last five years simply continues, several leading lab heads say systems matching humans across most cognitive work arrive within a decade. They might be marketing. They might be right. They&apos;re closer to the data than we are.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The skeptic&apos;s case, steelmanned</h2>
+      <p>
+        Prediction isn&apos;t understanding. Today&apos;s systems don&apos;t learn from experience the way a child does — every conversation forgotten, every model frozen at training time. They lack persistent goals, self-correction grounded in reality, and any reliable sense of their own ignorance. Benchmark wins may measure our tests more than their minds: the models trained on the internet ace exams published on the internet. Under this reading, we&apos;ve built history&apos;s greatest imitation of intelligence, and imitation asymptotes — the missing pieces aren&apos;t further along this road; they&apos;re a different road entirely.
+      </p>
+
+      <AlertBox type="warning" title="The honest position" body="Nobody knows. Not the labs, not the skeptics, not this article. Expert surveys put median AGI estimates anywhere from the 2030s to 'not this century', and forecasting track records in AI are humbling in both directions. Anyone selling certainty about AGI timelines is selling something else too." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What it means for you, practically</h2>
+      <InfoBox title="Plan for the AI that exists" items={[
+        ["Career", "current AI already reshapes work — adapt to that now; see our jobs analysis rather than waiting on prophecy"],
+        ["Skills that survive any timeline", "judgment, domain depth, taste, and fluency at directing AI tools"],
+        ["Money decisions", "make them on 5-year fundamentals, not on either AGI utopia or doom"],
+        ["Attention", "watch capabilities, not announcements — what can it reliably DO this quarter?"],
+      ]} />
+      <p>
+        The uncomfortable truth is that AGI is a horizon question, and horizons don&apos;t pay rent. What pays is noticing that the AI of <em>right now</em> — flawed, frozen, occasionally hallucinating — already changed <InternalLink href="/blog/will-ai-take-my-job">what jobs look like</InternalLink> and what one person can build. Whether the general version arrives in 2029 or 2069, the people who spent the meantime getting fluent will be fine in both worlds.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is AGI in simple terms?",
+          a: "AGI — artificial general intelligence — usually means AI that can learn and perform any intellectual task a human can, across domains, without being specifically built for each one. There's no agreed test, and definitions vary enough that timeline arguments are often definition arguments.",
+        },
+        {
+          q: "How close are we to AGI in 2026?",
+          a: "Honest answer: nobody knows, and the expert range is enormous — some leading researchers say within a decade, others say fundamental pieces are still missing entirely. Today's systems are superhuman in narrow ways and brittle in general ways, which is why forecasts disagree.",
+        },
+        {
+          q: "What can today's AI still not do?",
+          a: "Reliably know when it's wrong, learn continuously from experience, maintain goals over long unsupervised horizons, and handle genuinely novel physical-world situations. Impressive benchmark scores coexist with failures a child wouldn't make.",
+        },
+        {
+          q: "Should I change my career plans because of AGI?",
+          a: "Plan for the AI that exists, not the AI that's prophesied. Current systems already reshape work — adapt to that now. Skills that compound regardless: judgment, domain expertise, and fluency at directing AI tools.",
+        },
+      ]} />
+
+      <p>
+        Define your terms, inventory the capabilities, ignore the certainty merchants. The future&apos;s fogged either way — but the present is perfectly visible, and it&apos;s where all your decisions live.
+      </p>
+    </div>
+  ),
+  "how-to-start-freelancing": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Freelancing has the lowest barrier to entry of any business in history: a laptop, a skill, and the nerve to ask strangers for money. That last one is where 90% of would-be freelancers quietly stop. This guide is built to get you past it.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        From absolute zero to first paying client: the skill decision, the positioning sentence, platforms versus outreach, pricing without self-sabotage, and a 30-day plan that ends with an invoice instead of a vision board.
+      </p>
+
+      <HookBanner headline="The path" items={[
+        "The skill test: what people pay for vs what you enjoy",
+        "The one-sentence positioning that gets replies",
+        "Platforms vs direct outreach — honest fee math",
+        "Pricing your first three jobs",
+        "The 30-day plan, week by week",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How do I start freelancing with no experience?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Pick <strong>one narrow service</strong>, create 2-3 spec samples that prove you can do it, and start where money already flows: platforms like Upwork and Fiverr, or direct outreach to businesses you can concretely help. Reviews and referrals replace &quot;experience&quot; within a few months.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-start-freelancing.png"
+        alt="How to start freelancing in 2026 from zero to first paying client"
+        caption="Nobody hires a generalist stranger. Everybody hires a specific solution."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 1: Choose a skill people already pay for</h2>
+      <p>
+        The test isn&apos;t &quot;what am I passionate about.&quot; It&apos;s the overlap of three circles: something you can do at a professional-ish level (or reach it in 60 days), something businesses visibly buy, and something you won&apos;t hate on a Tuesday. In 2026, the buying is loudest around AI-adjacent work — <InternalLink href="/blog/ai-content-editor-side-hustle">editing AI content</InternalLink>, automation setup, short-form video — plus the evergreens: copywriting, design, bookkeeping, web work. Full ranking in our <InternalLink href="/blog/high-income-skills-2026">high-income skills guide</InternalLink>.
+      </p>
+      <p>
+        Then narrow it until it sounds almost comically specific. Not &quot;writer&quot; — &quot;I write onboarding email sequences for SaaS companies.&quot; Not &quot;video editor&quot; — &quot;I cut podcast episodes into 10 Shorts a week.&quot; Specific freelancers get hired by strangers; general freelancers get hired by friends, and you&apos;ll run out of friends.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 2: Manufacture proof (this weekend)</h2>
+      <p>
+        No clients yet means no portfolio, which is fine — spec work is legitimate and everyone senior started with it. Make 2-3 samples for realistic imaginary clients, label them clearly as spec, and present them as before/after or problem/solution one-pagers. Clients don&apos;t check whether samples were paid; they check whether the work would solve <em>their</em> problem. The <InternalLink href="/blog/freelance-portfolio-no-experience">zero-experience portfolio guide</InternalLink> walks through this weekend project in detail.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 3: Platforms vs outreach</h2>
+      <DataTable
+        headers={["Channel", "Fees", "Best for", "Catch"]}
+        rows={[
+          ["Fiverr", "20%", "Productized services, first reviews", "Crowded; niche gigs only"],
+          ["Upwork", "10%", "Bigger projects, longer clients", "Proposal grind at the start"],
+          ["Direct outreach", "0%", "Best rates, real relationships", "Needs proof + persistence"],
+          ["Your network", "0%", "Fastest first client, honestly", "Runs out; not a system"],
+        ]}
+      />
+      <p>
+        The sane sequence: start on one platform (not two — focus) while telling your network what you now do. Platforms hold the money in escrow, which matters when you&apos;re new and trust runs both ways. Shift toward direct as reviews stack up. Run the fee math with the <InternalLink href="/tools/freelancer-earnings-calculator">earnings calculator</InternalLink> so platform cuts never surprise you.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Step 4: Price for speed, then raise relentlessly</h2>
+      <p>
+        First three jobs: about 60-70% of market rate. Not $5 — desperation pricing attracts clients who treat you accordingly. The discount buys one thing only: speed to reviews. Then raise prices every three to five completed jobs until demand pushes back. Freelancers who never raise rates aren&apos;t humble; they&apos;re anchored to a number they invented while scared.
+      </p>
+
+      <AlertBox type="money" title="The 30-day plan" body="Week 1: pick the niche, build 3 spec samples, set up one platform profile. Week 2: apply/pitch 5 times daily — personalized, outcome-focused, two sentences of why-you. Week 3: keep pitching; follow up on week 2 politely; expect the silence, it's normal. Week 4: land and overdeliver the first small job, ask for the review, raise your price. That's the whole machine. It's boring on purpose — boring repeats." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How do I start freelancing with no experience?",
+          a: "Pick one narrow service, create 2-3 spec samples that prove you can do it, and start where money already flows: platforms like Upwork and Fiverr, or direct outreach to businesses you can concretely help. Reviews and referrals replace 'experience' within a few months.",
+        },
+        {
+          q: "What freelance skills are most in demand in 2026?",
+          a: "AI-adjacent services lead: editing and humanizing AI content, automation setup, short-form video editing, and web development. Classic evergreen skills — copywriting, design, bookkeeping — still sell when niched to a specific industry.",
+        },
+        {
+          q: "How much should a beginner freelancer charge?",
+          a: "Start around 60-70% of market rate to win first reviews, then raise prices every few completed jobs. The goal of low early rates is speed to proof, not a permanent identity.",
+        },
+        {
+          q: "Freelance platforms or direct outreach — which is better?",
+          a: "Platforms hold the money and bring buyers, at 10-20% fees — best for validation and first clients. Direct outreach pays better long-term but needs proof to show. Most freelancers start on platforms and shift direct as their portfolio grows.",
+        },
+      ]} />
+
+      <p>
+        One niche, three samples, five pitches a day, thirty days. The nerve to ask strangers for money turns out to be a muscle — and it grows embarrassingly fast once you send the first one.
+      </p>
+    </div>
+  ),
+  "make-money-writing-online": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        AI was supposed to end paid writing. Instead it ran a brutal audit: everything generic went to zero, and everything AI can&apos;t do got a raise. If you write, your career didn&apos;t die — it got re-priced, and the new price list is worth reading closely.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s where writing money actually lives in 2026: the four tiers that survived, realistic rates for each, and where the clients are hiding.
+      </p>
+
+      <HookBanner headline="The new price list" items={[
+        "What died (and why you shouldn't mourn it)",
+        "The four writing tiers that pay in 2026",
+        "Realistic rates: $30/hr to $1,500 per piece",
+        "Where to find the work, ranked by effort",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can you still make money writing online in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Yes — but not selling generic articles, which AI commoditized to near zero. What pays now: <strong>editing AI drafts into publishable work, writing grounded in real expertise, conversion copy tied to revenue, and email/newsletter writing with a voice</strong>.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/make-money-writing-online.png"
+        alt="How to make money writing online in 2026 when AI writes too"
+        caption="AI didn't lower the price of writing. It revealed which writing was worth anything."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>First, the funeral (it&apos;s short)</h2>
+      <p>
+        The $30 generic blog post is gone. &quot;Ten tips for better sleep&quot; written from search results by someone with no expertise — a model does that in nine seconds, and no edit makes it worth commissioning. Content mills paying a cent a word collapsed accordingly. If that was the plan, this article is the correction: don&apos;t compete with the machine at the machine&apos;s game. The machine&apos;s game had terrible pay anyway.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The four tiers that pay</h2>
+      <DataTable
+        headers={["Tier", "What it is", "Realistic rates"]}
+        rows={[
+          ["AI content editing", "Turning AI drafts into publishable, human, accurate work", "$30-75/hr or $50-150/article"],
+          ["Expertise writing", "B2B, technical, medical, finance — writing that requires knowing things", "$300-1,500 per article"],
+          ["Conversion copy", "Landing pages, ads, product copy — measured in revenue, not words", "$500-5,000+ per project"],
+          ["Email & newsletters", "Voice-driven, relationship writing for brands and creators", "$100-500 per email; retainers common"],
+        ]}
+      />
+      <p>
+        Notice the pattern: each surviving tier contains something a model can&apos;t supply — accountability, expertise, revenue risk, or a voice readers chose on purpose. The first tier is the easiest entry and the fastest-growing; the full playbook is in our <InternalLink href="/blog/ai-content-editor-side-hustle">AI content editor guide</InternalLink>, and the craft behind it in <InternalLink href="/blog/how-to-humanize-ai-text">how to humanize AI text</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How working writers actually use AI</h2>
+      <InfoBox title="The 2026 workflow" items={[
+        ["Research and outlines", "AI compresses hours into minutes — every pro uses this"],
+        ["First drafts", "sometimes, for structure — never shipped raw"],
+        ["The human layer", "facts checked, voice imposed, specifics added, claims owned"],
+        ["Transparency", "good clients assume AI is in the stack; they're paying for your judgment on top"],
+      ]} />
+      <p>
+        The writers earning most in 2026 aren&apos;t AI refuseniks or AI passthroughs. They&apos;re editors-in-chief of a one-person newsroom where the intern is a model — fast, tireless, occasionally lying, and never allowed to publish unsupervised.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where the work is</h2>
+      <p>
+        Ranked by effort-to-result for someone starting now. One: platforms — Upwork and Fiverr have real demand for &quot;AI content editing&quot; and niche writing; the <InternalLink href="/blog/how-to-start-freelancing">freelancing from zero guide</InternalLink> covers the ramp. Two: direct pitches to agencies and niche B2B companies — most are drowning in drafts and short on editors; a sharp two-line pitch with before/after samples gets replies. Three: build a small public surface — a newsletter or blog in your niche that works as a permanent portfolio and slowly makes clients come to you. Slowest, compounds hardest.
+      </p>
+
+      <AlertBox type="warning" title="The one trap left" body="Don't become a human AI-passthrough — generating with AI, skimming, invoicing. Clients test for it now (detectors, oral follow-ups, revision requests), and the writers caught once rarely get a second contract. The entire surviving market is built on the opposite promise: a human checked this and stakes their name on it. That promise is your product. Guard it." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can you still make money writing online in 2026?",
+          a: "Yes — but not selling generic articles, which AI commoditized to near zero. What pays now: editing AI drafts into publishable work, writing grounded in real expertise or reporting, conversion copy tied to revenue, and email/newsletter writing with a voice.",
+        },
+        {
+          q: "How much do online writers make in 2026?",
+          a: "Generic content mill work collapsed, but the surviving tiers pay well: AI content editing runs $30-75/hour, specialist B2B writing $300-1,500 per article, and email/conversion copywriting often more because it's measured in revenue, not words.",
+        },
+        {
+          q: "Where do I find online writing work?",
+          a: "Upwork and freelance platforms for volume, direct pitches to niche companies and agencies for better rates, and a small public portfolio (newsletter or blog) that makes clients come to you. Specialists get found; generalists have to hunt.",
+        },
+        {
+          q: "Should writers use AI tools?",
+          a: "Openly and skillfully, yes — clients now assume AI is in the workflow and pay for the judgment layered on top. AI for drafts and research; you for structure, voice, facts, and the parts a model can't know.",
+        },
+      ]} />
+
+      <p>
+        Writing didn&apos;t die. Typing died. If what you sell is judgment, expertise, and a voice worth choosing — congratulations, your competition just got automated out of the market.
+      </p>
+    </div>
+  ),
   "which-ai-subscription-is-worth-it": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
