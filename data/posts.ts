@@ -23,6 +23,566 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "kimi-k3-review",
+    title: "Kimi K3 Review: The Largest Open-Source AI Model Ever Is Actually Good",
+    metaTitle: "Kimi K3 Review 2026: 2.8T Open Model Tested",
+    primaryKeyword: "kimi k3 review",
+    metaDescription:
+      "Kimi K3 review: Moonshot's 2.8T-parameter open-weight model with 1M context and native vision. Benchmarks, pricing, real strengths, and honest weaknesses.",
+    excerpt:
+      "Moonshot AI just released the largest open-weight model in history — 2.8 trillion parameters, 1M context, native video understanding. Here's what Kimi K3 actually does well, where it loses to the US flagships, and what it costs.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/kimi-k3-review.png",
+    trending: true,
+    featured: true,
+    tags: [
+      "Kimi K3",
+      "Moonshot AI",
+      "Open Source AI",
+      "Chinese AI",
+      "LLM",
+      "AI Models 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is Kimi K3?",
+        answer:
+          "Kimi K3 is Moonshot AI's flagship model released July 16, 2026 — a 2.8-trillion-parameter open-weight model with a 1-million-token context window, native image and video understanding, and always-on reasoning. It's the largest open-weight model ever released.",
+      },
+      {
+        question: "Is Kimi K3 better than ChatGPT and Claude?",
+        answer:
+          "It's genuinely competitive. Self-reported benchmarks show K3 beating Claude Opus 4.8 and GPT-5.5-tier models on most tests while still trailing the newest flagships like Claude Fable 5 and GPT-5.6 Sol. For an open-weight model, that gap is historically small.",
+      },
+      {
+        question: "How much does Kimi K3 cost?",
+        answer:
+          "API pricing is $3 per million input tokens and $15 per million output tokens, with cached input at $0.30. The weights themselves are free to download, but at 2.8T parameters you need serious datacenter hardware to self-host.",
+      },
+      {
+        question: "Can I run Kimi K3 locally?",
+        answer:
+          "Realistically, no — 2.8 trillion parameters is far beyond consumer hardware. 'Open weights' here means researchers and companies can inspect, fine-tune, and host it on clusters. Individuals should use the API or hosted providers.",
+      },
+    ],
+    seoKeywords: [
+      "kimi k3",
+      "kimi k3 benchmarks",
+      "moonshot ai kimi",
+      "kimi k3 pricing",
+      "kimi k3 vs claude",
+      "largest open source model",
+      "kimi k3 api",
+    ],
+  },
+  {
+    slug: "qwen3-8-max-review",
+    title: "Qwen3.8-Max Review: Alibaba's 2.4T Model and Its Very Big Claims",
+    metaTitle: "Qwen3.8-Max Review: Benchmarks & Pricing (2026)",
+    primaryKeyword: "qwen3.8-max review",
+    metaDescription:
+      "Qwen3.8-Max review: Alibaba's 2.4T-parameter MoE model claims to beat GPT-5.6 and Claude Fable 5. The benchmarks, $2/$6 pricing, and the caveats that matter.",
+    excerpt:
+      "Alibaba's Qwen3.8-Max claims benchmark wins over the best models on earth — from a table Alibaba wrote itself. Here's what the 2.4T MoE model actually offers, the aggressive pricing, and how much to trust the numbers.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/qwen3-8-max-review.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Qwen3.8-Max",
+      "Alibaba AI",
+      "Qwen",
+      "Open Source AI",
+      "Chinese AI",
+      "AI Models 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is Qwen3.8-Max?",
+        answer:
+          "Qwen3.8-Max is Alibaba's largest model to date, released August 3, 2026: a 2.4-trillion-parameter mixture-of-experts model that activates about 95 billion parameters per token, with text, image, and video input, a 1M-token context window, and up to 131K output tokens.",
+      },
+      {
+        question: "Is Qwen3.8-Max really better than GPT and Claude?",
+        answer:
+          "Alibaba's own table says yes on several tests — 86.1 on OSWorld-Verified versus 85.0 for Claude Fable 5 and 83.2 for GPT-5.6 Sol Max. But as of launch, every published number is self-reported; independent leaderboards hadn't scored it yet. Treat it as a strong claim, not a verdict.",
+      },
+      {
+        question: "How much does Qwen3.8-Max cost?",
+        answer:
+          "API pricing is $2 per million input tokens and $6 per million output tokens — roughly a third of what comparable Western flagships charge for output. Open weights are scheduled for Hugging Face release the week of August 10, 2026.",
+      },
+      {
+        question: "What is Qwen3.8-Max best at?",
+        answer:
+          "Alibaba highlights agentic and multimodal work: recreating apps from screenshots, generating interactive games, converting 2D floor plans to 3D, and running autonomous software projects for 10+ days. Its strongest reported score is 93.0 on PaperBench for research tasks.",
+      },
+    ],
+    seoKeywords: [
+      "qwen 3.8 max",
+      "qwen3.8-max benchmarks",
+      "alibaba ai model 2026",
+      "qwen vs gpt",
+      "qwen 3.8 max pricing",
+      "qwen open weights",
+      "qwen3.8-max api",
+    ],
+  },
+  {
+    slug: "kimi-k3-vs-qwen3-8-max",
+    title: "Kimi K3 vs Qwen3.8-Max: China's Two AI Giants Compared (2026)",
+    metaTitle: "Kimi K3 vs Qwen3.8-Max: Full Comparison 2026",
+    primaryKeyword: "kimi k3 vs qwen3.8-max",
+    metaDescription:
+      "Kimi K3 vs Qwen3.8-Max compared: specs, benchmarks, pricing, openness, and which of China's two giant 2026 models fits your use case.",
+    excerpt:
+      "Two weeks apart, China shipped the two biggest open-weight models in history. Kimi K3 (2.8T) and Qwen3.8-Max (2.4T) are aimed at the same crown — here's the spec-by-spec, price-by-price comparison, and who should use which.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/kimi-k3-vs-qwen3-8-max.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Kimi K3",
+      "Qwen3.8-Max",
+      "AI Comparison",
+      "Chinese AI",
+      "Open Source AI",
+      "AI Models 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Which is better, Kimi K3 or Qwen3.8-Max?",
+        answer:
+          "On vendor benchmarks, Qwen3.8-Max posts higher agentic scores (86.1 OSWorld-Verified) while Kimi K3 leads on coding tests like FrontierSWE (81.2) and has verified open weights already available. K3's numbers have had more independent scrutiny; Qwen's were all self-reported at launch.",
+      },
+      {
+        question: "Which is cheaper, Kimi K3 or Qwen3.8-Max?",
+        answer:
+          "Qwen3.8-Max, clearly: $2 input / $6 output per million tokens versus Kimi K3's $3 / $15. For output-heavy workloads like agents and long generations, Qwen is roughly 60% cheaper.",
+      },
+      {
+        question: "Are Kimi K3 and Qwen3.8-Max really open source?",
+        answer:
+          "Both are open-weight rather than fully open-source: you can download, inspect, fine-tune, and self-host the weights, but training data and code aren't fully open. K3's weights shipped July 27; Qwen3.8-Max weights were scheduled for the week of August 10.",
+      },
+      {
+        question: "Can these Chinese models replace ChatGPT or Claude?",
+        answer:
+          "For many workloads, yes — both are within striking distance of the top Western flagships at a fraction of the API price. Considerations that remain: data governance policies, English-language edge cases, and ecosystem tooling, where OpenAI and Anthropic still lead.",
+      },
+    ],
+    seoKeywords: [
+      "kimi vs qwen",
+      "kimi k3 comparison",
+      "qwen3.8-max vs kimi k3 benchmarks",
+      "best chinese ai model 2026",
+      "moonshot vs alibaba ai",
+      "open weight models compared",
+      "china ai models 2026",
+    ],
+  },
+  {
+    slug: "kimi-k3-vs-claude-gpt",
+    title: "Kimi K3 vs Claude & ChatGPT: Can a Free Model Really Compete in 2026?",
+    metaTitle: "Kimi K3 vs Claude vs ChatGPT: 2026 Showdown",
+    primaryKeyword: "kimi k3 vs claude",
+    metaDescription:
+      "Kimi K3 vs Claude Fable 5 and GPT-5.6: benchmarks, pricing gaps, and when the open-weight challenger is genuinely the smarter buy in 2026.",
+    excerpt:
+      "An open-weight model beating last year's Western flagships would've sounded absurd in 2024. Kimi K3 does it on several benchmarks — while losing to the newest ones. Here's the honest three-way comparison, including the price math.",
+    category: "AI & Tech",
+    readTime: "11 min",
+    date: "Aug 6, 2026",
+    image: "/images/kimi-k3-vs-claude-gpt.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Kimi K3",
+      "Claude",
+      "ChatGPT",
+      "AI Comparison",
+      "Open Source AI",
+      "AI Models 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Is Kimi K3 as good as Claude or ChatGPT?",
+        answer:
+          "Close, with an asterisk. Reported benchmarks show K3 beating the previous-generation flagships (Claude Opus 4.8-tier, GPT-5.5-tier) on most tests while trailing the current leaders, Claude Fable 5 and GPT-5.6 Sol. For an open-weight model, being one generation behind the frontier is unprecedented.",
+      },
+      {
+        question: "When should I use Kimi K3 instead of Claude or ChatGPT?",
+        answer:
+          "When cost at scale matters (K3's API undercuts Western flagship pricing), when you need 1M-token context, when you want weights you can fine-tune or self-host, or when data-control requirements rule out closed US providers. For frontier reasoning and polished tooling, the Western flagships still lead.",
+      },
+      {
+        question: "Is Kimi K3 free to use?",
+        answer:
+          "The weights are free to download, and Kimi's consumer chat has a free tier. The API costs $3/$15 per million tokens. Self-hosting a 2.8T model is only realistic for organizations with datacenter GPUs.",
+      },
+      {
+        question: "Is it safe to use Chinese AI models?",
+        answer:
+          "For public or non-sensitive work via API, millions do. For confidential data, apply the same scrutiny you would to any provider: read the data policy, consider where servers are located, and for maximum control use the open weights on your own infrastructure — which is precisely the argument for open models.",
+      },
+    ],
+    seoKeywords: [
+      "kimi k3 vs chatgpt",
+      "kimi vs claude fable",
+      "open source vs closed ai",
+      "best ai model 2026",
+      "kimi k3 benchmarks comparison",
+      "cheap claude alternative",
+      "chinese ai vs american ai",
+    ],
+  },
+  {
+    slug: "how-to-use-kimi-k3",
+    title: "How to Use Kimi K3 in 2026: Free Chat, API, and What You Can't Do",
+    metaTitle: "How to Use Kimi K3: Free Chat, API & Setup",
+    primaryKeyword: "how to use kimi k3",
+    metaDescription:
+      "How to use Kimi K3 in 2026: the free chat app, API setup with pricing math, hosted providers, 1M-context tips, and why you can't run it on your own PC.",
+    excerpt:
+      "Kimi K3 is the most capable model you can use nearly free right now — if you know the entry points. Here's every way to access it, the API cost math, what the 1M context is genuinely useful for, and the self-hosting reality check.",
+    category: "AI & Tech",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/how-to-use-kimi-k3.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Kimi K3",
+      "AI Tutorial",
+      "Moonshot AI",
+      "AI API",
+      "Open Source AI",
+      "AI Tools 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "How do I access Kimi K3?",
+        answer:
+          "Three ways: the Kimi chat app and website (free tier available), Moonshot's API at $3 input / $15 output per million tokens with $0.30 cached input, or through third-party hosted providers and routers that serve the open weights.",
+      },
+      {
+        question: "Is Kimi K3 free?",
+        answer:
+          "The consumer chat has a free tier and the model weights are freely downloadable. Heavy or programmatic use goes through the paid API. For most individuals, the free chat plus occasional API use covers everything.",
+      },
+      {
+        question: "What is Kimi K3's 1M context window good for?",
+        answer:
+          "Feeding entire codebases, book-length documents, long meeting archives, or hours of video for analysis in one prompt. The practical tips: put your question at the end, ask for citations back to the source material, and remember cached input pricing makes repeated large-context calls much cheaper.",
+      },
+      {
+        question: "What hardware do you need to run Kimi K3 locally?",
+        answer:
+          "Datacenter-class hardware — 2.8 trillion parameters needs multiple high-end GPUs even heavily quantized, far beyond any consumer setup. Individuals wanting local AI should use smaller open models; K3 is for API use or organizational hosting.",
+      },
+    ],
+    seoKeywords: [
+      "kimi k3 tutorial",
+      "kimi k3 api setup",
+      "kimi k3 free",
+      "use kimi ai",
+      "kimi k3 context window",
+      "kimi k3 self host",
+      "moonshot api guide",
+    ],
+  },
+  {
+    slug: "what-is-onegenome",
+    title: "OneGenome Explained: The Free AI That Reads DNA and Reasons Like a Doctor",
+    metaTitle: "What Is OneGenome? Free DNA AI Explained (2026)",
+    primaryKeyword: "what is onegenome",
+    metaDescription:
+      "OneGenome explained: BGI's free open-source AI that connects raw DNA to clinical literature to diagnose rare diseases. How it works and why it matters.",
+    excerpt:
+      "A free, open-source AI that reads a patient's DNA and reasons through clinical literature to suggest diagnoses — that's OneGenome, and for rare-disease patients who wait years for answers, it may be 2026's most important AI release.",
+    category: "AI & Tech",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/what-is-onegenome.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "OneGenome",
+      "AI in Healthcare",
+      "Genomics",
+      "BGI",
+      "Rare Diseases",
+      "Medical AI",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is OneGenome?",
+        answer:
+          "OneGenome is a free, open-source AI system from BGI-Research that bridges raw DNA sequencing data and clinical literature. Rather than just reading sequences, it's trained to reason — helping identify genetic causes of rare diseases and suggest treatment directions.",
+      },
+      {
+        question: "How is OneGenome different from other AI models?",
+        answer:
+          "General models like DeepSeek or GPT read text; traditional gene models read sequences. OneGenome does both and reasons across them — and BGI reports it outperformed general LLMs including DeepSeek-v4 and specialized gene models on clinical diagnostic and medication-guidance tests.",
+      },
+      {
+        question: "Can patients use OneGenome directly?",
+        answer:
+          "It's a research and clinical tool, not a consumer app — it requires sequencing data and clinical expertise to interpret responsibly. Its impact reaches patients through hospitals and researchers, particularly for rare-disease diagnosis, where patients often wait years for answers.",
+      },
+      {
+        question: "Why was OneGenome released for free?",
+        answer:
+          "BGI released it openly to accelerate rare-disease diagnosis globally. Rare diseases individually affect few people but collectively affect hundreds of millions, and diagnostic expertise is scarce — a free reasoning tool changes what small clinics anywhere can do.",
+      },
+    ],
+    seoKeywords: [
+      "onegenome ai",
+      "onegenome bgi",
+      "dna ai model",
+      "ai rare disease diagnosis",
+      "genomics ai 2026",
+      "free medical ai",
+      "ai reads dna",
+    ],
+  },
+  {
+    slug: "onegenome-vs-alphagenome",
+    title: "OneGenome vs AlphaGenome: Two Very Different Ways AI Is Decoding DNA",
+    metaTitle: "OneGenome vs AlphaGenome: DNA AI Compared",
+    primaryKeyword: "onegenome vs alphagenome",
+    metaDescription:
+      "OneGenome vs AlphaGenome compared: BGI's clinical reasoning AI vs DeepMind's genome-understanding model — different goals, both reshaping genetic medicine.",
+    excerpt:
+      "Two labs, two continents, two philosophies of DNA AI: DeepMind's AlphaGenome predicts what genetic variants do; BGI's OneGenome reasons from a patient's genome toward a diagnosis. Here's how they differ and why both matter.",
+    category: "AI & Tech",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/onegenome-vs-alphagenome.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "OneGenome",
+      "AlphaGenome",
+      "Genomics",
+      "AI in Healthcare",
+      "DeepMind",
+      "Medical AI",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What's the difference between OneGenome and AlphaGenome?",
+        answer:
+          "AlphaGenome (DeepMind) is a scientific instrument: it predicts how DNA variants affect gene regulation across long stretches of sequence. OneGenome (BGI) is a clinical reasoner: it connects a patient's sequencing data to medical literature to suggest diagnoses and treatment directions. One decodes biology; the other practices something closer to medicine.",
+      },
+      {
+        question: "Which is better, OneGenome or AlphaGenome?",
+        answer:
+          "They're not competitors — they sit at different points of the pipeline. A researcher asking 'what does this mutation do?' wants AlphaGenome-style prediction; a clinician asking 'why is this patient sick?' wants OneGenome-style reasoning. Mature genetic medicine will use both.",
+      },
+      {
+        question: "Are these DNA AI tools available to the public?",
+        answer:
+          "Both are aimed at researchers and clinicians rather than consumers. OneGenome is free and open-source; AlphaGenome has been made available for research use through DeepMind's channels. Neither is a substitute for professional genetic counseling.",
+      },
+      {
+        question: "Will AI replace geneticists and genetic counselors?",
+        answer:
+          "No — it compresses their search, not their judgment. These tools shortlist hypotheses from data that would take humans weeks to review; validating, communicating, and acting on findings remains firmly human work.",
+      },
+    ],
+    seoKeywords: [
+      "alphagenome explained",
+      "dna ai comparison",
+      "deepmind genomics",
+      "bgi onegenome",
+      "ai genetics 2026",
+      "genome ai models",
+      "ai variant prediction",
+    ],
+  },
+  {
+    slug: "best-open-source-llms-2026",
+    title: "Best Open-Source LLMs in 2026: The Year Open Models Caught Up",
+    metaTitle: "Best Open-Source LLMs 2026 (Ranked & Honest)",
+    primaryKeyword: "best open source llm",
+    metaDescription:
+      "The best open-source LLMs of 2026 ranked: Kimi K3, Qwen3.8-Max, DeepSeek-v4 and the small models you can actually run at home — with honest trade-offs.",
+    excerpt:
+      "2026 is the year 'open model' stopped meaning 'worse model.' Kimi K3 and Qwen3.8-Max sit within one generation of the closed frontier. Here's the full ranking — from datacenter giants to the models that run on your laptop.",
+    category: "AI & Tech",
+    readTime: "12 min",
+    date: "Aug 6, 2026",
+    image: "/images/best-open-source-llms-2026.png",
+    trending: true,
+    featured: true,
+    tags: [
+      "Open Source LLM",
+      "Kimi K3",
+      "Qwen",
+      "DeepSeek",
+      "Local AI",
+      "AI Models 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best open-source LLM in 2026?",
+        answer:
+          "At the frontier: Kimi K3 (2.8T, strongest verified open-weight coding scores) and Qwen3.8-Max (2.4T MoE, aggressive pricing, strong agentic claims). For self-hosting on real-world hardware, smaller Qwen, DeepSeek, and Llama-family releases remain the practical picks.",
+      },
+      {
+        question: "Are open-source models as good as ChatGPT and Claude now?",
+        answer:
+          "Within one generation, yes — 2026's giant open-weight models beat last year's Western flagships on many benchmarks while trailing the newest closed models. The capability gap that used to be years is now months.",
+      },
+      {
+        question: "Can I run these open models on my own computer?",
+        answer:
+          "Not the giants — 2.4-2.8T parameters need datacenter hardware. What runs locally: 7B-70B models via Ollama or LM Studio on a decent GPU or Apple Silicon Mac, which handle drafting, coding help, and private document work surprisingly well.",
+      },
+      {
+        question: "Why are the biggest open models all Chinese in 2026?",
+        answer:
+          "Strategy. Chinese labs adopted open weights as their route to global adoption and developer mindshare, while US frontier labs kept top models closed. The result: the open-weight frontier is currently led by Moonshot, Alibaba, and DeepSeek.",
+      },
+    ],
+    seoKeywords: [
+      "open source llm ranking",
+      "best open weight models",
+      "kimi k3 open source",
+      "qwen open source",
+      "deepseek v4",
+      "local llm 2026",
+      "open source ai models list",
+    ],
+  },
+  {
+    slug: "open-models-cancel-ai-subscriptions",
+    title: "Can Free Open AI Models Replace Your $20 Subscriptions Yet? (2026 Reality Check)",
+    metaTitle: "Can Open AI Models Replace ChatGPT Plus? 2026",
+    primaryKeyword: "open source ai vs chatgpt plus",
+    metaDescription:
+      "Kimi K3 and Qwen3.8-Max are nearly frontier-level and nearly free. A 2026 reality check on when open models can replace your ChatGPT or Claude subscription.",
+    excerpt:
+      "The math changed: open models one generation behind the frontier, APIs at a third of the price, free chat tiers everywhere. Here's who can actually cancel their $20 AI subscription in 2026 — and who really shouldn't.",
+    category: "AI & Tech",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/open-models-cancel-ai-subscriptions.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "AI Subscriptions",
+      "Open Source AI",
+      "Kimi K3",
+      "Qwen",
+      "ChatGPT Plus",
+      "Save Money",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Can open-source AI replace ChatGPT Plus in 2026?",
+        answer:
+          "For chat, drafting, coding help, and research: increasingly yes — free tiers of Kimi, Qwen, and DeepSeek run models within a generation of the frontier. What you give up: the newest flagship reasoning, polished apps and integrations, and features like top-tier image generation and voice.",
+      },
+      {
+        question: "How much cheaper are open model APIs?",
+        answer:
+          "Substantially. Qwen3.8-Max charges $2/$6 per million tokens and Kimi K3 $3/$15, versus meaningfully higher rates for closed Western flagships. For heavy API users, switching bulk workloads to open models can cut bills by half or more.",
+      },
+      {
+        question: "Who should keep paying for ChatGPT Plus or Claude Pro?",
+        answer:
+          "Anyone whose income depends on frontier-quality output — the newest closed models still lead on the hardest reasoning and coding. Also anyone deep in an ecosystem's tools (projects, artifacts, integrations) where the workflow, not the raw model, is the value.",
+      },
+      {
+        question: "What's the smart hybrid setup?",
+        answer:
+          "One paid subscription for your primary professional tool, open-model free tiers and cheap APIs for everything else — bulk drafts, summaries, experiments. Route by task value: frontier model for the work that pays, open models for the volume.",
+      },
+    ],
+    seoKeywords: [
+      "cancel chatgpt plus",
+      "free chatgpt alternative 2026",
+      "kimi vs chatgpt plus",
+      "open source ai free",
+      "ai subscription alternatives",
+      "cheap llm api",
+      "qwen free",
+    ],
+  },
+  {
+    slug: "how-to-use-qwen3-8-max",
+    title: "How to Use Qwen3.8-Max: Access, API Pricing, and the Screenshot-to-App Trick",
+    metaTitle: "How to Use Qwen3.8-Max: Access & API Guide",
+    primaryKeyword: "how to use qwen3.8-max",
+    metaDescription:
+      "How to use Qwen3.8-Max in 2026: chat access, API setup at $2/$6 per million tokens, open weights timeline, and its screenshot-to-app multimodal tricks.",
+    excerpt:
+      "Qwen3.8-Max turns screenshots into working apps and floor plans into 3D — for API prices that undercut everyone. Here's how to access it, what the multimodal features actually do, and the honest caveats before you build on it.",
+    category: "AI & Tech",
+    readTime: "10 min",
+    date: "Aug 6, 2026",
+    image: "/images/how-to-use-qwen3-8-max.png",
+    trending: true,
+    featured: false,
+    tags: [
+      "Qwen3.8-Max",
+      "AI Tutorial",
+      "Alibaba AI",
+      "AI API",
+      "Multimodal AI",
+      "AI Tools 2026",
+    ],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "How do I access Qwen3.8-Max?",
+        answer:
+          "Through Qwen's chat interface, through Alibaba Cloud's API at $2 per million input tokens and $6 per million output tokens, and — once the weights land on Hugging Face (scheduled the week of August 10, 2026) — through third-party hosts serving the open weights.",
+      },
+      {
+        question: "What can Qwen3.8-Max do with images and video?",
+        answer:
+          "Its multimodal features are the headline: recreate a working app from screenshots, generate interactive games and educational animations, and convert 2D floor plans into 3D visualizations. It accepts text, image, and video input inside a 1M-token context.",
+      },
+      {
+        question: "Is Qwen3.8-Max good for coding agents?",
+        answer:
+          "That's Alibaba's central pitch — the model reportedly ran autonomous software development for over 10 days and completed an internal engineering project in 16 days, and its 86.1 OSWorld-Verified score leads all reported models. Caveat: those numbers were vendor-reported at launch.",
+      },
+      {
+        question: "Can I run Qwen3.8-Max on my own hardware?",
+        answer:
+          "The full 2.4T MoE needs datacenter GPUs, though its 95B-active architecture makes hosted serving cheaper than dense models the same size. Individuals should use the API or wait for the smaller Qwen releases that typically follow flagship launches.",
+      },
+    ],
+    seoKeywords: [
+      "qwen3.8-max tutorial",
+      "qwen api pricing",
+      "qwen screenshot to app",
+      "alibaba cloud qwen api",
+      "qwen 3.8 max access",
+      "qwen hugging face weights",
+      "qwen multimodal guide",
+    ],
+  },
+  {
     slug: "freelance-portfolio-no-experience",
     title: "How to Build a Freelance Portfolio With Zero Experience (The Weekend Plan)",
     metaTitle: "Freelance Portfolio With No Experience",

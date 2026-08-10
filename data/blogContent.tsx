@@ -156,6 +156,901 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "what-is-onegenome": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        While the AI world argued about chatbot benchmarks this summer, a Chinese research institute quietly released something that might matter more: a free AI that reads a patient&apos;s DNA and reasons its way toward a diagnosis.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        It&apos;s called OneGenome, it comes from BGI-Research, and for the hundreds of millions of people living with undiagnosed rare diseases, it&apos;s arguably 2026&apos;s most consequential AI release. Here&apos;s what it is and why it matters.
+      </p>
+
+      <HookBanner headline="What you'll understand by the end" items={[
+        "What OneGenome does that gene tools and chatbots can't",
+        "Why 'trained to reason' is the key phrase",
+        "The rare-disease problem it targets — years-long diagnostic odysseys",
+        "Why free and open-source was the point",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is OneGenome?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          OneGenome is a <strong>free, open-source AI system from BGI-Research</strong> that bridges raw DNA sequencing data and the world&apos;s clinical literature. Rather than just reading sequences, it&apos;s trained to reason across genome and medicine — helping identify genetic causes of rare diseases and suggest treatment directions.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/what-is-onegenome.png"
+        alt="OneGenome explained — BGI's free AI that reads DNA and reasons like a clinician"
+        caption="Not a chatbot, not a gene tool — something in between that neither could do alone."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The gap it fills</h2>
+      <p>
+        Medicine has had two kinds of AI for a while. General language models read the medical literature fluently but can&apos;t parse a genome. Specialized gene models read sequences beautifully but can&apos;t connect a variant to the case report that explains what it does in an actual patient. Between those two capabilities sits the actual clinical question — <em>this patient, this genome, what&apos;s wrong and what might help</em> — and until recently, only scarce human experts could bridge it.
+      </p>
+      <p>
+        OneGenome is built for exactly that bridge. BGI reports it outperformed general LLMs including DeepSeek-v4 as well as traditional gene models across multiple clinical diagnostic and medication-guidance tests. The &quot;trained to reason&quot; framing is the point: it doesn&apos;t just retrieve — it works through the case.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why rare diseases, specifically</h2>
+      <InfoBox title="The diagnostic odyssey problem" items={[
+        ["Individually rare, collectively huge", "thousands of rare diseases together affect hundreds of millions of people worldwide"],
+        ["Years to a diagnosis", "rare-disease patients famously endure multi-year 'diagnostic odysseys' across many specialists"],
+        ["Expertise is the bottleneck", "the clinicians who can connect an odd genome to an obscure case report are concentrated in a few centers"],
+        ["Why AI fits", "the task is exhaustive cross-referencing of one genome against vast literature — precisely what machines do tirelessly"],
+      ]} />
+      <p>
+        A tool that shortens that odyssey from years toward weeks doesn&apos;t just save money — it changes lives during the window when treatment can still alter outcomes. That&apos;s the bet BGI is making by giving it away.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What it means (and doesn&apos;t)</h2>
+      <p>
+        Temper the sci-fi: OneGenome is a research and clinical tool, not a consumer app. It needs sequencing data and professional interpretation; you won&apos;t be pasting your 23andMe export into a chatbot for a diagnosis, and you shouldn&apos;t want to. Its impact routes through hospitals, researchers, and — because it&apos;s free — small clinics in places that could never afford proprietary diagnostic AI. That last part is the quiet revolution: expertise that used to live in a dozen elite centers becomes a download.
+      </p>
+      <p>
+        It also fits a larger pattern we&apos;ve tracked all year: Chinese labs releasing frontier-adjacent AI openly while Western labs keep theirs closed — the same strategy behind <InternalLink href="/blog/kimi-k3-review">Kimi K3</InternalLink> and <InternalLink href="/blog/qwen3-8-max-review">Qwen3.8-Max</InternalLink>, now applied to medicine. For the broader picture of AI reaching actual patient care, see <InternalLink href="/blog/ai-in-healthcare-2026">how AI is changing your doctor visits</InternalLink>.
+      </p>
+
+      <AlertBox type="warning" title="Information, not medical advice" body="This article explains a research tool; it is not medical guidance. If you or a family member face a suspected genetic condition, the path runs through doctors and certified genetic counselors — tools like OneGenome may inform their work, not replace it." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is OneGenome?",
+          a: "OneGenome is a free, open-source AI system from BGI-Research that bridges raw DNA sequencing data and clinical literature. Rather than just reading sequences, it's trained to reason — helping identify genetic causes of rare diseases and suggest treatment directions.",
+        },
+        {
+          q: "How is OneGenome different from other AI models?",
+          a: "General models read text; traditional gene models read sequences. OneGenome does both and reasons across them — and BGI reports it outperformed general LLMs including DeepSeek-v4 and specialized gene models on clinical diagnostic and medication-guidance tests.",
+        },
+        {
+          q: "Can patients use OneGenome directly?",
+          a: "It's a research and clinical tool, not a consumer app — it requires sequencing data and clinical expertise to interpret responsibly. Its impact reaches patients through hospitals and researchers, particularly for rare-disease diagnosis.",
+        },
+        {
+          q: "Why was OneGenome released for free?",
+          a: "BGI released it openly to accelerate rare-disease diagnosis globally. Diagnostic expertise is scarce and concentrated; a free reasoning tool changes what small clinics anywhere can do.",
+        },
+      ]} />
+
+      <p>
+        The benchmark wars will keep the headlines. But a free tool that shortens a sick child&apos;s path to a diagnosis is the kind of AI story that will still matter in ten years.
+      </p>
+    </div>
+  ),
+  "onegenome-vs-alphagenome": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Two of the world&apos;s top research labs built AI to decode DNA — and built almost opposite things. That contrast says more about where genetic medicine is heading than either model alone.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        DeepMind&apos;s AlphaGenome predicts what DNA variants <em>do</em>. BGI&apos;s OneGenome reasons from a patient&apos;s genome toward a <em>diagnosis</em>. Here&apos;s the comparison, and why the answer to &quot;which is better&quot; is &quot;wrong question.&quot;
+      </p>
+
+      <HookBanner headline="Inside this comparison" items={[
+        "What each model actually does, in plain English",
+        "Scientist's tool vs clinician's tool — the philosophy split",
+        "Where they'd meet in a real patient's journey",
+        "What this East-West divergence signals for medical AI",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What&apos;s the difference between OneGenome and AlphaGenome?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          <strong>AlphaGenome is a scientific instrument</strong>: it predicts how DNA variants affect gene regulation across long stretches of sequence. <strong>OneGenome is a clinical reasoner</strong>: it connects a patient&apos;s sequencing data to medical literature to suggest diagnoses and treatments. One decodes biology; the other practices something closer to medicine.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/onegenome-vs-alphagenome.png"
+        alt="OneGenome vs AlphaGenome — two approaches to DNA AI compared"
+        caption="One asks 'what does this mutation do?' The other asks 'why is this patient sick?'"
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Side by side</h2>
+      <DataTable
+        headers={["", "AlphaGenome (DeepMind)", "OneGenome (BGI-Research)"]}
+        rows={[
+          ["Core question", "What does this variant do to gene regulation?", "What explains this patient's condition?"],
+          ["Input", "DNA sequence (up to ~1M letters)", "Patient sequencing data + clinical context"],
+          ["Output", "Predicted molecular effects", "Diagnostic hypotheses, medication guidance"],
+          ["Primary user", "Research scientists", "Clinicians, diagnostic teams"],
+          ["Access", "Research availability via DeepMind", "Free and open-source"],
+          ["Benchmark claim", "State-of-the-art variant effect prediction", "Beat DeepSeek-v4 and gene models on clinical tests"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Same patient, two doors</h2>
+      <p>
+        Picture a child with an undiagnosed condition and a genome full of variants of unknown significance. An AlphaGenome-style model helps a researcher ask: does this specific variant disrupt regulation of a gene that could plausibly cause this? A OneGenome-style system attacks from the other side: given everything sequenced and everything published, which diagnostic hypotheses fit this child best, and what has helped similar cases? The first sharpens one piece of evidence; the second assembles the whole case file. A mature genetic-medicine pipeline wants both — prediction feeding reasoning.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The philosophy split worth noticing</h2>
+      <InfoBox title="What the divergence signals" items={[
+        ["Depth vs integration", "DeepMind bet on solving one scientific problem definitively; BGI bet on integrating messy clinical reality"],
+        ["Access models", "research-gated vs free-and-open — echoing the broader closed-vs-open split in AI this year"],
+        ["Validation styles", "molecular benchmarks vs clinical diagnostic tests — different definitions of 'it works'"],
+        ["The convergence", "the obvious future is systems that predict AND reason — expect both labs to move toward the middle"],
+      ]} />
+      <p>
+        It&apos;s the medical mirror of the pattern running through all of 2026&apos;s AI: Western labs shipping closed instruments, Chinese labs shipping open infrastructure — the same dynamic as <InternalLink href="/blog/kimi-k3-vs-claude-gpt">Kimi K3 versus the closed flagships</InternalLink>. For the full OneGenome story, start with <InternalLink href="/blog/what-is-onegenome">our OneGenome explainer</InternalLink>; for the ground-level view of AI in clinics, <InternalLink href="/blog/ai-in-healthcare-2026">AI in healthcare 2026</InternalLink>.
+      </p>
+
+      <AlertBox type="warning" title="Information, not medical advice" body="Both systems are professional research and clinical tools. Neither replaces doctors or certified genetic counselors, and nothing here is medical guidance — genetic questions belong with qualified professionals." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What's the difference between OneGenome and AlphaGenome?",
+          a: "AlphaGenome (DeepMind) predicts how DNA variants affect gene regulation — a scientific instrument. OneGenome (BGI) connects a patient's sequencing data to medical literature to suggest diagnoses — a clinical reasoner. One decodes biology; the other practices something closer to medicine.",
+        },
+        {
+          q: "Which is better, OneGenome or AlphaGenome?",
+          a: "They're not competitors — they sit at different points of the pipeline. Researchers asking 'what does this mutation do?' want AlphaGenome-style prediction; clinicians asking 'why is this patient sick?' want OneGenome-style reasoning. Mature genetic medicine will use both.",
+        },
+        {
+          q: "Are these DNA AI tools available to the public?",
+          a: "Both target researchers and clinicians rather than consumers. OneGenome is free and open-source; AlphaGenome has been available for research use through DeepMind's channels. Neither substitutes for professional genetic counseling.",
+        },
+        {
+          q: "Will AI replace geneticists and genetic counselors?",
+          a: "No — it compresses their search, not their judgment. These tools shortlist hypotheses from data that would take humans weeks to review; validating, communicating, and acting on findings remains human work.",
+        },
+      ]} />
+
+      <p>
+        Prediction meets reasoning somewhere in the middle of a patient&apos;s case file. Whichever lab gets there first, the diagnostic odyssey gets shorter — and that&apos;s the only leaderboard that matters here.
+      </p>
+    </div>
+  ),
+  "best-open-source-llms-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        For years, &quot;open-source model&quot; was polite code for &quot;two years behind and it shows.&quot; That sentence died in the summer of 2026, and it took exactly eighteen days to kill it.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Kimi K3 in July. Qwen3.8-Max in August. Both within one generation of the closed frontier, both downloadable. Here&apos;s the full open-model ranking — from the datacenter giants to what actually runs on your laptop.
+      </p>
+
+      <HookBanner headline="The ranking, layer by layer" items={[
+        "The frontier tier: K3 and Qwen3.8-Max, honestly compared",
+        "The workhorse tier: DeepSeek and the models real products run on",
+        "The local tier: what fits on a laptop and what it's good for",
+        "Why the entire open frontier is currently Chinese",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is the best open-source LLM in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          At the frontier: <strong>Kimi K3</strong> (2.8T, strongest verified open-weight coding scores) and <strong>Qwen3.8-Max</strong> (2.4T MoE, aggressive $2/$6 pricing, strong agentic claims). For self-hosting on realistic hardware, smaller Qwen, DeepSeek, and Llama-family models remain the practical picks.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/best-open-source-llms-2026.png"
+        alt="Best open source LLMs in 2026 ranked — Kimi K3, Qwen3.8-Max, DeepSeek and local models"
+        caption="The gap between open and closed used to be measured in years. Now it's measured in months."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 1: The open frontier</h2>
+      <DataTable
+        headers={["Model", "Size", "Signature strength", "API price (per M)"]}
+        rows={[
+          ["Kimi K3 (Moonshot)", "2.8T", "Coding agents: 81.2 FrontierSWE, 88.3 Terminal-Bench", "$3 / $15"],
+          ["Qwen3.8-Max (Alibaba)", "2.4T MoE (95B active)", "Agentic + multimodal: 86.1 OSWorld-Verified*", "$2 / $6"],
+          ["DeepSeek-v4", "Large MoE", "Reasoning value; the price-performance veteran", "Lowest of the three"],
+        ]}
+      />
+      <p>
+        The asterisk on Qwen&apos;s number: vendor-reported at launch, independent verification pending — the full caveats are in our <InternalLink href="/blog/qwen3-8-max-review">Qwen3.8-Max review</InternalLink>. K3&apos;s scores have weathered more scrutiny; the head-to-head lives in <InternalLink href="/blog/kimi-k3-vs-qwen3-8-max">K3 vs Qwen3.8-Max</InternalLink>. The honest summary of the tier: these models beat everything that was called &quot;frontier&quot; twelve months ago, and you can download them.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 2: The workhorses</h2>
+      <p>
+        Below the giants sits the tier most products are actually built on: mid-size DeepSeek releases, the smaller Qwen line, and Llama-family models in the tens-to-hundreds of billions of parameters. They&apos;re what you get from affordable hosting providers, what companies fine-tune on their own data, and what powers most &quot;AI features&quot; you use without knowing the model&apos;s name. Choosing here is less about leaderboards and more about ecosystem: tooling maturity, fine-tune recipes, and hosting availability.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Tier 3: What runs on your machine</h2>
+      <InfoBox title="The local reality" items={[
+        ["7B-14B models", "run on most modern laptops via Ollama or LM Studio — fine for drafting, summaries, private notes"],
+        ["30B-70B models", "need a serious GPU or high-RAM Apple Silicon — genuinely capable coding and analysis"],
+        ["The giants", "2T+ models are datacenter-only, full stop — 'open weights' ≠ 'runs at home'"],
+        ["Why bother locally", "privacy (nothing leaves your machine), zero marginal cost, offline use"],
+        ["Setup time", "under an hour — our local AI guide walks through it"],
+      ]} />
+      <p>
+        Setup walkthrough: <InternalLink href="/blog/run-ai-models-locally">how to run AI models locally</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why the open frontier speaks Chinese</h2>
+      <p>
+        Not an accident — a strategy. US frontier labs monetize closed APIs, so their best models stay gated. Chinese labs chose open weights as their route to global developer mindshare, regulatory resilience, and ecosystem lock-in. The result, as of August 2026: Moonshot, Alibaba, and DeepSeek own the open frontier, and even medical AI follows the pattern (<InternalLink href="/blog/what-is-onegenome">OneGenome</InternalLink> is free and open). Whether that split holds is the most interesting strategic question in AI — our <InternalLink href="/blog/china-vs-usa-ai-race-2026-whos-winning">China vs USA analysis</InternalLink> tracks it.
+      </p>
+
+      <AlertBox type="money" title="What this means for your wallet" body="Near-frontier capability at open-model prices changes the default. Bulk workloads, drafts, agents, internal tools: route them to open models and save 50-70% on inference. Keep frontier closed models for the work where the last few percent of quality pays for itself. The full subscription math is in our open-models-vs-subscriptions breakdown." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is the best open-source LLM in 2026?",
+          a: "At the frontier: Kimi K3 (2.8T, strongest verified open-weight coding scores) and Qwen3.8-Max (2.4T MoE, aggressive pricing, strong agentic claims). For self-hosting on real hardware, smaller Qwen, DeepSeek, and Llama-family releases are the practical picks.",
+        },
+        {
+          q: "Are open-source models as good as ChatGPT and Claude now?",
+          a: "Within one generation, yes — 2026's giant open-weight models beat last year's Western flagships on many benchmarks while trailing the newest closed models. The gap that used to be years is now months.",
+        },
+        {
+          q: "Can I run these open models on my own computer?",
+          a: "Not the giants — 2.4-2.8T parameters need datacenter hardware. What runs locally: 7B-70B models via Ollama or LM Studio on a decent GPU or Apple Silicon Mac.",
+        },
+        {
+          q: "Why are the biggest open models all Chinese in 2026?",
+          a: "Strategy: Chinese labs adopted open weights as their route to global adoption and developer mindshare, while US frontier labs kept top models closed. The open-weight frontier is currently led by Moonshot, Alibaba, and DeepSeek.",
+        },
+      ]} />
+
+      <p>
+        Open stopped meaning worse. Adjust your defaults accordingly — and check back in a month, because this list has never aged faster.
+      </p>
+    </div>
+  ),
+  "open-models-cancel-ai-subscriptions": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Somewhere between Kimi K3&apos;s July launch and Qwen3.8-Max&apos;s August pricing, a question that used to be silly became serious: why exactly am I paying $20 a month for AI?
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Sometimes the answer is still &quot;good reasons.&quot; Often it&apos;s inertia. Here&apos;s the honest 2026 audit: who can cancel, who shouldn&apos;t, and the hybrid setup that beats both extremes.
+      </p>
+
+      <HookBanner headline="The audit" items={[
+        "What free open-model tiers actually cover now",
+        "What you still lose by leaving the paid flagships",
+        "Three user profiles, three different verdicts",
+        "The hybrid setup that cuts costs without cutting quality",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Can open-source AI replace ChatGPT Plus in 2026?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          For chat, drafting, coding help, and research: <strong>increasingly yes</strong> — free tiers of Kimi, Qwen, and DeepSeek run models within a generation of the frontier. What you give up: the newest flagship reasoning, polished apps and integrations, and features like top-tier image generation and voice.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/open-models-cancel-ai-subscriptions.png"
+        alt="Can free open AI models replace your $20 ChatGPT or Claude subscription in 2026"
+        caption="The $240-a-year question finally deserves a spreadsheet."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What changed this summer</h2>
+      <p>
+        Three numbers moved. Capability: open models closed to within one generation of the frontier (<InternalLink href="/blog/kimi-k3-review">K3</InternalLink> beats last year&apos;s best closed models on many tests). Price: open APIs landed at $2-3 input per million tokens — <InternalLink href="/blog/qwen3-8-max-review">Qwen3.8-Max</InternalLink> charges a third of Western flagship output rates. Access: free chat tiers of these near-frontier models are genuinely usable, not crippled demos. Any one of those is interesting. All three together re-prices the entire market.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Three profiles, three verdicts</h2>
+      <DataTable
+        headers={["You are...", "Verdict", "Why"]}
+        rows={[
+          ["Casual user (few chats a day)", "Cancel, probably", "Free tiers of Kimi/Qwen/DeepSeek + free ChatGPT/Claude/Gemini cover this completely"],
+          ["Professional (AI touches your income)", "Keep one subscription", "Frontier reasoning, reliability, and tooling still earn their $20 where quality converts to money"],
+          ["Builder (API bills that hurt)", "Hybrid, aggressively", "Route bulk workloads to open APIs at 50-70% savings; keep frontier calls for the hard 20%"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the $20 still buys (be honest about it)</h2>
+      <InfoBox title="The paid-flagship moat in 2026" items={[
+        ["Frontier reasoning", "Claude Fable 5 / GPT-5.6-tier models still win the hardest tasks — if that's your work, it's not optional"],
+        ["The product layer", "projects, artifacts, memory, integrations, agents — workflows you'd rebuild by hand elsewhere"],
+        ["Multimedia polish", "top-tier image generation and voice remain mostly closed-ecosystem strengths"],
+        ["Reliability & support", "uptime, rate limits, and docs that don't require reading GitHub issues"],
+      ]} />
+      <p>
+        Notice what&apos;s not on the list anymore: raw text intelligence for everyday tasks. That moat drained this summer.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The hybrid setup (most people&apos;s right answer)</h2>
+      <p>
+        One paid subscription for your primary professional tool — chosen by workload, per our <InternalLink href="/blog/which-ai-subscription-is-worth-it">which $20 is worth it guide</InternalLink>. Open-model free tiers for everything else: brainstorms, summaries, second opinions, experiments. If you build, route APIs by task value. Then re-audit quarterly, because this market re-prices itself faster than any subscription you&apos;ve ever held. The one-question test: <em>in the last two weeks, what did the paid tool do that a free tier couldn&apos;t?</em> No answer in ten seconds — that&apos;s your answer.
+      </p>
+
+      <AlertBox type="money" title="Do the cancellation honestly" body="If you cancel, actually redirect the $240/year somewhere — that's a year of hosting for a side project, or a chunk of an emergency fund. Subscription money that just dissolves into other spending wasn't saved; it was reallocated to nothing." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Can open-source AI replace ChatGPT Plus in 2026?",
+          a: "For chat, drafting, coding help, and research: increasingly yes — free tiers of Kimi, Qwen, and DeepSeek run models within a generation of the frontier. You give up the newest flagship reasoning, polished apps, and features like top-tier image generation and voice.",
+        },
+        {
+          q: "How much cheaper are open model APIs?",
+          a: "Substantially: Qwen3.8-Max charges $2/$6 per million tokens and Kimi K3 $3/$15, versus meaningfully higher closed-flagship rates. Heavy API users can cut bills by half or more routing bulk work to open models.",
+        },
+        {
+          q: "Who should keep paying for ChatGPT Plus or Claude Pro?",
+          a: "Anyone whose income depends on frontier-quality output, and anyone deep in an ecosystem's tools — projects, artifacts, integrations — where the workflow, not the raw model, is the value.",
+        },
+        {
+          q: "What's the smart hybrid setup?",
+          a: "One paid subscription for your primary professional tool, open-model free tiers and cheap APIs for everything else. Route by task value: frontier model for the work that pays, open models for the volume.",
+        },
+      ]} />
+
+      <p>
+        Pay for the frontier where it earns, ride the open wave where it doesn&apos;t, audit quarterly. Inertia is the only AI vendor that never cuts its prices.
+      </p>
+    </div>
+  ),
+  "how-to-use-qwen3-8-max": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        A model that turns a screenshot into a working app, priced at a third of its rivals, with weights landing on Hugging Face within the week. Qwen3.8-Max&apos;s launch pitch sounds like a fake product. Here&apos;s how to actually get your hands on the real one.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Every access route, the $2/$6 cost math, what the multimodal tricks genuinely do, and the caveats to respect before you build anything serious on a week-old model.
+      </p>
+
+      <HookBanner headline="The access map" items={[
+        "Chat access: the zero-cost start",
+        "API via Alibaba Cloud: setup and cost math",
+        "Open weights: the Hugging Face timeline",
+        "The screenshot-to-app workflow, step by step",
+        "Launch-week caveats worth respecting",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How do I access Qwen3.8-Max?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Three routes: <strong>Qwen&apos;s chat interface</strong> for free exploration, <strong>Alibaba Cloud&apos;s API</strong> at $2 input / $6 output per million tokens, and — once weights land on Hugging Face (scheduled the week of August 10, 2026) — <strong>third-party hosts</strong> serving the open weights.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-use-qwen3-8-max.png"
+        alt="How to use Qwen3.8-Max — access routes, API pricing and multimodal features"
+        caption="Screenshot in, working app out. The demo is real; the workflow needs technique."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Route 1: Chat (free, start today)</h2>
+      <p>
+        Qwen&apos;s chat interface exposes the model with generous free access — enough to test whether the launch claims hold for <em>your</em> tasks. First experiments worth running: paste a screenshot of any app and ask it to rebuild the interface; give it a document plus images and ask cross-referenced questions; hand it a 2D floor plan and request the 3D conversion. These are the demos Alibaba led with, and they&apos;re the fastest way to calibrate your expectations.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Route 2: The API</h2>
+      <p>
+        Access runs through Alibaba Cloud&apos;s Model Studio: create an account, generate a key, point an OpenAI-compatible client at the endpoint. The economics are the story:
+      </p>
+      <DataTable
+        headers={["Metric", "Qwen3.8-Max", "Context"]}
+        rows={[
+          ["Input", "$2 per M tokens", "Cheapest frontier-class input on the market"],
+          ["Output", "$6 per M tokens", "~1/3 of comparable Western flagship rates"],
+          ["Context window", "1M tokens", "Whole codebases, long video, document sets"],
+          ["Max output", "131K tokens", "Entire apps or long reports in one response"],
+        ]}
+      />
+      <p>
+        That 131K output ceiling matters more than it looks: screenshot-to-app and long agentic runs produce <em>a lot</em> of output, and $6 per million is what makes those workflows economically boring instead of scary. For agent builders, this is the number that changes roadmaps.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The screenshot-to-app technique</h2>
+      <InfoBox title="Getting good results from multimodal builds" items={[
+        ["Feed clean screenshots", "full-window captures, readable text, one screen per image — garbage pixels in, garbage app out"],
+        ["Specify the stack", "'rebuild this as a single-file HTML/JS app' beats 'make this' — ambiguity costs iterations"],
+        ["Iterate in the same context", "the 1M window means the model remembers every prior version; ask for diffs, not rebuilds"],
+        ["Review before shipping", "generated apps are prototypes — the same code-review rules from vibe coding apply here, doubly"],
+      ]} />
+
+      <AlertBox type="warning" title="Launch-week caveats" body="Two things to respect: the benchmark table was vendor-reported at launch (independent numbers pending — see our full review), and week-old models always have undiscovered quirks. Prototype freely, but give it a few weeks of community testing before anything production-critical rides on it. The full 2.4T MoE also isn't self-hostable on consumer hardware; wait for the smaller releases that typically follow." />
+
+      <p>
+        Context before you commit: the <InternalLink href="/blog/qwen3-8-max-review">full Qwen3.8-Max review</InternalLink> covers the claims and caveats, <InternalLink href="/blog/kimi-k3-vs-qwen3-8-max">the K3 comparison</InternalLink> settles which giant fits which workload, and if generated apps intrigue you, <InternalLink href="/blog/what-is-vibe-coding">the vibe coding guide</InternalLink> covers the discipline of shipping AI-built software safely.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How do I access Qwen3.8-Max?",
+          a: "Through Qwen's chat interface, through Alibaba Cloud's API at $2 per million input tokens and $6 per million output tokens, and — once the weights land on Hugging Face (scheduled the week of August 10, 2026) — through third-party hosts serving the open weights.",
+        },
+        {
+          q: "What can Qwen3.8-Max do with images and video?",
+          a: "Recreate working apps from screenshots, generate interactive games and educational animations, and convert 2D floor plans into 3D visualizations. It accepts text, image, and video input inside a 1M-token context.",
+        },
+        {
+          q: "Is Qwen3.8-Max good for coding agents?",
+          a: "That's Alibaba's central pitch — reported 10+ day autonomous coding runs and the highest reported OSWorld-Verified score (86.1). Caveat: vendor-reported at launch; give independent verification a few weeks.",
+        },
+        {
+          q: "Can I run Qwen3.8-Max on my own hardware?",
+          a: "The full 2.4T MoE needs datacenter GPUs, though the 95B-active architecture makes hosted serving cheaper than dense models its size. Individuals should use the API or wait for the smaller Qwen releases that typically follow.",
+        },
+      ]} />
+
+      <p>
+        Free chat this afternoon, API when a workflow proves out, production after the independent numbers land. Ninety seconds to start, and the price math does the rest of the persuading.
+      </p>
+    </div>
+  ),
+  "kimi-k3-review": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        On July 16, Moonshot AI dropped the largest open-weight model in history — 2.8 trillion parameters — and the strange part isn&apos;t the size. It&apos;s that the thing is genuinely good enough to worry the closed frontier.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Here&apos;s the honest review: what Kimi K3 does well, where it still loses to the newest Western flagships, and whether the price math makes it your next default model.
+      </p>
+
+      <HookBanner headline="The review in brief" items={[
+        "2.8T parameters, 1M context, native image and video understanding",
+        "Benchmarks: beats last-gen flagships, trails the newest ones",
+        "Pricing: $3 in / $15 out per million tokens, $0.30 cached",
+        "Open weights shipped July 27 — with a hardware reality check",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is Kimi K3?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Kimi K3 is Moonshot AI&apos;s flagship released July 16, 2026: a <strong>2.8-trillion-parameter open-weight model</strong> with a 1-million-token context window, native visual understanding for images and video, and always-on reasoning with exposed thinking traces. It&apos;s the largest open-weight model ever released.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/kimi-k3-review.png"
+        alt="Kimi K3 review — Moonshot AI's 2.8 trillion parameter open-weight model tested"
+        caption="The 'open models are two years behind' era ended somewhere around July 16, 2026."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The spec sheet that matters</h2>
+      <DataTable
+        headers={["Spec", "Kimi K3", "Why it matters"]}
+        rows={[
+          ["Parameters", "2.8 trillion", "Nearly 3x its predecessor; largest open weights ever"],
+          ["Context window", "1M tokens (up from 200K)", "Entire codebases and book-length documents in one prompt"],
+          ["Modalities", "Text + native image/video", "No bolted-on vision adapter — it's built in"],
+          ["Reasoning", "Always on, traces exposed in API", "You can watch (and log) how it thinks"],
+          ["API price", "$3 in / $15 out per M tokens", "Cached input at $0.30 makes long-context work cheap"],
+          ["Weights", "Open, released July 27", "Inspect, fine-tune, self-host — license permitting"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The benchmark picture, honestly framed</h2>
+      <p>
+        Moonshot reports 81.2 on FrontierSWE and 88.3 on Terminal-Bench 2.0 — serious coding-agent numbers. The overall pattern across reported benchmarks: K3 mostly <strong>beats the previous generation of closed flagships</strong> (Claude Opus 4.8-tier, GPT-5.5-tier) while <strong>losing to the newest ones</strong> (Claude Fable 5, GPT-5.6 Sol). Independent testing since launch has broadly supported that placement.
+      </p>
+      <p>
+        Sit with that for a second. Two years ago, open models trailed the frontier by roughly two years. K3 trails by one model generation — months, not years — and you can download it. Whatever happens next, that&apos;s a structural change in who gets access to near-frontier AI. (For how these giants work under the hood, see <InternalLink href="/blog/how-llms-actually-work">our plain-English LLM explainer</InternalLink>.)
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What it&apos;s actually like to use</h2>
+      <InfoBox title="Strengths and rough edges" items={[
+        ["Coding agents", "the FrontierSWE and Terminal-Bench scores show up in practice — long multi-step coding runs are its comfort zone"],
+        ["Long-context work", "1M tokens plus cheap cached input makes whole-repo and long-document analysis economically sane"],
+        ["Visible reasoning", "exposed thinking deltas are genuinely useful for debugging prompts and building trust"],
+        ["English polish", "still a notch behind the best Western models on nuanced English prose and edge-case instructions"],
+        ["Ecosystem", "tooling, integrations, and docs trail the OpenAI/Anthropic ecosystems — expect more DIY"],
+      ]} />
+
+      <AlertBox type="warning" title="The 'open' asterisk" body="Open weights does not mean runs on your laptop. At 2.8T parameters, self-hosting K3 requires datacenter-class GPU clusters. For individuals, 'open' buys you transparency, fine-tunability by orgs, and competitive API pricing from multiple hosts — not a local install. Local-AI fans should look at smaller models instead." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Verdict</h2>
+      <p>
+        Kimi K3 is the best open-weight model released to date and a legitimately competitive daily driver — especially for coding agents, long-context analysis, and any workload where API cost compounds. If your work demands the absolute frontier, the newest closed flagships still hold the crown. Everyone else should at least run the free tier this week; the full access guide is in <InternalLink href="/blog/how-to-use-kimi-k3">how to use Kimi K3</InternalLink>, and the head-to-head with Alibaba&apos;s new giant is in <InternalLink href="/blog/kimi-k3-vs-qwen3-8-max">Kimi K3 vs Qwen3.8-Max</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is Kimi K3?",
+          a: "Kimi K3 is Moonshot AI's flagship model released July 16, 2026 — a 2.8-trillion-parameter open-weight model with a 1-million-token context window, native image and video understanding, and always-on reasoning. It's the largest open-weight model ever released.",
+        },
+        {
+          q: "Is Kimi K3 better than ChatGPT and Claude?",
+          a: "It's genuinely competitive. Reported benchmarks show K3 beating Claude Opus 4.8 and GPT-5.5-tier models on most tests while trailing the newest flagships like Claude Fable 5 and GPT-5.6 Sol. For an open-weight model, that gap is historically small.",
+        },
+        {
+          q: "How much does Kimi K3 cost?",
+          a: "API pricing is $3 per million input tokens and $15 per million output tokens, with cached input at $0.30. The weights are free to download, but self-hosting a 2.8T model requires datacenter hardware.",
+        },
+        {
+          q: "Can I run Kimi K3 locally?",
+          a: "Realistically, no — 2.8 trillion parameters is far beyond consumer hardware. Open weights here means researchers and companies can inspect, fine-tune, and host it on clusters; individuals should use the API or hosted providers.",
+        },
+      ]} />
+
+      <p>
+        The frontier is no longer a walled garden with one gate. K3 is the proof, and it&apos;s free to try.
+      </p>
+    </div>
+  ),
+  "qwen3-8-max-review": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        On August 3, Alibaba published a benchmark table showing its new model beating the best AI systems on earth. The table might even be right. But it&apos;s Alibaba&apos;s table — and that distinction is the most important sentence in this review.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Qwen3.8-Max is a 2.4-trillion-parameter multimodal MoE with pricing that undercuts everyone. Here&apos;s what&apos;s real, what&apos;s claimed, and what to do about it.
+      </p>
+
+      <HookBanner headline="The review in brief" items={[
+        "2.4T total parameters, only 95B active per token (sparse MoE)",
+        "Text, image, and video input; 1M context; 131K output",
+        "Claims: beats GPT-5.6 Sol and Claude Fable 5 on agentic benchmarks",
+        "Pricing: $2 in / $6 out — the aggressive part nobody disputes",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          What is Qwen3.8-Max?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Qwen3.8-Max is Alibaba&apos;s largest model to date, released August 3, 2026: a <strong>2.4-trillion-parameter mixture-of-experts model</strong> activating ~95 billion parameters per token, with text/image/video input, a 1M-token context window, and up to 131K output tokens per response. Open weights were scheduled for Hugging Face the week of August 10.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/qwen3-8-max-review.png"
+        alt="Qwen3.8-Max review — Alibaba's 2.4 trillion parameter multimodal MoE model"
+        caption="Big model, bigger claims, and a price tag that needs no asterisk at all."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The claims — and the asterisk</h2>
+      <p>
+        The headline number: <strong>86.1 on OSWorld-Verified</strong>, ahead of GPT-5.6 Sol Max (83.2), Claude Fable 5 (85.0), and Gemini 3.1 Pro (76.2). Add the highest reported PaperBench score (93.0) and claimed wins across dozens of multimodal benchmarks, and Alibaba is asserting the top of the leaderboard.
+      </p>
+      <p>
+        The asterisk: at launch, <em>every published number came from Alibaba&apos;s own table</em>. Independent leaderboards hadn&apos;t scored it yet. That doesn&apos;t make the numbers false — Qwen&apos;s previous releases have generally benchmarked honestly — but the correct posture is &quot;strong vendor claim, verification pending.&quot; When independent runs land, this paragraph gets its answer.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The parts that don&apos;t need an asterisk</h2>
+      <InfoBox title="Verifiable on day one" items={[
+        ["The price", "$2 input / $6 output per million tokens — roughly a third of comparable Western flagship output pricing"],
+        ["The architecture", "sparse MoE: 2.4T capacity at 95B-active inference cost, which is how the pricing works"],
+        ["The multimodal demos", "screenshot-to-working-app, interactive game generation, 2D floor plan to 3D — reproducible party tricks with real commercial uses"],
+        ["The endurance pitch", "Alibaba reports 10+ day autonomous coding runs and a 16-day internal engineering project — the agentic angle is the whole strategy"],
+        ["The openness plan", "weights on Hugging Face within a week of launch, continuing Qwen's genuinely open track record"],
+      ]} />
+
+      <AlertBox type="tip" title="What to actually do this week" body="Don't rebuild your stack on launch-day claims. Do run your own eval: take 10 real tasks from your workload, run them on Qwen3.8-Max at $2/$6, and compare against your current model. If it matches quality at a third of the cost, the vendor table stops mattering — your table is the one that counts." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Where it fits</h2>
+      <p>
+        The pattern of Qwen&apos;s 2026: aim at agents and multimodal work, win on economics, open the weights, repeat. If the OSWorld numbers survive independent testing, Qwen3.8-Max becomes the default recommendation for cost-sensitive agentic workloads. If they land a few points lower, it&apos;s still likely the best price-performance of any frontier-class model. That&apos;s a comfortable bet either way — which is presumably why Alibaba made it. The context around China&apos;s open-weight strategy is in our <InternalLink href="/blog/best-open-source-llms-2026">open-source LLM ranking</InternalLink>, and the direct fight with Moonshot in <InternalLink href="/blog/kimi-k3-vs-qwen3-8-max">Kimi K3 vs Qwen3.8-Max</InternalLink>. Access instructions: <InternalLink href="/blog/how-to-use-qwen3-8-max">how to use Qwen3.8-Max</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "What is Qwen3.8-Max?",
+          a: "Qwen3.8-Max is Alibaba's largest model to date, released August 3, 2026: a 2.4-trillion-parameter mixture-of-experts model activating about 95 billion parameters per token, with text, image, and video input, a 1M-token context window, and up to 131K output tokens.",
+        },
+        {
+          q: "Is Qwen3.8-Max really better than GPT and Claude?",
+          a: "Alibaba's own table says yes on several tests — 86.1 on OSWorld-Verified versus 85.0 for Claude Fable 5 and 83.2 for GPT-5.6 Sol Max. But at launch every published number was self-reported; treat it as a strong claim until independent runs land.",
+        },
+        {
+          q: "How much does Qwen3.8-Max cost?",
+          a: "$2 per million input tokens and $6 per million output tokens — roughly a third of comparable Western flagship output pricing. Open weights were scheduled for Hugging Face the week of August 10, 2026.",
+        },
+        {
+          q: "What is Qwen3.8-Max best at?",
+          a: "Agentic and multimodal work: recreating apps from screenshots, generating interactive games, converting floor plans to 3D, and long autonomous coding runs. Its strongest reported score is 93.0 on PaperBench for research tasks.",
+        },
+      ]} />
+
+      <p>
+        Trust the price, verify the benchmarks, run your own eval. In a launch week, that&apos;s the whole review methodology worth having.
+      </p>
+    </div>
+  ),
+  "kimi-k3-vs-qwen3-8-max": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Eighteen days apart, two Chinese labs released the two largest open-weight models in history and pointed them at the same crown. This is not a coincidence. It&apos;s a race — and picking between them comes down to five concrete differences.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Kimi K3 (Moonshot, July 16) versus Qwen3.8-Max (Alibaba, August 3): specs, benchmarks, pricing, openness, and the workloads where each one wins.
+      </p>
+
+      <HookBanner headline="The five differences that decide it" items={[
+        "Architecture: dense-style scale vs sparse MoE economics",
+        "Benchmarks: verified coding strength vs claimed agentic crown",
+        "Pricing: $3/$15 vs $2/$6 — a 60% gap on output",
+        "Openness: weights shipped vs weights scheduled",
+        "Verdict by use case, not by flag",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Which is better, Kimi K3 or Qwen3.8-Max?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          On vendor numbers, <strong>Qwen3.8-Max leads agentic benchmarks</strong> (86.1 OSWorld-Verified) while <strong>Kimi K3 leads coding tests</strong> (81.2 FrontierSWE) and has had more independent scrutiny. Qwen is cheaper ($2/$6 vs $3/$15); K3&apos;s weights shipped first. For coding agents pick K3; for cost-sensitive multimodal agents, Qwen.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/kimi-k3-vs-qwen3-8-max.png"
+        alt="Kimi K3 vs Qwen3.8-Max comparison — China's two giant open-weight AI models"
+        caption="Two 2-trillion-plus models in 18 days. The open-weight race has a pace car problem."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Head to head</h2>
+      <DataTable
+        headers={["", "Kimi K3 (Moonshot)", "Qwen3.8-Max (Alibaba)"]}
+        rows={[
+          ["Released", "July 16, 2026", "August 3, 2026"],
+          ["Parameters", "2.8T", "2.4T total / ~95B active (MoE)"],
+          ["Context", "1M tokens", "1M tokens (131K output)"],
+          ["Modalities", "Text + image/video", "Text + image/video"],
+          ["Headline scores", "81.2 FrontierSWE, 88.3 Terminal-Bench 2.0", "86.1 OSWorld-Verified, 93.0 PaperBench"],
+          ["API price (per M)", "$3 in / $15 out / $0.30 cached", "$2 in / $6 out"],
+          ["Weights", "Released July 27", "Scheduled week of Aug 10"],
+          ["Verification status", "Independent testing underway", "Self-reported at launch"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the table doesn&apos;t say</h2>
+      <p>
+        The architecture difference matters more than it looks. Qwen&apos;s sparse MoE — 2.4T capacity, 95B active per token — is why it can charge $6 for output where K3 charges $15. That&apos;s not a discount; it&apos;s a structural cost advantage for high-volume serving. K3&apos;s counterargument is track record: its numbers have survived several weeks of independent poking, while Qwen&apos;s launch table was, at time of writing, entirely Alibaba-graded homework. Both things can be true: Qwen may verify fine <em>and</em> the caution is still correct today.
+      </p>
+      <p>
+        The strategic subtext: both labs are racing to become the default open-weight platform before the other locks in developer mindshare — which is exactly the dynamic our <InternalLink href="/blog/china-vs-usa-ai-race-2026-whos-winning">China vs USA AI race analysis</InternalLink> predicted would define 2026.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Pick by workload</h2>
+      <InfoBox title="The decision guide" items={[
+        ["Coding agents & long dev runs", "Kimi K3 — verified FrontierSWE/Terminal-Bench strength, exposed reasoning traces"],
+        ["High-volume agentic pipelines", "Qwen3.8-Max — the $2/$6 pricing compounds fast at scale"],
+        ["Screenshot-to-app / visual builds", "Qwen3.8-Max — its multimodal generation demos are the differentiator"],
+        ["Need weights today", "Kimi K3 — already on the shelf"],
+        ["Risk-averse production", "Neither yet — wait for independent Qwen numbers, or run K3 which has more scrutiny behind it"],
+      ]} />
+
+      <AlertBox type="money" title="The real winner is your API bill" body="Whichever you pick, both undercut Western flagship pricing dramatically. Teams moving bulk workloads from closed flagships to either model report cutting inference costs by half or more — the full cancel-your-subscription math is in our open models vs paid subscriptions breakdown." />
+
+      <p>
+        Deeper dives: <InternalLink href="/blog/kimi-k3-review">the full Kimi K3 review</InternalLink> and <InternalLink href="/blog/qwen3-8-max-review">the full Qwen3.8-Max review</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Which is better, Kimi K3 or Qwen3.8-Max?",
+          a: "On vendor benchmarks, Qwen3.8-Max posts higher agentic scores (86.1 OSWorld-Verified) while Kimi K3 leads coding tests like FrontierSWE (81.2) and has verified open weights already available. K3's numbers have had more independent scrutiny; Qwen's were self-reported at launch.",
+        },
+        {
+          q: "Which is cheaper, Kimi K3 or Qwen3.8-Max?",
+          a: "Qwen3.8-Max: $2 input / $6 output per million tokens versus Kimi K3's $3 / $15. For output-heavy workloads like agents, Qwen is roughly 60% cheaper.",
+        },
+        {
+          q: "Are Kimi K3 and Qwen3.8-Max really open source?",
+          a: "Both are open-weight rather than fully open-source: you can download, inspect, fine-tune, and self-host the weights, but training data and code aren't fully open. K3's weights shipped July 27; Qwen's were scheduled for the week of August 10.",
+        },
+        {
+          q: "Can these Chinese models replace ChatGPT or Claude?",
+          a: "For many workloads, yes — both are within striking distance of the top Western flagships at a fraction of the API price. What remains: data governance considerations, English edge cases, and ecosystem tooling where OpenAI and Anthropic still lead.",
+        },
+      ]} />
+
+      <p>
+        K3 for code, Qwen for cost, both for proof that the open-weight frontier now moves in weeks. Pick by workload and re-evaluate when the independent Qwen numbers land.
+      </p>
+    </div>
+  ),
+  "kimi-k3-vs-claude-gpt": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        In 2024, comparing a free-to-download model against Claude and ChatGPT was a joke with a predictable punchline. In August 2026, it&apos;s a genuinely hard question with real money riding on the answer.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Kimi K3 versus the Western flagships — Claude Fable 5 and GPT-5.6 Sol. Where the gap closed, where it hasn&apos;t, and the decision rule that sorts it out for your actual work.
+      </p>
+
+      <HookBanner headline="What's inside" items={[
+        "The benchmark placement: ahead of last-gen, behind the newest",
+        "The price math that changes the question entirely",
+        "Where the closed flagships still clearly win",
+        "The routing strategy smart teams use instead of picking one",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          Is Kimi K3 as good as Claude or ChatGPT?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Close, with an asterisk. Reported benchmarks show K3 <strong>beating the previous generation of closed flagships on most tests while trailing the current leaders</strong>, Claude Fable 5 and GPT-5.6 Sol. For an open-weight model, being one generation behind the frontier — instead of two years — is unprecedented.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/kimi-k3-vs-claude-gpt.png"
+        alt="Kimi K3 vs Claude and ChatGPT comparison 2026 — open weight challenger vs closed flagships"
+        caption="The question stopped being 'is it as good?' and became 'is the difference worth the price?'"
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The capability picture</h2>
+      <p>
+        Strip the tribal loyalties and the placement is consistent across reported and independent testing: on coding agents (81.2 FrontierSWE, 88.3 Terminal-Bench 2.0), long-context work, and general reasoning, K3 lands above where Claude Opus 4.8 and the GPT-5.5 tier sat — models that were the undisputed frontier twelve months ago. Against Claude Fable 5 and GPT-5.6 Sol, K3 loses most head-to-heads: the newest closed models hold an edge on the hardest reasoning, nuanced English, and instruction-following edge cases.
+      </p>
+      <p>
+        Translation: K3 gives you last year&apos;s frontier — which was already superhuman at plenty of tasks — for a fraction of the cost, with downloadable weights.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The comparison that actually decides it</h2>
+      <DataTable
+        headers={["Factor", "Kimi K3", "Claude Fable 5 / GPT-5.6 Sol"]}
+        rows={[
+          ["Peak capability", "One generation back", "The frontier"],
+          ["API cost", "$3/$15 per M tokens", "Meaningfully higher"],
+          ["Context", "1M tokens", "Varies; K3 competitive or ahead"],
+          ["Weights & control", "Downloadable, fine-tunable", "Closed"],
+          ["Apps & ecosystem", "Thinner tooling, more DIY", "Mature apps, integrations, agents"],
+          ["Trust & polish", "Good, improving", "Best-in-class instruction following"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The routing rule</h2>
+      <p>
+        The teams getting this right in 2026 don&apos;t pick a side — they route. Frontier closed models for the 20% of work where quality directly converts to money: client deliverables, hard reasoning, anything with your name on it. K3 (or <InternalLink href="/blog/qwen3-8-max-review">Qwen3.8-Max</InternalLink>) for the 80% that&apos;s volume: drafts, summaries, bulk agent runs, internal tools. The quality delta on easy tasks is invisible; the cost delta never is.
+      </p>
+      <p>
+        Individuals can run the same play with subscriptions: keep one paid frontier plan if your income depends on it, use K3&apos;s free tier for the rest. The full math is in <InternalLink href="/blog/open-models-cancel-ai-subscriptions">can open models replace your $20 subscription</InternalLink>.
+      </p>
+
+      <AlertBox type="warning" title="On the 'is Chinese AI safe' question" body="For public and non-sensitive work via API, apply the same judgment as any provider. For confidential data, read the data policy and consider server jurisdiction — and note the irony that open weights are the strongest answer to this concern: host it yourself and no data leaves your infrastructure at all. That option doesn't exist with the closed flagships." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "Is Kimi K3 as good as Claude or ChatGPT?",
+          a: "Close: reported benchmarks show K3 beating previous-generation flagships on most tests while trailing the current leaders, Claude Fable 5 and GPT-5.6 Sol. Being one generation behind the frontier is unprecedented for an open-weight model.",
+        },
+        {
+          q: "When should I use Kimi K3 instead of Claude or ChatGPT?",
+          a: "When cost at scale matters, when you need 1M-token context, when you want weights you can fine-tune or self-host, or when data-control requirements rule out closed providers. For frontier reasoning and polished tooling, the Western flagships still lead.",
+        },
+        {
+          q: "Is Kimi K3 free to use?",
+          a: "The weights are free to download and Kimi's consumer chat has a free tier. The API costs $3/$15 per million tokens. Self-hosting the 2.8T model is only realistic for organizations with datacenter GPUs.",
+        },
+        {
+          q: "Is it safe to use Chinese AI models?",
+          a: "For public or non-sensitive work via API, millions do. For confidential data, read the data policy and consider server location — or use the open weights on your own infrastructure, which is precisely the argument for open models.",
+        },
+      ]} />
+
+      <p>
+        Frontier where it pays, open where it scales. The interesting question is no longer which model wins — it&apos;s how long the price gap survives.
+      </p>
+    </div>
+  ),
+  "how-to-use-kimi-k3": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The most capable model you can use for free right now is a 2.8-trillion-parameter system from a lab most people hadn&apos;t heard of a year ago. Access takes about ninety seconds — if you know which door to walk through.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Every way to use Kimi K3, the API cost math with the caching trick, what the 1M context is genuinely for, and the self-hosting reality check nobody puts in the launch posts.
+      </p>
+
+      <HookBanner headline="The access map" items={[
+        "Free chat: the 90-second start",
+        "API: $3/$15 pricing and the $0.30 caching trick",
+        "Third-party hosts and routers for the open weights",
+        "1M-context workflows that actually use it",
+        "Why 'open weights' doesn't mean 'runs on your PC'",
+      ]} />
+
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl md:text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+          How do I access Kimi K3?
+        </h2>
+        <p className="text-sm md:text-base" style={{ color: "var(--text-secondary)" }}>
+          Three ways: the <strong>Kimi chat app and website</strong> (free tier), <strong>Moonshot&apos;s API</strong> at $3 input / $15 output per million tokens with $0.30 cached input, or <strong>third-party hosts and routers</strong> serving the open weights released July 27.
+        </p>
+      </div>
+
+      <BlogImage
+        src="/images/how-to-use-kimi-k3.png"
+        alt="How to use Kimi K3 — free chat, API setup and pricing guide"
+        caption="Ninety seconds to the free tier. The rest of this guide is about using it well."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Route 1: The free chat (start here)</h2>
+      <p>
+        Kimi&apos;s consumer app and website give you K3 conversation with a free tier that covers casual daily use. Sign up, pick the K3 model, done. Two things to know: the reasoning is always on (you&apos;ll see it think, which is genuinely useful for checking its work), and image/video understanding is native — drop in screenshots, diagrams, or clips and ask questions. For most readers, this tier alone answers &quot;should I care about K3.&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Route 2: The API (where the math gets interesting)</h2>
+      <p>
+        Standard OpenAI-style API: get a key from Moonshot&apos;s platform, point your client at their endpoint, select the K3 model. The pricing has a trick worth understanding:
+      </p>
+      <DataTable
+        headers={["Token type", "Price per million", "The implication"]}
+        rows={[
+          ["Input (fresh)", "$3", "Cheap enough for long prompts"],
+          ["Input (cached)", "$0.30", "Repeated context costs 10x less"],
+          ["Output", "$15", "The expensive part — budget by output"],
+        ]}
+      />
+      <p>
+        That cached-input rate is the sleeper feature. Workflows that resend the same large context — a codebase, a document library, a long agent scratchpad — pay $0.30 instead of $3 per million after the first call. Structure your prompts so the big stable context comes first (cacheable) and the changing question comes last, and long-context work becomes almost embarrassingly cheap.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What 1M tokens of context is actually for</h2>
+      <InfoBox title="Workflows that earn the window" items={[
+        ["Whole-codebase reviews", "paste the repo, ask for architecture analysis or bug hunts across files"],
+        ["Book-length documents", "contracts, theses, documentation sets — with citations back to sections"],
+        ["Meeting archives", "a quarter of transcripts in one prompt: 'what did we decide about X and when?'"],
+        ["Video analysis", "native video input plus long context means real footage Q&A"],
+        ["The technique", "big stable context first (gets cached), your question last, always ask for source references"],
+      ]} />
+
+      <AlertBox type="warning" title="The self-hosting reality check" body="Open weights, yes. On your gaming PC, no. At 2.8 trillion parameters, K3 needs multiple datacenter-class GPUs even aggressively quantized. 'Open' buys individuals transparency and competitive hosted pricing, and buys organizations fine-tuning and on-premise control. If you want AI that runs on your own machine, that's a different (smaller) model class — covered in our local AI guide." />
+
+      <p>
+        Want the model-vs-model context before committing? The <InternalLink href="/blog/kimi-k3-review">full K3 review</InternalLink> covers strengths and weaknesses, <InternalLink href="/blog/kimi-k3-vs-claude-gpt">K3 vs Claude &amp; ChatGPT</InternalLink> covers the frontier question, and <InternalLink href="/blog/run-ai-models-locally">running AI locally</InternalLink> covers the models that actually fit on your hardware.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Frequently asked questions</h2>
+      <FaqSection items={[
+        {
+          q: "How do I access Kimi K3?",
+          a: "Three ways: the Kimi chat app and website (free tier available), Moonshot's API at $3 input / $15 output per million tokens with $0.30 cached input, or third-party hosted providers serving the open weights.",
+        },
+        {
+          q: "Is Kimi K3 free?",
+          a: "The consumer chat has a free tier and the weights are freely downloadable. Heavy or programmatic use goes through the paid API. For most individuals, free chat plus occasional API use covers everything.",
+        },
+        {
+          q: "What is Kimi K3's 1M context window good for?",
+          a: "Entire codebases, book-length documents, meeting archives, and video analysis in one prompt. Put your question at the end, ask for citations, and use cached-input pricing to make repeated large-context calls cheap.",
+        },
+        {
+          q: "What hardware do you need to run Kimi K3 locally?",
+          a: "Datacenter-class hardware — 2.8 trillion parameters needs multiple high-end GPUs even heavily quantized. Individuals wanting local AI should use smaller open models; K3 is for API use or organizational hosting.",
+        },
+      ]} />
+
+      <p>
+        Free tier today, API with caching when a workflow sticks, and no GPU shopping required. That&apos;s the whole onboarding.
+      </p>
+    </div>
+  ),
   "freelance-portfolio-no-experience": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
