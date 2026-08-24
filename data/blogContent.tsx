@@ -156,6 +156,971 @@ const CheckList = ({ title, items }: { title?: string; items: string[] }) => (
 );
 
 export const blogContent: Record<string, React.ReactNode> = {
+  "reading-30-minutes-a-day": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Two years ago I realized I&apos;d read forty browser tabs that day and couldn&apos;t finish a chapter of a book without checking my phone. Not wouldn&apos;t — couldn&apos;t. Somewhere in a decade of feeds, I&apos;d traded away the ability.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        So I made one rule: 30 minutes of reading, every single day, no exceptions. Three hundred sixty-five days and 38 books later, the headline result isn&apos;t the book count. It&apos;s what came back online in my head.
+      </p>
+      <HookBanner
+        headline="One year, 30 minutes a day"
+        items={[
+          "38 books — more than my previous eight years combined",
+          "Around week 6, whole chapters without reaching for my phone stopped feeling like effort",
+          "Sleep improved the week reading replaced bedtime scrolling, and stayed better",
+          "My writing tightened noticeably — input quality turns out to be upstream of output quality",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What happens if you read 30 minutes a day?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>Over a year it compounds to roughly 35–40 books at ordinary reading speed — more than most people read in a decade. But in my experiment the bigger changes were structural: sustained attention came back within about six weeks, sleep improved once reading replaced late-night scrolling, and my writing got noticeably tighter.</strong> The book count is the visible result; the rebuilt attention span is the valuable one.
+        </p>
+      </div>
+      <BlogImage src="/images/reading-30-minutes-a-day.png" alt="Reading 30 minutes a day for a year" caption="38 books in the year. The attention span was the real prize." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The embarrassing starting point</h2>
+      <p>
+        I want to be precise about how bad it was, because I suspect it&apos;s common. I wasn&apos;t someone who disliked reading — I identified as a reader. I bought books constantly. I just consumed everything in fragments: newsletters, threads, summaries, half-articles. When I sat down with an actual book, my hand moved toward my phone with a will of its own, every four or five minutes, like a tic. The neuroscience explanation is unflattering: reading researcher Maryanne Wolf describes deep reading as a learned circuit, not a natural ability — and circuits that go unused get pruned. A decade of skimming hadn&apos;t just changed my habits. It had retrained my brain for shallow passes, and books were now genuinely, physically harder than they used to be.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The rules that made it stick (after years of failing)</h2>
+      <p>
+        I&apos;d attempted &quot;read more&quot; as a resolution at least four times and failed every one. The difference this time wasn&apos;t motivation — it was friction engineering:
+      </p>
+      <StepCard
+        steps={[
+          { title: "Anchor it to something unskippable", body: "Reading happened with morning coffee, before my phone came off airplane mode. No new time was found; an existing ritual just got a passenger. On brutal days, the fallback was 30 minutes before bed — but the slot always existed." },
+          { title: "Quit boring books without guilt", body: "This was the unlock. The commitment is 30 minutes of reading, not any particular title. I abandoned 11 books this year, some past the halfway mark. Every previous failed attempt died inside a book I felt obligated to finish." },
+          { title: "Keep the next book visible", body: "A physical stack on the table, always two or three deep. The moment finishing a book means deciding what's next, you've built an exit ramp. I removed the decision." },
+          { title: "Phone in another room, always", body: "Not face-down. Not silenced. Gone. Willpower against a phone within reach lost every single time I tested it; distance won every time. That's the whole trick." },
+        ]}
+      />
+      <p>
+        Notice what&apos;s not on the list: an app, a page-count goal, a streak. I&apos;ve written about <InternalLink href="/blog/i-stopped-tracking-everything">what happened when I tracked everything</InternalLink> — this habit specifically I built without metrics, and I think that&apos;s part of why it survived. The rule was time, not pages, so slow dense books counted the same as page-turners and there was never a number to game.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The six-week mark: something switches back on</h2>
+      <p>
+        The first two weeks were honestly unpleasant — the phone-reach tic firing constantly, rereading paragraphs my eyes had slid over, checking how many pages remained in the chapter like a kid on a road trip. Around week three it eased. Around week six, something switched: I looked up from a book and realized an hour had passed without a single reach. Full immersion, the thing I used to take for granted, back like it never left.
+      </p>
+      <p>
+        And it generalized, which is the part I didn&apos;t expect. Long work documents stopped feeling like walls. Two-hour focus sessions stopped requiring a fight to enter. One habit was quietly retraining the underlying muscle every other deep activity draws on. The sleep effect was more mechanical but just as real — reading replaced bedtime scrolling, and within a week I was falling asleep faster and waking up less groggy.
+      </p>
+      <StatBox items={[["38", "books finished in 365 days"], ["11", "books abandoned guilt-free"], ["~6 wks", "until deep focus felt natural again"], ["30 min", "the whole daily commitment"]]} />
+      <AlertBox
+        type="tip"
+        title="The compounding nobody mentions"
+        body="Around book 20, the books started talking to each other. An argument in a psychology book connected to something from an economics book three months earlier; ideas began forming a lattice instead of a pile. Summaries and threads never did this for me — they deliver conclusions, and conclusions don't interlock. It's also why my writing improved: after months of full-length arguments passing through my head, my sense for structure and rhythm sharpened without any deliberate practice."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Books vs articles vs summaries: they're not the same food</h2>
+      <p>
+        The experiment forced me to get honest about the difference. Articles are for staying current — genuinely useful, and I still read plenty. Summaries are for deciding whether a book deserves your time, not for replacing it; every book I&apos;d previously &quot;read&quot; via summary had evaporated from memory, while the ones I actually read this year are still retrievable months later. The difference is the reasoning: a summary hands you the destination, a book drags you along the route, and it turns out the route is what memory hangs onto.
+      </p>
+      <DataTable
+        headers={["Format", "Good for", "What it can't do"]}
+        rows={[
+          ["Books", "Attention training, durable knowledge, connected ideas", "Staying current — they're 2+ years old by publication"],
+          ["Articles & newsletters", "Currency, discovery, breadth", "Depth; sustained single-thread attention"],
+          ["Summaries & AI digests", "Triage — deciding what deserves a full read", "Retention. The reasoning is the mnemonic, and it's exactly what gets cut"],
+          ["Feeds & threads", "Honestly? Entertainment. Which is fine, named as such", "Everything above, while training the skim reflex the whole time"],
+        ]}
+      />
+      <p>
+        My rule now is books first, articles second, feeds last — the exact reverse of my old default, and of most people&apos;s. Not because feeds are evil, but because order matters: attention spent on the shallow stuff first leaves nothing deep to spend.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "What happens if you read 30 minutes a day?", a: "Over a year it compounds to roughly 35-40 books at average reading speed — more than most people read in a decade. In my experiment the bigger changes were structural: my ability to focus on one thing for 30+ minutes came back within about six weeks, my sleep improved once reading replaced late-night scrolling, and my writing got noticeably tighter." },
+          { q: "Does reading improve your attention span?", a: "It's one of the few activities that directly trains sustained, single-thread attention — the opposite of feed-driven skimming. Reading researchers like Maryanne Wolf describe 'deep reading' circuits that atrophy without use and rebuild with practice. Mine took about six weeks of daily reading before a full chapter without checking my phone felt natural again." },
+          { q: "How do you build a daily reading habit?", a: "Three things made mine stick after years of failing: anchoring it to an existing routine (mine ran with morning coffee, before my phone came off airplane mode), quitting boring books without guilt — the habit is the commitment, not any particular title — and keeping the next book physically visible. Willpower was the system that always failed; friction design worked." },
+          { q: "Is reading books better than reading articles?", a: "They do different jobs. Articles are good for staying current; books force a single sustained argument through your head for hours, which is where the attention training and the durable knowledge come from. My rule now is books first, articles second — the reverse of how most of us default online." },
+        ]}
+      />
+      <p>
+        Year two is underway and the rule hasn&apos;t changed: 30 minutes, every day, phone in the other room. It&apos;s the highest-return half hour on my calendar, and the cheapest — the whole intervention costs a library card. If your attention feels as fried as mine did, the way back is shorter than you&apos;d think. About six weeks, in my case. The sleep side of the equation helped too — I fixed that layer with the basics in <InternalLink href="/blog/how-to-sleep-better">how to actually sleep better</InternalLink>.
+      </p>
+    </div>
+  ),
+  "one-person-business-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The most interesting business story of 2026 isn&apos;t a startup. It&apos;s the graphic designer I know who fired her agency clients, productized one service, and now clears more than her old salary — alone, from a spare bedroom, with AI doing the work of the three juniors she used to manage.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        The one-person business isn&apos;t new. What&apos;s new is that AI collapsed the cost of the team you used to need — and suddenly a long list of business models work fine at a headcount of one. Here&apos;s which ones actually work, what they realistically earn, and how to start around a day job.
+      </p>
+      <HookBanner
+        headline="Why solo works now"
+        items={[
+          "AI handles the junior-employee layer: drafts, design passes, bookkeeping, support triage",
+          "The winning models share two traits: repeatable revenue and a reachable audience",
+          "Realistic year one: $500-$2,000/month, not the six figures the gurus screenshot",
+          "Ten focused hours a week is enough to start. Three ideas at once is how you fail",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What is a one-person business?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>A business designed to stay at one owner-operator — no employees, with software, AI, and the occasional contractor covering everything a small team used to do. It optimizes for profit per hour and freedom rather than headcount and growth.</strong> The classic shapes: productized services, niche digital products, paid newsletters, and micro-SaaS. The point isn&apos;t staying small out of fear — it&apos;s that at one person, margins are enormous and nobody can lay you off.
+        </p>
+      </div>
+      <BlogImage src="/images/one-person-business-2026.png" alt="Starting a one-person business in 2026" caption="No co-founder, no employees, no permission needed." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What changed: the team became a toolbar</h2>
+      <p>
+        Run the mental payroll of a five-person agency from 2020: a junior doing first drafts, a designer doing production work, someone on the books, someone answering routine client email. In 2026, every one of those seats has a $20-a-month AI equivalent that does the first 80% — and the owner was always the last 20% anyway. That&apos;s the entire structural shift. The judgment, the client trust, the taste: still human, still the business. The labor underneath it: mostly gone as a cost.
+      </p>
+      <p>
+        This is why solo operators are suddenly competing with agencies on deliverables and destroying them on price and speed. It&apos;s also why the window is genuinely good right now — the tools are capable, and most incumbents are still priced like the labor layer exists. My friend the designer charges 60% of what her old agency billed for the same outcome, keeps roughly all of it, and turns work around in days instead of weeks. Her old agency cannot structurally match that. If you want the tooling side mapped out, I keep a current list in <InternalLink href="/blog/best-ai-tools-automation-2026">the best AI automation tools of 2026</InternalLink>.
+      </p>
+      <StatBox items={[["$0", "employees required to start"], ["~$20/mo", "per 'team member' AI now replaces"], ["10 hrs/wk", "enough alongside a day job"], ["6-12 mo", "realistic runway to first $1K months"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The models that actually work at headcount one</h2>
+      <p>
+        Not every business survives being solo — anything requiring 24/7 coverage, physical inventory at scale, or a sales team doesn&apos;t. The ones that thrive share two traits: revenue that repeats without proportional new labor, and a specific audience you can actually reach without an ad budget.
+      </p>
+      <DataTable
+        headers={["Model", "How it earns", "Honest difficulty"]}
+        rows={[
+          ["Productized service", "One deliverable, fixed price, repeatable process — 'blog audit, $500, 5 days'", "Easiest start if you have a skill. Income stops when you stop"],
+          ["Digital products & templates", "Build once, sell repeatedly: templates, courses, tools", "Slow until you have an audience; genuinely passive after"],
+          ["Paid newsletter / niche content", "Subscriptions + sponsors on expertise you already have", "12+ months of consistency before real money. Compounds beautifully"],
+          ["Micro-SaaS", "Small software, monthly billing, AI-assisted development", "Best margins, hardest start — real product and support work"],
+          ["AI-assisted local services", "Automation, content, and admin for local businesses", "Least glamorous, fastest to revenue. Local competition is thin"],
+        ]}
+      />
+      <p>
+        The graveyard models deserve naming too: generic dropshipping, faceless content farms, and reselling AI outputs with no expertise attached. All three are what everyone tries first, all three are catastrophically crowded, and all three have no moat by construction — the playbook being free is proof there&apos;s nothing defensible in it. The pattern in every 2026 success I know personally is the boring opposite: a real skill the person already had, wrapped in a repeatable offer.
+      </p>
+      <AlertBox
+        type="money"
+        title="The math nobody shows you"
+        body="A one-person business doesn't need to be big to change your life, because the margins are absurd. $3,000/month at 90% margin — normal for services and digital products — is worth more take-home than a $5,000/month raise for most people, and it's yours. The gurus sell the $50K months because they're selling courses. The life-changing tier is the boring one: $1-3K/month, recurring, that you control. Aim there first."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The first 90 days (without quitting your job)</h2>
+      <p>
+        Everything I&apos;ve watched work follows roughly the same sequence, and it starts with selling, not building:
+      </p>
+      <StepCard
+        steps={[
+          { title: "Weeks 1-2: Pick one offer for one audience", body: "Not a niche you researched — a skill you already have, aimed at people you already understand. The formula: [outcome] for [specific group] at [fixed price]. Write it in one sentence. If you can't, it's not an offer yet." },
+          { title: "Weeks 3-6: Get one paying customer, ugly", body: "No website, no logo, no LLC. Sell through your network, one community, or direct outreach. The first sale validates more than a month of building — and if you can't get one buyer manually, no funnel would have saved it." },
+          { title: "Weeks 7-12: Systematize what worked", body: "Now build — but only what delivery revealed you need. Turn the manual process into checklists and AI-assisted steps, raise the price on customer three, and start one content channel where your buyers already are." },
+        ]}
+      />
+      <p>
+        The failure mode is almost never effort — it&apos;s split effort. Ten hours a week on one offer beats thirty spread across a newsletter, an Etsy shop, and a SaaS idea. Every successful solo operator I know spent their first year doing embarrassingly one thing. If freelancing is the on-ramp you&apos;re starting from, the client-getting mechanics in <InternalLink href="/blog/how-to-start-freelancing">how to start freelancing</InternalLink> apply directly; the difference is that a one-person business gradually replaces selling hours with selling outcomes — and if the digital-product route fits you better, start with <InternalLink href="/blog/sell-digital-products-2026">how to sell digital products in 2026</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The honest downsides</h2>
+      <p>
+        Solo means every problem is yours: the sick days with client deadlines, the revenue dips with nobody to share the panic, the fact that you are simultaneously the talent, the sales team, and the complaints department. Some people genuinely wither without colleagues. And there&apos;s a ceiling — one person&apos;s attention only stretches so far, which is why the model eventually pushes everyone toward products over services. None of this is a reason not to start; it&apos;s a reason to start on the side, keep the paycheck while the thing grows, and find out whether you like the shape of the life before you bet the rent on it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "What is a one-person business?", a: "A business designed to stay at one owner-operator — no employees, with software, AI, and contractors covering everything a small team used to do. It optimizes for profit per hour and freedom rather than headcount and growth-at-all-costs. Think productized services, niche digital products, paid newsletters, and micro-SaaS." },
+          { q: "Can a one-person business really make six figures?", a: "Yes, and it's less rare than it sounds — solo consultants, productized-service owners, and niche product creators clear six figures regularly. But the survivorship bias is real: most one-person businesses earn far less, especially in year one. The realistic 2026 path is $500-$2,000 a month within 6-12 months of consistent effort, then compounding from there." },
+          { q: "What are the best one-person business ideas in 2026?", a: "The models with the best odds share two traits: recurring or repeatable revenue, and a specific audience you can actually reach. Productized services (one deliverable, fixed price), niche digital products and templates, paid newsletters in an expertise you already have, and AI-assisted agency work for local businesses top the list. Generic dropshipping and 'faceless' content farms are the most crowded and worst-paying." },
+          { q: "How do I start a one-person business while working full time?", a: "Sell before you build. Pick one offer for one audience, land the first paying customer through your existing network or one channel, and only then invest in tools and content. Ten focused hours a week is enough for the first $1,000 months — the common failure mode isn't too little time, it's spreading it across three ideas at once." },
+        ]}
+      />
+      <p>
+        The one-person business is having its moment because the leverage finally matches the ambition: for the first time, one person&apos;s judgment plus $100 a month of tools genuinely covers what used to take a payroll. The designers and writers and consultants quietly running these from spare bedrooms aren&apos;t waiting for permission, funding, or a co-founder. That turns out to be the entire qualification: deciding you&apos;re the kind of person who starts.
+      </p>
+    </div>
+  ),
+  "developer-burnout": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        I wasn&apos;t tired. That&apos;s what fooled me. I was sleeping fine, hitting deadlines, closing tickets — and staring at a fascinating bug with all the curiosity of a man reading a parking ticket. It took me a year to call that what it was.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Developer burnout mostly doesn&apos;t look like collapse. It looks like brain fog on problems you&apos;d normally enjoy, dread before standup, and shipping features you can&apos;t make yourself care about. Here&apos;s what it actually looks like in 2026, why it&apos;s everywhere, and what pulled me out.
+      </p>
+      <HookBanner
+        headline="What this article covers"
+        items={[
+          "The real early signs — cynicism and fog show up long before exhaustion does",
+          "Why 2026 is a burnout machine: context-switching, AI pressure, and layoff-thinned teams",
+          "What actually helped me recover (a vacation, notably, did not)",
+          "When it's a job problem, when it's a you problem, and when it's therapy territory",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What are the signs of developer burnout?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>The clinical triad is exhaustion, cynicism, and a collapsed sense that your work matters — but in developers it usually surfaces as brain fog on problems you&apos;d normally enjoy, dread before standups, irritability in code review, shipping with zero satisfaction, and evenings too drained for side projects you used to love.</strong> Physical tiredness is often the <em>last</em> symptom to arrive, which is exactly why so many of us miss it for a year, like I did.
+        </p>
+      </div>
+      <BlogImage src="/images/developer-burnout.png" alt="Developer burnout signs and recovery" caption="Still shipping, still on time, completely hollow. That's the version nobody catches." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The year I missed it</h2>
+      <p>
+        My burnout didn&apos;t announce itself. It leaked in as a series of small reclassifications I explained away one at a time. Code review comments started irritating me — I decided my colleagues had gotten sloppier. The side project folder went untouched for months — I decided I&apos;d outgrown hobby coding. Standup began producing a physical dread out of proportion to anything actually said in standup — I decided I needed better coffee. The give-away, in hindsight, was the numbness around shipping. We launched a feature I&apos;d spent a quarter on, it went well, and I felt precisely nothing. Not relief, not pride. I closed the tab. When the thing that used to be the whole point — building something and watching it work — produces the same emotional response as clearing spam, that&apos;s not a mood. That&apos;s the third leg of the clinical triad, and I walked around with it for a year calling it &quot;being busy.&quot;
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why 2026 is a burnout machine</h2>
+      <p>
+        Industry surveys have put developer burnout above 60% for years now, and the 2026 numbers aren&apos;t improving. Three forces are stacking:
+      </p>
+      <InfoBox
+        title="The 2026 stack of causes"
+        items={[
+          ["Context-switching as a lifestyle", "Slack, incidents, meetings, and review requests shred the day into fragments, and deep work — the part of the job that actually recharges most of us — becomes the thing you never get to. Research on interrupted work is brutal: each switch costs 15-25 minutes of refocus, and a typical developer day contains dozens"],
+          ["AI pressure", "The new 2026-specific layer: expected to ship dramatically more with agents, reviewing firehoses of generated code, while privately wondering what your expertise is worth now. Studies this year show the load shifting from typing fatigue to relentless review-and-orchestrate cognitive strain — different muscle, same overuse injury"],
+          ["Layoff-thinned teams", "The same roadmap spread over fewer people, plus survivor's guilt, plus the quiet knowledge that pushing back on scope reads differently when the last reorg is still fresh in everyone's memory"],
+        ]}
+      />
+      <p>
+        The AI piece deserves honesty in both directions. Agents genuinely removed the grind I used to complain about — boilerplate, test scaffolding, migration drudgery. My tools list in <InternalLink href="/blog/best-ai-coding-agents-2026">the best AI coding agents of 2026</InternalLink> is sincere. But nobody reduced the expectations dial more slowly than the capability dial went up, and the gap between those two dials is exactly where the pressure lives. And if part of your load is the background hum of &quot;what am I worth now?&quot; — I wrote about that spiral separately in <InternalLink href="/blog/ai-career-anxiety">what to do about AI career anxiety</InternalLink>, because it deserves its own treatment.
+      </p>
+      <StatBox items={[["60%+", "of developers reporting burnout in surveys"], ["15-25 min", "refocus cost per interruption"], ["1 year", "how long I explained mine away"], ["0%", "of it fixed by my two-week vacation"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The vacation test</h2>
+      <p>
+        Here&apos;s the diagnostic I wish someone had given me: take real time off — fully disconnected — and notice what happens on the last night. If you come back genuinely restored, you were exhausted; rest fixes exhaustion. I took two weeks, felt human by day ten, and then felt the dread reassemble itself, piece by piece, on the Sunday flight home. By Tuesday it was like the vacation had happened to someone else. That&apos;s the tell: <strong style={{ color: "var(--text-primary)" }}>burnout isn&apos;t a rest deficit, it&apos;s a conditions problem</strong> — and you can&apos;t vacation your way out of conditions you&apos;re flying straight back into.
+      </p>
+      <AlertBox
+        type="warning"
+        title="When it's beyond a productivity fix"
+        body="Everything in this article is the moderate-case playbook. If you're having panic attacks before deploys, drinking to get through the workweek, or the numbness has spread from work into everything else — that's depression and anxiety territory wearing a burnout costume, and it warrants a therapist, not a deep-work schedule. Developers are spectacularly good at treating psychological states as system-design problems. Some of them are. Some of them aren't."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What actually moved the needle</h2>
+      <p>
+        Recovery took about six months, and in hindsight it was five changes — none clever, all uncomfortable:
+      </p>
+      <CheckList
+        title="The recovery list, in order of impact"
+        items={[
+          "Renegotiated on-call. Our rotation had quietly become abusive — one week in three. One honest document about incident load got it fixed for the whole team. Biggest single lever by far",
+          "Two protected deep-work blocks daily, calendar-enforced, notifications actually off — not minimized, off. The refocus tax was eating a third of my real capacity",
+          "One honest conversation with my manager. Terrifying, went fine. Turns out 'I'm cooked and here's what would fix it' lands completely differently than quietly declining for another year",
+          "Got a hobby back with zero metrics attached — no GitHub, no tracker, nothing shippable. Mine was cooking. The point was doing something badly, in private, for nobody",
+          "Physical basics, boringly: daily walks and a hard 9pm screen cutoff. Not transformative alone, but every other fix worked better on top of them",
+        ]}
+      />
+      <p>
+        What&apos;s conspicuously absent: quitting. Sometimes leaving is the answer — if the conditions are structural and the org won&apos;t move, no personal system beats a bad environment. But I&apos;d encourage trying to change the conditions first, if only because burnout follows people who don&apos;t: the same habits that cooked you at this job travel with you to the next one, and the honeymoon lasts about two quarters.
+      </p>
+      <DataTable
+        headers={["Common fix", "Fixes", "Doesn't fix"]}
+        rows={[
+          ["Vacation", "Exhaustion", "The conditions waiting at your desk"],
+          ["New job", "A genuinely broken environment", "Your own boundary habits, which relocate with you"],
+          ["Deep work blocks", "The context-switching tax", "An on-call rotation that owns your nights"],
+          ["Honest manager conversation", "Invisible load, wrong assignments", "A company that punishes honesty — that's your answer too"],
+          ["Therapy", "The cases that were never scheduling problems", "Nothing. It composes with everything above"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "What are the signs of developer burnout?", a: "The classic triad is exhaustion, cynicism, and a sense that your work no longer matters — but in developers it usually shows up as brain fog on problems you'd normally enjoy, dread before standups, irritability in code review, shipping without any satisfaction, and evenings too drained for the side projects you used to love. Physical tiredness is often the last symptom, not the first." },
+          { q: "Why is developer burnout so common in 2026?", a: "Three forces stacked: constant context-switching (Slack, incidents, meetings shredding deep work), AI anxiety — the pressure to be dramatically more productive with agents while wondering about your own future — and layoff-driven understaffing that spread the same work over fewer people. Industry surveys through 2025-2026 consistently put burnout rates among developers above 60%." },
+          { q: "How do you recover from developer burnout?", a: "Rest fixes exhaustion but not burnout — mine required changing the conditions, not just taking a vacation. What moved the needle: protected no-meeting deep work blocks, actually disabling notifications, renegotiating an on-call rotation that had become abusive, one honest conversation with my manager, and getting a hobby back that had no metrics attached. Severe cases warrant a therapist, not a productivity system." },
+          { q: "Is AI making developer burnout worse?", a: "It cuts both ways. Agents removing boilerplate and test-writing genuinely reduces grind, but studies in 2025-2026 also show rising 'AI pressure' — developers expected to review and ship far more code, faster, while feeling their expertise commoditized. The burnout risk shifts from typing fatigue to relentless review-and-orchestrate cognitive load." },
+        ]}
+      />
+      <p>
+        The bug that made me realize I was better wasn&apos;t dramatic — a gnarly race condition on a Thursday afternoon. I noticed I was enjoying it. Actually leaning in, sketching the interleavings on paper, fully absent from time the way I used to be. That&apos;s the thing burnout takes that no one warns you about: not your output, which is why nobody catches it, but the part of you that liked this work in the first place. It comes back. Mine took six months and five boring changes. Start with the honest conversation — it&apos;s the one on the list you&apos;re most avoiding, which is usually the tell that it&apos;s the one that matters.
+      </p>
+    </div>
+  ),
+  "i-wrote-on-medium-for-90-days": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Forty-seven articles in ninety days. Three did well, thirty did almost nothing, and my biggest earner was a story I nearly didn&apos;t publish because I thought it was too boring.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Everyone writing about Medium either made $20K last month or $0.43 — nobody publishes the middle. So here&apos;s the middle: every number from my 90 days, what actually drove earnings, and the five things I&apos;d change if I were starting today.
+      </p>
+      <HookBanner
+        headline="The real numbers"
+        items={[
+          "$487 total across 90 days — $180 in months 1-2 combined, $307 in month 3",
+          "47 stories published, 1,142 followers gained, ~89K total views",
+          "Top 3 stories earned 61% of everything. Bottom 30 earned under $2 each",
+          "The real ROI wasn't the money: 2 freelance clients and 400+ email subscribers",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>How much money can you make writing on Medium in 2026?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>Most writers earn under $100 a month — the median active writer has always made single digits. My 90-day total was $487: slow for two months, then $307 in month three once publications started picking up my stories.</strong> Consistent writers with 6–12 months of catalog commonly report $200–$1,000 a month. The screenshots you see of $15K months are real, and they are outliers in the way lottery winners are real.
+        </p>
+      </div>
+      <BlogImage src="/images/i-wrote-on-medium-for-90-days.png" alt="90 days of writing on Medium earnings breakdown" caption="47 stories, 90 days, one spreadsheet of humbling data." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why I did it in public numbers</h2>
+      <p>
+        I&apos;d been circling online writing for two years — reading about it, taking notes about it, not doing it. What finally broke the loop was picking a container small enough to be unquittable: one story a day, ninety days, track everything, publish the results no matter how embarrassing. Medium made sense as the venue because the audience is built in; on a fresh blog of my own, I&apos;d have been writing to an empty room for six months. (That said, the own-your-platform argument is real, and I&apos;ve laid out that path in <InternalLink href="/blog/how-to-start-a-blog-2026">how to start a blog in 2026</InternalLink>.)
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The month-by-month reality</h2>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>Month one was silence.</strong> Twenty-six stories, $41. Views in the double digits for most of them. This is the month that kills almost everyone, and I get it — the effort-to-feedback ratio is genuinely absurd. What kept me going was reframing it: I wasn&apos;t earning, I was calibrating. Every story was a small bet on a topic and a format, and even the flops were data.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>Month two, the pattern emerged.</strong> My generic advice pieces — the &quot;7 habits&quot; stuff — kept dying. The stories that moved had one thing in common: I was <em>in</em> them. Real numbers, real failure, something specific that happened to me. A story about a work mistake I&apos;d made earned more in a week than my ten advice listicles combined had in two months. So I stopped writing advice and started writing evidence.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>Month three is when publications changed everything.</strong> I started submitting to mid-size publications instead of self-publishing, and their distribution did what my zero-follower profile couldn&apos;t. Same quality of story, five to ten times the views. $307 that month, plus the compounding I didn&apos;t expect: two freelance clients found me through stories and paid more than Medium did in total, immediately.
+      </p>
+      <StatBox items={[["$487", "total 90-day earnings"], ["47", "stories published"], ["61%", "of income from 3 stories"], ["2", "freelance clients who found me"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What actually predicted earnings (it wasn't effort)</h2>
+      <p>
+        I tracked hours spent per story, and here&apos;s the uncomfortable finding: time invested had almost no correlation with earnings. My most-labored story (six hours) made $3. My top earner took 75 minutes, because the thinking had already happened — it was just a true story I knew cold, told straight. What did correlate:
+      </p>
+      <DataTable
+        headers={["Factor", "Effect", "What I learned"]}
+        rows={[
+          ["First-person specificity", "Strongest predictor", "Real numbers and named failures beat polished general advice every time"],
+          ["Publication vs self-published", "5-10x views", "Mid-size pubs accepted me long before big ones. Submit everywhere"],
+          ["Read ratio over 50%", "Triggers wider distribution", "Strong openings matter more than strong titles"],
+          ["Publishing frequency", "Near zero", "My 2-story weeks with better stories beat my 7-story weeks"],
+          ["Topic trendiness", "Weak and short-lived", "AI-topic bumps faded in days; evergreen personal stories kept paying"],
+        ]}
+      />
+      <AlertBox
+        type="warning"
+        title="The AI-content trap"
+        body="The obvious 2026 shortcut — generate stories with AI, publish at volume — is the one strategy that reliably earns nothing. Medium's distribution system actively deprioritizes generic synthetic content, readers bounce off it (killing your read ratio, which kills distribution), and it's exactly the writing style that earned my bottom 30 stories under $2 each. The entire remaining value of Medium in 2026 is lived experience AI can't fake. Bring that or bring nothing."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What I'd do differently from day one</h2>
+      <p>
+        If I were handing my day-one self a checklist, it&apos;s this:
+      </p>
+      <CheckList
+        title="The restart plan"
+        items={[
+          "Write 3 good stories a week, not 7 — daily publishing bought me volume of flops, not learning",
+          "Submit to mid-size publications from week one instead of self-publishing into the void for a month",
+          "Put a personal number or a failure in every story — my entire top 10 has one",
+          "Start the email list on day one, not day 40. The list is the asset; Medium is the billboard",
+          "Spend the first 30 minutes of each session reading and genuinely commenting — half my early followers came from that, not from stories",
+        ]}
+      />
+      <p>
+        The email list point deserves emphasis. Medium&apos;s algorithm, rates, and rules can change any quarter — the 400 subscribers I moved onto my own list are the only part of the 90 days no platform can take back. Writing income that survives platform whims is the actual game; I&apos;ve mapped the bigger picture in <InternalLink href="/blog/make-money-writing-online">how to make money writing online</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>So is Medium worth it in 2026?</h2>
+      <p>
+        As a paycheck: no. $487 for roughly 120 hours of work is under $4 an hour — a terrible freelance rate. As an asset: quietly, yes. The catalog keeps earning while I sleep ($60-90 a month now, without new stories), the clients it attracted paid 10x the platform did, and the daily deadline built a writing habit two years of intending never did. Medium in 2026 is a bad job and a good investment. Most of the people disappointed by it took the job; the ones still there are building the asset. And if you&apos;re starting from zero with no audience anywhere, it remains one of the few places a complete unknown&apos;s first month can find a thousand readers — which is worth more than the $41 it pays.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "How much money can you make writing on Medium in 2026?", a: "Most writers earn under $100 a month — Medium's own data has long shown the median active writer making single digits. In my 90-day experiment I earned $487 total: roughly $180 in month one and two combined, then $307 in month three once a few stories got picked up by publications. Consistent writers with 6-12 months of catalog commonly report $200-$1,000 a month; the big earners are outliers." },
+          { q: "Is Medium worth writing on in 2026?", a: "As a direct income source, it's slow. As a compounding asset, yes — the real returns in my experiment weren't the $487 but the email subscribers, two freelance clients who found me through articles, and a writing habit I couldn't build on my own blog where nobody was watching." },
+          { q: "What kind of articles do best on Medium?", a: "Specific, first-person experience beats general advice every time. My three best performers were all 'here's exactly what happened when I did X' stories with real numbers. Listicles of generic tips — the stuff AI can generate — earned almost nothing, and Medium's 2026 distribution actively deprioritizes it." },
+          { q: "How often should you publish on Medium?", a: "Daily publishing was the wrong call. My data showed no penalty for slowing down — the week I published twice with better stories out-earned my best seven-article week. Two or three genuinely good stories a week, submitted to mid-size publications, beat daily volume on every metric I tracked." },
+        ]}
+      />
+      <p>
+        Day 91, I didn&apos;t stop. But I did slow down — three stories a week now, each one with something true in it. The 90-day sprint&apos;s real product wasn&apos;t $487. It was finding out, with receipts, exactly what kind of writing the internet still pays for: the kind only you could have written.
+      </p>
+    </div>
+  ),
+  "waking-up-at-5am": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Day 4 of waking up at 5AM, I fell asleep at my desk at 2 in the afternoon, mid-sentence, hand still on the mouse. The productivity gurus never mention that part.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        I did the 5AM club for 30 days anyway, and tracked everything — deep work hours, mood, workouts, the evenings I lost. Some of it genuinely earned the hype. A lot of it was expensive PR for being tired. Here&apos;s the honest ledger.
+      </p>
+      <HookBanner
+        headline="30 days of 5AM, honestly scored"
+        items={[
+          "The 5-7AM block was the best deep work of my life — zero pings, zero people",
+          "Total daily output barely moved: I gained mornings and lost my evenings to exhaustion",
+          "The habit only worked once I fixed my bedtime — the alarm was never the hard part",
+          "Verdict: a consistent wake time matters more than an early one",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Does waking up at 5AM actually make you more productive?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>Only if the hours come from somewhere sustainable. In my 30 days, the 5–7AM block was genuinely the best focus time I&apos;ve ever had — but my total daily output barely changed, because I lost nearly as many productive evening hours to being exhausted.</strong> The real win is redistribution: you trade tired, interrupted evening hours for fresh, protected morning ones. If your evenings were already dead time, that trade is excellent. Mine weren&apos;t, so it was roughly a wash.
+        </p>
+      </div>
+      <BlogImage src="/images/waking-up-at-5am.png" alt="Waking up at 5am for 30 days experiment" caption="The alarm was easy. The 9PM bedtime was the actual experiment." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why I finally tried it</h2>
+      <p>
+        The 5AM club has the best marketing in self-improvement. Every CEO profile, every &quot;millionaire morning routine&quot; video, Robin Sharma&apos;s entire book — the pitch is that winners are up before dawn and your snooze button is why you&apos;re not one. I&apos;d rolled my eyes at it for years while secretly wondering. My actual problem was real, though: my deep work was getting shredded by 9AM-onward meetings and messages, and the only uncontested hours in my calendar were ones I was asleep for. So: 30 days, alarm at 5:00, no snooze, tracked in a spreadsheet like the nerd I am.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The first week: doing it wrong, publicly</h2>
+      <p>
+        I made the exact mistake everyone makes: I moved my alarm without moving my bedtime. Eleven-thirty to bed, five o&apos;clock up — that&apos;s five and a half hours, and by day 4 I was a zombie microwaving coffee twice and falling asleep at my desk. Everything the gurus promise from 5AM I got the opposite of: worse focus, worse mood, a skipped workout, and one genuinely unkind email I had to apologize for.
+      </p>
+      <p>
+        The fix was admitting the obvious: <strong style={{ color: "var(--text-primary)" }}>waking up at 5AM is a bedtime habit wearing an alarm clock costume.</strong> I rebuilt the experiment around 9:30PM — shifted bedtime in two 15-minute steps, phone out of the bedroom, no screens after 9. Once sleep was a real seven-plus hours, the 5AM part became almost easy. Almost.
+      </p>
+      <StatBox items={[["5.5 hrs", "sleep on my failed first attempt"], ["2 hrs", "of untouchable deep work daily"], ["9:30PM", "the bedtime that made it work"], ["~0%", "change in total daily output"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What was genuinely great</h2>
+      <p>
+        Credit where due: the 5-to-7 block was everything advertised. No Slack. No email arriving. Nobody awake to want anything from me. My phone had nothing new on it, which killed its pull entirely. I wrote more in those two hours than in any four scattered daytime hours, and I finished a project in week two that had been stalled for two months. There&apos;s also a real psychological effect I didn&apos;t expect: walking into the workday having already done my most important thing changed how the whole day felt. Meetings stopped feeling like theft, because the deep work was already banked.
+      </p>
+      <p>
+        If you&apos;ve read my breakdown of <InternalLink href="/blog/morning-routine-science">what the science actually says about morning routines</InternalLink>, this lines up: the magic isn&apos;t the hour, it&apos;s the protection. Five AM is just the crudest possible way to buy uninterrupted time.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the gurus leave out</h2>
+      <p>
+        Three costs that never make it into the YouTube thumbnails:
+      </p>
+      <InfoBox
+        title="The fine print of the 5AM club"
+        items={[
+          ["Your evenings die", "By 8:30PM I was cognitively done. Dinner with friends on a Wednesday became a genuine sacrifice. The hours weren't created; they were relocated from a part of my life I liked"],
+          ["Chronotype is real biology", "Sleep researchers are blunt: owls forcing 5AM accumulate sleep debt that taxes mood, focus, and long-term health. I'm neutral-leaning-lark and it was still hard. True night owls aren't lazy; they're differently wired"],
+          ["The streak becomes the point", "By week 3 I caught myself protecting the 5AM stat instead of asking whether it was working — waking early on days I didn't even need the time, out of pure identity"],
+        ]}
+      />
+      <AlertBox
+        type="tip"
+        title="Steal the benefit without the 5AM"
+        body="Here's the cheat code the experiment taught me: the value was never the hour — it was 90 protected minutes before anyone could reach me, on a consistent wake time. If you naturally wake at 7:30, protecting 7:30-9:00 (no phone, no email, hardest task first) captures about 80% of what I got from 5AM with none of the social cost. Consistency of wake time, seven days a week, is what your circadian system actually rewards."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Day 31 and after: the verdict</h2>
+      <p>
+        I didn&apos;t keep 5AM. I kept 6:15 — every day, weekends included — with the first 90 minutes fully protected. That schedule has survived six months, which 5AM never would have, and my deep work output is within rounding error of the experiment&apos;s best weeks. The 30 days were worth it mostly for what they proved: I don&apos;t have a discipline problem, I had an interruption problem, and there are gentler solutions than dawn. Getting the bedtime right mattered more than any of it — if your sleep is the broken layer, start with <InternalLink href="/blog/how-to-sleep-better">actually fixing your sleep</InternalLink> before you touch your alarm.
+      </p>
+      <p>
+        Who should actually join the 5AM club? Parents whose kids detonate the day at 7. People whose jobs hijack them from 9AM sharp. Genuine larks who are half-awake at 5 anyway. For everyone else, the club is optional and the membership fee is your evenings.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "Does waking up at 5am actually make you more productive?", a: "Only if the hours come from somewhere sustainable. In my 30 days, the 5-7am block was genuinely the best deep work time I've ever had — zero interruptions. But total daily output barely changed, because I lost nearly as many productive evening hours to being exhausted. The win is redistribution of focus, not free extra time." },
+          { q: "Is waking up at 5am healthy?", a: "It depends entirely on your bedtime and chronotype. Sleep researchers are blunt about this: 5am is only healthy if you're asleep by roughly 9-10pm, and genuine night owls fighting their biology tend to accumulate sleep debt, which harms mood, focus, and long-term health. Consistency of wake time matters more than how early it is." },
+          { q: "How do you start waking up at 5am?", a: "Move your bedtime first, not your alarm. I failed the first four days by keeping an 11:30pm bedtime and simply waking earlier — by day five I was useless. What worked: shifting bedtime to 9:30pm in two 15-minute steps, morning light immediately on waking, and no screens after 9pm. The wake-up takes care of itself once the bedtime is real." },
+          { q: "Is the 5am club worth it?", a: "For parents and people whose days get hijacked by others, the protected morning block can be genuinely life-changing. For everyone else, the honest answer from my experiment: a consistent wake time with your first 90 minutes protected — whenever that is — delivers about 80% of the benefit with none of the social cost." },
+        ]}
+      />
+      <p>
+        The 5AM club&apos;s real secret is that it works for reasons that have nothing to do with 5AM — and once you know the actual ingredients, you can cook them at whatever hour your biology votes for. Mine votes 6:15. I&apos;ve stopped apologizing for it.
+      </p>
+    </div>
+  ),
+  "ai-career-anxiety": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        There&apos;s a specific kind of math people do at 3AM now: how much of my job could the tools I used today do without me? I did that math for most of a year. Some nights the answer felt like &quot;most of it.&quot;
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        AI career anxiety is the background radiation of 2026 — every layoff announcement has &quot;AI&quot; somewhere in the press release, and everyone I know has quietly priced their own odds. This is what pulled me out of the loop: not reassurance, but a clearer read of the data and a short list of moves that change the odds.
+      </p>
+      <HookBanner
+        headline="If you're doing the 3AM math"
+        items={[
+          "The anxiety is rational — and most of it attaches to the wrong risks",
+          "AI mostly eats tasks, not jobs: the roles surviving are the ones that reshape around it",
+          "The strongest position in 2026: AI-fluent plus accountable for outcomes",
+          "The fear shrinks when the single point of failure does — skills, visibility, income",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Which jobs is AI actually replacing in 2026?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>The real displacement so far concentrates in high-volume, repeatable output: entry-level content writing, basic customer support, routine data entry, template design work, and some junior coding tasks. Roles built on accountability, relationships, physical presence, or messy judgment are being reshaped rather than removed</strong> — the job survives, but the task list changes underneath it. That distinction is where both the doom takes and the &quot;nothing will change&quot; takes go wrong.
+        </p>
+      </div>
+      <BlogImage src="/images/ai-career-anxiety.png" alt="Coping with AI career anxiety in 2026" caption="The 3AM math, and how to stop running it." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The anxiety is rational. The paralysis isn't.</h2>
+      <p>
+        Let&apos;s not do the thing where I tell you it&apos;s all overblown. It isn&apos;t. Coding agents now do work that was a junior engineer&apos;s first year. Support teams have been cut in half at companies I know personally. Surveys through 2025 and 2026 consistently find a majority of knowledge workers worried about AI and their livelihood, and psychologists now discuss AI job anxiety as a workplace mental-health category of its own. You are not imagining the shift, and you&apos;re not weak for feeling it.
+      </p>
+      <p>
+        But here&apos;s what a year inside that fear taught me: anxiety without a task curdles into paralysis, and paralysis was doing more damage to my career than AI was. I was doom-reading layoff threads instead of learning the tools. The turn came when I stopped asking &quot;will AI take my job?&quot; — a question I can&apos;t answer — and started asking &quot;what would make me hard to cut?&quot;, which I can actually work on. (For the honest macro picture on the first question, I did write it up separately in <InternalLink href="/blog/will-ai-take-my-job">will AI take my job?</InternalLink>.)
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The audit that replaced my doomscrolling</h2>
+      <p>
+        One Saturday I did the exercise I&apos;d been avoiding: I listed everything I actually do in a week and graded each item honestly — can current AI do this now, soon, or not meaningfully?
+      </p>
+      <StatBox items={[["~40%", "of my weekly tasks AI could already do"], ["3", "tasks that were most of my actual value"], ["6 mo", "of doomscrolling the audit replaced"], ["1 day", "the audit took. Do it Saturday"]]} />
+      <p>
+        Forty percent of my task list was automatable <em>today</em>. That number sounds terrifying, and it was strangely the thing that calmed me down — because it forced the follow-up question: why was I still employed? The answer was the other 60%: the client who trusts me specifically, the judgment calls with incomplete information, being the person accountable when something ships broken. My job wasn&apos;t &quot;produce the 40%.&quot; The 40% was overhead attached to the job. AI removing overhead is only fatal if the overhead was all you did.
+      </p>
+      <AlertBox
+        type="warning"
+        title="The honest exception"
+        body="If the audit comes back 80-90% automatable — high-volume writing, basic support scripts, routine data processing — then the anxiety isn't a distortion, it's a deadline, and the move isn't defending the role but using it as a paid runway to build toward the adjacent role that directs the automation. Support agents becoming AI-escalation specialists and writers becoming editors of AI output are the live examples of this migration happening right now, and the window favors people who move early."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The four moves that actually changed my odds</h2>
+      <p>
+        Everything that helped fits in four moves. None are original; all are boring; together they dissolved about 80% of the 3AM math.
+      </p>
+      <StepCard
+        steps={[
+          { title: "Become the AI-fluent one, not the AI-resistant one", body: "In every team there's someone who quietly knows how to make the tools sing. That person is the last one cut, because they're the multiplier. It took me maybe 40 focused hours to get there — absurdly cheap for what it bought." },
+          { title: "Shift your weight onto what AI can't hold", body: "I renegotiated my role toward the judgment, relationships, and ownership — and let the automatable 40% be automated, loudly, by me. Automating your own busywork reads as leadership. Having it automated for you reads as redundancy." },
+          { title: "Make your value visible outside your building", body: "Internal reputation dies with a reorg. A portfolio, a niche newsletter, a few public write-ups of real work — anything searchable. This is what turns a layoff from a cliff into a job change." },
+          { title: "Build one income stream your employer doesn't control", body: "Mine took under 10 hours a week and it's small — but the month it first paid a real bill, the 3AM math stopped running. Optionality is the antidote to dread, and it doesn't need to be big to work." },
+        ]}
+      />
+      <p>
+        On the skills question specifically — what to actually learn — I keep a running list in <InternalLink href="/blog/high-income-skills-2026">the high-income skills worth learning in 2026</InternalLink>, and the pattern across all of them is the same: judgment over output, direction over production.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Managing the feeling, not just the risk</h2>
+      <p>
+        Two things helped that have nothing to do with career strategy. First, an information diet: I unfollowed the AI-doom accounts and capped industry news to two scheduled reads a week — the anxiety, it turns out, was substantially a feed-curation problem, since nobody posts &quot;company adopts AI, everyone fine.&quot; Second, talking about it out loud: when I finally raised it with colleagues, every single one had been running the same private math while performing confidence. The isolation was half the weight. If the dread is interfering with sleep or function, that&apos;s therapy territory, not hustle territory — no amount of upskilling fixes a nervous system stuck in threat mode.
+      </p>
+      <DataTable
+        headers={["Anxiety response", "What it feels like", "What it produces"]}
+        rows={[
+          ["Doomscrolling layoff news", "Staying informed", "Dread, and zero changed odds"],
+          ["Avoiding AI tools", "Loyalty to craft", "Falling behind the coworker who didn't"],
+          ["Denial ('my job is special')", "Confidence", "No plan when the task list shifts"],
+          ["The audit + four moves", "Uncomfortable, then calm", "Actual leverage, and quieter nights"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "Is AI career anxiety normal?", a: "Extremely. Surveys through 2025-2026 consistently find a majority of knowledge workers worried about AI's effect on their jobs, and the anxiety is now a documented workplace mental-health issue. It's a rational response to real change — the problem isn't feeling it, it's letting it become either paralysis or denial." },
+          { q: "Which jobs is AI actually replacing in 2026?", a: "The displacement so far concentrates in high-volume, repeatable text and image work: entry-level content writing, basic customer support, routine data entry, template design, and some junior coding tasks. Roles built on accountability, relationships, physical presence, or messy cross-domain judgment are being reshaped rather than removed — the job survives, but the task list changes." },
+          { q: "What skills are safe from AI?", a: "'Safe' is the wrong frame — durable is better. The pattern across 2026 hiring data: judgment under ambiguity, owning outcomes (being the person accountable when it breaks), client trust, taste and editorial judgment over AI output, and the ability to direct AI tools well. The person who uses AI fluently plus one of those is in a stronger position than most pure specialists." },
+          { q: "How do I stop worrying about AI taking my job?", a: "Convert the worry into a position. What worked for me: an honest audit of which of my weekly tasks AI can already do (about 40%), doubling down on the parts it can't, becoming the AI-fluent person on my team instead of the one avoiding it, and building a small income stream outside my employer. The anxiety faded when the single point of failure did." },
+        ]}
+      />
+      <p>
+        I still don&apos;t know if AI will eventually eat my job. Nobody honest claims to. What I know is that the version of me who did the audit, learned the tools, and built the side income sleeps fine next to the same uncertainty that used to keep him up — because the question stopped being &quot;what will AI do?&quot; and became &quot;what am I doing?&quot; Only one of those was ever mine to answer.
+      </p>
+    </div>
+  ),
+  "i-stopped-tracking-everything": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        At my peak I had eleven active habit streaks, a time tracker running to the minute, and a personal dashboard with charts. I once got out of bed at 11:40PM to log two minutes of meditation. To protect the streak. Of the meditation app.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Two years of tracking everything, and then one Tuesday I deleted all of it. Here&apos;s what the quantified life actually did to my work and my head — and the embarrassingly simple system that turned out to work better.
+      </p>
+      <HookBanner
+        headline="Two years of data, one uncomfortable conclusion"
+        items={[
+          "Tracking taught me real things — for about the first month of each metric",
+          "After that, I optimized what was measurable instead of what mattered",
+          "Two hobbies died the moment they got a streak attached",
+          "The replacement system is 3 priorities a day and a 5-minute Friday review. Output: unchanged",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Is productivity tracking actually effective?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>Short-term and for a specific question, yes — two weeks of time tracking taught me more about my real hours than a year of guessing. As a permanent lifestyle, it backfires: measurement pulls behavior toward whatever is measurable, so trackable busywork slowly crowds out deep, hard-to-count work.</strong> That&apos;s Goodhart&apos;s law — when a measure becomes a target, it stops being a good measure — applied to your own life.
+        </p>
+      </div>
+      <BlogImage src="/images/i-stopped-tracking-everything.png" alt="Quitting productivity and habit tracking" caption="Eleven streaks, one dashboard, zero idea whether any of it was working." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How it starts: one app, one insight</h2>
+      <p>
+        In fairness to my past self, the first tracker genuinely delivered. Two weeks of time tracking exploded my self-image: I believed I did four hours of deep work a day; the real number was 90 minutes, marbled through six hours of email, Slack, and productive-feeling drift. That single insight was worth the whole experiment. It&apos;s also exactly what the research supports — self-monitoring reliably improves the behavior being watched, which is why food logs and step counters work at all.
+      </p>
+      <p>
+        The trouble is the lesson I took from it. Instead of &quot;measurement is a diagnostic — use briefly, then act,&quot; I concluded &quot;measurement is magic — apply to everything.&quot; Within six months: time tracking to the minute, eleven habit streaks, sleep scores, a reading log with page counts, and a Sunday ritual of assembling it all into charts. I&apos;d built a full performance-review process for my own life, with myself as the middle manager.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What the dashboard was hiding</h2>
+      <p>
+        The numbers looked great, and the numbers were lying. Three distortions crept in so gradually I can only see them in hindsight:
+      </p>
+      <InfoBox
+        title="How tracking quietly bent my behavior"
+        items={[
+          ["I chose tasks by trackability", "Clearing 30 emails logs beautifully. Staring at a hard problem for 2 hours logs as 'what did you even do?' — so my hands drifted toward the loggable, and my hardest work got the leftovers"],
+          ["Streaks outlived their point", "I read junk I didn't care about to feed the page counter, and did 2-minute token meditations for the checkmark. The habit apps couldn't tell devotion from compliance, and eventually neither could I"],
+          ["Measured hobbies stopped being hobbies", "Running was joy until it grew a pace dashboard; guitar died within a month of getting a practice log. A hobby with KPIs is just an unpaid job"],
+        ]}
+      />
+      <p>
+        The meta-problem: managing the measurement had itself become a daily task — 20-odd minutes of logging, categorizing, and streak maintenance, plus a low hum of checking. I was spending real cognitive budget on the scoreboard of a game I&apos;d stopped actually playing. It&apos;s the same trap I later recognized in over-built app setups when I wrote about <InternalLink href="/blog/digital-minimalism-2026">digital minimalism</InternalLink>: the system for doing the thing slowly replaces the thing.
+      </p>
+      <StatBox items={[["11", "habit streaks at peak"], ["~20 min", "daily overhead just maintaining it"], ["2", "hobbies killed by their own metrics"], ["0%", "output change after deleting it all"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The Tuesday I deleted it</h2>
+      <p>
+        The breaking point was small, which is apparently how these go. A friend asked how a project I&apos;d been excited about was coming along, and I realized I could tell her my deep work hours for the month but not, honestly, whether the project was any good. Perfect data, no judgment. That night I did something I&apos;d have called reckless a year earlier: deleted the time tracker, the habit apps, the dashboard. All of it. Twenty-six months of streaks, gone with a genuinely unsettling lightness.
+      </p>
+      <p>
+        The first week felt like phantom-limb syndrome — reaching to log things that no longer had anywhere to go. The second week, something I hadn&apos;t felt in two years: I worked on the hardest available problem for three unmeasured hours because it was the most important thing, and stopped when I was done rather than when a timer made it official. Nobody scored it. It was the best work session I&apos;d had in months.
+      </p>
+      <AlertBox
+        type="tip"
+        title="The rule I'd give my past self"
+        body="Track new things, not established ones. Measurement genuinely helps for the first 30-60 days — while you're building a habit or answering a specific question like 'where do my hours go?' That part of the research holds. The mistake is never graduating: once the behavior runs on its own, the tracker stops adding information and starts adding anxiety. Build, verify, then delete the tracker. The streak was scaffolding, not the building."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What replaced eleven apps</h2>
+      <p>
+        The system I&apos;ve run for a year now fits on an index card, and I&apos;m mildly annoyed by how well it works:
+      </p>
+      <CheckList
+        title="The whole system"
+        items={[
+          "Each morning: write down three priorities. Paper. The hardest one gets touched first",
+          "Each Friday: five minutes, two questions — what actually moved this week, and what did I avoid?",
+          "One metric total: deep work sessions per week. Counted on my hand, not an app",
+          "Habits I've already built get zero tracking. They're load-bearing walls now, not projects",
+        ]}
+      />
+      <p>
+        A year of the index card versus two years of the dashboard: my measurable output is the same (I checked against old invoices and shipped work — the one good use I ever got from the archive). What changed is everything the dashboard never measured. The Sunday-night dread of assembling my own report card is gone. The hobbies came back once nothing was watching them. And the Friday question &quot;what did I avoid?&quot; surfaces in five minutes what eleven streaks never once caught — because avoidance was precisely the thing my metrics were optimized to hide. If part of what drove your tracking habit is what drove mine — a buzzing inability to just sit with unstructured time — the deeper fix for me was rebuilding sustained attention, which started with <InternalLink href="/blog/reading-30-minutes-a-day">reading 30 minutes a day</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "Is productivity tracking actually effective?", a: "Short-term and for a specific question, yes — two weeks of time tracking will teach you more about where your hours go than a year of guessing. As a permanent lifestyle, the evidence is much weaker: measurement changes behavior toward what's measurable, so trackable busywork crowds out deep, hard-to-quantify work. That's Goodhart's law applied to your own life." },
+          { q: "What is toxic productivity?", a: "The compulsion to optimize every hour and feel guilt during any unmeasured, 'unproductive' time. Warning signs: checking stats more than doing the work, maintaining streaks for activities you no longer care about, rest that feels like failure, and hobbies quietly turning into metrics. It burned two of my actual hobbies before I noticed." },
+          { q: "Should I track habits or not?", a: "Track new habits, not established ones. Tracking genuinely helps for the first 30-60 days while a behavior becomes automatic — that part of the research holds up. My mistake was never graduating: once a habit runs on its own, the streak becomes pure anxiety with no added benefit. Build, verify, then delete the tracker." },
+          { q: "What should you do instead of tracking everything?", a: "I replaced eleven apps with two questions and a list: three priorities written down each morning, and a five-minute Friday review asking what moved and what I avoided. One weekly metric (deep work sessions) instead of thirty daily ones. My measurable output didn't drop — my Sunday-night dread did." },
+        ]}
+      />
+      <p>
+        I&apos;m not anti-measurement — I&apos;m anti-permanent-measurement. Numbers are a flashlight: point one at a dark corner of your life and you&apos;ll learn something real in two weeks. I just spent two years trying to live with all the lights on, and it turns out you can&apos;t see what matters that way either.
+      </p>
+    </div>
+  ),
+  "i-quit-ai-for-30-days": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        On day 3 I caught myself typing a question into a note-taking app, out of pure muscle memory, waiting for it to answer me. It didn&apos;t. That&apos;s when I realized how deep this went.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        For 30 days I used zero AI. No ChatGPT, no Claude, no autocomplete, no AI summaries, no &quot;fix this email.&quot; I worked like it was 2021 again. Here&apos;s what got worse, what got better, and what I permanently changed when it was over.
+      </p>
+      <HookBanner
+        headline="What 30 days without AI actually did"
+        items={[
+          "Week 1: first drafts took 2x longer and I hated everything I wrote",
+          "Week 3: my drafts started needing way less editing than my AI-assisted ones ever did",
+          "Total output dropped about 20% — but my hardest work got noticeably better",
+          "Afterward I cancelled 3 of my 7 AI subscriptions and never missed them",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What happens when you quit AI for 30 days?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>The first week is genuinely slower — drafts take about twice as long and working without autocomplete feels clumsy. But by week three, something shifts: first drafts need less editing, you remember more of what you read, and you stop reflexively outsourcing questions you can answer yourself.</strong> My total output dropped roughly 20%. The quality of my hardest thinking went up. Whether that trade is worth it depends on what your work actually rewards.
+        </p>
+      </div>
+      <BlogImage src="/images/i-quit-ai-for-30-days.png" alt="30 days without AI tools experiment" caption="One month, zero AI. The withdrawal was real." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Why I did this to myself</h2>
+      <p>
+        It started with a moment I couldn&apos;t shake. A colleague asked me a question in a meeting — something squarely in my area — and my honest first instinct was &quot;I&apos;ll ask Claude and get back to you.&quot; Not &quot;let me think about it.&quot; The chatbot had become the first stop, and my own head had become the backup.
+      </p>
+      <p>
+        I&apos;d also read the research that&apos;s been piling up. An MIT Media Lab study hooked essay writers up to EEGs and found that people writing with ChatGPT showed weaker neural engagement and could barely quote their own essays afterward. Researchers started calling it cognitive offloading: every time you hand a mental task to a tool, the muscle that did that task gets a little less practice. None of this proves AI rots your brain. But I&apos;d been using it for roughly three years, daily, for exactly the kind of work I most wanted to stay good at. So I ran the experiment on myself.
+      </p>
+      <p>
+        The rules were strict: no chatbots, no AI coding tools, no AI features hiding inside other apps — no summarize buttons, no smart replies, no generated headers. Search engines were allowed (with AI answers scrolled past), spellcheck was allowed. Thirty days.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Week 1: withdrawal is a real thing</h2>
+      <p>
+        I&apos;m not going to dress this up. The first week was bad.
+      </p>
+      <p>
+        Writing was the worst of it. My process for two years had been: dump messy thoughts into a chatbot, get a structured draft back, rewrite it in my voice. Without that middle step, I sat in front of blank pages for embarrassing stretches of time. A newsletter that normally took 90 minutes took three and a half hours. Code was nearly as rough — I&apos;d gotten so used to autocomplete finishing my thought that plain typing felt like walking through sand. I reached for documentation I hadn&apos;t opened in a year because I&apos;d been letting AI paraphrase it for me.
+      </p>
+      <p>
+        And the reflex. I counted, out of morbid curiosity: on day 2 I started to open a chatbot eleven times. Eleven. For things like &quot;what&apos;s a synonym for rigid&quot; and &quot;how many ounces in 750ml.&quot; Questions I either knew or could answer with ten seconds of actual thought.
+      </p>
+      <StatBox items={[["11", "times I reached for AI on day 2"], ["3.5 hrs", "for a newsletter that took 90 min"], ["~20%", "drop in total output"], ["3 of 7", "subscriptions cancelled after"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Weeks 2–4: the part nobody talks about</h2>
+      <p>
+        Somewhere around day 10, the discomfort turned into something else.
+      </p>
+      <p>
+        My first drafts got better. Not faster — better. When you know no tool is coming to save you, you think the idea through <em>before</em> you start typing, and the sentences come out closer to done. By week three my editing passes were noticeably shorter than they&apos;d been in the AI era, because I wasn&apos;t spending them sanding chatbot cadence out of my own writing. I wrote about that voice problem in my piece on <InternalLink href="/blog/ai-words-to-avoid">the words that make text sound AI-generated</InternalLink> — turns out the easiest way to avoid them is to not start from AI text at all.
+      </p>
+      <p>
+        Reading changed too. I&apos;d developed a habit of summarizing long articles and papers instead of reading them. Reading the full thing again was slower and, annoyingly, much stickier — two weeks later I could still recall arguments from papers I&apos;d actually read, while the summarized ones had always evaporated by the next morning. A summary gives you the conclusion without the reasoning, and it turns out the reasoning was the part my brain kept.
+      </p>
+      <p>
+        The strangest change: boredom came back. Waiting in line, walking, showering — with no chatbot conversations to continue in my head, my brain went back to chewing on problems in the background. Two of my better ideas that month showed up uninvited on walks. I don&apos;t think that&apos;s mystical; it&apos;s just what brains do when you leave them unassigned.
+      </p>
+      <AlertBox
+        type="warning"
+        title="The honest cost"
+        body="I don't want to sell this as a pure win. My output genuinely dropped about 20% for the month. Research tasks that AI does well — scanning 20 sources, comparing specs, finding the one relevant clause in a document — took painfully longer by hand, with zero quality benefit. If your job is measured in volume, a full AI detox will cost you real money. The experiment's value was finding out which 20% I could stop caring about."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>What I kept, what I cut</h2>
+      <p>
+        Day 31, I didn&apos;t rush back to everything. I re-added tools one at a time, only when I missed them for a concrete reason. The final scorecard:
+      </p>
+      <DataTable
+        headers={["Tool type", "Verdict", "Why"]}
+        rows={[
+          ["AI coding agent", "Kept", "Tests, refactors, boilerplate — work I review anyway and don't need to author"],
+          ["One chatbot subscription", "Kept", "Research and critiquing my finished drafts. It reads my writing; it doesn't write it"],
+          ["Meeting transcription", "Kept", "Pure recording. Nothing cognitive being outsourced"],
+          ["AI writing assistant", "Cut", "This was the one quietly eating my voice and my drafting muscle"],
+          ["AI email tools", "Cut", "Saved seconds, made me sound like a LinkedIn bot"],
+          ["Two overlapping chatbots", "Cut", "Redundant. One is enough"],
+        ]}
+      />
+      <p>
+        That last row saved me real money, which is a whole topic on its own — I broke down the math in <InternalLink href="/blog/which-ai-subscription-is-worth-it">which AI subscriptions are actually worth paying for</InternalLink>.
+      </p>
+      <p>
+        The rule I landed on, and the one thing I&apos;d actually recommend copying: <strong style={{ color: "var(--text-primary)" }}>I do the first pass myself on anything I want to stay good at.</strong> First draft, first design sketch, first attempt at the bug. AI gets invited in afterward, as a critic and an accelerator, never as the author. It&apos;s the difference between a tool that extends your thinking and one that replaces it — same apps, completely different long-term effect.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>Should you try it?</h2>
+      <p>
+        A full month is a lot, and honestly more than most people need. The two-week version gets you most of the insight: pick the one skill you&apos;d be saddest to lose, and do it unassisted for 14 days. You&apos;ll find out within a week whether AI has been amplifying that skill or quietly replacing it. For me the answer was different for every tool — which is exactly why the blanket takes on both sides (&quot;AI makes you dumber&quot; / &quot;refusing AI makes you obsolete&quot;) are both useless.
+      </p>
+      <p>
+        And if a full detox sounds miserable but the dependence feels familiar, start smaller: I once ran the opposite experiment and <InternalLink href="/blog/i-let-ai-plan-my-week">let AI plan my entire week</InternalLink>, which taught me a lot about where the tools genuinely earn their keep.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "What happens when you stop using AI for 30 days?", a: "In my experiment, the first week was noticeably slower — first drafts took about twice as long and coding without autocomplete felt clumsy. By week three, my first drafts needed less editing, I remembered more of what I read, and I stopped reflexively opening a chatbot for questions I could answer myself. Total output dropped roughly 20%, but the quality of my hardest work went up." },
+          { q: "Is AI making us worse at thinking?", a: "The honest answer is: it depends what you outsource. Research in 2025 and 2026, including EEG studies of essay writers, suggests people who lean on AI for drafting show lower engagement and remember less of their own work. Using AI to critique or extend your thinking seems far less harmful than using it to replace the first draft." },
+          { q: "Should I do an AI detox?", a: "A full month is overkill for most people. A more practical version: pick one skill you care about keeping — writing, coding, analysis — and do the first pass yourself for two weeks before letting AI touch it. That's where I ended up after the experiment, and it kept most of the benefit without the productivity hit." },
+          { q: "Which AI tools are actually worth keeping?", a: "After 30 days without any of them, I went back to three: an AI coding agent for tests and refactors, one chatbot subscription for research and critique, and AI transcription for meetings. I dropped AI writing assistants, AI email tools, and two overlapping chatbot subscriptions, and I haven't missed them." },
+        ]}
+      />
+      <p>
+        Thirty days without AI didn&apos;t turn me into a Luddite. It turned me into someone with opinions about which tools deserve access to my thinking — and that, it turns out, was the thing three years of daily use had quietly taken away.
+      </p>
+    </div>
+  ),
+  "we-deleted-our-microservices": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Fourteen microservices. Six engineers. You can do that math — it&apos;s more than two services per person, and every one of them had its own repo, pipeline, dashboards, and opinions about being woken up at 3am.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Last year we merged all of it back into one boring deployable, and it&apos;s the best engineering decision we&apos;ve made. Deploys went from 40 minutes to 4. Pages dropped 70%. This is the story, including the part where the microservices were my idea.
+      </p>
+      <HookBanner
+        headline="What going back to a monolith got us"
+        items={[
+          "Deploys: 40 minutes of orchestrated dread → 4 minutes, any commit, any time",
+          "On-call pages down ~70% — most of ours were the seams between services, not the services",
+          "AWS bill down about a third after killing per-service infrastructure",
+          "A three-week cross-service feature is now a one-afternoon pull request",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Should a small team use microservices?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>Almost never. Microservices solve an organizational problem — letting many teams deploy independently without stepping on each other. If you don&apos;t have many teams, you&apos;re paying the full cost of a distributed system (network failures, distributed debugging, duplicated infra, eventual consistency) to solve a problem you don&apos;t have.</strong> Under roughly 20–30 engineers, a modular monolith gives you clean boundaries with function calls instead of network calls, and one deploy instead of fourteen.
+        </p>
+      </div>
+      <BlogImage src="/images/we-deleted-our-microservices.png" alt="Migrating from microservices back to a modular monolith" caption="14 services, 6 engineers. The diagram was the only impressive part." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How we got into this mess</h2>
+      <p>
+        In 2022 we did what half the industry did: we read the Netflix and Uber engineering blogs and concluded that&apos;s what serious companies do. Never mind that Netflix has thousands of engineers and we had five at the time. We split the product along what felt like clean lines — auth, billing, notifications, search, a half-dozen domain services — and for the first few months it felt great. Small repos. Clear ownership. Diagrams that impressed investors.
+      </p>
+      <p>
+        The bill came due slowly, then all at once. A typical feature — say, showing a billing warning inside the main product flow — touched three services. That meant three PRs, coordinated across three deploy pipelines, with API version compatibility between each pair, feature-flagged so the middle deploy didn&apos;t break production. What would have been an afternoon in one codebase became a three-week project with a rollout plan.
+      </p>
+      <p>
+        Debugging was worse. When something failed, the stack trace stopped at a network boundary and the truth was smeared across four services&apos; logs. We bought tracing tools. We spent real engineering weeks building correlation IDs through every hop. We were six people, and we had a part-time job just operating the seams between our own code.
+      </p>
+      <StatBox items={[["14→1", "services after the merge"], ["4 min", "deploys, down from 40"], ["-70%", "on-call pages"], ["-33%", "AWS bill"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>The moment it broke</h2>
+      <p>
+        The push came from an outage, because it always does. A routine deploy of the notifications service subtly broke message ordering with the billing service. Customers got payment-failed emails for payments that succeeded. The bug took four days to fully diagnose because it lived in <em>no</em> service — it existed only in the interaction between two of them, in a retry policy on one side meeting an idempotency assumption on the other.
+      </p>
+      <p>
+        In the postmortem, our newest engineer asked the question everyone senior had been avoiding: &quot;What do we actually get from these being separate?&quot; We went around the room. Independent scaling? Two services had ever needed it, and one of those was a cron job. Independent deploys? We coordinated most deploys anyway because of API coupling. Team autonomy? We were six people who sat in one Slack channel. The honest answer was: a diagram.
+      </p>
+      <AlertBox
+        type="tip"
+        title="The test we should have applied in 2022"
+        body="Before extracting a service, finish this sentence: 'This must be a separate deployable because ___' — and 'because it's cleaner' doesn't count, since a module boundary inside one app gets you cleanliness for free. Real answers sound like: it scales 100x differently, it has a different security or compliance boundary, a separate team owns it end to end, or it's written in a different language for a hard reason. We had 14 services and could finish that sentence for 2 of them."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>How we merged 14 services without stopping feature work</h2>
+      <p>
+        We didn&apos;t big-bang it. The migration ran five months alongside normal roadmap work, one service at a time, and the pattern was mechanical enough that it never felt risky:
+      </p>
+      <StepCard
+        steps={[
+          { title: "Move the code, keep the interface", body: "Each service became a module inside the main app — its own folder, its own tables, one public interface file. The code barely changed; only its address did." },
+          { title: "Point callers at the in-process version", body: "HTTP calls to the old service became function calls to the module, behind a flag so we could flip back instantly. Same contract, minus the network." },
+          { title: "Watch it, then delete the deployment", body: "A week or two of both paths running, then we killed the service, its pipeline, its dashboards, and its line items on the AWS bill. Fourteen small funerals. Nobody cried." },
+        ]}
+      />
+      <p>
+        The keyword in what we built is <strong style={{ color: "var(--text-primary)" }}>modular</strong> monolith. We kept the discipline microservices had forced on us: modules can&apos;t touch each other&apos;s tables, cross-module calls go through explicit interfaces, and a lint rule fails the build on violations. That&apos;s the part worth keeping from the microservices era — the boundaries. It turns out you can have them without the network in the middle. And funnily enough, modern AI coding tools work dramatically better in the merged codebase too — an agent can trace a full feature end to end in one repo, which was hopeless across fourteen. If you&apos;re curious what those tools handle now, I compared them in <InternalLink href="/blog/best-ai-coding-agents-2026">the best AI coding agents of 2026</InternalLink>.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>We're not special — this is a wave</h2>
+      <p>
+        The famous example is Amazon Prime Video, whose team wrote up how consolidating a serverless microservices workflow into a monolith cut their infrastructure cost by 90%. Since then the case studies have kept coming, and by 2026 &quot;we went back to a monolith&quot; has gone from confession to almost a genre. The pattern in nearly all of them is ours: a small-to-mid team adopted the architecture of a 2,000-engineer company, paid the distributed-systems tax for years, and discovered the benefits were conditional on a scale they never reached.
+      </p>
+      <DataTable
+        headers={["Question", "Microservices win", "Monolith wins"]}
+        rows={[
+          ["How many teams deploy independently?", "Many teams shipping in parallel", "One team, or a handful"],
+          ["Do parts scale wildly differently?", "Yes, orders of magnitude", "Mostly scales together"],
+          ["Can you afford dedicated platform work?", "Yes, real platform team", "Everyone is product engineering"],
+          ["Where do your outages come from?", "Inside components", "The seams between them"],
+          ["What does a cross-cutting feature cost?", "Acceptable coordination", "Three weeks for an afternoon of work"],
+        ]}
+      />
+      <p>
+        None of this means microservices are bad. It means they&apos;re a payroll-shaped tool: the architecture is a mirror of your org chart, and if the org chart is one pizza, the mirror should be too. The teams that genuinely need service boundaries know it from pain, not from blog posts.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "Should a small team use microservices?", a: "Almost never. Microservices solve organizational problems — letting many teams deploy independently — not technical ones. With fewer than roughly 20-30 engineers, you pay all the costs (network calls, distributed debugging, duplicated infrastructure, eventual consistency) and get almost none of the benefits. A modular monolith gives you clean boundaries without the operational tax." },
+          { q: "What is a modular monolith?", a: "A single deployable application organized into modules with strict internal boundaries — each module owns its tables and exposes a small interface to the rest of the code. You get most of the separation microservices promise, but function calls replace network calls and one deploy replaces fourteen." },
+          { q: "Why are companies moving back from microservices?", a: "Because the costs finally became visible. Amazon Prime Video famously cut costs 90% by consolidating a serverless workflow into a monolith, and by 2026 the pattern is common: small and mid-size teams are consolidating services because distributed systems multiplied their debugging time, cloud spend, and on-call load without speeding anything up." },
+          { q: "How do you migrate from microservices back to a monolith?", a: "Incrementally, the same way you'd break one apart — just in reverse. We moved one service at a time into a module inside the main app, kept its interface identical, pointed callers at the in-process version, and deleted the deployment. Fourteen services took us about five months alongside normal feature work." },
+        ]}
+      />
+      <p>
+        The uncomfortable lesson wasn&apos;t about architecture at all. It&apos;s that we chose our design to look like serious engineering instead of to serve six actual people — and the fix, like most good engineering, was making the system embarrassingly simpler. If the constant firefighting this system caused sounds familiar, the human side of that story is in my piece on <InternalLink href="/blog/developer-burnout">what developer burnout actually looks like</InternalLink>.
+      </p>
+    </div>
+  ),
+  "psychology-of-money-lessons": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The best investor I personally know is a retired schoolteacher who never earned more than $60K a year. The worst is a former hedge fund analyst who can price options in his head and is, at 44, broke for the second time.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Nobody fails with money because they can&apos;t do math. They fail because money decisions happen in the part of the brain that handles fear, status, and Tuesday-night impulse buys. These are the ten lessons that actually moved my net worth — most learned the expensive way.
+      </p>
+      <HookBanner
+        headline="The short version"
+        items={[
+          "Behavior beats intelligence: ordinary savers quietly outperform brilliant traders",
+          "Your savings rate matters more than your returns for most of your life",
+          "Wealth is what you don't see — the car not bought, the upgrade skipped",
+          "The highest return money buys isn't stuff. It's control over your own time",
+        ]}
+      />
+      <div className="glass rounded-2xl p-6 my-6 border border-purple-500/30 bg-purple-500/5">
+        <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>What is the psychology of money?</h2>
+        <p>
+          <strong style={{ color: "var(--text-primary)" }}>It&apos;s the study of how emotions, ego, and personal history drive financial decisions — usually more than math does. The field&apos;s core finding, popularized by Morgan Housel&apos;s book: doing well with money has little to do with how smart you are and a lot to do with how you behave.</strong> Which is why brilliant people go broke, and why the boring habits in this article outperform sophistication for almost everyone.
+        </p>
+      </div>
+      <BlogImage src="/images/psychology-of-money-lessons.png" alt="Psychology of money lessons on wealth and behavior" caption="Money is a behavior problem wearing a math costume." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>1. No one is crazy — including you</h2>
+      <p>
+        My grandfather kept an absurd amount of cash in a checking account earning nothing. Irrational? He watched his parents lose everything in a bank failure. Your money instincts were formed by what you happened to live through — which decade you started investing in, whether your family felt scarcity, what your first crash felt like. Once I understood that my own tightness with money was inherited anxiety rather than wisdom, I could finally tell which of my instincts to trust and which to override with rules.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>2. Your savings rate is the whole game (for a long time)</h2>
+      <p>
+        Run the numbers on a normal person&apos;s first decade of investing and the result is humbling: the difference between a good year and a great year in the market is worth less than the difference between saving 10% and saving 20% of your income. Returns compound eventually, but early on, <em>contributions</em> are the engine. This is why obsessing over picking funds while saving 6% is rearranging deck chairs. Automate the rate first — I covered the mechanics in <InternalLink href="/blog/best-budgeting-methods">the budgeting methods that actually stick</InternalLink> — and the fund picking becomes almost irrelevant.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>3. Wealth is what you don't see</h2>
+      <p>
+        The guy with the $90K truck doesn&apos;t have a $90K truck. He has a loan and less money. Housel&apos;s sharpest line is that wealth is the nice car <em>not</em> bought — it&apos;s invisible by definition, because it&apos;s income not yet converted into stuff. The corollary took me years to feel: when you spend money to show people you have money, the audience mostly isn&apos;t even watching, and the people who are watching are judging the spending, not admiring it.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>4. Enough is a superpower</h2>
+      <p>
+        The hedge fund analyst I mentioned? Both times he blew up, it wasn&apos;t a bad trade. It was leverage on a good one — risking money he had and needed for money he didn&apos;t have and didn&apos;t need. The hardest financial skill is letting the goalpost stop moving. There are plenty of things worth more than any upside: reputation, family, sleep. Knowing your number for &quot;enough&quot; isn&apos;t settling; it&apos;s the thing that keeps you from donating your winnings back to the table.
+      </p>
+      <StatBox items={[["76%", "of Americans report money anxiety"], ["10%+", "savings rate beats most stock picking"], ["20+ yrs", "horizon where compounding gets loud"], ["$0", "cost of the best strategies here"]]} />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>5. Save like a pessimist, invest like an optimist</h2>
+      <p>
+        These sound contradictory and they&apos;re not. Short term, anything can happen — layoffs, medical bills, the transmission and the water heater in the same week — so you hold boring cash like a pessimist. Long term, betting on the economy growing across decades has been the most reliable wager available, so you invest like an optimist and leave it alone. In 2026, with AI reshuffling whole job categories, the pessimist half is doing extra work: a real <InternalLink href="/blog/emergency-fund-how-much">emergency fund</InternalLink> is what makes the optimist half possible, because you never have to sell the long-term stuff on a bad day.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>6. Volatility is the fee, not the fine</h2>
+      <p>
+        Market drops feel like punishment for doing something wrong. They&apos;re not — they&apos;re the admission price. The market&apos;s long-term returns exist precisely <em>because</em> it periodically terrifies everyone; that&apos;s what you&apos;re being paid to endure. Reframing drops as a fee rather than a fine is the single mental trick that kept me from selling in the last two corrections. People who dodge the fee by jumping in and out mostly end up paying more, in missed recoveries, than the fee ever was.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>7. Nobody else's game is your game</h2>
+      <p>
+        The day trader buying a stock for the next hour and the retiree holding it for 20 years can both be right at the same price — they&apos;re playing different games. Trouble starts when you take cues from players in a different game: buying what&apos;s loud on social media (their game: engagement), copying a 26-year-old&apos;s all-crypto portfolio (their game: they can rebuild from zero), or measuring against a colleague who inherited a house. Write down what game you&apos;re playing and most financial noise becomes background static.
+      </p>
+      <AlertBox
+        type="money"
+        title="The one-line system that beats willpower"
+        body="Every lesson on this list collapses into one automation: the day you're paid, money moves by itself — some to savings, some to index funds, before you see it. No monthly negotiation with yourself, no motivation required. Set it once; the psychology stops mattering because you've removed yourself from the loop. If you want the simplest possible version, start with a target-date or broad index fund and increase the transfer 1% every few months until it hurts slightly."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>8. The highest return is control of your time</h2>
+      <p>
+        Ask people about their best financial era and they rarely describe their richest year — they describe the year money stopped dictating their schedule. The research on happiness and money keeps circling the same finding: past a comfortable baseline, autonomy beats income. Doing what you want, when you want, with people you like is the dividend wealth actually pays. This reframes every purchase: does it buy freedom later, or does it rent status now at freedom&apos;s expense?
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>9. Leave room to be wrong</h2>
+      <p>
+        Every financial plan I&apos;ve made was wrong about something — income, timing, what I&apos;d want in five years. The plans that survived were the ones with slack built in: savings assuming lower returns than history suggests, a budget that doesn&apos;t require perfection, no single point of failure. Margin of safety isn&apos;t pessimism. It&apos;s what lets you stay in the game long enough for compounding — the only genuinely magic ingredient — to show up.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>10. Boring wins, and keeps winning</h2>
+      <p>
+        The retired teacher&apos;s entire strategy: index funds, every paycheck, for 31 years, ignored. That&apos;s it. That&apos;s the whole sophisticated system that beat the professional. If you want the practical starting point, I wrote a plain-English walkthrough in <InternalLink href="/blog/index-funds-for-beginners">index funds for beginners</InternalLink> — it&apos;s the least exciting article on this site and probably the most valuable.
+      </p>
+      <DataTable
+        headers={["Instinct", "What it feels like", "What actually works"]}
+        rows={[
+          ["Chasing hot investments", "Urgent, informed, exciting", "Boring index funds, held for decades"],
+          ["Spending to signal success", "Earned, deserved", "Invisible wealth: the upgrade not bought"],
+          ["Selling in a crash", "Prudent self-protection", "Treating the drop as the fee for returns"],
+          ["Optimizing fund picks", "Sophisticated", "Raising your savings rate 5%"],
+          ["Moving the goalpost", "Ambition", "Defining 'enough' and meaning it"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-4" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection
+        items={[
+          { q: "What is the psychology of money?", a: "It's the study of how emotions, ego, and personal history drive financial decisions — usually more than math does. Morgan Housel's book popularized the field's core finding: doing well with money has little to do with intelligence and a lot to do with behavior, which is why brilliant people go broke and ordinary savers quietly get rich." },
+          { q: "Why do smart people make bad money decisions?", a: "Because money decisions run on emotion under stress: fear during market drops, status anxiety around peers, and overconfidence after wins. Intelligence doesn't turn those off. The people who do best usually aren't the smartest — they're the ones who built systems (automatic saving, boring index investing) that don't depend on in-the-moment willpower." },
+          { q: "What is the most important money habit?", a: "Automating your savings rate. Your savings rate matters more than your income or your investment returns for most of your life, and automation removes the nightly negotiation with yourself. Pay yourself first the day you're paid, and lifestyle inflation has nothing left to spend." },
+          { q: "Is The Psychology of Money worth reading in 2026?", a: "Yes — arguably more than when it came out. With AI-driven layoffs making income less predictable and social media making everyone else's spending more visible, the book's two big ideas (save like a pessimist, invest like an optimist) map directly onto the 2026 economy." },
+        ]}
+      />
+      <p>
+        Twenty-two-year-old me thought getting rich was an intelligence test and optimized accordingly — clever picks, hot tips, complexity. It took a decade to accept the humbler truth: the schoolteacher wins because the game is behavioral, and behavior is the one thing you can actually control.
+      </p>
+    </div>
+  ),
   "ai-agents-caught-hacking": (
     <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
       <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
