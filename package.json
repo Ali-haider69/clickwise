@@ -10,9 +10,12 @@
     "index": "node scripts/submit-to-search-engines.mjs"
   },
   "dependencies": {
+    "@next/third-parties": "^16.4.0",
+    "@radix-ui/react-dropdown-menu": "^2.1.25",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.460.0",
     "next": "^15.0.0",
     "next-themes": "^0.4.3",

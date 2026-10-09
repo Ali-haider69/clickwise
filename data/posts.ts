@@ -19,6 +19,8 @@ export interface Post {
   faqSchema?: { question: string; answer: string }[];
   /** One primary keyword per post; `seoKeywords` should be 5–10 supporting phrases (avoid near-duplicates of the primary). */
   primaryKeyword?: string;
+  /** YouTube video ID for optional mid-post embed (e.g. "dQw4w9WgXcQ"). Never autoplay. */
+  videoId?: string;
 }
 
 export const posts: Post[] = [

@@ -20,6 +20,12 @@ const config: Config = {
           card: "#12121A",
           border: "rgba(255,255,255,0.08)",
         },
+        surface: {
+          0: "#0a0a0a",
+          1: "#111111",
+          2: "#1a1a1a",
+        },
+        "accent": "#3b82f6",
       },
       backgroundImage: {
         "gradient-brand": "linear-gradient(135deg, #7C3AED 0%, #2563EB 100%)",
