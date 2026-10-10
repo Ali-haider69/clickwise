@@ -50,7 +50,7 @@ export default function BlogFilter({ categories, initialQuery, initialCategory }
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && applySearch()}
           placeholder="Search articles..."
-          className="w-full glass rounded-xl pl-12 pr-32 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+          className="w-full glass rounded-xl pl-12 pr-32 py-3 focus:outline-none focus:ring-2 focus:ring-[#b15f2c]/50"
           style={{ color: "var(--text-primary)" }}
         />
         <button
@@ -67,7 +67,7 @@ export default function BlogFilter({ categories, initialQuery, initialCategory }
           onClick={() => selectCategory("All")}
           className="px-4 py-2 rounded-full text-sm font-medium transition-all"
           style={{
-            background: initialCategory === "All" ? "linear-gradient(to right,#9333ea,#3b82f6)" : "var(--bg-card)",
+            background: initialCategory === "All" ? "linear-gradient(to right,#cf8047,#97501f)" : "var(--bg-card)",
             color: initialCategory === "All" ? "white" : "var(--text-secondary)",
             border: "1px solid var(--border-color)",
           }}
@@ -80,7 +80,7 @@ export default function BlogFilter({ categories, initialQuery, initialCategory }
             onClick={() => selectCategory(cat.name)}
             className="px-4 py-2 rounded-full text-sm font-medium transition-all"
             style={{
-              background: initialCategory === cat.name ? "linear-gradient(to right,#9333ea,#3b82f6)" : "var(--bg-card)",
+              background: initialCategory === cat.name ? "linear-gradient(to right,#cf8047,#97501f)" : "var(--bg-card)",
               color: initialCategory === cat.name ? "white" : "var(--text-secondary)",
               border: "1px solid var(--border-color)",
             }}

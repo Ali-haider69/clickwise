@@ -48,13 +48,13 @@ export default function Newsletter() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="newsletter">
       <div className="relative rounded-3xl overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/15 via-blue-600/10 to-purple-600/15" />
-        <div className="absolute inset-0 border rounded-3xl" style={{ borderColor: "rgba(124,58,237,0.2)" }} />
-        <div className="absolute top-0 left-1/4 w-64 h-64 bg-purple-500/15 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-blue-500/15 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#b15f2c]/12 via-[#cf8047]/8 to-[#b15f2c]/12" />
+        <div className="absolute inset-0 border rounded-3xl" style={{ borderColor: "rgba(177,95,44,0.2)" }} />
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#cf8047]/12 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#97501f]/12 rounded-full blur-3xl" />
 
         <div className="relative px-6 py-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-purple-500/15 border border-purple-500/25 px-4 py-2 rounded-full text-purple-600 dark:text-purple-400 text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#b15f2c]/12 border border-[#b15f2c]/25 px-4 py-2 rounded-full text-[#b15f2c] dark:text-[#cf8047] text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
             Free Weekly Newsletter
           </div>
@@ -85,7 +85,7 @@ export default function Newsletter() {
                   placeholder="Enter your email"
                   required
                   disabled={status === "loading"}
-                  className="w-full rounded-xl pl-12 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-purple-500/50 glass disabled:opacity-50"
+                  className="w-full rounded-xl pl-12 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#b15f2c]/50 glass disabled:opacity-50"
                   style={{ color: "var(--text-primary)" }}
                 />
               </div>

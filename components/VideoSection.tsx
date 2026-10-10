@@ -24,7 +24,7 @@ export default function VideoSection({ videoId, title, caption }: VideoSectionPr
         <button
           onClick={() => setPlaying(true)}
           aria-label={title ? `Play: ${title}` : "Play video"}
-          className="relative w-full aspect-video block group focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="relative w-full aspect-video block group focus:outline-none focus:ring-2 focus:ring-[#b15f2c]"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -34,7 +34,7 @@ export default function VideoSection({ videoId, title, caption }: VideoSectionPr
             loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/30 transition-colors">
-            <div className="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center shadow-xl">
+            <div className="w-16 h-16 rounded-full bg-[#b15f2c] flex items-center justify-center shadow-xl">
               <Play className="w-7 h-7 text-black fill-black ml-0.5" />
             </div>
           </div>

@@ -22,11 +22,11 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
                 <TrendingUp className="w-3 h-3" /> Trending
               </span>
             )}
-            <span className="text-xs font-medium text-purple-600 dark:text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full">
+            <span className="text-xs font-medium text-[#b15f2c] dark:text-[#cf8047] bg-[#b15f2c]/10 px-3 py-1 rounded-full">
               {post.category}
             </span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors" style={{ color: "var(--text-primary)" }}>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight group-hover:text-[#b15f2c] dark:group-hover:text-[#cf8047] transition-colors" style={{ color: "var(--text-primary)" }}>
             {post.title}
           </h2>
           <p className="mb-6 line-clamp-3 text-sm" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
@@ -37,7 +37,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
               <span>·</span>
               <span>{post.date}</span>
             </div>
-            <span className="flex items-center gap-1 text-purple-600 dark:text-purple-400 text-sm font-medium group-hover:gap-2 transition-all">
+            <span className="flex items-center gap-1 text-[#b15f2c] dark:text-[#cf8047] text-sm font-medium group-hover:gap-2 transition-all">
               Read <ArrowRight className="w-4 h-4" />
             </span>
           </div>
@@ -60,8 +60,8 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
         )}
       </div>
       <div className="p-5 flex flex-col flex-1">
-        <span className="text-xs font-medium text-purple-600 dark:text-purple-400 mb-2">{post.category}</span>
-        <h3 className="font-bold text-base leading-snug mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors line-clamp-2 flex-1" style={{ color: "var(--text-primary)" }}>
+        <span className="text-xs font-medium text-[#b15f2c] dark:text-[#cf8047] mb-2">{post.category}</span>
+        <h3 className="font-bold text-base leading-snug mb-2 group-hover:text-[#b15f2c] dark:group-hover:text-[#cf8047] transition-colors line-clamp-2 flex-1" style={{ color: "var(--text-primary)" }}>
           {post.title}
         </h3>
         <p className="text-sm line-clamp-2 mb-4" style={{ color: "var(--text-muted)" }}>{post.excerpt}</p>

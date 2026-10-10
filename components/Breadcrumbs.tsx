@@ -29,7 +29,7 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
           <span key={i} className="flex items-center gap-1">
             {i > 0 && <ChevronRight className="w-3 h-3" />}
             {item.href ? (
-              <Link href={item.href} className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              <Link href={item.href} className="hover:text-[#b15f2c] dark:hover:text-[#cf8047] transition-colors">
                 {item.label}
               </Link>
             ) : (

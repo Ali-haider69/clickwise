@@ -36,7 +36,7 @@ export default function ShareButtons({ title, slug }: Props) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Share on ${b.label}`}
-          className="p-2 rounded-lg hover:bg-purple-500/10 transition-colors"
+          className="p-2 rounded-lg hover:bg-[#b15f2c]/10 transition-colors"
           style={{ color: "var(--text-muted)" }}
         >
           <b.icon className="w-4 h-4" />
@@ -44,7 +44,7 @@ export default function ShareButtons({ title, slug }: Props) {
       ))}
       <button
         onClick={copy}
-        className="p-2 rounded-lg hover:bg-purple-500/10 transition-colors"
+        className="p-2 rounded-lg hover:bg-[#b15f2c]/10 transition-colors"
         style={{ color: "var(--text-muted)" }}
         aria-label="Copy link"
       >

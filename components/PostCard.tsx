@@ -21,7 +21,7 @@ export default function PostCard({
       href={`/blog/${post.slug}`}
       className={cn(
         "group flex flex-col overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800",
-        "transition-all duration-300 hover:border-blue-500/40 hover:-translate-y-0.5 hover:shadow-[0_4px_24px_rgba(59,130,246,0.12)]",
+        "transition-all duration-300 hover:border-[#b15f2c]/40 hover:-translate-y-0.5 hover:shadow-[0_4px_24px_rgba(177,95,44,0.12)]",
         compact && "w-[260px] flex-shrink-0"
       )}
     >
@@ -37,7 +37,7 @@ export default function PostCard({
           loading={priority ? undefined : "lazy"}
         />
         {/* Category badge */}
-        <span className="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-sm text-blue-400 text-[10px] font-bold uppercase tracking-wide rounded-full px-2 py-0.5 border border-blue-500/20">
+        <span className="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-sm text-[#cf8047] text-[10px] font-bold uppercase tracking-wide rounded-full px-2 py-0.5 border border-[#b15f2c]/20">
           {post.category}
         </span>
       </div>
@@ -46,7 +46,7 @@ export default function PostCard({
       <div className="flex flex-col flex-1 p-3 gap-1.5">
         <h3
           className={cn(
-            "font-semibold text-white leading-snug group-hover:text-blue-100 transition-colors line-clamp-2",
+            "font-semibold text-white leading-snug group-hover:text-[#f5d9c0] transition-colors line-clamp-2",
             compact ? "text-xs" : "text-sm"
           )}
         >

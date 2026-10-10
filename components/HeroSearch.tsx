@@ -28,13 +28,13 @@ export default function HeroSearch() {
       className="w-full px-4 py-16 sm:py-20 text-center"
       style={{
         background:
-          "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%), #0a0a0a",
+          "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(207,128,71,0.15) 0%, transparent 70%), #0a0a0a",
       }}
     >
       {/* Eyebrow pill */}
-      <div className="inline-flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/25 rounded-full px-3 py-1 mb-6">
-        <Zap className="w-3 h-3 text-blue-400" />
-        <span className="text-xs font-semibold text-blue-400 tracking-wide uppercase">
+      <div className="inline-flex items-center gap-1.5 bg-[#b15f2c]/10 border border-[#b15f2c]/25 rounded-full px-3 py-1 mb-6">
+        <Zap className="w-3 h-3 text-[#cf8047]" />
+        <span className="text-xs font-semibold text-[#cf8047] tracking-wide uppercase">
           AI tools · reviews · tutorials
         </span>
       </div>
@@ -42,7 +42,7 @@ export default function HeroSearch() {
       {/* Headline */}
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4 leading-[1.1] max-w-3xl mx-auto">
         Your AI knowledge hub,{" "}
-        <span className="text-blue-400">no fluff.</span>
+        <span className="text-[#cf8047]">no fluff.</span>
       </h1>
 
       <p className="text-zinc-400 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
@@ -61,11 +61,11 @@ export default function HeroSearch() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search tools, tutorials, reviews…"
-          className="w-full h-14 rounded-2xl bg-zinc-900 border border-zinc-700 hover:border-zinc-600 pl-12 pr-36 text-white placeholder:text-zinc-500 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+          className="w-full h-14 rounded-2xl bg-zinc-900 border border-zinc-700 hover:border-zinc-600 pl-12 pr-36 text-white placeholder:text-zinc-500 text-sm focus:outline-none focus:ring-2 focus:ring-[#b15f2c] focus:border-transparent transition-all"
         />
         <button
           type="submit"
-          className="absolute right-2 top-1/2 -translate-y-1/2 h-10 px-5 bg-blue-500 text-white text-sm font-bold rounded-xl hover:bg-blue-600 active:scale-95 transition-all"
+          className="absolute right-2 top-1/2 -translate-y-1/2 h-10 px-5 bg-[#b15f2c] text-white text-sm font-bold rounded-xl hover:bg-[#cf8047] active:scale-95 transition-all"
         >
           Search
         </button>
@@ -78,7 +78,7 @@ export default function HeroSearch() {
           <Link
             key={tag.q}
             href={`/blog?q=${encodeURIComponent(tag.q)}`}
-            className="text-xs text-zinc-400 hover:text-blue-400 hover:border-blue-500/40 border border-zinc-800 rounded-full px-3 py-1 transition-all"
+            className="text-xs text-zinc-400 hover:text-[#cf8047] hover:border-[#b15f2c]/40 border border-zinc-800 rounded-full px-3 py-1 transition-all"
           >
             {tag.label}
           </Link>

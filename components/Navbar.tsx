@@ -68,11 +68,11 @@ function NavbarInner() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
-            <div className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Zap className="w-4 h-4 text-black" />
+            <div className="w-8 h-8 rounded-lg bg-[#b15f2c] flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Zap className="w-4 h-4 text-white" />
             </div>
-            <span className="text-xl font-bold text-white">
-              Click<span className="text-blue-400">Wise</span>
+            <span className="text-xl font-bold" style={{ color: "var(--text-primary)" }}>
+              Click<span className="text-[#b15f2c]">Wise</span>
             </span>
           </Link>
 
@@ -85,7 +85,7 @@ function NavbarInner() {
                 className={cn(
                   "px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                   isActive(link.href)
-                    ? "text-blue-400"
+                    ? "text-[#b15f2c]"
                     : "text-zinc-400 hover:text-white"
                 )}
               >
@@ -146,11 +146,11 @@ function NavbarInner() {
                 onChange={(e) => setNavQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSearch()}
                 placeholder="Search ClickWise…"
-                className="w-full rounded-xl bg-surface-1 border border-white/10 pl-11 pr-24 py-3 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded-xl bg-surface-1 border border-white/10 pl-11 pr-24 py-3 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#b15f2c]"
               />
               <button
                 onClick={handleSearch}
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 text-black text-xs font-bold rounded-lg px-3 py-1.5 hover:bg-blue-400 transition-colors"
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#b15f2c] text-white text-xs font-bold rounded-lg px-3 py-1.5 hover:bg-[#cf8047] transition-colors"
               >
                 Search
               </button>
@@ -171,7 +171,7 @@ function NavbarInner() {
                 className={cn(
                   "block px-4 py-3 rounded-lg text-sm font-medium transition-colors",
                   isActive(link.href)
-                    ? "text-blue-400 bg-blue-500/10"
+                    ? "text-[#b15f2c] bg-[#b15f2c]/10"
                     : "text-zinc-400 hover:text-white"
                 )}
               >

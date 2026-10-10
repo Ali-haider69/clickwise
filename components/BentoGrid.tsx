@@ -46,10 +46,10 @@ export default function BentoGrid() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute inset-0 p-6 flex flex-col justify-end">
-              <span className="inline-flex items-center gap-1 text-xs font-semibold text-purple-300 bg-purple-500/20 px-3 py-1 rounded-full w-fit mb-3">
+              <span className="inline-flex items-center gap-1 text-xs font-semibold text-[#f5d9c0] bg-[#b15f2c]/25 px-3 py-1 rounded-full w-fit mb-3">
                 <TrendingUp className="w-3 h-3" /> {featured.category}
               </span>
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight group-hover:text-purple-200 transition-colors">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight group-hover:text-[#f5d9c0] transition-colors">
                 {featured.title}
               </h3>
               <p className="text-gray-300 text-sm line-clamp-2 mb-4">{featured.excerpt}</p>
@@ -72,12 +72,12 @@ export default function BentoGrid() {
             <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-0 group-hover:opacity-5 transition-opacity rounded-3xl`} />
             <div className="text-4xl mb-2">{cat.icon}</div>
             <div>
-              <h3 className="font-bold group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-all" style={{ color: "var(--text-primary)" }}>
+              <h3 className="font-bold group-hover:text-[#b15f2c] dark:group-hover:text-[#cf8047] transition-all" style={{ color: "var(--text-primary)" }}>
                 {cat.name}
               </h3>
               <p className="text-sm" style={{ color: "var(--text-muted)" }}>{cat.count} articles</p>
             </div>
-            <ArrowRight className="w-4 h-4 group-hover:text-purple-500 group-hover:translate-x-1 transition-all absolute bottom-6 right-6" style={{ color: "var(--text-muted)" }} />
+            <ArrowRight className="w-4 h-4 group-hover:text-[#b15f2c] group-hover:translate-x-1 transition-all absolute bottom-6 right-6" style={{ color: "var(--text-muted)" }} />
           </Link>
         ))}
       </div>
@@ -110,8 +110,8 @@ export default function BentoGrid() {
                 </div>
               </div>
               <div className="p-4">
-                <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">{post.category}</span>
-                <h4 className="text-sm font-semibold mt-1 leading-snug group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors line-clamp-2" style={{ color: "var(--text-primary)" }}>
+                <span className="text-xs text-[#b15f2c] dark:text-[#cf8047] font-medium">{post.category}</span>
+                <h4 className="text-sm font-semibold mt-1 leading-snug group-hover:text-[#b15f2c] dark:group-hover:text-[#cf8047] transition-colors line-clamp-2" style={{ color: "var(--text-primary)" }}>
                   {post.title}
                 </h4>
                 <div className="flex items-center gap-2 mt-3 text-xs" style={{ color: "var(--text-muted)" }}>

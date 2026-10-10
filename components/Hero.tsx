@@ -32,9 +32,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#b15f2c]/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#b15f2c]/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#b15f2c]/5 rounded-full blur-3xl" />
         {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.04] dark:opacity-[0.03]"
@@ -48,7 +48,7 @@ export default function Hero() {
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm text-purple-600 dark:text-purple-400 font-medium mb-8 animate-fade-in">
+        <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm text-[#b15f2c] dark:text-[#cf8047] font-medium mb-8 animate-fade-in">
           <span className="w-2 h-2 bg-green-500 rounded-full" />
           Updated daily with the latest deals &amp; reviews
         </div>
@@ -82,7 +82,7 @@ export default function Hero() {
             <button
               onClick={handleSearch}
               className="absolute right-2 top-1/2 -translate-y-1/2 text-sm font-semibold text-white rounded-xl px-5 py-2 transition-opacity hover:opacity-90 active:opacity-75"
-              style={{ background: "linear-gradient(to right, #9333ea, #3b82f6)" }}
+              style={{ background: "linear-gradient(to right, #cf8047, #97501f)" }}
             >
               Search
             </button>
@@ -96,7 +96,7 @@ export default function Hero() {
             <Link
               key={term}
               href={`/blog?q=${encodeURIComponent(term)}`}
-              className="text-sm glass px-3 py-1 rounded-full transition-all hover:border-purple-400/40"
+              className="text-sm glass px-3 py-1 rounded-full transition-all hover:border-[#cf8047]/40"
               style={{ color: "var(--text-secondary)" }}
             >
               {term}
@@ -108,7 +108,7 @@ export default function Hero() {
         <div className="grid grid-cols-3 gap-4 max-w-lg mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
           {stats.map(({ label, value, icon: Icon }) => (
             <div key={label} className="glass rounded-2xl p-4 text-center card-hover">
-              <Icon className="w-5 h-5 text-purple-600 dark:text-purple-400 mx-auto mb-1" />
+              <Icon className="w-5 h-5 text-[#b15f2c] dark:text-[#cf8047] mx-auto mb-1" />
               <div className="text-2xl font-bold" style={{ color: "var(--text-primary)" }}>{value}</div>
               <div className="text-xs" style={{ color: "var(--text-muted)" }}>{label}</div>
             </div>
@@ -118,8 +118,8 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-purple-400/30 flex items-start justify-center pt-2">
-          <div className="w-1.5 h-3 bg-purple-500 rounded-full" />
+        <div className="w-6 h-10 rounded-full border-2 border-[#cf8047]/30 flex items-start justify-center pt-2">
+          <div className="w-1.5 h-3 bg-[#b15f2c] rounded-full" />
         </div>
       </div>
     </section>

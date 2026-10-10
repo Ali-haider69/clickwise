@@ -34,7 +34,7 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
           <Image src={product.image} alt={product.name} fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" />
           {product.badge && (
             <div className="absolute top-2 left-2">
-              <span className="text-xs font-bold text-white bg-gradient-to-r from-purple-600 to-blue-600 px-2 py-1 rounded-full">
+              <span className="text-xs font-bold text-white bg-gradient-to-r from-[#cf8047] to-[#97501f] px-2 py-1 rounded-full">
                 {product.badge}
               </span>
             </div>
@@ -42,7 +42,7 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
         </div>
         <div className="p-4">
           <p className="text-xs mb-1" style={{ color: "var(--text-muted)" }}>{product.category}</p>
-          <h3 className="font-semibold text-sm leading-snug mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors" style={{ color: "var(--text-primary)" }}>
+          <h3 className="font-semibold text-sm leading-snug mb-2 group-hover:text-[#b15f2c] dark:group-hover:text-[#cf8047] transition-colors" style={{ color: "var(--text-primary)" }}>
             {product.name}
           </h3>
           <StarRating rating={product.rating} />
@@ -64,22 +64,22 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
         <Image src={product.image} alt={product.name} fill className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
         {product.badge && (
           <div className="absolute top-4 left-4">
-            <span className="text-sm font-bold text-white bg-gradient-to-r from-purple-600 to-blue-600 px-3 py-1.5 rounded-full shadow-lg">
+            <span className="text-sm font-bold text-white bg-gradient-to-r from-[#cf8047] to-[#97501f] px-3 py-1.5 rounded-full shadow-lg">
               {product.badge}
             </span>
           </div>
         )}
         {/* Score */}
-        <div className="absolute top-4 right-4 w-12 h-12 rounded-full flex flex-col items-center justify-center border border-purple-500/50" style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(8px)" }}>
-          <span className="text-xs font-black text-purple-400">{product.score}</span>
+        <div className="absolute top-4 right-4 w-12 h-12 rounded-full flex flex-col items-center justify-center border border-[#b15f2c]/50" style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(8px)" }}>
+          <span className="text-xs font-black text-[#cf8047]">{product.score}</span>
           <span className="text-[10px] text-gray-400">score</span>
         </div>
       </div>
 
       {/* Body */}
       <div className="p-6">
-        <p className="text-xs text-purple-600 dark:text-purple-400 font-medium mb-1">{product.category}</p>
-        <h3 className="text-lg font-bold mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors" style={{ color: "var(--text-primary)" }}>
+        <p className="text-xs text-[#b15f2c] dark:text-[#cf8047] font-medium mb-1">{product.category}</p>
+        <h3 className="text-lg font-bold mb-2 group-hover:text-[#b15f2c] dark:group-hover:text-[#cf8047] transition-colors" style={{ color: "var(--text-primary)" }}>
           {product.name}
         </h3>
 

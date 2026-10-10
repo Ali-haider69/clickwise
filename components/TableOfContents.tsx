@@ -66,11 +66,11 @@ export default function TableOfContents() {
                   e.preventDefault();
                   document.getElementById(h.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className="block py-1 transition-colors hover:text-purple-600 dark:hover:text-purple-400 leading-snug"
+                className="block py-1 transition-colors hover:text-[#b15f2c] dark:hover:text-[#cf8047] leading-snug"
                 style={{
                   color: active === h.id ? "var(--text-primary)" : "var(--text-muted)",
                   fontWeight: active === h.id ? 600 : 400,
-                  borderLeft: active === h.id ? "2px solid rgb(147 51 234)" : "2px solid transparent",
+                  borderLeft: active === h.id ? "2px solid #b15f2c" : "2px solid transparent",
                   paddingLeft: "0.75rem",
                 }}
               >

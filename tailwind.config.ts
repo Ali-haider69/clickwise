@@ -11,13 +11,13 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          purple: "#7C3AED",
-          blue: "#2563EB",
-          pink: "#EC4899",
+          orange: "#b15f2c",
+          amber: "#cf8047",
+          deep:   "#97501f",
         },
         dark: {
-          bg: "#0A0A0F",
-          card: "#12121A",
+          bg: "#0a0a0a",
+          card: "#111111",
           border: "rgba(255,255,255,0.08)",
         },
         surface: {
@@ -25,11 +25,11 @@ const config: Config = {
           1: "#111111",
           2: "#1a1a1a",
         },
-        "accent": "#3b82f6",
+        accent: "#b15f2c",
       },
       backgroundImage: {
-        "gradient-brand": "linear-gradient(135deg, #7C3AED 0%, #2563EB 100%)",
-        "gradient-hero": "linear-gradient(135deg, #0A0A0F 0%, #12121A 50%, #0A0A0F 100%)",
+        "gradient-brand": "linear-gradient(135deg, #cf8047 0%, #97501f 100%)",
+        "gradient-hero":  "linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%)",
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",
@@ -62,7 +62,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Onest", "system-ui", "sans-serif"],
       },
     },
   },

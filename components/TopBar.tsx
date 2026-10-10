@@ -25,14 +25,14 @@ export default function TopBar() {
       className="w-full h-9 flex items-center justify-center px-4 relative"
       style={{
         background: "linear-gradient(90deg, #1a1a1a 0%, #111827 50%, #1a1a1a 100%)",
-        borderBottom: "1px solid rgba(59,130,246,0.2)",
+        borderBottom: "1px solid rgba(177,95,44,0.2)",
       }}
     >
       <p className="text-xs text-zinc-300 text-center">
         🔥 Get our free weekly AI tools newsletter —{" "}
         <Link
           href="#newsletter"
-          className="text-blue-400 font-semibold underline underline-offset-2 hover:text-blue-300 transition-colors"
+          className="text-[#cf8047] font-semibold underline underline-offset-2 hover:text-[#cf8047] transition-colors"
         >
           Join free →
         </Link>

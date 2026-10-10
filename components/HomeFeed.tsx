@@ -33,12 +33,12 @@ export default function HomeFeed({ posts }: HomeFeedProps) {
       {/* Section header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-1 h-6 bg-blue-500 rounded-full" />
+          <div className="w-1 h-6 bg-[#b15f2c] rounded-full" />
           <h2 className="text-base font-bold text-white">Featured</h2>
         </div>
         <Link
           href="/blog"
-          className="text-xs text-zinc-500 hover:text-blue-400 transition-colors font-medium"
+          className="text-xs text-zinc-500 hover:text-[#cf8047] transition-colors font-medium"
         >
           View all →
         </Link>
@@ -53,7 +53,7 @@ export default function HomeFeed({ posts }: HomeFeedProps) {
             className={cn(
               "px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all border",
               active === chip
-                ? "bg-blue-500 text-black border-blue-500"
+                ? "bg-[#b15f2c] text-white border-[#b15f2c]"
                 : "bg-transparent text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-zinc-200"
             )}
           >

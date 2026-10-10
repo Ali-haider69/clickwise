@@ -53,14 +53,14 @@ export default function CarouselRow({ title, href, posts, videos }: CarouselRowP
       {/* Row header */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
-          <div className="w-1 h-5 bg-blue-500 rounded-full" />
+          <div className="w-1 h-5 bg-[#b15f2c] rounded-full" />
           <h2 className="text-base font-bold text-white">{title}</h2>
         </div>
         <div className="flex items-center gap-2">
           {href && (
             <Link
               href={href}
-              className="hidden sm:flex items-center gap-1 text-xs text-zinc-500 hover:text-blue-400 transition-colors font-medium mr-2"
+              className="hidden sm:flex items-center gap-1 text-xs text-zinc-500 hover:text-[#cf8047] transition-colors font-medium mr-2"
             >
               See all <ArrowRight className="w-3 h-3" />
             </Link>
@@ -72,7 +72,7 @@ export default function CarouselRow({ title, href, posts, videos }: CarouselRowP
             className={cn(
               "p-1.5 rounded-lg border transition-all",
               canPrev
-                ? "border-zinc-700 text-zinc-400 hover:border-blue-500/60 hover:text-white"
+                ? "border-zinc-700 text-zinc-400 hover:border-[#b15f2c]/60 hover:text-white"
                 : "border-zinc-900 text-zinc-800 cursor-default"
             )}
           >
@@ -85,7 +85,7 @@ export default function CarouselRow({ title, href, posts, videos }: CarouselRowP
             className={cn(
               "p-1.5 rounded-lg border transition-all",
               canNext
-                ? "border-zinc-700 text-zinc-400 hover:border-blue-500/60 hover:text-white"
+                ? "border-zinc-700 text-zinc-400 hover:border-[#b15f2c]/60 hover:text-white"
                 : "border-zinc-900 text-zinc-800 cursor-default"
             )}
           >

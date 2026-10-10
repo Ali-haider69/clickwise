@@ -100,7 +100,7 @@ function FooterContactForm() {
         onChange={(e) => setName(e.target.value)}
         placeholder="Your name"
         disabled={status === "loading"}
-        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 disabled:opacity-50"
+        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#b15f2c]/40 disabled:opacity-50"
         style={{ color: "var(--text-primary)" }}
       />
       <input
@@ -110,7 +110,7 @@ function FooterContactForm() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="your@email.com"
         disabled={status === "loading"}
-        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 disabled:opacity-50"
+        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#b15f2c]/40 disabled:opacity-50"
         style={{ color: "var(--text-primary)" }}
       />
       <textarea
@@ -120,7 +120,7 @@ function FooterContactForm() {
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Your message..."
         disabled={status === "loading"}
-        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 resize-none disabled:opacity-50"
+        className="w-full glass rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#b15f2c]/50 resize-none disabled:opacity-50"
         style={{ color: "var(--text-primary)", fontFamily: "inherit" }}
       />
       {status === "error" && (
@@ -130,7 +130,7 @@ function FooterContactForm() {
         type="submit"
         disabled={status === "loading"}
         className="flex items-center gap-2 text-sm font-semibold text-white rounded-xl px-4 py-2 transition-opacity hover:opacity-90 w-full justify-center disabled:opacity-50"
-        style={{ background: "linear-gradient(to right, #9333ea, #3b82f6)" }}
+        style={{ background: "linear-gradient(to right, #cf8047, #97501f)" }}
       >
         {status === "loading" ? (
           <><Loader2 className="w-3.5 h-3.5 animate-spin" /> Sending...</>
@@ -151,7 +151,7 @@ export default function Footer() {
           {/* Brand + Contact */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-[#b15f2c] flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
               <span className="text-xl font-bold">
@@ -176,7 +176,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-sm transition-colors hover:text-purple-600 dark:hover:text-purple-400"
+                      className="text-sm transition-colors hover:text-[#b15f2c] dark:hover:text-[#cf8047]"
                       style={{ color: "var(--text-muted)" }}
                     >
                       {link.label}
@@ -195,7 +195,7 @@ export default function Footer() {
           </p>
           <p className="text-xs text-center" style={{ color: "var(--text-muted)" }}>
             ClickWise is reader-supported. We may earn commissions from affiliate links.{" "}
-            <Link href="/disclosure" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors underline">
+            <Link href="/disclosure" className="hover:text-[#b15f2c] dark:hover:text-[#cf8047] transition-colors underline">
               Learn more
             </Link>
           </p>

@@ -36,7 +36,7 @@ export default function RelatedTools({ currentTool }: { currentTool: string }) {
     <div className="mt-12 pt-8" style={{ borderTop: "1px solid var(--border-color)" }}>
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-bold" style={{ color: "var(--text-primary)" }}>More Free Tools</h2>
-        <Link href="/tools" className="text-sm text-purple-600 dark:text-purple-400 flex items-center gap-1 hover:underline">
+        <Link href="/tools" className="text-sm text-[#b15f2c] dark:text-[#cf8047] flex items-center gap-1 hover:underline">
           View All <ArrowRight className="w-3.5 h-3.5" />
         </Link>
       </div>
