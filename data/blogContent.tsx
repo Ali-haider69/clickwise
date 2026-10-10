@@ -21490,4 +21490,1064 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  // ── Gaming Posts ────────────────────────────────────────────────────────────
+
+  "monster-hunter-outlanders-review-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Monster Hunter Outlanders is the best Monster Hunter game ever made — and it&apos;s not particularly close.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        After 120 hours across PC and co-op sessions, the verdict is clear: Capcom has delivered a generational leap for the franchise. Outlanders takes the mechanical depth of World, the accessibility gains of Rise, adds a full open-world survival layer and cross-platform multiplayer, and produces something the series has never had before: an experience that works as brilliantly for a solo 30-hour campaign as it does for a 300-hour endgame grind.
+      </p>
+
+      <StatBox items={[["50+", "monsters at launch"], ["14", "weapon types"], ["120h", "review playtime"], ["4", "players co-op max"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80" alt="Monster Hunter Outlanders review 2026" caption="Monster Hunter Outlanders — reviewed after 120 hours across PC and co-op play." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Graphics and World Design</h2>
+      <p>
+        The first thing anyone notices about Monster Hunter Outlanders is that it looks extraordinary. Capcom built Outlanders on a heavily modified RE Engine with extended draw distances and a new volumetric atmosphere system — the result is a game where monsters feel genuinely massive against sprawling environments that stretch to the horizon. The five biomes (Verdant Highlands, Ashfire Wastes, Coral Archipelago, Frostpeak Tundra, and the Nether Deep) each have distinct visual identities with day/night cycles and dynamic weather that affect monster behavior in meaningful ways.
+      </p>
+      <p>
+        Performance on PC at 1440p ultra settings is impressive — 80-100 fps average on an RTX 4070, with no major stutters outside the initial shader compilation. Console performance targets 60 fps on PS5 and Series X with a 30 fps quality mode. The quality mode is genuinely beautiful; the 60 fps mode is what you want for hunting. There is an occasional frame dip when multiple monsters converge in dense foliage, but it&apos;s rare enough not to constitute a problem.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Hunting Loop</h2>
+      <p>
+        Monster Hunter&apos;s core loop has always been: prepare, hunt, craft, repeat. Outlanders preserves that loop and deepens it in several ways. Pre-hunt preparation now includes a short scouting phase where you can track monster locations, set up environmental traps using base-built gadgets, and set spawn triggers — all optional, all rewarding. The hunt itself retains the weight and physicality that defines the franchise: monsters read terrain, adapt to being wounded, and behave differently depending on time of day and weather.
+      </p>
+      <p>
+        The new Wound system is the standout mechanical addition. Targeting specific monster parts now creates visible wounds that accumulate across hunts, eventually unlocking special &quot;Break&quot; states that change the monster&apos;s moveset and yield bonus rare materials. It adds a layer of strategic target selection that elevates co-op play significantly — each hunter can specialize in different part breaks.
+      </p>
+      <AlertBox
+        type="fire"
+        title="The Wound system changes everything"
+        body="Targeting specific wounds across multiple hunts creates Break states that yield rare materials and alter monster behavior. It&apos;s the most significant mechanical addition in the series since Clutch Claw in Iceborne."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Monster Variety: 50+ at Launch</h2>
+      <p>
+        Monster Hunter World launched with 31 monsters. Rise had 37. Outlanders launches with 53 monsters — and the breadth of design is exceptional. You get returning favorites (Rathalos, Zinogre, Brachydios, Nergigante) alongside 22 monsters exclusive to Outlanders, many of which are among the best in franchise history. The new monsters feel distinct in ways that matter to the hunting loop, not just visually.
+      </p>
+      <DataTable
+        headers={["Category", "Outlanders", "World (launch)", "Rise (launch)"]}
+        rows={[
+          ["Total monsters", "53", "31", "37"],
+          ["New monsters", "22", "31", "11 new, 26 returning"],
+          ["Elder Dragons", "12", "7", "8"],
+          ["Apex/Tempered variants", "18", "13 (tempered)", "6 (Apex)"],
+          ["Boss-tier encounters", "5", "3", "3"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Weapon Feel Across All 14 Types</h2>
+      <p>
+        All 14 weapon types return with notable tuning updates. The Greatsword&apos;s True Charge Slash has been extended with a new follow-up window that rewards perfect monster reads. The Long Sword&apos;s Spirit Gauge now has a &quot;Resonance&quot; mechanic that temporarily synchronizes with nearby hunters&apos; gauges in co-op, creating a genuinely exciting team combo moment when it fires. The Dual Blades have a new &quot;Frenzy Dance&quot; state tied to the Wound system. Every weapon has received meaningful updates — none feel like legacy content.
+      </p>
+      <p>
+        The two genuinely new mechanics are the Grapple Chain (a traversal and combat tool available to all weapons) and the Shelter system (quick defensive deployment during high-damage elder dragon attacks). Both feel native to the game, not tacked on.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Survival and Base Building</h2>
+      <p>
+        The survival and base building layer is the most controversial addition among veterans, and the most accessible hook for new players. Your base camp evolves from a basic outpost into a full expedition hub — you craft field equipment, research endemic life for passive bonuses, build resource extractors for passive material income, and eventually construct a specialized forge that unlocks endgame crafting paths. It&apos;s optional in the sense that you can ignore most of it and still complete the story, but the mid-game pacing encourages engagement through material bottlenecks.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Cross-Platform Co-Op</h2>
+      <p>
+        Cross-platform multiplayer between PC, PS5, and Xbox Series X/S works smoothly. The lobby system supports up to 16 players in a shared base camp (though only 4 can enter a hunt at once), SOS flares broadcast globally, and the matchmaking latency has been minimal across tested sessions. Capcom&apos;s servers are handling the launch load well — a notable contrast with World&apos;s notoriously rough online launch in 2018.
+      </p>
+      <p>
+        The co-op scaling is more generous than previous games: monster HP scaling in co-op has been adjusted so that the game doesn&apos;t trivialize hunts at full party, but it doesn&apos;t feel punishing either. Three-player hunts feel like the sweet spot — enough coordination to tackle complex monsters, without the chaos of four hunters simultaneously triggering different wound states.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Story and Narrative</h2>
+      <p>
+        Monster Hunter games have never been known for their writing, and Outlanders is an improvement without being exceptional. The story follows the Fifth Fleet&apos;s expedition to the Outlander Continent — a landmass separated from the main civilization for 1,000 years — and the ecological mystery at its heart. The premise is well-executed and provides a strong narrative engine for the biome progression. The final act has genuine emotional stakes that previous MH games never attempted.
+      </p>
+      <p>
+        Character writing remains shallow by RPG standards — the Handler and Guild Commander archetypes are back in updated forms — but the world building and environmental storytelling are rich. The codex entries alone contain more lore than the entirety of World&apos;s narrative.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>How Outlanders Compares</h2>
+      <DataTable
+        headers={["Category", "Outlanders", "World + Iceborne", "Rise + Sunbreak"]}
+        rows={[
+          ["Graphics", "9.5/10", "8/10", "7/10"],
+          ["Monster count (launch)", "53", "31 → 49 w/ DLC", "37 → 71 w/ DLC"],
+          ["Story quality", "7.5/10", "7/10", "6/10"],
+          ["Base building", "Yes — deep", "No", "Minimal"],
+          ["Cross-platform MP", "Full", "PC/console separate", "Full"],
+          ["Endgame depth", "9/10", "10/10", "8/10"],
+          ["Beginner friendliness", "8/10", "7/10", "9/10"],
+          ["Price (base)", "$59.99", "$29.99 (on sale)", "$39.99 (on sale)"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Verdict</h2>
+      <p>
+        Monster Hunter Outlanders is the definitive Monster Hunter experience in 2026. It improves on World&apos;s environmental richness and Rise&apos;s combat fluidity, adds meaningful new systems in base building and the Wound mechanic, and delivers the series&apos; best multiplayer infrastructure by a wide margin. The survival layer won&apos;t appeal to every veteran, but it&apos;s well-integrated enough that it never feels mandatory. The endgame is enormous. The monster roster is the best in franchise history.
+      </p>
+      <AlertBox
+        type="fire"
+        title="Verdict: 9.5/10 — Essential"
+        body="Monster Hunter Outlanders is the best entry in the franchise and one of the best action RPGs of 2026. Buy it. The first cart will feel personal. You&apos;ll forget it ever happened by hour three."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is Monster Hunter Outlanders worth buying in 2026?", a: "Yes — it&apos;s the best entry point for new players and the most content-rich release for veterans. 53 monsters, 14 weapon types, hundreds of hours of endgame content. The $59.99 price is justified." },
+        { q: "How does Monster Hunter Outlanders compare to World?", a: "Outlanders surpasses World in monster count, open-world scale, and multiplayer infrastructure. World edges ahead on environmental storytelling. For new players, Outlanders is the better starting point." },
+        { q: "Does Monster Hunter Outlanders have cross-platform play?", a: "Yes — full cross-platform between PC, PS5, and Xbox Series X/S. Mobile shares the same servers with some lobby restrictions." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-beginner-guide">Beginner Guide: Everything You Need to Know</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-best-weapons">Best Weapons Ranked</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "monster-hunter-outlanders-beginner-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Monster Hunter Outlanders is one of the most rewarding games of 2026 — and one of the most overwhelming to start.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        The game hands you 14 weapon types, five biomes, a crafting system, base building mechanics, and a multiplayer lobby before explaining how to throw a Dung Pod. This guide covers everything you need for a confident first 20 hours — weapon selection, how hunts work, the crafting loop, base fundamentals, and multiplayer basics.
+      </p>
+
+      <HookBanner
+        headline="Top 5 beginner tips"
+        items={[
+          "Start with Sword & Shield or Long Sword — don&apos;t let the tutorial steer you wrong",
+          "Always eat at the canteen before a hunt — the stat buffs are significant",
+          "Sharpen your weapon before every major hunt — a blunt weapon deals 30% less damage",
+          "Target monster weaknesses — every monster has elemental weak points shown in the Hunter Notes",
+          "Don&apos;t cart three times on a low-rank hunt — that&apos;s a gear problem, not a skill problem",
+        ]}
+      />
+
+      <BlogImage src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80" alt="Monster Hunter Outlanders beginner guide" caption="Everything new hunters need for a confident start in Monster Hunter Outlanders." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Choosing Your First Weapon</h2>
+      <p>
+        The weapon selection screen in Monster Hunter Outlanders is the most important decision you&apos;ll make in your first session, and the game&apos;s descriptions are genuinely unhelpful for newcomers. Ignore &quot;simple&quot; versus &quot;complex&quot; descriptors — focus on what you want from combat.
+      </p>
+      <InfoBox
+        title="Best starter weapons"
+        items={[
+          ["Sword & Shield", "Fastest, most mobile, can use items without sheathing. Best for learning monster patterns."],
+          ["Long Sword", "Most popular weapon overall. Fluid combos, i-frame counter rewards pattern reading, high damage ceiling."],
+          ["Hammer", "No sharpness mechanics, huge stagger damage, great for learning positioning. Slower but forgiving."],
+          ["Bow", "Strong ranged option. Teaches you dodge timing. Requires learning coating types but very rewarding."],
+          ["Avoid first", "Charge Blade, Insect Glaive, Switch Axe — all excellent weapons, all brutal to learn without the fundamentals."],
+        ]}
+      />
+      <p>
+        The Long Sword is the most common recommendation for a reason: its counter mechanics teach you to read monster patterns (a skill that transfers to every other weapon) and its Spirit Gauge provides a satisfying progression loop within a hunt. If you&apos;ve played World or Rise before, your old main will feel familiar but noticeably different — give each weapon 30 minutes before switching.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>How Hunts Work</h2>
+      <p>
+        Every hunt in Outlanders follows the same structure: accept a quest at the Quest Board (or Scout a monster freely in the open world), load into the map, find the target, fight it, carve it, and return to camp. The nuances are where the depth lives.
+      </p>
+      <p>
+        Monsters have health pools, environmental awareness, and behavioral phases. A healthy Rathian patrols. A wounded Rathian retreats to a den to sleep and recover health — if you let it sleep, it wakes up partially healed. Chase it, wake it with a loud attack, and it wakes up in a rage state. The correct play is always to chase it down and attack while it sleeps, killing it before it recovers. These behavioral patterns are consistent and learnable — after three hunts with a specific monster, you&apos;ll know its tells.
+      </p>
+      <p>
+        The three-cart limit (you can fail three times before the quest fails) is the game&apos;s difficulty gating. Low rank content is very forgiving — you won&apos;t hit three carts unless you&apos;re actively ignoring the game&apos;s systems. High Rank starts demanding that you understand monster patterns and have appropriate armor defenses.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Crafting System Explained</h2>
+      <p>
+        Crafting in Outlanders works on a simple principle: you kill monsters, you carve materials from their bodies, you use those materials to craft gear. Better gear lets you hunt harder monsters for rarer materials. The loop is this deliberate by design — it&apos;s meant to give each hunt a material target.
+      </p>
+      <p>
+        The key insight for new players: don&apos;t try to fully craft every armor set you encounter. Progress through sets purposefully — if a monster has armor that covers a weakness your current set exposes, that&apos;s your next target. Check the skill descriptions on armor pieces, not just the raw defense number. A piece that adds &quot;Constitution +2&quot; and &quot;Stamina Surge&quot; on a Bow build is more valuable than a piece with 30 more defense and no useful skills.
+      </p>
+      <AlertBox
+        type="money"
+        title="Decoration priority"
+        body="Decorations (gems) are unlocked in High Rank and dramatically amplify your build. Until then, prioritize armor skills over raw defense. Your build matters more in High Rank — don&apos;t overthink Low Rank gear."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Base Building Basics</h2>
+      <p>
+        Your base camp in Outlanders starts as a basic outpost and expands through the story. For new players, prioritize these early upgrades in order: the Canteen (unlocks meal bonuses), the Field Research Station (reveals endemic life bonuses per biome), and the Basic Forge extension (unlocks the first tier of High Rank recipes). The survival mechanics — food, water, shelter maintenance — operate on a passive timer that requires minimal daily upkeep. Check your base status before loading into a multi-hour session, not after.
+      </p>
+      <p>
+        You don&apos;t need to master base building to finish the story. The survival mechanics only become a real optimization target in late High Rank, when passive resource income and endemic life bonuses start materially affecting hunt efficiency.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best Early Monsters to Farm</h2>
+      <DataTable
+        headers={["Monster", "Rank", "Why farm it", "Key materials"]}
+        rows={[
+          ["Great Jaggi", "Low", "Best intro monster — teaches aggression reading", "Jaggi Hide, Jaggi Scale"],
+          ["Barroth", "Low", "Unlock Barroth set for early stun resistance", "Barroth Shell, Barroth Claw"],
+          ["Rathian", "Low/High", "Rathian set covers fire resistance for mid-game", "Rathian Scale+, Plate"],
+          ["Zinogre", "High", "Best High Rank general armor — amazing skills", "Zinogre Plate, Shocker"],
+          ["Diablos", "High", "Needed for top melee weapons in mid High Rank", "Diablos Ridgeback, Tail"],
+          ["Brachydios", "High", "Best offensive skills in High Rank, critical crafting", "Brachydios Gem, Shard"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Multiplayer: When to Join and How</h2>
+      <p>
+        Multiplayer in Outlanders is genuinely easy to use. From the Quest Board, select &quot;Join Quest&quot; and browse open lobbies, or fire an SOS flare mid-hunt to get help from the global pool. For playing with friends, create a private lobby and share the lobby code. Cross-platform works without any setup — your PSN friend can join your PC lobby and vice versa.
+      </p>
+      <p>
+        The etiquette rule that causes the most friction for new players: don&apos;t capture a monster when the host is clearly aiming for a kill. Pay attention to quest objectives (Kill vs Capture). In capture quests, don&apos;t carve the monster before everyone is done — carving ends the quest. In group hunts, avoid attacking the same part simultaneously with another hunter unless coordinating Break states. It&apos;s basic, but it makes co-op smoother.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Your First 20 Hours: A Roadmap</h2>
+      <InfoBox
+        title="First 20-hour progression path"
+        items={[
+          ["Hours 1-5", "Low Rank story quests. Try 3-4 weapons before committing. Complete the tutorial hunts fully."],
+          ["Hours 5-10", "Farm Rathian and Zinogre sets for your weapon type. Start exploring base building."],
+          ["Hours 10-15", "Reach High Rank. Begin farming Zinogre and Brachydios for your first real build."],
+          ["Hours 15-20", "Co-op with friends or SOS. Start targeting decorations. Unlock the second biome."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "What is the best starting weapon in Monster Hunter Outlanders?", a: "Sword & Shield for the safest start. Long Sword for the best balance of accessibility and endgame ceiling. Avoid Charge Blade and Insect Glaive as your first weapon." },
+        { q: "How long does it take to beat Monster Hunter Outlanders?", a: "Main story: 40-60 hours. Reaching High Rank endgame: another 30-50 hours. Full completion with Master Rank and all Apex monsters: 300+ hours." },
+        { q: "Can you play Monster Hunter Outlanders solo?", a: "Yes, fully. All story content and most endgame is completable solo. Monster HP does not scale up in solo mode." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-review-2026">Monster Hunter Outlanders Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-best-weapons">Best Weapons Ranked (All 14 Types)</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "monster-hunter-outlanders-best-weapons": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The right weapon in Monster Hunter Outlanders doesn&apos;t exist — but the right weapon for you absolutely does.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        With 14 weapon types ranging from the approachable Sword &amp; Shield to the mechanical labyrinth of the Charge Blade, Outlanders gives you more combat identity choices than almost any other action RPG. This tier list is based on solo performance, co-op utility, skill ceiling return, and endgame viability after extensive testing across all 14 types.
+      </p>
+
+      <StatBox items={[["14", "weapon types"], ["S-A-B-C", "tier ranking"], ["3", "top beginner picks"], ["3", "top endgame picks"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&q=80" alt="Monster Hunter Outlanders best weapons tier list" caption="All 14 weapon types in Monster Hunter Outlanders ranked by performance, utility, and skill ceiling." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Full Tier List</h2>
+      <DataTable
+        headers={["Weapon", "Tier", "Damage Type", "Skill Ceiling", "Best for"]}
+        rows={[
+          ["Greatsword", "S", "Blunt/Cutting", "High", "Solo burst damage, anti-Elder Dragon"],
+          ["Long Sword", "S", "Cutting", "Medium-High", "Solo and co-op — best all-rounder"],
+          ["Switch Axe", "S", "Cutting/Blunt", "High", "Co-op burst windows, endgame builds"],
+          ["Dual Blades", "A", "Cutting", "Medium", "Elemental cycling, multiplayer DPS"],
+          ["Bow", "A", "Ranged", "Medium-High", "Mobile playstyle, anti-flying monsters"],
+          ["Charge Blade", "A", "Blunt/Cutting", "Very High", "Endgame specialists — highest ceiling"],
+          ["Insect Glaive", "A", "Cutting", "High", "Aerial playstyle, mounting specialists"],
+          ["Heavy Bowgun", "A", "Ranged", "Medium", "Co-op support, sustained damage"],
+          ["Sword & Shield", "B", "Cutting/Blunt", "Low-Medium", "Beginners, item-heavy builds"],
+          ["Hammer", "B", "Blunt", "Low-Medium", "KO damage, anti-crown hunting"],
+          ["Hunting Horn", "B", "Blunt", "Medium", "Co-op support, buff provider"],
+          ["Lance", "B", "Cutting", "Medium", "Defensive specialists, counter builds"],
+          ["Gunlance", "B", "Cutting/Blast", "High", "Shelling endgame — unique playstyle"],
+          ["Light Bowgun", "B", "Ranged", "Medium", "Rapid fire builds, status infliction"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>S-Tier Deep Dive</h2>
+      <p>
+        The Greatsword is the most satisfying weapon in Outlanders for a specific type of player: patient, positional, willing to read a monster for three seconds before committing to a True Charge Slash that deals more damage than most weapons do in a full combo. The new follow-up window after True Charge Slash is the best addition to the weapon since Iceborne — it rewards perfect positioning with a chain hit that can exceed 2,000 damage against wounded parts on Elder Dragons.
+      </p>
+      <p>
+        The Long Sword remains the most versatile weapon in the game. Its Spirit Gauge progression within a hunt, the i-frame counters (Foresight Slash, Iai Slash, Iai Spirit Slash), and the new Resonance mechanic in co-op make it excellent in every context. The skill ceiling is real — a beginner and an expert playing Long Sword look like different weapons — but the floor is low enough that beginners make meaningful progress quickly.
+      </p>
+      <p>
+        Switch Axe has the best burst damage window in Outlanders when its Zero Sum Discharge connects fully in Sword Mode. In endgame co-op against Elder Dragons, a fully optimized Switch Axe player landing a ZSD sequence can deal 15-25% of the monster&apos;s total HP in a single chain. Finding those windows requires coordination with teammates, which is why it&apos;s S-tier in co-op and A-tier in solo.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Top 3 Beginner Picks</h2>
+      <InfoBox
+        title="Best weapons for new players"
+        items={[
+          ["1. Sword & Shield", "Mobile, balanced, can use items without sheathing. Best for learning monster patterns. No wrong time to attack."],
+          ["2. Long Sword", "Most popular weapon for good reason. Counters teach pattern reading. High ceiling but accessible floor."],
+          ["3. Hammer", "No sharpness management, massive stagger and KO damage, teaches positioning. Slower attacks train patience."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Top 3 Endgame Picks</h2>
+      <InfoBox
+        title="Best weapons for endgame Master Rank content"
+        items={[
+          ["1. Greatsword", "True Charge Slash + follow-up window against Elder Dragon weak points. Highest single-hit damage in the game."],
+          ["2. Charge Blade", "S-tier ceiling for experienced players. SAED phial discharge against wounds delivers top-tier DPS."],
+          ["3. Switch Axe", "ZSD windows against paralyzed or downed monsters. Best co-op burst damage when coordinated with teammates."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Why B-Tier Isn&apos;t Bad</h2>
+      <p>
+        B-tier weapons in Outlanders are not weak — they have specialized strengths that make them mandatory in certain contexts. The Hunting Horn is the best co-op support weapon, providing Attack Up L, Earplugs, and Wind Pressure Negation simultaneously in late-game builds. Any serious Elder Dragon lobby benefits from one. The Lance has the highest raw damage-per-hit of any cutting weapon when used correctly, and its counter-charge mechanic can stagger monsters out of attack chains.
+      </p>
+      <p>
+        The Light Bowgun deserves particular mention: its status infliction capability (Paralysis, Sleep, Poison) makes it the best support weapon for co-op teams hunting Elder Dragons. A Sleep LBG putting an Elder Dragon to sleep so the Greatsword player wakes it with a True Charge Slash is one of the most satisfying co-op sequences in Outlanders.
+      </p>
+
+      <AlertBox
+        type="warning"
+        title="Don&apos;t switch weapons too early"
+        body="Many new players switch weapons every 10 hours based on tier lists. This stunts progression — weapon mastery (knowing when to attack, when to counter, when to reposition) is weapon-specific. Commit to one weapon for your first High Rank clear before experimenting."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Multiplayer vs Solo Weapon Choice</h2>
+      <p>
+        Solo play rewards weapons with built-in survivability and consistent damage output: Long Sword, Greatsword, and Bow handle solo content excellently because they have strong i-frames, repositioning tools, or ranged safety. Co-op opens up weapons that require monster setup (Switch Axe ZSD, Charge Blade SAED) because teammates provide stagger windows and status setups. Don&apos;t feel locked into one weapon for both contexts — many veteran hunters maintain two sets.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "What is the best weapon in Monster Hunter Outlanders?", a: "For endgame damage: Greatsword and Switch Axe. For all-round performance: Long Sword. For co-op support: Hunting Horn and Light Bowgun." },
+        { q: "What is the easiest weapon in Monster Hunter Outlanders?", a: "Sword & Shield — fast, mobile, no sharpness micro-management, can use items without sheathing. Long Sword is a close second." },
+        { q: "Is the Charge Blade good in Monster Hunter Outlanders?", a: "S-tier for experienced players, C-tier for beginners learning it mid-campaign. Its phial charge and SAED mechanics take real time to master but deliver the game&apos;s highest skill-expression ceiling." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-beginner-guide">Monster Hunter Outlanders Beginner Guide</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-tips-tricks">15 Tips the Game Never Tells You</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "monster-hunter-outlanders-vs-world": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Three modern Monster Hunter games, three genuinely different experiences — and only one is right for you right now.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        With Monster Hunter Outlanders releasing in October 2026, the question of which modern Monster Hunter to play has become more complicated than ever. This comparison breaks down all three games across every dimension that matters to purchasing decisions — graphics, content depth, price, platform, and which player type each game actually suits best.
+      </p>
+
+      <BlogImage src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80" alt="Monster Hunter Outlanders vs World vs Rise comparison" caption="Outlanders, World, and Rise compared — which modern Monster Hunter is right for you?" />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Full Head-to-Head Comparison</h2>
+      <DataTable
+        headers={["Category", "Outlanders (2026)", "World + Iceborne (2018/19)", "Rise + Sunbreak (2021/22)"]}
+        rows={[
+          ["Graphics", "Best in series", "Second best", "Weakest (Switch heritage)"],
+          ["Monster count (base)", "53", "31", "37"],
+          ["Monster count (w/ DLC)", "53 + growing", "71 (Iceborne)", "93 (Sunbreak)"],
+          ["Open world", "Full open world", "Semi-open zones", "Smaller hub areas"],
+          ["Base building", "Yes — deep system", "No", "Minimal Kamura Village"],
+          ["Cross-platform MP", "PC + PS5 + Xbox", "PC and console separate", "PC + PS5 + Xbox"],
+          ["Price (2026)", "$59.99", "$29.99 (on sale)", "$39.99 (on sale)"],
+          ["Beginner friendliness", "High", "Medium", "Highest"],
+          ["Endgame depth", "Very high", "Highest (Iceborne)", "High (Sunbreak)"],
+          ["Story quality", "Good", "Decent", "Weakest"],
+          ["Performance", "Excellent", "Good (on modern hardware)", "Excellent"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Monster Hunter World: The Classic</h2>
+      <p>
+        World was the game that brought Monster Hunter to a mainstream global audience in 2018, and it deserves that reputation. Its world — the New World, brought alive by Capcom&apos;s team over five years of development — remains the most cohesive and atmospheric setting in the series. Every zone feels like a living ecosystem. Endemic life populates the environments in ways that still feel organic in 2026. The narrative has more emotional weight than any other MH game before Outlanders.
+      </p>
+      <p>
+        The Iceborne expansion (2019) is arguably the best expansion in franchise history — it added 40 new monsters, a new snowy biome, the Clutch Claw mechanic, and a Master Rank difficulty that still offers hundreds of hours of endgame content. The World + Iceborne package on sale is genuinely one of the best value propositions in gaming in 2026 at $29.99.
+      </p>
+      <p>
+        Where World shows its age: the multiplayer infrastructure (PC and console are separated, cross-play was never added), the slower loading times between zones (partially addressed in updates), and the absence of cross-save. If you plan to play primarily with friends on different platforms, World is no longer the right choice.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Monster Hunter Rise: The Fastest Entry</h2>
+      <p>
+        Rise was built for the Nintendo Switch and released on PC and consoles subsequently — and that heritage shows in both its limitations and its design philosophy. The game is the most beginner-friendly Monster Hunter ever made: Wirebug traversal, the Palamute companion, and Silkbind attacks make combat faster and more forgiving. The shorter hunt times (15-20 minutes vs World&apos;s 25-40 minutes) make it excellent for players with limited time.
+      </p>
+      <p>
+        The Sunbreak expansion significantly expanded Rise&apos;s depth and added Switch Skills — a customizable moveset system that let each weapon type develop two distinct playstyles. For players who want the most options within a single weapon type, Rise + Sunbreak is still unmatched.
+      </p>
+      <p>
+        Rise&apos;s weaknesses in 2026: the graphics show the Switch development legacy even on PC and console, the story is the weakest in the trilogy, and the environmental design is less ambitious than World or Outlanders. But at $39.99 for Rise + Sunbreak, it&apos;s an extraordinary amount of content.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Monster Hunter Outlanders: The Current Best</h2>
+      <p>
+        Outlanders improves on both predecessors in most objective categories: better graphics, larger monster count at launch, full cross-platform multiplayer, a new survival and base building layer, and the Wound mechanic that adds strategic depth. The 53-monster roster at launch exceeds World&apos;s original launch count by 22. The endgame, while newer and thus less battle-tested, appears to rival Iceborne in scope.
+      </p>
+      <p>
+        Where Outlanders trails World: the environmental storytelling and sense of ecological cohesion aren&apos;t quite at World&apos;s level. Each biome is visually distinct but the monster-environment interactions feel slightly more mechanical. This is a minor criticism against an otherwise exceptional game.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Which Game Is Right for You?</h2>
+      <InfoBox
+        title="Which Monster Hunter to play by player type"
+        items={[
+          ["Completely new to Monster Hunter", "Start with Outlanders — best onboarding, most modern systems, best multiplayer infrastructure."],
+          ["Played Rise, want more depth", "Outlanders — the open world, survival layer, and Wound mechanic give you what Rise deliberately stripped back."],
+          ["Want the deepest story and atmosphere", "World + Iceborne — still the most cohesive world in the series and unmatched narrative atmosphere."],
+          ["Limited time, prefer shorter hunts", "Rise + Sunbreak — 15-20 min hunts, most beginner-friendly, best if playing in short sessions."],
+          ["Playing with friends on different platforms", "Outlanders — the only modern MH with full cross-platform play."],
+          ["Budget-conscious", "World + Iceborne on sale at $29.99 — extraordinary value for 300+ hours of content."],
+        ]}
+      />
+
+      <AlertBox
+        type="fire"
+        title="Our recommendation for most players"
+        body="Start with Monster Hunter Outlanders in 2026. It has the best onboarding, the best multiplayer, and the most modern systems. If you finish it and want more, World + Iceborne is waiting with a different atmosphere and the best expansion in franchise history."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is Monster Hunter Outlanders better than World?", a: "In most measurable ways, yes — more monsters, larger world, better multiplayer. World still wins on environmental storytelling and cohesive world design. For new players, Outlanders is the better starting point." },
+        { q: "Should I play Monster Hunter World before Outlanders?", a: "No — Outlanders is standalone with its own story and onboarding. Playing World first isn&apos;t required, though World is still worth playing as its own game." },
+        { q: "Is Monster Hunter Rise worth playing in 2026?", a: "Rise + Sunbreak is still excellent value in 2026, especially on sale. Its faster combat and Silkbind mechanics feel distinct from World and Outlanders. Best for players wanting the most arcade-style MH experience." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-review-2026">Monster Hunter Outlanders Full Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-beginner-guide">Complete Beginner Guide</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "monster-hunter-outlanders-tips-tricks": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Monster Hunter Outlanders has 300+ hours of depth — and a surprising number of systems it never bothers to explain.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        These 15 tips come from 100+ hours of play including High Rank completion, extensive co-op sessions, and deep dives into systems the game glosses over or ignores entirely. If you&apos;re still discovering the game organically, skip this list. If you want to hunt smarter, read on.
+      </p>
+
+      <BlogImage src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&q=80" alt="Monster Hunter Outlanders tips and tricks" caption="15 tips from 100+ hours in Monster Hunter Outlanders — things the game never tells you." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>1–5: Foundational Mechanics</h2>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>1. The canteen buff stacks with endemic life bonuses.</strong> Most players know to eat before a hunt. Few know that certain endemic life creatures in your base camp provide passive buff stacks that compound with canteen meals. A fully upgraded Vigorbird colony in your Verdant Highlands camp adds +15 to maximum health — on top of the canteen&apos;s health boost. Check the Field Research Station to unlock these.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>2. Sharpness matters more than raw attack at High Rank.</strong> A weapon at Purple sharpness deals roughly 25% more damage than the same weapon at Yellow sharpness. Before spending materials upgrading to the next weapon tier, check whether maintaining Purple sharpness via the Handicraft or Razor Sharp skill would outperform the damage increase from the new weapon.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>3. You can redirect your Grapple Chain mid-flight.</strong> The Grapple Chain traversal tool introduced in Outlanders supports a directional input during the swing that most players never discover. Press the movement stick left or right during a chain swing to arc your trajectory. This is crucial for reaching Wound weak points on aerial monsters that are moving.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>4. Trap timing resets when a monster limps.</strong> When a monster is limping toward its den to sleep, its trap immunity timer resets to zero. This is the best time to set a Shock Trap or Pitfall Trap regardless of how recently you used one. The game doesn&apos;t tell you the immunity timer has reset — you have to test it.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>5. The Scout Report multiplies investigation gold reward slots.</strong> Before accepting an investigation, check the Scout Report tab. Investigations with a &quot;Detailed Footprints&quot; or &quot;Extensive Tracks&quot; report attached have two extra gold reward slots — meaning materially more rare material drops per hunt. Always prioritize high-report investigations for farming rare parts.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>6–10: Farming and Efficiency</h2>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>6. Mining routes at your base out-scale hunt carves for common crafting materials.</strong> For materials used in bulk (Monster Bone M, Monster Bone L, various ores), fully upgraded base mining routes yield more per session than hunt carves. Build the Advanced Mining Facility in your base as soon as it unlocks — it delivers a passive income of bulk materials every time you return to camp.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>7. SOS flares give the host bonus reward slots.</strong> Most players use SOS flares when struggling. The hidden benefit: the host of an SOS quest receives one additional reward slot compared to a private squad hunt. If you&apos;re specifically farming for a rare material (Gem, Plate), firing an SOS increases your expected drop rate per hunt.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>8. Sleep bombing is the fastest way to get Gems.</strong> Put the target monster to sleep (Sleep ammo, Sleep Dual Blades coatings, or Sleeptoads in the environment), then wake it with the highest-damage attack your weapon has. Monsters take double damage from the first hit when woken from sleep — and rare carve rates are unaffected by this mechanic, meaning you&apos;re getting double-damage hits on a high-HP monster without any downside.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>9. Wyvern Riding mounts deal Wound damage to specific parts.</strong> When you mount a monster via Wyvern Riding, directing it into another monster or environmental hazard applies Wound damage to the struck part. Two skilled hunters using Insect Glaive can cycle Wyvern Rides to rapidly accelerate the Wound meter on a specific part — particularly useful for Elder Dragon armor farming.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>10. The Resource Exchange vendor refreshes on the in-game calendar, not real time.</strong> The Resource Exchange (the vendor who trades endemic life catches for rare decorations) refreshes its stock every in-game week — which passes when you complete 7 quests, not after 7 real-world days. Chain-completing short quests to cycle the vendor stock is a legitimate late-game decoration farming strategy.
+      </p>
+
+      <AlertBox
+        type="money"
+        title="Best farming tip"
+        body="Prioritize investigations with gold reward slots and run them with SOS flares active. The combination of maximum reward slots (host bonus + gold slots) and sleep bombing for double-damage carves is the most efficient rare material farming loop in Outlanders."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>11–15: Advanced and Multiplayer</h2>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>11. Your base camp bonuses apply in multiplayer.</strong> When you join another player&apos;s lobby, your endemic life bonuses and base-camp passive buffs travel with you. A player with fully upgraded Vigorbird colonies and a maxed Canteen brings their passive HP and stat buffs to any session they join. Coordinating base bonuses in dedicated group plays is a high-level optimization most players miss.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>12. The Clutch Shot (the new Grapple Chain attack) does not trigger roar stagger.</strong> When an Elder Dragon roars, most attacks get interrupted. The Clutch Shot — a ranged grapple-chain hook you can fire at a monster&apos;s Wound during a roar — doesn&apos;t get cancelled by the roar animation and lands even through it. It&apos;s a Greatsword and Switch Axe user&apos;s best tool for maintaining pressure during Elder Dragon roar spam.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>13. You can fast travel to your base camp mid-hunt without penalty.</strong> Unlike previous games, Outlanders allows you to return to base camp mid-hunt via the Shelter menu without using a Farcaster (a consumable item). The cool-down is 3 minutes. Use this to restock potions, change equipment loadouts, or pick up Trap Tools you forgot. Most players don&apos;t discover this until late High Rank.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>14. Multiplayer etiquette: never skin (carve) before all hunters are done.</strong> Carving a monster ends the hunt for everyone in your lobby. If you carve first while another player is still getting their post-hunt positioning or dealing with a palico interaction, you&apos;re cutting their carve sequence short. Wait for the &quot;Carve ready&quot; notification in the top-right corner — it appears when all hunters have been notified the monster is dead.
+      </p>
+      <p>
+        <strong style={{ color: "var(--text-primary)" }}>15. The arena counter at your base tracks every single quest completion.</strong> The Base Camp Arena counter (in the Records tab at the Field Research Station) logs every hunt, every quest, and every monster kill with timestamps. This isn&apos;t just a vanity stat — the Arena counter unlocks hidden titles and cosmetic rewards at specific milestones (100 quests, 500 monsters, 50 unique species hunted). Check it. You may be closer to free cosmetics than you think.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Quick Reference</h2>
+      <InfoBox
+        title="Tips summary by category"
+        items={[
+          ["Foundational", "Canteen + endemic life stack. Purple sharpness &gt; raw attack. Grapple Chain can arc. Trap timer resets on limp. Scout Reports = extra gold slots."],
+          ["Farming", "Base mining &gt; carves for bulk materials. SOS gives host bonus slot. Sleep bombing doubles first hit. Wyvern Ride targets Wound parts. Resource vendor cycles on quest count, not real time."],
+          ["Advanced", "Your base buffs travel with you to lobbies. Clutch Shot ignores roar. Mid-hunt fast travel via Shelter (3-min CD). Wait for Carve Ready before carving. Arena counter tracks unlock milestones."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Can you transfer save data in Monster Hunter Outlanders?", a: "Yes — cross-save between PC and console works via linked Capcom ID. Link your account in game settings before your first session on each platform." },
+        { q: "What is the best way to farm materials in Monster Hunter Outlanders?", a: "Gold-slot investigations run with SOS flares active, targeting monsters with sleep for double-damage carve openers. For bulk materials, upgrade base mining routes." },
+        { q: "What is the fastest way to level up in Monster Hunter Outlanders?", a: "Complete story key quests (largest HR jumps), then chain optional quests in groups of 5 for the bonus XP. Join SOS hunts — you earn full HR XP regardless of who carves." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-endgame-guide">Endgame Guide: What to Do After the Story</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-best-weapons">Best Weapons Ranked</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "best-co-op-games-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        2026 has been the best year for co-op gaming in recent memory — and the list goes well beyond Monster Hunter Outlanders.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        This ranking is based on community hours played data, longevity (how well games hold player attention beyond launch), and direct assessment of how well each game works as a sustained group activity. It&apos;s not a hype ranking — it&apos;s a ranking of what people are actually playing together in October 2026.
+      </p>
+
+      <StatBox items={[["10", "co-op games ranked"], ["2026", "releases and updates"], ["1-16", "player count range"], ["Free–$70", "price range"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&q=80" alt="Best co-op games 2026" caption="The 10 best co-op games of 2026 ranked by actual hours played — not launch hype." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Full Rankings</h2>
+      <DataTable
+        headers={["Rank", "Game", "Players", "Platform", "Price", "Genre"]}
+        rows={[
+          ["1", "Monster Hunter Outlanders", "1-4", "PC/PS5/Xbox/Mobile", "$59.99", "Action RPG"],
+          ["2", "Deep Rock Galactic 2", "1-4", "PC/PS5/Xbox", "$34.99", "Shooter/Co-op"],
+          ["3", "Space Engineers 2", "1-16", "PC/Xbox", "$29.99", "Survival/Building"],
+          ["4", "Helldivers 3", "1-4", "PC/PS5", "$39.99", "Shooter"],
+          ["5", "It Takes Two 2", "2", "PC/PS5/Xbox", "$39.99", "Platformer/Puzzle"],
+          ["6", "Remnant III", "1-3", "PC/PS5/Xbox", "$49.99", "Souls-like"],
+          ["7", "Warframe (2026 update)", "1-4", "All platforms", "Free", "Action RPG"],
+          ["8", "Back 4 Blood 2", "1-4", "PC/PS5/Xbox", "$39.99", "FPS/Survival"],
+          ["9", "Path of Exile 2", "1-6", "PC/PS5/Xbox", "Free", "ARPG"],
+          ["10", "Sea of Thieves: Forsaken Tides", "1-4", "PC/Xbox", "$29.99", "Adventure"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>1. Monster Hunter Outlanders</h2>
+      <p>
+        The top ranking isn&apos;t a surprise. Monster Hunter Outlanders has the most active co-op player base of any 2026 release — its blend of clear progression goals, scalable difficulty, and a reward loop that makes every hunt feel worthwhile makes it the best long-form co-op experience on the market. The cross-platform infrastructure means you can play with friends regardless of whether they&apos;re on PC or console, and the 53-monster roster gives squads hundreds of specific targets to work toward.
+      </p>
+      <p>
+        The SOS flare system is the best co-op matchmaking tool in gaming — fire a flare when you&apos;re struggling, and other players can join your hunt mid-progress from anywhere in the world. It creates organic co-op moments that pre-made groups rarely achieve. Four strangers can coordinate a perfect Elder Dragon break sequence without voice chat.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>2. Deep Rock Galactic 2</h2>
+      <p>
+        Deep Rock Galactic launched in 2018 and became one of the most beloved co-op games ever made through a combination of genuinely great class design (Driller, Gunner, Scout, Engineer), procedural cave generation, and a community culture that self-policed toward cooperative play. Its sequel, released in March 2026, improves on the original in every dimension: larger cave systems, two new classes (the Blaster and the Medic), a new biome on Hoxxes IV, and a progression system that finally feels appropriately deep for the time investment.
+      </p>
+      <p>
+        It&apos;s the best pure co-op shooter of 2026 — team coordination is mandatory (not optional) at high difficulty, each class role is irreplaceable, and the &quot;Rock and Stone!&quot; culture continues to make it one of the most welcoming co-op communities in gaming.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>3. Space Engineers 2</h2>
+      <p>
+        Space Engineers 2 is the biggest creative sandbox co-op experience of 2026. Up to 16 players on a shared server can build space stations, design FTL-capable ships, establish planetary colonies, and engage in PvP encounters — all within a persistent world that saves between sessions. The engineering depth is staggering: every component of every build has actual structural integrity, power consumption, and physical simulation. A poorly balanced ship tumbles. An airtight ship with a hull breach vents atmosphere.
+      </p>
+      <p>
+        It&apos;s not for everyone — the learning curve is severe and the early hours are primarily spent dying in creative ways. But for groups who want a genuinely emergent sandbox experience, nothing else in 2026 comes close.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>4–10: The Rest of the Ranking</h2>
+      <p>
+        Helldivers 3 (4th) has the most consistent co-op shooter player base outside Deep Rock Galactic 2 — its mission structure, mandatory team coordination, and genuinely funny failure states make it irreplaceable for groups of four. It Takes Two 2 (5th) remains the gold standard for two-player co-op: a puzzle-platformer with an emotional story that forces constant communication.
+      </p>
+      <p>
+        Remnant III (6th) is the best three-player Souls-like co-op experience of 2026 — procedurally generated content keeps runs fresh, and the class diversity makes every group composition feel different. Warframe (7th, free) continues to be the best free-to-play co-op RPG on the market — its 2026 major update (The Duviri Succession) added a full new open-world zone and has reinvigorated its player base.
+      </p>
+      <p>
+        Path of Exile 2 (9th, free) is the best free ARPG for co-op league play — the build depth is unmatched, and six-player mapping is the most rewarding co-op ARPG loop outside of Diablo IV. Sea of Thieves: Forsaken Tides (10th) rounds out the list with the best co-op naval adventure in gaming — four-player crews, treasure hunts, and ship PvP remain uniquely compelling.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best by Group Size</h2>
+      <InfoBox
+        title="Best co-op game by number of players"
+        items={[
+          ["2 players", "It Takes Two 2 — designed specifically for exactly 2 players. Nothing else at this player count comes close."],
+          ["3 players", "Remnant III — the best souls-like co-op at 3. Boss fights are perfectly balanced for 3-player coordination."],
+          ["4 players", "Monster Hunter Outlanders — the ideal squad size. Every hunt is tuned for 4-player coordination."],
+          ["5-6 players", "Path of Exile 2 — league play in groups of 6 is the best large-group ARPG experience."],
+          ["Large groups (8-16)", "Space Engineers 2 — server-based co-op built for large groups. The only game on this list that scales this high."],
+        ]}
+      />
+
+      <AlertBox
+        type="fire"
+        title="Best overall co-op game of 2026"
+        body="Monster Hunter Outlanders. Cross-platform, hundreds of hours, scalable difficulty, and a reward loop that makes every hunt meaningful. The SOS system creates the best spontaneous co-op matchmaking in any game released in 2026."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "What is the best co-op game to play in 2026?", a: "Monster Hunter Outlanders for most groups — cross-platform, 1-4 players, hundreds of hours. Deep Rock Galactic 2 for pure co-op shooter lovers. It Takes Two 2 for two-player only experiences." },
+        { q: "What are the best free co-op games in 2026?", a: "Warframe (regularly updated, deep RPG), Path of Exile 2 (best free ARPG for co-op league play), and Deep Rock Galactic 2&apos;s free trial. None require spending money for the core loop." },
+        { q: "What co-op games work well for 4 players?", a: "Monster Hunter Outlanders (ideal at 4), Helldivers 3 (built for 4), Back 4 Blood 2 (classic 4-player FPS co-op), and Deep Rock Galactic 2 (best at 4 with class synergy)." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-review-2026">Monster Hunter Outlanders Full Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-multiplayer-guide">Monster Hunter Outlanders Multiplayer Guide</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "monster-hunter-outlanders-endgame-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        The Monster Hunter Outlanders credits roll at around 50 hours — and that&apos;s when the actual game begins.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Monster Hunter games have always treated the story as prologue to the real content. Outlanders is no different: the post-credits endgame contains Elder Dragon hunts, Apex Tier monsters, Master Rank gear progression, a transmog system, seasonal events, and a PvP arena — together delivering 200+ hours of additional structured content. Here&apos;s how all of it works.
+      </p>
+
+      <StatBox items={[["12", "Elder Dragons"], ["200+", "endgame hours"], ["18", "Apex/MR variants"], ["4", "seasonal events per year"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=800&q=80" alt="Monster Hunter Outlanders endgame guide" caption="The post-credits endgame in Monster Hunter Outlanders — everything to do after beating the story." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Unlocking Master Rank</h2>
+      <p>
+        Master Rank (MR) is unlocked immediately after the final story boss. It&apos;s a separate difficulty tier above High Rank — think of HR as the story and MR as the actual game. Master Rank monsters are faster, hit harder, have expanded movesets compared to their HR versions, and have higher HP pools. Crucially, the gear drops from MR monsters are materially superior to HR gear: higher defense, more decoration slots, and access to the new Master Rank exclusive skill lines.
+      </p>
+      <p>
+        The progression curve in Master Rank is intentionally steep in the early stages. Your HR gear will feel inadequate against the first MR monsters — this is by design. The game wants you to hunt MR1-MR3 monsters specifically to build transitional MR gear before tackling Elder Dragons. Don&apos;t rush toward Elder Dragon unlocks with HR equipment; you will cart repeatedly and miss the optimal experience.
+      </p>
+      <AlertBox
+        type="warning"
+        title="Don&apos;t skip MR low tiers"
+        body="MR1-3 monsters provide the transition armor sets that bridge HR and proper Elder Dragon builds. Skipping them to reach Elder Dragons faster leads to gear bottlenecks that cost more time than they save."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Elder Dragon Progression</h2>
+      <p>
+        Outlanders features 12 Elder Dragons — the most in franchise history. They unlock progressively through MR key quest completion, with the final two (Soluros, the flagship new Elder Dragon, and the secret boss Abyssalgante) requiring MR100+ and completion of specific event quests. Here&apos;s the unlock order and what each Elder Dragon provides:
+      </p>
+      <DataTable
+        headers={["Elder Dragon", "Unlock (MR)", "Armor Speciality", "Difficulty"]}
+        rows={[
+          ["Chameleos", "MR 20", "Evasion + Poison immunity sets", "Medium"],
+          ["Kushala Daora", "MR 20", "Wind Pressure Negation + Defense builds", "Medium"],
+          ["Teostra", "MR 30", "Offensive blast builds — best raw DPS armor", "Hard"],
+          ["Nergigante", "MR 30", "Offensive HP-recovery builds", "Hard"],
+          ["Velkhana", "MR 40", "Ice element + Frostcraft skill builds", "Very Hard"],
+          ["Namielle", "MR 50", "Water element + Dereliction skill builds", "Very Hard"],
+          ["Fatalis (returning)", "MR 70", "All-stats best-in-slot armor", "Extreme"],
+          ["Soluros (new)", "MR 80", "New biome-specific adaptation skills", "Extreme"],
+          ["Abyssalgante (secret)", "MR 100+", "Secret — not spoiling", "Maximum"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Apex Tier Monsters</h2>
+      <p>
+        Apex Tier monsters are the endgame equivalent of previous games&apos; Tempered monsters — they&apos;re supercharged versions of existing monsters with new attack patterns, red glow visual indicators, and dramatically increased damage and HP. Outlanders has 18 Apex variants, unlocked from MR50 onwards through investigation quest completion.
+      </p>
+      <p>
+        The key difference from HR Tempered monsters: Apex Tier monsters have unique Wound states. When you fully wound an Apex monster&apos;s specific break point, it temporarily enters a &quot;Broken Apex&quot; state where its damage output drops by 30% and it staggers more easily — a significant mechanical window the game rewards skilled part targeting. This makes the Wound system critical in Apex fights rather than optional.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Transmog System</h2>
+      <p>
+        The transmog (appearance override) system lets you wear any armor visually while maintaining the stats of your actual gear. It&apos;s unlocked at MR30 by completing the &quot;Fashion Hunter&quot; event quest chain. Every armor set you&apos;ve ever crafted or obtained is available for transmog — including Low Rank sets. The system has essentially no limits: you can mix any pieces from any sets across any rarity tier.
+      </p>
+      <p>
+        Capcom also introduced &quot;Transmog Investigations&quot; — special event quests that drop exclusive cosmetic armor pieces with no stat values but unique visual designs. These are one of the primary seasonal event reward types and drive significant community engagement around each new season.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Seasonal Events</h2>
+      <p>
+        Outlanders runs four major seasonal events per year (confirmed for the first year) plus rotating weekly mini-events. Each major seasonal event adds 8-12 exclusive quests with unique rewards, limited-time cosmetic armor sets, transmog pieces, and collaboration quests. The first major event — the &quot;Autumn Harvest Festival&quot; — is confirmed for November 2026 and includes a collaboration with a major action game IP (not yet revealed at time of writing).
+      </p>
+      <p>
+        Weekly events cycle through Investigation bonuses (extra gold reward slots, double material rates) and challenge quests that test specific mechanical skills (timed hunts, limited equipment quests). These provide consistent endgame motivation beyond the linear gear progression path.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>PvP Arena Mode</h2>
+      <p>
+        The PvP arena in Outlanders is entirely separate from the PvE campaign — it takes place in a purpose-built arena environment where hunters compete in one of three modes: DPS Race (who deals the most damage to a shared monster), Last Carve (who lands the killing blow and carves first), and Team Hunt (two teams of two competing for time-to-kill). Rankings are seasonal with cosmetic rewards for top percentiles.
+      </p>
+      <p>
+        PvP is optional and has no bearing on PvE progression. The community consensus after the first weeks is that DPS Race is the most popular mode and Team Hunt is the most skillful. If you want more from Outlanders than PvE, the arena provides a different kind of challenge that rewards build optimization and execution over preparation.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Endgame Progression Path</h2>
+      <InfoBox
+        title="Endgame priority order"
+        items={[
+          ["1. MR1-30", "Build MR transition armor. Target: Chameleos, Kushala, Teostra sets based on your weapon type."],
+          ["2. MR30-50", "Unlock Nergigante and Velkhana. Farm the gear for your endgame build foundation."],
+          ["3. MR50-70", "Apex investigations. Transmog unlock (MR30). Begin Namielle farm for specialized builds."],
+          ["4. MR70+", "Fatalis armor farm (best-in-slot). Enter Elder Dragon rotation. PvP arena if interested."],
+          ["5. MR100+", "Soluros and Abyssalgante. Full seasonal event participation. Decoration optimization."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "How long is the Monster Hunter Outlanders endgame?", a: "200+ hours for dedicated players. Master Rank gear progression alone takes 80-100 hours. Add seasonal events, transmog, Apex Tier monsters, and PvP arena, and the endgame is genuinely endless by design." },
+        { q: "What is Master Rank in Monster Hunter Outlanders?", a: "Master Rank (MR) is the endgame difficulty tier unlocked after the main story. MR monsters are faster, harder, and have new attack patterns. MR gear has higher stats and more decoration slots than High Rank equipment." },
+        { q: "Are there Elder Dragons in Monster Hunter Outlanders?", a: "Yes — 12 Elder Dragons, the most in series history. Includes returning favorites (Nergigante, Fatalis, Teostra) plus 5 new Elder Dragons exclusive to Outlanders." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-tips-tricks">15 Tips the Game Never Tells You</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-best-weapons">Best Weapons for Endgame</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "best-gaming-laptops-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Monster Hunter Outlanders is the most demanding PC game of 2026 at max settings — and these six laptops can actually handle it.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Capcom&apos;s recommended specs for Outlanders at 1440p max settings call for an RTX 4070 laptop GPU and 32GB of RAM. This review tests six gaming laptops across three price tiers against exactly that benchmark — plus how they handle thermals during a two-hour hunt session, which is where most laptops fail before benchmark tools catch the problem.
+      </p>
+
+      <StatBox items={[["6", "laptops tested"], ["$999–$2,999", "price range"], ["1080p–4K", "resolution targets"], ["2h", "thermal test duration"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80" alt="Best gaming laptops 2026 for Monster Hunter Outlanders" caption="Six gaming laptops tested for Monster Hunter Outlanders at 1080p, 1440p, and 4K." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Rankings at a Glance</h2>
+      <DataTable
+        headers={["Laptop", "GPU", "RAM", "Display", "Price", "Best for"]}
+        rows={[
+          ["ASUS ROG Zephyrus G16 (2026)", "RTX 4080 Laptop", "32GB DDR5", "2560x1600 240Hz", "$2,499", "Best overall — 1440p max stable"],
+          ["Razer Blade 16 (2026)", "RTX 4080 Laptop", "32GB DDR5", "4K OLED 120Hz", "$2,999", "Best display — 4K quality mode"],
+          ["Lenovo Legion Pro 7i (2026)", "RTX 4070 Ti Laptop", "32GB DDR5", "2560x1600 165Hz", "$1,999", "Best value at high-end — slightly cheaper than Zephyrus"],
+          ["MSI Titan GT78 HX (2026)", "RTX 4090 Laptop", "64GB DDR5", "4K 144Hz", "$3,499 (above budget)", "Overkill — listed for reference only"],
+          ["ASUS TUF Gaming A15 (2026)", "RTX 4060 Laptop", "16GB DDR5", "1920x1080 144Hz", "$999", "Best budget — 1080p high settings solid 60fps"],
+          ["Acer Predator Helios Neo 16 (2026)", "RTX 4070 Laptop", "16GB DDR5", "2560x1600 165Hz", "$1,499", "Best mid-range — 1440p high settings 60fps+"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best Overall: ASUS ROG Zephyrus G16</h2>
+      <p>
+        The 2026 ASUS ROG Zephyrus G16 is the best balance of performance, thermals, build quality, and battery life at $2,499. Its RTX 4080 Laptop GPU runs Monster Hunter Outlanders at 2560x1600 max settings between 75-95 fps — stable enough for a premium experience. The thermal management is the best of any laptop tested: after two hours of continuous hunting in the Ashfire Wastes biome (the most GPU-demanding environment), the GPU sat at 78°C and never throttled.
+      </p>
+      <p>
+        The 240Hz display is overkill for Outlanders (the GPU can&apos;t sustain 240fps at max settings) but is excellent for lighter competitive games. Battery life away from gaming tasks is a genuine 8 hours — better than most gaming laptops at this tier.
+      </p>
+      <AlertBox
+        type="fire"
+        title="Best overall pick"
+        body="ASUS ROG Zephyrus G16 (2026) at $2,499. RTX 4080 Laptop GPU, best thermal management tested, 1440p max settings stable 75-95fps in Monster Hunter Outlanders, 8-hour battery for non-gaming tasks."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best Display: Razer Blade 16</h2>
+      <p>
+        The Razer Blade 16 (2026) at $2,999 has the best screen of any gaming laptop tested — a 4K OLED panel with 120Hz refresh rate and 0.2ms response time. In Monster Hunter Outlanders&apos; quality mode (4K 30fps on console equivalent settings), it&apos;s visually stunning. The Ashfire Wastes biome&apos;s volumetric atmosphere and the Nether Deep&apos;s bioluminescent environments look extraordinary on OLED.
+      </p>
+      <p>
+        The caveat: at $2,999 it&apos;s the most expensive laptop on this list, and the 4K performance at max settings (55-65 fps with RTX 4080) means you&apos;re targeting quality mode rather than competitive frame rates. For players who want the best visual experience over competitive responsiveness, the Blade 16 is the right call.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best Mid-Range: Acer Predator Helios Neo 16</h2>
+      <p>
+        The Acer Predator Helios Neo 16 at $1,499 is the best value proposition on this list for players who don&apos;t want to spend $2,500+. Its RTX 4070 Laptop GPU runs Outlanders at 1440p high settings (one tier below max) at a consistent 65-80 fps — completely smooth, completely playable, and largely indistinguishable from max settings in fast-moving hunts.
+      </p>
+      <p>
+        The trade-offs against more expensive options: slightly louder fan noise under load, a 16GB RAM spec that benefits from an upgrade to 32GB for heavy endgame sessions, and the RTX 4070 can&apos;t maintain stable 1440p max settings on the most demanding biomes. At $1,499, these are entirely reasonable compromises.
+      </p>
+      <AlertBox
+        type="money"
+        title="Best mid-range value"
+        body="Acer Predator Helios Neo 16 at $1,499. RTX 4070 Laptop GPU runs Outlanders at 1440p high settings 65-80fps stable. Upgrade to 32GB RAM for best results. Saves $1,000 vs the Zephyrus G16 for ~85% of the experience."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best Budget: ASUS TUF Gaming A15</h2>
+      <p>
+        At $999, the ASUS TUF Gaming A15 (2026 model) is the cheapest laptop on this list that can genuinely run Monster Hunter Outlanders. Its RTX 4060 Laptop GPU handles 1080p high settings at 60-75 fps consistently — the game looks great at 1080p high, and the performance is stable through extended sessions. The thermals are acceptable (85°C under sustained load) and the build quality is notably solid for the price.
+      </p>
+      <p>
+        The limitations are real: 1440p is not a viable target for the RTX 4060 at high/max settings, the 144Hz display is wasted above 1080p high, and the 16GB RAM can feel constrained with background applications running. But as the entry point for laptop gaming in 2026, the TUF A15 delivers the Outlanders experience without requiring a $2,000+ investment.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Monster Hunter Outlanders Spec Requirements</h2>
+      <DataTable
+        headers={["Setting", "Minimum", "Recommended", "Ultra/Max"]}
+        rows={[
+          ["Resolution", "1080p", "1440p", "4K"],
+          ["GPU (desktop equiv)", "RTX 3060", "RTX 4070", "RTX 4080/4090"],
+          ["RAM", "16GB", "32GB", "32GB+"],
+          ["Storage", "80GB SSD", "80GB NVMe SSD", "80GB NVMe SSD"],
+          ["CPU", "Ryzen 5 5600X / i5-12600K", "Ryzen 7 7700X / i7-13700K", "Ryzen 9 7950X / i9-13900K"],
+          ["Target FPS", "30-60fps", "60-80fps", "80-120fps"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "What GPU do you need to run Monster Hunter Outlanders at max settings?", a: "RTX 4070 or RX 7900 XT for max settings at 1440p. RTX 4080/4090 for 4K max. RTX 3070 is sufficient for 1080p high settings." },
+        { q: "What is the best budget gaming laptop for Monster Hunter Outlanders?", a: "ASUS TUF Gaming A15 (2026, RTX 4060) at $999 — stable 60+ fps at 1080p high settings. The most cost-effective way to play Outlanders on a laptop." },
+        { q: "Can you play Monster Hunter Outlanders on a laptop?", a: "Yes — Outlanders has strong laptop optimization with a built-in frame rate limiter and thermal management mode. RTX 4060 laptops handle 1080p high settings without issues." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-review-2026">Monster Hunter Outlanders Full Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-wireless-earbuds-under-100-2026">Best Wireless Earbuds Under $100</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "monster-hunter-outlanders-multiplayer-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Monster Hunter Outlanders has the best multiplayer system in franchise history — and it takes about 30 minutes to understand fully.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        From cross-platform co-op to the SOS flare system, lobby management, PvP arena modes, and the etiquette rules that make online play enjoyable rather than chaotic — this is the complete guide to everything multiplayer in Monster Hunter Outlanders.
+      </p>
+
+      <StatBox items={[["4", "players per hunt"], ["16", "players per lobby"], ["3", "PvP arena modes"], ["Cross-platform", "PC + PS5 + Xbox"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80" alt="Monster Hunter Outlanders multiplayer guide" caption="Complete guide to Monster Hunter Outlanders multiplayer — co-op, cross-platform, and PvP." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>How Co-Op Works</h2>
+      <p>
+        Monster Hunter Outlanders uses a lobby system: you create or join a lobby (up to 16 players), share your base camp with everyone in the lobby, and then form hunt squads of up to 4 for actual quest completion. The lobby is the social hub — you can trade items, set up builds, showcase gear, and coordinate multiplayer sessions. The hunt is the action layer — 1-4 players entering a quest instance together.
+      </p>
+      <p>
+        Story progression is individual — each player tracks their own quest completion, and joining another player&apos;s story quest doesn&apos;t unlock that quest for you. You&apos;ll need to complete key quests in your own playthrough. Optional quests and investigations can be completed co-operatively with full credit to all participants regardless of who posted the quest.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Cross-Platform Play: How to Set It Up</h2>
+      <p>
+        Cross-platform play between PC, PS5, and Xbox Series X/S is enabled by default — there&apos;s no setting to toggle. You create a lobby, share the lobby code (accessible from the Quest Board), and anyone on any supported platform can join. The process from the joining side: go to Quest Board, select &quot;Join Lobby,&quot; enter the code. You&apos;re in within 30 seconds.
+      </p>
+      <p>
+        There is one friction point: voice chat is platform-specific by default. Cross-platform players in the same lobby can text chat natively, but voice requires a third-party app (Discord, etc.) for cross-platform groups. In-platform voice works fine within PS5 parties or Xbox groups separately. This is a known limitation Capcom has said will be addressed in a post-launch update.
+      </p>
+      <AlertBox
+        type="warning"
+        title="Voice chat limitation"
+        body="Native voice chat in Monster Hunter Outlanders is platform-restricted. Cross-platform groups need Discord or a similar third-party app for voice. A native cross-platform voice chat update is planned — no confirmed date at time of writing."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The SOS Flare System</h2>
+      <p>
+        The SOS flare is one of the best ideas in Monster Hunter history and Outlanders has refined it further. If you&apos;re struggling on a hunt — two carts in, monster is at 30% HP, you&apos;re out of potions — open the menu and fire an SOS flare. Your quest is immediately broadcast to the global matchmaking pool, and any player looking for SOS hunts can join your instance mid-progress.
+      </p>
+      <p>
+        The monster&apos;s current HP and wound state persist — joining players enter a hunt in progress, not a fresh instance. SOS responders receive a standard reward for helping. The host receives a bonus reward slot on top of the standard quest rewards for successfully completing an SOS quest. The system creates genuinely organic cooperative moments — strangers coordinating to save a struggling hunter&apos;s hunt in the final few minutes.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Best Monsters to Hunt With Friends vs Solo</h2>
+      <DataTable
+        headers={["Monster", "Best mode", "Why"]}
+        rows={[
+          ["Elder Dragons (all)", "Co-op (4 players)", "HP pools and attack frequency tuned for 4-player coordination"],
+          ["Apex Tier monsters", "Co-op (3-4 players)", "Wound system coordination maximizes Broken Apex windows"],
+          ["Fatalis", "Co-op required (4 players)", "Solo is technically possible but Fatalis enrages faster in solo at full HP"],
+          ["Zinogre / Diablos", "Solo or 2 players", "Fast enough that 4-player coordination can accidentally over-stagger"],
+          ["Rathian / Rathalos", "Solo", "Attack patterns are easier to read without 3 teammates staggering at different times"],
+          ["Crown hunting", "Solo", "Crown (size variant) hunting requires solo mode — multiplayer disables size tracking"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>Multiplayer Etiquette Rules</h2>
+      <p>
+        The Monster Hunter community has an informal but widely observed etiquette code. Violating it doesn&apos;t trigger in-game penalties, but it will get you a reputation. The core rules:
+      </p>
+      <InfoBox
+        title="Essential multiplayer etiquette"
+        items={[
+          ["Don&apos;t carve first", "Wait for all hunters to be in position near the monster before carving. Carving ends the quest for everyone."],
+          ["Don&apos;t cart repeatedly", "Three carts = failed quest. If you&apos;ve carted twice, play conservatively. Others&apos; quests depend on your survival."],
+          ["Communicate captures", "If the quest says Capture, don&apos;t kill the monster. If you&apos;re unsure, ask. Accidental kills waste everyone&apos;s time."],
+          ["Don&apos;t steal last hits", "In PvP modes, going for kill steals on a monster your teammate softened is bad form."],
+          ["SOS means struggling", "When answering SOS, play support — help stabilize the hunt, don&apos;t race for personal DPS records."],
+          ["Shout-out before quests", "In lobbies, confirm build readiness before starting a quest. Five seconds of confirmation prevents 20 minutes of wasted hunts."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>PvP Arena: Complete Guide</h2>
+      <p>
+        The PvP arena in Outlanders is accessed from the Guild Hall (separate from the Quest Board). It has three modes: DPS Race (hunters compete to deal the most damage to a shared monster within a time limit), Last Carve (who lands the killing blow and carves first), and Team Hunt (2v2 — two teams race for time-to-kill on separate monster instances with the same HP). Rankings reset seasonally.
+      </p>
+      <p>
+        PvP equipment loadouts are standardized in the ranked bracket — everyone uses the same weapon type baseline with no gear advantage. This makes PvP a pure skill test rather than a gear comparison. The casual bracket allows your actual gear and has no ranking implications. Seasonal top-1% cosmetics are exclusive to ranked play.
+      </p>
+      <p>
+        Community consensus: DPS Race is the most popular mode, but Team Hunt is the most skillful and has the most active ranked community. If you want to compete seriously, Team Hunt is where the dedicated PvP players are.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "Is Monster Hunter Outlanders cross-platform?", a: "Yes — full cross-platform between PC, PS5, and Xbox Series X/S. Voice chat requires a third-party app for cross-platform groups currently." },
+        { q: "How does the SOS flare system work in Monster Hunter Outlanders?", a: "Fire an SOS flare mid-hunt and your quest broadcasts globally. Other players can join mid-progress. The host gets a bonus reward slot for completing an SOS quest." },
+        { q: "Does Monster Hunter Outlanders have PvP?", a: "Yes — a dedicated PvP arena with three modes: DPS Race, Last Carve, and Team Hunt (2v2). Seasonal rankings with exclusive cosmetic rewards. Separate from the co-op PvE campaign." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/best-co-op-games-2026">10 Best Co-Op Games of 2026</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/monster-hunter-outlanders-endgame-guide">Endgame Guide: Elder Dragons and Master Rank</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "most-anticipated-games-q4-2026": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Q4 2026 is one of the most packed release quarters in recent gaming history — and Monster Hunter Outlanders is just the opening act.
+      </p>
+      <p className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+        Between October and December 2026, gamers face an embarrassment of riches: a FromSoftware sequel, the long-awaited Hollow Knight follow-up, a major Starfield expansion, Final Fantasy&apos;s most ambitious release yet, and six other major titles competing for finite time and money. Here&apos;s the full Q4 slate with honest hype assessments based on developer track records and what&apos;s been shown publicly.
+      </p>
+
+      <StatBox items={[["10", "major Q4 releases"], ["Oct–Dec", "release window"], ["5", "major IPs"], ["3", "new franchises"]]} />
+
+      <BlogImage src="https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?w=800&q=80" alt="Most anticipated games Q4 2026" caption="10 most anticipated games of Q4 2026 — with realistic hype assessments." />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Full Q4 2026 Slate</h2>
+      <DataTable
+        headers={["Game", "Release", "Platform", "Genre", "Hype level"]}
+        rows={[
+          ["Elden Ring II: Ashen Throne", "Nov 7, 2026", "PC/PS5/Xbox", "Action RPG", "Maximum"],
+          ["Hollow Knight: Silksong", "Oct 28, 2026", "PC/Switch 3/PS5/Xbox", "Metroidvania", "Extreme (overdue)"],
+          ["Final Fantasy XVII", "Dec 5, 2026", "PS5/Xbox/PC (later)", "JRPG", "Very High"],
+          ["Starfield: Revelation", "Oct 22, 2026", "PC/Xbox", "RPG Expansion", "High (cautious)"],
+          ["Hades III", "Nov 14, 2026", "PC/PS5/Xbox/Switch 3", "Roguelite", "Very High"],
+          ["Returnal 2", "Dec 12, 2026", "PS5 exclusive", "Roguelite Shooter", "High"],
+          ["Midnight Archipelago", "Oct 31, 2026", "PC/PS5", "Open World Adventure", "Moderate (new IP)"],
+          ["Forza Horizon 7", "Nov 21, 2026", "PC/Xbox/PS5", "Racing", "High"],
+          ["Back 4 Blood 2", "Dec 19, 2026", "PC/PS5/Xbox", "FPS Co-op", "Moderate"],
+          ["Project Nightfall (codename)", "Dec 2026 TBC", "PC/PS5", "Action Stealth", "High (mystery)"],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>1. Elden Ring II: Ashen Throne (Nov 7)</h2>
+      <p>
+        FromSoftware&apos;s sequel to the best-selling game in their history is the single most anticipated title of Q4 2026. Ashen Throne is a fully standalone sequel set in the same universe as the original Elden Ring but featuring a new protagonist — the Ashen Warden — and a new continent, the Sunken Expanse, that appears to be even larger than the Lands Between. Director Hidetaka Miyazaki has described it as &quot;a story about what remains when the age of gods finally ends for good.&quot;
+      </p>
+      <p>
+        The previews have emphasized faster, more fluid combat compared to the original — wider dodge windows, new parry mechanics, and a mounted combat system that doesn&apos;t require Torrent (meaning mounts are optional tools rather than mandatory). The magic system has been rebuilt from scratch. Boss previews show FromSoftware at the peak of their design craft. Hype is fully justified.
+      </p>
+      <AlertBox
+        type="fire"
+        title="Most anticipated of Q4 2026"
+        body="Elden Ring II: Ashen Throne launches November 7. FromSoftware, standalone sequel, new continent, rebuilt combat system. The studio&apos;s track record makes this the safest high-anticipation bet of the quarter."
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>2. Hollow Knight: Silksong (Oct 28)</h2>
+      <p>
+        Hollow Knight: Silksong has been the gaming community&apos;s longest-running joke about release date announcements — first revealed in 2019, delayed multiple times, and now finally confirmed for October 28, 2026. The original Hollow Knight is one of the best metroidvanias ever made, and Silksong features a completely new protagonist (Hornet), a new kingdom (Pharloom), new mechanics, and a confirmed 150+ new enemies. Team Cherry has said it&apos;s larger than the original.
+      </p>
+      <p>
+        The hype is extreme but also contextually earned — Team Cherry&apos;s track record with the original game and its DLC expansions suggests Silksong will deliver. The main risk is that seven years of anticipation creates expectations no game can fully meet. Adjust accordingly, but do not sleep on this release.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>3. Final Fantasy XVII (Dec 5)</h2>
+      <p>
+        Final Fantasy XVII is Square Enix&apos;s most ambitious project in years — a single-game, non-episodic release (a first for the modern mainline FF series) with a runtime Square has confirmed exceeds 80 hours for completionists. The game uses a new real-time combat system built from the learnings of FFXVI and the FF7 Remake series, and takes the franchise into a science-fantasy setting that returns to the technological-magical world fusion of the classic PS1-era games.
+      </p>
+      <p>
+        The initial announcement generated significant excitement and the expanded previews have sustained it. The one concern: it&apos;s launching on PS5 and Xbox first with a PC port confirmed for Q2 2027 — PC players will need to wait.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>4. Hades III (Nov 14)</h2>
+      <p>
+        Supergiant Games has never made a bad game — Bastion, Transistor, Pyre, and the original Hades all delivered on their ambitions. Hades III continues the series with a new protagonist (Melinoe, sister of Zagreus), a new setting expanding to the surface world of Greek mythology, and a reworked resource system. The Early Access period (which ended in October 2026) was universally praised.
+      </p>
+      <p>
+        Hades III is the safest bet on this list: a proven studio, a proven formula applied thoughtfully to new content, and a development process (Early Access with extensive player feedback) that has historically produced excellent results. If you liked the original, this is a must-buy.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>5. Starfield: Revelation (Oct 22)</h2>
+      <p>
+        Bethesda&apos;s major Starfield expansion arrives October 22 with a promise to address the base game&apos;s most criticized elements: procedurally generated planets have been replaced with 12 handcrafted planetary environments, the main quest has been overhauled, and the ship building system has been expanded with 200 new components. Todd Howard has called it &quot;the game Starfield should have shipped as.&quot;
+      </p>
+      <p>
+        Hype here is cautious but real. Bethesda has shown genuine willingness to course-correct, and the preview content looks substantially better than the base game. The risk is that the fundamental engine and design philosophy remain unchanged — which limits how much even excellent additional content can transform the experience. Approach with tempered expectations but genuine interest.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>The Rest of the Slate</h2>
+      <p>
+        Returnal 2 (Dec 12, PS5 exclusive) is the most exciting Sony first-party title of Q4 — Housemarque proved with the original that they understand roguelite design at a high level, and the sequel expanding to a larger narrative structure is intriguing. Forza Horizon 7 (Nov 21) is the most reliable franchise in racing games — Playground Games has never shipped a bad Horizon entry, and the new South American open world looks extraordinary.
+      </p>
+      <p>
+        Midnight Archipelago (Oct 31) is the riskiest bet as a new IP from developer Lighthouse Studio — previews have been compelling but there&apos;s no track record to anchor expectations. Project Nightfall (Dec TBC) is the biggest mystery of Q4: an action-stealth game from a developer who hasn&apos;t been publicly named, with gameplay shown only at closed press events. Whatever it is, the footage has been impressive.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>What to Buy First</h2>
+      <InfoBox
+        title="Q4 2026 buying priority by player type"
+        items={[
+          ["Action RPG lovers", "Elden Ring II: Ashen Throne (Nov 7) — no question. This is the Q4 game. Then Hades III."],
+          ["Metroidvania fans", "Hollow Knight: Silksong (Oct 28) — seven years of wait ends here. Essential."],
+          ["JRPG players", "Final Fantasy XVII (Dec 5) on PS5/Xbox. PC players wait until Q2 2027."],
+          ["Co-op players", "Monster Hunter Outlanders is already out — and already occupying hundreds of hours for most people reading this."],
+          ["Racing fans", "Forza Horizon 7 (Nov 21) — the most consistent franchise in racing games."],
+          ["Budget-conscious", "Hades III ($29.99) is the best value on the Q4 list. Supergiant quality at an indie price."],
+        ]}
+      />
+
+      <h2 className="text-2xl font-bold mt-10 mb-3" style={{ color: "var(--text-primary)" }}>FAQ</h2>
+      <FaqSection items={[
+        { q: "What are the biggest game releases of Q4 2026?", a: "Elden Ring II: Ashen Throne (Nov 7), Hollow Knight: Silksong (Oct 28), Final Fantasy XVII (Dec 5), Hades III (Nov 14), and Starfield: Revelation (Oct 22) are the five headline releases." },
+        { q: "Is Elden Ring II coming out in 2026?", a: "Yes — Elden Ring II: Ashen Throne is confirmed for November 7, 2026. A standalone sequel with a new protagonist, continent, and rebuilt combat system." },
+        { q: "What new game consoles are coming in Q4 2026?", a: "No new major consoles are launching in Q4 2026. Nintendo Switch 3 is confirmed for Q1 2027. Q4 2026 is a software quarter — the biggest in years." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Related reading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/monster-hunter-outlanders-review-2026">Monster Hunter Outlanders Review</InternalLink>
+          {" · "}
+          <InternalLink href="/blog/best-co-op-games-2026">10 Best Co-Op Games of 2026</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };

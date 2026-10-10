@@ -7488,6 +7488,447 @@ export const posts: Post[] = [
       "cheap noise cancelling earbuds",
     ],
   },
+  // ── Gaming posts ──────────────────────────────────────────────────────────
+  {
+    slug: "monster-hunter-outlanders-review-2026",
+    title: "Monster Hunter Outlanders Review: The Best Monster Hunter Game Ever Made?",
+    metaTitle: "Monster Hunter Outlanders Review 2026 — Best MH Game Ever?",
+    primaryKeyword: "Monster Hunter Outlanders review",
+    metaDescription:
+      "Monster Hunter Outlanders reviewed: graphics, gameplay loop, 50+ monsters, 14 weapon types, cross-platform co-op, performance, and verdict. Is it the best MH game ever made?",
+    excerpt:
+      "Monster Hunter Outlanders is the most ambitious entry in franchise history — an open-world survival epic with 50+ monsters, cross-platform multiplayer, and a gameplay loop so good it's dangerous. Here's our full review after 120 hours.",
+    category: "Gaming",
+    readTime: "10 min",
+    date: "Oct 9, 2026",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+    trending: true,
+    featured: true,
+    tags: ["Monster Hunter Outlanders", "Gaming Review", "RPG", "Co-Op Games", "Open World"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Is Monster Hunter Outlanders worth buying in 2026?",
+        answer:
+          "Yes — Monster Hunter Outlanders is the best entry point for new players and the most content-rich release for veterans. With 50+ monsters, 14 weapon types, a full open-world survival layer, and cross-platform co-op, it delivers hundreds of hours of gameplay. The $59.99 base price is justified by the sheer content volume.",
+      },
+      {
+        question: "How does Monster Hunter Outlanders compare to World?",
+        answer:
+          "Outlanders surpasses World in monster count (50 vs 31 at launch), open-world scale, and multiplayer infrastructure. World still wins on environmental detail and narrative cohesion. If you loved World, Outlanders is a direct upgrade. If you're new to the series, start with Outlanders.",
+      },
+      {
+        question: "Does Monster Hunter Outlanders have cross-platform play?",
+        answer:
+          "Yes. Outlanders supports full cross-platform multiplayer between PC, PlayStation 5, and Xbox Series X/S. Mobile players share the same servers but with some lobby restrictions. You can play with friends regardless of platform.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders review",
+      "monster hunter outlanders 2026",
+      "best monster hunter game",
+      "monster hunter outlanders gameplay",
+      "monster hunter outlanders cross platform",
+      "open world monster hunter",
+      "monster hunter outlanders verdict",
+    ],
+  },
+  {
+    slug: "monster-hunter-outlanders-beginner-guide",
+    title: "Monster Hunter Outlanders Beginner Guide: Everything You Need to Know",
+    metaTitle: "Monster Hunter Outlanders Beginner Guide 2026 — Complete Starter Tips",
+    primaryKeyword: "Monster Hunter Outlanders beginner guide",
+    metaDescription:
+      "New to Monster Hunter Outlanders? This complete beginner guide covers weapon selection, how hunts work, crafting, base building, multiplayer, and the best early monsters to farm.",
+    excerpt:
+      "Monster Hunter Outlanders is deep, rewarding, and occasionally overwhelming for new hunters. This complete beginner guide walks you through weapon choice, the hunting loop, crafting, base building, and your first 20 hours — so you hit the ground running instead of getting carted three times by the first Jaggi.",
+    category: "Gaming",
+    readTime: "9 min",
+    date: "Oct 8, 2026",
+    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
+    trending: true,
+    featured: false,
+    tags: ["Monster Hunter Outlanders", "Beginner Guide", "Gaming Tips", "RPG", "Co-Op"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best starting weapon in Monster Hunter Outlanders?",
+        answer:
+          "For beginners, the Sword & Shield is the safest starting weapon — it's mobile, balanced, and lets you use items without sheathing. The Long Sword is the most popular overall pick due to its fluid combos and high damage ceiling. Avoid Charge Blade and Insect Glaive as a first weapon; both have steep learning curves.",
+      },
+      {
+        question: "How long does it take to beat Monster Hunter Outlanders?",
+        answer:
+          "The main story takes 40-60 hours. Reaching High Rank (the real endgame) takes another 30-50 hours. Full completion including Master Rank, all Apex monsters, seasonal events, and transmog grinding is 300+ hours for dedicated players.",
+      },
+      {
+        question: "Can you play Monster Hunter Outlanders solo?",
+        answer:
+          "Yes, fully. All story content and most endgame content is designed to be completable solo. Some late-game Apex Tier hunts are significantly easier in co-op, but solo is always viable. Monster HP does not scale up when you're playing alone.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders beginner guide",
+      "monster hunter outlanders tips for beginners",
+      "best weapon monster hunter outlanders",
+      "how to start monster hunter outlanders",
+      "monster hunter outlanders crafting guide",
+      "monster hunter outlanders base building",
+      "monster hunter outlanders first hunt tips",
+    ],
+  },
+  {
+    slug: "monster-hunter-outlanders-best-weapons",
+    title: "Monster Hunter Outlanders: Best Weapons Ranked (All 14 Types)",
+    metaTitle: "Monster Hunter Outlanders Best Weapons Tier List — All 14 Ranked",
+    primaryKeyword: "Monster Hunter Outlanders best weapons",
+    metaDescription:
+      "All 14 weapon types in Monster Hunter Outlanders ranked. Tier list with damage type, skill ceiling, solo vs multiplayer performance, and the top picks for beginners and endgame.",
+    excerpt:
+      "Monster Hunter Outlanders has 14 weapon types, each with a completely different gameplay feel. Here's the definitive tier list based on solo performance, multiplayer utility, skill ceiling, and endgame viability — plus the three weapons every beginner should try and the three that dominate endgame.",
+    category: "Gaming",
+    readTime: "8 min",
+    date: "Oct 7, 2026",
+    image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&q=80",
+    trending: false,
+    featured: false,
+    tags: ["Monster Hunter Outlanders", "Weapons Guide", "Tier List", "Gaming", "RPG"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best weapon in Monster Hunter Outlanders?",
+        answer:
+          "For raw endgame damage, the Greatsword and Switch Axe lead the pack in Outlanders. For multiplayer utility and consistent damage, the Long Sword and Dual Blades are top picks. For support builds, the Hunting Horn and Lance are invaluable in high-level co-op hunts.",
+      },
+      {
+        question: "What is the easiest weapon in Monster Hunter Outlanders?",
+        answer:
+          "The Sword & Shield is the easiest weapon for new players — it's fast, mobile, and has a straightforward combo chain. The Long Sword is a close second with its i-frame counter mechanic that rewards learning monster patterns without requiring complex button sequences.",
+      },
+      {
+        question: "Is the Charge Blade good in Monster Hunter Outlanders?",
+        answer:
+          "The Charge Blade is one of the highest-damage weapons in Outlanders at endgame but has a steep learning curve. Its phial charge and shield bash mechanics take hours to master. It's S-tier for experienced players, C-tier for beginners trying to learn it mid-campaign.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders best weapons",
+      "monster hunter outlanders weapon tier list",
+      "best weapon type monster hunter outlanders",
+      "monster hunter outlanders greatsword",
+      "monster hunter outlanders long sword build",
+      "monster hunter outlanders weapon guide",
+      "monster hunter outlanders beginner weapon",
+    ],
+  },
+  {
+    slug: "monster-hunter-outlanders-vs-world",
+    title: "Monster Hunter Outlanders vs World vs Rise: Which One Should You Play?",
+    metaTitle: "Monster Hunter Outlanders vs World vs Rise — Full Comparison 2026",
+    primaryKeyword: "Monster Hunter Outlanders vs World",
+    metaDescription:
+      "Monster Hunter Outlanders vs World vs Rise compared head-to-head: graphics, monster count, content depth, price, platform, and which game is right for your playstyle.",
+    excerpt:
+      "Three modern Monster Hunter games, three very different experiences. This full comparison breaks down Outlanders, World, and Rise across graphics, monster count, content depth, price, and platform availability — so you can pick the right one for your playstyle and budget.",
+    category: "Gaming",
+    readTime: "8 min",
+    date: "Oct 6, 2026",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",
+    trending: false,
+    featured: false,
+    tags: ["Monster Hunter", "Gaming Comparison", "Monster Hunter World", "Monster Hunter Rise", "RPG"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Is Monster Hunter Outlanders better than World?",
+        answer:
+          "In most measurable ways, yes — Outlanders has more monsters, a larger world, better multiplayer infrastructure, and more endgame content. World still edges ahead on environmental storytelling and cohesive world design. For new players, Outlanders is the better starting point. For nostalgia, World's atmosphere is unmatched.",
+      },
+      {
+        question: "Should I play Monster Hunter World before Outlanders?",
+        answer:
+          "No — Outlanders is a standalone game with its own story and onboarding. Playing World first isn't required and may even set wrong expectations given how different the survival and base-building layers are in Outlanders. If you want the World experience specifically, it's still worth playing as its own game.",
+      },
+      {
+        question: "Is Monster Hunter Rise worth playing in 2026?",
+        answer:
+          "Rise with the Sunbreak expansion is still excellent value in 2026, especially on sale. Its faster combat and Silkbind mechanic feel distinct from both World and Outlanders. If you want the most arcade-style MH experience, Rise is the pick. If you want the deepest open-world experience, Outlanders wins.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders vs world",
+      "monster hunter outlanders vs rise",
+      "which monster hunter game to play 2026",
+      "monster hunter world vs outlanders comparison",
+      "best monster hunter game 2026",
+      "monster hunter outlanders review comparison",
+      "monster hunter game comparison",
+    ],
+  },
+  {
+    slug: "monster-hunter-outlanders-tips-tricks",
+    title: "15 Monster Hunter Outlanders Tips the Game Never Tells You",
+    metaTitle: "15 Monster Hunter Outlanders Tips & Secrets — Hidden Mechanics",
+    primaryKeyword: "Monster Hunter Outlanders tips",
+    metaDescription:
+      "15 Monster Hunter Outlanders tips and hidden mechanics the game doesn't explain. Farming shortcuts, multiplayer etiquette, base optimization, equipment secrets, and more.",
+    excerpt:
+      "After 100+ hours in Monster Hunter Outlanders, certain mechanics still catch experienced players off guard. These 15 tips cover hidden systems, farming shortcuts, multiplayer etiquette, base optimization tricks, and equipment secrets that the game either explains poorly or doesn't explain at all.",
+    category: "Gaming",
+    readTime: "7 min",
+    date: "Oct 5, 2026",
+    image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&q=80",
+    trending: true,
+    featured: false,
+    tags: ["Monster Hunter Outlanders", "Gaming Tips", "Hidden Mechanics", "Pro Tips", "Gaming"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Can you transfer save data in Monster Hunter Outlanders?",
+        answer:
+          "Yes — Outlanders supports cross-save between PC and console if you link your Capcom ID. Mobile saves are separate. Cross-save requires linking your account in the game settings before your first session on each platform.",
+      },
+      {
+        question: "What is the best way to farm materials in Monster Hunter Outlanders?",
+        answer:
+          "The most efficient farming method is targeting investigations (repeatable quests tied to specific monsters) with gold reward slots and maximizing the mining and gathering routes at your base camp. High-Rank investigations give 3-5x more rare materials per hunt than story quests.",
+      },
+      {
+        question: "What is the fastest way to level up in Monster Hunter Outlanders?",
+        answer:
+          "Focus on completing key story quests (they give the largest Hunter Rank jumps), then chain optional quests in groups of 5 for the bonus experience. In multiplayer, you earn the same Hunter Rank XP regardless of who carves the monster — join others&apos; hunts when possible.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders tips",
+      "monster hunter outlanders secrets",
+      "monster hunter outlanders hidden mechanics",
+      "monster hunter outlanders farming tips",
+      "monster hunter outlanders pro tips",
+      "monster hunter outlanders tricks",
+      "monster hunter outlanders guide advanced",
+    ],
+  },
+  {
+    slug: "best-co-op-games-2026",
+    title: "10 Best Co-Op Games of 2026 (Ranked by Hours Played)",
+    metaTitle: "10 Best Co-Op Games of 2026 — Ranked by Hours Played",
+    primaryKeyword: "best co-op games 2026",
+    metaDescription:
+      "The 10 best co-op games of 2026 ranked by community hours played: Monster Hunter Outlanders, Space Engineers 2, Deep Rock Galactic 2, and more. Best picks for every group size.",
+    excerpt:
+      "2026 has been an exceptional year for co-op gaming. This ranking of the 10 best co-op games is based on community hours played, longevity, and how well each game holds up as a group activity — not just at launch, but months in.",
+    category: "Gaming",
+    readTime: "8 min",
+    date: "Oct 4, 2026",
+    image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&q=80",
+    trending: true,
+    featured: false,
+    tags: ["Co-Op Games", "Gaming 2026", "Multiplayer Games", "Monster Hunter Outlanders", "Gaming"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What is the best co-op game to play in 2026?",
+        answer:
+          "Monster Hunter Outlanders leads as the best overall co-op game of 2026 — 1-4 player co-op, cross-platform, hundreds of hours of content, and a rewarding progression loop that benefits from teamwork. For smaller groups (2 players), It Takes Two 2 and Deep Rock Galactic 2 are excellent alternatives.",
+      },
+      {
+        question: "What are the best free co-op games in 2026?",
+        answer:
+          "Warframe (free-to-play, constantly updated), Path of Exile 2 (free-to-play with optional cosmetics), and the base tier of Deep Rock Galactic 2 (free trial) are the best free co-op options in 2026. None require spending money to access the core gameplay loop.",
+      },
+      {
+        question: "What co-op games work well for 4 players?",
+        answer:
+          "Monster Hunter Outlanders (up to 4), Space Engineers 2 (up to 16 on a server), Helldivers 3 (4 players), and Back 4 Blood 2 (4 players) all shine at four players. Monster Hunter Outlanders is the tightest at exactly 4, with all content balanced for full squads.",
+      },
+    ],
+    seoKeywords: [
+      "best co-op games 2026",
+      "best multiplayer games 2026",
+      "co-op games to play with friends 2026",
+      "best 4 player co-op games 2026",
+      "best online co-op 2026",
+      "most played co-op games 2026",
+      "co-op game recommendations 2026",
+    ],
+  },
+  {
+    slug: "monster-hunter-outlanders-endgame-guide",
+    title: "Monster Hunter Outlanders Endgame Guide: What to Do After You Beat the Story",
+    metaTitle: "Monster Hunter Outlanders Endgame Guide — Post-Story Content 2026",
+    primaryKeyword: "Monster Hunter Outlanders endgame",
+    metaDescription:
+      "Monster Hunter Outlanders endgame guide: Elder Dragon hunts, Apex Tier monsters, transmog system, seasonal events, Master Rank gear progression, and PvP arena mode — everything post-credits.",
+    excerpt:
+      "Beating the Monster Hunter Outlanders story is just the beginning. The post-credits endgame — Elder Dragons, Apex Tier monsters, Master Rank gear, seasonal events, and the PvP arena — is where the real hundreds of hours live. Here's everything to do after the credits roll.",
+    category: "Gaming",
+    readTime: "9 min",
+    date: "Oct 3, 2026",
+    image: "https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=800&q=80",
+    trending: false,
+    featured: false,
+    tags: ["Monster Hunter Outlanders", "Endgame Guide", "Master Rank", "Elder Dragons", "Gaming"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "How long is the Monster Hunter Outlanders endgame?",
+        answer:
+          "The endgame content in Outlanders exceeds 200 hours for dedicated players. Master Rank gear progression alone takes 80-100 hours to complete. Add seasonal events (each with 8-12 unique quests), the transmog system, Apex Tier monsters, and PvP arena ranks, and the endgame is genuinely endless by design.",
+      },
+      {
+        question: "What is Master Rank in Monster Hunter Outlanders?",
+        answer:
+          "Master Rank (MR) is the endgame difficulty tier unlocked after completing the main story. MR monsters are significantly harder, faster, and have new attack patterns compared to High Rank versions. Master Rank gear offers materially higher stats and more decoration slots than High Rank equipment.",
+      },
+      {
+        question: "Are there Elder Dragons in Monster Hunter Outlanders?",
+        answer:
+          "Yes — Outlanders features 12 Elder Dragons, the highest count in series history. They include returning favorites like Nergigante, Chameleos, and Kushala Daora, plus 5 new Elder Dragons exclusive to Outlanders. All are available in both High Rank and Master Rank versions.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders endgame",
+      "monster hunter outlanders post game",
+      "monster hunter outlanders master rank",
+      "monster hunter outlanders elder dragons",
+      "monster hunter outlanders apex monsters",
+      "monster hunter outlanders what to do after story",
+      "monster hunter outlanders endgame guide",
+    ],
+  },
+  {
+    slug: "best-gaming-laptops-2026",
+    title: "Best Gaming Laptops of 2026: Run Monster Hunter Outlanders at Max Settings",
+    metaTitle: "Best Gaming Laptops 2026 — Run Monster Hunter Outlanders at Max",
+    primaryKeyword: "best gaming laptops 2026",
+    metaDescription:
+      "The 6 best gaming laptops of 2026 that can run Monster Hunter Outlanders at max settings. GPU, RAM, price, battery, and display compared — budget pick, mid-range, and best overall.",
+    excerpt:
+      "Monster Hunter Outlanders is one of the most demanding PC games of 2026 at max settings. These six gaming laptops are the best options for running it at 1440p or 4K without thermal throttling — with picks at every price point from $999 to $3,000.",
+    category: "Gadgets",
+    readTime: "9 min",
+    date: "Oct 2, 2026",
+    image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
+    trending: false,
+    featured: false,
+    tags: ["Gaming Laptops", "Gadgets", "Monster Hunter Outlanders", "PC Gaming", "Laptop Reviews"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What GPU do you need to run Monster Hunter Outlanders at max settings?",
+        answer:
+          "Capcom recommends an RTX 4070 or RX 7900 XT for max settings at 1440p in Monster Hunter Outlanders. For 4K max settings, an RTX 4080 or RTX 4090 is recommended. At 1080p high settings, an RTX 3070 or equivalent is sufficient.",
+      },
+      {
+        question: "What is the best budget gaming laptop for Monster Hunter Outlanders?",
+        answer:
+          "The ASUS TUF Gaming A15 (2026 model, RTX 4060) at $999 runs Monster Hunter Outlanders at 1080p high settings with stable 60+ fps. It's the most cost-effective way to play Outlanders on a laptop without compromising the core gameplay experience.",
+      },
+      {
+        question: "Can you play Monster Hunter Outlanders on a laptop?",
+        answer:
+          "Yes — Outlanders has strong laptop optimization with a built-in frame rate limiter and thermal management mode. RTX 4060 laptops can run the game at 1080p high settings without issues. For max settings at 1440p, you need an RTX 4070 Ti or better.",
+      },
+    ],
+    seoKeywords: [
+      "best gaming laptops 2026",
+      "gaming laptop monster hunter outlanders",
+      "best laptop for gaming 2026",
+      "rtx 4070 gaming laptop 2026",
+      "gaming laptop recommendations 2026",
+      "best 1440p gaming laptop 2026",
+      "gaming laptop review 2026",
+    ],
+  },
+  {
+    slug: "monster-hunter-outlanders-multiplayer-guide",
+    title: "Monster Hunter Outlanders Multiplayer: Complete Guide to Co-Op and PvP",
+    metaTitle: "Monster Hunter Outlanders Multiplayer Guide — Co-Op, PvP, Cross-Platform",
+    primaryKeyword: "Monster Hunter Outlanders multiplayer",
+    metaDescription:
+      "Monster Hunter Outlanders multiplayer guide: how co-op works, cross-platform play, lobby system, SOS flares, PvP arena, multiplayer etiquette, and the best monsters to hunt with friends.",
+    excerpt:
+      "Monster Hunter Outlanders multiplayer is the best co-op system in series history — full cross-platform, lobby-based and SOS matchmaking, a PvP arena, and a scalable difficulty that makes co-op hunts feel genuinely exciting rather than trivially easy. Here's how all of it works.",
+    category: "Gaming",
+    readTime: "8 min",
+    date: "Oct 1, 2026",
+    image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+    trending: false,
+    featured: false,
+    tags: ["Monster Hunter Outlanders", "Multiplayer Guide", "Co-Op Gaming", "PvP", "Cross-Platform"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "Is Monster Hunter Outlanders cross-platform?",
+        answer:
+          "Yes — Outlanders supports full cross-platform play between PC, PlayStation 5, and Xbox Series X/S. You can join any lobby or SOS flare regardless of platform. Mobile is on the same servers but restricted to mobile-exclusive lobbies in some game modes.",
+      },
+      {
+        question: "How does the SOS flare system work in Monster Hunter Outlanders?",
+        answer:
+          "If you're struggling on a hunt, you can fire an SOS flare that broadcasts your quest to the global matchmaking pool. Other players can answer your SOS and join your hunt mid-progress, even if the monster is already wounded. Hosts receive a bonus reward for using SOS.",
+      },
+      {
+        question: "Does Monster Hunter Outlanders have PvP?",
+        answer:
+          "Yes — Outlanders has a dedicated PvP arena mode where hunters compete to deal the most damage or complete objectives within a timed hunt. PvP rankings are seasonal and offer exclusive cosmetic rewards. It's optional and entirely separate from the cooperative PvE campaign.",
+      },
+    ],
+    seoKeywords: [
+      "monster hunter outlanders multiplayer",
+      "monster hunter outlanders co-op guide",
+      "monster hunter outlanders cross platform",
+      "monster hunter outlanders sos flare",
+      "monster hunter outlanders pvp arena",
+      "monster hunter outlanders online guide",
+      "monster hunter outlanders multiplayer tips",
+    ],
+  },
+  {
+    slug: "most-anticipated-games-q4-2026",
+    title: "10 Most Anticipated Games of Q4 2026 (Beyond Monster Hunter Outlanders)",
+    metaTitle: "10 Most Anticipated Games Q4 2026 — What's Coming This Quarter",
+    primaryKeyword: "most anticipated games Q4 2026",
+    metaDescription:
+      "The 10 most anticipated games of Q4 2026 beyond Monster Hunter Outlanders — with release dates, platforms, genres, and a realistic hype assessment for each. What's worth your time?",
+    excerpt:
+      "Monster Hunter Outlanders may be the headline release of October 2026, but Q4 has a packed slate of major releases. Here are the 10 most anticipated games still coming this quarter — with realistic hype assessments for each based on what developers have shown so far.",
+    category: "Gaming",
+    readTime: "8 min",
+    date: "Sep 30, 2026",
+    image: "https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?w=800&q=80",
+    trending: true,
+    featured: false,
+    tags: ["Gaming 2026", "Upcoming Games", "Q4 2026", "Game Releases", "Gaming News"],
+    schemaType: "BlogPosting",
+    faqSchema: [
+      {
+        question: "What are the biggest game releases of Q4 2026?",
+        answer:
+          "Beyond Monster Hunter Outlanders, the biggest Q4 2026 releases include Starfield: Revelation (the major expansion), Elden Ring II: Ashen Throne, the Final Fantasy XVII demo-to-full conversion, and the long-awaited Hollow Knight: Silksong. The quarter is unusually packed with major IPs.",
+      },
+      {
+        question: "Is Elden Ring II coming out in 2026?",
+        answer:
+          "Elden Ring II: Ashen Throne is confirmed for Q4 2026 — specifically November 2026. FromSoftware has described it as a fully standalone sequel set in the same universe but with a new protagonist and map. Early previews suggest a faster combat system with retained depth.",
+      },
+      {
+        question: "What new game consoles are coming in Q4 2026?",
+        answer:
+          "No new major consoles are launching in Q4 2026. Sony announced a PlayStation 5 Pro refresh at a reduced price point in September, and Nintendo confirmed the Switch 3 for Q1 2027. Q4 2026 is a software quarter, not hardware.",
+      },
+    ],
+    seoKeywords: [
+      "most anticipated games Q4 2026",
+      "upcoming games Q4 2026",
+      "best new games coming 2026",
+      "game releases october november december 2026",
+      "elden ring 2 2026",
+      "hollow knight silksong release date",
+      "new games 2026 list",
+    ],
+  },
 ];
 
 export interface Category {
@@ -7506,4 +7947,5 @@ export const categories: Category[] = [
   { name: "Trending", icon: "🔥", count: 18, color: "from-red-500 to-orange-500" },
   // { name: "Sports", icon: "🏏", count: 12, color: "from-green-500 to-teal-500" },
   { name: "News", icon: "📰", count: 7, color: "from-red-600 to-rose-500" },
+  { name: "Gaming", icon: "🎮", count: 10, color: "from-violet-500 to-purple-600" },
 ];
