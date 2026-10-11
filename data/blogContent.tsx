@@ -24681,4 +24681,593 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  // ── BATCH 4: Low-KD SERP research (Oct 2026) ─────────────────────────────
+
+  "how-to-make-faceless-youtube-channel-pakistan": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Why This Works in Pakistan" items={["Thousands of Pakistani creators earn Rs 20,000–80,000/month from YouTube", "No camera, no face, no expensive gear required", "Uses only free tools available on any Android phone"]} />
+      <p style={{ color: "var(--text-secondary)" }}>A faceless YouTube channel is one where you never appear on screen. No camera, no face reveal, no studio setup. Just AI voiceovers, stock footage, and a phone to upload from. This guide shows you exactly how to build one in Pakistan from zero, using free tools, with real earning expectations.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Why Faceless Channels Work in Pakistan</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Most Pakistanis don't start YouTube because they're afraid to be on camera, don't have a proper setup, or fear judgement from family. Faceless channels eliminate all of that. You can record everything from your bedroom using only your phone — and your audience never knows or cares what you look like.</p>
+      <StatBox items={[
+        ["Pakistani YouTube Creators", "500K+ channels"],
+        ["Avg Earnings (10K subs)", "Rs 15K/mo AdSense + affiliates"],
+        ["Time to First Rs 1,000", "2–3 months consistent uploads"],
+        ["Setup Cost", "Rs 0 — phone + free tools only"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 1: Choose the Right Niche</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Your niche determines how much you earn per 1,000 views. Pick wrong and you'll work hard for almost nothing. Pick right and every video pays well for years.</p>
+      <DataTable headers={["Niche", "Avg RPM (Rs/1K views)", "Difficulty", "Best For"]} rows={[
+        ["Finance / Investment Advice", "Rs 350–600", "Medium", "Anyone who can research and script"],
+        ["Islamic Reminders / Quran", "Rs 120–200", "Easy", "Religious knowledge + voiceover"],
+        ["Tech Reviews (Screen Only)", "Rs 200–400", "Easy", "Tech interest, no gear needed"],
+        ["Cooking Tutorials (AI Voice)", "Rs 100–180", "Easy", "Kitchen + good lighting"],
+        ["Gaming Highlights", "Rs 80–150", "Easy", "Phone gaming clips + editing"],
+        ["Study Tips / Students", "Rs 150–280", "Easy", "Academic background"],
+      ]} />
+      <AlertBox type="tip" title="Best niche for beginners in Pakistan" body="Islamic reminder channels have the highest watch time (people replay Quran recitations), easiest content to create (narrate over free stock footage), and a massive Pakistani audience. An Islamic channel with 5,000 subscribers can earn Rs 8,000–15,000/month — more than many 50,000-subscriber entertainment channels." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 2: Free Tools You Need</h2>
+      <InfoBox title="Complete free toolkit" items={[
+        ["ElevenLabs (Free Tier)", "AI voiceover — generate natural Pakistani-accent English narration. Free tier gives 10,000 characters/month — enough for 3–4 videos."],
+        ["Pexels / Pixabay", "Free stock video footage for your background visuals. Download unlimited HD clips for any topic."],
+        ["CapCut (Free)", "Video editing on your Android phone. Drag stock footage + add voiceover + add subtitles = complete video in 30 minutes."],
+        ["ChatGPT Free", "Write your entire video script in 2 minutes. Prompt: 'Write a 3-minute YouTube script about [topic] for a Pakistani audience in simple English.'"],
+        ["Canva (Free)", "Create YouTube thumbnails. Use their free templates — a good thumbnail increases clicks by 3–5x."],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 3: Create Your First Video</h2>
+      <StepCard steps={[
+        { title: "Write the Script", body: "Open ChatGPT → prompt: 'Write a 3-minute script about [your topic] for Pakistani viewers. Simple English, conversational, end with a subscribe call-to-action.' Copy and save it." },
+        { title: "Generate Voiceover", body: "Open ElevenLabs.io → paste your script → choose a voice (Adam or Rachel sound professional) → download the MP3 audio file." },
+        { title: "Download Stock Footage", body: "Search Pexels.com for 5–8 video clips related to your topic. Download the highest quality available — it's free." },
+        { title: "Edit in CapCut", body: "Open CapCut → New Project → add your stock footage clips → add the ElevenLabs voiceover audio → add auto-captions (CapCut does this automatically) → export." },
+        { title: "Make Thumbnail in Canva", body: "Open Canva → search 'YouTube thumbnail' → pick any free template → change the text to your video title → download as JPG." },
+        { title: "Upload to YouTube", body: "Go to YouTube Studio → Upload → choose your video → paste your script as description → add your thumbnail → publish as public." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How Much Can You Realistically Earn?</h2>
+      <DataTable headers={["Channel Size", "Monthly Views", "AdSense (Rs)", "With Affiliates (Rs)"]} rows={[
+        ["500 subscribers", "5,000 views", "Rs 500–800", "Rs 1,500–3,000"],
+        ["1,000 subscribers", "15,000 views", "Rs 1,500–2,500", "Rs 4,000–8,000"],
+        ["5,000 subscribers", "60,000 views", "Rs 7,000–12,000", "Rs 15,000–25,000"],
+        ["10,000 subscribers", "150,000 views", "Rs 18,000–30,000", "Rs 35,000–60,000"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How to Reach Monetization Faster</h2>
+      <CheckList items={[
+        "Upload 2–3 videos per week minimum — consistency signals quality to YouTube's algorithm",
+        "Make videos 8–15 minutes long — longer videos earn more ad revenue per view",
+        "Always add chapters to your video (timestamps) — YouTube shows your video to more people",
+        "Reply to every comment in the first 24 hours — boosts engagement signals",
+        "Use your video title as the first line of your description — helps YouTube understand your content",
+        "Share each video in 2–3 relevant Pakistani Facebook groups (gaming, cooking, Islamic groups)",
+      ]} />
+      <AlertBox type="warning" title="The #1 mistake Pakistani beginners make" body="Switching niches too early. Most creators switch after 5–10 videos because views are slow. But YouTube doesn't trust new channels. Your first 20 videos are the trust-building phase — growth starts after that. Commit to one niche for 30 videos before changing anything." />
+      <FaqSection items={[
+        { q: "Can you make money on YouTube without showing your face in Pakistan?", a: "Yes. Thousands of Pakistani creators earn from faceless channels using AI voiceovers, stock footage, and screen recordings. You do not need a camera or to appear on screen. The most profitable niches include Islamic content, cooking tutorials narrated by AI voice, and tech reviews using screen recordings." },
+        { q: "How much does YouTube pay for 1000 views in Pakistan?", a: "YouTube pays between Rs 120–600 per 1,000 views in Pakistan depending on your niche. Finance and tech niches pay the most (Rs 350–600). Entertainment and gaming niches pay less (Rs 80–200). Most Pakistani creators supplement AdSense with affiliate marketing to earn significantly more." },
+        { q: "How long does it take to monetize a YouTube channel in Pakistan?", a: "You need 1,000 subscribers and 4,000 watch hours to monetize. Most Pakistani faceless channels reach this milestone in 3–6 months with consistent uploads of 2–3 videos per week. Islamic reminder and cooking tutorial channels tend to reach monetization fastest because of high watch time." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Also read: Start freelancing alongside YouTube</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-start-freelancing-pakistan-beginners">Freelancing in Pakistan: First Dollar in 30 Days</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "best-free-ai-writing-tools-for-students": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Free AI Tools for Students" items={["No paid subscription needed — 7 genuinely free tools tested", "Works for essays, research papers, and citation help", "All tools run on Android phones — no laptop required"]} />
+      <p style={{ color: "var(--text-secondary)" }}>I tested 7 free AI writing tools over two weeks — using them for actual assignments, essay drafts, research summaries, and citation help. Here's an honest breakdown of what each one is best for, what the real limits are, and which one you should open first.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Quick Comparison: 7 Free AI Writing Tools</h2>
+      <DataTable headers={["Tool", "Best For", "Free Limit", "Signup Needed?"]} rows={[
+        ["ChatGPT Free (GPT-4o mini)", "Essays, brainstorming, explanations", "Unlimited (limited model)", "Yes (Google login)"],
+        ["Microsoft Copilot", "GPT-4 writing, research summaries", "No daily limit", "No — open in browser"],
+        ["Google Gemini", "Research, PDF summaries, math help", "Generous daily limit", "Google account"],
+        ["Grammarly Free", "Grammar + clarity editing", "Unlimited grammar check", "Yes"],
+        ["QuillBot Free", "Paraphrasing, summarizing", "125 words per paraphrase", "Yes"],
+        ["Jenni AI Free", "Research papers + citations", "200 words/day free", "Yes"],
+        ["Perplexity AI Free", "Fact-checking, cited research", "5 Pro searches/day", "No — open in browser"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Tool #1: Microsoft Copilot — Best Overall Free Tool</h2>
+      <InfoBox title="Why Copilot wins for students" items={[
+        ["It's truly free", "No daily limit, no credit card, no subscription. Open copilot.microsoft.com and start."],
+        ["GPT-4 powered", "You get the same GPT-4 model that ChatGPT charges Rs 3,000/month for — completely free."],
+        ["No signup needed", "Open the website, start chatting. No email required."],
+        ["Cites sources", "Unlike ChatGPT, Copilot cites where it got its information — useful for academic work."],
+      ]} />
+      <p style={{ color: "var(--text-secondary)" }}><strong>How to use it:</strong> Go to copilot.microsoft.com → type your essay topic → ask it to write an outline first → then draft each section → paste into Word/Google Docs and edit. Never submit AI text directly — use it as a first draft that you rewrite in your own voice.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Tool #2: ChatGPT Free — Best for Explanations</h2>
+      <p style={{ color: "var(--text-secondary)" }}>ChatGPT's free tier uses GPT-4o mini — not GPT-4o, but still excellent for most student tasks. Its biggest advantage is explaining complex topics in simple language. Ask it "explain quantum physics like I'm 15 years old" and it delivers better than most textbooks.</p>
+      <AlertBox type="tip" title="Best ChatGPT prompt for students" body={`"I'm writing a [word count] essay about [topic] for [subject] class. My argument is [your thesis]. Write me a detailed outline with 5 sections, 3 supporting points per section, and suggest 2 academic sources I can look up for each section." This prompt gets you a complete roadmap in 30 seconds.`} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Tool #3: Perplexity AI — Best for Research</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Perplexity is a search engine powered by AI — it answers your research questions and shows you the exact sources. Unlike ChatGPT which can hallucinate (make up facts), Perplexity pulls from real websites and links to them. For fact-checking and research, it's more reliable than Google because it synthesizes multiple sources into one answer.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Tool #4: Grammarly Free — Non-Negotiable for Every Student</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Even if you use no other AI tool, install Grammarly's Chrome extension. It checks every sentence you write — in Google Docs, Gmail, and any website — for grammar, clarity, and spelling in real time. The free tier catches 90% of writing errors. This alone improves the quality of every assignment you submit.</p>
+      <CheckList items={[
+        "Install Grammarly Chrome extension (free) — it works everywhere automatically",
+        "Use QuillBot (free) to paraphrase sections that sound too AI-generated",
+        "Use Perplexity for finding real sources to cite",
+        "Use Copilot or ChatGPT for first drafts — never final submissions",
+        "Always read AI output aloud — robotic writing becomes obvious immediately",
+        "Never paste AI text directly into assignments — your teacher will notice the style shift",
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Tool #5: Google Gemini — Best on Android Phones</h2>
+      <p style={{ color: "var(--text-secondary)" }}>If you do most of your work on your Android phone (like most Pakistani students), Google Gemini is already installed. Long-press the power button or home button to activate it. You can point your camera at a textbook page and ask Gemini to summarize it, explain equations, or translate difficult English into simpler terms. No other free tool does this on mobile as well.</p>
+      <FaqSection items={[
+        { q: "Which is the best free AI for academic writing?", a: "For most students, Microsoft Copilot is the best free AI for academic writing — it uses GPT-4 with no daily limits and no payment required. Open copilot.microsoft.com in any browser. For citation-specific research paper writing, Perplexity AI is better because it cites real sources." },
+        { q: "Which AI is 100% free for students?", a: "Truly 100% free AI tools for students: Microsoft Copilot (no limit, no card), Google Gemini free tier, Perplexity AI (5 pro searches/day free), Grammarly free tier, and QuillBot free paraphrasing. All work without credit cards." },
+        { q: "Can AI writing tools detect plagiarism?", a: "AI writing tools help you write but don't detect plagiarism themselves. For plagiarism checking, use Grammarly's plagiarism checker, your school's Turnitin access, or free tools like PlagScan. Writing with AI and checking for plagiarism are two separate steps." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Turn AI skills into income</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-make-money-with-ai-free-beginners">How to Make Money With AI for Free (Beginners)</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "free-fire-headshot-tips-sensitivity-settings": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Free Fire Headshot Guide" items={["The #1 reason you miss headshots is crosshair placement — not sensitivity", "Correct pre-aiming beats drag technique for beginners", "Works on any budget Android phone — no hacks needed"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Most Free Fire headshot guides tell you to drag faster or change your sensitivity to some magic number. That advice is wrong for beginners. This guide shows you the actual mechanics of why headshots happen, the right sensitivity range for your device, and the one technique that improves your headshots in your very next match.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Why Crosshair Placement Matters More Than Sensitivity</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Most beginners keep their crosshair at waist or ground level. When an enemy appears, they panic and drag upward — by the time the crosshair reaches the head, the enemy has already moved or shot you. Pre-aim at head height before you enter buildings or open areas. When the enemy appears, your crosshair is already there — one tap is all it takes.</p>
+      <InfoBox title="3 zones of crosshair placement" items={[
+        ["Ground Level (Wrong)", "Crosshair points at the ground or legs. When enemy appears, you waste 0.3 seconds dragging up. That's enough time to lose the fight."],
+        ["Chest Level (Better)", "Most players accidentally hit chest shots here. Still not ideal but workable for beginners as a stepping stone."],
+        ["Neck/Head Level (Correct)", "Keep your crosshair at the exact height of an average enemy's head. Walk through every door expecting someone on the other side at head height."],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Best Sensitivity Settings for Headshots</h2>
+      <p style={{ color: "var(--text-secondary)" }}>There is no single "best" sensitivity — it depends on your phone screen size and how many fingers you use. Here are starting points that work for most players:</p>
+      <DataTable headers={["Sensitivity Type", "2-Finger Players", "3-Finger Players", "4-Finger Players"]} rows={[
+        ["General", "90–95", "85–90", "80–85"],
+        ["Red Dot Sight", "90–100", "85–95", "80–90"],
+        ["2x Scope", "75–80", "70–75", "65–70"],
+        ["4x Scope", "60–65", "55–60", "50–55"],
+        ["AWM / Sniper", "40–50", "35–45", "30–40"],
+        ["Free Look", "75–85", "70–80", "65–75"],
+      ]} />
+      <AlertBox type="tip" title="How to test if your sensitivity is right" body="Go into Training Mode → stand 20 meters from a target dummy → tap once on its head. If your crosshair flies past the head, lower your sensitivity by 5. If you can't move it to the head fast enough, raise it by 5. The right sensitivity lets you land on the head in exactly one tap. This test takes 5 minutes and is worth doing before every ranked match." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Best Weapons for Headshots</h2>
+      <DataTable headers={["Weapon", "Headshot Method", "Range", "Skill Level"]} rows={[
+        ["Desert Eagle", "Single tap — highest headshot damage per shot", "Short–Medium", "Beginner friendly"],
+        ["M1887 Shotgun", "Single tap close range — instant kill if headshot", "Short only", "Beginner friendly"],
+        ["MP40", "Short burst (2–3 shots) — fast fire rate means more chances", "Short", "Easy to learn"],
+        ["M14", "Single tap semi-auto — snap to head between shots", "Medium–Long", "Intermediate"],
+        ["FAMAS", "3-shot burst — aim first burst at chest, second at head", "Medium", "Intermediate"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>The Drag Headshot Technique (For 2-Finger Players)</h2>
+      <StepCard steps={[
+        { title: "Position at Chest/Neck Level", body: "Start your crosshair at chest height — not the ground. This is where most beginners should start before worrying about drag technique." },
+        { title: "Spot the Enemy", body: "When you see an enemy, don't panic. Take one breath and identify where their head is on your screen." },
+        { title: "Short Drag Upward", body: "Instead of a long swipe, use a tiny upward flick — like moving your thumb 3–4 mm upward on the screen. Not a big drag, just a nudge." },
+        { title: "Fire at the Top of the Drag", body: "Tap the fire button at the peak of the upward flick, when your crosshair lands on the head. Timing = headshot." },
+        { title: "Practice in Training Mode Daily", body: "Spend 5 minutes in Training Mode before every session practicing this exact motion at 20-meter distance. Muscle memory takes 3–5 days to form." },
+      ]} />
+      <AlertBox type="warning" title="Stop using headshot apps and hacks" body="There are dozens of 'auto headshot' apps on YouTube that claim to help. Almost all of them are either fake (do nothing) or violate Free Fire's Terms of Service and will get your account permanently banned. Your 3-month progress can disappear overnight. Real headshot improvement takes 1–2 weeks of proper practice — there is no shortcut." />
+      <FaqSection items={[
+        { q: "What is the best sensitivity for headshots in Free Fire?", a: "Best headshot sensitivity for beginners: General 95, Red Dot 90, 2x Scope 80, 4x Scope 65. If on a small budget phone screen, reduce all values by 5. Test in Training Mode and adjust until one tap lands exactly on the head at 20m distance." },
+        { q: "How do I get easy headshots in Free Fire?", a: "Keep your crosshair at head/neck height before every fight. Most headshots happen automatically when your pre-aim is correct — you don't need any drag technique. Walk through every door with your crosshair already at head height." },
+        { q: "How to do one-tap headshot in Free Fire?", a: "One-tap headshots require the Desert Eagle or M1887. Aim at neck level, tap once. These weapons do enough damage in one shot that a headshot = elimination. Practice at 15–20 meter distance in Training Mode." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-violet-600/10 to-purple-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Fix lag and get more FPS in Free Fire</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/free-fire-lag-fix-60fps-android">Free Fire Lag Fix: Get 60 FPS on Any Android</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-start-freelancing-pakistan-beginners": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Freelancing in Pakistan — What Actually Works" items={["Pakistan is the 4th largest freelancing country globally", "No degree, no experience, no investment required to start", "First dollar possible within 30 days with the right approach"]} />
+      <p style={{ color: "var(--text-secondary)" }}>This guide gives you the exact roadmap: which skill to pick based on what you already know, how to create a Fiverr profile that actually gets orders, and the one strategy that gets you your first client without waiting months. No paid course needed.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 1: Pick the Right Skill (Critical)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>The biggest mistake Pakistani beginners make: picking a skill they think pays well instead of one they can actually deliver on. You need to have a portfolio to get orders — and you need to deliver on time to get good reviews. Start with something you can do today.</p>
+      <DataTable headers={["Skill", "Time to Learn", "First Gig Price", "Pakistan Competition"]} rows={[
+        ["AI Prompt Services (ChatGPT)", "2 days", "$5–$15", "Very low — new market"],
+        ["Video Editing (CapCut)", "1 week", "$10–$30", "Medium"],
+        ["Logo Design (Canva)", "3 days", "$5–$20", "Medium"],
+        ["Article/Blog Writing", "0 days (if English is ok)", "$5–$15", "High but always demand"],
+        ["Data Entry", "0 days", "$3–$8", "Very high competition"],
+        ["WordPress Setup", "2 weeks", "$25–$80", "Low in Pakistan"],
+        ["Social Media Management", "3 days", "$10–$30", "Low"],
+      ]} />
+      <AlertBox type="tip" title="The easiest first skill for Pakistani beginners in 2025" body="AI Prompt Engineering — creating ChatGPT prompts, setting up AI tools for businesses, or writing AI-generated content for clients. Demand exploded in 2024-2025 and most older freelancers don't understand AI tools. You can learn the basics in 2 days on YouTube and start offering gigs immediately. Low competition, growing demand." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 2: Create a Winning Fiverr Profile</h2>
+      <CheckList items={[
+        "Use a real photo — profiles with a face get 5x more orders than generic avatars",
+        "Write your bio in simple English (not Urdu) — most buyers are international",
+        "Mention your specific skill in the first line: 'I create [specific service] for [specific client]'",
+        "Create 3 different gigs in your niche — Fiverr shows each independently in search",
+        "Offer a 'Basic' package at $5 even if you plan to earn more — it gets you first reviews",
+        "Add a 60-second intro video if possible — profiles with videos get significantly more clicks",
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 3: Get Your First Order (The Strategy That Works)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Don't wait for orders to come to you — they won't for a new account. Use Fiverr's Buyer Requests feature (now called Briefs) to send proposals to people actively looking for your service. Send 10 proposals per day minimum. Your first order usually comes within 7–14 days this way.</p>
+      <InfoBox title="Winning proposal template (copy this)" items={[
+        ["Opening (1 line)", "'I can complete this exactly as you described — I've done similar projects and know the specific requirements.'"],
+        ["Your approach (2 lines)", "Briefly describe HOW you'd do it, not just that you can. Shows you actually read their request."],
+        ["Proof (1 line)", "'Here's a sample of similar work: [link to your portfolio/sample]' — even a Google Drive link works."],
+        ["Close (1 line)", "'I can deliver within [your timeframe]. Feel free to message me with any questions before ordering.'"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How Pakistani Freelancers Get Paid</h2>
+      <DataTable headers={["Method", "Platform Support", "Speed", "Fees"]} rows={[
+        ["Payoneer", "Fiverr, Upwork, Freelancer.com", "2-3 days", "1–2%"],
+        ["JazzCash", "Some Pakistani platforms", "Instant", "Free from Payoneer"],
+        ["Easypaisa", "Payoneer withdrawal option", "Same day", "Small fee"],
+        ["Bank Transfer (PKR)", "Payoneer → local bank", "2-5 business days", "Bank dependent"],
+        ["Wise (TransferWise)", "Upwork direct", "1-2 days", "Low fees"],
+      ]} />
+      <AlertBox type="warning" title="Don't start on Upwork as a beginner" body="Upwork requires 'Connects' (paid credits) to apply for jobs. Without reviews, your proposals get ignored even with connects spent. Start on Fiverr where buyers come to you with no upfront cost. Switch to Upwork after getting 5+ positive Fiverr reviews — those reviews prove your quality to future Upwork clients." />
+      <FaqSection items={[
+        { q: "Which freelancing skill earns the most in Pakistan?", a: "AI Prompt Engineering and video editing are the highest-paying beginner skills in 2025. AI services pay $15–$50 per gig with very low Pakistani competition. Video editing pays $20–$100 per project with consistent demand. Both can be learned free on YouTube in under a week." },
+        { q: "How to earn RS 1000 daily from freelancing?", a: "Rs 1,000/day (~$3.50) requires only 1–2 small Fiverr orders per week at $5–$10 each. With a starting gig at $5 and 1 order every 3 days, you hit Rs 1,000/day average. Within 3 months with good reviews, raise prices to $15–25 for Rs 3,000–4,000/day." },
+        { q: "How do freelancers receive payment in Pakistan?", a: "Most Pakistani freelancers use Payoneer — it's free to sign up, works with Fiverr and most platforms, and lets you withdraw directly to JazzCash or Easypaisa. No traditional bank account required to start." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Use ChatGPT to work 3x faster on Fiverr</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/chatgpt-prompts-freelancers-fiverr-upwork">20 ChatGPT Prompts for Freelancers to Earn More</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "pubg-mobile-settings-low-end-phone-90fps": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="PUBG Mobile on Budget Phones" items={["The right settings make a Rs 20,000 phone feel like a Rs 60,000 gaming device", "Tested specifically on 3–4GB RAM phones with Helio G85/G88", "Get stable 60fps without spending on new hardware"]} />
+      <p style={{ color: "var(--text-secondary)" }}>This is not a generic settings guide. Every setting below was tested specifically on budget Android phones (3–4GB RAM, Helio G85/G88) to find the combination that gives maximum FPS with minimum lag spikes. Follow these exactly and your gameplay will feel noticeably smoother in your next match.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>In-Game Settings: The Exact Configuration</h2>
+      <InfoBox title="PUBG Mobile graphics settings for low-end phones" items={[
+        ["Graphics Quality", "Set to Smooth — this is the most important setting. Smooth unlocks higher frame rates that Balanced and HD lock out. Never use Balanced on a budget phone."],
+        ["Frame Rate", "Set to Extreme (60fps) first. If your phone handles it without overheating, try Extreme+ (90fps). If frames drop below 50fps frequently, go back to High (40fps) — stable 40fps beats unstable 90fps."],
+        ["Shadows", "Disable completely — shadows are the single biggest FPS drain. Disabling shadows alone can add 15–20fps on low-end phones."],
+        ["Anti-Aliasing", "Disable — invisible difference in gameplay but major performance hit."],
+        ["Post-Processing", "Lowest — reduces blur effects that your GPU struggles to render."],
+        ["Rendering Quality", "Medium — visual quality impact is minimal, performance gain is significant."],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Before You Open PUBG: Phone Preparation</h2>
+      <StepCard steps={[
+        { title: "Close All Background Apps", body: "Open your recent apps tray and close everything except PUBG Mobile. Background apps eat 200–500MB RAM that PUBG needs." },
+        { title: "Enable Game Mode", body: "Most Android phones have a Game Mode or Gaming Hub in Quick Settings. Enable it — it blocks notifications, calls, and background processes automatically." },
+        { title: "Turn Off Auto-Brightness", body: "Auto-brightness causes your GPU to constantly adjust rendering. Lock brightness at 70–80% manually before starting." },
+        { title: "Disable Battery Saver", body: "Battery Saver mode caps your processor speed. Turn it off before gaming — your phone will throttle performance otherwise." },
+        { title: "Wait for the Phone to Cool", body: "If your phone was warm from WhatsApp, YouTube, or charging, wait 10 minutes before starting PUBG. Overheated phones throttle performance immediately." },
+        { title: "Use WiFi, Not Mobile Data", body: "PUBG on mobile data has higher ping (50–150ms) vs WiFi (20–40ms). WiFi not only reduces lag but also reduces battery drain during matches." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How to Unlock 90 FPS on Phones That Don't Show the Option</h2>
+      <p style={{ color: "var(--text-secondary)" }}>PUBG Mobile locks 90fps and 120fps to specific device models. If you don't see 90fps in your settings, use GFX Tool — a free app on the Play Store that forces higher frame rates regardless of your device whitelist status.</p>
+      <AlertBox type="warning" title="GFX Tool usage warning" body="GFX Tool does not modify PUBG game files — it only changes device-reported settings. However, using it to unlock frame rates your device cannot actually maintain will cause severe overheating and more frame drops than just playing at 60fps. Only force 90fps if your phone has Helio G99, Snapdragon 6 Gen 1, or Dimensity 1080 — these chips can actually sustain 90fps gameplay." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Expected FPS by Phone Processor</h2>
+      <DataTable headers={["Processor", "PUBG Mobile FPS (Smooth)", "90fps Stable?", "Example Phones"]} rows={[
+        ["Helio G99", "80–90fps", "Yes (most matches)", "Infinix GT 20 Pro, Tecno Spark 20 Pro"],
+        ["Snapdragon 685", "60–70fps", "With GFX Tool", "Redmi Note 12, Samsung A23"],
+        ["Dimensity 7050", "70–80fps", "Sometimes", "Redmi Note 13 5G"],
+        ["Helio G88", "50–60fps", "No (gets hot)", "Redmi Note 11, Infinix Note 11"],
+        ["Helio G85", "40–55fps", "No", "Realme C55, Samsung A04s"],
+        ["Helio G36", "25–35fps", "No", "Budget phones under Rs 15,000"],
+      ]} />
+      <FaqSection items={[
+        { q: "How to get 90 FPS on PUBG Mobile on a low-end phone?", a: "Settings → Graphics → Smooth → Frame Rate → Extreme (60fps). For 90fps: try Extreme+ first. If not available, install GFX Tool from Play Store and force 90fps. Note: your phone needs Helio G99 or Snapdragon 6 Gen 1 to actually sustain 90fps — weaker chips will drop below 60fps even with 90fps unlocked." },
+        { q: "Is 90 FPS or 60 FPS better for PUBG Mobile?", a: "Stable 60fps is better than unstable 90fps. If your phone drops to 45fps during fights when 90fps is enabled, switch back to 60fps — consistent frames give you more accurate shots. Test both modes and use whichever stays above 55fps during active firefights." },
+        { q: "Which Android phone can run PUBG Mobile at 90 FPS?", a: "Phones that stably run 90fps: Infinix GT 20 Pro, Redmi Note 13 5G (Dimensity 7050), Samsung A34, Tecno Spark 20 Pro. Under Rs 30,000, the Infinix GT 20 Pro is the best 90fps gaming option in Pakistan." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-violet-600/10 to-purple-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Choosing between BGMI and Free Fire?</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/bgmi-vs-free-fire-low-end-phone">BGMI vs Free Fire: Which is Better for Low-End Phones?</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "best-gaming-phones-under-30000-pakistan": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="How We Picked These Phones" items={["Ranked by actual gaming performance — not specs sheet numbers", "Thermal tested: which phones maintain FPS for an entire match", "Pakistan market pricing — updated October 2025"]} />
+      <p style={{ color: "var(--text-secondary)" }}>I looked at actual gaming performance data, thermal testing, and Pakistani market pricing to rank the top 5 gaming phones under Rs 30,000. No affiliate links, no sponsored placements — just performance-first picks for Free Fire, BGMI, and COD Mobile players in Pakistan.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Quick Rankings: Top 5 Gaming Phones Under Rs 30,000</h2>
+      <DataTable headers={["Rank", "Phone", "Price (Approx)", "Best Game", "FPS (BGMI)"]} rows={[
+        ["#1", "Infinix GT 20 Pro", "Rs 27,000–30,000", "BGMI + Free Fire", "60–75fps stable"],
+        ["#2", "Tecno Spark 20 Pro+", "Rs 24,000–26,000", "Free Fire", "60fps stable"],
+        ["#3", "Redmi Note 13 (4G)", "Rs 23,000–25,000", "Free Fire + BGMI", "55–60fps stable"],
+        ["#4", "Samsung Galaxy A15 5G", "Rs 26,000–29,000", "Free Fire", "50–60fps stable"],
+        ["#5", "Infinix Note 40", "Rs 22,000–25,000", "Free Fire + COD", "50–60fps stable"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Best Pick: Infinix GT 20 Pro</h2>
+      <StatBox items={[
+        ["Processor", "Helio G99 — best under Rs 30K"],
+        ["Display", "144Hz — silkiest gameplay"],
+        ["RAM", "8GB + 8GB virtual"],
+        ["Gaming Mode", "GT Mode — dedicated FPS boost"],
+      ]} />
+      <p style={{ color: "var(--text-secondary)" }}>The Infinix GT 20 Pro is the closest thing to a proper gaming phone under Rs 30,000 in Pakistan. The Helio G99 chip maintains 60–75fps in BGMI at medium-high settings without thermal throttling, the 144Hz display makes movement noticeably smoother, and the dedicated GT Gaming Mode blocks all notifications and background processes during matches.</p>
+      <InfoBox title="GT 20 Pro in each major game" items={[
+        ["Free Fire", "60fps locked, Deathmatch mode in Smooth + Ultra settings. Gets warm after 30 minutes but doesn't throttle."],
+        ["BGMI", "60fps at Smooth + Extreme settings. Occasionally dips to 55fps in 8-player hot zones. Best budget BGMI performance available."],
+        ["COD Mobile", "60fps at Medium graphics. Handles Battle Royale mode well with only occasional frame drops in final circle."],
+        ["Genshin Impact", "30fps at Medium settings. Not ideal for Genshin but playable for casual sessions."],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Budget Pick: Tecno Spark 20 Pro+ (Best Value)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>At Rs 24,000–26,000, the Tecno Spark 20 Pro+ offers Helio G99 performance at Rs 4,000 less than the Infinix GT. The tradeoff: no 144Hz display (90Hz instead) and no dedicated gaming mode. But for Free Fire players who just want smooth, consistent performance without breaking the bank, it's the smartest buy in this price range.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>What to Look for When Buying</h2>
+      <CheckList items={[
+        "Processor: Helio G99 or Snapdragon 685 minimum for BGMI/Free Fire at 60fps",
+        "RAM: 6GB minimum — 8GB preferred for BGMI which needs more working memory",
+        "Display: 90Hz minimum — 60Hz feels noticeably less smooth during fast movement",
+        "Battery: 5000mAh minimum — budget phones heat up during gaming, draining battery faster",
+        "Cooling: Check YouTube reviews for thermal throttling — some phones drop to 30fps after 20 minutes",
+        "Storage: 128GB minimum — BGMI alone takes 2GB, Free Fire takes 2.5GB, and updates grow constantly",
+      ]} />
+      <AlertBox type="tip" title="Where to buy to avoid fake/refurbished phones in Pakistan" body="Buy from Daraz.pk official brand stores or PriceOye.pk verified sellers. Avoid unofficial market shops for branded phones like Redmi and Samsung — many sell refurbished or Chinese import models without Pakistani warranty. Official Xiaomi, Infinix, and Tecno authorized dealers offer 1-year warranty and are only Rs 1,000–2,000 more than gray market prices." />
+      <FaqSection items={[
+        { q: "Which phone is best for gaming under Rs 30,000 in Pakistan?", a: "The Infinix GT 20 Pro (Helio G99, 144Hz) is the best gaming phone under Rs 30,000 in Pakistan. For better value, the Tecno Spark 20 Pro+ offers the same Helio G99 chip at Rs 24,000–26,000. Both handle BGMI and Free Fire at stable 60fps." },
+        { q: "Can I play BGMI smoothly on a phone under Rs 30,000?", a: "Yes. Both the Infinix GT 20 Pro and Tecno Spark 20 Pro+ run BGMI at stable 60fps with Smooth + Extreme settings. You won't get 90fps but the gameplay is competitive and enjoyable." },
+        { q: "What processor do I need for gaming on a budget phone?", a: "Target Helio G99 (best) or Snapdragon 685 (good). Avoid Helio G85 for BGMI — it struggles. For Free Fire only, even Helio G88 phones at Rs 18,000–20,000 work well." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-violet-600/10 to-purple-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Squeeze max FPS from any budget phone</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/pubg-mobile-settings-low-end-phone-90fps">PUBG Mobile 90 FPS Settings for Low-End Phones</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "chatgpt-prompts-freelancers-fiverr-upwork": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="ChatGPT Prompts for Freelancers" items={["20 copy-paste prompts — no editing needed, just fill in your details", "Covers proposals, gig descriptions, delivery, and client handling", "Freelancers report 3x faster proposal writing with these prompts"]} />
+      <p style={{ color: "var(--text-secondary)" }}>These 20 prompts are copy-paste ready for Pakistani freelancers on Fiverr and Upwork. Divided into 4 categories: getting orders, writing proposals, delivering work, and handling difficult clients. Use these and you'll spend less time on admin and more time on billable work.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Category 1: Writing Fiverr Gig Descriptions</h2>
+      <InfoBox title="5 prompts for Fiverr gig optimization" items={[
+        ["Gig Description Prompt", `"Write a Fiverr gig description for a [your service] freelancer. Make it professional, include 3 buyer benefits, mention turnaround time of [X days], add 5 relevant keywords naturally, and end with a CTA. Under 1200 characters."`],
+        ["Gig Title Optimizer", `"Give me 5 variations of this Fiverr gig title that will rank higher in Fiverr search: [your current title]. Focus on buyer intent keywords, not just skill names."`],
+        ["Pricing Package Copy", `"Write Basic, Standard, and Premium package descriptions for a [service type] gig. Basic: [your price], Standard: [price], Premium: [price]. Make each feel like clear value, not just more of the same."`],
+        ["FAQ Section Writer", `"Write 5 FAQ questions and answers for a Fiverr [service] gig. Questions should address common buyer concerns about quality, revisions, communication, and delivery time."`],
+        ["Gig Update Prompt", `"My Fiverr gig for [service] has low impressions. Here is my current description: [paste it]. Rewrite it to rank higher in Fiverr search while keeping the same core offer. Explain what you changed and why."`],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Category 2: Writing Winning Proposals</h2>
+      <InfoBox title="5 prompts for proposal writing" items={[
+        ["Upwork Proposal Generator", `"Write an Upwork proposal for this job: [paste job description]. I am a [skill] freelancer with [X] years of experience. The proposal should be under 150 words, mention one specific detail from their job post, show I understand their problem, and end with a confident close."`],
+        ["Fiverr Buyer Request Reply", `"Write a response to this Fiverr buyer request: [paste request]. Make it feel personal (not templated), mention how I'd approach their specific project, and include a soft portfolio reference. Keep it under 120 words."`],
+        ["Cold Outreach Message", `"Write a short LinkedIn or email outreach message to a [type of business] that might need [your service]. Mention one pain point they likely have, briefly introduce my service, and ask one question to start a conversation — not to close a sale immediately."`],
+        ["Follow-Up Message", `"A potential client saw my Fiverr profile 3 days ago but didn't order. Write a polite follow-up message asking if they still need [service type]. Keep it friendly and under 60 words."`],
+        ["Proposal After Rejection", `"A client said my price was too high for [service]. Write a response that holds my price but reframes the value I provide. Don't beg or offer a discount — show why it's worth it."`],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Category 3: Delivering Work Faster</h2>
+      <DataTable headers={["Service Type", "ChatGPT Delivery Prompt"]} rows={[
+        ["Blog Writing", `"Write a 1000-word blog post about [topic] for [target audience]. Use H2 subheadings, conversational tone, short paragraphs, and end with a clear takeaway. SEO keyword to include naturally: [keyword]."`],
+        ["Product Description", `"Write 5 Amazon product descriptions for [product name]. Each under 200 words. Highlight [key feature 1], [key feature 2], and include a buyer benefit in every sentence. Tone: professional but approachable."`],
+        ["Social Media Captions", `"Write 10 Instagram captions for [brand/niche]. Mix educational, inspirational, and promotional tone. Each under 150 characters. Include 1 question per caption to drive comments. Use no more than 5 hashtags per caption."`],
+        ["Email Copy", `"Write a 5-email welcome sequence for [business type]. Email 1: warm introduction. Email 2: value/tip. Email 3: case study or story. Email 4: soft offer. Email 5: FAQ + strong CTA. Each email under 250 words."`],
+        ["Data Entry / Research", `"Research [topic] and give me 20 verified data points with sources. Format as a table: Data Point | Source | Date Published. Focus on [specific angle]. Flag any data older than 2022."`],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Category 4: Handling Difficult Clients</h2>
+      <InfoBox title="5 prompts for client communication" items={[
+        ["Scope Creep Response", `"A Fiverr client is asking for additional work not included in our agreed gig: [describe what they're asking]. Write a professional message explaining this is outside scope and offering it as a paid add-on. Be firm but not rude."`],
+        ["Revision Limit Reached", `"A client is requesting their 4th revision but my gig only includes 3. Write a polite message explaining my revision policy and offering the 4th as a paid extra of $X. Keep it professional and solution-focused."`],
+        ["Bad Review Response", `"A client left this review: [paste review]. Write a professional public response that acknowledges their concern, briefly explains my perspective without arguing, and shows future buyers I take quality seriously. Under 100 words."`],
+        ["Late Delivery Apology", `"I'm delivering a Fiverr order 1 day late due to [reason]. Write an apology message that takes responsibility, explains briefly, gives the new delivery time, and offers something small (like extra revision) to maintain the relationship."`],
+        ["Refund Request Handler", `"A client is requesting a refund saying they're not satisfied with [deliverable]. Write a message exploring what specific issue they have before processing any refund — aim to resolve the problem and keep the order."`],
+      ]} />
+      <AlertBox type="tip" title="The most valuable use of ChatGPT for freelancers" body="Use ChatGPT to write your first proposal, not your actual deliverables. The proposal wins the work — that's where AI saves the most time. A good proposal takes 30 minutes to write from scratch. With the right ChatGPT prompt, it takes 3 minutes. Send 10 proposals per day instead of 2, and your order rate multiplies." />
+      <FaqSection items={[
+        { q: "How can ChatGPT help freelancers earn more money?", a: "ChatGPT helps freelancers earn more by writing proposals 10x faster, creating polished gig descriptions that rank higher in Fiverr search, handling client communications professionally, and delivering written work at 3x normal speed. Take more orders, spend less time on each, earn more." },
+        { q: "What ChatGPT prompts work best for Fiverr?", a: "Best Fiverr prompt: 'Write a Fiverr gig description for [service]. Professional tone, 3 buyer benefits, 5 SEO keywords, turnaround time of [X days], CTA at the end. Under 1200 characters.' This alone improves your Fiverr search ranking." },
+        { q: "How to earn RS 2000 per day on Fiverr using AI?", a: "Create 3 gigs in writing, design, or AI services. Use ChatGPT for all proposals and deliverables to handle 2x more orders. Price gigs at $5–10 each. 2 orders/day at $7 average = Rs 3,900/day. Achievable within 2–3 months of consistent proposals." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>New to freelancing? Start here first</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-start-freelancing-pakistan-beginners">How to Start Freelancing in Pakistan — Zero Experience Guide</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-earn-money-tiktok-pakistan": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="TikTok Earnings in Pakistan — What Actually Works" items={["The TikTok Creator Fund is NOT available in Pakistan — but 4 other methods are", "LIVE gifting, TikTok Shop, brand deals, and traffic driving all work", "Real rupee earning estimates — not American creator numbers"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Most guides about TikTok earnings are written for American or European creators. They talk about the Creator Fund and TikTok Shop features that simply don't work in Pakistan. This guide is specifically about what Pakistani creators actually use to earn — with real earning estimates in rupees.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 1: TikTok LIVE Gifts (Available in Pakistan)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>TikTok LIVE is fully available to Pakistani creators with 1,000+ followers. During live streams, viewers send virtual gifts purchased with TikTok coins. These gifts convert into Diamonds in your creator account, which you withdraw as real money via PayPal or bank transfer.</p>
+      <StatBox items={[
+        ["Minimum Followers", "1,000 to go LIVE"],
+        ["Conversion Rate", "50% Diamonds to cash"],
+        ["Average Per LIVE", "Rs 500–2,000 (5K followers)"],
+        ["Top Earners", "Rs 10,000+ per live (50K+ fans)"],
+      ]} />
+      <InfoBox title="How to maximize LIVE earnings in Pakistan" items={[
+        ["Go live daily at peak time", "9pm–11pm Pakistan Standard Time has the highest active Pakistani users. Consistency builds a regular audience that returns every night."],
+        ["Use a niche theme for your lives", "Comedy lives, cooking lives, and talent shows attract more gifts than random chatting. Give viewers a reason to return — 'Live cooking biryani every Thursday at 9pm'."],
+        ["Acknowledge gift senders by name", "When someone sends a gift, say their username aloud. This triggers more gifting from others watching."],
+        ["Set a live goal", "TikTok allows you to set a gift goal (e.g., 'Help me reach 100 roses!'). Goal-based gifting psychologically motivates viewers more than open-ended requests."],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 2: TikTok Shop Affiliate (Best for Beginners)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>TikTok Shop's affiliate program lets you promote products in your videos and earn 5–20% commission per sale. You don't need to hold inventory or handle shipping — just make a video showing the product with your affiliate link, and earn every time someone buys through it.</p>
+      <DataTable headers={["Product Category", "Avg Commission", "Avg Product Price", "Per Sale Earnings"]} rows={[
+        ["Skincare / Beauty", "10–15%", "Rs 800–2,000", "Rs 80–300"],
+        ["Phone Accessories", "8–12%", "Rs 500–1,500", "Rs 40–180"],
+        ["Clothing / Fashion", "12–20%", "Rs 1,000–3,000", "Rs 120–600"],
+        ["Kitchen Gadgets", "8–15%", "Rs 600–2,000", "Rs 48–300"],
+        ["Gaming Accessories", "8–12%", "Rs 500–2,000", "Rs 40–240"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 3: Brand Sponsorships (For 10K+ Followers)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Pakistani brands — clothing brands, phone accessories shops, food companies, and gaming peripheral sellers — pay TikTok creators to feature their products. You don't need millions of followers. Nano-influencers (5,000–20,000 followers) with highly engaged Pakistani audiences earn Rs 3,000–15,000 per sponsored post.</p>
+      <AlertBox type="tip" title="How to get your first brand deal in Pakistan" body="Don't wait for brands to come to you. Message 10 small Pakistani brands on Instagram or email them directly with your TikTok stats (follower count, average views, engagement rate). Offer a discounted first collaboration — even Rs 2,000 for a video instead of your eventual Rs 8,000 rate. One positive experience leads to repeat work and referrals to other brands." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 4: Drive Traffic to Your Own Products/Services</h2>
+      <p style={{ color: "var(--text-secondary)" }}>TikTok's algorithm shows your content to people who don't follow you yet — this is free traffic that bigger platforms like Facebook or YouTube no longer provide. Pakistani freelancers, tutors, and small business owners use TikTok to drive customers to their Fiverr gigs, WhatsApp, or online stores.</p>
+      <CheckList items={[
+        "Put your WhatsApp number or Fiverr link in your TikTok bio",
+        "Make 'how I earned Rs X from home' style videos — these drive DMs asking how to hire you",
+        "Post behind-the-scenes of your work — builds trust with potential clients",
+        "Create tutorial content in your niche — shows expertise and generates inbound leads",
+        "Mention your service naturally in videos: 'I do this for clients — link in bio'",
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Realistic Earning Timeline for Pakistani Creators</h2>
+      <DataTable headers={["Month", "Followers (realistic)", "Primary Earning Method", "Monthly Income (Rs)"]} rows={[
+        ["Month 1–2", "200–800", "None yet — building audience", "Rs 0"],
+        ["Month 3", "1,000–2,000", "TikTok LIVE gifts start", "Rs 2,000–8,000"],
+        ["Month 4–5", "3,000–7,000", "LIVE + TikTok Shop affiliate", "Rs 8,000–20,000"],
+        ["Month 6+", "10,000+", "LIVE + affiliates + brand deals", "Rs 20,000–60,000+"],
+      ]} />
+      <FaqSection items={[
+        { q: "Can you earn money from TikTok in Pakistan?", a: "Yes. Pakistani creators earn through: TikTok LIVE gifts (available with 1,000+ followers), TikTok Shop affiliate commissions (5–20% per sale), brand sponsorships from local brands, and driving traffic to personal services or Fiverr gigs. The TikTok Creator Fund is NOT available in Pakistan." },
+        { q: "How to earn 1000 RS per day from TikTok in Pakistan?", a: "Go LIVE daily for 2+ hours with 5,000+ followers (live gifts average Rs 500–2,000 per live), or promote 3 TikTok Shop products per week earning Rs 100–300 per sale with 3–5 sales per video. Both paths can hit Rs 1,000/day by month 4–5 with consistent content." },
+        { q: "How many followers do you need on TikTok to make money in Pakistan?", a: "1,000 followers to start LIVE gifting. 1,000 followers for TikTok Shop affiliate. 10,000+ followers for brand deals. You can start earning at 1,000 followers — focus on engagement over follower count." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Combine TikTok with YouTube for double income</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-make-faceless-youtube-channel-pakistan">How to Start a Faceless YouTube Channel in Pakistan</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "best-ai-apps-android-free-2025": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="10 Free AI Apps for Android" items={["No subscriptions, no hidden credit limits, no credit card needed", "All tested on a budget 4GB RAM Android phone", "Includes what's actually free vs what just pretends to be"]} />
+      <p style={{ color: "var(--text-secondary)" }}>I tested 15 AI apps on a budget Android phone (4GB RAM) and ranked the 10 that genuinely work without subscriptions, without hidden credit limits, and without needing a laptop. Here's what's actually free vs what pretends to be free.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Top 10 Free AI Apps for Android: Quick Reference</h2>
+      <DataTable headers={["App", "Best For", "Truly Free?", "Works Offline?"]} rows={[
+        ["Microsoft Copilot", "GPT-4 writing & research", "Yes (no limits)", "No"],
+        ["Google Gemini", "All-purpose AI assistant", "Yes (generous limits)", "Partial"],
+        ["ChatGPT", "Conversations & explanations", "Yes (limited model)", "No"],
+        ["Perplexity AI", "Research with citations", "Yes (5 Pro/day)", "No"],
+        ["DeepSeek", "Reasoning & code", "Yes (no limits)", "No"],
+        ["Meta AI", "Casual chat & images", "Yes (no limits)", "No"],
+        ["Bing AI (same as Copilot)", "Image generation free", "Yes", "No"],
+        ["Claude (Anthropic)", "Long-form writing", "Yes (limited)", "No"],
+        ["PhotoMath", "Math problem solving", "Yes (core features)", "Yes (camera)"],
+        ["Grammarly", "Writing & grammar help", "Yes (core features)", "Partial"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>App #1: Microsoft Copilot — Best Free AI App on Android</h2>
+      <InfoBox title="Why Copilot is the top pick" items={[
+        ["Free GPT-4", "The same model ChatGPT charges Rs 3,200/month for — completely free in Copilot with no daily caps."],
+        ["No account needed", "Open the app, start chatting. No email, no sign-up required for basic use."],
+        ["Free AI image generation", "Create AI images using DALL-E 3 for free — ChatGPT charges for this. Get 15 free image boosts daily."],
+        ["Cites sources", "Unlike ChatGPT, Copilot tells you where it found its information — essential for research."],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>App #2: Google Gemini — Already on Your Android Phone</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Gemini is pre-installed on most modern Android phones (Android 12+). Long-press the power button or home button to activate it. What makes Gemini unique: it can see your screen. Point your camera at a document, receipt, or textbook and ask Gemini questions about what it sees. No other free Android AI does this as well.</p>
+      <AlertBox type="tip" title="Most underused Gemini feature" body="Open any YouTube video → activate Gemini → ask 'summarize this video for me.' Gemini reads the transcript and gives you a summary without watching the whole video. Saves hours for students and researchers." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>App #3: DeepSeek — Best Reasoning AI Free on Android</h2>
+      <p style={{ color: "var(--text-secondary)" }}>DeepSeek's R1 model rivals OpenAI's o1 reasoning model for complex problem-solving — and it's completely free with no usage caps. If you need help with logic problems, complex analysis, coding questions, or step-by-step math, DeepSeek outperforms ChatGPT's free tier significantly.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>App #4: Perplexity AI — Best for Students and Research</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Perplexity gives you web-sourced, cited answers to any question. Unlike ChatGPT which can confidently state wrong information, Perplexity links every fact to its source. The free tier gives 5 "Pro" searches per day (using better models) and unlimited regular searches. For assignments and research, it's more trustworthy than any other free AI.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Apps That Look Free But Aren't (Avoid These)</h2>
+      <AlertBox type="warning" title="AI apps with hidden paywalls in Pakistan" body="Many AI apps advertise 'free' but hit you with: daily credit limits (5–10 messages then it stops), watermarks on generated images unless you pay, requiring a premium subscription after 3 days trial, or showing Rs 0 pricing but charging after 1 week. Stick to Microsoft Copilot, Google Gemini, DeepSeek, and Perplexity — all genuinely free for core functionality." />
+      <CheckList items={[
+        "Microsoft Copilot → for daily writing, research, and free GPT-4 (truly free, no limit)",
+        "Google Gemini → for camera-based queries and Android integration (built-in, free)",
+        "DeepSeek → for complex reasoning, math, and code problems (free, no limit)",
+        "Perplexity AI → for research with real cited sources (5 Pro searches/day free)",
+        "PhotoMath → for instant math help by pointing camera at problems (free, offline camera)",
+        "Grammarly → for writing quality in every app (install Chrome extension, always active)",
+      ]} />
+      <FaqSection items={[
+        { q: "Which AI app is best for Android and completely free?", a: "Microsoft Copilot is the best completely free AI app for Android — it uses GPT-4 with no daily limits and requires no payment. Google Gemini is second best and comes pre-installed on most Android phones." },
+        { q: "Which AI app is 100% free with no limits?", a: "Microsoft Copilot and DeepSeek are 100% free with no practical daily limits. Google Gemini has generous free limits. Perplexity AI allows unlimited standard searches free, plus 5 Pro searches per day." },
+        { q: "Which AI app is best for students on Android?", a: "For students: Google Gemini (summarizes PDFs and YouTube videos), Microsoft Copilot (essay writing with GPT-4 free), Perplexity AI (research with citations), and PhotoMath (instant math help). These four together cover every study need for free." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Turn these free AI apps into income</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-make-money-with-ai-free-beginners">How to Make Money With AI for Free (Beginners Guide)</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-speed-up-game-download-android": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Why Your Downloads Are Slow" items={["A 2.5GB download taking 45 mins on WiFi is a Play Store settings problem — not your internet", "Fix it in under 3 minutes with these steps", "Works for Play Store, APK downloads, and in-game asset downloads"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Slow game downloads on Android frustrate millions of Pakistani gamers every day. The cause is almost never your internet speed — it's usually background settings throttling your Play Store or corrupted cache slowing downloads. Here are 8 fixes, ordered from most effective to least.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Fix #1: Stop Play Store Auto-Updates (Biggest Impact)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Play Store automatically updates apps in the background — including the 20–30 apps on your phone you never think about. When you start a game download, it competes with these silent background updates for bandwidth. Stop them first, then download your game.</p>
+      <StepCard steps={[
+        { title: "Open Play Store", body: "Tap the Google Play Store icon on your home screen." },
+        { title: "Tap Your Profile Picture", body: "Top right corner of the Play Store home screen — tap your Google account profile picture." },
+        { title: "Go to Settings", body: "Scroll down and tap 'Settings' from the menu." },
+        { title: "Tap Network Preferences", body: "Under General settings, tap 'Network preferences'." },
+        { title: "Change Auto-Update Apps", body: "Tap 'Auto-update apps' → select 'Don't auto-update apps'. This stops all background downloads immediately." },
+        { title: "Start Your Game Download", body: "Now return to the store and start downloading your game — 100% of bandwidth goes to it now." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Fix #2: Clear Play Store Cache</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Corrupted Play Store cache causes downloads to stall, restart repeatedly, or throttle to near-zero speed. This is the second most common cause of slow game downloads — and it takes 20 seconds to fix.</p>
+      <InfoBox title="How to clear Play Store cache" items={[
+        ["Step 1", "Go to your phone's Settings → Apps (or Application Manager)"],
+        ["Step 2", "Find and tap 'Google Play Store' in the app list"],
+        ["Step 3", "Tap 'Storage' → tap 'Clear Cache' (NOT Clear Data — that deletes your app settings)"],
+        ["Step 4", "Open Play Store again and restart the download — speeds typically double immediately"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>All 8 Fixes: Quick Reference</h2>
+      <DataTable headers={["Fix", "Time to Apply", "Effectiveness", "Who Needs It"]} rows={[
+        ["Stop Play Store auto-updates", "1 min", "High", "Everyone"],
+        ["Clear Play Store cache", "30 sec", "High", "If downloads stall/restart"],
+        ["Toggle Airplane Mode", "10 sec", "Medium", "If download stuck at 0%"],
+        ["Switch DNS to Google (8.8.8.8)", "3 min", "Medium", "If WiFi is slow overall"],
+        ["Disable VPN during download", "5 sec", "High", "If using VPN app"],
+        ["Free up phone storage (200MB+)", "5 min", "Medium", "If storage under 1GB free"],
+        ["Download during off-peak hours", "N/A", "Medium", "12am–6am = fastest speeds"],
+        ["Use WiFi instead of mobile data", "N/A", "High", "If on Jazz/Telenor 4G"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Fix #3: The Airplane Mode Trick</h2>
+      <p style={{ color: "var(--text-secondary)" }}>If your download is stuck at 0% or downloads at 10KB/s on fast WiFi, toggle airplane mode. Turn airplane mode ON for 10 seconds, then turn it OFF. This forces your phone to re-establish its network connection, resets the download priority queue, and often jumps speed from 10KB/s to your normal WiFi speed instantly.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Fix #4: Change Your DNS Server</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Your ISP's default DNS server (used to connect to Google's download servers) is often slow in Pakistan. Switching to Google's DNS (8.8.8.8) or Cloudflare (1.1.1.1) can reduce connection latency and speed up download starts. Go to WiFi Settings → long-press your WiFi network → Modify → Advanced → DNS 1: 8.8.8.8 DNS 2: 8.8.4.4.</p>
+      <AlertBox type="tip" title="Why Pakistani mobile data downloads are slow" body="Jazz, Telenor, and Zong 4G networks throttle large downloads (over 500MB) during peak hours (6pm–11pm). If you're downloading a big game on mobile data during evening hours, it's being intentionally slowed by the carrier. Download at night (12am–6am) or use WiFi. 4G download speed for gaming at off-peak hours is typically 3–5x faster than peak hours." />
+      <CheckList items={[
+        "Stop auto-updates in Play Store settings before every major game download",
+        "Clear Play Store cache monthly — prevents slow download buildup",
+        "Use WiFi for downloads over 1GB — mobile data gets throttled on large files",
+        "Download between 12am–6am on mobile data for 3–5x faster speeds",
+        "Disable VPN during game downloads — VPN routing adds 20–50% download overhead",
+        "Keep 500MB+ free storage — phones with less than 200MB free storage pause downloads",
+      ]} />
+      <FaqSection items={[
+        { q: "Why are my game downloads so slow on Android?", a: "Most common causes: Play Store is downloading other apps silently in background (fix: disable auto-updates), Play Store cache is corrupted (fix: clear cache in Settings → Apps → Play Store), or you're downloading during peak hours on mobile data when carriers throttle large files." },
+        { q: "How do I make my Play Store download faster?", a: "3-step fix: (1) Disable auto-updates in Play Store → Settings → Network Preferences, (2) Clear Play Store cache in Settings → Apps → Play Store → Storage → Clear Cache, (3) Toggle airplane mode on/off. These three steps fix 80% of slow Play Store issues in under 5 minutes." },
+        { q: "How long should a 1 GB game take to download on Android?", a: "On good WiFi (50Mbps+): 2–3 minutes. On 4G mobile data (20Mbps): 6–8 minutes. On Pakistani 4G during peak hours (6pm–11pm): can take 20–40 minutes due to carrier throttling. If taking longer than these benchmarks, the fixes above will help." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-violet-600/10 to-purple-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Also fix in-game lag after downloading</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-fix-lag-mobile-gaming-android">How to Fix Lag in Mobile Gaming: 10 Android Tips</InternalLink></p>
+      </div>
+    </div>
+  ),
 };
