@@ -23390,4 +23390,717 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  "gta-6-release-date-everything-we-know": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        GTA 6 is coming — and after more than a decade of waiting, every confirmed detail about the release date matters.
+      </p>
+
+      <StatBox items={[["2025", "Confirmed launch year"], ["2", "Launch platforms"], ["10+", "Years in development"], ["#1", "Most viewed game trailer ever"]]} />
+
+      <BlogImage src="/images/gta6-cover.png" alt="GTA 6 Official Cover Art" caption="Grand Theft Auto VI — Rockstar Games' most ambitious title yet" />
+
+      <p>
+        Rockstar Games officially confirmed GTA 6 on February 4, 2023, with the release of Trailer 1 — which broke the record for most viewed gaming trailer in 24 hours with over 90 million views. Since then, every official communication has pointed to a <strong>2025 launch window</strong> for PlayStation 5 and Xbox Series X/S.
+      </p>
+
+      <AlertBox type="fire" title="Official Launch Window" body="Rockstar Games has confirmed GTA 6 launches in 2025, exclusively for PS5 and Xbox Series X/S. No exact date has been announced — but Fall 2025 is the industry consensus." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>What Platforms Will GTA 6 Launch On?</h2>
+      <DataTable
+        headers={["Platform", "Launch Status", "Expected Date", "Notes"]}
+        rows={[
+          ["PlayStation 5", "Confirmed", "2025", "Day-one launch platform"],
+          ["Xbox Series X/S", "Confirmed", "2025", "Day-one launch platform"],
+          ["PC", "Not confirmed", "2026-2027", "Expected based on GTA 5 history"],
+          ["PS4 / Xbox One", "Not coming", "Never", "Current-gen only"],
+          ["Nintendo Switch 2", "Not confirmed", "Unknown", "Highly unlikely"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Why Is GTA 6 Taking So Long?</h2>
+      <p>
+        GTA 5 launched in September 2013. That means GTA 6 has been over 12 years in the making — the longest gap between mainline GTA releases. Rockstar co-founder Sam Houser has described GTA 6 as the studio&apos;s most ambitious project to date. Reports from developers confirm the team worked on a scale never attempted before in gaming.
+      </p>
+
+      <InfoBox
+        title="Timeline of GTA 6 announcements"
+        items={[
+          ["Feb 2022", "Rockstar officially confirms GTA 6 is in development"],
+          ["Sep 2022", "Major internal leak exposes 90+ clips of early GTA 6 footage"],
+          ["Feb 2023", "Official Trailer 1 drops — 90M views in 24 hours, breaking all records"],
+          ["Dec 2023", "Rockstar confirms 2025 launch window for PS5 and Xbox Series X"],
+          ["2024", "Trailer 2 released with extended gameplay glimpses and story details"],
+          ["2025", "Pre-orders open; launch imminent"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>When Will GTA 6 Come to PC?</h2>
+      <p>
+        History tells us GTA 5 launched on PS3/Xbox 360 in September 2013, then hit PS4/Xbox One in November 2014, and finally arrived on PC in April 2015 — an 18-month gap. Expect a similar pattern for GTA 6, meaning PC players are looking at <strong>late 2026 or early 2027</strong> at the earliest.
+      </p>
+
+      <HookBanner headline="What we know for certain" items={[
+        "GTA 6 launches in 2025 on PS5 and Xbox Series X/S",
+        "PC version is not confirmed — expect a wait of 12–18 months",
+        "No PS4, Xbox One, or older platform versions are coming",
+        "Trailer 1 confirmed Vice City setting, Lucia as protagonist, and 2025 window",
+        "Pre-orders are expected to open several months before launch",
+      ]} />
+
+      <FaqSection items={[
+        { q: "When is GTA 6 releasing?", a: "GTA 6 is confirmed for a 2025 launch on PS5 and Xbox Series X/S. Rockstar has not pinpointed an exact date, but the Fall 2025 window (September–November) is widely expected by analysts tracking Rockstar's marketing cadence." },
+        { q: "Will GTA 6 come to PC?", a: "No PC release has been confirmed. Based on GTA 5's 18-month console-to-PC delay, PC players should expect GTA 6 in late 2026 or 2027. Rockstar typically waits to maximize console sales before bringing games to PC." },
+        { q: "Is GTA 6 only for PS5 and Xbox Series X?", a: "Yes — GTA 6 is built exclusively for current-gen hardware. PS4, Xbox One, and Nintendo Switch are not supported. This decision allows Rockstar to push technical limits without legacy hardware constraints." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Next: Explore the world</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-map-vice-city-guide">GTA 6 Map Guide: Exploring Vice City and Every New Location</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-map-vice-city-guide": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Vice City is back — and this time it&apos;s bigger, more detailed, and more alive than anything Rockstar has ever built.
+      </p>
+
+      <StatBox items={[["2–3x", "Larger than GTA 5 map"], ["50+", "Distinct areas confirmed"], ["4", "Major biomes"], ["1", "State — Leonida"]]} />
+
+      <BlogImage src="/images/gta6-characters.png" alt="GTA 6 Vice City Streets" caption="Vice City streets at dusk — a reimagined Miami built for next-gen" />
+
+      <p>
+        GTA 6&apos;s setting is the fictional state of <strong>Leonida</strong> — a sprawling recreation of Florida. At its heart is Vice City, the neon-soaked Miami-inspired metropolis fans have been waiting to return to since 2002. But this isn&apos;t just a remake of the old Vice City. It&apos;s an entirely new world built from scratch on modern hardware.
+      </p>
+
+      <AlertBox type="tip" title="Map Scale" body="The GTA 6 map is estimated to be 2-3x the size of GTA 5's Los Santos based on early leaked satellite images and developer interviews. It includes the full state of Leonida, not just the city." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Confirmed Locations in GTA 6</h2>
+      <DataTable
+        headers={["Location", "Real-World Inspiration", "What's There", "Seen In"]}
+        rows={[
+          ["Vice City", "Miami, FL", "Downtown, clubs, beaches, ports", "Trailer 1 & 2"],
+          ["Vice Beach", "Miami Beach", "Luxury hotels, beach strip, boardwalk", "Trailer 1"],
+          ["Leonida Keys", "Florida Keys", "Islands, bridges, water activities", "Trailer 1"],
+          ["Port Gellhorn", "Port of Miami", "Shipping, criminal operations, docks", "Trailer 2"],
+          ["Grassrivers", "Everglades", "Swamps, alligators, off-road terrain", "Trailer 1 & Leak"],
+          ["Small Towns", "Rural Florida", "Gas stations, diners, trailer parks", "Various leaks"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Four Major Biomes</h2>
+      <InfoBox
+        title="GTA 6 map biomes"
+        items={[
+          ["Urban Vice City", "Skyscrapers, beach clubs, luxury districts, nightlife — the beating heart of the map with the most density and activities"],
+          ["Coastal & Islands", "The Leonida Keys stretch south offering boats, island-hopping, water sports, and secluded criminal hideouts"],
+          ["Everglades / Grassrivers", "Florida-inspired wetlands with swamp airboats, wildlife, and backwater criminal networks — a completely new terrain type for GTA"],
+          ["Rural Leonida", "Small towns, highways, countryside ranches, and strip malls inspired by inland Florida — perfect for getaways and exploration"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How Does It Compare to GTA 5?</h2>
+      <p>
+        GTA 5&apos;s Los Santos map was impressive for its time — a detailed recreation of Los Angeles with surrounding desert and mountains. But the GTA 6 map reportedly dwarfs it. While GTA 5 had roughly 81 square kilometers of explorable space, GTA 6&apos;s Leonida is estimated at <strong>175–200 square kilometers</strong> based on leaked materials.
+      </p>
+
+      <HookBanner headline="GTA 6 map highlights" items={[
+        "Vice City — a fully reimagined Miami with 2026 level detail",
+        "The Leonida Keys — Florida Keys-inspired islands connected by bridges",
+        "Grassrivers Swamp — entirely new terrain type new to the GTA series",
+        "Rural Leonida — small towns and highway stretches for long drives",
+        "Estimated 2-3x larger than GTA 5's Los Santos",
+      ]} />
+
+      <FaqSection items={[
+        { q: "Is GTA 6 set in Vice City?", a: "Yes — GTA 6 returns to Vice City (Miami) for the first time since GTA: Vice City Stories in 2006. The city is dramatically expanded and set within the broader fictional state of Leonida, which includes beaches, swamps, Keys-style islands, and rural areas." },
+        { q: "How big is the GTA 6 map compared to GTA 5?", a: "GTA 6's map is estimated to be 2-3x larger than GTA 5. GTA 5 covered roughly 81 square kilometers. GTA 6's Leonida state is estimated at 175–200 square kilometers based on satellite map leaks and developer hints." },
+        { q: "What locations are confirmed in GTA 6?", a: "Confirmed GTA 6 locations include Vice City downtown, Vice Beach, the Leonida Keys, Port Gellhorn, Grassrivers wetlands, and multiple small rural towns spread across the state of Leonida." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Meet the protagonists</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-characters-lucia-jason">GTA 6 Characters: Meet Lucia and Jason</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-characters-lucia-jason": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        For the first time in 30 years of GTA, you play as a woman. Meet Lucia — and her partner Jason.
+      </p>
+
+      <StatBox items={[["1st", "Female GTA protagonist"], ["2", "Playable characters"], ["Bonnie & Clyde", "Story inspiration"], ["2025", "Their debut"]]} />
+
+      <BlogImage src="/images/gta6-characters.png" alt="GTA 6 Lucia and Jason Characters" caption="Lucia and Jason — GTA 6's dual protagonists inspired by Bonnie and Clyde" />
+
+      <p>
+        When GTA 6 Trailer 1 dropped, the world got its first look at Lucia — a Latina woman navigating Vice City&apos;s criminal underworld. She&apos;s joined by Jason, her partner and co-protagonist. Together, they form GTA&apos;s most compelling duo since the series began in 1997.
+      </p>
+
+      <AlertBox type="fire" title="Historic moment" body="Lucia is the first playable female protagonist in a mainline Grand Theft Auto game in the series' 28-year history. This is not a DLC character — she is the primary lead of GTA 6's story." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Lucia — The Primary Protagonist</h2>
+      <InfoBox
+        title="What we know about Lucia"
+        items={[
+          ["Background", "Latina woman, shown being released from Leonida Correctional Facility at the start of the story"],
+          ["Personality", "Determined, street-smart, emotionally complex — motivated by survival and loyalty to those she cares about"],
+          ["Criminal history", "Prior convictions, well-connected in Vice City&apos;s underworld, and highly capable in combat and planning"],
+          ["Story role", "Primary protagonist — most trailers focus on her perspective and emotional arc"],
+          ["Gameplay style", "Expected to have unique abilities focused on precision and social manipulation mechanics"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Jason — The Partner</h2>
+      <InfoBox
+        title="What we know about Jason"
+        items={[
+          ["Background", "Lucia&apos;s partner and love interest — a Vice City local with deep criminal ties"],
+          ["Personality", "Loyal, impulsive, and charismatic — the wild card energy to Lucia&apos;s calculated approach"],
+          ["Story role", "Co-protagonist — Jason&apos;s storyline intersects with and diverges from Lucia&apos;s across the campaign"],
+          ["Gameplay style", "Expected to have brute-force and vehicle-focused abilities that complement Lucia&apos;s skillset"],
+          ["Relationship", "Their bond is central to the story — the game&apos;s tension stems from external threats to their partnership"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How Does Character Switching Work?</h2>
+      <p>
+        Like GTA 5&apos;s three-character system, GTA 6 lets players switch between Lucia and Jason during open-world exploration. In story missions, one character may be locked in — certain heists and story beats play out from a specific character&apos;s perspective, raising the stakes by making both protagonists feel essential.
+      </p>
+
+      <DataTable
+        headers={["Feature", "Lucia", "Jason"]}
+        rows={[
+          ["Combat Focus", "Precision & stealth", "Brute force & driving"],
+          ["Story Role", "Primary protagonist", "Co-protagonist"],
+          ["Background", "Recently released convict", "Vice City local criminal"],
+          ["Personality", "Calculated, determined", "Impulsive, loyal"],
+          ["Special Ability", "Likely stealth/manipulation", "Likely strength/vehicles"],
+        ]}
+      />
+
+      <HookBanner headline="Why Lucia matters" items={[
+        "First playable female protagonist in 28 years of Grand Theft Auto",
+        "Represents a major narrative shift — GTA 6 explores her emotional story, not just action",
+        "Latina representation in gaming's biggest franchise is a landmark moment",
+        "Her partnership with Jason creates moral tension that drives the entire plot",
+        "Character switching lets players experience both sides of every major story beat",
+      ]} />
+
+      <FaqSection items={[
+        { q: "Who are the playable characters in GTA 6?", a: "GTA 6 has two playable protagonists: Lucia, a Latina woman and the first female lead in mainline GTA history, and Jason, her criminal partner. Their Bonnie-and-Clyde-inspired story is the emotional core of the game." },
+        { q: "Can you switch between Lucia and Jason?", a: "Yes — GTA 6 features a character-switching system similar to GTA 5. You can swap between Lucia and Jason in free roam. During certain story missions, the game locks you into one character to serve the narrative." },
+        { q: "Is Lucia the main character in GTA 6?", a: "Lucia is the primary protagonist based on her prominence in trailers, marketing, and the game's official reveal. Jason is her co-lead, but Lucia&apos;s emotional journey anchors the GTA 6 story." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>See how GTA 6 upgrades everything</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-vs-gta-5-comparison">GTA 6 vs GTA 5: Every Major Upgrade and Change</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-vs-gta-5-comparison": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        GTA 5 sold 200 million copies and dominated gaming for 12 years. GTA 6 is here to replace it — here&apos;s what changed.
+      </p>
+
+      <StatBox items={[["200M+", "GTA 5 copies sold"], ["12 yrs", "Between launches"], ["2–3x", "Bigger map in GTA 6"], ["1st", "Female GTA lead"]]} />
+
+      <BlogImage src="/images/gta6-online.png" alt="GTA 6 vs GTA 5 Comparison" caption="GTA 6 builds on everything GTA 5 established — and then some" />
+
+      <p>
+        GTA 5 released on September 17, 2013 — and became one of the most successful entertainment products in human history. In 2025, GTA 6 arrives to succeed it. But GTA 6 isn&apos;t just an updated reskin. Nearly every system has been rebuilt from scratch, and the results are generational.
+      </p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Head-to-Head Comparison</h2>
+      <DataTable
+        headers={["Feature", "GTA 5", "GTA 6"]}
+        rows={[
+          ["Setting", "Los Santos (LA)", "Vice City + Leonida (Miami/FL)"],
+          ["Map Size", "81 sq km", "~175–200 sq km (estimated)"],
+          ["Protagonists", "3 male characters", "2 chars — Lucia (female) + Jason"],
+          ["Graphics Engine", "RAGE (2013, upgraded)", "New-gen RAGE — ray tracing, 4K"],
+          ["NPC AI", "Basic routines", "Advanced dynamic behavior"],
+          ["Platforms", "PS3 to PC (multiple gens)", "PS5 & Xbox Series X only"],
+          ["GTA Online", "Separate live-service", "Integrated online from launch"],
+          ["Physics", "Good for its era", "Next-gen water, damage, animation"],
+          ["Story Tone", "Action comedy", "Emotional crime drama (Bonnie/Clyde)"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Graphics: No Contest</h2>
+      <p>
+        GTA 5&apos;s visuals were spectacular for 2013. But GTA 6 runs on hardware 10x more powerful and features ray tracing, 4K dynamic resolution, and photorealistic lighting that makes GTA 5 look dated by comparison. Vice City at night, with neon signs reflecting off wet pavement and realistic car paint — it&apos;s a next-level visual experience.
+      </p>
+
+      <AlertBox type="tip" title="Performance Modes in GTA 6" body="GTA 6 will offer a Performance Mode (60fps, dynamic 4K) and Quality Mode (30fps, native 4K + ray tracing) on both PS5 and Xbox Series X. GTA 5 maxed out at 60fps on PS5 with no ray tracing support." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Story and Characters</h2>
+      <p>
+        GTA 5 gave us Michael, Trevor, and Franklin — three male protagonists in a heist-driven story with sharp satirical comedy. GTA 6 takes a different tone. Lucia and Jason&apos;s Bonnie-and-Clyde story is grounded in emotional stakes, survival, and loyalty — a more cinematic, character-driven narrative.
+      </p>
+
+      <InfoBox
+        title="What GTA 6 keeps from GTA 5"
+        items={[
+          ["Open world freedom", "The sandbox formula that made GTA 5 a classic is back — bigger and more detailed"],
+          ["Character switching", "The beloved GTA 5 protagonist-swap mechanic carries into GTA 6 with Lucia and Jason"],
+          ["GTA Online", "The massively popular online mode returns, rebuilt for the GTA 6 era"],
+          ["Heist structure", "Major heists remain a centerpiece of the GTA experience"],
+          ["Satirical world", "GTA 6&apos;s Vice City will be full of social commentary and absurd NPC dialogue"],
+        ]}
+      />
+
+      <HookBanner headline="GTA 6 vs GTA 5 — the verdict" items={[
+        "GTA 6 is larger, more detailed, and more technically advanced in every measurable way",
+        "The story trades GTA 5's broad comedy for emotional depth — Lucia and Jason are more relatable protagonists",
+        "GTA Online is rebuilt — fresh economy, new Vice City map, next-gen systems from day one",
+        "GTA 5 still has 10+ years of Online content; GTA 6 Online starts from scratch",
+        "If you still play GTA 5 Online, keep it — GTA 6 is a new ecosystem, not a continuation",
+      ]} />
+
+      <FaqSection items={[
+        { q: "Is GTA 6 better than GTA 5?", a: "On pure technical metrics — yes, GTA 6 is better in every way: bigger map, better graphics, smarter NPC AI, a female protagonist, and deeper story. However, GTA 5 Online&apos;s 10+ years of content is still unmatched. GTA 6 Online starts fresh." },
+        { q: "What is the biggest improvement in GTA 6 over GTA 5?", a: "The three biggest improvements: (1) a map 2-3x larger with entirely new biomes, (2) the first female protagonist in GTA history, and (3) a dramatically smarter NPC AI system that reacts dynamically to player behavior." },
+        { q: "Will GTA Online carry over to GTA 6?", a: "No. GTA Online progress from GTA 5 will not transfer to GTA 6. Rockstar is launching GTA 6 Online as a fresh experience with a new map, new economy, and new progression — starting from zero." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Explore the multiplayer</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-online-multiplayer-2025">GTA 6 Online: Everything We Know About Multiplayer</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-online-multiplayer-2025": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        GTA Online generated $1 billion+ for Rockstar. GTA 6 Online is being built to surpass that — here&apos;s what&apos;s coming.
+      </p>
+
+      <StatBox items={[["$1B+", "GTA Online revenue"], ["32+", "Players per session (est.)"], ["Day 1", "Online mode at launch"], ["New", "Vice City Online world"]]} />
+
+      <BlogImage src="/images/gta6-online.png" alt="GTA 6 Online Multiplayer" caption="GTA 6 Online — the next era of Rockstar's live-service multiplayer" />
+
+      <p>
+        GTA Online launched with GTA 5 in October 2013 and has been running for over a decade. It&apos;s one of the most successful online gaming platforms ever built. Now GTA 6 is introducing a rebuilt version set in Vice City, designed from day one to avoid the balancing problems that plagued GTA Online in its early years.
+      </p>
+
+      <AlertBox type="fire" title="GTA 6 Online launches Day One" body="Unlike GTA 5, where Online launched separately weeks after the single-player, GTA 6 Online is confirmed to be available on launch day alongside the story mode." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>What&apos;s New in GTA 6 Online</h2>
+      <InfoBox
+        title="GTA 6 Online confirmed and expected features"
+        items={[
+          ["Vice City Online", "The full GTA 6 map — Vice City + Leonida state — available for up to 32+ players per session"],
+          ["Heists", "Multi-step cooperative heists rebuilt with deeper mission trees and more roles per job"],
+          ["Property System", "New properties to buy and upgrade including clubs, warehouses, businesses, and safe houses"],
+          ["Economy Balance", "Rockstar has committed to better-balanced progression to reduce the grind that frustrated GTA Online players"],
+          ["Social Spaces", "New social hubs in Vice City where players can interact, gamble, race, and socialize"],
+          ["Events & Rotations", "Dynamic world events that appear in the open world — less static mission-board grinding"],
+          ["Duo Play", "Special content designed for Lucia/Jason-inspired duo missions with a partner"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Heists in GTA 6 Online</h2>
+      <p>
+        Heists were GTA Online&apos;s biggest hit. GTA 6 Online expands on them significantly. Reports suggest heists will feature more branching approaches, larger crew sizes, and multi-day mission structures where preparatory work actually changes how the heist plays out — rather than fixed setup + finale missions.
+      </p>
+
+      <DataTable
+        headers={["Feature", "GTA Online (GTA 5)", "GTA 6 Online"]}
+        rows={[
+          ["Map", "Los Santos", "Vice City + Leonida State"],
+          ["Max Players", "30 per session", "32+ per session (est.)"],
+          ["Launch Status", "Separate, delayed", "Day One at launch"],
+          ["Heist Structure", "Setup + Finale format", "Branching multi-day missions"],
+          ["Economy", "Shark Cards controversy", "Rebalanced from day one"],
+          ["Properties", "Offices, bunkers, MCs", "New Vice City properties"],
+        ]}
+      />
+
+      <HookBanner headline="GTA 6 Online key facts" items={[
+        "Full Vice City + Leonida state available for multiplayer from day one",
+        "Heists rebuilt with branching structure and larger crew support",
+        "Economy redesigned to reduce grind — lessons learned from GTA Online",
+        "Social hubs and dynamic world events for organic multiplayer moments",
+        "Progress does not carry over from GTA Online — fresh start for everyone",
+      ]} />
+
+      <FaqSection items={[
+        { q: "Will GTA 6 have online multiplayer?", a: "Yes. GTA 6 Online is confirmed for day-one launch alongside the story mode. It features a full Vice City + Leonida state map for 32+ players, with heists, businesses, properties, and social activities." },
+        { q: "When does GTA 6 Online launch?", a: "GTA 6 Online launches on the same day as GTA 6 itself — in 2025. Unlike GTA 5, which released Online separately in October 2013 after the September single-player launch, GTA 6 Online goes live on day one." },
+        { q: "What's new in GTA 6 Online compared to GTA Online?", a: "GTA 6 Online features a bigger Vice City map, day-one launch, redesigned economy, branching heist missions, new property types, and better-balanced progression designed to fix the grind problems that frustrated longtime GTA Online players." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Check the graphics breakdown</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-graphics-ps5-xbox-series-x">GTA 6 Graphics: PS5 vs Xbox Series X Performance</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-graphics-ps5-xbox-series-x": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        GTA 6 is the first GTA built exclusively for current-gen hardware — and the visuals prove it.
+      </p>
+
+      <StatBox items={[["4K", "Target resolution"], ["60fps", "Performance mode"], ["Ray Tracing", "On both consoles"], ["HDR", "Full support"]]} />
+
+      <BlogImage src="/images/gta6-cover.png" alt="GTA 6 Graphics Showcase" caption="Vice City at night — ray-traced reflections on rain-slicked streets" />
+
+      <p>
+        GTA 6 is the first Grand Theft Auto game built exclusively for PlayStation 5 and Xbox Series X/S. No last-gen compromises. Rockstar has spent over a decade on this game, and the graphical leap is immediately obvious. From rain-soaked Vice City streets to the shimmering Leonida coastline, GTA 6 pushes next-gen hardware to its limits.
+      </p>
+
+      <AlertBox type="tip" title="Two Graphics Modes Available" body="GTA 6 will offer Performance Mode (targets 60fps at dynamic 4K) and Quality Mode (targets 30fps at native 4K with full ray tracing). Both are available on PS5 and Xbox Series X." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>PS5 vs Xbox Series X Technical Breakdown</h2>
+      <DataTable
+        headers={["Spec", "PS5", "Xbox Series X"]}
+        rows={[
+          ["GPU Power", "10.28 TFLOPS", "12.0 TFLOPS"],
+          ["SSD Speed", "5.5 GB/s (raw)", "2.4 GB/s (raw)"],
+          ["Performance Mode", "60fps / Dynamic 4K", "60fps / Dynamic 4K"],
+          ["Quality Mode", "30fps / Native 4K + RT", "30fps / Native 4K + RT"],
+          ["Ray Tracing", "Full support", "Full support"],
+          ["Load Times", "Faster (SSD advantage)", "Slightly longer loads"],
+          ["Visual Parity", "Near-identical", "Near-identical"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Ray Tracing in GTA 6</h2>
+      <p>
+        Ray tracing in GTA 6 transforms Vice City at night. Neon signs from clubs and restaurants cast colored reflections across wet pavement. Car paint reflects the surrounding environment in real time. Shop windows show actual reflections of the city, not pre-rendered approximations. The effect is most dramatic during rain — which GTA 6 simulates in stunning physical detail.
+      </p>
+
+      <InfoBox
+        title="Where ray tracing makes the biggest impact in GTA 6"
+        items={[
+          ["Night driving in Vice City", "Neon reflections on car hoods and wet roads look photorealistic — completely transforms the city vibe"],
+          ["Ocean and canal water", "Water surfaces reflect Vice City&apos;s skyline with dynamic ripple physics never seen in GTA before"],
+          ["Car paint and glass", "Vehicles show real-time environmental reflections on every surface — paint jobs look dramatically better"],
+          ["Indoor environments", "Casinos, clubs, and apartments benefit from accurate light bounce off surfaces and realistic shadows"],
+          ["Explosive effects", "Fire and explosion lighting interacts realistically with nearby surfaces — not just a pre-baked effect"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Which Console Is Better for GTA 6?</h2>
+      <p>
+        Based on current technical analyses of trailer footage and hardware specs, the two versions of GTA 6 are virtually identical visually. The Xbox Series X has a slight GPU advantage (12 TFLOPS vs PS5&apos;s 10.28), but PS5&apos;s SSD is considerably faster — meaning shorter load times when entering properties, switching between areas, or dying and respawning.
+      </p>
+
+      <HookBanner headline="GTA 6 graphics verdict" items={[
+        "Both PS5 and Xbox Series X versions target 60fps in Performance Mode and 4K+RT in Quality Mode",
+        "Visual quality is near-identical across both platforms",
+        "PS5&apos;s faster SSD means shorter load times — a meaningful quality-of-life advantage",
+        "Ray tracing transforms Vice City at night — neon + rain = cinematic",
+        "PC version (when it arrives) will surpass console in resolution and frame rate with high-end hardware",
+      ]} />
+
+      <FaqSection items={[
+        { q: "What resolution does GTA 6 run at on PS5?", a: "GTA 6 on PS5 targets 4K (dynamic scaling in Performance Mode, native in Quality Mode). Performance Mode aims for 60fps at dynamic 4K. Quality Mode targets 30fps at native 4K with full ray tracing enabled." },
+        { q: "Does GTA 6 support ray tracing?", a: "Yes — GTA 6 supports ray tracing on both PS5 and Xbox Series X. In Quality Mode (30fps), full ray tracing is active. In Performance Mode (60fps), ray tracing may be reduced or disabled to maintain frame rate." },
+        { q: "Is GTA 6 better on PS5 or Xbox Series X?", a: "Visually, both versions are near-identical. PS5 loads faster thanks to its 5.5 GB/s SSD. Xbox Series X has a slight GPU advantage but uses that to match PS5&apos;s visual targets. Choose based on your existing console and friends list." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Explore the story</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-story-plot-details">GTA 6 Story: Full Plot Details and Everything Confirmed</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-story-plot-details": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        GTA 6&apos;s story is its most ambitious yet — a Bonnie and Clyde crime saga set in the neon heart of Vice City.
+      </p>
+
+      <StatBox items={[["Bonnie & Clyde", "Narrative inspiration"], ["2", "Protagonists"], ["Vice City", "Setting"], ["80–100+", "Expected missions"]]} />
+
+      <BlogImage src="/images/gta6-characters.png" alt="GTA 6 Story - Lucia and Jason" caption="Lucia and Jason — partners in crime at the center of GTA 6's emotional story" />
+
+      <p>
+        Every mainline GTA game tells a different kind of crime story. GTA 3 was a silent revenge tale. GTA San Andreas was a gang loyalty epic. GTA 5 was a heist comedy with sharp satire. GTA 6 is something new — an emotional crime drama centered on two people in love who are also very good at robbing things.
+      </p>
+
+      <AlertBox type="fire" title="The Bonnie & Clyde Angle" body="Rockstar Games has directly confirmed that GTA 6's story is inspired by the real-life Bonnie and Clyde — drawing on themes of romantic partnership, criminal ambition, and the inevitable cost of living outside the law." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>The Story We Know So Far</h2>
+      <StepCard steps={[
+        { title: "The Beginning — Lucia Gets Out", body: "The story opens with Lucia being released from Leonida State Correctional Facility. We see her frustration and determination to build something better — but Vice City has other plans." },
+        { title: "Meeting (Or Reuniting With) Jason", body: "Lucia reconnects with Jason, her partner. Their history is complicated — hints of prior crimes, shared loyalty, and romantic tension inform their dynamic from the first scene." },
+        { title: "Small Crimes Escalate", body: "What begins as survival — gas station robberies, small heists — escalates as the couple&apos;s reputation grows and larger criminal organizations take notice of them." },
+        { title: "Vice City&apos;s Underworld", body: "The duo gets drawn into Vice City&apos;s criminal hierarchy — cartels, corrupt law enforcement, real estate criminals, and influencer-era social media all play roles in the story&apos;s world." },
+        { title: "The Cost of the Life", body: "GTA 6&apos;s story appears to explore the emotional toll of criminal life — loyalty under pressure, moral compromise, and what happens when the people you love become liabilities." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Themes and Tone</h2>
+      <InfoBox
+        title="GTA 6 story themes"
+        items={[
+          ["Romance and loyalty", "The central emotional engine — Lucia and Jason&apos;s relationship is tested repeatedly by their criminal lives"],
+          ["Class and inequality", "Vice City&apos;s extreme wealth disparity is a backdrop — the gap between luxury condos and trailer parks fuels the story&apos;s anger"],
+          ["Social media culture", "GTA 6 satirizes influencer culture, viral crime videos, and the spectacle of modern lawlessness in Florida"],
+          ["Survival vs. ambition", "Lucia started wanting to survive — how far will she go when survival becomes opportunity?"],
+          ["Corrupt institutions", "Vice City&apos;s police, politicians, and real estate developers are as criminal as the protagonists — GTA&apos;s classic institutional satire"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Mission Count and Structure</h2>
+      <p>
+        Rockstar hasn&apos;t confirmed GTA 6&apos;s mission count. GTA 5 had 69 main story missions plus dozens of side missions across three characters. GTA 6, with a larger world, two protagonists, and reportedly a longer campaign, is expected to exceed that. Industry estimates suggest <strong>80–100+ missions</strong> when story and character-specific content is counted.
+      </p>
+
+      <HookBanner headline="GTA 6 story highlights" items={[
+        "First mainline GTA with a Bonnie-and-Clyde romantic partnership at the center",
+        "Lucia&apos;s arc starts post-prison — a character with history before the game begins",
+        "Vice City&apos;s social media culture and influencer world are key satirical targets",
+        "Story is described as more emotionally grounded than GTA 5&apos;s broader comedy",
+        "Expected 80–100+ missions — Rockstar&apos;s most ambitious campaign",
+      ]} />
+
+      <FaqSection items={[
+        { q: "What is the story of GTA 6?", a: "GTA 6 follows Lucia and Jason, two criminals in Vice City inspired by Bonnie and Clyde. Lucia, recently released from prison, and Jason reunite to run jobs across the city — but their growing reputation attracts dangerous enemies. The story explores love, loyalty, and survival." },
+        { q: "How many missions are in GTA 6?", a: "Rockstar hasn&apos;t confirmed the number, but GTA 6 is expected to have 80–100+ missions based on the larger world, dual protagonists, and developer comments about their most ambitious campaign. GTA 5 had 69 main missions for comparison." },
+        { q: "Is GTA 6 connected to GTA 5?", a: "GTA 6 is set in a different city (Vice City vs Los Santos) with entirely new characters — it&apos;s not a direct sequel. However, it exists in the same fictional GTA universe and may contain subtle references to events and characters from prior games." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Ready to buy? Check editions</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-preorder-editions-price">GTA 6 Pre-Order Guide: All Editions, Prices and Bonus Content</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-preorder-editions-price": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Before GTA 6 drops, know exactly which edition to buy — and whether the pre-order bonuses are actually worth it.
+      </p>
+
+      <StatBox items={[["$69.99", "Standard edition (est.)"], ["3+", "Expected editions"], ["Day 1", "Digital access on pre-order"], ["2025", "Launch year"]]} />
+
+      <BlogImage src="/images/gta6-cover.png" alt="GTA 6 Pre-Order Guide" caption="GTA 6 — the most pre-ordered game of 2025" />
+
+      <p>
+        GTA 6 will be the biggest game launch of 2025. Pre-ordering means guaranteed day-one access, possible digital bonuses, and — for physical buyers — avoiding stock shortages. But which edition is right for you? Here&apos;s everything you need to know before clicking Buy.
+      </p>
+
+      <AlertBox type="warning" title="Pre-Order Price Note" body="Official GTA 6 editions and exact prices haven't been confirmed by Rockstar as of early 2025. Prices below reflect industry standards based on GTA 5's editions and current-gen game pricing patterns." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Expected GTA 6 Editions</h2>
+      <DataTable
+        headers={["Edition", "Est. Price", "Key Extras", "Best For"]}
+        rows={[
+          ["Standard", "$69.99", "Base game only", "Everyone — just play GTA 6"],
+          ["Premium / Deluxe", "$89.99", "In-game cash, bonus vehicle, early unlock", "GTA Online starters"],
+          ["Collector&apos;s", "$149.99+", "Art book, steelbook, exclusive map, figurine", "Collectors & hardcore fans"],
+          ["Digital Deluxe", "$89.99", "Digital bonuses + early access (est.)", "Digital-only players"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Where to Pre-Order GTA 6</h2>
+      <InfoBox
+        title="Best places to pre-order GTA 6"
+        items={[
+          ["PlayStation Store", "Digital — instant download at midnight launch, no disc needed, PS5 exclusive bonuses possible"],
+          ["Xbox Store", "Digital — same benefits as PSN, automatic download ready at launch"],
+          ["GameStop", "Physical + digital — often has exclusive pre-order bonuses and midnight launch events"],
+          ["Amazon", "Physical — reliable delivery, release-day shipping for Prime members"],
+          ["Best Buy", "Physical + digital — Gamers Club Unlocked savings if applicable"],
+          ["Rockstar Warehouse", "Official Rockstar store — most likely location for Collector&apos;s Edition"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Are Pre-Order Bonuses Worth It?</h2>
+      <p>
+        Based on GTA 5&apos;s pre-order pattern, GTA 6 pre-order bonuses will likely include: GTA Online cash cards, an exclusive vehicle (car or motorcycle), and possibly a character customization item. These bonuses are genuinely useful in GTA Online&apos;s early economy — but they don&apos;t affect the story mode experience at all.
+      </p>
+
+      <CheckList items={[
+        "Pre-order if you know you&apos;re buying day one — there&apos;s no downside to locking in at the same price",
+        "Digital pre-orders auto-download before launch — no waiting for a disc or store to open",
+        "GTA Online cash bonuses from pre-orders help in the early economy when everyone starts fresh",
+        "Collector&apos;s Edition is worth it only if you want physical memorabilia — in-game content is similar to Premium",
+        "Do NOT pre-order from unofficial third-party sellers — only buy from official retailers listed above",
+      ]} />
+
+      <HookBanner headline="Pre-order decision guide" items={[
+        "Just want to play GTA 6? Standard Edition ($69.99) is perfect",
+        "Plan to go deep on GTA 6 Online? Premium/Deluxe Edition for cash and vehicle bonuses",
+        "Hardcore GTA fan who wants physical collectibles? Wait for Collector&apos;s Edition details",
+        "Digital player? Digital Deluxe for early unlock potential and bonuses",
+        "Pre-ordering guarantees your copy and locks in launch-day pricing",
+      ]} />
+
+      <FaqSection items={[
+        { q: "How much will GTA 6 cost?", a: "GTA 6 is expected to cost $69.99 USD for the Standard Edition — the current-gen standard price on PS5 and Xbox Series X. Premium and Collector&apos;s editions will likely range from $89.99 to $149.99+" },
+        { q: "Is GTA 6 worth pre-ordering?", a: "Yes, if you know you&apos;re buying GTA 6 at launch. You lock in the price, get automatic download access, and receive any pre-order bonuses (expected to include GTA Online cash and an exclusive vehicle). There&apos;s no financial risk since you can cancel before launch." },
+        { q: "Where can I pre-order GTA 6?", a: "You can pre-order GTA 6 through PlayStation Store, Xbox Store, GameStop, Amazon, Best Buy, and Rockstar&apos;s official website. Digital pre-orders through the PS Store or Xbox Store offer the smoothest launch-day access." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Discover what&apos;s new</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-new-features-top-10">Top 10 New GTA 6 Features That Change Open-World Gaming</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-new-features-top-10": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        GTA 6 doesn&apos;t just evolve the open-world formula — it redefines it. Here are the 10 features that change everything.
+      </p>
+
+      <StatBox items={[["10", "Game-changing features"], ["12 yrs", "In development"], ["Next-gen", "Exclusive build"], ["2025", "When it lands"]]} />
+
+      <BlogImage src="/images/gta6-online.png" alt="GTA 6 New Features" caption="GTA 6 — 10 features that will influence open-world games for years" />
+
+      <p>
+        Rockstar didn&apos;t spend 12 years and an estimated $2 billion+ making a bigger version of GTA 5. GTA 6 introduces systems and features that will influence every open-world game released after it. Here are the 10 most groundbreaking.
+      </p>
+
+      <StepCard steps={[
+        { title: "1. The First Female Protagonist in GTA History", body: "Lucia isn&apos;t just a token female character — she&apos;s the primary lead of a story built around her emotional arc. GTA 6 is the first mainline game in 28 years of the franchise to make a woman the face of the experience. This changes how Rockstar tells crime stories forever." },
+        { title: "2. The Largest Open World in GTA History", body: "The Leonida state map — including Vice City and surrounding regions — is estimated at 175–200 square kilometers. GTA 5&apos;s Los Santos was 81 sq km. This isn&apos;t just bigger; it&apos;s diverse — beaches, swamps, rural towns, and urban density all in one contiguous world." },
+        { title: "3. Advanced NPC AI with Dynamic Behavior", body: "GTA 6&apos;s NPCs have daily schedules, remember player actions, and react dynamically to crime. An NPC you robbed yesterday might avoid you on the street. Bystanders film crimes on their phones. The world feels alive in ways no GTA game has managed before." },
+        { title: "4. Social Media Mechanic In-Game", body: "Vice City has a working in-game social media platform. Players&apos; criminal acts can go viral in-game — attracting heat from police or earning street rep. NPCs post about events they witness, creating a living digital layer over the physical world." },
+        { title: "5. Next-Gen Physics Simulation", body: "Water in GTA 6 behaves differently — ocean currents affect swimming and boats, rain creates puddles that interact with tires, and mud in the swamps actually slows vehicles. Vehicle damage is more realistic, and character movement is more physically grounded than ever." },
+        { title: "6. Realistic Economy and Business Systems", body: "Vice City&apos;s economy is dynamic. Property values change based on events. Businesses you rob become shell companies. The criminal economy feels like a system — not just a backdrop. GTA 6 Online inherits this for a more complex player-driven economy." },
+        { title: "7. Dual Protagonist Story Integration", body: "Unlike GTA 5 where Michael, Trevor, and Franklin often felt like separate games stitched together, Lucia and Jason&apos;s stories are deeply interwoven. Their choices affect each other, and certain missions can only be accessed by completing both characters&apos; story threads." },
+        { title: "8. Dynamic Weather and Its Impact on Gameplay", body: "GTA 6 features hurricane-level weather events that actually change the city. Flooding closes roads, creates new waterways, and drives NPCs indoors. This isn&apos;t just visual — weather is a gameplay mechanic that opens and closes mission opportunities." },
+        { title: "9. GTA Online Rebuilt from Day One", body: "GTA 6 Online launches on day one with a redesigned economy, better balancing, and a new Vice City world. Rockstar has specifically stated they learned from GTA Online&apos;s growing pains and built GTA 6 Online with long-term player experience in mind." },
+        { title: "10. Ray Tracing and Photorealistic Visuals", body: "GTA 6 is the first GTA built without hardware compromises. Ray tracing on PS5 and Xbox Series X makes Vice City at night look unlike anything in the series. Car reflections, neon signs, water surfaces, and environmental lighting reach a new visual bar for open-world games." },
+      ]} />
+
+      <HookBanner headline="Why GTA 6 is a new benchmark" items={[
+        "First female GTA protagonist after 28 years — changes the franchise&apos;s identity",
+        "Largest GTA map ever — Vice City + all of Leonida state",
+        "NPC AI that remembers you and reacts dynamically to your behavior",
+        "Social media as a game mechanic — your crimes can go viral in-game",
+        "GTA 6 Online rebuilt from scratch with better economy and day-one launch",
+      ]} />
+
+      <FaqSection items={[
+        { q: "What are the biggest new features in GTA 6?", a: "GTA 6&apos;s 5 biggest innovations: (1) first playable female protagonist Lucia, (2) largest GTA map ever (Leonida state), (3) advanced NPC AI with dynamic reactions and memory, (4) in-game social media mechanic, and (5) next-gen physics including realistic water and dynamic weather." },
+        { q: "Does GTA 6 have realistic NPC AI?", a: "Yes — GTA 6&apos;s NPC AI is a generational leap. NPCs have daily schedules, react contextually to crimes, remember prior player interactions, film events on phones, and exhibit hundreds of new behavior patterns. The city feels like a living ecosystem." },
+        { q: "What physics improvements does GTA 6 have?", a: "GTA 6 physics improvements include: realistic ocean and river water with current simulation, mud and wet surface traction effects, hurricane-level weather that floods streets, improved vehicle damage modeling, and more natural character movement and animations." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Catch every trailer secret</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-trailer-breakdown-secrets">GTA 6 Trailer Breakdown: Every Secret and Detail You Missed</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
+
+  "gta-6-trailer-breakdown-secrets": (
+    <div className="space-y-6 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+      <p className="text-2xl font-black leading-tight" style={{ color: "var(--text-primary)" }}>
+        Rockstar packed GTA 6&apos;s trailers with secrets. Here&apos;s every hidden detail the internet almost missed.
+      </p>
+
+      <StatBox items={[["90M+", "Trailer 1 views in 24hrs"], ["93 secs", "Trailer 1 runtime"], ["50+", "Hidden details found"], ["2", "Official trailers released"]]} />
+
+      <BlogImage src="/images/gta6-cover.png" alt="GTA 6 Trailer Breakdown" caption="GTA 6 Trailer 1 — the most analyzed game trailer in history" />
+
+      <p>
+        GTA 6 Trailer 1 dropped on December 5, 2023 and broke the gaming world. Within 24 hours it had 90 million views — more than any game trailer ever released. The gaming community spent weeks frame-by-frame analyzing every shot. Here&apos;s what they found — and what most people still missed.
+      </p>
+
+      <AlertBox type="tip" title="Trailer 1 vs Trailer 2" body="GTA 6 Trailer 1 (Dec 2023) focused on world and characters. Trailer 2 went deeper on gameplay, story beats, and confirmed additional locations. Both are packed with hidden details analyzed below." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Trailer 1: Hidden Details Frame by Frame</h2>
+      <DataTable
+        headers={["Timestamp", "What You See", "Hidden Detail / Significance"]}
+        rows={[
+          ["0:03", "Aerial shot of Vice City coast", "Palm trees react to wind — dynamic vegetation confirmed"],
+          ["0:11", "Lucia in prison yard", "Her prison number hints at a prior conviction timeline in the story"],
+          ["0:22", "Woman twerking on car hood going viral", "In-game social media mechanic — the phone recording and viral spread shown explicitly"],
+          ["0:35", "Vice City skyline at night", "Ray-traced reflections visible on every glass surface — confirms RT at night"],
+          ["0:44", "Alligator on highway", "Wildlife roaming into Vice City — confirms animal AI in urban areas"],
+          ["0:55", "Lucia driving muscle car", "The car matches a specific classic model — possibly a returning GTA vehicle"],
+          ["1:02", "Jason and Lucia rob a diner", "The diner sign says &apos;Leonida Fuel&apos; — confirms Leonida state branding in-world"],
+          ["1:15", "Police helicopter pursuit", "Police AI visibly coordinating — multiple units responding simultaneously"],
+          ["1:25", "Couple running on beach", "Background shows Keys-style geography — confirms Leonida Keys location"],
+          ["1:33", "Final shot of Vice City", "The skyline shows new skyscrapers not in the original Vice City — world completely rebuilt"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Easter Eggs and GTA References</h2>
+      <InfoBox
+        title="Easter eggs found in GTA 6 trailers"
+        items={[
+          ["LS Customs visible", "A background sign in one shot references Los Santos Customs from GTA 5 — the businesses span cities"],
+          ["Rockford Hills license plate", "A vehicle in the background shows &apos;Rockford&apos; on a plate — a GTA 5 neighborhood name Easter egg"],
+          ["Vice City FM frequencies", "Radio posters in a scene reference Vice City FM and Flash FM — classic GTA VC radio stations returning"],
+          ["Beta vehicle spotted", "A vehicle design in the swamp sequence matches a concept car from GTA 5&apos;s cut content"],
+          ["News ticker references", "In-world news tickers mention events from GTA Online&apos;s expanded universe storylines"],
+          ["Epsilon Program billboard", "Eagle-eyed viewers spotted an Epsilon Program recruitment billboard — the GTA 5 cult appears in GTA 6"],
+        ]}
+      />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Gameplay Mechanics Shown (That People Missed)</h2>
+      <InfoBox
+        title="Gameplay mechanics confirmed in trailers"
+        items={[
+          ["Phone filming mechanic", "NPCs visibly record Lucia&apos;s actions on phones — the footage appears to spread on in-game social media"],
+          ["Swimming in open ocean", "A shot shows Lucia swimming in open ocean with wave physics — not a static water body like GTA 5"],
+          ["Swamp vehicle physics", "Airboat seen in Grassrivers swamp reacts to water current — physics-based watercraft confirmed"],
+          ["Dual character split-screen hint", "A quick cut shows both Lucia and Jason perspectives simultaneously — teasing how missions work"],
+          ["Destructible environments", "Explosion sequences show environmental damage that persists — not just a visual effect that resets"],
+          ["Character customization depth", "Multiple outfit variations on Lucia across scenes hint at deep wardrobe system beyond GTA 5"],
+        ]}
+      />
+
+      <HookBanner headline="Biggest trailer secrets" items={[
+        "In-game social media shown explicitly — your crimes can go viral in Vice City",
+        "Epsilon Program billboards confirm the GTA 5 cult exists in GTA 6&apos;s world",
+        "Alligators confirmed in urban Vice City — animal AI active in city areas",
+        "Police AI coordination visible — multiple units and helicopter working together",
+        "Dynamic vegetation, realistic ocean swimming, and persistent explosion damage all confirmed",
+      ]} />
+
+      <FaqSection items={[
+        { q: "What did the GTA 6 Trailer 1 reveal?", a: "Trailer 1 confirmed: Vice City as the setting, Lucia as the first female GTA protagonist, the Bonnie-and-Clyde story inspiration, the Leonida state world including swamps and Keys, in-game social media mechanics, next-gen NPC behavior, and the 2025 launch window." },
+        { q: "Are there Easter eggs in the GTA 6 trailer?", a: "Yes — including Epsilon Program billboards (GTA 5 cult reference), Flash FM radio station posters (Vice City classic), Los Santos Customs branding, Rockford Hills license plates, and in-game news tickers referencing GTA Online universe events." },
+        { q: "What gameplay mechanics were shown in GTA 6 trailers?", a: "Confirmed gameplay mechanics from trailers: NPC phone filming and social media spread, open-ocean swimming with wave physics, swamp airboat with water current physics, simultaneous dual-protagonist perspectives, persistent explosive damage, and advanced police coordination AI." },
+      ]} />
+
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Start from the beginning</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <InternalLink href="/blog/gta-6-release-date-everything-we-know">GTA 6 Release Date: Everything We Know About the Launch</InternalLink>
+        </p>
+      </div>
+    </div>
+  ),
 };
