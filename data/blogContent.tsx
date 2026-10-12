@@ -25750,4 +25750,493 @@ Open to a 12-min call? I’ll show a 3-min demo on a test account.`}
       </div>
     </div>
   ),
+
+  "grok-ai-vs-chatgpt-which-is-better": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Grok AI vs ChatGPT: Which One Actually Wins in 2025?" items={["Grok has real-time internet access — ChatGPT needs a paid plan for that", "ChatGPT has 5x more plugins and integrations than Grok", "Grok is free with a basic X account — ChatGPT free tier is more limited", "For Pakistani users, both work without VPN"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Two of the most talked-about AI chatbots are now competing head-to-head. Grok — made by Elon Musk's xAI — promises real-time knowledge and fewer content restrictions. ChatGPT — OpenAI's flagship — has years of polish and the largest ecosystem. Here's an honest side-by-side so you can pick the right one for your needs.</p>
+      <StatBox items={[["Free", "Grok basic tier"], ["$20/mo", "ChatGPT Plus"], ["Real-time", "Grok's data access"], ["200+", "ChatGPT plugins"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>What Is Grok AI?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Grok is an AI assistant developed by xAI, Elon Musk's AI company, and integrated into X (formerly Twitter). Its main selling points: real-time internet access by default, a less filtered personality, and access included in X Premium subscriptions. Grok 3 — the latest version — was released in 2025 and claims to beat GPT-4 on several benchmarks.</p>
+      <InfoBox title="Grok strengths" items={[["Real-time data", "Knows news and events from today — no cutoff date"], ["X integration", "Can search X posts and trending topics instantly"], ["Less restricted", "Fewer refusals on edge-case or controversial questions"], ["Free basic access", "Available to all X users, no separate signup"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>What Is ChatGPT?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>ChatGPT by OpenAI is the world's most widely used AI chatbot with over 100 million daily users. GPT-4o — the current free model — is genuinely multimodal (handles images, voice, and files). The paid Plus plan unlocks even more: advanced data analysis, DALL-E image generation, and hundreds of third-party plugins.</p>
+      <InfoBox title="ChatGPT strengths" items={[["Largest ecosystem", "200+ plugins, GPTs store, API integrations"], ["File handling", "Upload PDFs, spreadsheets, code — analyze anything"], ["Memory", "Remembers your preferences across chats (Plus feature)"], ["Reliability", "More consistent outputs for professional writing"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Head-to-Head Comparison</h2>
+      <DataTable headers={["Feature", "Grok AI", "ChatGPT"]} rows={[
+        ["Real-time internet", "Yes (always free)", "Yes (Plus only, via browsing)"],
+        ["Free tier quality", "Good — Grok 2", "Good — GPT-4o mini"],
+        ["Paid plan", "$8/mo (X Premium)", "$20/mo (ChatGPT Plus)"],
+        ["Image generation", "Aurora (X Premium+)", "DALL-E 3 (Plus)"],
+        ["Code writing", "Good", "Excellent"],
+        ["Long documents", "Limited", "128k context window"],
+        ["Plugins/integrations", "Very few", "200+ plugins"],
+        ["Works in Pakistan", "Yes, no VPN needed", "Yes, no VPN needed"],
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Use Case Recommendations</h2>
+      <StepCard steps={[
+        { title: "Use Grok if: you want real-time news & Twitter context", body: "Grok shines for following live events, trending topics, or current affairs. If you're a journalist, researcher, or just want to know what's happening today — Grok's real-time access beats ChatGPT's free tier easily." },
+        { title: "Use ChatGPT if: you need deep document or code work", body: "For long PDF analysis, complex code debugging, or data analysis from spreadsheets — ChatGPT's file handling and plugin ecosystem is far superior. GPT-4o handles 128,000 tokens in one context (about 300 pages)." },
+        { title: "Use both free tiers together", body: "Smart users use Grok for quick research and current events, then switch to ChatGPT for the actual writing or coding work. Both are free — there's no reason to pick just one." },
+        { title: "For Pakistani freelancers: ChatGPT wins for client work", body: "Most Fiverr clients expect ChatGPT-based deliverables. The plugin ecosystem, custom GPTs, and professional output quality make ChatGPT the better choice for earning money." },
+      ]} />
+
+      <AlertBox type="tip" title="Grok's real killer feature" body="Grok can search X posts in real-time. This is uniquely powerful for market research, finding trending opinions, and monitoring brand mentions. No other free AI chatbot can do this." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Which Is Smarter?</h2>
+      <p style={{ color: "var(--text-secondary)" }}>On standard benchmarks (MMLU, HumanEval, MATH), Grok 3 and GPT-4o are very close. For most everyday tasks — writing, explaining, summarizing — you won't notice a meaningful difference. The real differentiator is ecosystem: ChatGPT's tools and integrations make it more practical for professional work.</p>
+      <FaqSection items={[
+        { q: "Is Grok AI better than ChatGPT?", a: "For real-time information and X/Twitter integration, Grok is better. For professional work, file handling, coding, and integrations, ChatGPT is better. For most users, using both free tiers together is the smartest approach." },
+        { q: "Is Grok AI free?", a: "Yes. Basic Grok access is free with any X (Twitter) account. Grok 3 with advanced features requires X Premium ($8/month). ChatGPT also has a free tier with GPT-4o mini." },
+        { q: "Can I use Grok AI in Pakistan?", a: "Yes. Grok works in Pakistan without a VPN. Just sign up for X (Twitter) and access Grok from the sidebar. ChatGPT also works in Pakistan without restrictions." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>See how both AI tools earn money for Pakistani freelancers</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/best-free-ai-tools-fiverr-sellers">Best Free AI Tools for Fiverr Sellers in Pakistan</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-use-elevenlabs-free-voice-generator": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="ElevenLabs Free Voice Generator: Full Tutorial (2025)" items={["ElevenLabs free tier gives 10,000 characters/month — enough for 3–5 YouTube videos", "Voice cloning is available on free tier (limited uses)", "No download needed — works entirely in browser", "Pakistani creators are using this to run faceless YouTube channels earning Rs 30,000+/month"]} />
+      <p style={{ color: "var(--text-secondary)" }}>ElevenLabs makes the most realistic AI voices available anywhere — and the free tier is genuinely usable. This tutorial walks you through everything: creating an account, generating voice, cloning your own voice, and using it for YouTube, podcasts, or selling voiceover services on Fiverr.</p>
+      <StatBox items={[["10,000", "Free characters/month"], ["29 languages", "Supported"], ["#1", "Ranked AI voice tool"], ["Rs 0", "Cost to start"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Step 1: Create Your Free ElevenLabs Account</h2>
+      <StepCard steps={[
+        { title: "Go to elevenlabs.io and click 'Sign Up Free'", body: "Use your Google account or email. No credit card required for the free plan. You get 10,000 characters per month — reset every month." },
+        { title: "Verify your email and log into the dashboard", body: "Once inside, you'll see the 'Speech Synthesis' section on the left sidebar. This is where you generate voices." },
+        { title: "Choose a voice from the Voice Library", body: "ElevenLabs has 900+ voices. For YouTube, try 'Rachel' (clear female narrator) or 'Adam' (deep male). Use the filter to find 'narration' style voices." },
+        { title: "Type your script and click Generate", body: "Paste your text into the input box. Keep each generation under 2,500 characters for best results. Click Generate and download the MP3." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Voice Settings That Make It Sound Human</h2>
+      <InfoBox title="Key voice settings" items={[["Stability (0.5)", "Lower = more expressive, higher = more consistent. 0.5 is the sweet spot"], ["Similarity (0.75)", "How closely it matches the original voice sample. Keep above 0.7"], ["Style (0.0–0.3)", "Adds emotional exaggeration. Keep low for narration, higher for storytelling"], ["Speaker Boost", "Check this for cleaner audio — always leave it on"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>How to Clone Your Own Voice (Free)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Voice cloning lets ElevenLabs mimic your own voice — or any voice you have permission to clone. The free tier allows Instant Voice Cloning.</p>
+      <StepCard steps={[
+        { title: "Record a 1–3 minute clear audio sample of your voice", body: "Use your phone in a quiet room. Speak naturally — introduce yourself, read a news article, whatever. Save as MP3 or WAV." },
+        { title: "Go to 'Voices' > 'Add Voice' > 'Instant Voice Clone'", body: "Upload your recording. ElevenLabs analyzes your voice in 30–60 seconds." },
+        { title: "Name your voice and save it", body: "It now appears in your voice library. You can generate unlimited audio in your own voice (within your monthly character limit)." },
+        { title: "Use cloned voice for YouTube or Fiverr", body: "Clients on Fiverr pay $10–30 for custom voiceovers. With your own cloned voice, you can deliver personalized, consistent audio much faster than recording manually." },
+      ]} />
+
+      <AlertBox type="tip" title="Maximize your 10,000 free characters" body="10,000 characters = roughly 8–10 minutes of audio. Plan your YouTube scripts to run 800–1,000 characters per minute (about 120–150 words). This means 1–2 complete 5-minute videos per month on the free plan. Upgrade to Starter ($5/month) for 30,000 characters if you need more." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Using ElevenLabs for Faceless YouTube (Pakistan Strategy)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Pakistani creators are building successful faceless YouTube channels using this exact workflow: write script with ChatGPT, generate voice with ElevenLabs, create visuals with Canva or stock footage, edit in CapCut. Total cost: Rs 0. Monthly earning potential after 6 months: Rs 20,000–50,000 from AdSense.</p>
+      <DataTable headers={["Step", "Tool Used", "Cost"]} rows={[
+        ["Write script", "ChatGPT Free", "Rs 0"],
+        ["Generate voiceover", "ElevenLabs Free", "Rs 0"],
+        ["Create visuals", "Canva Free / Pexels", "Rs 0"],
+        ["Edit video", "CapCut Free", "Rs 0"],
+        ["Upload & monetize", "YouTube", "Rs 0"],
+      ]} />
+
+      <FaqSection items={[
+        { q: "Is ElevenLabs free to use?", a: "Yes. The free tier gives 10,000 characters per month (enough for 3–5 YouTube videos), access to 900+ voices, and instant voice cloning. No credit card required. Paid plans start at $5/month for more characters." },
+        { q: "How do I use ElevenLabs for YouTube in Pakistan?", a: "Sign up free at elevenlabs.io, choose a narration voice (Rachel or Adam work well), paste your script, and generate. Download the MP3 and use it in CapCut or any video editor. Works without VPN in Pakistan." },
+        { q: "Can ElevenLabs clone my voice for free?", a: "Yes — Instant Voice Cloning is available on the free tier. Record 1–3 minutes of your voice, upload it, and ElevenLabs will create a cloned version you can use for any text generation within your monthly limit." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Build your full AI video workflow</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/best-free-ai-tools-video-editing-beginners">Best Free AI Tools for Video Editing (Beginners Guide)</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-make-money-with-canva-pakistan": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="How to Make Money with Canva in Pakistan (Realistic Guide 2025)" items={["Canva Pro is not required — most money-making methods work on free tier", "Pakistani designers on Fiverr earn Rs 10,000–50,000/month with Canva", "Selling Canva templates on Etsy earns passive income in USD", "No design degree needed — Canva's drag-and-drop is learnable in 2 days"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Canva has quietly become one of the best freelance income tools in Pakistan. This guide covers 7 real methods — from selling services on Fiverr to creating passive income with digital templates — with realistic income numbers, Pakistani payment options, and exactly how to start today.</p>
+      <StatBox items={[["Rs 10K–50K", "Monthly Fiverr income"], ["$5–50", "Per template on Etsy"], ["Free", "Canva basic tier"], ["2 days", "To learn basics"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 1: Social Media Design Services on Fiverr</h2>
+      <p style={{ color: "var(--text-secondary)" }}>The fastest way to earn with Canva. Pakistani businesses — restaurants, clothing brands, real estate agents, clinics — need professional-looking social media posts but can't afford an agency. You bridge that gap.</p>
+      <InfoBox title="How to start" items={[["Create a Fiverr account", "Free. Use your real name. Complete profile 100%"], ["Build 3 Canva sample posts", "Restaurant menu post, e-commerce product post, motivational quote"], ["Set starting price at $5–10", "Get 5–10 reviews fast, then raise to $20–50"], ["Offer in Urdu too", "Many local clients search in Urdu — list your gig in both languages"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 2: Canva Template Store on Gumroad or Etsy</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Create a Canva template once, sell it forever. Resume templates, pitch decks, Instagram post packs, and wedding invitation templates all sell well. Etsy lets you reach global buyers — but requires a payment setup (Payoneer works for Pakistani sellers).</p>
+      <StepCard steps={[
+        { title: "Design 5–10 templates in a specific niche", body: "Don't try to sell everything. Pick one niche: resume templates, or wedding cards, or Ramadan Instagram posts. Niche stores sell better than general stores." },
+        { title: "Create shareable Canva template links", body: "In Canva, click Share > Template Link. This gives buyers a copy of your design in their own Canva account — they can't edit your original." },
+        { title: "List on Gumroad (easier) or Etsy (more traffic)", body: "Gumroad is simpler — sign up free, upload your template link as a product, set price. Etsy has more organic traffic but requires connecting Payoneer for Pakistani sellers." },
+        { title: "Price Rs 500–2,000 or $3–20 per template pack", body: "Bundle 5 related templates into one pack for better value perception. A 10-pack Instagram template bundle at $10 is a strong seller." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 3: Local Business Branding (Best Paying)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Local Pakistani businesses — restaurants, medical clinics, boutiques, coaching academies — pay Rs 5,000–25,000 for a basic brand kit: logo, business card, letterhead, social media profile. Canva can produce all of these. Approach local businesses directly through WhatsApp or Facebook.</p>
+      <AlertBox type="tip" title="WhatsApp cold pitch that works" body="'Assalamualaikum, I noticed your [restaurant/shop] doesn't have a consistent social media look. I create professional Canva brand kits for local businesses starting at Rs 5,000. Can I send you 2 free sample posts for your review?' — This message converts at 10–20% when sent to 20–30 local businesses." />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>More Methods: Quick Reference</h2>
+      <DataTable headers={["Method", "Income (Rs)", "Difficulty", "Time to First Earning"]} rows={[
+        ["Fiverr social media design", "10,000–50,000/mo", "Easy", "1–2 weeks"],
+        ["Canva template store", "5,000–30,000/mo (passive)", "Medium", "1–2 months"],
+        ["Local business branding", "5,000–25,000/project", "Easy", "3–5 days"],
+        ["YouTube thumbnail design", "8,000–20,000/mo", "Easy", "1 week"],
+        ["Canva video editing (Reels)", "5,000–15,000/mo", "Medium", "2 weeks"],
+        ["Teaching Canva on YouTube", "10,000–50,000/mo AdSense", "Hard", "6–12 months"],
+        ["Canva courses (Udemy/Gumroad)", "Passive income", "Hard", "2–3 months to create"],
+      ]} />
+
+      <FaqSection items={[
+        { q: "Can I make money with Canva in Pakistan without Canva Pro?", a: "Yes. All money-making methods above work with Canva free tier. You only need Pro if a client specifically requests Pro features like background remover. Start free — upgrade only when you're already earning." },
+        { q: "How do I receive Canva freelance payments in Pakistan?", a: "Fiverr pays to Payoneer, which transfers to Pakistani bank accounts (Jazz, HBL, MCB, etc.) or Easypaisa/JazzCash. Gumroad also supports Payoneer. This is the standard route for Pakistani freelancers." },
+        { q: "How much can a beginner earn with Canva on Fiverr in Pakistan?", a: "Realistically: Rs 5,000–15,000 in month 1 (getting first reviews), Rs 20,000–35,000 by month 3, Rs 40,000–60,000 by month 6 with a good profile and consistent delivery." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Speed up your Canva work with AI</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-use-canva-ai-free-beginners">How to Use Canva AI Free — Complete Beginner's Guide</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "best-free-ai-tools-video-editing-beginners": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Best Free AI Tools for Video Editing (2025 Beginner Guide)" items={["CapCut AI is 100% free and works on mobile — no PC needed", "These tools can edit a 5-minute YouTube video in under 30 minutes", "All tools listed work in Pakistan without VPN", "No prior editing experience required — AI handles the hard parts"]} />
+      <p style={{ color: "var(--text-secondary)" }}>AI has completely changed video editing. What used to take hours of technical work now takes minutes with the right free tools. This guide covers the best AI video editing tools available in 2025 — all free, all beginner-friendly, all accessible in Pakistan.</p>
+      <StatBox items={[["5 tools", "All 100% free"], ["30 mins", "To edit a 5-min video"], ["0 experience", "Required"], ["Works in PK", "No VPN needed"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. CapCut AI (Best for Mobile & Beginners)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>CapCut is the #1 free video editing app worldwide and its AI features are genuinely impressive. Auto captions, background removal, smart scene cuts, and AI-generated text-to-video are all free. The mobile app works on any Android or iPhone — no high-end PC needed.</p>
+      <InfoBox title="CapCut AI features (free)" items={[["Auto Captions", "Detects speech and adds subtitles automatically in seconds"], ["Background Remover", "One-click green screen effect — no green screen required"], ["AI Script to Video", "Paste a script and CapCut generates a slideshow video automatically"], ["Smart Highlights", "Analyzes long videos and picks the best clips automatically"], ["Beat Sync", "Auto-matches video cuts to music beats"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Clipchamp AI (Best for Windows Users)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Clipchamp comes pre-installed on Windows 11 and is completely free. Its AI features include auto captions, green screen removal, and an AI video script generator. If you have a Windows PC, you already own this tool — no download needed.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. Runway ML Free Tier (Best for AI Effects)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Runway offers the most advanced AI video effects available anywhere — background removal, motion tracking, AI inpainting (removing objects from video), and text-to-video generation. The free tier gives 125 credits (roughly 5–10 AI operations). Best used selectively for specific effects.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. Descript Free Tier (Best for Podcast/Talking Head Videos)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Descript's killer feature: edit video by editing the transcript. Delete a word from the text and that spoken section disappears from the video. The free tier allows 1 hour of transcription per month — enough for most content creators.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. ElevenLabs (Best for AI Voiceover)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Not a video editor, but essential for faceless YouTube channels. Generate professional-quality voiceover from text — free tier gives 10,000 characters per month. Combine with CapCut for a complete faceless video workflow with zero cost.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Complete Beginner Workflow: Zero to YouTube Video in 1 Hour</h2>
+      <StepCard steps={[
+        { title: "Write your script with ChatGPT (10 min)", body: "Prompt: 'Write a 500-word YouTube script about [topic] for a Pakistani audience. Include a hook, 3 main points, and a CTA to subscribe.' Copy the output." },
+        { title: "Generate voiceover with ElevenLabs (5 min)", body: "Paste script into ElevenLabs, choose a voice, download the MP3. 500 words = about 3–4 minutes of audio." },
+        { title: "Find stock footage on Pexels or Pixabay (10 min)", body: "Search for visuals that match your script topic. Download 5–8 free clips. Both sites are free and royalty-free." },
+        { title: "Edit in CapCut (30 min)", body: "Import footage and voiceover. Use Beat Sync for smooth cuts. Add AI captions. Add an intro and outro. Export at 1080p." },
+        { title: "Upload to YouTube with SEO title", body: "Use the primary keyword in the first 5 words of the title. Write a 150-word description. Add 5–8 relevant tags." },
+      ]} />
+
+      <DataTable headers={["Tool", "Best For", "Free Limit", "Works in Pakistan"]} rows={[
+        ["CapCut AI", "Mobile editing, captions, effects", "Unlimited (basic features)", "Yes"],
+        ["Clipchamp", "PC editing, quick projects", "Unlimited (Windows 11)", "Yes"],
+        ["Runway ML", "Advanced AI effects", "125 credits/month", "Yes"],
+        ["Descript", "Podcast/talking head editing", "1 hr transcription/month", "Yes"],
+        ["ElevenLabs", "AI voiceover generation", "10,000 chars/month", "Yes"],
+      ]} />
+
+      <FaqSection items={[
+        { q: "What is the best free AI video editing tool for beginners?", a: "CapCut AI is the best starting point — it's free, works on mobile and PC, has auto captions, background removal, and AI script-to-video. No experience needed. Download from capcut.com or your phone's app store." },
+        { q: "Can I edit YouTube videos for free using AI tools in Pakistan?", a: "Yes. CapCut + ElevenLabs + Pexels stock footage = a complete free YouTube production workflow. All tools work in Pakistan without VPN. A 5-minute video can be created in 30–60 minutes." },
+        { q: "Is Runway ML free to use?", a: "Runway has a free tier with 125 credits per month. Credits are used for AI operations like background removal and text-to-video. It's enough for occasional use. Paid plans start at $12/month for more credits." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Add professional AI voiceover to your videos</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-use-elevenlabs-free-voice-generator">ElevenLabs Free Voice Generator: Complete Tutorial</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-use-canva-ai-free-beginners": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="How to Use Canva AI Free — Complete Beginner's Guide (2025)" items={["Canva's AI features are available on the free plan — no upgrade needed", "Magic Write generates entire social media captions, blog outlines, and more", "Text to Image creates original AI artwork inside Canva — free 50 uses/month", "Magic Eraser removes background objects in one click — free 5 uses/month"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Canva launched AI features across its platform in 2024–2025, and the free tier gets a generous share. This guide covers every free AI feature in Canva, how to use each one, and which ones are actually worth your time vs. which require upgrading to Pro.</p>
+      <StatBox items={[["Free", "Magic Write basic"], ["50/month", "Text to Image free"], ["5/month", "Magic Eraser free"], ["Free", "Magic Resize"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Free AI Feature 1: Magic Write (AI Text Generator)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Magic Write is Canva's built-in AI writing assistant powered by GPT technology. Access it by clicking the "+" button in any text box and selecting "Magic Write." It can generate social media captions, blog post outlines, product descriptions, email subject lines, and more.</p>
+      <InfoBox title="Best Magic Write prompts for beginners" items={[["Instagram caption", "'Write 3 Instagram captions for a Pakistani clothing brand posting Eid collection photos'"], ["YouTube title", "'Give me 5 YouTube titles for a video about ChatGPT tips for students'"], ["Product description", "'Write a product description for a handmade leather wallet. Keep it under 80 words'"], ["Blog intro", "'Write a 100-word intro for a blog post about make money online in Pakistan'"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Free AI Feature 2: Text to Image</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Generate original images from text descriptions directly inside Canva. Free tier gives 50 uses per lifetime (not per month — use them wisely). Access from the Apps panel in the left sidebar, search "Text to Image."</p>
+      <StepCard steps={[
+        { title: "Open a Canva design and click Apps > Text to Image", body: "You'll see a text prompt box. Type a description of the image you want." },
+        { title: "Write a specific prompt", body: "Bad: 'a person'. Good: 'A young Pakistani woman working on a laptop in a cozy Lahore cafe, warm lighting, realistic photo style'. More specific = better results." },
+        { title: "Choose a style (Photo, Drawing, Watercolor, etc.)", body: "Photo style works best for realistic images. Illustration works for blog headers and social posts." },
+        { title: "Generate and select the best result", body: "Canva generates 4 options. Pick the best one and place it in your design. You can reposition and resize like any other element." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Free AI Feature 3: Background Remover</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Remove the background from any photo in one click. Free tier used to require Pro, but as of 2025 it&apos;s included free with limited uses. Select your image, click Edit &gt; Remove Background. Works on product photos, portraits, and logo cleanup.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Free AI Feature 4: Magic Resize</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Design once, resize for every platform automatically. Create an Instagram post (1080x1080px) and resize it instantly to a Facebook cover, YouTube thumbnail, Twitter header, or any custom size. This is one of Canva's most powerful time-saving features — and it's completely free.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>What Requires Canva Pro?</h2>
+      <DataTable headers={["Feature", "Free", "Pro Only"]} rows={[
+        ["Magic Write", "Yes (basic)", "Unlimited + brand voice"],
+        ["Text to Image", "50 lifetime uses", "Unlimited"],
+        ["Background Remover", "Limited uses", "Unlimited"],
+        ["Magic Eraser (object removal)", "5 uses/month", "Unlimited"],
+        ["Brand Kit (custom fonts/colors)", "No", "Yes"],
+        ["Premium templates", "No (1M+ free templates)", "Yes (all templates)"],
+        ["Magic Animate", "No", "Yes"],
+      ]} />
+
+      <AlertBox type="tip" title="Pro tip for Pakistani users" body="Canva Pro is $120/year ($10/month) but you can get it free with Canva for Education if you're a student — sign up with your .edu email. Alternatively, Canva for Nonprofits is free. For freelancers without these options: the free tier is genuinely sufficient for 90% of client work." />
+
+      <FaqSection items={[
+        { q: "Is Canva AI free to use?", a: "Yes. Magic Write, Text to Image (50 lifetime uses), Background Remover (limited), and Magic Resize are all available on the free Canva plan. Pro features like unlimited AI generations and Magic Eraser require Canva Pro ($10/month)." },
+        { q: "How do I use Canva AI in Pakistan?", a: "Canva works fully in Pakistan without VPN. Sign up at canva.com with Google or email. AI features are in the Apps panel (Text to Image) and inside text boxes (Magic Write). All free features are available without any payment." },
+        { q: "Can Canva AI generate images from text?", a: "Yes — Canva's Text to Image tool generates AI artwork from text descriptions. Free tier gives 50 lifetime generations. Access it from Apps > Text to Image inside any Canva design. Supported styles include photo, illustration, and watercolor." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Turn your Canva skills into income</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-make-money-with-canva-pakistan">How to Make Money with Canva in Pakistan</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-earn-money-online-pakistan-without-investment": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="How to Earn Money Online in Pakistan Without Investment (2025)" items={["All 7 methods here require Rs 0 to start — no capital, no equipment beyond a phone", "3 of these methods can earn your first Rs 1,000–5,000 within 7 days", "JazzCash and Easypaisa work for receiving freelance payments", "Pakistani students and housewives are earning Rs 15,000–40,000/month with these methods"]} />
+      <p style={{ color: "var(--text-secondary)" }}>You don't need a laptop, investment, or technical skills to start earning online in Pakistan. This guide focuses specifically on methods that require only a smartphone and an internet connection — no upfront spending, no experience required.</p>
+      <StatBox items={[["Rs 0", "Required investment"], ["7 days", "To first earning"], ["JazzCash", "Accepts payments"], ["Mobile only", "3 methods below"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 1: Freelance Writing on Fiverr (Mobile Friendly)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Content writing is the most beginner-accessible Fiverr skill. You don't need special tools — just your phone and ChatGPT (free). Pakistani businesses, blogs, and YouTube channels need written content constantly. Create a gig offering 500-word articles for $5 and use ChatGPT to write them in 10 minutes.</p>
+      <InfoBox title="Setup in 3 steps" items={[["Create Fiverr profile", "Free at fiverr.com. Use professional photo and complete all fields"], ["Create writing gig", "Title: 'I will write SEO blog posts for your website'. Offer 500 words for $5 basic"], ["Use ChatGPT to write", "Prompt: 'Write a 500-word blog post about [client's topic]. Professional tone, no fluff.' Deliver in 1 day"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 2: Social Media Management for Local Businesses</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Every shop, restaurant, and clinic in your city needs someone to manage their Instagram and Facebook. Most owners are too busy to post consistently. Offer to manage their social media for Rs 5,000–8,000/month — 3–4 posts per week, all made with Canva on your phone.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 3: Sell Products on Daraz (Zero Inventory)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Daraz Pakistan's seller program allows reselling — you list products at a markup, source from local wholesalers only after getting an order, and ship directly. This dropshipping model requires zero upfront inventory. Popular categories: phone accessories, home goods, beauty products. Daraz pays to bank accounts and Easypaisa.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 4: Data Entry / Virtual Assistant on Upwork</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Basic data entry — copying information between spreadsheets, organizing files, transcribing audio — pays $3–8/hour on Upwork and requires no skills. The catch: you need a laptop for most data entry work. But virtual assistant tasks (scheduling, email management, research) can often be done on a tablet or phone.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 5: Tutoring via Preply or WhatsApp Groups</h2>
+      <p style={{ color: "var(--text-secondary)" }}>If you're strong in any subject — mathematics, English, science, Quran teaching — you can earn Rs 500–2,000 per hour tutoring online. Preply (international platform) pays in USD. WhatsApp group tutoring reaches local students. Both require only a phone camera and decent lighting.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 6: YouTube Shorts / TikTok</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Create short educational or entertainment videos on your phone. YouTube Shorts pays through AdSense after 1,000 subscribers. TikTok Pakistan has a creator fund. Cooking, DIY, Islamic content, and study tips perform well in Pakistan. Investment: Rs 0. Timeline to first income: 3–6 months.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Earning Potential Comparison</h2>
+      <DataTable headers={["Method", "Monthly Earning", "Time to First Rs", "Phone Only?"]} rows={[
+        ["Fiverr writing with ChatGPT", "Rs 10,000–30,000", "7–14 days", "Yes"],
+        ["Social media management", "Rs 5,000–25,000", "3–7 days", "Yes"],
+        ["Daraz reselling", "Rs 5,000–20,000", "7–14 days", "Yes"],
+        ["Data entry / VA", "Rs 8,000–20,000", "14–30 days", "Mostly"],
+        ["Online tutoring", "Rs 5,000–15,000", "3–7 days", "Yes"],
+        ["YouTube Shorts / TikTok", "Rs 5,000–30,000", "3–6 months", "Yes"],
+      ]} />
+
+      <AlertBox type="tip" title="How to receive payments without a bank account" body="JazzCash and Easypaisa both accept international transfers via Wise and Payoneer. If you don't have a bank account, set up a JazzCash wallet (requires CNIC) — Fiverr and Upwork can pay to Payoneer, which transfers to JazzCash." />
+
+      <FaqSection items={[
+        { q: "How can I earn money online in Pakistan from home without investment?", a: "The easiest zero-investment methods: Fiverr writing (using ChatGPT, starts earning in 1–2 weeks), social media management for local businesses (approach via WhatsApp, earn Rs 5,000–8,000/month per client), and Daraz reselling (list products without buying inventory first)." },
+        { q: "Can I earn money online in Pakistan using only my phone?", a: "Yes. Fiverr writing, Canva design, Daraz selling, tutoring, and YouTube Shorts all work on a smartphone. You don't need a laptop or PC to start. JazzCash and Easypaisa handle payments without a formal bank account." },
+        { q: "What is the fastest way to earn money online in Pakistan?", a: "Social media management for a local business is fastest — you can close your first client within a week by approaching shops in your area via WhatsApp. Charge Rs 5,000/month for 3 posts/week. That's Rs 5,000 in your first week with zero investment." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Speed up all your freelance work with AI tools</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/best-free-ai-tools-fiverr-sellers">Best Free AI Tools for Fiverr Sellers in Pakistan</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "best-ai-tools-students-assignments-free": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Best Free AI Tools for Students: Assignments, Research & Study (2025)" items={["All tools listed here are free — no student email required for most", "ChatGPT + Perplexity AI + Grammarly covers 90% of student needs", "These tools work for Pakistani university and school students without VPN", "Using AI ethically: these tools assist research, not replace your thinking"]} />
+      <p style={{ color: "var(--text-secondary)" }}>AI has become a genuine academic advantage — students who know how to use it properly research faster, write better, and understand complex topics more deeply. This guide covers the best free AI tools for Pakistani students, what each one does, and exactly how to use them ethically for assignments.</p>
+      <StatBox items={[["Free", "All tools below"], ["5 mins", "AI research vs 2 hours manual"], ["Works in PK", "No VPN needed"], ["Ethical", "Use guide included"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. ChatGPT Free — Best AI for Understanding Concepts</h2>
+      <p style={{ color: "var(--text-secondary)" }}>ChatGPT is the most versatile student tool available. Use it to explain complex topics in simple language, generate essay outlines, check your understanding through Q&A, and get feedback on your writing. The free tier (GPT-4o mini) is sufficient for most student needs.</p>
+      <InfoBox title="Best student prompts for ChatGPT" items={[["Concept explainer", "'Explain [concept] as if I'm a 16-year-old. Use a Pakistan-relevant example'"], ["Essay outline", "'Create a detailed outline for a 1,500-word essay on [topic]'"], ["Study quiz", "'Quiz me on [topic]. Ask 10 multiple choice questions and tell me if I'm right'"], ["Feedback", "'Here is my paragraph: [paste]. What is weak about it and how can I improve it?'"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Perplexity AI — Best for Research with Sources</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Perplexity AI is a search engine powered by AI that provides sourced answers. Unlike ChatGPT (which may hallucinate), Perplexity shows the exact web sources for every claim. This makes it much safer for academic research — you can verify each fact independently. Completely free at perplexity.ai.</p>
+      <StepCard steps={[
+        { title: "Go to perplexity.ai (no account needed)", body: "Type your research question like you'd ask a professor. E.g., 'What are the economic impacts of climate change on agriculture in South Asia?'" },
+        { title: "Read the AI answer AND check the sources listed", body: "Perplexity shows numbered citations. Always click through to verify the original source before using a fact in your assignment." },
+        { title: "Use Follow-up Questions to dig deeper", body: "After the initial answer, click 'Ask follow-up' to explore subtopics without starting a new search. This builds a research thread." },
+        { title: "Copy verified facts into your notes (not directly into assignments)", body: "Use Perplexity for research gathering, then write your assignment in your own words. Direct copy-paste is plagiarism even from AI." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. Grammarly Free — Best for Writing Improvement</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Grammarly catches grammar errors, suggests clearer phrasing, and flags passive voice and wordiness. The free tier handles grammar and spelling — which is genuinely the most impactful part. The browser extension works in Google Docs, email, and any text field. No signup with university email required.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. Wolfram Alpha — Best for Math & Science</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Wolfram Alpha solves equations, shows step-by-step calculus, answers chemistry questions, and plots graphs — all free. Type any math problem in plain English. It's better than ChatGPT for technical calculations because it always shows the correct answer (ChatGPT sometimes makes calculation errors).</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Quillbot Free — Best for Paraphrasing</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Quillbot rewrites sentences in different styles while preserving meaning. Useful for paraphrasing sources in your own words (ethical use) or improving awkward phrasing. Free tier allows 125 words per paraphrase. The Summarizer tool condenses long articles into key points.</p>
+
+      <DataTable headers={["Tool", "Best For", "Free Limit", "Works in Pakistan"]} rows={[
+        ["ChatGPT", "Concept explanations, outlines", "Limited daily", "Yes"],
+        ["Perplexity AI", "Research with sources", "Unlimited", "Yes"],
+        ["Grammarly", "Grammar and writing quality", "Basic (unlimited)", "Yes"],
+        ["Wolfram Alpha", "Math, science calculations", "Basic queries free", "Yes"],
+        ["Quillbot", "Paraphrasing, summarizing", "125 words/paraphrase", "Yes"],
+      ]} />
+
+      <AlertBox type="warning" title="Ethical AI use for assignments" body="Using AI to understand, research, and improve your writing is ethical. Submitting AI-generated text as your own work is plagiarism. Rule of thumb: AI should make you a better writer and researcher — not replace your thinking. Always write your assignments in your own words after using AI for research and understanding." />
+
+      <FaqSection items={[
+        { q: "What is the best free AI tool for students in Pakistan?", a: "Perplexity AI + ChatGPT is the best combination. Perplexity for sourced research (safer than ChatGPT for facts), ChatGPT for understanding concepts and getting feedback on your writing. Both are free and work without VPN in Pakistan." },
+        { q: "Can students use ChatGPT for assignments in Pakistan?", a: "You can use ChatGPT ethically to understand topics, get essay outlines, and improve your writing. You should not submit ChatGPT-written text as your own work — this is academic dishonesty. Use it as a research and learning aid, not a ghostwriter." },
+        { q: "Is Perplexity AI free for students?", a: "Yes — Perplexity AI is completely free with no account required. The free tier gives unlimited searches with sourced answers. A Pro tier ($20/month) adds more AI models but is not needed for student use." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-purple-600/10 to-blue-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Turn student AI skills into freelance income</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/best-free-ai-tools-fiverr-sellers">Best Free AI Tools for Fiverr Sellers in Pakistan</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "best-free-ai-tools-fiverr-sellers": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="Best Free AI Tools for Fiverr Sellers in Pakistan (2025)" items={["These 8 tools replace software worth $200+/month — all free", "Pakistani Fiverr sellers using AI deliver 3x faster than those who don't", "All tools work in Pakistan without VPN", "Cover writing, design, video, voiceover, and SEO — every major Fiverr niche"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Pakistani Fiverr sellers have a competitive advantage hiding in plain sight: free AI tools that top-rated sellers in Western countries pay hundreds of dollars for. This guide lists the exact free tools that help you deliver faster, higher-quality work, and win more orders.</p>
+      <StatBox items={[["$0/month", "Cost for all tools"], ["3x faster", "Delivery with AI"], ["8 tools", "Covering every niche"], ["Top sellers", "Already using these"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>1. ChatGPT Free — Writing, Copywriting, Research</h2>
+      <p style={{ color: "var(--text-secondary)" }}>For writing gigs (blog posts, product descriptions, email sequences), ChatGPT turns a 2-hour job into 20 minutes. Use it to draft, then spend time editing and personalizing. Clients can't tell it was AI-assisted if you put in editing effort. The key: always customize the output for the client's specific brand and tone.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>2. Canva Free — Graphic Design, Thumbnails, Presentations</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Canva's free tier has 1 million+ templates for every Fiverr design gig. Social media posts, YouTube thumbnails, pitch decks, infographics, resume designs — all achievable without paid tools. Canva's AI features (Magic Write, Text to Image) are also available free.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>3. ElevenLabs Free — Voiceover Gigs</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Voiceover is one of Fiverr's most consistent earners. ElevenLabs' free tier (10,000 characters/month) gives you studio-quality voice generation. Offer voiceover for YouTube intros, explainer videos, and e-learning courses. A 3-minute voiceover takes 5 minutes to produce — charge $15–30 per delivery.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>4. CapCut AI Free — Video Editing Gigs</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Video editing is high-paying on Fiverr ($20–100 per video). CapCut's AI auto-captions, background removal, and beat sync dramatically speed up the work. Offer "social media video editing" on Fiverr — short reels and TikToks for brands are constantly in demand.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>5. Grammarly Free — Proofreading & Editing Gigs</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Proofreading gigs (fixing grammar, improving clarity) are competitive but steady. Grammarly free catches the most common errors. For Pakistani sellers, Grammarly also helps with your own English in client communication — which directly impacts review scores.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>6. Perplexity AI Free — Research Gigs & Content</h2>
+      <p style={{ color: "var(--text-secondary)" }}>For research-heavy gigs — market research reports, competitor analysis, article writing with citations — Perplexity AI finds sourced, accurate information instantly. Faster and more reliable than Google for compiling factual content.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>7. Hemingway Editor Free — Writing Quality</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Hemingway App (free at hemingwayapp.com) grades your writing readability and flags complex sentences, adverbs, and passive voice. Aim for Grade 8–9 for most blog content. This polish elevates ChatGPT drafts to professional quality without paying for premium AI tools.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>8. Looka Free Preview — Logo Design</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Looka generates AI logo concepts from brand preferences. The preview is free — you can use the concepts as reference while creating the actual logo in Canva for free delivery. Or charge $20+ for a "custom AI logo" and deliver the Canva version professionally presented.</p>
+
+      <DataTable headers={["Tool", "Fiverr Gig It Supports", "Free Limit"]} rows={[
+        ["ChatGPT", "Blog writing, copywriting, product descriptions", "Daily limit (generous)"],
+        ["Canva", "Graphic design, thumbnails, presentations", "1M+ templates free"],
+        ["ElevenLabs", "Voiceover, audio narration", "10,000 chars/month"],
+        ["CapCut AI", "Video editing, Reels, TikTok editing", "Unlimited basic"],
+        ["Grammarly", "Proofreading, editing, copywriting", "Basic unlimited"],
+        ["Perplexity AI", "Research, articles, reports", "Unlimited"],
+        ["Hemingway", "Writing quality improvement", "Unlimited (web)"],
+        ["Looka", "Logo design concepts", "Preview free"],
+      ]} />
+
+      <AlertBox type="tip" title="The Fiverr seller secret: AI for drafts, YOU for final polish" body="The difference between a 4.5-star and 5-star Fiverr seller: the 5-star seller uses AI to draft quickly, then spends serious editing time customizing for the specific client. Never send a raw AI output. Always personalize, fact-check, and improve. Clients pay for your judgment, not just the output." />
+
+      <FaqSection items={[
+        { q: "Which AI tools do Pakistani Fiverr sellers use to earn more?", a: "The most impactful stack: ChatGPT (writing), Canva (design), ElevenLabs (voiceover), CapCut AI (video), Grammarly (editing). Total cost: Rs 0. Together they cover the top 5 highest-earning Fiverr categories for Pakistani sellers." },
+        { q: "Can I use free AI tools to start a Fiverr gig in Pakistan?", a: "Yes. All tools mentioned here have free tiers sufficient for client work. Start with one gig type — writing or design — get 5–10 reviews using free tools, then consider upgrading specific tools if volume justifies the cost." },
+        { q: "How much can Pakistani Fiverr sellers earn with AI tools?", a: "With consistent use: Rs 15,000–25,000 in month 1, Rs 35,000–60,000 by month 3, Rs 60,000–150,000+ by month 6 with a good portfolio. AI tools increase your delivery speed — the faster you deliver high quality, the more orders you can handle." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-green-600/10 to-emerald-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Learn exactly which AI tools earn money in Pakistan</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-earn-money-online-pakistan-without-investment">How to Earn Money Online in Pakistan Without Investment</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-make-youtube-thumbnails-ai-free": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="How to Make YouTube Thumbnails with AI — Free (2025)" items={["Canva AI generates thumbnail backgrounds and text in seconds", "A good thumbnail increases click-through rate by 30–50%", "No Photoshop or design skills needed — all drag-and-drop", "Pakistani YouTubers using AI thumbnails report more views per video"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Your thumbnail is the single most important factor in whether someone clicks your video. AI tools now make professional thumbnails accessible to everyone — no design background needed, no paid software, no hours of work. Here's how to make click-worthy YouTube thumbnails using only free AI tools.</p>
+      <StatBox items={[["30–50%", "CTR increase with good thumb"], ["5 mins", "To make AI thumbnail"], ["Rs 0", "Total cost"], ["1280x720", "YouTube standard size"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 1: Canva AI (Best for Beginners)</h2>
+      <StepCard steps={[
+        { title: "Go to Canva.com > Create Design > YouTube Thumbnail", body: "Canva pre-loads the correct 1280x720px canvas. You can also search 'YouTube Thumbnail' in the template search bar to find 100+ free thumbnail templates." },
+        { title: "Choose a template that fits your niche", body: "For gaming: bold colors, dramatic fonts. For educational: clean background, readable text. For vlogs: your face prominently featured with expressive text." },
+        { title: "Use Canva Magic Write for text ideas", body: "Click into a text box > type '/' > select Magic Write. Prompt: 'Give me 3 high-CTR YouTube thumbnail texts for a video about [your video topic]. Keep under 6 words each.'" },
+        { title: "Use Text to Image for AI background", body: "Apps > Text to Image > type a background description like 'dramatic dark gaming room with neon lights, no text'. Place the generated image as your thumbnail background." },
+        { title: "Add your face if possible", body: "Thumbnails with a human face showing emotion (surprise, excitement, concern) get 30%+ more clicks. Upload your photo, use Background Remover to cut yourself out, place over your AI background." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Thumbnail Design Rules That Always Work</h2>
+      <InfoBox title="The 5 rules for high-CTR thumbnails" items={[["Rule 1: 3 elements max", "Face + bold text + simple background. More = cluttered = fewer clicks"], ["Rule 2: Text under 6 words", "Thumbnails are viewed at tiny sizes. 6 words is the maximum readable amount"], ["Rule 3: Contrast is everything", "Light text on dark background (or vice versa). Never same-tone text on background"], ["Rule 4: Emotional face wins", "Surprise, shock, and excitement increase CTR. Neutral expression is thumbnail death"], ["Rule 5: Color pop", "Use one bright accent color (yellow, orange, red) to stand out in the feed"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 2: Adobe Express Free</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Adobe Express (free tier) has strong YouTube thumbnail templates and an AI background generator. It's slightly more powerful than Canva for typography effects and photo filters, but less beginner-friendly. Worth trying if Canva feels too limiting.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 3: Using ChatGPT for Thumbnail Concepts</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Use ChatGPT to brainstorm what your thumbnail should look like before you design it.</p>
+      <AlertBox type="tip" title="ChatGPT thumbnail brainstorm prompt" body="'My YouTube video is about [topic]. Suggest 5 thumbnail concepts with: (1) what emotion to show on my face, (2) what background to use, (3) what 3–5 word text to display, (4) what color scheme. Make each concept distinctly different.'" />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>A/B Testing Your Thumbnails</h2>
+      <p style={{ color: "var(--text-secondary)" }}>YouTube Studio lets you test different thumbnails for the same video. Make 2 thumbnail variations, set one live for 2 weeks, then swap to the second for 2 weeks. Compare click-through rates. Keep whichever performs better. This is how top Pakistani YouTubers like SaadB and TechGuru optimize their channels.</p>
+
+      <FaqSection items={[
+        { q: "How do I make a YouTube thumbnail for free using AI?", a: "Use Canva free: go to canva.com, create a YouTube Thumbnail (1280x720), pick a free template, use Magic Write for text ideas and Text to Image for AI backgrounds. Add your face if possible. Export as PNG. Total time: 5–10 minutes." },
+        { q: "What size should a YouTube thumbnail be?", a: "1280 x 720 pixels (HD). File size under 2MB. Format: PNG or JPG. Canva's YouTube Thumbnail template is pre-set to this exact size — no manual setup needed." },
+        { q: "Does a good thumbnail really increase YouTube views?", a: "Yes. YouTube's algorithm shows your video to more people when your click-through rate (CTR) is high. Average YouTubers get 4–5% CTR. Good thumbnails can push this to 8–12%, which significantly increases views. Thumbnails and titles together are the #1 factor in video growth." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-red-600/10 to-orange-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>Learn to use all of Canva's AI features free</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-use-canva-ai-free-beginners">How to Use Canva AI Free — Complete Beginner's Guide</InternalLink></p>
+      </div>
+    </div>
+  ),
+
+  "how-to-make-money-instagram-pakistan": (
+    <div className="prose prose-lg max-w-none">
+      <HookBanner headline="How to Make Money on Instagram in Pakistan (2025 Guide)" items={["Instagram does NOT pay Pakistani creators directly — but these 5 methods do", "Brand deals start at Rs 5,000–20,000 per post even with 5,000 followers", "Pakistani Instagram creators earn Rs 20,000–200,000+/month from multiple streams", "You need a niche account — general lifestyle accounts earn the least"]} />
+      <p style={{ color: "var(--text-secondary)" }}>Instagram monetization in Pakistan works differently than in the US. Meta's Creator Fund doesn't pay in Pakistan. But don't let that stop you — Pakistani creators are earning serious money through brand deals, affiliate marketing, digital products, and service selling. Here's exactly how.</p>
+      <StatBox items={[["Rs 5K–20K", "Per brand post (5K followers)"], ["Rs 20K+", "Monthly with 10K followers"], ["5 methods", "All work in Pakistan"], ["0 followers", "Needed to start affiliate"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 1: Brand Sponsorships (Most Lucrative)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Pakistani brands — food companies, clothing, electronics, beauty products, coaching academies — pay Instagram creators for sponsored posts. You don't need hundreds of thousands of followers. Micro-influencers (5,000–50,000 followers) in niche markets earn Rs 5,000–30,000 per sponsored post because their audience is highly engaged.</p>
+      <InfoBox title="How to get your first brand deal in Pakistan" items={[["Pick a specific niche", "Food, fashion, tech, Islamic content, fitness — brands want niche audiences"], ["Reach 5,000 followers first", "Build genuine engagement (10%+ engagement rate beats 100K followers with 1% rate)"], ["Create a media kit", "A simple PDF with follower count, engagement rate, audience demographics, and rate card"], ["DM Pakistani brands directly", "Search your niche on Instagram. Find brands with 10K–200K followers. DM their account with your media kit"]]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 2: Affiliate Marketing (No Followers Needed to Start)</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Promote other companies' products and earn a commission for each sale. Daraz Pakistan has an affiliate program — you earn 5–8% per sale when someone buys through your link. Amazon Associates works for Pakistani creators (commission paid via Payoneer). Put affiliate links in your bio and Instagram Stories.</p>
+      <StepCard steps={[
+        { title: "Join Daraz Affiliate Program", body: "Go to daraz.pk/affiliate. Sign up free. Get product links for items in your niche. Share in Instagram Stories, bio, and Reels. Earn 5–8% commission per sale." },
+        { title: "Create review or demonstration content", body: "Unboxing videos, product reviews, 'Get Ready With Me' featuring specific products — this content naturally leads to affiliate clicks. Be genuine — your audience will detect fake recommendations." },
+        { title: "Put your best affiliate link in bio", body: "Use Linktree (free) to list multiple affiliate links behind one bio link. Update it as you feature new products." },
+        { title: "Track earnings in the affiliate dashboard", body: "Daraz affiliate dashboard shows clicks, conversions, and earnings. Optimize for the products with highest conversion rates in your niche." },
+      ]} />
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 3: Selling Your Own Products or Services</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Instagram is a powerful sales channel for digital products (ebooks, Canva templates, online courses) and physical products (clothing, handmade goods, food). Pakistani sellers on Instagram DM orders directly and receive payment via JazzCash or Easypaisa — no formal e-commerce setup needed to start.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Method 4: Instagram Coaching/Consulting</h2>
+      <p style={{ color: "var(--text-secondary)" }}>Once you've grown an Instagram account, you can sell your expertise to others. Social media management services, Instagram growth consulting, content creation services — all sell well to Pakistani businesses. Charge Rs 5,000–20,000/month for managing a business's Instagram.</p>
+
+      <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "var(--text-primary)" }}>Realistic Instagram Income Timeline</h2>
+      <DataTable headers={["Followers", "Monthly Income (Rs)", "Best Method"]} rows={[
+        ["0–1,000", "Rs 0–2,000", "Affiliate links only"],
+        ["1,000–5,000", "Rs 2,000–8,000", "Small brand deals + affiliate"],
+        ["5,000–20,000", "Rs 8,000–30,000", "Brand deals + digital products"],
+        ["20,000–100,000", "Rs 30,000–100,000", "Brand deals + coaching + products"],
+        ["100,000+", "Rs 100,000+", "Brand partnerships + all methods"],
+      ]} />
+
+      <AlertBox type="tip" title="The engagement rate secret" body="A 10,000-follower account with 8% engagement rate (800 likes/comments per post) earns MORE from brand deals than a 50,000-follower account with 1% engagement (500 likes/comments). Brands track engagement, not just follower count. Build a genuinely engaged niche audience — that's worth more than a big, passive following." />
+
+      <FaqSection items={[
+        { q: "Does Instagram pay creators in Pakistan?", a: "Instagram's direct Creator Fund (Reels Play bonus) is not available in Pakistan as of 2025. However, Pakistani creators earn through brand sponsorships, affiliate marketing (Daraz, Amazon), selling digital/physical products, and social media management services. These methods often pay more than Meta's creator fund anyway." },
+        { q: "How many Instagram followers do I need to start earning in Pakistan?", a: "You can start affiliate marketing with 0 followers. For brand deals, 5,000+ followers in a niche is enough for Rs 5,000–10,000 per post. Focus on building a specific niche audience with high engagement rather than chasing raw follower counts." },
+        { q: "How much can a Pakistani Instagram influencer earn per month?", a: "It varies widely by niche and follower count. Micro-influencers (5K–20K followers) in active niches earn Rs 8,000–30,000/month. Mid-tier creators (20K–100K) earn Rs 30,000–100,000/month from combined income streams. Top Pakistani influencers earn Rs 200,000–500,000+/month." },
+      ]} />
+      <div className="my-10 p-6 rounded-2xl text-center bg-gradient-to-r from-pink-600/10 to-purple-500/10" style={{ border: "1px solid var(--border-color)" }}>
+        <p className="text-lg font-bold mb-2" style={{ color: "var(--text-primary)" }}>More ways to earn online in Pakistan with zero investment</p>
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}><InternalLink href="/blog/how-to-earn-money-online-pakistan-without-investment">How to Earn Money Online in Pakistan Without Investment</InternalLink></p>
+      </div>
+    </div>
+  ),
 };
